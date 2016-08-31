@@ -1,0 +1,21 @@
+private["_target", "_caller", "_id", "_dog", "_pos", "_fsmid"];
+_target = 	_this select 0;
+_caller = 	_this select 1;
+_id =		_this select 2;
+_dog =		_this select 3;
+
+player removeMagazine "FoodSteakRaw";
+_animalID = _dog getVariable "fsm_handle";
+_animalID setFSMVariable ["_isTamed", true];
+sleep 1;
+diag_log format["DEBUG: %1, id: %2 [%3]",_dog,_animalID,completedFSM _animalID];
+if (!moveToCompleted _dog) then {
+	_dog moveTo (position _dog);
+};
+_dog disableAI "FSM";
+(group _dog) setBehaviour "AWARE";
+_fsmid = [_dog, typeOf _dog] execFSM "\z\addons\viruz_mod\system\dog_agent.fsm";
+_fsmid setFSMVariable ["_handle", _fsmid];
+player setVariable ["dogID", _fsmid];
+_dog setVariable ["fsm_handle", _fsmid];
+_dog setVariable ["characterID", viruz_characterID, true];

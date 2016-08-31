@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ViruZ">
+	<Package name="weapons">
+		</package>
+	<Package name="magazines">
+		<Key ID="STR_EQUIP_NAME_41">
+		<Original>Hatchet</Original>
+		<English>Hatchet</English>
+		<German>Hatchet</German>
+		<Russian>Топорик</Russian>
+		</Key>
+    <Key ID="STR_EQUIP_DESC_41">
+      <Original>A single-handed striking tool with a sharp blade used to cut and split wood.</Original>
+      <English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
+      <German>A single-handed striking tool with a sharp blade used to cut and split wood.</German>
+      <Russian>Топорик отлично подойдет для рубки дров.</Russian>
+    </Key>
+	</package>
+	<package name="characters">
+		<Key ID="STR_CHAR_1">
+			<Original>Survivor</Original>
+			<English>Survivor</English>
+			<German>Überlebender</German>
+			<Russian>Выживший</Russian>	
+		</Key>
+	</package>
+</Project>
