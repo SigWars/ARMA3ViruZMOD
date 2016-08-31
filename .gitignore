@@ -43,3 +43,7 @@
 /@ViruZ/Addons/landrover.pbo
 /@ViruZ/Addons/outlw_magRepack.pbo
 /@ViruZ/Addons/rds_a2port_civ.pbo
+/cfgviruz/*.rpt
+/cfgviruz/*.log
+/@CBA_A3
+/logs
