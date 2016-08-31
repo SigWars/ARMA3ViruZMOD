@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project
+  name="Arma2">
+  <Package
+    name="Misc">
+    <Container
+      name="characters2">
+      <Key
+        ID="STR_RDS_DN_civ_citizen">
+        <German>Bürger</German>
+        <English>Citizen</English>
+        <Italian>Cittadino</Italian>
+        <Spanish>Ciudadano</Spanish>
+        <French>Habitant</French>
+        <Czech>Měšťan</Czech>
+        <Russian>Гражданский</Russian>
+        <Polish>Mieszkaniec</Polish>
+        <Hungarian>Helybéli</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_citizen1">
+        <German>Bürger braun</German>
+        <English>Citizen (Brown)</English>
+        <Italian>Cittadino (marrone)</Italian>
+        <Spanish>Ciudadano (marrón)</Spanish>
+        <French>Habitant (marron)</French>
+        <Czech>Měšťan (ve hnědém)</Czech>
+        <Russian>Гражданский (коричневый)</Russian>
+        <Polish>Mieszkaniec (Brązowy)</Polish>
+        <Hungarian>Helybéli (barna)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_citizen2">
+        <German>Bürger blau</German>
+        <English>Citizen (Blue)</English>
+        <Italian>Cittadino (blu)</Italian>
+        <Spanish>Ciudadano (azul)</Spanish>
+        <French>Habitant (bleu)</French>
+        <Czech>Měšťan (v modrém)</Czech>
+        <Russian>Гражданский (синий)</Russian>
+        <Polish>Mieszkaniec (Niebieski)</Polish>
+        <Hungarian>Helybéli (kék)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_citizen3">
+        <German>Bürger grau</German>
+        <English>Citizen (Gray)</English>
+        <Italian>Cittadino (grigio)</Italian>
+        <Spanish>Ciudadano (gris)</Spanish>
+        <French>Habitant (gris)</French>
+        <Czech>Měšťan (v šedém)</Czech>
+        <Russian>Гражданский (серый)</Russian>
+        <Polish>Mieszkaniec (Szary)</Polish>
+        <Hungarian>Helybéli (szürke)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_citizen4">
+        <German>Bürger grün</German>
+        <English>Citizen (Green)</English>
+        <Italian>Cittadino (verde)</Italian>
+        <Spanish>Ciudadano (verde)</Spanish>
+        <French>Habitant (vert)</French>
+        <Czech>Měšťan (v zeleném)</Czech>
+        <Russian>Гражданский (зеленый)</Russian>
+        <Polish>Mieszkaniec (Zielony)</Polish>
+        <Hungarian>Helybéli (zöld)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_worker">
+        <German>Arbeiter</German>
+        <English>Worker</English>
+        <Italian>Operaio</Italian>
+        <Spanish>Trabajador</Spanish>
+        <French>Ouvrier</French>
+        <Czech>Dělník</Czech>
+        <Russian>Рабочий</Russian>
+        <Polish>Robotnik</Polish>
+        <Hungarian>Munkás</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_worker1">
+        <German>Arbeiter grau</German>
+        <English>Worker (Gray)</English>
+        <Italian>Operaio (grigio)</Italian>
+        <Spanish>Trabajador (gris)</Spanish>
+        <French>Ouvrier (gris)</French>
+        <Czech>Dělník (v šedém)</Czech>
+        <Russian>Рабочий (серый)</Russian>
+        <Polish>Robotnik (Szary)</Polish>
+        <Hungarian>Munkás (szürke)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_villager">
+        <German>Dorfbewohner</German>
+        <English>Villager</English>
+        <Italian>Paesano</Italian>
+        <Spanish>Habitante</Spanish>
+        <French>Villageois</French>
+        <Czech>Vesničan</Czech>
+        <Russian>Крестьянин</Russian>
+        <Polish>Chłop</Polish>
+        <Hungarian>Falusi</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_worker2">
+        <German>Arbeiter grün</German>
+        <English>Worker (Green)</English>
+        <Italian>Operaio (verde)</Italian>
+        <Spanish>Trabajador (verde)</Spanish>
+        <French>Ouvrier (vert)</French>
+        <Czech>Dělník (v zeleném)</Czech>
+        <Russian>Рабочий (зеленый)</Russian>
+        <Polish>Robotnik (Zielony)</Polish>
+        <Hungarian>Munkás (zöld)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_worker3">
+        <German>Arbeiter blau</German>
+        <English>Worker (Blue)</English>
+        <Italian>Operaio (blu)</Italian>
+        <Spanish>Trabajador (azul)</Spanish>
+        <French>Ouvrier (bleu)</French>
+        <Czech>Dělník (v modrém)</Czech>
+        <Russian>Рабочий (синий)</Russian>
+        <Polish>Robotnik (Niebieski)</Polish>
+        <Hungarian>Munkás (kék)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_worker4">
+        <German>Arbeiter braun</German>
+        <English>Worker (Brown)</English>
+        <Italian>Operaio (marrone)</Italian>
+        <Spanish>Trabajador (marrón)</Spanish>
+        <French>Ouvrier (marron)</French>
+        <Czech>Dělník (ve hnědém)</Czech>
+        <Russian>Рабочий (коричневый)</Russian>
+        <Polish>Robotnik (Brązowy)</Polish>
+        <Hungarian>Munkás (barna)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_villager1">
+        <German>Dorfbewohner kariert 1</German>
+        <English>Villager (Blue check)</English>
+        <Italian>Paesano (a quadretti blu)</Italian>
+        <Spanish>Habitante (cuadros azules)</Spanish>
+        <French>Villageois (carreaux bleus)</French>
+        <Czech>Vesničan (modrá kostka)</Czech>
+        <Russian>Крестьянин (синий)</Russian>
+        <Polish>Chłop (Niebieski strój)</Polish>
+        <Hungarian>Falusi (kék ing)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_villager2">
+        <German>Dorfbewohner kariert 2</German>
+        <English>Villager (Green check)</English>
+        <Italian>Paesano (a quadretti verdi)</Italian>
+        <Spanish>Habitante (cuadros verdes)</Spanish>
+        <French>Villageois (carreaux verts)</French>
+        <Czech>Vesničan (zelená kostka)</Czech>
+        <Russian>Крестьянин (зеленый)</Russian>
+        <Polish>Chłop (Zielony strój)</Polish>
+        <Hungarian>Falusi (zöld ing)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_villager3">
+        <German>Dorfbewohner grün</German>
+        <English>Villager (Green)</English>
+        <Italian>Paesano (verde)</Italian>
+        <Spanish>Habitante (verde)</Spanish>
+        <French>Villageois (vert)</French>
+        <Czech>Vesničan (v zeleném)</Czech>
+        <Russian>Крестьянин (зеленый 2)</Russian>
+        <Polish>Chłop (Zielony)</Polish>
+        <Hungarian>Falusi (zöld)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_villager4">
+        <German>Dorfbewohner blau</German>
+        <English>Villager (Blue)</English>
+        <Italian>Paesano (blu)</Italian>
+        <Spanish>Habitante (azul)</Spanish>
+        <French>Villageois (bleu)</French>
+        <Czech>Vesničan (v modrém)</Czech>
+        <Russian>Крестьянин (синий)</Russian>
+        <Polish>Chłop (Niebieski)</Polish>
+        <Hungarian>Falusi (kék)</Hungarian>
+      </Key>
+
+      <Key
+        ID="STR_RDS_DN_civ_policeman">
+        <German>Polizist</German>
+        <English>Policeman</English>
+        <Italian>Poliziotto</Italian>
+        <Spanish>Policía</Spanish>
+        <French>Policier</French>
+        <Czech>Policista</Czech>
+        <Russian>Милиционер</Russian>
+        <Polish>Policjant</Polish>
+        <Hungarian>Rendőr</Hungarian>
+      </Key>
+
+      <Key
+        ID="STR_RDS_DN_civ_woodlander">
+        <German>Waldarbeiter</German>
+        <English>Woodlander</English>
+        <Italian>Boscaiolo</Italian>
+        <Spanish>Leñador</Spanish>
+        <French>Forestier</French>
+        <Czech>Lesák</Czech>
+        <Russian>Лесной житель</Russian>
+        <Polish>Leśnik</Polish>
+        <Hungarian>Erdőlakó</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_woodlander1">
+        <German>Waldarbeiter blau</German>
+        <English>Woodlander (Blue)</English>
+        <Italian>Boscaiolo (blu)</Italian>
+        <Spanish>Leñador (azul)</Spanish>
+        <French>Forestier (bleu)</French>
+        <Czech>Lesák (v modrém)</Czech>
+        <Russian>Лесной житель (синий)</Russian>
+        <Polish>Leśnik (Niebieski)</Polish>
+        <Hungarian>Erdőlakó (kék)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_woodlander2">
+        <German>Waldarbeiter braun</German>
+        <English>Woodlander (Brown)</English>
+        <Italian>Boscaiolo (marrone)</Italian>
+        <Spanish>Leñador (marrón)</Spanish>
+        <French>Forestier (marron)</French>
+        <Czech>Lesák (ve hnědém)</Czech>
+        <Russian>Лесной житель (коричневый)</Russian>
+        <Polish>Leśnik (Brązowy)</Polish>
+        <Hungarian>Erdőlakó (barna)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_woodlander3">
+        <German>Waldarbeiter (tarnfarben)</German>
+        <English>Woodlander (Camo)</English>
+        <Italian>Boscaiolo (mimetico)</Italian>
+        <Spanish>Leñador (camo)</Spanish>
+        <French>Forestier (camo)</French>
+        <Czech>Lesák (maskáče)</Czech>
+        <Russian>Лесной житель (кмфл)</Russian>
+        <Polish>Leśnik (Kamuflaż)</Polish>
+        <Hungarian>Erdőlakó (terepszín)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_woodlander4">
+        <German>Waldarbeiter grün</German>
+        <English>Woodlander (Green)</English>
+        <Italian>Boscaiolo (verde)</Italian>
+        <Spanish>Leñador (verde)</Spanish>
+        <French>Forestier (vert)</French>
+        <Czech>Lesák (v zeleném)</Czech>
+        <Russian>Лесной житель (зеленый)</Russian>
+        <Polish>Leśnik (Zielony)</Polish>
+        <Hungarian>Erdőlakó (zöld)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_functionary">
+        <German>Funktionär</German>
+        <English>Functionary</English>
+        <Italian>Funzionario</Italian>
+        <Spanish>Funcionario</Spanish>
+        <French>Fonctionnaire</French>
+        <Czech>Funkcionář</Czech>
+        <Russian>Чиновник</Russian>
+        <Polish>Funkcjonariusz</Polish>
+        <Hungarian>Hivatalnok</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_functionary1">
+        <German>Funktionär schwarz</German>
+        <English>Functionary (Black suit)</English>
+        <Italian>Funzionario (abito nero)</Italian>
+        <Spanish>Funcionario (traje negro)</Spanish>
+        <French>Fonctionnaire (costume noir)</French>
+        <Czech>Funkcionář (v černém)</Czech>
+        <Russian>Чиновник (черный)</Russian>
+        <Polish>Funkcjonariusz (Czarny mundur)</Polish>
+        <Hungarian>Hivatalnok (Sötét öltöny)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_functionary2">
+        <German>Funktionär braun</German>
+        <English>Functionary (Brown suit)</English>
+        <Italian>Funzionario (abito marrone)</Italian>
+        <Spanish>Funcionario (traje marrón)</Spanish>
+        <French>Fonctionnaire (costume marron)</French>
+        <Czech>Funkcionář (v hnědém)</Czech>
+        <Russian>Чиновник (коричневый)</Russian>
+        <Polish>Funkcjonariusz (Brązowy mundur)</Polish>
+        <Hungarian>Hivatalnok (Barna öltöny)</Hungarian>
+      </Key>
+
+
+      <Key
+        ID="STR_RDS_DN_civ_profiteer">
+        <German>Geschäftsmann</German>
+        <English>Profiteer</English>
+        <Italian>Speculatore</Italian>
+        <Spanish>Mafioso</Spanish>
+        <French>Profiteur</French>
+        <Czech>Vekslák</Czech>
+        <Russian>Спекулянт</Russian>
+        <Polish>Spekulant</Polish>
+        <Hungarian>Spekuláns</Hungarian>
+      </Key>
+
+      <Key
+        ID="STR_RDS_DN_civ_profiteer1">
+        <German>Geschäftsmann grau</German>
+        <English>Profiteer (Gray)</English>
+        <Italian>Speculatore (grigio)</Italian>
+        <Spanish>Mafioso (gris)</Spanish>
+        <French>Profiteur (gris)</French>
+        <Czech>Vekslák (v šedém)</Czech>
+        <Russian>Спекулянт (серый)</Russian>
+        <Polish>Spekulant (Szary)</Polish>
+        <Hungarian>Spekuláns (szürke)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_profiteer2">
+        <German>Geschäftsmann blau</German>
+        <English>Profiteer (Blue)</English>
+        <Italian>Speculatore (blu)</Italian>
+        <Spanish>Mafioso (azul)</Spanish>
+        <French>Profiteur (bleu)</French>
+        <Czech>Vekslák (v modrém)</Czech>
+        <Russian>Спекулянт (синий)</Russian>
+        <Polish>Spekulant (Niebieski)</Polish>
+        <Hungarian>Spekuláns (kék)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_profiteer3">
+        <German>Geschäftsmann braun</German>
+        <English>Profiteer (Brown)</English>
+        <Italian>Speculatore (marrone)</Italian>
+        <Spanish>Mafioso (marrón)</Spanish>
+        <French>Profiteur (marron)</French>
+        <Czech>Vekslák (ve hnědém)</Czech>
+        <Russian>Спекулянт (коричневый)</Russian>
+        <Polish>Spekulant (Brązowy)</Polish>
+        <Hungarian>Spekuláns (barna)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_profiteer4">
+        <German>Geschäftsmann rot</German>
+        <English>Profiteer (Red)</English>
+        <Italian>Speculatore (rosso)</Italian>
+        <Spanish>Mafioso (rojo)</Spanish>
+        <French>Profiteur (rouge)</French>
+        <Czech>Vekslák (v červeném)</Czech>
+        <Russian>Спекулянт (красный)</Russian>
+        <Polish>Spekulant (Czerwony)</Polish>
+        <Hungarian>Spekuláns (piros)</Hungarian>
+      </Key>
+      <Key
+        ID="STR_RDS_DN_civ_priest">
+        <German>Priester</German>
+        <English>Priest</English>
+        <Italian>Prete</Italian>
+        <Spanish>Cura</Spanish>
+        <French>Prêtre</French>
+        <Czech>Kněz</Czech>
+        <Russian>Священник</Russian>
+        <Polish>Ksiądz</Polish>
+        <Hungarian>Pap</Hungarian>
+      </Key>
+
+      <Key
+        ID="STR_RDS_DN_civ_doctor">
+        <German>Arzt</German>
+        <English>Doctor</English>
+        <Italian>Dottore</Italian>
+        <Spanish>Doctor</Spanish>
+        <French>Médecin</French>
+        <Czech>Doktor</Czech>
+        <Russian>Врач</Russian>
+        <Polish>Lekarz</Polish>
+        <Hungarian>Orvos</Hungarian>
+      </Key>
+
+      <Key
+        ID="STR_RDS_DN_civ_assistant">
+        <German>Gehilfe</German>
+        <English>Assistant</English>
+        <Italian>Assistente</Italian>
+        <Spanish>Ayudante</Spanish>
+        <French>Assistant</French>
+        <Czech>Prodavač</Czech>
+        <Russian>Помощник</Russian>
+        <Polish>Asystent</Polish>
+        <Hungarian>Aszisztens</Hungarian>
+      </Key>
+
+      <Key
+        ID="STR_RDS_DN_civ_schoolteacher">
+        <German>Lehrer</German>
+        <English>School teacher</English>
+        <Italian>Insegnante</Italian>
+        <Spanish>Profesor</Spanish>
+        <French>Instituteur</French>
+        <Czech>Učitel</Czech>
+        <Russian>Учитель</Russian>
+        <Polish>Nauczyciel</Polish>
+        <Hungarian>Iskolai tanár</Hungarian>
+      </Key>
+    </Container>
+  </Package>
+</Project>
