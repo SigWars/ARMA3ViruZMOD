@@ -1,0 +1,8 @@
+//to set local date
+if (isDedicated) then {
+    setDate call compile ("real_date" callExtension "");
+};
+//or to set GMT date
+if (isDedicated) then {
+    setDate call compile ("real_date" callExtension "GMT");
+};
