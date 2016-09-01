@@ -5,7 +5,7 @@ class RscDisplaySpawnSelecterAltis {
 	class controlsBackground {
 		class Mainback : RscPicture {
 			idc = -1;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_bg.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\born_bg.paa";
 			x = 0 * safezoneW + safezoneX;
 			y = 0 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
@@ -18,7 +18,7 @@ class RscDisplaySpawnSelecterAltis {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_kamenka.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\viruz_spawn_kamenka.paa";
 			x = 0.524899 * safezoneW + safezoneX;
 			y = 0.591199 * safezoneH + safezoneY;
 			w = 0.234287 * safezoneW;
@@ -32,7 +32,7 @@ class RscDisplaySpawnSelecterAltis {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_balota.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\viruz_spawn_balota.paa";
 			x = 0.230417 * safezoneW + safezoneX;
 			y = 0.610615 * safezoneH + safezoneY;
 			w = 0.223688 * safezoneW;
@@ -46,7 +46,7 @@ class RscDisplaySpawnSelecterAltis {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_cherno.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\viruz_spawn_cherno.paa";
 			x = 0.234564 * safezoneW + safezoneX;
 			y = 0.116375 * safezoneH + safezoneY;
 			w = 0.234375 * safezoneW;
@@ -60,7 +60,7 @@ class RscDisplaySpawnSelecterAltis {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_elektro.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\viruz_spawn_elektro.paa";
 			x = 0.212005 * safezoneW + safezoneX;
 			y = 0.371473 * safezoneH + safezoneY;
 			w = 0.234683 * safezoneW;
@@ -74,7 +74,7 @@ class RscDisplaySpawnSelecterAltis {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_sol.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\viruz_spawn_sol.paa";
 			x = 0.565892 * safezoneW + safezoneX;
 			y = 0.365922 * safezoneH + safezoneY;
 			w = 0.246438 * safezoneW;
@@ -88,7 +88,7 @@ class RscDisplaySpawnSelecterAltis {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_berezino.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\viruz_spawn_berezino.paa";
 			x = 0.517793 * safezoneW + safezoneX;
 			y = 0.13013 * safezoneH + safezoneY;
 			w = 0.234375 * safezoneW;
@@ -102,7 +102,7 @@ class RscDisplaySpawnSelecterAltis {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\spawn_random.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\born_random.paa";
 			x = 0.420865 * safezoneW + safezoneX;
 			y = 0.336926 * safezoneH + safezoneY;
 			w = 0.168843675 * safezoneW;

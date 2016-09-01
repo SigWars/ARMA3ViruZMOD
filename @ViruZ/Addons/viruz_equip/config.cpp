@@ -378,7 +378,7 @@ class CfgMagazines {
 		type = 256;
 		displayName = $STR_EQUIP_NAME_16;
 		model = "\A3\Structures_F_EPA\Items\Medical\BloodBag_F.p3d";
-		picture = "\viruz_equip\viruzico\bloodbag_ca.paa";
+		picture = "\viruz_equip\viruzico\viruz_bloodbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_16;
 		mass = 7;
 	};
@@ -536,7 +536,7 @@ class CfgMagazines {
 		type = (256 * 3);
 		displayName = $STR_EQUIP_NAME_19;
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
-		picture = "\viruz_equip\viruzico\equip_jerrycan_ca.paa";
+		picture = "\viruz_equip\viruzico\viruz_jerrycan_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_19;
 		mass = 100;
 		allowedSlots[] = {901};
@@ -547,7 +547,7 @@ class CfgMagazines {
 		fuelQuantity = 0;
 		type = (256 * 3);
 		displayName = $STR_EQUIP_NAME_39;
-		picture = "\viruz_equip\viruzico\equip_jerrycan_e_ca.paa";
+		picture = "\viruz_equip\viruzico\viruz_jerrycan_e_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_39;
 		mass = 40;
 		allowedSlots[] = {901};

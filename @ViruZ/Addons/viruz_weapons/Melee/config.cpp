@@ -519,7 +519,7 @@ class CfgMagazines
 		{
 			"Single"
 		};
-		picture="\viruz_weapons\melee\data\equip_shells_ca.paa";
+		picture="\viruz_weapons\melee\data\viruz_swing_ca.paa";
 		displayName="Hatchet Swing";
 		displayNameMagazine="Hatchet Swing";
 		shortNameMagazine="Hatchet Swing";

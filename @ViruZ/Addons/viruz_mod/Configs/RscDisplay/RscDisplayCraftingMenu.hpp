@@ -610,7 +610,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_bg.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_bg.paa";
 			x = 0 * safezoneW + safezoneX;
 			y = 0.08 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
@@ -641,7 +641,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.55 * safezoneW + safezoneX;
 			y = 0.44 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -651,7 +651,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.575 * safezoneW + safezoneX;
 			y = 0.44 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -661,7 +661,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.6 * safezoneW + safezoneX;
 			y = 0.44 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -671,7 +671,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.625 * safezoneW + safezoneX;
 			y = 0.44 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -681,7 +681,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.65 * safezoneW + safezoneX;
 			y = 0.44 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -691,7 +691,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.675 * safezoneW + safezoneX;
 			y = 0.44 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -701,7 +701,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.7 * safezoneW + safezoneX;
 			y = 0.44 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -711,7 +711,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.55 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -721,7 +721,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.575 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -731,7 +731,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.6 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -741,7 +741,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.625 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -751,7 +751,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.65 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -761,7 +761,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.675 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -771,7 +771,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.7 * safezoneW + safezoneX;
 			y = 0.48 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -781,7 +781,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.55 * safezoneW + safezoneX;
 			y = 0.52 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -791,7 +791,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.575 * safezoneW + safezoneX;
 			y = 0.52 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -801,7 +801,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.6 * safezoneW + safezoneX;
 			y = 0.52 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -811,7 +811,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.625 * safezoneW + safezoneX;
 			y = 0.52 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -821,7 +821,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.65 * safezoneW + safezoneX;
 			y = 0.52 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -831,7 +831,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.675 * safezoneW + safezoneX;
 			y = 0.52 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -841,7 +841,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.7 * safezoneW + safezoneX;
 			y = 0.52 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -851,7 +851,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.55 * safezoneW + safezoneX;
 			y = 0.56 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -861,7 +861,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.575 * safezoneW + safezoneX;
 			y = 0.56 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -871,7 +871,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.6 * safezoneW + safezoneX;
 			y = 0.56 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -881,7 +881,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.625 * safezoneW + safezoneX;
 			y = 0.56 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -891,7 +891,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.65 * safezoneW + safezoneX;
 			y = 0.56 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -901,7 +901,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.675 * safezoneW + safezoneX;
 			y = 0.56 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -911,7 +911,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.7 * safezoneW + safezoneX;
 			y = 0.56 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -921,7 +921,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.55 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -931,7 +931,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.575 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -941,7 +941,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.6 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -951,7 +951,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.625 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -961,7 +961,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.65 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -971,7 +971,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.675 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -981,7 +981,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.7 * safezoneW + safezoneX;
 			y = 0.6 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -991,7 +991,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.55 * safezoneW + safezoneX;
 			y = 0.64 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1001,7 +1001,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.575 * safezoneW + safezoneX;
 			y = 0.64 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1011,7 +1011,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.6 * safezoneW + safezoneX;
 			y = 0.64 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1021,7 +1021,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.625 * safezoneW + safezoneX;
 			y = 0.64 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1031,7 +1031,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.65 * safezoneW + safezoneX;
 			y = 0.64 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1041,7 +1041,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.675 * safezoneW + safezoneX;
 			y = 0.64 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1051,7 +1051,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.7 * safezoneW + safezoneX;
 			y = 0.64 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1061,7 +1061,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.55 * safezoneW + safezoneX;
 			y = 0.68 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1071,7 +1071,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.575 * safezoneW + safezoneX;
 			y = 0.68 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1081,7 +1081,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.6 * safezoneW + safezoneX;
 			y = 0.68 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1091,7 +1091,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.625 * safezoneW + safezoneX;
 			y = 0.68 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1101,7 +1101,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.65 * safezoneW + safezoneX;
 			y = 0.68 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1111,7 +1111,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.675 * safezoneW + safezoneX;
 			y = 0.68 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
@@ -1121,7 +1121,7 @@ class RscDisplayCraftingMenu {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\crafting\craft_box.paa";
+			text = "\z\addons\viruz_mod\gui\crafting\viruz_craft_box.paa";
 			x = 0.7 * safezoneW + safezoneX;
 			y = 0.68 * safezoneH + safezoneY;
 			w = 0.025 * safezoneW;
