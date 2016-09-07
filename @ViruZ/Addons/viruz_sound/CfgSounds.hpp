@@ -5,6 +5,16 @@ class CfgSounds {
 		sound[] = {"\viruz_sound\effects\breath_1",1,1,30};
 		titles[] = {};
 	};
+	class build_0 {
+		name = "";
+		sound[] = {"\viruz_sound\effects\building_wood_viruz",1,1,30};
+		titles[] = {};
+	};
+	class build_1 {
+		name = "";
+		sound[] = {"\viruz_sound\effects\building_wood_viruz",1,1,30};
+		titles[] = {};
+	};	
 	class z_chopwood_0 {
 		name = "";
 		sound[] = {"\viruz_sound\effects\chopwood.ogg", 1, 1, 50};
@@ -103,7 +113,7 @@ class CfgSounds {
 	};
 	class z_repair_0 {
 		name = "";
-		sound[] = {"\viruz_sound\effects\action_repair_0.ogg",1,1,80};
+		sound[] = {"\viruz_sound\effects\car_repairing_viruz.ogg",1,1,80};
 		titles[] = {};
 	};
 	class z_tentunpack_0 {
@@ -123,9 +133,19 @@ class CfgSounds {
 	};
 	class z_soda_0 {
 		name = "";
-		sound[] = {"\viruz_sound\effects\action_soda_0.ogg",1,1,30};
+		sound[] = {"\viruz_sound\effects\drinking_soda_viruz.ogg",1,1,30};
 		titles[] = {};
 	};
+	class z_soda_1 {
+		name = "";
+		sound[] = {"\viruz_sound\effects\drinking_soda2_viruz.ogg",1,1,30};
+		titles[] = {};
+	};
+	class z_soda_2 {
+		name = "";
+		sound[] = {"\viruz_sound\effects\drinking_soda3_viruz.ogg",1,1,30};
+		titles[] = {};
+	};	
 	class z_cough_0 {
 		name = "";
 		sound[] = {"\viruz_sound\effects\cough_0.ogg",1,1,30};
