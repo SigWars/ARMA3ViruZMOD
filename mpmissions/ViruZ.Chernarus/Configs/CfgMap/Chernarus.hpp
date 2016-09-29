@@ -1,8 +1,8 @@
-class Esseker {
+class Chernarus {
 	
-	spawnChanceWood = 0.30;  //    0.30 = 30% / 1 = 100%
+	spawnChanceWood = 1;  //    0.30 = 30% / 1 = 100%
 	maxQtyWood = 3;
-	spawnChanceCinder = 0.20;  //    0.20 = 20% / 1 = 100%
+	spawnChanceCinder = 1;  //    0.20 = 20% / 1 = 100%
 	maxQtyCinder = 2;
 	
 	blockedArea[] = {
@@ -159,6 +159,9 @@ class Esseker {
 		"cinderblocks_f.p3d"
 	};
 	Wrecks[] = {
+		
+		//Chernarus
+		
 		//esseker
 		"zaporosez.p3d",
 		"wreck_car3_f.p3d",
