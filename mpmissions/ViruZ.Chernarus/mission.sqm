@@ -1,0 +1,3832 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=1042;
+	};
+	class MarkerIDProvider
+	{
+		nextID=11;
+	};
+	class Camera
+	{
+		pos[]={369.32764,984.37024,10723.954};
+		dir[]={-0.38521782,-0.60252678,0.69898337};
+		up[]={-0.29082054,0.79809368,0.52769774};
+		aside[]={0.87580764,-2.5087502e-007,0.48266748};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"viruz_mod"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="viruz_mod";
+			name="viruz_mod";
+		};
+	};
+};
+randomSeed=9272692;
+class ScenarioData
+{
+	author="SigWar";
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="ViruZ Esseker";
+		startWeather=0.1;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=16;
+		minute=8;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Entities
+	{
+		items=111;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={7202.6089,333.26599,8354.8652};
+			name="center";
+			type="Empty";
+			colorName="ColorRed";
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={6757.5879,157.48926,12131.149};
+			name="respawn_west";
+			type="Empty";
+			id=1;
+			atlOffset=-57.65947;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={1595.0725,33.515202,2141.7188};
+			name="spawn0";
+			type="Empty";
+			colorName="ColorRed";
+			id=2;
+			atlOffset=27.594465;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={4220.2944,37.50721,2341.4514};
+			name="spawn1";
+			type="Empty";
+			colorName="ColorRed";
+			id=3;
+			atlOffset=27.608036;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={7390.335,0,2758.4832};
+			name="spawn2";
+			type="Empty";
+			colorName="ColorRed";
+			id=4;
+			atlOffset=-4.2931528;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={10754.769,7.9676204,2211.6565};
+			name="spawn3";
+			type="Empty";
+			colorName="ColorRed";
+			id=5;
+			atlOffset=-6.7883697;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={4862.3467,234.79688,9731.3184};
+			name="HeliMarker2";
+			type="Empty";
+			colorName="ColorRed";
+			id=6;
+			atlOffset=-104.20313;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={12485.521,158.94322,12613.735};
+			name="HeliMarker3";
+			type="Empty";
+			colorName="ColorRed";
+			id=7;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={4941.1084,9,2391.0366};
+			name="HeliMarker1";
+			type="Empty";
+			colorName="ColorRed";
+			id=8;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={13472.813,114.30334,6038.7192};
+			name="spawn4";
+			type="Empty";
+			colorName="ColorRed";
+			id=9;
+			atlOffset=109.94788;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={12891.648,7.0893593,8812.0889};
+			name="spawn5";
+			type="Empty";
+			colorName="ColorRed";
+			id=10;
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-128.17627,617.57385,11263.709};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=12;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=114;
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-127.29932,617.75085,11260.799};
+						angles[]={0.048959803,5.985013,0.020925384};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+					};
+					id=13;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=115;
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-130.06104,617.41162,11265.322};
+						angles[]={0.044989314,5.985013,0.044639397};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=14;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=116;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-117.48193,617.81055,11262.125};
+						angles[]={0.054884791,5.9850144,6.2828403};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=15;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=117;
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-129.67334,617.7085,11259.572};
+						angles[]={0.041447949,5.985013,0.052150369};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=16;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=118;
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-112.48193,618.05823,11257.578};
+						angles[]={0.056864653,5.9850144,6.2580109};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=17;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=119;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-142.48193,616.89087,11257.578};
+						angles[]={0.03249874,5.9850144,0.083011538};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=18;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=120;
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-107.48193,618.16663,11252.629};
+						angles[]={0.047246709,5.9850144,6.2580109};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=19;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=121;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-147.48193,616.4209,11252.629};
+						angles[]={0.014435424,5.9850144,0.12299255};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=20;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=122;
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-102.48193,618.17188,11247.678};
+						angles[]={0.032484062,5.9850144,6.2311163};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=21;
+					type="Survivor1_DZ";
+					atlOffset=-6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=123;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-152.48193,615.77075,11247.678};
+						angles[]={0.0022107877,5.9850154,0.15248518};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=22;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=124;
+			atlOffset=6.1035156e-005;
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-97.481934,618.07166,11242.729};
+						angles[]={0.032484062,5.9850144,6.2035527};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=23;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=125;
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-157.48193,614.93762,11242.729};
+						angles[]={6.275044,5.9850144,0.16259773};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=24;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=126;
+		};
+		class Item24
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-92.481934,617.75122,11237.779};
+						angles[]={0.015246725,5.9850144,6.2035527};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=25;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=127;
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-162.48193,613.84204,11237.779};
+						angles[]={6.2500529,5.9850144,0.1989287};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=26;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=128;
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-87.481934,617.33252,11232.828};
+						angles[]={0.0020132356,5.9850144,6.1776628};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=27;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=129;
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-167.48193,612.58325,11232.828};
+						angles[]={6.2375946,5.9850144,0.22170961};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=28;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=130;
+			atlOffset=6.1035156e-005;
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-82.481934,616.81274,11227.879};
+						angles[]={0.0020426274,5.9850144,6.1543064};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=29;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=131;
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-172.48193,611.17676,11227.879};
+						angles[]={6.230134,5.9850144,0.22881536};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=30;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=132;
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-77.481934,616.11304,11222.928};
+						angles[]={6.2718649,5.9850144,6.1543055};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=31;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=133;
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-177.48193,609.59058,11222.928};
+						angles[]={6.2118468,5.9850144,0.24961472};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=32;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=134;
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-72.481934,615.34412,11217.979};
+						angles[]={6.2668042,5.9850144,6.1331496};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=33;
+					type="Survivor1_DZ";
+					atlOffset=-6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=135;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-182.48193,608.05493,11217.979};
+						angles[]={6.2276354,5.9850144,0.22684591};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=34;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=136;
+		};
+		class Item34
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-67.481934,614.50696,11213.029};
+						angles[]={6.2668042,5.9850144,6.1128469};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=35;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=137;
+		};
+		class Item35
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-187.48193,606.60156,11213.029};
+						angles[]={6.2242131,5.9850144,0.23010388};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=36;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=138;
+		};
+		class Item36
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-62.481934,613.53003,11208.078};
+						angles[]={6.2588243,5.9850144,6.1128469};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=37;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=139;
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-192.48193,605.11304,11208.078};
+						angles[]={6.2185383,5.9850144,0.2395947};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=38;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=140;
+		};
+		class Item38
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-57.481934,612.49011,11203.129};
+						angles[]={6.2581344,5.9850144,6.0905833};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=39;
+					type="Survivor1_DZ";
+					atlOffset=-6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=141;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item39
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-197.48193,603.54858,11203.129};
+						angles[]={6.2190804,5.9850144,0.24857531};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=40;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=142;
+		};
+		class Item40
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-52.481934,611.3905,11198.178};
+						angles[]={6.2581344,5.985013,6.0662746};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=41;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=143;
+		};
+		class Item41
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-202.48193,601.88452,11198.178};
+						angles[]={6.2078891,5.9850144,0.25911248};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=42;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=144;
+		};
+		class Item42
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-52.008301,610.9281,11184.746};
+						angles[]={6.2571406,5.985013,6.0699801};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=43;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=145;
+		};
+		class Item43
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-207.48193,600.07373,11193.229};
+						angles[]={6.1925168,5.9850144,0.28859481};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=44;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=146;
+		};
+		class Item44
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-44.779785,609.39136,11186.324};
+						angles[]={6.2589965,5.9850144,6.0447512};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=45;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=147;
+		};
+		class Item45
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-212.48193,598.07874,11188.279};
+						angles[]={6.1912575,5.9850144,0.31008986};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=46;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=148;
+		};
+		class Item46
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-37.481934,607.54333,11183.328};
+						angles[]={6.2606788,5.9850144,6.0212917};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=47;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=149;
+		};
+		class Item47
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-217.48193,595.90491,11183.328};
+						angles[]={6.1742516,5.9850144,0.32559082};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=48;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=150;
+		};
+		class Item48
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-32.481934,606.10242,11178.379};
+						angles[]={6.2632251,5.9850144,6.0212917};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=49;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=151;
+			atlOffset=6.1035156e-005;
+		};
+		class Item49
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-222.48193,593.49341,11178.379};
+						angles[]={6.1552501,5.9850144,0.36604226};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=50;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=152;
+		};
+		class Item50
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-27.481934,604.59436,11173.428};
+						angles[]={6.2553053,5.9850144,6.0006595};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=51;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=153;
+		};
+		class Item51
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-227.48193,590.84216,11173.428};
+						angles[]={6.1443787,5.9850144,0.39380619};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=52;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=154;
+			atlOffset=6.1035156e-005;
+		};
+		class Item52
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-22.481934,603.00452,11168.479};
+						angles[]={6.2553034,5.9850144,5.981339};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=53;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=155;
+		};
+		class Item53
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-232.48193,587.9823,11168.479};
+						angles[]={6.130827,5.9850154,0.40555263};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=54;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=156;
+		};
+		class Item54
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-17.481934,601.25818,11163.529};
+						angles[]={6.2425337,5.9850144,5.981339};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=55;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=157;
+		};
+		class Item55
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-129.37842,617.54138,11263.275};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=56;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=158;
+		};
+		class Item56
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-12.481934,599.41736,11158.578};
+						angles[]={6.2201018,5.9850144,5.9634871};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=57;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=159;
+		};
+		class Item57
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-128.57275,617.50708,11264.711};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=58;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=160;
+		};
+		class Item58
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-7.4819336,597.4491,11153.629};
+						angles[]={6.2201018,5.9850154,5.9475985};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=59;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=161;
+		};
+		class Item59
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-129.03076,617.4386,11265.746};
+						angles[]={0.044989314,5.985013,0.044639397};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=60;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=162;
+		};
+		class Item60
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7.6264648,594.59021,11163.424};
+						angles[]={6.2458658,0,6.1480203};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=61;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=163;
+		};
+		class Item61
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-130.396,617.50488,11263.094};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=62;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=164;
+		};
+		class Item62
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2.5180664,593.75354,11143.729};
+						angles[]={6.1756029,5.9850154,6.1861525};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=63;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=165;
+		};
+		class Item63
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-147.48193,616.42029,11252.676};
+						angles[]={0.014435424,5.9850154,0.12299255};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=64;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=166;
+		};
+		class Item64
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7.5180664,592.73193,11138.779};
+						angles[]={6.1756029,5.9850154,6.157196};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=65;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=167;
+		};
+		class Item65
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-152.48193,615.77075,11247.725};
+						angles[]={0.0022107877,5.9850154,0.15248518};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=66;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=168;
+			atlOffset=6.1035156e-005;
+		};
+		class Item66
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12.518066,591.51929,11133.828};
+						angles[]={6.1637535,5.9850154,6.157196};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=67;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=169;
+		};
+		class Item67
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-157.48193,614.93799,11242.775};
+						angles[]={6.275044,5.9850154,0.16259773};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=68;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=170;
+		};
+		class Item68
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17.518066,590.21875,11128.879};
+						angles[]={6.1558828,5.9850154,6.1323385};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=69;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=171;
+		};
+		class Item69
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-162.48193,613.84363,11237.826};
+						angles[]={6.2500529,5.9850154,0.1989287};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=70;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=172;
+		};
+		class Item70
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.518066,588.82434,11123.928};
+						angles[]={6.1558828,5.9850154,6.0960612};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=71;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=173;
+		};
+		class Item71
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-167.48193,612.58533,11232.875};
+						angles[]={6.2375946,5.9850154,0.22170961};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=72;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=174;
+			atlOffset=6.1035156e-005;
+		};
+		class Item72
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.518066,587.2157,11118.979};
+						angles[]={6.1480203,5.9850154,6.0960612};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=73;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=175;
+			atlOffset=6.1035156e-005;
+		};
+		class Item73
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-172.48193,611.17932,11227.926};
+						angles[]={6.230134,5.9850154,0.22881536};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=74;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=176;
+		};
+		class Item74
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={32.518066,585.47021,11114.029};
+						angles[]={6.1401663,5.9850154,6.0514235};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=75;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=177;
+			atlOffset=6.1035156e-005;
+		};
+		class Item75
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-177.48193,609.59387,11222.975};
+						angles[]={6.2118468,5.9850154,0.24961472};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=76;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=178;
+		};
+		class Item76
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-46.874512,609.68494,11179.291};
+						angles[]={6.2603292,5.985013,6.0699801};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=77;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=179;
+		};
+		class Item77
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-182.48193,608.0575,11218.025};
+						angles[]={6.2276354,5.9850154,0.22684591};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=78;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=180;
+		};
+		class Item78
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-190.69873,589.57483,11104.127};
+						angles[]={6.0898309,5.9850154,0.34025902};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=79;
+					type="Survivor1_DZ";
+					atlOffset=-6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=181;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item79
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-187.48193,606.60437,11213.076};
+						angles[]={6.2242131,5.9850154,0.23010388};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=80;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=182;
+		};
+		class Item80
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-185.69873,590.34827,11099.178};
+						angles[]={6.1211104,5.9850154,0.31243506};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=81;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=183;
+		};
+		class Item81
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-192.48193,605.11621,11208.125};
+						angles[]={6.2185383,5.9850154,0.2395947};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=82;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=184;
+		};
+		class Item82
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-180.69873,591.15405,11094.229};
+						angles[]={6.1211104,5.9850154,0.31243506};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=83;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=185;
+		};
+		class Item83
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-197.48193,603.55164,11203.176};
+						angles[]={6.2190804,5.9850154,0.24857531};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=84;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=186;
+		};
+		class Item84
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-175.69873,591.83228,11089.279};
+						angles[]={6.1369071,5.9850154,0.27398637};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=85;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=187;
+		};
+		class Item85
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-202.48193,601.88818,11198.225};
+						angles[]={6.2078891,5.9850154,0.25911248};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=86;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=188;
+		};
+		class Item86
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-170.69873,592.46436,11084.328};
+						angles[]={6.1358318,5.9850154,0.25180653};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=87;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=189;
+		};
+		class Item87
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-207.48193,600.078,11193.275};
+						angles[]={6.1925168,5.9850154,0.28859481};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=88;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=190;
+		};
+		class Item88
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-165.69873,593.01587,11079.377};
+						angles[]={6.1358318,5.9850154,0.25180653};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=89;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=191;
+		};
+		class Item89
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-212.48193,598.08301,11188.326};
+						angles[]={6.1912575,5.9850154,0.31008986};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=90;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=192;
+		};
+		class Item90
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-160.69873,593.42749,11074.428};
+						angles[]={6.1193199,5.9850154,0.23268677};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=91;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=193;
+		};
+		class Item91
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-217.48193,595.91003,11183.375};
+						angles[]={6.1742516,5.9850154,0.32559082};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=92;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=194;
+		};
+		class Item92
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-155.69873,593.73962,11069.479};
+						angles[]={6.0843821,5.9850154,0.21483734};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=93;
+					type="Survivor1_DZ";
+					atlOffset=-6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=195;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item93
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-222.48193,593.49939,11178.426};
+						angles[]={6.1552501,5.9850154,0.36604226};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=94;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=196;
+		};
+		class Item94
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-128.99072,617.62756,11261.869};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=95;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=197;
+		};
+		class Item95
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-227.48193,590.84863,11173.475};
+						angles[]={6.1443787,5.9850154,0.39380619};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=96;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=198;
+			atlOffset=6.1035156e-005;
+		};
+		class Item96
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-127.76025,617.6676,11262.176};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=97;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=199;
+		};
+		class Item97
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-232.48193,587.9895,11168.525};
+						angles[]={6.130827,5.9850154,0.40555263};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=98;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=200;
+		};
+		class Item98
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-117.48193,617.80896,11262.154};
+						angles[]={0.054884791,5.9850154,6.2828403};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=99;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=201;
+		};
+		class Item99
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-237.48193,584.83838,11163.576};
+						angles[]={6.1057343,0,0.44137457};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=100;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=202;
+		};
+		class Item100
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-112.48193,618.05554,11257.625};
+						angles[]={0.056864653,5.9850154,6.2580109};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=101;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=203;
+		};
+		class Item101
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-128.5542,617.71045,11260.576};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=102;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=204;
+		};
+		class Item102
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-107.48193,618.16443,11252.676};
+						angles[]={0.047246709,5.9850154,6.2580109};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=103;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=205;
+		};
+		class Item103
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-129.70752,617.47083,11264.414};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=104;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=206;
+		};
+		class Item104
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-102.48193,618.17029,11247.725};
+						angles[]={0.032484062,5.9850154,6.2311163};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=105;
+					type="Survivor1_DZ";
+					atlOffset=-6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=207;
+			atlOffset=-6.1035156e-005;
+		};
+		class Item105
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-130.08447,617.59973,11261.441};
+						angles[]={0.048959803,5.985013,0.044640731};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=106;
+					type="Survivor1_DZ";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=208;
+		};
+		class Item106
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-97.481934,618.07007,11242.775};
+						angles[]={0.032484062,5.9850154,6.2035527};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=107;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=209;
+		};
+		class Item107
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-142.48193,616.8894,11257.625};
+						angles[]={0.03249874,5.9850154,0.083011538};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=108;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=210;
+		};
+		class Item108
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-92.481934,617.75049,11237.826};
+						angles[]={0.015246725,5.9850154,6.2035527};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=109;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=211;
+		};
+		class Item109
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-145.86182,616.68604,11247.723};
+						angles[]={0.011840261,5.9850154,0.12299255};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=110;
+					type="Survivor1_DZ";
+					atlOffset=6.1035156e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=212;
+			atlOffset=6.1035156e-005;
+		};
+		class Item110
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={-87.481934,617.33252,11232.875};
+						angles[]={0.0020132356,5.9850154,6.1776628};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+						isPlayable=1;
+					};
+					id=111;
+					type="Survivor1_DZ";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=213;
+		};
+	};
+};
