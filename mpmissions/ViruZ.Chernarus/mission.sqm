@@ -56,7 +56,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="ViruZ Esseker";
+		briefingName="ViruZ Chernarus";
 		startWeather=0.1;
 		startWind=0.1;
 		startWaves=0.1;
