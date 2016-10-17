@@ -16,12 +16,6 @@ _crashDamage = getNumber (missionConfigFile >> "CfgSpawnCrashSite" >> "crashDama
 _staticcoords = getArray (missionConfigFile >> "CfgSpawnCrashSite" >> "staticcoords");
 if (getNumber (missionConfigFile >> "CfgSpawnCrashSite" >> "useStatic") == 1) then {_useStatic=true;} else {_useStatic=false;};
 
-/*_mapaatual = worldName;
-if (_mapaatual == "Bornholm") then {
-_spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 7.5;
-}else{
-_spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5;
-};*/
 
 _mapaatual = worldName;
 switch (_mapaatual) do {
@@ -30,7 +24,7 @@ switch (_mapaatual) do {
 	case "Bornholm": { _spawnRadius = 10000; };
 	case "Esseker": { _spawnRadius = 6000; };
 	case "Altis": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "Chernarus": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "Chernarus": { _spawnRadius = 7000; };
 	
 	};
 

@@ -12,8 +12,8 @@ class cfgVehiclesSpawner {
 	/// _timeToSpawn = time + _frequency + _timeAdjust;											// Конечный результат расчётов
 	
 	Civilian[] = {
-	{"RDS_Ikarus_Civ_01",1},
-    {"RDS_Ikarus_Civ_02",1},
+	//{"RDS_Ikarus_Civ_01",1},
+    //{"RDS_Ikarus_Civ_02",1},
     {"RDS_Lada_Civ_01",1},
     {"RDS_Lada_Civ_02",1},
     {"RDS_Lada_Civ_03",1},
@@ -25,16 +25,16 @@ class cfgVehiclesSpawner {
     {"RDS_Gaz24_Civ_01",1},
     {"RDS_Gaz24_Civ_02",1},
     {"RDS_Gaz24_Civ_03",1},
-    {"RDS_Golf4_Civ_01",1},
+    //{"RDS_Golf4_Civ_01",1},
     {"RDS_Octavia_Civ_01",3},
     {"RDS_Hatchback_01_F",3},
 	{"RDS_Van_01_transport_F",5},
-	{"RDS_Van_01_fuel_F",5},
+	//{"RDS_Van_01_fuel_F",5},
     {"RDS_Van_01_box_F",5},
-	{"SUV_01_Bardo_SRV",1},
-	{"SUV_01_Black_SRV",1},
-	{"SUV_01_Gray_SRV",1},
-	{"SUV_01_Orange_SRV",1},
+	//{"SUV_01_Bardo_SRV",1},
+	//{"SUV_01_Black_SRV",1},
+	//{"SUV_01_Gray_SRV",1},
+	//{"SUV_01_Orange_SRV",1},
 	{"Civilian_Offroad_01_white",1},
 	{"LandRover_TK_CIV_EP1",1}, 	//landhover do mod
 	{"BAF_Offroad_D", 1},
@@ -56,11 +56,11 @@ class cfgVehiclesSpawner {
 	{"O_Heli_Transport_04_F", 1}
 	};
 	Ships[] = {
-		{"C_Boat_Civil_01_F", 3},
-		{"C_Boat_Civil_01_police_F", 3},
-		{"C_Boat_Civil_01_rescue_F", 3},
-		{"O_Boat_Armed_01_hmg_F", 1},
-		{"I_Boat_Armed_01_minigun_F", 1},
-		{"B_Boat_Armed_01_minigun_F", 1}
+	{"C_Boat_Civil_01_F", 3},
+	{"C_Boat_Civil_01_police_F", 3},
+	{"C_Boat_Civil_01_rescue_F", 3},
+	{"O_Boat_Armed_01_hmg_F", 1},
+	{"I_Boat_Armed_01_minigun_F", 1},
+	{"B_Boat_Armed_01_minigun_F", 1}
 	};
 };

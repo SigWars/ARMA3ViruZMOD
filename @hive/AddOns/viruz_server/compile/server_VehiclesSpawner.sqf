@@ -13,7 +13,7 @@ switch (_mapaatual) do {
 	case "Bornholm": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 10000; };
 	case "Esseker": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 6000; };
 	case "Altis": { _spawnMarker = getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "Chernarus": { _spawnMarker	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "Chernarus": { _spawnMarker = getMarkerPos "center" ); _nearestRadius = 7000; };
 	
 	};
 

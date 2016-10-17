@@ -752,4 +752,5 @@ class CfgBuildingLoot {
 	#include "CfgBuildingPos.hpp" // Casas Esseker
 	#include "CfgBuildingPos_dos.hpp"
 	#include "CfgFurniturePos.hpp"
+	#include "CfgChernarus.hpp"
 };

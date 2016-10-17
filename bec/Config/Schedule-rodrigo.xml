@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Scheduler>
+
+	<!-- this job will start after 2 minutes and run forever with a 15 minutes interval between the jobs -->
+	<job id='0'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>000120</start>
+		<runtime>001500</runtime>
+		<loop>-1</loop>
+		<cmd>say -1 This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00</cmd>
+	</job>
+
+	<!-- 06:00 restart -->
+	<job id='1'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>05:50:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 10 minutes.</cmd>
+	</job>
+
+	<job id='2'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>05:55:00</start>
+		<runtime>000025</runtime>
+		<loop>5</loop>
+		<cmd>say -1 The server will auto restart in 5 minutes.</cmd>
+	</job>
+
+	<job id='3'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>05:59:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 60 seconds.</cmd>
+	</job>
+
+		<!-- 12:00 restart -->
+	<job id='4'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>11:50:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 10 minutes.</cmd>
+	</job>
+
+	<job id='5'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>11:55:00</start>
+		<runtime>000025</runtime>
+		<loop>5</loop>
+		<cmd>say -1 The server will auto restart in 5 minutes.</cmd>
+	</job>
+
+	<job id='6'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>11:59:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 60 seconds.</cmd>
+	</job>
+	
+		<!-- 18:00 restart -->
+	<job id='7'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>17:50:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 10 minutes.</cmd>
+	</job>
+
+	<job id='8'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>17:55:00</start>
+		<runtime>000025</runtime>
+		<loop>5</loop>
+		<cmd>say -1 The server will auto restart in 5 minutes.</cmd>
+	</job>
+
+	<job id='9'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>17:59:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 60 seconds.</cmd>
+	</job>
+	
+		<!-- 24:00 restart -->
+	<job id='10'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>23:50:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 10 minutes.</cmd>
+	</job>
+
+	<job id='11'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>23:55:00</start>
+		<runtime>000025</runtime>
+		<loop>5</loop>
+		<cmd>say -1 The server will auto restart in 5 minutes.</cmd>
+	</job>
+
+	<job id='12'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>23:59:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1 The server will auto restart in 60 seconds.</cmd>
+	</job>
+	
+	<job id='13'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>06:00:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>C:\ArmaPR\server\fechatudo.bat</cmd>
+	</job>
+	
+	<job id='14'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>12:00:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>C:\ArmaPR\server\fechatudo.bat</cmd>
+	</job>
+	
+	<job id='15'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>18:00:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>C:\ArmaPR\server\fechatudo.bat</cmd>
+	</job>
+	
+	<job id='16'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>00:00:00</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>C:\ArmaPR\server\fechatudo.bat</cmd>
+	</job>
+	
+</Scheduler>
