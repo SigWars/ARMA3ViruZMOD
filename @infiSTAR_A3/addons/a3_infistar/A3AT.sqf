@@ -10,7 +10,7 @@
 /* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
-VERSION_DATE_IS = '12012016#2271';
+VERSION_DATE_IS = '10012016#1311';
 infiSTAR_MAIN_CODE = "
 	_log = format['%1 <infiSTAR.de> Loading Menu...',time];systemchat _log;diag_log _log;
 	_mainMap = uiNamespace getVariable 'A3MAPICONS_mainMap';
@@ -1582,8 +1582,6 @@ infiSTAR_MAIN_CODE = "
 						};
 					};
 					"; if(_MOD == 'AltisLife')then{ infiSTAR_MAIN_CODE = infiSTAR_MAIN_CODE + "
-					if('==== VirtualItems ====' call ADMINLEVELACCESS)then
-					{
 						_ctrl lbAdd '==== VirtualItems ====';
 						if(!isNil 'infiSTAR_add_VirutalItems')then
 						{
@@ -1594,7 +1592,6 @@ infiSTAR_MAIN_CODE = "
 								_ctrl lbSetData [(lbsize _ctrl)-1,_x];
 							} forEach VIRTUAL_ITEMS_ARRAY;
 						};
-					};
 					"; }; infiSTAR_MAIN_CODE = infiSTAR_MAIN_CODE + "
 				};
 				case 1:{
@@ -5284,7 +5281,7 @@ infiSTAR_MAIN_CODE = "
 		cutText [_log, 'PLAIN DOWN'];
 		hint _log;
 	};
-	_stayLocalNumber = 2274;
+	_stayLocalNumber = 1314;
 	fnc_RscDisplayDebugPublic = {
 		disableSerialization;
 		createdialog 'RscDisplayDebugPublic';

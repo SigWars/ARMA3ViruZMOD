@@ -2,24 +2,24 @@
 	File: infiSTAR_config.sqf
 	Author: Chris(tian) "infiSTAR" Lorenzen
 	Contact: infiSTAR23@gmail.com
-
+	
 	Description:
 	Arma AntiHack & AdminTools - infiSTAR.de
-
+	
 	ON LINUX YOU NEED THIS PARAMETER: -profiles
 */
 
 
 /*
 	"_serverCommandPassword" is serverCommandPassword - in your servers config.cfg, needed for servercommands from client
-
+	
 	This is   VERY IMPORTANT   as it is needed to KICK & BAN people.
 */
 _serverCommandPassword = '27091995';
 
 /*
 	"_passwordAdmin" is passwordAdmin - in your servers config.cfg, needed for servercommands from client
-
+	
 	This is used to be able to use the "login" function ingame. Will log you in as Arma "Admin".
 */
 _passwordAdmin = '27091995';
@@ -43,19 +43,19 @@ _MOD = 'Other';
 _OPEN_ADMIN_MENU_KEY = 0x3B;
 
 /* What ESCAPE Menu shows */
-_ESCMNUTOP = 'AntiHack & AdminTools';
-_ESCMNUBOT = 'by infiSTAR.de';
-_BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
+_ESCMNUTOP = 'ViruzMod';
+_ESCMNUBOT = 'by SigWar';
+_BRIEFING_MSG = true;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
-_USE_RESTART_TIMER = true;	/* true or false */
-_RESTART_TIME_IN_M = 240;		/* restart time in minutes */
+_USE_RESTART_TIMER = false;	/* true or false */
+_RESTART_TIME_IN_M = 180;		/* restart time in minutes */
 _SHOW_TIMER_IN_MIN = [1,2,3,5,10];	/* minutes before restart, when message is shown */
 
 /* The following 3 options can be disabled by putting the value to -1. For example "_TGV = -1;" */
-/* Terrain Grid Value   */ _TGV = 35;		/* 50, 25, 12.5  */	/* if set to 50 grass will be very low for better client FPS.. default is 25 ~35 is good performance and grass :) */
-/* ViewDistance Value   */ _VDV = 1000;
-/* ObjectViewDistance   */ _VOV = 800;
+/* Terrain Grid Value   */ _TGV = -1;		/* 50, 25, 12.5  */	/* if set to 50 grass will be very low for better client FPS.. default is 25 ~35 is good performance and grass :) */
+/* ViewDistance Value   */ _VDV = -1;
+/* ObjectViewDistance   */ _VOV = -1;
 
 /* "_LogAdminActions": Sends actions done by each admin to the server to log it to the .txt file and .rpt file + sends it back to all other admins. */
 _LogAdminActions = true;	/* true or false */
@@ -66,37 +66,17 @@ _useTildMenu = false;	/* true or false */
 
 /* "_startAsNormal": if you add admin UIDs in here as well, they will start as almost "normal" player instead of with admin menu and such. */
 _startAsNormal =
-[];
+[
+	'0','0','0'
+];
 /* if one of the admins with the UIDs in "_startAsNormal" uses the !admin command to login as admin, it will be announced to ANYONE on the server if "_announce_adminstate_changed" is true. */
-_announce_adminstate_changed = false;	/* true or false */
+_announce_adminstate_changed = true;	/* true or false */
 
 
 _adminUIDandAccess =
 [
 	[
-		['76561198065694695', '76561198113211909'],	// Admins with UIDs in this Array have their Access defined in the array below.
-		[
-			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target',
-			'spectating','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','ShowGear',
-			'HealSelf','HealRepairNear','AddAmmoSelf','Freeze Target','UnFreeze Target',
-			'==== WeatherLord ====','==== VirtualItems ====',
-			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
-			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
-			'Eject','Eject Crew','Kill','Explode','Zeus','Force Disconnect',
-			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
-			'infiSTAR Player ESP 1','infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
-			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP',
-			'infiSTAR MapIcons','Vehicle Marker','DeadPlayer Marker',
-			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
-			'Disable Announces','Show FPS','Mass Message','DayTime','NightTime',
-			'Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
-			'Spawn Ammo','showinfo','Login as Arma Admin',
-			'Request Steam Name','Dump unique client variables',
-			'Restrain','Unrestrain'
-		]
-	],
-	[
-		[],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198113211909','76561197984348790','76561198065694695'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -119,7 +99,30 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		[],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['0'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		[
+			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
+			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
+			'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====','==== VirtualItems ====',
+			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
+			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
+			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
+			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
+			'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
+			'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
+			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
+			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
+			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
+			'Disable Announces','Show FPS','Give All Liscenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
+			'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
+			'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
+			'Request Steam Name','Dump unique client variables',
+			'Restrain','Unrestrain'
+		]
+	],
+	[
+		['0'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -183,12 +186,12 @@ _adminUIDandAccess =
 /*  Revert InventoryOpen */ _RIO = false;	/* true or false */	/* AltisLife only: Sets the custom InventoryOpened Handler */
 /*  Revert Killed EH     */ _RKH = false;	/* true or false */
 /*  "" Respawn Handler   */ _RRH = false;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
-/*  Revert Map EH        */ _RMEH = ['MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','Draw','MouseZChanged','MouseHolding','KeyDown','KeyUp'];
+/*  Revert Map EH        */ _RMEH = [/*'MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','Draw','MouseZChanged','MouseHolding','KeyDown','KeyUp'*/];
 /*  mod PlayerDisconnect */ _OPD = false;	/* true or false */
 /*  mod PlayerConnect    */ _OPC = false;	/* true or false */
 /*  custom _OPC Function */ _customOnPlayerConnected = '';	/* this needs to be a STRING - Example: _customOnPlayerConnected = '[_uid] spawn YOUR_FUNCTION;'; */
 
-/*  Do not change EH_Fired at all! */ _NO_EHF = false;	/*true or false */	/* obviously needs to be false if settings below are supposed to be used! */
+/*  Do not change EH_Fired at all! */ _NO_EHF = true;	/*true or false */	/* obviously needs to be false if settings below are supposed to be used! */
 /*  Use EH_Fired check   */ _EHF = false;	/* true or false */	/* Some mods revert the EventHandlers by default and can cause problems with this check. Tested on Epoch and AltisLife. */
 /*  custom _EHF Function */ _customFiredEventhandler = '';		/* CODE OR STRING */
 
@@ -270,7 +273,7 @@ _allowedIDDs =
 	-3000,-1900,-1500,-1338,-1300,-1200,-13,-8,-7,-6,-5,
 	0,4,5,6,8,12,18,24,46,49,54,55,63,70,129,131,148,151,154,163,169,174,262,602,999,
 	66600,77700,316000,
-
+	
 	// Different Displays from different mods/additions
 	// (might not be needed at all but I've gotten so many emails like "INFISTAR CLOSES ATM MENU ON ALTIS LIFE.. people need to read this file..)
 	160,
@@ -278,14 +281,7 @@ _allowedIDDs =
 	-1,-2,-3,-4,-5,-9,-10,-11,-12,-14,-15,-666,300,301,302,303,304,13377,
 	2620,2629,2621,2622,2624,2625,2630,2631,2632,601,2520,2523,2522,
 	2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2300,2400,2600,
-	2650,2700,2800,2900,3000,3100,3500,7300,38200,38300,38400,38500,39400,
-
-	//dyn market
-	7000,7100,
-	//placeable
-	20000,20001,
-	//purge
-	6847
+	2650,2700,2800,2900,3000,3100,3500,7300,38200,38300,38400,38500,39400
 ];
 
 
@@ -330,9 +326,9 @@ _badVarWhitelist =
 /* _blacklistedVariables: The AntiHack will check if one of these variables is existing for the client (only if _UBV = true;) */
 _blacklistedVariables =
 [
-	'arsenalOpened','BIS_fnc_arsenal_fullArsenal','n912','TBMKnlist','PLAY','ALTISLIFENEXT3','SOMEONE_dsfnsjf',
+	/*'arsenalOpened','BIS_fnc_arsenal_fullArsenal','n912','TBMKnlist','PLAY','ALTISLIFENEXT3','SOMEONE_dsfnsjf',
 	'FND_fnc_subs','setcash','Dummy_Ghost','entf','check_loaded','LY_Menu','AndysClosed','GOLDENS_GLOBAL_SHIT_YEAH','Fanatic_Main_Bereich',
-	'imgoingnukeyou',/*'fnc_usec_damageHandler',*/
+	'imgoingnukeyou','fnc_usec_damageHandler',
 	'Status_BB','TZ_BB_A3','TZ_BB_KB_Hint','TZ_BB_BindHandler','AH_BRAZZERS_TZ_BB','kamakazi_lystic','fuckfest','LYSTIC_MENU_LOADED','D_AMEZ_COA',
 	'Intro','Repair','Heal','T3le','TNK','I_like_turtles','BIGM','GMod','E3p','Does_Tonic_Like_to_take_Turtle_penis_in_the_ass_LODESTARS',
 	'lel','vars','PSwap','toLower_new','BCast','thfile','tlmadminrq','infiSTARBLACK','carepkg','scrollAim','BlurExec','sbpc','CALLRE',
@@ -421,7 +417,7 @@ _blacklistedVariables =
 	'riasgremory_Noobs','riasgremory_Bitches','riasgremory_Map_Markers','aKUnMmo','jenesuispasuncheateur_unamo','aKVoit','Loljesaispasquoiecriremdr','isseigremory','gremorysama','aKTaCu','aKCardetroy','aKGetKey','aKKillcursor',
 	'aKNoEscort','aKEscort','aKtroll','aKTPall','aKUnrestrain','aKNoEscortMe','aKNoTaze','aKJailplayer','aKLisense','riasgremory_titans_shit_reold','Tonic_merde','jaimepaslepoisin_HLEAL','TTTT_IIII___TTTTTTT_RAP_FR','TTTT_IIII___TTTTTTT_REPGA',
 	'TTTT_IIII___TTTTTTT_REPGAs','jaimepaslepoisin_HLEAL','Root_Main4','Root_Pistol4','Root_Rifle4','Root_Machinegun4','Root_Sniper4','Root_Launcher4','Root_Attachement4',
-	'VAR56401668319_secret','myPubVar','XXMMWW_boxquad','Init_Menu_Fury','A3RANDVARrpv1tpv','fnc_nestf','XXMMWW_keybinds','smissles','wooden_velo','vabox','bis_fnc_camera_target'
+	'VAR56401668319_secret','myPubVar','XXMMWW_boxquad','Init_Menu_Fury','A3RANDVARrpv1tpv','fnc_nestf','XXMMWW_keybinds','smissles','wooden_velo','vabox','bis_fnc_camera_target'*/
 ];
 
 
@@ -430,11 +426,11 @@ _UVC = false;	/* Use Vehicle Check(s) */
 _UVW = false;	/* if "_UVW = true;" then it checks all vehicles on the map. If their type is not in "_VehicleWhiteList", they are flagged as hacked in and destroyed. */
 _VehicleWhiteList =
 [
-	'AllowThisVehicle1','AllowThisVehicle2'
+	/*'AllowThisVehicle1','AllowThisVehicle2'*/
 ];
 _ForbiddenVehicles =
 [
-	'B_Heli_Light_01_armed_F','B_Heli_Attack_01_F','B_Plane_CAS_01_F','B_APC_Tracked_01_rcws_F','B_APC_Tracked_01_CRV_F','B_APC_Tracked_01_AA_F','B_MBT_01_cannon_F',
+	/*'B_Heli_Light_01_armed_F','B_Heli_Attack_01_F','B_Plane_CAS_01_F','B_APC_Tracked_01_rcws_F','B_APC_Tracked_01_CRV_F','B_APC_Tracked_01_AA_F','B_MBT_01_cannon_F',
 	'B_MBT_01_arty_F','B_MBT_01_mlrs_F','B_Boat_Armed_01_minigun_F','B_UAV_02_F','B_UAV_02_CAS_F','B_MRAP_01_gmg_F','B_MRAP_01_hmg_F','B_G_Offroad_01_armed_F',
 	'B_APC_Wheeled_01_cannon_F','B_MBT_01_TUSK_F','O_Heli_Light_02_F','O_Heli_Attack_02_F','O_Heli_Attack_02_black_F','O_Plane_CAS_02_F','O_APC_Tracked_02_cannon_F',
 	'O_APC_Tracked_02_AA_F','O_MBT_02_cannon_F','O_MBT_02_arty_F','O_Boat_Armed_01_hmg_F','O_UAV_02_CAS_F','O_UAV_02_F','O_MRAP_02_hmg_F','O_MRAP_02_gmg_F','O_G_Offroad_01_armed_F',
@@ -442,7 +438,7 @@ _ForbiddenVehicles =
 	'I_UAV_02_CAS_F','I_UAV_02_F','I_Boat_Armed_01_minigun_F','I_MBT_03_cannon_F','I_APC_tracked_03_cannon_F','I_Plane_Fighter_03_AA_F','I_Plane_Fighter_03_CAS_F','I_Heli_light_03_F',
 	'B_HMG_01_F','O_HMG_01_F','I_HMG_01_F','B_HMG_01_high_F','O_HMG_01_high_F','I_HMG_01_high_F','B_HMG_01_A_F','O_HMG_01_A_F','I_HMG_01_A_F','B_Mortar_01_F','O_Mortar_01_F',
 	'I_Mortar_01_F','I_G_Mortar_01_F','B_G_Mortar_01_F','O_G_Mortar_01_F','B_GMG_01_F','O_GMG_01_F','I_GMG_01_F','B_GMG_01_high_F','O_GMG_01_high_F','I_GMG_01_high_F','B_GMG_01_A_F',
-	'O_GMG_01_A_F','I_GMG_01_A_F','B_static_AA_F','O_static_AA_F','I_static_AA_F','B_static_AT_F','O_static_AT_F','I_static_AT_F'
+	'O_GMG_01_A_F','I_GMG_01_A_F','B_static_AA_F','O_static_AA_F','I_static_AA_F','B_static_AT_F','O_static_AT_F','I_static_AT_F'*/
 ];
 
 
@@ -450,18 +446,18 @@ _UFI = false;	/* Use "_ForbiddenItems"/Item Check(s) */
 _UIW = false;	/* if "_UIW = true;" then it checks if the items the individual player has are in "_ItemWhiteList" */
 _ItemWhiteList =
 [
-	'AllowThisItem1','AllowThisItem2'
+	/*'AllowThisItem1','AllowThisItem2'*/
 ];
 _ForbiddenItems =
 [
-	'autocannon_Base_F','autocannon_30mm','autocannon_35mm','autocannon_40mm_CTWS','autocannon_30mm_CTWS','Bomb_04_Plane_CAS_01_F',
+	/*'autocannon_Base_F','autocannon_30mm','autocannon_35mm','autocannon_40mm_CTWS','autocannon_30mm_CTWS','Bomb_04_Plane_CAS_01_F',
 	'Bomb_03_Plane_CAS_02_F','cannon_105mm','cannon_120mm','cannon_120mm_long','cannon_125mm','Cannon_30mm_Plane_CAS_02_F','gatling_20mm',
 	'gatling_25mm','gatling_30mm','Gatling_30mm_Plane_CAS_01_F','GBU12BombLauncher','GMG_20mm','GMG_40mm','GMG_UGV_40mm','HMG_127_MBT',
 	'HMG_127','HMG_127_APC','HMG_01','HMG_M2','HMG_NSVT','LMG_Minigun2','LMG_RCWS','LMG_M200','LMG_Minigun','LMG_Minigun_heli','LMG_coax',
 	'Missile_AGM_02_Plane_CAS_01_F','Missile_AA_04_Plane_CAS_01_F','Missile_AA_03_Plane_CAS_02_F','Missile_AGM_01_Plane_CAS_02_F','missiles_DAGR',
 	'missiles_DAR','missiles_ASRAAM','missiles_SCALPEL','missiles_titan','missiles_titan_static','missiles_Zephyr','Mk82BombLauncher','mortar_82mm',
 	'mortar_155mm_AMOS','rockets_Skyfire','rockets_230mm_GAT','Rocket_04_HE_Plane_CAS_01_F','Rocket_04_AP_Plane_CAS_01_F','Rocket_03_HE_Plane_CAS_02_F',
-	'Rocket_03_AP_Plane_CAS_02_F','Twin_Cannon_20mm'
+	'Rocket_03_AP_Plane_CAS_02_F','Twin_Cannon_20mm'*/
 ];
 /*
 	"_ForbiddenOnEpochOnly" Array has some items that Epoch devs removed and/or replaced with their own items.
@@ -478,11 +474,11 @@ _UFA = false;	/* Use Ammo Check(s) */
 _UAW = false;	/* if "_UAW = true;" then it checks if the ammo used by the individual player is in "_AmmoWhiteList" */
 _AmmoWhiteList =
 [
-	'AllowThisAmmo1','AllowThisAmmo2'
+	/*'AllowThisAmmo1','AllowThisAmmo2'*/
 ];
 _ForbiddenAmmo =
 [
-	'200Rnd_65x39_Belt','200Rnd_65x39_Belt_Tracer_Red','200Rnd_65x39_Belt_Tracer_Green','200Rnd_65x39_Belt_Tracer_Yellow','2000Rnd_65x39_Belt','2000Rnd_65x39_Belt_Green',
+	/*'200Rnd_65x39_Belt','200Rnd_65x39_Belt_Tracer_Red','200Rnd_65x39_Belt_Tracer_Green','200Rnd_65x39_Belt_Tracer_Yellow','2000Rnd_65x39_Belt','2000Rnd_65x39_Belt_Green',
 	'2000Rnd_65x39_Belt_Yellow','1000Rnd_65x39_Belt','1000Rnd_65x39_Belt_Green','1000Rnd_65x39_Belt_Yellow','2000Rnd_65x39_Belt_Tracer_Red','2000Rnd_65x39_Belt_Tracer_Green',
 	'2000Rnd_65x39_Belt_Tracer_Yellow','1000Rnd_65x39_Belt_Tracer_Red','1000Rnd_65x39_Belt_Tracer_Green','1000Rnd_65x39_Belt_Tracer_Yellow','500Rnd_127x99_mag','500Rnd_127x99_mag_Tracer_Red',
 	'500Rnd_127x99_mag_Tracer_Green','500Rnd_127x99_mag_Tracer_Yellow','200Rnd_127x99_mag','200Rnd_127x99_mag_Tracer_Green','200Rnd_127x99_mag_Tracer_Yellow',
@@ -507,7 +503,7 @@ _ForbiddenAmmo =
 	'7Rnd_Rocket_04_HE_F','7Rnd_Rocket_04_AP_F','2Rnd_Bomb_03_F','4Rnd_Bomb_04_F','4Rnd_Missile_AGM_01_F','20Rnd_Rocket_03_HE_F','500Rnd_Cannon_30mm_Plane_CAS_02_F','20Rnd_Rocket_03_AP_F',
 	'2Rnd_Missile_AA_03_F','500Rnd_127x99_mag','500Rnd_127x99_mag_Tracer_Red','500Rnd_127x99_mag_Tracer_Green','500Rnd_127x99_mag_Tracer_Yellow','200Rnd_127x99_mag',
 	'200Rnd_127x99_mag_Tracer_Red','200Rnd_127x99_mag_Tracer_Green','200Rnd_127x99_mag_Tracer_Yellow','40Rnd_105mm_APFSDS','40Rnd_105mm_APFSDS_T_Red','40Rnd_105mm_APFSDS_T_Green',
-	'40Rnd_105mm_APFSDS_T_Yellow','20Rnd_105mm_HEAT_MP','20Rnd_105mm_HEAT_MP_T_Red','20Rnd_105mm_HEAT_MP_T_Green','20Rnd_105mm_HEAT_MP_T_Yellow'
+	'40Rnd_105mm_APFSDS_T_Yellow','20Rnd_105mm_HEAT_MP','20Rnd_105mm_HEAT_MP_T_Red','20Rnd_105mm_HEAT_MP_T_Green','20Rnd_105mm_HEAT_MP_T_Yellow'*/
 ];
 
 
@@ -518,7 +514,7 @@ _ForbiddenAmmo =
 */
 _SupportBox1Content =
 [
-	'ItemMap',['ItemGPS',5],'ItemWatch'
+	['Viruz_CinderBlock',50],['Viruz_Woodboard',50],['Viruz_Woodboard',50],['ItemWire',10],['ItemSandbag',30],['PartGeneric',50],['Viruz_Laptop',2],['FoodMRE',20],['ItemSodaLemonade',20]
 ];
 
 _SupportBox2Content =
@@ -602,7 +598,7 @@ infiSTAR_IS_RUN_ON_THIS_SERVER = time;
 EPOCH_server_isPAdmin=compileFinal 'true';
 diag_log format['<infiSTAR.de> %1 - run.sqf - finaled EPOCH_server_isPAdmin: %2',time,EPOCH_server_isPAdmin];
 /* ********************************************************************************* */
-/* #2271 */
+/* #1311 */
 /* ********************************************************************************* */
 try {
 	_cfgPatches = configFile >> 'CfgPatches';
@@ -640,5 +636,5 @@ catch
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyright?? 2011 - 2016 All rights reserved.************** */
+/* **************infiSTAR Copyright®© 2011 - 2016 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */

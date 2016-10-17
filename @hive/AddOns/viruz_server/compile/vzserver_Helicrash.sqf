@@ -30,6 +30,8 @@ switch (_mapaatual) do {
 	case "Bornholm": { _spawnRadius = 10000; };
 	case "Esseker": { _spawnRadius = 6000; };
 	case "Altis": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "Chernarus": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	
 	};
 
 
@@ -103,7 +105,7 @@ while {true} do {
 		if(_useStatic) then {
 			_position = _staticcoords call BIS_fnc_selectRandom;
 		} else {
-			_position = [getMarkerPos "center",0,_spawnRadius,0,1,5000,0] call BIS_fnc_findSafePos;
+			_position = [getMarkerPos "center",0,_spawnRadius,0,0,5000,0] call BIS_fnc_findSafePos;
 		};
 		//DEFAULT: GET COORDS FROM BIS_fnc_findSafePos, COMMENT OUT IF YOU USE _STATICCOORDS
 		

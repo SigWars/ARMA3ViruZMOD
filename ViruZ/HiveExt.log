@@ -1,0 +1,772 @@
+2016-10-17 14:46:41 HiveExt: [Information] HiveExt 0.96
+2016-10-17 14:46:41 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.14-log
+2016-10-17 14:46:41 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.14-log
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Error] Skipping ObjectID 2778 load because of invalid data in db
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["ObjectStreamStart",55]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["CustomStreamStart",56]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2769","RDS_Lada_Civ_02","0",[241.152,[14767.5,13701.3,0.02]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_lada"],[11]]],[["wheel_1_2_steering",0.4],["wheel_2_1_steering",0.4],["wheel_2_2_steering",0.6],["palivo",0.6],["motor",0.2],["glass1",0.6],["glass4",0.8],["glass5",0.8],["glass6",0.6],["sklo predni P",0.2],["sklo predni L",1],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_4_steering",0.6]],0.662,0.039]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2769,"B",0,"[]","[]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2779","Civilian_Offroad_01_white","0",[143.053,[6073.23,2994.01,2.889]],[[["CUP_sgun_M1014","CUP_arifle_CZ805_A1","CUP_lmg_L110A1","Binocular","hgun_Rook40_snds_F","CUP_lmg_Mk48_wdl","HandFlashlight"],[1,1,1,1,2,1,1]],[["CUP_8Rnd_B_Beneli_74Pellets",8],["Battery_mag",7200],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSodaDiet",1],["Battery_mag",7200],["ItemWaterbottleUnfilled",1],["FoodMRE",1],["FoodCanSpaghetti1",1],["Viruz_Serrote",1],["PartWoodPile",1],["ItemJerrycan",20],["Viruz_Woodboard",10],["Viruz_Woodboard",10],["PartGlass",1],["ItemMatchbox",1],["CUP_8Rnd_B_Beneli_74Pellets",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSandbag",1],["ItemWire",1],["ItemMorphine",1],["ItemMorphine",1],["PartGlass",1],["PartEngine",1],["Viruz_Serrote",1],["Viruz_Wrench",1],["PartWheel",1],["PartEngine",1],["FoodCanChickenSoup",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemWaterbottleUnfilled",1],["FMradio_Mag",1],["FoodCanWBBeansEmpty",1],["Viruz_HandCan",1],["FoodCanPeaSoupEmpty",1],["30Rnd_556x45_Stanag",30],["CUP_8Rnd_B_Beneli_74Pellets",8],["Hatchet_Swing",100000],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100]],[["CUP_muzzle_mfsup_SCAR_L"],[1]],[[],[]]],[["wheel_1_1_steering",1],["wheel_1_2_steering",0.036],["wheel_2_1_steering",1],["wheel_2_2_steering",0.03],["palivo",0.8],["motor",0.016],["karoserie",0.07],["glass1",0.609],["glass2",0.155],["sklo predni L",0.2],["glass3",0.8],["glass5",0.4],["glass6",0.8],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_3_steering",0.8]],0.956,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2778,"B",0,"[]","[]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2779,"B",0,"[]","[]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2780","RDS_S1203_Civ_01","0",[210.388,[6345.55,2463.95,-0.001]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_s1203"],[9]]],[["wheel_1_1_steering",0.4],["wheel_2_1_steering",0.8],["palivo",0.8],["glass2",0.8],["glass3",0.2],["glass4",0.8],["glass6",0.4],["glass8",0.8],["sklo predni P",0.2],["wheel_2_4_steering",0.8],["wheel_2_3_steering",0.4]],0.746,0.035]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2780,"B",0,"[]","[]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2814","TentStorageDome","28",[283,[6051.61,3021.99,0.006]],[[[],[]],[],[[],[]],[[],[]]],[],0.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2814,"B",1,"[]","[]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2816","CamoNet_BLUFOR_F","13",[359,[6051.56,3021.49,0.033]],[],[],0.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2816,"B",0,"[]","[]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2817","VIRUZ_WoodWall_New","28",[54.217,[6068.39,2996.13,0.863]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2817,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.811235,0.584721,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2818","VIRUZ_WoodWall_New","28",[144.217,[6072.08,2995.53,1.222]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2818,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584721,-0.811235,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2822","VIRUZ_Woodfloor_New","28",[54.215,[6074.81,3000.75,2.327]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2822,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2823","VIRUZ_WoodRamp_New","28",[144.215,[6070.69,3006.48,0.099]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2823,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2824","VIRUZ_Woodfloor_New","10",[234.215,[6070.54,2997.67,2.216]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2824,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2825","VIRUZ_WoodWall_New","10",[54.217,[6076.96,3002.3,4.093]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2825,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811238,0.584716,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2826","VIRUZ_Woodfloor_New","10",[144.217,[6077.9,2996.47,2.995]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2826,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584717,-0.811237,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2828","VIRUZ_WoodWall_New","10",[234.215,[6068.39,2996.13,3.863]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2828,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2829","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,4.609]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2829,"B76561197988048248",1,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2830","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,4.982]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2830,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2833","VIRUZ_WoodWall_New","10",[324.215,[6068.99,2999.81,3.51]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2833,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2834","VIRUZ_WoodDoor_new","10",[16.337,[6069.33,3011.58,1.643]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2834,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.281292,0.959622,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2835","VIRUZ_WoodGate_new","10",[324.215,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2835,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2836","VIRUZ_WoodGate_new","10",[144.217,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2836,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584716,-0.811238,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2837","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.48,4.643]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2837,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584744,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2838","VIRUZ_Woodfloor_New","10",[234.215,[6073.62,2993.39,5.935]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2838,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2839","VIRUZ_Woodfloor_New","10",[54.215,[6070.54,2997.67,5.216]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2839,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2840","VIRUZ_WoodWall_New","10",[297.414,[6071.39,2996.73,7.229]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2840,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.887706,0.460411,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2841","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,7.982]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2841,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2842","VIRUZ_WoodWindow_new","10",[144.215,[6079.45,2994.33,7.99]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2842,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2843","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,7.609]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2843,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2844","VIRUZ_Woodfloor_New","10",[234.217,[6074.81,3000.75,5.327]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2844,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2845","VIRUZ_WoodGate_new","10",[144.215,[6068.99,2999.81,3.51]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2845,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2846","VIRUZ_WoodDoor_new","10",[144.217,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2846,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584716,-0.811238,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2847","VIRUZ_WoodWindow_new","10",[256.477,[6063.64,3004.74,0.251]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2847,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.972276,-0.233836,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2848","VIRUZ_WoodWall_New","28",[234.215,[6073.87,3006.58,0.514]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2848,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2849","VIRUZ_WoodRamp_New","10",[144.215,[6066.41,3003.4,-0.1]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2849,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2850","VIRUZ_WoodWall_New","28",[54.217,[6065.31,3000.41,0.12]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2850,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811235,0.584721,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2851","VIRUZ_WoodWall_New","10",[324.215,[6072.08,2995.53,1.222]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2851,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584744,0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2852","VIRUZ_WoodWall_New","10",[234.217,[6080.08,2997.82,1.624]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2852,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2853","VIRUZ_WoodWall_New","28",[234.217,[6081.49,2997.05,1.0]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2853,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2854","VIRUZ_WoodGate_new","10",[54.215,[6068.39,2996.13,0.863]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2854,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2855","VIRUZ_WoodWall_New","10",[54.215,[6080.04,2998.02,1.713]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2855,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2856","VIRUZ_WoodWall_New","10",[144.215,[6079.45,2994.33,1.99]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2856,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2857","VIRUZ_WoodWall_New","10",[324.217,[6075.16,2991.25,1.982]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2857,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584717,0.811237,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2858","VIRUZ_WoodGate_new","10",[54.215,[6071.48,2991.85,1.609]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2858,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2859","Land_PortableLight_single_F","28",[341.55,[6068.92,2997.24,5.271]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2859,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.31647,0.948602,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2860","VIRUZ_WoodWindow_new","10",[324.215,[6072.08,2995.53,7.222]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2860,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2861","VIRUZ_WoodWindow_new","10",[324.215,[6076.36,2998.62,7.298]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2861,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2862","VIRUZ_WoodWindow_new","10",[234.215,[6080.04,2998.02,7.713]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2862,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2863","MetalBarrel_burning_F","28",[316.369,[6072.41,3001.59,2.52]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2863,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.690014,0.723796,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2864","Land_PortableLight_single_F","10",[299.562,[6061.17,3008.49,0.882]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2864,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.869826,0.493358,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2865","Land_PortableLight_single_F","28",[107.619,[6081.23,2995.93,3.422]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2865,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.953091,-0.302683,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2866","MetalBarrel_burning_F","28",[325.269,[6072.26,3001.62,2.172]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2866,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.569721,0.821838,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2867","Land_PortableLight_single_F","28",[8.896,[6075.36,3004.19,2.24]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2867,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.154636,0.987972,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2868","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.47,7.644]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2868,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2869","VIRUZ_Woodfloor_New","10",[234.215,[6073.61,2993.38,8.935]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2869,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2870","VIRUZ_WoodWindow_new","10",[54.215,[6080.04,2998.02,10.713]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2870,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2871","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.47,10.644]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2871,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:46:41 HiveExt: [Information] Result: ["OBJ","2872","Land_Portable_generator_F","10",[334.107,[6073.26,3004.31,-0.098]],[],[],1.0,0.0]
+2016-10-17 14:46:41 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:46:41 HiveExt: [Information] Result: [2872,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.436698,0.899608,0],[0,0,1]]"]
+2016-10-17 14:47:01 HiveExt: [Information] Method: 307 Params: 
+2016-10-17 14:47:01 HiveExt: [Information] Result: ["PASS",[2016,10,17,13,47]]
+2016-10-17 14:47:21 HiveExt: [Information] Method: 305 Params: 2769:[241.14,[14767.5,13701.3,0.02]]:0.662:
+2016-10-17 14:47:21 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:47:21 HiveExt: [Information] Method: 303 Params: 2769:[[[],[]],[],[[],[]],[[RDS_Sparewheel_lada],[11]]]:
+2016-10-17 14:47:21 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:47:21 HiveExt: [Information] Method: 306 Params: 2769:[[wheel_1_2_steering,0.4],[wheel_2_1_steering,0.4],[wheel_2_2_steering,0.6],[palivo,0.6],[motor,0.2],[glass1,0.6],[glass4,0.8],[glass5,0.8],[glass6,0.6],[sklo predni P,0.2],[sklo predni L,1],[wheel_1_4_steering,0.2],[wheel_1_3_steering,0.4],[wheel_2_4_steering,0.6]]:0.039:
+2016-10-17 14:47:21 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:47:21 HiveExt: [Information] Method: 305 Params: 2780:[210.39,[6345.55,2463.94,-0.001]]:0.746:
+2016-10-17 14:47:21 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:47:21 HiveExt: [Information] Method: 303 Params: 2780:[[[],[]],[],[[],[]],[[RDS_Sparewheel_s1203],[9]]]:
+2016-10-17 14:47:21 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:47:21 HiveExt: [Information] Method: 306 Params: 2780:[[wheel_1_1_steering,0.4],[wheel_2_1_steering,0.8],[palivo,0.8],[glass2,0.8],[glass3,0.2],[glass4,0.8],[glass6,0.4],[glass8,0.8],[sklo predni P,0.2],[wheel_2_4_steering,0.8],[wheel_2_3_steering,0.4]]:0.035:
+2016-10-17 14:47:21 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:53:31 HiveExt: [Information] HiveExt 0.96
+2016-10-17 14:53:31 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.14-log
+2016-10-17 14:53:31 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.14-log
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Error] Skipping ObjectID 2778 load because of invalid data in db
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["ObjectStreamStart",55]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["CustomStreamStart",56]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2769","RDS_Lada_Civ_02","0",[241.14,[14767.5,13701.3,0.02]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_lada"],[11]]],[["wheel_1_2_steering",0.4],["wheel_2_1_steering",0.4],["wheel_2_2_steering",0.6],["palivo",0.6],["motor",0.2],["glass1",0.6],["glass4",0.8],["glass5",0.8],["glass6",0.6],["sklo predni P",0.2],["sklo predni L",1],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_4_steering",0.6]],0.662,0.039]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2769,"B",0,"[]","[]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2779","Civilian_Offroad_01_white","0",[143.053,[6073.23,2994.01,2.889]],[[["CUP_sgun_M1014","CUP_arifle_CZ805_A1","CUP_lmg_L110A1","Binocular","hgun_Rook40_snds_F","CUP_lmg_Mk48_wdl","HandFlashlight"],[1,1,1,1,2,1,1]],[["CUP_8Rnd_B_Beneli_74Pellets",8],["Battery_mag",7200],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSodaDiet",1],["Battery_mag",7200],["ItemWaterbottleUnfilled",1],["FoodMRE",1],["FoodCanSpaghetti1",1],["Viruz_Serrote",1],["PartWoodPile",1],["ItemJerrycan",20],["Viruz_Woodboard",10],["Viruz_Woodboard",10],["PartGlass",1],["ItemMatchbox",1],["CUP_8Rnd_B_Beneli_74Pellets",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSandbag",1],["ItemWire",1],["ItemMorphine",1],["ItemMorphine",1],["PartGlass",1],["PartEngine",1],["Viruz_Serrote",1],["Viruz_Wrench",1],["PartWheel",1],["PartEngine",1],["FoodCanChickenSoup",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemWaterbottleUnfilled",1],["FMradio_Mag",1],["FoodCanWBBeansEmpty",1],["Viruz_HandCan",1],["FoodCanPeaSoupEmpty",1],["30Rnd_556x45_Stanag",30],["CUP_8Rnd_B_Beneli_74Pellets",8],["Hatchet_Swing",100000],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100]],[["CUP_muzzle_mfsup_SCAR_L"],[1]],[[],[]]],[["wheel_1_1_steering",1],["wheel_1_2_steering",0.036],["wheel_2_1_steering",1],["wheel_2_2_steering",0.03],["palivo",0.8],["motor",0.016],["karoserie",0.07],["glass1",0.609],["glass2",0.155],["sklo predni L",0.2],["glass3",0.8],["glass5",0.4],["glass6",0.8],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_3_steering",0.8]],0.956,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2778,"B",0,"[]","[]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2779,"B",0,"[]","[]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2780","RDS_S1203_Civ_01","0",[210.39,[6345.55,2463.94,-0.001]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_s1203"],[9]]],[["wheel_1_1_steering",0.4],["wheel_2_1_steering",0.8],["palivo",0.8],["glass2",0.8],["glass3",0.2],["glass4",0.8],["glass6",0.4],["glass8",0.8],["sklo predni P",0.2],["wheel_2_4_steering",0.8],["wheel_2_3_steering",0.4]],0.746,0.035]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2780,"B",0,"[]","[]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2814","TentStorageDome","28",[283,[6051.61,3021.99,0.006]],[[[],[]],[],[[],[]],[[],[]]],[],0.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2814,"B",1,"[]","[]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2816","CamoNet_BLUFOR_F","13",[359,[6051.56,3021.49,0.033]],[],[],0.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2816,"B",0,"[]","[]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2817","VIRUZ_WoodWall_New","28",[54.217,[6068.39,2996.13,0.863]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2817,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.811235,0.584721,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2818","VIRUZ_WoodWall_New","28",[144.217,[6072.08,2995.53,1.222]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2818,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584721,-0.811235,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2822","VIRUZ_Woodfloor_New","28",[54.215,[6074.81,3000.75,2.327]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2822,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2823","VIRUZ_WoodRamp_New","28",[144.215,[6070.69,3006.48,0.099]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2823,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2824","VIRUZ_Woodfloor_New","10",[234.215,[6070.54,2997.67,2.216]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2824,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2825","VIRUZ_WoodWall_New","10",[54.217,[6076.96,3002.3,4.093]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2825,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811238,0.584716,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2826","VIRUZ_Woodfloor_New","10",[144.217,[6077.9,2996.47,2.995]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2826,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584717,-0.811237,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2828","VIRUZ_WoodWall_New","10",[234.215,[6068.39,2996.13,3.863]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2828,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2829","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,4.609]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2829,"B76561197988048248",1,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2830","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,4.982]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2830,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2833","VIRUZ_WoodWall_New","10",[324.215,[6068.99,2999.81,3.51]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2833,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2834","VIRUZ_WoodDoor_new","10",[16.337,[6069.33,3011.58,1.643]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2834,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.281292,0.959622,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2835","VIRUZ_WoodGate_new","10",[324.215,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2835,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2836","VIRUZ_WoodGate_new","10",[144.217,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2836,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584716,-0.811238,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2837","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.48,4.643]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2837,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584744,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2838","VIRUZ_Woodfloor_New","10",[234.215,[6073.62,2993.39,5.935]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2838,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2839","VIRUZ_Woodfloor_New","10",[54.215,[6070.54,2997.67,5.216]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2839,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2840","VIRUZ_WoodWall_New","10",[297.414,[6071.39,2996.73,7.229]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2840,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.887706,0.460411,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2841","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,7.982]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2841,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2842","VIRUZ_WoodWindow_new","10",[144.215,[6079.45,2994.33,7.99]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2842,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2843","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,7.609]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2843,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2844","VIRUZ_Woodfloor_New","10",[234.217,[6074.81,3000.75,5.327]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2844,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2845","VIRUZ_WoodGate_new","10",[144.215,[6068.99,2999.81,3.51]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2845,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2846","VIRUZ_WoodDoor_new","10",[144.217,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2846,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584716,-0.811238,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2847","VIRUZ_WoodWindow_new","10",[256.477,[6063.64,3004.74,0.251]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2847,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.972276,-0.233836,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2848","VIRUZ_WoodWall_New","28",[234.215,[6073.87,3006.58,0.514]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2848,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2849","VIRUZ_WoodRamp_New","10",[144.215,[6066.41,3003.4,-0.1]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2849,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2850","VIRUZ_WoodWall_New","28",[54.217,[6065.31,3000.41,0.12]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2850,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811235,0.584721,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2851","VIRUZ_WoodWall_New","10",[324.215,[6072.08,2995.53,1.222]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2851,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584744,0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2852","VIRUZ_WoodWall_New","10",[234.217,[6080.08,2997.82,1.624]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2852,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2853","VIRUZ_WoodWall_New","28",[234.217,[6081.49,2997.05,1.0]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2853,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2854","VIRUZ_WoodGate_new","10",[54.215,[6068.39,2996.13,0.863]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2854,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2855","VIRUZ_WoodWall_New","10",[54.215,[6080.04,2998.02,1.713]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2855,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2856","VIRUZ_WoodWall_New","10",[144.215,[6079.45,2994.33,1.99]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2856,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2857","VIRUZ_WoodWall_New","10",[324.217,[6075.16,2991.25,1.982]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2857,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584717,0.811237,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2858","VIRUZ_WoodGate_new","10",[54.215,[6071.48,2991.85,1.609]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2858,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2859","Land_PortableLight_single_F","28",[341.55,[6068.92,2997.24,5.271]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2859,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.31647,0.948602,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2860","VIRUZ_WoodWindow_new","10",[324.215,[6072.08,2995.53,7.222]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2860,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2861","VIRUZ_WoodWindow_new","10",[324.215,[6076.36,2998.62,7.298]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2861,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2862","VIRUZ_WoodWindow_new","10",[234.215,[6080.04,2998.02,7.713]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2862,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2863","MetalBarrel_burning_F","28",[316.369,[6072.41,3001.59,2.52]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2863,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.690014,0.723796,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2864","Land_PortableLight_single_F","10",[299.562,[6061.17,3008.49,0.882]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2864,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.869826,0.493358,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2865","Land_PortableLight_single_F","28",[107.619,[6081.23,2995.93,3.422]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2865,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.953091,-0.302683,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2866","MetalBarrel_burning_F","28",[325.269,[6072.26,3001.62,2.172]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2866,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.569721,0.821838,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2867","Land_PortableLight_single_F","28",[8.896,[6075.36,3004.19,2.24]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2867,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.154636,0.987972,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2868","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.47,7.644]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2868,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2869","VIRUZ_Woodfloor_New","10",[234.215,[6073.61,2993.38,8.935]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2869,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2870","VIRUZ_WoodWindow_new","10",[54.215,[6080.04,2998.02,10.713]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2870,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2871","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.47,10.644]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2871,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 14:53:31 HiveExt: [Information] Result: ["OBJ","2872","Land_Portable_generator_F","10",[334.107,[6073.26,3004.31,-0.098]],[],[],1.0,0.0]
+2016-10-17 14:53:31 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 14:53:31 HiveExt: [Information] Result: [2872,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.436698,0.899608,0],[0,0,1]]"]
+2016-10-17 14:53:52 HiveExt: [Information] Method: 307 Params: 
+2016-10-17 14:53:52 HiveExt: [Information] Result: ["PASS",[2016,10,17,13,53]]
+2016-10-17 14:54:12 HiveExt: [Information] Method: 305 Params: 2769:[241.132,[14767.5,13701.3,0.021]]:0.662:
+2016-10-17 14:54:12 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:54:12 HiveExt: [Information] Method: 303 Params: 2769:[[[],[]],[],[[],[]],[[RDS_Sparewheel_lada],[12]]]:
+2016-10-17 14:54:12 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:54:12 HiveExt: [Information] Method: 306 Params: 2769:[[wheel_1_2_steering,0.4],[wheel_2_1_steering,0.4],[wheel_2_2_steering,0.6],[palivo,0.6],[motor,0.2],[glass1,0.6],[glass4,0.8],[glass5,0.8],[glass6,0.6],[sklo predni P,0.2],[sklo predni L,1],[wheel_1_4_steering,0.2],[wheel_1_3_steering,0.4],[wheel_2_4_steering,0.6]]:0.039:
+2016-10-17 14:54:12 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:54:12 HiveExt: [Information] Method: 305 Params: 2780:[210.392,[6345.55,2463.93,-0.001]]:0.746:
+2016-10-17 14:54:12 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:54:12 HiveExt: [Information] Method: 303 Params: 2780:[[[],[]],[],[[],[]],[[RDS_Sparewheel_s1203],[9]]]:
+2016-10-17 14:54:12 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 14:54:12 HiveExt: [Information] Method: 306 Params: 2780:[[wheel_1_1_steering,0.4],[wheel_2_1_steering,0.8],[palivo,0.8],[glass2,0.8],[glass3,0.2],[glass4,0.8],[glass6,0.4],[glass8,0.8],[sklo predni P,0.2],[wheel_2_4_steering,0.8],[wheel_2_3_steering,0.4]]:0.035:
+2016-10-17 14:54:12 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:02:53 HiveExt: [Information] HiveExt 0.96
+2016-10-17 15:02:53 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.14-log
+2016-10-17 15:02:53 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.14-log
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Error] Skipping ObjectID 2778 load because of invalid data in db
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["ObjectStreamStart",55]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["CustomStreamStart",56]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2769","RDS_Lada_Civ_02","0",[241.132,[14767.5,13701.3,0.021]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_lada"],[12]]],[["wheel_1_2_steering",0.4],["wheel_2_1_steering",0.4],["wheel_2_2_steering",0.6],["palivo",0.6],["motor",0.2],["glass1",0.6],["glass4",0.8],["glass5",0.8],["glass6",0.6],["sklo predni P",0.2],["sklo predni L",1],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_4_steering",0.6]],0.662,0.039]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2769,"B",0,"[]","[]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2779","Civilian_Offroad_01_white","0",[143.053,[6073.23,2994.01,2.889]],[[["CUP_sgun_M1014","CUP_arifle_CZ805_A1","CUP_lmg_L110A1","Binocular","hgun_Rook40_snds_F","CUP_lmg_Mk48_wdl","HandFlashlight"],[1,1,1,1,2,1,1]],[["CUP_8Rnd_B_Beneli_74Pellets",8],["Battery_mag",7200],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSodaDiet",1],["Battery_mag",7200],["ItemWaterbottleUnfilled",1],["FoodMRE",1],["FoodCanSpaghetti1",1],["Viruz_Serrote",1],["PartWoodPile",1],["ItemJerrycan",20],["Viruz_Woodboard",10],["Viruz_Woodboard",10],["PartGlass",1],["ItemMatchbox",1],["CUP_8Rnd_B_Beneli_74Pellets",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSandbag",1],["ItemWire",1],["ItemMorphine",1],["ItemMorphine",1],["PartGlass",1],["PartEngine",1],["Viruz_Serrote",1],["Viruz_Wrench",1],["PartWheel",1],["PartEngine",1],["FoodCanChickenSoup",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemWaterbottleUnfilled",1],["FMradio_Mag",1],["FoodCanWBBeansEmpty",1],["Viruz_HandCan",1],["FoodCanPeaSoupEmpty",1],["30Rnd_556x45_Stanag",30],["CUP_8Rnd_B_Beneli_74Pellets",8],["Hatchet_Swing",100000],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100]],[["CUP_muzzle_mfsup_SCAR_L"],[1]],[[],[]]],[["wheel_1_1_steering",1],["wheel_1_2_steering",0.036],["wheel_2_1_steering",1],["wheel_2_2_steering",0.03],["palivo",0.8],["motor",0.016],["karoserie",0.07],["glass1",0.609],["glass2",0.155],["sklo predni L",0.2],["glass3",0.8],["glass5",0.4],["glass6",0.8],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_3_steering",0.8]],0.956,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2778,"B",0,"[]","[]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2779,"B",0,"[]","[]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2780","RDS_S1203_Civ_01","0",[210.392,[6345.55,2463.93,-0.001]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_s1203"],[9]]],[["wheel_1_1_steering",0.4],["wheel_2_1_steering",0.8],["palivo",0.8],["glass2",0.8],["glass3",0.2],["glass4",0.8],["glass6",0.4],["glass8",0.8],["sklo predni P",0.2],["wheel_2_4_steering",0.8],["wheel_2_3_steering",0.4]],0.746,0.035]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2780,"B",0,"[]","[]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2814","TentStorageDome","28",[283,[6051.61,3021.99,0.006]],[[[],[]],[],[[],[]],[[],[]]],[],0.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2814,"B",1,"[]","[]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2816","CamoNet_BLUFOR_F","13",[359,[6051.56,3021.49,0.033]],[],[],0.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2816,"B",0,"[]","[]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2817","VIRUZ_WoodWall_New","28",[54.217,[6068.39,2996.13,0.863]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2817,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.811235,0.584721,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2818","VIRUZ_WoodWall_New","28",[144.217,[6072.08,2995.53,1.222]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2818,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584721,-0.811235,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2822","VIRUZ_Woodfloor_New","28",[54.215,[6074.81,3000.75,2.327]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2822,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2823","VIRUZ_WoodRamp_New","28",[144.215,[6070.69,3006.48,0.099]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2823,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2824","VIRUZ_Woodfloor_New","10",[234.215,[6070.54,2997.67,2.216]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2824,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2825","VIRUZ_WoodWall_New","10",[54.217,[6076.96,3002.3,4.093]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2825,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811238,0.584716,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2826","VIRUZ_Woodfloor_New","10",[144.217,[6077.9,2996.47,2.995]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2826,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584717,-0.811237,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2828","VIRUZ_WoodWall_New","10",[234.215,[6068.39,2996.13,3.863]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2828,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2829","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,4.609]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2829,"B76561197988048248",1,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2830","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,4.982]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2830,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2833","VIRUZ_WoodWall_New","10",[324.215,[6068.99,2999.81,3.51]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2833,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2834","VIRUZ_WoodDoor_new","10",[16.337,[6069.33,3011.58,1.643]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2834,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.281292,0.959622,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2835","VIRUZ_WoodGate_new","10",[324.215,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2835,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2836","VIRUZ_WoodGate_new","10",[144.217,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2836,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584716,-0.811238,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2837","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.48,4.643]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2837,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584744,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2838","VIRUZ_Woodfloor_New","10",[234.215,[6073.62,2993.39,5.935]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2838,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2839","VIRUZ_Woodfloor_New","10",[54.215,[6070.54,2997.67,5.216]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2839,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2840","VIRUZ_WoodWall_New","10",[297.414,[6071.39,2996.73,7.229]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2840,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.887706,0.460411,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2841","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,7.982]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2841,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2842","VIRUZ_WoodWindow_new","10",[144.215,[6079.45,2994.33,7.99]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2842,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2843","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,7.609]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2843,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2844","VIRUZ_Woodfloor_New","10",[234.217,[6074.81,3000.75,5.327]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2844,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2845","VIRUZ_WoodGate_new","10",[144.215,[6068.99,2999.81,3.51]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2845,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2846","VIRUZ_WoodDoor_new","10",[144.217,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2846,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584716,-0.811238,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2847","VIRUZ_WoodWindow_new","10",[256.477,[6063.64,3004.74,0.251]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2847,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.972276,-0.233836,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2848","VIRUZ_WoodWall_New","28",[234.215,[6073.87,3006.58,0.514]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2848,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2849","VIRUZ_WoodRamp_New","10",[144.215,[6066.41,3003.4,-0.1]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2849,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2850","VIRUZ_WoodWall_New","28",[54.217,[6065.31,3000.41,0.12]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2850,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811235,0.584721,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2851","VIRUZ_WoodWall_New","10",[324.215,[6072.08,2995.53,1.222]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2851,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584744,0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2852","VIRUZ_WoodWall_New","10",[234.217,[6080.08,2997.82,1.624]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2852,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2853","VIRUZ_WoodWall_New","28",[234.217,[6081.49,2997.05,1.0]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2853,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2854","VIRUZ_WoodGate_new","10",[54.215,[6068.39,2996.13,0.863]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2854,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2855","VIRUZ_WoodWall_New","10",[54.215,[6080.04,2998.02,1.713]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2855,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2856","VIRUZ_WoodWall_New","10",[144.215,[6079.45,2994.33,1.99]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2856,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2857","VIRUZ_WoodWall_New","10",[324.217,[6075.16,2991.25,1.982]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2857,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584717,0.811237,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2858","VIRUZ_WoodGate_new","10",[54.215,[6071.48,2991.85,1.609]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2858,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2859","Land_PortableLight_single_F","28",[341.55,[6068.92,2997.24,5.271]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2859,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.31647,0.948602,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2860","VIRUZ_WoodWindow_new","10",[324.215,[6072.08,2995.53,7.222]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2860,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2861","VIRUZ_WoodWindow_new","10",[324.215,[6076.36,2998.62,7.298]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2861,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2862","VIRUZ_WoodWindow_new","10",[234.215,[6080.04,2998.02,7.713]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2862,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2863","MetalBarrel_burning_F","28",[316.369,[6072.41,3001.59,2.52]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2863,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.690014,0.723796,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2864","Land_PortableLight_single_F","10",[299.562,[6061.17,3008.49,0.882]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2864,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.869826,0.493358,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2865","Land_PortableLight_single_F","28",[107.619,[6081.23,2995.93,3.422]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2865,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.953091,-0.302683,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2866","MetalBarrel_burning_F","28",[325.269,[6072.26,3001.62,2.172]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2866,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.569721,0.821838,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2867","Land_PortableLight_single_F","28",[8.896,[6075.36,3004.19,2.24]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2867,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.154636,0.987972,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2868","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.47,7.644]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2868,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2869","VIRUZ_Woodfloor_New","10",[234.215,[6073.61,2993.38,8.935]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2869,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2870","VIRUZ_WoodWindow_new","10",[54.215,[6080.04,2998.02,10.713]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2870,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2871","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.47,10.644]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2871,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-17 15:02:53 HiveExt: [Information] Result: ["OBJ","2872","Land_Portable_generator_F","10",[334.107,[6073.26,3004.31,-0.098]],[],[],1.0,0.0]
+2016-10-17 15:02:53 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-17 15:02:53 HiveExt: [Information] Result: [2872,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.436698,0.899608,0],[0,0,1]]"]
+2016-10-17 15:03:13 HiveExt: [Information] Method: 307 Params: 
+2016-10-17 15:03:13 HiveExt: [Information] Result: ["PASS",[2016,10,17,13,3]]
+2016-10-17 15:03:33 HiveExt: [Information] Method: 305 Params: 2769:[241.123,[14767.5,13701.3,0.021]]:0.662:
+2016-10-17 15:03:33 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:03:33 HiveExt: [Information] Method: 303 Params: 2769:[[[],[]],[],[[],[]],[[RDS_Sparewheel_lada],[12]]]:
+2016-10-17 15:03:33 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:03:33 HiveExt: [Information] Method: 306 Params: 2769:[[wheel_1_2_steering,0.4],[wheel_2_1_steering,0.4],[wheel_2_2_steering,0.6],[palivo,0.6],[motor,0.2],[glass1,0.6],[glass4,0.8],[glass5,0.8],[glass6,0.6],[sklo predni P,0.2],[sklo predni L,1],[wheel_1_4_steering,0.2],[wheel_1_3_steering,0.4],[wheel_2_4_steering,0.6]]:0.039:
+2016-10-17 15:03:33 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:03:33 HiveExt: [Information] Method: 305 Params: 2780:[210.394,[6345.55,2463.92,-0.001]]:0.746:
+2016-10-17 15:03:33 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:03:33 HiveExt: [Information] Method: 303 Params: 2780:[[[],[]],[],[[],[]],[[RDS_Sparewheel_s1203],[10]]]:
+2016-10-17 15:03:33 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:03:33 HiveExt: [Information] Method: 306 Params: 2780:[[wheel_1_1_steering,0.4],[wheel_2_1_steering,0.8],[palivo,0.8],[glass2,0.8],[glass3,0.2],[glass4,0.8],[glass6,0.4],[glass8,0.8],[sklo predni P,0.2],[wheel_2_4_steering,0.8],[wheel_2_3_steering,0.4]]:0.035:
+2016-10-17 15:03:33 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:03:40 HiveExt: [Information] Method: 101 Params: 76561198113211909:1:Pacifico:
+2016-10-17 15:03:40 HiveExt: [Information] Result: ["PASS",false,"40",[311,[5236.46,2203.83,0.001]],[["U_BG_Guerilla1_1",["Viruz_Woodboard","Viruz_Woodboard","FoodCanWBBeans"]],["V_TacVest_oli",["itemCanOpener","ItemBandage","ItemPainkiller","ItemPainkiller","ItemPainkiller","ItemMatchbox","ItemPainkiller","ItemAntibiotic","ItemAntibiotic","ItemHeatPack","ItemHeatPack","ItemAntibiotic","acc_lampflashlight","ItemKnife"]],["CUP_B_AlicePack_Bedroll",["Battery_mag","ItemPainkiller","ItemBandage","ItemBandage","HandFlashlight"]],"H_Shemag_olive","","Binocular",["CUP_arifle_AKM",[],"CUP_30Rnd_762x39_AK47_M"],["",[],""],["HandFlashlight",[],"Battery_mag"],["ItemMap"]],["",[],[]],[7,148,148],"Survivor2_DZ",0.96]
+2016-10-17 15:03:41 HiveExt: [Information] Method: 102 Params: 40:
+2016-10-17 15:03:41 HiveExt: [Information] Result: ["PASS",[false,false,false,false,false,false,false,12000,[],[0,0],0,[182.27,325.055]],[12,4,0,0],["CUP_arifle_AKM","amovpercmstpsraswrfldnon",42],[311,[5236.46,2203.83,0.001]],-866,1]
+2016-10-17 15:03:41 HiveExt: [Information] Method: 103 Params: 76561198113211909:40:0:
+2016-10-17 15:03:41 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:03:51 HiveExt: [Information] Method: 201 Params: 40:[4,[5240.97,2207.22,0.001]]:[[U_BG_Guerilla1_1,[Viruz_Woodboard,Viruz_Woodboard,FoodCanWBBeans]],[V_TacVest_oli,[itemCanOpener,ItemBandage,ItemPainkiller,ItemPainkiller,ItemPainkiller,ItemMatchbox,ItemPainkiller,ItemAntibiotic,ItemAntibiotic,ItemHeatPack,ItemHeatPack,ItemAntibiotic,acc_lampflashlight,ItemKnife]],[CUP_B_AlicePack_Bedroll,[Battery_mag,ItemPainkiller,ItemBandage,ItemBandage,HandFlashlight]],H_Shemag_olive,,Binocular,[CUP_arifle_AKM,[],CUP_30Rnd_762x39_AK47_M],[,[],],[HandFlashlight,[],Battery_mag],[ItemMap]]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[182.27,325.055]]:false:false:0:0:10546:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0:Survivor2_DZ:0:
+2016-10-17 15:03:51 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:04:03 HiveExt: [Information] Method: 201 Params: 40:[279,[5246.14,2207.3,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[182.27,325.055]]:false:false:0:0:5:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:04:03 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:04:15 HiveExt: [Information] Method: 201 Params: 40:[6,[5251.8,2210.99,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.648,332.23]]:false:false:0:0:7:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:04:15 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:04:28 HiveExt: [Information] Method: 201 Params: 40:[240,[5251.8,2210.99,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.648,332.23]]:false:false:0:0:0:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:04:28 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:04:40 HiveExt: [Information] Method: 201 Params: 40:[240,[5251.8,2210.99,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.648,332.23]]:false:false:0:0:0:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:04:40 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:04:52 HiveExt: [Information] Method: 201 Params: 40:[240,[5251.8,2210.99,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.648,335.963]]:false:false:0:0:0:1:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:04:52 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:05:04 HiveExt: [Information] Method: 201 Params: 40:[226,[5252.17,2211.33,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.648,335.963]]:false:false:0:0:0:0:[CUP_arifle_AKM,ainvpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:05:04 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:05:16 HiveExt: [Information] Method: 201 Params: 40:[178,[5252.17,2211.32,0.001]]:[[U_BG_Guerilla1_1,[Viruz_Woodboard,Viruz_Woodboard,FoodCanWBBeans]],[V_TacVest_oli,[itemCanOpener,ItemBandage,ItemPainkiller,ItemPainkiller,ItemPainkiller,ItemMatchbox,ItemPainkiller,ItemAntibiotic,ItemAntibiotic,ItemHeatPack,ItemHeatPack,ItemAntibiotic,acc_lampflashlight,ItemKnife]],[CUP_B_AlicePack_Bedroll,[Battery_mag,ItemPainkiller,ItemBandage,ItemBandage,HandFlashlight]],H_Shemag_olive,,Binocular,[CUP_arifle_AKM,[],CUP_30Rnd_762x39_AK47_M],[,[],],[HandFlashlight,[],Battery_mag],[ItemMap,ItemWatch]]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.702,339.755]]:false:false:0:0:0:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:05:16 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:05:28 HiveExt: [Information] Method: 201 Params: 40:[209,[5252.17,2211.32,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.702,339.755]]:false:false:0:0:0:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:05:28 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:05:40 HiveExt: [Information] Method: 201 Params: 40:[330,[5252.17,2211.32,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[188.702,339.755]]:false:false:0:0:0:0:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:05:40 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:05:52 HiveExt: [Information] Method: 201 Params: 40:[297,[5243.25,2202.05,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[190.594,345.53]]:false:false:0:0:13:1:[CUP_arifle_AKM,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-17 15:05:52 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:05:57 HiveExt: [Information] Method: 201 Params: 40:[223,[5243.92,2193.63,0.001]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[190.594,345.53]]:false:false:0:0:8:0:[CUP_arifle_AKM,amovpercmevasraswrfldf,42]:0:0::0:
+2016-10-17 15:05:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:05:57 HiveExt: [Information] Method: 103 Params: 76561198113211909:40:2:
+2016-10-17 15:05:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-17 15:08:14 HiveExt: [Information] Method: 307 Params: 
+2016-10-17 15:08:14 HiveExt: [Information] Result: ["PASS",[2016,10,17,13,8]]
+2016-10-17 15:08:47 HiveExt: [Information] Method: 101 Params: 76561198065694695:1:Mateuus:
+2016-10-17 15:08:47 HiveExt: [Information] Result: ["PASS",false,"46",[231,[10386.4,1934.49,0.001]],[["U_C_Citizen_clothes3",["ItemBandage"]],["V_Rangemaster_belt",["itemCanOpener","ItemBandage","ItemPainkiller","acc_lampflashlight"]],["",[]],"","","",["",[],""],["",[],""],["HandFlashlight",[],"Battery_mag"],["ItemMap"]],["",[],[]],[6,121,121],"Survivor2_DZ",0.96]
+2016-10-17 15:08:47 HiveExt: [Information] Method: 102 Params: 46:
+2016-10-17 15:08:47 HiveExt: [Information] Result: ["PASS",[false,false,false,false,false,false,false,12000,[],[0,0],0,[9.729,37.008]],[0,0,0,0],["HandFlashlight","amovpercmstpsraswpstdnon",35],[231,[10386.4,1934.49,0.001]],2500,1]
+2016-10-17 15:08:52 HiveExt: [Information] Method: 103 Params: 76561198065694695:46:0:
+2016-10-17 15:08:52 HiveExt: [Information] Result: ["PASS"]

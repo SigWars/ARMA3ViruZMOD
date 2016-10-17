@@ -194,7 +194,7 @@ if (_randomSpot) then {
 				// spawn is not random, lets spawn in our location that was selected
 				_mkr = "spawn" + str(_spawnSelection);
 			};
-			_position = ([(getMarkerPos _mkr),0,1000,1,1,5000,0] call BIS_fnc_findSafePos);
+			_position = ([(getMarkerPos _mkr),0,600,10,0,5000,0] call BIS_fnc_findSafePos);
 			_isNear = count (_position nearEntities ["Man",100]) == 0;
 			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
 		//Island Check		//TeeChange

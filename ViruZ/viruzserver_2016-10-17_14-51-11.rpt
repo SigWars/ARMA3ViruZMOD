@@ -1,0 +1,1546 @@
+=====================================================================
+== C:\Arma3Server\viruzserver.exe
+== "C:\Arma3Server\viruzserver.exe"  -port=2302 "-config=C:\Arma3Server\ViruZ\serverchernarus.cfg" "-cfg=C:\Arma3Server\ViruZ\basic.cfg" "-profiles=ViruZ" -name=ViruZ -filePatching "-mod=@CBA_A3;@ViruZ;@CUP_Terrains_Core-1.2.0;@CUP_Terrains_Maps-1.2.0;@CUP_Weapons;" "-Servermod=@hive;@CBA_A3;@infiSTAR_A3;@ViruZ;@CUP_Terrains_Core-1.2.0;@CUP_Terrains_Maps-1.2.0;@CUP_Weapons;" -autoinit -loadmissiontomemory
+
+Original output filename: Arma3Retail_Server
+Exe timestamp: 2016/10/07 16:49:20
+Current time:  2016/10/17 14:51:11
+
+Type: Public
+Build: Stable
+Version: 1.64.138732
+
+Allocator: C:\Arma3Server\dll\tbb4malloc_bi.dll
+=====================================================================
+
+14:51:11 SteamAPI initialization failed. Steam features wont's be accessible!
+14:51:11 Initializing stats manager.
+14:51:11 Stats config disabled.
+14:51:11 sessionID: 9b3c69e89cceacc9f0aa6870c6a7bf34146c5da4
+14:52:52 Unsupported language English in stringtable
+14:52:52 Item str_dn_2b14 listed twice
+14:52:52 Item str_mn_pg9 listed twice
+14:52:52 Item str_mn_og9 listed twice
+14:52:52 Item str_mn_igla listed twice
+14:52:52 Item str_dn_ags30 listed twice
+14:52:52 Item str_mn_at13 listed twice
+14:52:52 Item str_mn_9k32 listed twice
+14:52:52 Item str_dn_at13 listed twice
+14:52:52 Item str_dn_at13launchersingle listed twice
+14:52:52 Item STR_DN_D30 listed twice
+14:52:52 Item str_dn_dshkm listed twice
+14:52:52 Item str_lib_m2_mg listed twice
+14:52:52 Item str_lib_m119 listed twice
+14:52:52 Item str_lib_kord listed twice
+14:52:52 Item str_lib_dshkm listed twice
+14:52:52 Item STR_LIB_D30 listed twice
+14:52:52 Item str_lib_ags30 listed twice
+14:52:52 Item str_dn_igla_aa_pod_east listed twice
+14:52:52 Item str_dn_igla_twice listed twice
+14:52:52 Item str_dn_kord listed twice
+14:52:52 Item str_dn_kord_low listed twice
+14:52:52 Item str_dn_m119 listed twice
+14:52:52 Item str_dn_tow_tripod listed twice
+14:52:52 Item str_dn_tow listed twice
+14:52:52 Item str_dn_spg9 listed twice
+14:52:52 Item str_dn_m252 listed twice
+14:52:52 Item str_dn_m2hd_minitripod listed twice
+14:52:52 Item str_dn_m2_mg listed twice
+14:52:52 Item str_dn_mk19_tripod listed twice
+14:52:52 Item str_lib_2b14 listed twice
+14:52:52 Item str_lib_at13 listed twice
+14:52:52 Item str_lib_m252 listed twice
+14:52:52 Item str_lib_spg9 listed twice
+14:52:52 Unsupported language English in stringtable
+14:52:53 Unsupported language English in stringtable
+14:52:53 Item str_actions_build listed twice
+14:52:53 Unsupported language English in stringtable
+14:52:53 Item STR_EQUIP_NAME_41 listed twice
+14:52:53 Item STR_EQUIP_DESC_41 listed twice
+14:52:54 Conflicting addon viruz_weapons in 'viruz_weapons\melee\', previous definition in 'viruz_weapons\'
+14:52:56 Updating base class ->All, by viruz_sound\config.cpp/CfgVehicles/Sound/
+14:52:56 Updating base class ->Strategic, by a3\data_f\config.bin/CfgVehicles/ReammoBox/
+14:52:56 Updating base class ->NonStrategic, by a3\data_f\config.bin/CfgVehicles/HouseBase/
+14:52:56 Updating base class ->DestructionEffects, by a3\data_f\config.bin/CfgVehicles/House/DestructionEffects/
+14:52:56 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayEditObject/Controls/B_OK/
+14:52:56 Updating base class RscSliderH->RscXSliderH, by a3\editor_f\config.bin/RscDisplayEditObject/Slider/
+14:52:56 Updating base class RscText->RscPicture, by a3\editor_f\config.bin/RscDisplayEditObject/Preview/
+14:52:56 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionLoad/Controls/B_OK/
+14:52:56 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionSave/Controls/B_OK/
+14:52:56 Updating base class ->House_F, by a3\structures_f\civ\camping\config.bin/CfgVehicles/Land_FirePlace_F/
+14:52:56 Updating base class ->BagFence_base_F, by a3\structures_f\mil\bagfence\config.bin/CfgVehicles/Land_BagFence_Long_F/
+14:52:56 Updating base class ->NonStrategic, by a3\structures_f\mil\fortification\config.bin/CfgVehicles/Land_Razorwire_F/
+14:52:56 Updating base class ->EtelkaMonospacePro, by a3\uifonts_f\config.bin/CfgFontFamilies/EtelkaMonospaceProBold/
+14:52:56 Updating base class ->CAManBase, by ca\desert2_c\characters\config.bin/CfgVehicles/Civilian/
+14:52:56 Updating base class BlendAnims->, by a3\anims_f\config\sdr\weaponswitching\config.bin/CfgMovesMaleSdr/BlendAnims/
+14:52:56 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoScrollbars/
+14:52:56 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoHScrollbars/
+14:52:56 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoVScrollbars/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/RscLine/
+14:52:56 Updating base class ->RscActiveText, by a3\ui_f\config.bin/RscActivePicture/
+14:52:56 Updating base class ->RscButton, by a3\ui_f\config.bin/RscButtonTextOnly/
+14:52:56 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscShortcutButtonMain/
+14:52:56 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonEditor/
+14:52:56 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscIGUIShortcutButton/
+14:52:56 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscGearShortcutButton/
+14:52:56 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonMenu/
+14:52:56 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuOK/
+14:52:56 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuCancel/
+14:52:56 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuSteam/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/RscLoadingText/
+14:52:56 Updating base class ->RscListBox, by a3\ui_f\config.bin/RscIGUIListBox/
+14:52:56 Updating base class ->RscListNBox, by a3\ui_f\config.bin/RscIGUIListNBox/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackground/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUI/
+14:52:56 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUILeft/
+14:52:56 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIRight/
+14:52:56 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIBottom/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUITop/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUIDark/
+14:52:56 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/RscBackgroundLogo/
+14:52:56 Updating base class ->RscMapControl, by a3\ui_f\config.bin/RscMapControlEmpty/
+14:52:56 Updating base class ->RscPicture, by a3\ui_f\config.bin/CA_Mainback/
+14:52:56 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Back/
+14:52:56 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Title_Back/
+14:52:56 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Black_Back/
+14:52:56 Updating base class ->RscTitle, by a3\ui_f\config.bin/CA_Title/
+14:52:56 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/CA_Logo/
+14:52:56 Updating base class ->CA_Logo, by a3\ui_f\config.bin/CA_Logo_Small/
+14:52:56 Updating base class ->RscButton, by a3\ui_f\config.bin/CA_RscButton/
+14:52:56 Updating base class ->CA_RscButton, by a3\ui_f\config.bin/CA_RscButton_dialog/
+14:52:56 Updating base class ->RscActiveText, by a3\ui_f\config.bin/CA_Ok/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image2/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_text/
+14:52:56 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscVignette/
+14:52:56 Updating base class ->RscControlsGroupNoScrollbars, by a3\ui_f\config.bin/RscMapControlTooltip/
+14:52:56 Updating base class RscUnitInfo->RscUnitInfoAirNoWeapon, by a3\ui_f\config.bin/RscInGameUI/RscUnitInfoAir/
+14:52:56 Updating base class RscControlsGroup->RscControlsGroupNoScrollbars, by a3\ui_f\config.bin/RscInGameUI/RscTaskOverview/controls/TaskOverviewAssigned/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_OK/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Cancel/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Clear/
+14:52:56 Updating base class ->RscText, by a3\ui_f\config.bin/RscDisplayCapture/controls/TimeLines/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonAverages/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonSavePreviousData/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonPreviousData/
+14:52:56 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/IconPicture/
+14:52:56 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcOwnedIconPicture/
+14:52:56 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcIconPicture/
+14:52:56 Updating base class RscControlsGroup->RscControlsGroupNoScrollbars, by a3\ui_f\config.bin/RscDisplayCampaignLoad/controls/OverviewGroup/
+14:52:56 Updating base class RscButton->RscButtonSearch, by a3\ui_f\config.bin/RscDisplayCampaignLoad/controls/SearchButton/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayCampaignLoad/controls/ButtonCancel/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCampaignLoad/controls/ButtonGameOptions/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenuSteam, by a3\ui_f\config.bin/RscDisplayCampaignLoad/controls/ButtonBuyDLC/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCampaignLoad/controls/ButtonRevert/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayCampaignLoad/controls/ButtonOK/
+14:52:56 Updating base class RscListBox->RscCombo, by a3\ui_f\config.bin/RscDisplayCustomizeController/Steepness/
+14:52:56 Updating base class ->RscStandardDisplay, by a3\ui_f\config.bin/RscDisplayControlSchemes/
+14:52:56 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonCancel/
+14:52:56 Updating base class RscButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonOK/
+14:52:56 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayFileSelectImage/controls/OverviewPicture/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayFieldManual/controls/ButtonCancel/
+14:52:56 Cannot delete class B_KickOff, it is referenced somewhere (used as a base class probably).
+14:52:56 Updating base class RscButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMission/controls/ButtonCancel/
+14:52:56 Updating base class RscShortcutButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonOK/
+14:52:56 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonCancel/
+14:52:56 Updating base class ->RscSubmenu, by a3\ui_f\config.bin/RscMainMenu/
+14:52:56 Cannot update non class from class a3\ui_f\config.bin/RscCallSupport/Items/
+14:52:56 Cannot update non class from class a3\ui_f\config.bin/RscRadio/Items/
+14:52:56 Updating base class ->DistanceClose, by a3\ui_f\config.bin/CfgSimpleTasks/Icon3D/DistanceMid/
+14:52:56 Updating base class ->DistanceClose, by a3\ui_f\config.bin/CfgSimpleTasks/Icon3D/DistanceLong/
+14:52:56 Updating base class ->Grenade, by a3\weapons_f\config.bin/CfgAmmo/GrenadeHand/
+14:52:56 Updating base class ->GrenadeHand, by a3\weapons_f\config.bin/CfgAmmo/SmokeShell/
+14:52:56 Updating base class ->Default, by a3\weapons_f\config.bin/CfgMagazines/CA_Magazine/
+14:52:56 Updating base class ->CA_Magazine, by a3\weapons_f\config.bin/CfgMagazines/HandGrenade/
+14:52:56 Updating base class ->Default, by a3\weapons_f\config.bin/CfgWeapons/ItemCore/
+14:52:56 Updating base class ->PipeBombCore, by a3\weapons_f\explosives\config.bin/CfgAmmo/PipeBombBase/
+14:52:56 Cannot delete class ProgressMap, it is referenced somewhere (used as a base class probably).
+14:52:56 Updating base class RscPictureKeepAspect->RscPicture, by z\addons\viruz_mod\config.cpp/RscDisplayLoadMission/controls/LoadingStart/controls/Logo/
+14:52:56 Updating base class RscDisplayLoadMission->RscStandardDisplay, by z\addons\viruz_mod\config.cpp/RscDisplayLoadCustom/
+14:52:56 Cannot delete class ProgressMap, it is referenced somewhere (used as a base class probably).
+14:52:56 Updating base class RscPictureKeepAspect->RscPicture, by z\addons\viruz_mod\config.cpp/RscDisplayNotFreeze/controls/LoadingStart/controls/Logo/
+14:52:56 Updating base class RscDisplayMPPlayers->RscStandardDisplay, by z\addons\viruz_mod\config.cpp/RscDisplayClientWait/
+14:52:56 Updating base class RscDisplayLoadMission->RscDisplayLoadViruZ, by z\addons\viruz_mod\config.cpp/RscDisplayLoading/Variants/Loading/
+14:52:56 Cannot delete class ExternalContainerBackground, it is referenced somewhere (used as a base class probably).
+14:52:56 Updating base class RscActiveText->BaseGroundTab, by z\addons\viruz_mod\config.cpp/RscDisplayInventory/controls/GroundTab/
+14:52:56 Updating base class GroundTab->BaseGroundTab, by z\addons\viruz_mod\config.cpp/RscDisplayInventory/controls/SoldierTab/
+14:52:56 Updating base class GroundTab->BaseGroundTab, by z\addons\viruz_mod\config.cpp/RscDisplayInventory/controls/SlotPrimary/
+14:52:56 Updating base class GroundTab->BaseGroundTab, by z\addons\viruz_mod\config.cpp/RscDisplayInventory/controls/UniformTab/
+14:52:56 Updating base class GroundContainer->SoldierContainer, by z\addons\viruz_mod\config.cpp/RscDisplayInventory/controls/UniformContainer/
+14:52:56 Updating base class GroundTab->BaseGroundTab, by z\addons\viruz_mod\config.cpp/RscDisplayInventory/controls/ContainerMarker/
+14:52:56 Updating base class CA_Title->RscText, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/Gear_Title/
+14:52:56 Updating base class Available_items_Text->RscText, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/CA_ItemName/
+14:52:56 Updating base class VScrollbar->, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/ListboxArrows/VScrollbar/
+14:52:56 Updating base class HScrollbar->, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/ListboxArrows/HScrollbar/
+14:52:56 Updating base class VScrollbar->, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/VScrollbar/
+14:52:56 Updating base class HScrollbar->, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/HScrollbar/
+14:52:56 Updating base class CA_Gear_slot_item7->CA_Gear_slot_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_item8/
+14:52:56 Updating base class CA_Gear_slot_item7->CA_Gear_slot_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_item9/
+14:52:56 Updating base class CA_Gear_slot_item7->CA_Gear_slot_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_item10/
+14:52:56 Updating base class CA_Gear_slot_item7->CA_Gear_slot_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_item11/
+14:52:56 Updating base class CA_Gear_slot_item7->CA_Gear_slot_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_item12/
+14:52:56 Updating base class CA_Gear_slot_handgun_item5->CA_Gear_slot_handgun_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_handgun_item6/
+14:52:56 Updating base class CA_Gear_slot_handgun_item5->CA_Gear_slot_handgun_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_handgun_item7/
+14:52:56 Updating base class CA_Gear_slot_handgun_item5->CA_Gear_slot_handgun_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_handgun_item8/
+14:52:56 Updating base class CA_Gear_slot_special1->CA_Gear_slot_handgun_item1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_inventory1/
+14:52:56 Updating base class CA_Gear_slot_inventory7->CA_Gear_slot_inventory1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_inventory8/
+14:52:56 Updating base class CA_Gear_slot_inventory7->CA_Gear_slot_inventory1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_inventory9/
+14:52:56 Updating base class CA_Gear_slot_inventory7->CA_Gear_slot_inventory1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_inventory10/
+14:52:56 Updating base class CA_Gear_slot_inventory7->CA_Gear_slot_inventory1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_inventory11/
+14:52:56 Updating base class CA_Gear_slot_inventory7->CA_Gear_slot_inventory1, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_inventory12/
+14:52:56 Updating base class CA_Gear_slot_item1->CA_Gear_slot_handgun, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/G_GearItems/Controls/CA_Gear_slot_special1/
+14:52:56 Updating base class VScrollbar->, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/BagItemsGroup/VScrollbar/
+14:52:56 Updating base class HScrollbar->, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/BagItemsGroup/HScrollbar/
+14:52:56 Updating base class ScrollBar->, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/BagItemsGroup/ScrollBar/
+14:52:56 Updating base class RscIGUIShortcutButton->RscActiveText, by z\addons\viruz_mod\config.cpp/RscDisplayGear/Controls/ButtonClose/
+14:52:56 Updating base class zZombie_BaseD->Civilian, by z\addons\viruz_mod\config.cpp/CfgVehicles/zZombie_Base/
+14:52:56 Updating base class HitPoints->, by z\addons\viruz_mod\config.cpp/CfgVehicles/zZombie_Base/HitPoints/
+14:52:56 Updating base class HitHead->, by z\addons\viruz_mod\config.cpp/CfgVehicles/zZombie_Base/HitPoints/HitHead/
+14:52:56 Updating base class HitBody->HitHead, by z\addons\viruz_mod\config.cpp/CfgVehicles/zZombie_Base/HitPoints/HitBody/
+14:52:56 Updating base class HitHands->HitHead, by z\addons\viruz_mod\config.cpp/CfgVehicles/zZombie_Base/HitPoints/HitHands/
+14:52:56 Updating base class HitLegs->HitHands, by z\addons\viruz_mod\config.cpp/CfgVehicles/zZombie_Base/HitPoints/HitLegs/
+14:52:56 Updating base class ->CAManBase, by a3\characters_f\config.bin/CfgVehicles/SoldierWB/
+14:52:56 Updating base class ->B_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/B_Soldier_F/
+14:52:56 Updating base class ->B_Soldier_diver_base_F, by a3\characters_f\config.bin/CfgVehicles/B_diver_F/
+14:52:56 Updating base class ->B_Soldier_sniper_base_F, by a3\characters_f\config.bin/CfgVehicles/B_sniper_F/
+14:52:56 Updating base class ->ItemCore, by a3\characters_f\config.bin/CfgWeapons/Uniform_Base/
+14:52:56 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/CfgWeapons/acc_flashlight/
+14:52:56 Updating base class ->Rubber_duck_base_F, by a3\boat_f\boat_transport_01\config.bin/CfgVehicles/B_Boat_Transport_01_F/
+14:52:56 Updating base class ->Rubber_duck_base_F, by a3\boat_f\boat_transport_01\config.bin/CfgVehicles/O_Boat_Transport_01_F/
+14:52:56 Updating base class ->Rescue_duck_base_F, by a3\boat_f\boat_transport_01\config.bin/CfgVehicles/B_Lifeboat/
+14:52:56 Updating base class ->Rescue_duck_base_F, by a3\boat_f\boat_transport_01\config.bin/CfgVehicles/C_Rubberboat/
+14:52:56 Updating base class ->Rubber_duck_base_F, by a3\boat_f_beta\boat_transport_01\config.bin/CfgVehicles/I_Boat_Transport_01_F/
+14:52:56 Updating base class ->B_Soldier_F, by a3\characters_f\common\config.bin/CfgVehicles/Underwear_F/
+14:52:56 Updating base class ->EventHandlers, by a3\characters_f\common\config.bin/CfgVehicles/Underwear_F/EventHandlers/
+14:52:56 Updating base class ->Offroad_01_civil_base_F, by a3\soft_f\offroad_01\config.bin/CfgVehicles/C_Offroad_01_F/
+14:52:56 Updating base class ->EventHandlers, by a3\soft_f\offroad_01\config.bin/CfgVehicles/C_Offroad_01_F/EventHandlers/
+14:52:56 Updating base class ->Car_F, by a3\soft_f_gamma\hatchback_01\config.bin/CfgVehicles/Hatchback_01_base_F/
+14:52:56 Updating base class ->Hatchback_01_sport_base_F, by a3\soft_f_gamma\hatchback_01\config.bin/CfgVehicles/C_Hatchback_01_sport_F/
+14:52:56 Updating base class ->EventHandlers, by a3\soft_f_gamma\hatchback_01\config.bin/CfgVehicles/C_Hatchback_01_sport_F/EventHandlers/
+14:52:56 Updating base class ->Car_F, by a3\soft_f_gamma\suv_01\config.bin/CfgVehicles/SUV_01_base_F/
+14:52:56 Updating base class ->InventoryItem_Base_F, by a3\weapons_f_mark\acc\config.bin/CfgWeapons/InventoryUnderItem_Base_F/
+14:52:56 Updating base class TargetTraining->TargetGrenadBase, by ca\misc3_c\config.bin/CfgVehicles/TargetGrenade/
+14:52:57 Updating base class ->BlendAnims, by a3\soft_f_kart\kart_01\config.bin/CfgMovesMaleSdr/BlendAnims/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisable, by a3\3den\config.bin/RscDisplayOptionsAudio/ControlsBackground/BackgroundDisable/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisableTiles, by a3\3den\config.bin/RscDisplayOptionsAudio/ControlsBackground/BackgroundDisableTiles/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisable, by a3\3den\config.bin/RscDisplayConfigure/ControlsBackground/BackgroundDisable/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisableTiles, by a3\3den\config.bin/RscDisplayConfigure/ControlsBackground/BackgroundDisableTiles/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisable, by a3\3den\config.bin/RscDisplayConfigureAction/ControlsBackground/BackgroundDisable/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisableTiles, by a3\3den\config.bin/RscDisplayConfigureAction/ControlsBackground/BackgroundDisableTiles/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisable, by a3\3den\config.bin/RscDisplayConfigureControllers/ControlsBackground/BackgroundDisable/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisableTiles, by a3\3den\config.bin/RscDisplayConfigureControllers/ControlsBackground/BackgroundDisableTiles/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisable, by a3\3den\config.bin/RscDisplayGameOptions/ControlsBackground/BackgroundDisable/
+14:52:57 Updating base class RscText->ctrlStaticBackgroundDisableTiles, by a3\3den\config.bin/RscDisplayGameOptions/ControlsBackground/BackgroundDisableTiles/
+14:52:57 Updating base class controls->, by a3\3den\config.bin/RscDisplayArcadeMap_Layout_2/Controls/
+14:52:57 Updating base class controls->, by a3\3den\config.bin/RscDisplayArcadeMap_Layout_6/Controls/
+14:52:57 Updating base class HouseBase->Static, by a3\3den\config.bin/CfgVehicles/Ruins/
+14:52:57 Updating base class Strategic->Static, by a3\3den\config.bin/CfgVehicles/BagFence_base_F/
+14:52:57 Updating base class NonStrategic->Static, by a3\3den\config.bin/CfgVehicles/HBarrier_base_F/
+14:52:57 Updating base class House_F->Static, by a3\3den\config.bin/CfgVehicles/VR_Shape_base_F/
+14:52:57 Updating base class House_F->Static, by a3\3den\config.bin/CfgVehicles/VR_CoverObject_base_F/
+14:52:57 Updating base class House_Small_F->Static, by a3\3den\config.bin/CfgVehicles/Garbage_base_F/
+14:52:57 Updating base class Wreck_Base->Static, by a3\3den\config.bin/CfgVehicles/Wreck_base_F/
+14:52:57 Updating base class House_Small_F->Static, by a3\3den\config.bin/CfgVehicles/Cemetery_base_F/
+14:52:57 Updating base class NonStrategic->Static, by a3\3den\config.bin/CfgVehicles/Scrapyard_base_F/
+14:52:57 Updating base class NonStrategic->Static, by a3\3den\config.bin/CfgVehicles/LuggageHeap_base_F/
+14:52:57 Updating base class Static->ThingX, by a3\props_f_exp\infrastructure\traffic\config.bin/CfgVehicles/Land_VergeRock_01_F/
+14:52:57 Updating base class Static->House_F, by a3\structures_f_exp\cultural\basaltruins\config.bin/CfgVehicles/BasaltRuins_base_F/
+14:52:57 Updating base class Static->Wall_F, by a3\structures_f_exp\walls\stone\config.bin/CfgVehicles/Land_StoneWall_01_s_10m_F/
+14:52:57 Updating base class Static->Wall_F, by a3\structures_f_exp\walls\stone\config.bin/CfgVehicles/Land_StoneWall_01_s_d_F/
+14:52:57 Updating base class Rifle_Short_Base_F->Rifle_Base_F, by a3\weapons_f_exp\config.bin/CfgWeapons/SMG_02_base_F/
+14:52:57 Updating base class ->asdg_SlotInfo, by x\cba\addons\jr\config.bin/asdg_FrontSideRail/
+14:52:58 Updating base class ->asdg_OpticSideMount, by CUP\Weapons\CUP_Weapons_East_Attachments\config.bin/CUP_DovetailMount/
+14:52:58 Updating base class ->asdg_OpticRail1913_long, by CUP\Weapons\CUP_Weapons_West_Attachments\config.bin/CUP_PicatinnyTopMount/
+14:52:58 Updating base class ->asdg_OpticRail1913_short, by CUP\Weapons\CUP_Weapons_West_Attachments\config.bin/CUP_PicatinnyTopShortMount/
+14:52:58 Updating base class ->asdg_FrontSideRail, by CUP\Weapons\CUP_Weapons_West_Attachments\config.bin/CUP_PicatinnySideMount/
+14:52:58 Updating base class ->asdg_UnderSlot, by CUP\Weapons\CUP_Weapons_West_Attachments\config.bin/CUP_PicatinnyUnderMount/
+14:53:00 Initializing Steam Manager
+14:53:00 Steam Manager initialized.
+14:53:00 
+14:53:00 ==== Loaded addons ====
+14:53:00 
+14:53:00 dta\bin.pbo - unknown
+14:53:00 dta\core.pbo - 105269
+14:53:00 dta\languagecore_f.pbo - 106537
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_baseconfigs.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_basedata.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_aa12.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_ak.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_ammoboxes.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_ammunition.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_as50.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_awm.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_backpacks.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_bizon.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_colt1911.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_compact.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_compatibility.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_curator.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_cz750.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_cz805.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_duty.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_east_attachments.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_evo.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_fnfal.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_g36.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_glock17.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_grenadelaunchers.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_grenades.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_huntingrifle.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_igla.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_items.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_javelin.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_ksvk.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_l110.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_l129.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_l85.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_leeenfield.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m1014.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m107.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m110.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m136.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m14.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m14_dmr.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m16.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m24.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m240.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m249.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m47.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m60e4.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_m9.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_maaws.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_makarov.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_metis_at_13.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_microuzi.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_mk48.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_mp5.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_nlaw.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_nvg.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_pb_6p9.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_phantom.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_pk.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_pods.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_put.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_revolver.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_rpg18.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_rpg7.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_sa58.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_sa61.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_saiga12k.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_scar.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_shield.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_smaw.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_sounds.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_soundshaders.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_staticweapons.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_stinger.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_strela_2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_svd.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_uk59.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_vehicleweapons.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_vss.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_weaponscore.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_weaponsdata.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_west_attachments.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Weapons\addons\cup_weapons_xm8.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_abel.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_abel_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_afghan.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_afghan_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_bohemia.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_bohemia_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_bootcamp_acr.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_bootcamp_acr_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_cain.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_cain_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_chernarus.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_chernarus_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_chernarus_summer.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_chernarus_summer_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_desert.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_desert2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_desert2_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_desert_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_desert_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_desert_e_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_eden.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_eden_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_intro.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_intro_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_noe.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_noe_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_provinggrounds_pmc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_provinggrounds_pmc_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_sara.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_saralite.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_saralite_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_sara_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_sara_dbe1.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_sara_dbe1_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_shapur_baf.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_shapur_baf_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_takistan.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_takistan_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_utes.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_utes_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_zargabad.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Maps-1.2.0\addons\cup_terrains_maps_zargabad_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_a1always_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_a1_editorobjects.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_a2_editorobjects.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_aia_compat.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_baseconfig_f.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_buildings.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_a10_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_air2_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_air3_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_air_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_air_d_baf_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_air_e_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_air_pmc_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_animals2_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_animations_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_buildings.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_buildings2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_buildings2_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_buildings_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_ca_acr.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_ca_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_ca_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_ca_pmc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_characters2_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_cti_buildings.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_data.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_data_baf.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_data_baf_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_hotfix.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_hotfix_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_l39_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_language.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_languagemissions.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_languagemissions_baf.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_languagemissions_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_languagemissions_pmc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_language_acr.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_language_baf.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_language_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_language_pmc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc3.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc3_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc_acr.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc_acr_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc_baf.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_misc_e_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_mp_armory_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_plants.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_plants2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_plants_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_plants_e2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_plants_pmc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_roads.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_roads2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_roads_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_roads_pmc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_rocks.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_rocks2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_rocks_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_signs.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_signs2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_signs_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_sounds_c_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_sounds_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_sounds_e_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_structures.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_structures_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_structures_e.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_structures_e_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_structures_pmc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_structures_pmc_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_tracked2_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_tracked_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_tracked_e_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_uifonts.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_ui_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_water2_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_water_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_weapons2_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_weapons_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_weapons_e_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_weapons_pmc_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_wheeled2_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_wheeled_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ca_wheeled_e_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_core.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_buildings.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_buildings_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_furniture.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_misc.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_noe_buildings.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_noe_roads.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_plants.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_roads.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_rocks.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_signs.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_signs2.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_cwa_sounds.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_dbe1_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_dbe1_models_dbe1.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_dbe1_models_dbe1_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_editor_c.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_hsim_data_h_dummy.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_hsim_languagemissions_h.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_hsim_language_h.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_ibr_plants.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_plants.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_terrains_core.pbo - unknown
+14:53:00 C:\Arma3Server\@CUP_Terrains_Core-1.2.0\addons\cup_terrains_worlds.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\anims.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\anims_rtm.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\babe_core.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\babe_em.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\dbo_old_bike.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\fix_a3_weapons_mx.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\functions_f_zed.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\landrover.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\outlw_magrepack.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\rds_a2port_civ.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\rds_a2port_cman.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_build.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_builds.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_equip.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_map_stratis_scenes.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_mod.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_sound.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_weapons.pbo - unknown
+14:53:00 C:\Arma3Server\@ViruZ\addons\viruz_zombie.pbo - unknown
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_ai.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_arrays.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_common.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_diagnostic.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_events.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_hashes.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_help.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_jr.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_jr_prep.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_keybinding.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_linux.pbo - 7b37670b
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_main.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_main_a3.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_modules.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_network.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_settings.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_statemachine.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_strings.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_ui.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_ui_helper.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_vectors.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_versioning.pbo - fc3156bf
+14:53:00 C:\Arma3Server\@CBA_A3\addons\cba_xeh.pbo - fc3156bf
+14:53:00 C:\Arma3Server\expansion\addons\air_f_exp.ebo - 104110
+14:53:00 C:\Arma3Server\expansion\addons\anims_f_exp.ebo - 103021
+14:53:00 C:\Arma3Server\expansion\addons\armor_f_exp.ebo - 104064
+14:53:00 C:\Arma3Server\expansion\addons\boat_f_exp.ebo - 104097
+14:53:00 C:\Arma3Server\expansion\addons\cargoposes_f_exp.ebo - 102649
+14:53:00 C:\Arma3Server\expansion\addons\characters_f_exp.ebo - 104803
+14:53:00 C:\Arma3Server\expansion\addons\data_f_exp.ebo - 104700
+14:53:00 C:\Arma3Server\expansion\addons\dubbing_f_exp.ebo - 102566
+14:53:00 C:\Arma3Server\expansion\addons\dubbing_radio_f_exp.ebo - 102344
+14:53:00 C:\Arma3Server\expansion\addons\dubbing_radio_f_exp_data_chi.ebo - 102574
+14:53:00 C:\Arma3Server\expansion\addons\dubbing_radio_f_exp_data_engfre.ebo - 102574
+14:53:00 C:\Arma3Server\expansion\addons\dubbing_radio_f_exp_data_fre.ebo - 103187
+14:53:00 C:\Arma3Server\expansion\addons\editorpreviews_f_exp.ebo - 104805
+14:53:00 C:\Arma3Server\expansion\addons\functions_f_exp.ebo - 102377
+14:53:00 C:\Arma3Server\expansion\addons\languagemissions_f_exp.ebo - 106537
+14:53:00 C:\Arma3Server\expansion\addons\language_f_exp.ebo - 106537
+14:53:00 C:\Arma3Server\expansion\addons\map_data_exp.ebo - 101774
+14:53:00 C:\Arma3Server\expansion\addons\map_tanoabuka.ebo - 103522
+14:53:00 C:\Arma3Server\expansion\addons\map_tanoabuka_data.ebo - 102638
+14:53:00 C:\Arma3Server\expansion\addons\map_tanoabuka_data_layers.ebo - 102461
+14:53:00 C:\Arma3Server\expansion\addons\map_tanoabuka_data_layers_00_00.ebo - 102461
+14:53:00 C:\Arma3Server\expansion\addons\map_tanoa_scenes_f.ebo - 101568
+14:53:00 C:\Arma3Server\expansion\addons\missions_f_exp.ebo - 105876
+14:53:00 C:\Arma3Server\expansion\addons\missions_f_exp_data.ebo - 104654
+14:53:00 C:\Arma3Server\expansion\addons\missions_f_exp_video.ebo - 102748
+14:53:00 C:\Arma3Server\expansion\addons\modules_f_exp.ebo - 101172
+14:53:00 C:\Arma3Server\expansion\addons\music_f_exp.ebo - 102056
+14:53:00 C:\Arma3Server\expansion\addons\music_f_exp_music.ebo - 102056
+14:53:00 C:\Arma3Server\expansion\addons\props_f_exp.ebo - 105103
+14:53:00 C:\Arma3Server\expansion\addons\rocks_f_exp.ebo - 102694
+14:53:00 C:\Arma3Server\expansion\addons\soft_f_exp.ebo - 104563
+14:53:00 C:\Arma3Server\expansion\addons\sounds_f_exp.ebo - 105478
+14:53:00 C:\Arma3Server\expansion\addons\static_f_exp.ebo - 103750
+14:53:00 C:\Arma3Server\expansion\addons\structures_f_exp.ebo - 104645
+14:53:00 C:\Arma3Server\expansion\addons\structures_f_exp_civilian.ebo - 102332
+14:53:00 C:\Arma3Server\expansion\addons\structures_f_exp_commercial.ebo - 102337
+14:53:00 C:\Arma3Server\expansion\addons\structures_f_exp_cultural.ebo - 102334
+14:53:00 C:\Arma3Server\expansion\addons\structures_f_exp_data.ebo - 103085
+14:53:00 C:\Arma3Server\expansion\addons\structures_f_exp_industrial.ebo - 102566
+14:53:00 C:\Arma3Server\expansion\addons\structures_f_exp_infrastructure.ebo - 104645
+14:53:00 C:\Arma3Server\expansion\addons\supplies_f_exp.ebo - 104793
+14:53:00 C:\Arma3Server\expansion\addons\ui_f_exp.ebo - 103113
+14:53:00 C:\Arma3Server\expansion\addons\vegetation_f_exp.ebo - 103172
+14:53:00 C:\Arma3Server\expansion\addons\weapons_f_exp.ebo - 104883
+14:53:00 C:\Arma3Server\mark\addons\anims_f_mark.pbo - 99082
+14:53:00 C:\Arma3Server\mark\addons\characters_f_mark.pbo - 102108
+14:53:00 C:\Arma3Server\mark\addons\data_f_mark.pbo - 100892
+14:53:00 C:\Arma3Server\mark\addons\dubbing_f_mark.pbo - 98398
+14:53:00 C:\Arma3Server\mark\addons\dubbing_f_mp_mark.pbo - 99082
+14:53:00 C:\Arma3Server\mark\addons\functions_f_mark.pbo - 104208
+14:53:00 C:\Arma3Server\mark\addons\functions_f_mp_mark.pbo - 106042
+14:53:00 C:\Arma3Server\mark\addons\languagemissions_f_mark.pbo - 106537
+14:53:00 C:\Arma3Server\mark\addons\languagemissions_f_mp_mark.pbo - 106322
+14:53:00 C:\Arma3Server\mark\addons\language_f_mark.pbo - 106537
+14:53:00 C:\Arma3Server\mark\addons\language_f_mp_mark.pbo - 106537
+14:53:00 C:\Arma3Server\mark\addons\missions_f_mark.pbo - 102917
+14:53:00 C:\Arma3Server\mark\addons\missions_f_mark_data.pbo - 99082
+14:53:00 C:\Arma3Server\mark\addons\missions_f_mark_video.pbo - 99082
+14:53:00 C:\Arma3Server\mark\addons\missions_f_mp_mark.pbo - 103393
+14:53:00 C:\Arma3Server\mark\addons\missions_f_mp_mark_data.pbo - 99084
+14:53:00 C:\Arma3Server\mark\addons\modules_f_mark.pbo - 99085
+14:53:00 C:\Arma3Server\mark\addons\modules_f_mp_mark.pbo - 105876
+14:53:00 C:\Arma3Server\mark\addons\music_f_mark.pbo - 98422
+14:53:00 C:\Arma3Server\mark\addons\music_f_mark_music.pbo - 99086
+14:53:00 C:\Arma3Server\mark\addons\sounds_f_mark.pbo - 99087
+14:53:00 C:\Arma3Server\mark\addons\static_f_mark.pbo - 103750
+14:53:00 C:\Arma3Server\mark\addons\structures_f_mark.pbo - 99089
+14:53:00 C:\Arma3Server\mark\addons\supplies_f_mark.pbo - 103750
+14:53:00 C:\Arma3Server\mark\addons\ui_f_mark.pbo - 99090
+14:53:00 C:\Arma3Server\mark\addons\ui_f_mp_mark.pbo - 99090
+14:53:00 C:\Arma3Server\mark\addons\weapons_f_mark.pbo - 103768
+14:53:00 C:\Arma3Server\heli\addons\air_f_heli.pbo - 104320
+14:53:00 C:\Arma3Server\heli\addons\anims_f_heli.pbo - 99082
+14:53:00 C:\Arma3Server\heli\addons\boat_f_heli.pbo - 103750
+14:53:00 C:\Arma3Server\heli\addons\cargoposes_f_heli.pbo - 103864
+14:53:00 C:\Arma3Server\heli\addons\data_f_heli.pbo - 100892
+14:53:00 C:\Arma3Server\heli\addons\dubbing_f_heli.pbo - 98398
+14:53:00 C:\Arma3Server\heli\addons\functions_f_heli.pbo - 99082
+14:53:00 C:\Arma3Server\heli\addons\languagemissions_f_heli.pbo - 106537
+14:53:00 C:\Arma3Server\heli\addons\language_f_heli.pbo - 106537
+14:53:00 C:\Arma3Server\heli\addons\missions_f_heli.pbo - 104274
+14:53:00 C:\Arma3Server\heli\addons\missions_f_heli_data.pbo - 99082
+14:53:00 C:\Arma3Server\heli\addons\missions_f_heli_video.pbo - 99082
+14:53:00 C:\Arma3Server\heli\addons\modules_f_heli.pbo - 104276
+14:53:00 C:\Arma3Server\heli\addons\music_f_heli.pbo - 98423
+14:53:00 C:\Arma3Server\heli\addons\music_f_heli_music.pbo - 99086
+14:53:00 C:\Arma3Server\heli\addons\soft_f_heli.pbo - 103750
+14:53:00 C:\Arma3Server\heli\addons\sounds_f_heli.pbo - 99086
+14:53:00 C:\Arma3Server\heli\addons\structures_f_heli.pbo - 101719
+14:53:00 C:\Arma3Server\heli\addons\supplies_f_heli.pbo - 103750
+14:53:00 C:\Arma3Server\heli\addons\ui_f_heli.pbo - 99090
+14:53:00 C:\Arma3Server\kart\addons\anims_f_kart.pbo - 99082
+14:53:00 C:\Arma3Server\kart\addons\characters_f_kart.pbo - 99082
+14:53:00 C:\Arma3Server\kart\addons\data_f_kart.pbo - 100651
+14:53:00 C:\Arma3Server\kart\addons\languagemissions_f_kart.pbo - 106537
+14:53:00 C:\Arma3Server\kart\addons\language_f_kart.pbo - 106537
+14:53:00 C:\Arma3Server\kart\addons\missions_f_kart.pbo - 104383
+14:53:00 C:\Arma3Server\kart\addons\missions_f_kart_data.pbo - 99082
+14:53:00 C:\Arma3Server\kart\addons\modules_f_kart.pbo - 99085
+14:53:00 C:\Arma3Server\kart\addons\modules_f_kart_data.pbo - 99085
+14:53:00 C:\Arma3Server\kart\addons\soft_f_kart.pbo - 103750
+14:53:00 C:\Arma3Server\kart\addons\sounds_f_kart.pbo - 99086
+14:53:00 C:\Arma3Server\kart\addons\structures_f_kart.pbo - 101717
+14:53:00 C:\Arma3Server\kart\addons\ui_f_kart.pbo - 99090
+14:53:00 C:\Arma3Server\kart\addons\weapons_f_kart.pbo - 99090
+14:53:00 C:\Arma3Server\curator\addons\data_f_curator.pbo - 103921
+14:53:00 C:\Arma3Server\curator\addons\functions_f_curator.pbo - 99082
+14:53:00 C:\Arma3Server\curator\addons\language_f_curator.pbo - 106537
+14:53:00 C:\Arma3Server\curator\addons\missions_f_curator.pbo - 103884
+14:53:00 C:\Arma3Server\curator\addons\modules_f_curator.pbo - 103372
+14:53:00 C:\Arma3Server\curator\addons\ui_f_curator.pbo - 105558
+14:53:00 C:\Arma3Server\@infiSTAR_A3\addons\a3_infistar.pbo - unknown
+14:53:00 C:\Arma3Server\@hive\addons\viruz_server.pbo - unknown
+14:53:00 addons\3den.pbo - 105763
+14:53:00 addons\3den_language.pbo - 106535
+14:53:00 addons\a3.pbo - unknown
+14:53:00 addons\air_f.pbo - 103749
+14:53:00 addons\air_f_beta.pbo - 104183
+14:53:00 addons\air_f_epb.pbo - 103749
+14:53:00 addons\air_f_epc.pbo - 103749
+14:53:00 addons\air_f_gamma.pbo - 103749
+14:53:00 addons\animals_f.pbo - 100090
+14:53:00 addons\animals_f_beta.pbo - 100090
+14:53:00 addons\anims_f.pbo - 103716
+14:53:00 addons\anims_f_bootcamp.pbo - 99081
+14:53:00 addons\anims_f_data.pbo - 103820
+14:53:00 addons\anims_f_epa.pbo - 99082
+14:53:00 addons\anims_f_epc.pbo - 99082
+14:53:00 addons\anims_f_exp_a.pbo - 99908
+14:53:00 addons\armor_f.pbo - 103750
+14:53:00 addons\armor_f_beta.pbo - 103749
+14:53:00 addons\armor_f_epb.pbo - 103749
+14:53:00 addons\armor_f_epc.pbo - 103749
+14:53:00 addons\armor_f_gamma.pbo - 103749
+14:53:00 addons\baseconfig_f.pbo - 99080
+14:53:00 addons\boat_f.pbo - 103749
+14:53:00 addons\boat_f_beta.pbo - 103750
+14:53:00 addons\boat_f_epc.pbo - 103750
+14:53:00 addons\boat_f_gamma.pbo - 103750
+14:53:00 addons\cargoposes_f.pbo - 102701
+14:53:00 addons\characters_f.pbo - 104996
+14:53:00 addons\characters_f_beta.pbo - 101172
+14:53:00 addons\characters_f_bootcamp.pbo - 100169
+14:53:00 addons\characters_f_epa.pbo - 99082
+14:53:00 addons\characters_f_epb.pbo - 99082
+14:53:00 addons\characters_f_epc.pbo - 99082
+14:53:00 addons\characters_f_gamma.pbo - 99374
+14:53:00 addons\data_f.pbo - 104696
+14:53:00 addons\data_f_bootcamp.pbo - 100892
+14:53:00 addons\data_f_exp_a.pbo - 99082
+14:53:00 addons\data_f_exp_b.pbo - 98643
+14:53:00 addons\drones_f.pbo - 103750
+14:53:00 addons\dubbing_f.pbo - 98398
+14:53:00 addons\dubbing_f_beta.pbo - 98398
+14:53:00 addons\dubbing_f_bootcamp.pbo - 98398
+14:53:00 addons\dubbing_f_epa.pbo - 98398
+14:53:00 addons\dubbing_f_epb.pbo - 98398
+14:53:00 addons\dubbing_f_epc.pbo - 98398
+14:53:00 addons\dubbing_f_gamma.pbo - 98398
+14:53:00 addons\dubbing_radio_f.pbo - 99982
+14:53:00 addons\dubbing_radio_f_data_eng.pbo - 99078
+14:53:00 addons\dubbing_radio_f_data_engb.pbo - 99078
+14:53:00 addons\dubbing_radio_f_data_gre.pbo - 99078
+14:53:00 addons\dubbing_radio_f_data_per.pbo - 99078
+14:53:00 addons\dubbing_radio_f_data_vr.pbo - 99078
+14:53:00 addons\editorpreviews_f.pbo - 103691
+14:53:00 addons\editor_f.pbo - 99082
+14:53:00 addons\functions_f.pbo - 105478
+14:53:00 addons\functions_f_bootcamp.pbo - 104210
+14:53:00 addons\functions_f_epa.pbo - 99082
+14:53:00 addons\functions_f_epc.pbo - 99082
+14:53:00 addons\functions_f_exp_a.pbo - 104562
+14:53:00 addons\languagemissions_f.pbo - 106537
+14:53:00 addons\languagemissions_f_beta.pbo - 106537
+14:53:00 addons\languagemissions_f_bootcamp.pbo - 106537
+14:53:00 addons\languagemissions_f_epa.pbo - 106537
+14:53:00 addons\languagemissions_f_epb.pbo - 106537
+14:53:00 addons\languagemissions_f_epc.pbo - 106537
+14:53:00 addons\languagemissions_f_exp_a.pbo - 106537
+14:53:00 addons\languagemissions_f_gamma.pbo - 106537
+14:53:00 addons\language_f.pbo - 105615
+14:53:00 addons\language_f_beta.pbo - 106535
+14:53:00 addons\language_f_bootcamp.pbo - 106536
+14:53:00 addons\language_f_epa.pbo - 106537
+14:53:00 addons\language_f_epb.pbo - 106537
+14:53:00 addons\language_f_epc.pbo - 106537
+14:53:00 addons\language_f_exp_a.pbo - 106537
+14:53:00 addons\language_f_exp_b.pbo - 106537
+14:53:00 addons\language_f_gamma.pbo - 106537
+14:53:00 addons\map_altis.pbo - 103962
+14:53:00 addons\map_altis_data.pbo - 99740
+14:53:00 addons\map_altis_data_layers.pbo - 99901
+14:53:00 addons\map_altis_data_layers_00_00.pbo - 99901
+14:53:00 addons\map_altis_data_layers_00_01.pbo - 99901
+14:53:00 addons\map_altis_data_layers_01_00.pbo - 99901
+14:53:00 addons\map_altis_data_layers_01_01.pbo - 99901
+14:53:00 addons\map_altis_scenes_f.pbo - 101568
+14:53:00 addons\map_data.pbo - 103018
+14:53:00 addons\map_stratis.pbo - 103932
+14:53:00 addons\map_stratis_data.pbo - 99082
+14:53:00 addons\map_stratis_data_layers.pbo - 99082
+14:53:00 addons\map_stratis_scenes_f.pbo - 101568
+14:53:00 addons\map_vr.pbo - 98784
+14:53:00 addons\map_vr_scenes_f.pbo - 101569
+14:53:00 addons\misc_f.pbo - 99082
+14:53:00 addons\missions_f.pbo - 105808
+14:53:00 addons\missions_f_beta.pbo - 99082
+14:53:00 addons\missions_f_beta_data.pbo - 99082
+14:53:00 addons\missions_f_beta_video.pbo - 99082
+14:53:00 addons\missions_f_bootcamp.pbo - 104150
+14:53:00 addons\missions_f_bootcamp_data.pbo - 99082
+14:53:00 addons\missions_f_bootcamp_video.pbo - 99082
+14:53:00 addons\missions_f_data.pbo - 99082
+14:53:00 addons\missions_f_epa.pbo - 104331
+14:53:00 addons\missions_f_epa_data.pbo - 99082
+14:53:00 addons\missions_f_epa_video.pbo - 99082
+14:53:00 addons\missions_f_epb.pbo - 99082
+14:53:00 addons\missions_f_epc.pbo - 99082
+14:53:00 addons\missions_f_exp_a.pbo - 105043
+14:53:00 addons\missions_f_exp_a_data.pbo - 98702
+14:53:00 addons\missions_f_gamma.pbo - 104054
+14:53:00 addons\missions_f_gamma_data.pbo - 99082
+14:53:00 addons\missions_f_gamma_video.pbo - 99082
+14:53:00 addons\missions_f_video.pbo - 99084
+14:53:00 addons\modules_f.pbo - 104380
+14:53:00 addons\modules_f_beta.pbo - 99084
+14:53:00 addons\modules_f_beta_data.pbo - 99084
+14:53:00 addons\modules_f_bootcamp.pbo - 99085
+14:53:00 addons\modules_f_data.pbo - 99085
+14:53:00 addons\modules_f_epb.pbo - 99085
+14:53:00 addons\modules_f_exp_a.pbo - 99085
+14:53:00 addons\music_f.pbo - 99086
+14:53:00 addons\music_f_bootcamp.pbo - 98422
+14:53:00 addons\music_f_bootcamp_music.pbo - 99086
+14:53:00 addons\music_f_epa.pbo - 98422
+14:53:00 addons\music_f_epa_music.pbo - 99086
+14:53:00 addons\music_f_epb.pbo - 98422
+14:53:00 addons\music_f_epb_music.pbo - 99086
+14:53:00 addons\music_f_epc.pbo - 98423
+14:53:00 addons\music_f_epc_music.pbo - 99086
+14:53:00 addons\music_f_music.pbo - 99086
+14:53:00 addons\plants_f.pbo - 102349
+14:53:00 addons\props_f_exp_a.pbo - 103750
+14:53:00 addons\roads_f.pbo - 98423
+14:53:00 addons\rocks_f.pbo - 101831
+14:53:00 addons\signs_f.pbo - 99349
+14:53:00 addons\soft_f.pbo - 103750
+14:53:00 addons\soft_f_beta.pbo - 103862
+14:53:00 addons\soft_f_bootcamp.pbo - 103750
+14:53:00 addons\soft_f_epc.pbo - 103750
+14:53:00 addons\soft_f_gamma.pbo - 103750
+14:53:00 addons\sounds_f.pbo - 105478
+14:53:00 addons\sounds_f_arsenal.pbo - 105059
+14:53:00 addons\sounds_f_bootcamp.pbo - 99086
+14:53:00 addons\sounds_f_characters.pbo - 101934
+14:53:00 addons\sounds_f_environment.pbo - 101781
+14:53:00 addons\sounds_f_epb.pbo - 99086
+14:53:00 addons\sounds_f_epc.pbo - 103120
+14:53:00 addons\sounds_f_exp_a.pbo - 99086
+14:53:00 addons\sounds_f_sfx.pbo - 99087
+14:53:00 addons\sounds_f_vehicles.pbo - 101781
+14:53:00 addons\static_f.pbo - 103750
+14:53:00 addons\static_f_beta.pbo - 103750
+14:53:00 addons\static_f_gamma.pbo - 103750
+14:53:00 addons\structures_f.pbo - 103818
+14:53:00 addons\structures_f_bootcamp.pbo - 101830
+14:53:00 addons\structures_f_data.pbo - 100167
+14:53:00 addons\structures_f_epa.pbo - 99891
+14:53:00 addons\structures_f_epb.pbo - 101868
+14:53:00 addons\structures_f_epc.pbo - 101721
+14:53:00 addons\structures_f_exp_a.pbo - 99087
+14:53:00 addons\structures_f_households.pbo - 103767
+14:53:00 addons\structures_f_ind.pbo - 102260
+14:53:00 addons\structures_f_mil.pbo - 102891
+14:53:00 addons\structures_f_wrecks.pbo - 99089
+14:53:00 addons\uifonts_f.pbo - 99090
+14:53:00 addons\uifonts_f_data.pbo - 99090
+14:53:00 addons\ui_f.pbo - 106102
+14:53:00 addons\ui_f_bootcamp.pbo - 101548
+14:53:00 addons\ui_f_data.pbo - 104852
+14:53:00 addons\ui_f_exp_a.pbo - 99090
+14:53:00 addons\weapons_f.pbo - 104785
+14:53:00 addons\weapons_f_beta.pbo - 104151
+14:53:00 addons\weapons_f_bootcamp.pbo - 99090
+14:53:00 addons\weapons_f_epa.pbo - 99090
+14:53:00 addons\weapons_f_epb.pbo - 99090
+14:53:00 addons\weapons_f_epc.pbo - 99090
+14:53:00 addons\weapons_f_gamma.pbo - 99090
+14:53:00 
+14:53:00 =======================
+14:53:00 
+14:53:00 ============================================================================================= List of mods ===============================================================================================
+14:53:00 modsReadOnly = true
+14:53:00 safeModsActivated = false
+14:53:00 customMods = true
+14:53:00 hash = '814E8CE84191E3213B4875EC1A22B4B5AEF0967C'
+14:53:00 hashShort = '94c09875'
+14:53:00                                               name |               modDir |    default |               origin |                                     hash | hashShort | fullPath
+14:53:00 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14:53:00                                  CUP Weapons 1.7.1 |         @CUP_Weapons |      false |             GAME DIR | 856c0ec6dd93fbde587ff390a6d5b638aa01e365 |  3989aea4 | C:\Arma3Server\@CUP_Weapons
+14:53:00                          CUP Terrains - Maps 1.2.0 | @CUP_Terrains_Maps-1.2.0 |      false |             GAME DIR | d7cccea737507a9a009220ae4762dd2a9f17c1af |  58858ce3 | C:\Arma3Server\@CUP_Terrains_Maps-1.2.0
+14:53:00                          CUP Terrains - Core 1.2.0 | @CUP_Terrains_Core-1.2.0 |      false |             GAME DIR | 77e21c4946715ecee65088bfa2560e0db28e6abb |  29811dad | C:\Arma3Server\@CUP_Terrains_Core-1.2.0
+14:53:00                                          ViruZ Mod |               @ViruZ |      false |             GAME DIR | f6ae6c65e9b2c1e179ec1d6fa9d4d3d44b4c730f |  e113522f | C:\Arma3Server\@ViruZ
+14:53:00                       Community Base Addons v3.1.0 |              @CBA_A3 |      false |             GAME DIR | b29bde517d52b92366a386a4a12af82b030b7e98 |  7951337e | C:\Arma3Server\@CBA_A3
+14:53:00                                  Arma 3 DLC Bundle |            dlcbundle |       true |            NOT FOUND |                                          |           | 
+14:53:00                                        Arma 3 Apex |            expansion |       true |             GAME DIR | 61bb8023710fa4aaffc832b931c49b70631174de |  ebd28e4e | C:\Arma3Server\expansion
+14:53:00                                    Arma 3 Marksmen |                 mark |       true |             GAME DIR | 0971723f28503ceb2d8fe097a2544c0fb258d060 |  84da09ae | C:\Arma3Server\mark
+14:53:00                                 Arma 3 Helicopters |                 heli |       true |             GAME DIR | d17b2a88ac41c5a119720fd3d221a782a70a1415 |  2305f73b | C:\Arma3Server\heli
+14:53:00                                       Arma 3 Karts |                 kart |       true |             GAME DIR | c749aafea5426edb670fc5b77c0de405a9728b9c |  91d04a48 | C:\Arma3Server\kart
+14:53:00                                        Arma 3 Zeus |              curator |       true |             GAME DIR | 6b019b4d61f82db3bb1bcbaf22f2b90522f076fa |  512c52af | C:\Arma3Server\curator
+14:53:00                                             Arma 3 |                   A3 |       true |            NOT FOUND |                                          |           | 
+14:53:00                                       @infiSTAR_A3 |         @infiSTAR_A3 |      false |             GAME DIR | da39a3ee5e6b4b0d3255bfef95601890afd80709 |  11fdd19c | C:\Arma3Server\@infiSTAR_A3
+14:53:00                                              @hive |                @hive |      false |             GAME DIR | da39a3ee5e6b4b0d3255bfef95601890afd80709 |  11fdd19c | C:\Arma3Server\@hive
+14:53:00 ==========================================================================================================================================================================================================
+14:53:00 InitSound ...
+14:53:00 InitSound - complete
+14:53:00 PhysX3 SDK Init started ...
+14:53:00 PhysX3 SDK Init ended.
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:01 Warning Message: Script any not found
+14:53:02 Warning Message: Script any not found
+14:53:02 Warning Message: Script any not found
+14:53:02 Warning Message: Script any not found
+14:53:02 Warning Message: Script any not found
+14:53:02 Warning Message: Script any not found
+14:53:02 Warning Message: Script any not found
+14:53:02 Attempt to override final function - rscminimap_script
+14:53:02 Attempt to override final function - rscdisplayloading_script
+14:53:02 Attempt to override final function - rscdisplayloading_script
+14:53:02 Attempt to override final function - rscdisplayloading_script
+14:53:02 Attempt to override final function - rscdiary_script
+14:53:02 Attempt to override final function - rscdiary_script
+14:53:02 Attempt to override final function - rscdisplayremotemissions_script
+14:53:02 Attempt to override final function - rscdisplayloading_script
+14:53:02 Attempt to override final function - rscdiary_script
+14:53:02 Attempt to override final function - rscdiary_script
+14:53:02 Attempt to override final function - rscdisplaystrategicmap_script
+14:53:02 Attempt to override final function - rscdisplaycommon_script
+14:53:02 Attempt to override final function - rscdisplaygarage_script
+14:53:02 Attempt to override final function - rscdisplayhostsettings_script
+14:53:02 Attempt to override final function - rscdisplayloading_script
+14:53:03 Attempt to override final function - rscdisplaycurator_script
+14:53:03 Attempt to override final function - display3deneditcomposition_script
+14:53:03 Attempt to override final function - display3deneditattributes_script
+14:53:03 Attempt to override final function - display3deneditattributes_script
+14:53:03 Attempt to override final function - rscdisplayhostsettings_script
+14:53:03 Attempt to override final function - rscdisplaycommon_script
+14:53:03 Attempt to override final function - rscdisplaydebriefing_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 Attempt to override final function - rscunitinfo_script
+14:53:03 [0,111.56,0,"XEH: PreStart started."]
+14:53:03 [0,111.7,0,"XEH: PreStart finished."]
+14:53:03 [XEH]: zZombie_Base does not support Extended Event Handlers! Addon: @ViruZ
+14:53:03 [XEH]: Land_Camping_Light_F does not support Extended Event Handlers! Addon: @ViruZ
+14:53:03 [XEH]: SUV_01_base_F does not support Extended Event Handlers!
+14:53:03 [XEH]: Maniken_Base does not support Extended Event Handlers! Addon: @ViruZ
+14:53:03 [XEH]: SUV_01_Bardo_SRV does not support Extended Event Handlers! Addon: @ViruZ
+14:53:03 [XEH]: C_SUV_01_F does not support Extended Event Handlers!
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.scope'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: Error: creating weapon ItemInfo with scope=private
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.displayName'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.nameSound'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.type'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.picture'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.Library'.
+14:53:03 Warning Message: No entry '.libTextDesc'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.model'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.simulation'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.fireLightDuration'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.fireLightIntensity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.fireLightDiffuse'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.fireLightAmbient'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.weaponLockDelay'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.weaponLockSystem'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.cmImmunity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.weight'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.lockingTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.lockedTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.detectRange'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/ItemInfo.muzzles'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.scope'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: Error: creating weapon LinkedItems with scope=private
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.displayName'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.nameSound'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.type'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.picture'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.Library'.
+14:53:03 Warning Message: No entry '.libTextDesc'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.model'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.simulation'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.fireLightDuration'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.fireLightIntensity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.fireLightDiffuse'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.fireLightAmbient'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.weaponLockDelay'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.weaponLockSystem'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.cmImmunity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.weight'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.lockingTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.lockedTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.detectRange'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/LinkedItems.muzzles'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.scope'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: Error: creating weapon WeaponSlotsInfo with scope=private
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.displayName'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.nameSound'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.type'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.picture'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.Library'.
+14:53:03 Warning Message: No entry '.libTextDesc'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.model'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.simulation'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.fireLightDuration'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.fireLightIntensity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.fireLightDiffuse'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.fireLightAmbient'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.weaponLockDelay'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.weaponLockSystem'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.cmImmunity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.weight'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.lockingTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.lockedTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.detectRange'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/WeaponSlotsInfo.muzzles'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.scope'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: Error: creating weapon GunParticles with scope=private
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.displayName'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.nameSound'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.type'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.picture'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.Library'.
+14:53:03 Warning Message: No entry '.libTextDesc'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.model'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.simulation'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.fireLightDuration'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.fireLightIntensity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.fireLightDiffuse'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.fireLightAmbient'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.weaponLockDelay'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.weaponLockSystem'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.cmImmunity'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.weight'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.lockingTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.lockedTargetSound'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.detectRange'.
+14:53:03 Warning Message: '/' is not a value
+14:53:03 Warning Message: No entry 'bin\config.bin/CfgWeapons/GunParticles.muzzles'.
+14:53:03 Warning Message: Size: '/' not an array
+14:53:05 VoteThreshold must be in 0..1 range. Defaulting to 0.5
+14:53:05 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+14:53:05 Steam AppId from steam_appid.txt: 107410
+14:53:05 Mission ViruZ.Chernarus: Number of roles (99) is different from 'description.ext::Header::maxPlayer' (45)
+14:53:05 Starting mission:
+14:53:05  Mission file: ViruZ (__cur_mp)
+14:53:05  Mission world: Chernarus
+14:53:05  Mission directory: mpmissions\__cur_mp.Chernarus\
+14:53:11 Attempt to override final function - bis_functions_list
+14:53:11 Attempt to override final function - bis_functions_listpreinit
+14:53:11 Attempt to override final function - bis_functions_listpostinit
+14:53:11 Attempt to override final function - bis_functions_listrecompile
+14:53:11 Attempt to override final function - bis_fnc_missiontaskslocal
+14:53:11 Attempt to override final function - bis_fnc_missionconversationslocal
+14:53:11 Attempt to override final function - bis_fnc_missionflow
+14:53:11 "<infiSTAR.de> 0 - run.sqf - finaled EPOCH_server_isPAdmin: {true}"
+14:53:11 "<infiSTAR.de> 0 - run.sqf - including AntiHack"
+14:53:11 "<infiSTAR.de> VERSION: 12012016 infiSTAR.de AHAT (v0228B)"
+14:53:11 "<infiSTAR.de> 0 - STARTING"
+14:53:11 Attempt to override final function - bis_fnc_call
+14:53:11 Attempt to override final function - bis_fnc_spawn
+14:53:11 Attempt to override final function - bis_fnc_parsenumber
+14:53:11 "<infiSTAR.de> _fnc_RandomGen: {  _fnc_actualGen = {   _abc = ['z','y','x','w','v','u','t','s','r','q','p','o','n','m','l','k','j','i','h','g','f','e','d','c','b','a'];   _gen = _abc select (random ((count _abc)-1));   _arr = ['P','T','Z','C','S','g','B','G','Y','3','L','E','5','Z','q','C','U','P','G','2','u','o','u','T','I','Z','v','E','n','2'];   _randmax = {((round(random _randminval)) + (round(random _randmaxval))) max _randminval};   for '_i' from 0 to (call _randmax)do   {    _gen = _gen + str(round(random 9)) + (_arr select (random ((count _arr)-1)));   };  };  _gen = '';  while{_gen=='' || _gen in _allRandomGenVars}do{   call _fnc_actualGen;  };  _allRandomGenVars pushBack _gen;  _gen }"
+14:53:11 "<infiSTAR.de>RandomVarLog| ----START-LINE----   (12012016-v0228B) (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _adminbox: k2u7S3E6S3E9q6g229u1L5E8G3E8v4C8I12238u638u3T (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _fnc_mpPackets: l8T7T5L626C1E4E8Z8o (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _FNC_AH2271_KICKLOG: v6Z7Z4n6g9C1L4u1T8E1B1E2v1B137L (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _FNC_AH2271_KICKLOGSPAWN: h3B122C5E6C1L2Z3g3Z5v (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _FNC_PVAH_AdminReq: g6n3L7g155G5E7o2Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _BigTokenArray: k5C3C9B8E6E6g4Y132T2E (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _connectedArray: x7n53831L723g2P1g7g2E (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _tokenSentArray: h6C95732Y5C2C533n5P6G321B928P425Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _server_setTokenR: y8v5S533g6n1E453G0B4q7C8U3n2G6P1u0E3v7P (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _fnc_pvc_token: y4Z5g1T5G8E7g527I8S (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _server_checkTokenR: g9T3G7T559E2Z5S6T (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _YourPlayerToken: t3o0E6Z2C9C625Z0u (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _TokenCT: c3Y4Z6u22629u72027n7P656S3S1q (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AH_MAIN_BLOCK: f9I6o7B1I4Z727u2B6g (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AHKickOFF: y7E2G3g1Z7T457Z8g7S735Z0Z1I5Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AH2271KICKLOG: w2S6Z2Z3E6P4u2n6T1C3o7L7U7L7q (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _FiredCheck: m8U1u5L934G420B4P3C1B52339C (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _clientdo: b2Z5S8u850P3E653L (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AH_RunCheckENDVAR: m0q7o6Z8G4I2P5G157u5Z52 (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AH_HackLogArrayRND: y6Z8Y8S558L7u6T5S5C520T8Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AH_SurvLogArrayRND: l2S1L2T5T5L7S7o7T6u3L7Z9I232T327T2Z7P726U (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AH_AdmiLogArrayRND: t6G7C1T6C2g3n6P7n1U (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _TMPBAN: o5G8g4G7g9G157E8o8G0P8T624E3q7Y2n5o (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _massMessage: g4o3Z1G9L052Z1G35 (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _massSysMessage: i6Y7E558P9n427E1n8v5Z5v5S5B75 (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AHpos: c1u2S3o2C0I5B2T4B1I6U7T2g4S3C9U1o534T6P (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _ninetwo: f4G5U4Z5C1S3Y6u7S857Z3I8I (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _ninetwothread: q4q5Z1o1u1Y623Z8Z0g2q (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _adminsA: j558E8U3Z8B5Z2u5n5P8C3o7I0u5B9L7G (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _MC: f2Z1Z2u5u724U7U7B (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _MCS: k5B8S5Z4g8P5q222C1S9u7G5g3G4S3E9U (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _oneachframe: l4n528T7g8u0u534I6C1P3g3B8T3I532C959E (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _checkidicheckcheck: c0U6T5u4Y5E3B933U6C3I (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _lastshotmade: d9Z233L4u321B6L2L9G1u021T9Z2E3Z8g2T9E1E (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _dellocveh: t551g3T6G4B6q0Z5P (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _inCombatTime: a1T0C822E8E0n2C7C (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _inCombatArray: n1U5g4G2T2P2Y7G2E5E3Z6E2Z8v (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _fnc_infiKeyHandler: u9Y6u7u3o3o3P1v0L0v5I1u9C7g3C7C159u (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _ButtonDownCnt: y5G3q9v754C5o2C5U6P (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _ButtonDownTime: k6u955E6E5v7C5v022E8G8Z7E1G7P6q3P5u9E623C7E (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _clickOnMapTimer: f6o352Y0C4G5E4I8Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _clickOnMapCaught: p0Z8B8B1T8T3Z6C4Z7U8Z5v2g6u2B1G2Z1P (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _MAKE_VAR_DUMP_RANDOM: t7B026u3T2Z9Z8q3G7Z3G3P3C1C7Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _MAKE_VAR_DUMP_CLIENT: n4P6T6C529Z7Z2C255T5L1I (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _DUMPINGPLAYERUIDARRAY: l7G6L4Z5Z3u5B1Z3L (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _CURRENTLYDUMPING: b2q7T9U420u7I4G8v7B6Y6T2o8B (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _customcommandingMenu: b1T7C5E5Y1U6C2g1I2G7o (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _customcommandingMenuOpen: w334Y5S3L7o6S835o3S8q7U4u8E6S (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _LogicVariable: m0C1G524o722q0u056E1Z9P5T4T (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _antiantihack_rndvar: h4B927B635n2o4u0u (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t1: x6u3B3u2u8B6B2Z5G533U2C (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t2: a1g8I6E8G1Z0E5C6T (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t3: o4S5G6E0Z3B1G4T5P7S4n8g6v4Z7u (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t4: i1G8Z6G1G53131C8Z62557g155u1U1v3P9Y8q83 (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t5: p4S7S0v4Z8Z7o8Z7n (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t6: n4I031n8q1g7S0C0B5L6n5U2E6I6E (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t7: e2u6g8q2L0Y2G0U1Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t8: m2S2C4C1v4L937P7u (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t9: f5P4C8S6U3G0o3I1v1T5o158C4T6G3Y1Y1P526T6T6G (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t10: p8I8g1q8C6T855Z6g12320G4L6q8C2G3E1E531v (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t11: r5C833g6G1n43955E3G6u0Z5L1S6T (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t12: d833I2v4U5n8C551S035q5L3S7I8T3Z5P121S (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t13: c5B6u2P6C0Z4B155P8u3n1L5B7E (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t14: z42527Y4o9S9G752C (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t15: a8G6G5Y1n1E6Z5n2T6Z (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t16: b0P3E721o6U4v3P9C2T8G2U8T134I32 (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t17: o1Z2C5q7L1u2E0S1g528Z6u6B4L130C9I1v (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _t18: n6P9C8E4Z2C5L2v7I6Y537E1u (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _AH2271_KICKLOG: PVAHR_5r4d1t0d2y3w3m7h (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| _RequestToken: PVAHR_7t1g1m3z7s4m2b (v0228B)"
+14:53:11 "<infiSTAR.de>RandomVarLog| ----END-LINE----   (12012016-v0228B) (v0228B)"
+14:53:11 "<infiSTAR.de> 0 - loading AntiHack.."
+14:53:11 "<infiSTAR.de> 0 - Thread MAIN: starting!"
+14:53:11 "<infiSTAR.de> 0 - Thread MAIN: loading...!"
+14:53:11 "<infiSTAR.de> 0 - Thread MAIN: compiling and/or sending none-threaded code!"
+14:53:11 "<infiSTAR.de> 0 - Thread MAIN: none-threaded code compiled and/or sent!"
+14:53:11 "<infiSTAR.de> 0 - AntiHack loaded!"
+14:53:11 "<infiSTAR.de> 0 - run.sqf - AntiHack included!"
+14:53:11 "<infiSTAR.de> 0 - run.sqf - including AdminTools"
+14:53:11 "<infiSTAR.de> 0 - run.sqf - AdminTools included!"
+14:53:11 [3062,120.036,0,"XEH: PreInit started. v3.1.0.160928"]
+14:53:11 [3062,120.142,0,"XEH: PreInit finished."]
+14:53:11 Loading movesType CfgGesturesMale
+14:53:12 Error: Bone cheek_lf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone nose_tip doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_uplb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone jaw_ls doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_uplf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_lc doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_lwlb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_lwlf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone jaw_lm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone zig_lb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_lwm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_upm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone ear_l doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone corr doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone tongue_m doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone tongue_f doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eyebrow_lb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eyebrow_lf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eyebrow_lm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone zig_lm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eye_upl doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eye_lwl doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone cheek_l doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone cheek_lb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone zig_lt doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone nose_l doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone cheek_lm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone nose_r doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone forehead_r doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone forehead_m doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone forehead_l doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone cheek_rb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eye_lwr doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone cheek_r doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone zig_rt doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone zig_rm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone cheek_rf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone cheek_rm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eyebrow_rm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eyebrow_rf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eye_upr doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone eyebrow_rb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone tongue_b doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone ear_r doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone neck_l doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_uprf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone neck_r doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_uprb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_rc doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_lwrb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone lip_lwrf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone neck_b doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone zig_rb doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone neck_t doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone jaw_rf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone jaw_lf doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone chin doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone jaw_rm doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone jaw_rs doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone jaw doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+14:53:12 Warning: rightHandIKCurve, wrong size (size<2||size>=4) in CUP\Weapons\CUP_Weapons_WeaponsCore\anim\M249\gesture\m249_STANAGreload_stand.rtm
+14:53:12 Warning: rightHandIKCurve, wrong size (size<2||size>=4) in CUP\Weapons\CUP_Weapons_WeaponsCore\anim\M249\gesture\m249_STANAGreload_prone.rtm
+14:53:12 Warning: rightHandIKCurve, wrong size (size<2||size>=4) in CUP\Weapons\CUP_Weapons_WeaponsCore\anim\M249\gesture\m249_STANAGreload_stand.rtm
+14:53:13 MovesType CfgGesturesMale load time 1242 ms
+14:53:13 Loading movesType CfgMovesMaleSdr
+14:53:15 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnHer_rfl.rtm
+14:53:15 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnHer_pst.rtm
+14:53:15 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnHer_ua.rtm
+14:53:19 Warning: rightHandIKCurve, size is not n*2 in \A3\anims_f\Data\Anim\Sdr\ovr\erc\stp\ras\rfl\AovrPercMstpSrasWrflDf
+14:53:19 Warning: rightHandIKCurve, size is not n*2 in \A3\anims_f\Data\Anim\Sdr\ovr\erc\stp\ras\rfl\AovrPercMstpSrasWrflDf
+14:53:19 Warning: rightHandIKCurve, size is not n*2 in \A3\anims_f\Data\Anim\Sdr\ovr\erc\stp\ras\rfl\AovrPercMstpSrasWrflDf
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOverHer_rfl.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOverHer_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOverHer_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOverH_rfl.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOverH_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOverH_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOver_rfl.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOver_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOver_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_rfl.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOn_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOn_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOn_rfl.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\stepOn_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\stepOn_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\stepOn_rfl.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\vaultover_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\vaultover_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\vaultover_rfl.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\drop_ua.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\drop_pst.rtm
+14:53:21 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\drop_rfl.rtm
+14:53:30 MovesType CfgMovesMaleSdr load time 17443 ms
+14:53:31 Connected to Steam servers
+14:53:31 "<infiSTAR.de> 0 - Thread #1: Server Loop #1 starting now!"
+14:53:31 "<infiSTAR.de> 0 - Thread #1: Server Loop #1 looping now!"
+14:53:31 [3319,139.899,0,"XEH: PostInit started. MISSIONINIT: missionName=ViruZ, missionVersion=52, worldName=Chernarus, isMultiplayer=true, isServer=true, isDedicated=true, CBA_isHeadlessClient=false, hasInterface=false, didJIP=false"]
+14:53:31 [3319,139.899,0,"XEH: PostInit finished."]
+14:53:31 c:\w\stable\futura\lib\network\networkserver.cpp NetworkServer::OnClientStateChanged:NOT IMPLEMENTED - briefing!
+14:53:31  Mission id: 80b09793a7b1f9cfff9a5e97c82f3148a481bde7
+14:53:31 Unable to get file version size: C:\Arma3Server\@hive\real_date.dll
+14:53:31 "HIVE: Starting"
+14:53:31 "MISSION: File Updated"
+14:53:31 "HIVE: Request sent"
+14:53:31 "HIVE: Request sent"
+14:53:31 "HIVE: Commence Object Streaming..."
+14:53:31 "DEBUG FPS  : 0.561541"
+14:53:31 Warn: Shape '???' contains water texture however it does not carry a special class name. Consider craeting one to speed up the detection!
+14:53:31 "OBJ: 2814 - TentStorageDome"
+14:53:32 "OBJ: 2816 - CamoNet_BLUFOR_F"
+14:53:32 "OBJ: 2817 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2818 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2822 - VIRUZ_Woodfloor_New"
+14:53:32 "OBJ: 2823 - VIRUZ_WoodRamp_New"
+14:53:32 "OBJ: 2824 - VIRUZ_Woodfloor_New"
+14:53:32 "OBJ: 2825 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2826 - VIRUZ_Woodfloor_New"
+14:53:32 "OBJ: 2828 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2829 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2830 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2833 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2834 - VIRUZ_WoodDoor_new"
+14:53:32 "OBJ: 2835 - VIRUZ_WoodGate_new"
+14:53:32 "OBJ: 2836 - VIRUZ_WoodGate_new"
+14:53:32 "OBJ: 2837 - VIRUZ_Woodstair_New"
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 70, point 90, face points 90,91,101 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 72, point 88, face points 88,91,97 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 74, point 89, face points 89,90,100 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 76, point 89, face points 88,89,98 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 78, point 94, face points 94,93,102 - very small normal 0,0,0
+14:53:32 Warnings in viruz_builds\viruz_floors\viruz_wood_stair.p3d:0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 70, point 90, face points 90,91,101 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 72, point 88, face points 88,91,97 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 74, point 89, face points 89,90,100 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 76, point 89, face points 88,89,98 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 78, point 94, face points 94,93,102 - very small normal 0,0,0
+14:53:32 Warnings in viruz_builds\viruz_floors\viruz_wood_stair.p3d:30
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:1.01644e-019 Face 8, point 14, face points 14,15,25 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:1.01644e-019 Face 10, point 12, face points 12,15,21 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:1.01644e-019 Face 12, point 13, face points 13,14,24 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:1.01644e-019 Face 14, point 13, face points 12,13,22 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:1.01644e-019 Face 16, point 18, face points 18,17,26 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 70, point 90, face points 90,91,101 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 72, point 88, face points 88,91,97 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 74, point 89, face points 89,90,100 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 76, point 89, face points 88,89,98 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.33249e-040 Face 78, point 94, face points 94,93,102 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 70, point 90, face points 90,91,101 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 72, point 88, face points 88,91,97 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 74, point 89, face points 89,90,100 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 76, point 89, face points 88,89,98 - very small normal 0,0,0
+14:53:32 Warning: viruz_builds\viruz_floors\viruz_wood_stair.p3d:7.18866e-043 Face 78, point 94, face points 94,93,102 - very small normal 0,0,0
+14:53:32 Strange convex component01 in viruz_builds\viruz_floors\viruz_wood_stair.p3d:geometry
+14:53:32 Strange convex component11 in viruz_builds\viruz_floors\viruz_wood_stair.p3d:geometry
+14:53:32 "OBJ: 2838 - VIRUZ_Woodfloor_New"
+14:53:32 "OBJ: 2839 - VIRUZ_Woodfloor_New"
+14:53:32 "OBJ: 2840 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2841 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2842 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2843 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2844 - VIRUZ_Woodfloor_New"
+14:53:32 "OBJ: 2845 - VIRUZ_WoodGate_new"
+14:53:32 "OBJ: 2846 - VIRUZ_WoodDoor_new"
+14:53:32 "OBJ: 2847 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2848 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2849 - VIRUZ_WoodRamp_New"
+14:53:32 "OBJ: 2850 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2851 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2852 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2853 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2854 - VIRUZ_WoodGate_new"
+14:53:32 "OBJ: 2855 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2856 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2857 - VIRUZ_WoodWall_New"
+14:53:32 "OBJ: 2858 - VIRUZ_WoodGate_new"
+14:53:32 "OBJ: 2859 - Land_PortableLight_single_F"
+14:53:32 "OBJ: 2860 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2861 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2862 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2863 - MetalBarrel_burning_F"
+14:53:32 "OBJ: 2864 - Land_PortableLight_single_F"
+14:53:32 "OBJ: 2865 - Land_PortableLight_single_F"
+14:53:32 "OBJ: 2866 - MetalBarrel_burning_F"
+14:53:32 "OBJ: 2867 - Land_PortableLight_single_F"
+14:53:32 "OBJ: 2868 - VIRUZ_Woodstair_New"
+14:53:32 "OBJ: 2869 - VIRUZ_Woodfloor_New"
+14:53:32 "OBJ: 2870 - VIRUZ_WoodWindow_new"
+14:53:32 "OBJ: 2871 - VIRUZ_Woodstair_New"
+14:53:32 "OBJ: 2872 - Land_Portable_generator_F"
+14:53:52 "OBJ: 2769 - RDS_Lada_Civ_02"
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Error: Wheel reference not initialized
+14:53:52 Error: Wheel reference not initialized
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 "DEBUG Damage: Added to NeedUpdate=3189ab00# 1055218: lada.p3d"
+14:53:52 "OBJ: 2780 - RDS_S1203_Civ_01"
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Error: Wheel reference not initialized
+14:53:52 Error: Wheel reference not initialized
+14:53:52 In Vehicle: rds_a2port_civ\s1203\s1203.p3d missing gunner get in direction point
+14:53:52 In Vehicle: rds_a2port_civ\s1203\s1203.p3d missing gunner get in direction point
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 Warning Message: You cannot play/edit this mission; it is dependent on downloadable content that has been deleted.
+rds_a2_civilians
+14:53:52 "DEBUG Damage: Added to NeedUpdate=3180eb00# 1055232: s1203.p3d"
+14:53:52 "HIVE: Local Time set to [2016,10,17,13,53]"
+14:53:52 "VIRUZCRASH: Iniciada Logica dos helicrashs [STATIC:false||CRASHDAMAGE:0.3|]"
+14:53:52 "VIRUZCRASH: 100% chance to start a crashing AH-99 Blackfoot at 945.412"
+14:53:52 "VEHICLESSPAWNER: Starting spawn logic for Vehicles Spawner"
+14:53:52 "VEHICLESSPAWNER: 100% chance to spawn '' at 773.412 :  location pos array"
+14:53:52 Error in expression <ndom;
+_spawnPosition = locationPosition _City;
+_locationRadiusA = getNumber (con>
+14:53:52   Error position: <_City;
+_locationRadiusA = getNumber (con>
+14:53:52   Error Undefined variable in expression: _city
+14:53:52 File z\addons\viruz_server\compile\server_VehiclesSpawner.sqf, line 37
+14:53:52 Error in expression <;
+};
+
+_nearestCity 	= nearestLocations [_spawnMarker, ["NameCityCapital","NameCi>
+14:53:52   Error position: <_spawnMarker, ["NameCityCapital","NameCi>
+14:53:52   Error Undefined variable in expression: _spawnmarker
+14:53:52 File z\addons\viruz_server\compile\server_VehiclesSpawner.sqf, line 18
+14:53:52 Error in expression <erMonitor;
+} forEach (nearestLocations [_centerMap, _listLocations, _nearestRadi>
+14:53:52   Error position: <_centerMap, _listLocations, _nearestRadi>
+14:53:52   Error Undefined variable in expression: _centermap
+14:53:52 File z\addons\viruz_server\compile\server_objectSpawner.sqf, line 18
+14:53:52 "CLEANUP: INITIALIZING CLEANUP SCRIPT"
+14:54:02 "[Display #24]"
+14:54:12 "DEBUG: needUpdate_objects=[3189ab00# 1055218: lada.p3d,3180eb00# 1055232: s1203.p3d]"
+14:54:12 "HIVE: WRITE: ""CHILD:305:2769:[241.132,[14767.5,13701.3,0.0205994]]:0.662:"""
+14:54:12 "HIVE: WRITE: ""CHILD:303:2769:[[[],[]],[],[[],[]],[[""""RDS_Sparewheel_lada""""],[12]]]:"""
+14:54:12 "HIVE: WRITE: ""CHILD:306:2769:[[""""wheel_1_2_steering"""",0.4],[""""wheel_2_1_steering"""",0.4],[""""wheel_2_2_steering"""",0.6],[""""palivo"""",0.6],[""""motor"""",0.2],[""""glass1"""",0.6],[""""glass4"""",0.8],[""""glass5"""",0.8],[""""glass6"""",0.6],[""""sklo predni P"""",0.2],[""""sklo predni L"""",1],[""""wheel_1_4_steering"""",0.2],[""""wheel_1_3_steering"""",0.4],[""""wheel_2_4_steering"""",0.6]]:0.039:"""
+14:54:12 "HIVE: WRITE: ""CHILD:305:2780:[210.392,[6345.55,2463.93,-0.00120354]]:0.746:"""
+14:54:12 "HIVE: WRITE: ""CHILD:303:2780:[[[],[]],[],[[],[]],[[""""RDS_Sparewheel_s1203""""],[9]]]:"""
+14:54:12 "HIVE: WRITE: ""CHILD:306:2780:[[""""wheel_1_1_steering"""",0.4],[""""wheel_2_1_steering"""",0.8],[""""palivo"""",0.8],[""""glass2"""",0.8],[""""glass3"""",0.2],[""""glass4"""",0.8],[""""glass6"""",0.4],[""""glass8"""",0.8],[""""sklo predni P"""",0.2],[""""wheel_2_4_steering"""",0.8],[""""wheel_2_3_steering"""",0.4]]:0.035:"""
+14:56:33 "DEBUG FPS  : 50"
+14:57:50 Deinitialized shape [Class: "Survivor1_DZ"; Shape: "a3\characters_f\civil\c_citizen5.p3d";]
+14:57:50 Deinitialized shape [Class: "B_ManJeans1"; Shape: "a3\characters_f\civil\c_citizen5.p3d";]
+14:57:50 c:\w\stable\futura\lib\network\networkserver.cpp ClearNetServer:NOT IMPLEMENTED - briefing!
+14:57:51 Extensions:
+14:57:51   HiveExt (C:\Arma3Server\@hive\HiveExt.dll) [0.9.6.7] [0.8.0.1]
+
