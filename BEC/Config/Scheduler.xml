@@ -110,16 +110,8 @@
 		<start>040000</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
-		<cmd>C:\Arma3Server\Premod_restart.bat</cmd>
+		<cmd>C:\Arma3Server\Premod_stop.bat</cmd>
 	</job>
-	
-	<job id="14">
-		<day>1,2,3,4,5,6,7</day>
-		<start>000000</start>
-		<runtime>000500</runtime>
-		<loop>0</loop>
-		<cmd>say -1  Aperte a tecla HOME para obter ajuda!</cmd>
-    </job>
 	
 </Scheduler>
 
