@@ -45,62 +45,6 @@ class HScrollbar; //ui
 class BackgroundSlotPrimary;
 
 
-class CfgMarkerClasses
-{
-	class ViruZEvents
-	{
-		displayName = "ViruZ Events";
-	};
-};
-
-
-class CfgMarkers
-{
-	class ViruZMissionHardcoreIcon
-	{
-		scope = 0;
-		name = "ViruZ Mission Icon (Hardcore)";
-		icon = "viruz_mod\marker\viruz_mission_hardcore_ca.paa";
-		color[] = {1,1,1,1};
-		size = 32;
-		shadow = 0;
-		markerClass = "ViruZEvents";
-		showEditorMarkerColor = 0;
-	};
-	class ViruZMissionModerateIcon
-	{
-		scope = 0;
-		name = "ViruZ Mission Icon (Moderate)";
-		icon = "viruz_mod\marker\viruz_mission_moderate_ca.paa";
-		color[] = {1,1,1,1};
-		size = 32;
-		shadow = 0;
-		markerClass = "ViruZEvents";
-		showEditorMarkerColor = 0;
-	};
-	class ViruZMissionDifficultIcon
-	{
-		scope = 0;
-		name = "ViruZ Mission Icon (Difficult)";
-		icon = "viruz_mod\marker\viruz_mission_difficult_ca.paa";
-		color[] = {1,1,1,1};
-		size = 32;
-		shadow = 0;
-		markerClass = "ViruZEvents";
-		showEditorMarkerColor = 0;
-	};
-	class ViruZMissionEasyIcon
-	{
-		scope = 0;
-		name = "ViruZ Mission Icon (Easy)";
-		icon = "viruz_mod\marker\viruz_mission_easy_ca.paa";
-		color[] = {1,1,1,1};
-		size = 32;
-		shadow = 0;
-		markerClass = "ViruZEvents";
-		showEditorMarkerColor = 0;
-	};
-};
 
 
 //#include "Configs\RscDisplayGenderSelect.hpp" // Escolher Homem ou Mulher desabilitado na FSM
