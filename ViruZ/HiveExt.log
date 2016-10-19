@@ -10874,3 +10874,403 @@
 2016-10-18 22:36:18 HiveExt: [Information] Result: ["PASS"]
 2016-10-18 22:36:19 HiveExt: [Information] Method: 201 Params: 186:[324,[6813.36,2358.06,15.774]]:[]::[false,false,false,false,false,false,false,12000,[],[0,0],0,[151.514,283.466]]:false:false:0:0:12:0:[srifle_GM6_F,amovpercmstpsraswrfldnon,42]:0:0::0:
 2016-10-18 22:36:19 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:16 HiveExt: [Information] HiveExt 0.96
+2016-10-19 13:44:16 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.16-log
+2016-10-19 13:44:16 Database: [Information] Connected to MySQL database 127.0.0.1:3306/viruz client ver: 5.5.28 server ver: 5.7.16-log
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Error] Skipping ObjectID 2778 load because of invalid data in db
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["ObjectStreamStart",66]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["CustomStreamStart",67]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2769","RDS_Lada_Civ_02","0",[153.331,[4666.08,10415.7,0.011]],[[["HandFlashlight","CUP_arifle_Mk17_CQC"],[1,1]],[["FoodmeatCooked",1],["FoodmeatCooked",1],["FoodmeatCooked",1],["ItemWaterbottle",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["FoodMRE",1],["ItemWaterbottleUnfilled",1],["FoodmeatCooked",1],["ItemHeatPack",1],["ItemPainkiller",1],["ItemPainkiller",1],["ItemPainkiller",1],["ItemHeatPack",1],["ItemMatchbox",1],["ItemWaterbottle",1],["FoodmeatCooked",1],["FoodmeatCooked",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBandage",1],["ItemBloodbag",1],["FoodmeatCooked",1],["FoodCanChickenSoup",1],["ItemSodaLaranja",1],["ItemSodaDiet",1],["ItemSodaLimao",1],["ItemSodaGrape",1],["ItemHeatPack",1],["ItemHeatPack",1],["ItemWaterbottleUnfilled",1],["ItemMatchbox",1],["ItemSodaLaranja",1],["ItemSodaBeergolden",1],["16Rnd_9x21_Mag",16],["ItemEpinephrine",1],["ItemEpinephrine",1],["ItemEpinephrine",1],["ItemMatchbox",1],["ItemSodaHam",1],["ItemSodaGrape",1]],[["CUP_optic_Kobra","CUP_optic_SB_11_4x20_PM"],[1,1]],[["RDS_Sparewheel_lada"],[11]]],[["wheel_1_2_steering",0.4],["wheel_2_1_steering",0.4],["wheel_2_2_steering",0.6],["palivo",0.6],["motor",0.2],["glass1",0.6],["glass4",0.8],["glass5",0.8],["glass6",0.6],["sklo predni P",0.2],["sklo predni L",1],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_4_steering",0.6]],0.611,0.039]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2769,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2779","Civilian_Offroad_01_white","0",[143.053,[6073.23,2994.01,2.889]],[[["CUP_sgun_M1014","CUP_arifle_CZ805_A1","CUP_lmg_L110A1","Binocular","hgun_Rook40_snds_F","CUP_lmg_Mk48_wdl","HandFlashlight"],[1,1,1,1,2,1,1]],[["CUP_8Rnd_B_Beneli_74Pellets",8],["Battery_mag",7200],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSodaDiet",1],["Battery_mag",7200],["ItemWaterbottleUnfilled",1],["FoodMRE",1],["FoodCanSpaghetti1",1],["Viruz_Serrote",1],["PartWoodPile",1],["ItemJerrycan",20],["Viruz_Woodboard",10],["Viruz_Woodboard",10],["PartGlass",1],["ItemMatchbox",1],["CUP_8Rnd_B_Beneli_74Pellets",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["CUP_8Rnd_B_Beneli_74Slug",8],["ItemSandbag",1],["ItemWire",1],["ItemMorphine",1],["ItemMorphine",1],["PartGlass",1],["PartEngine",1],["Viruz_Serrote",1],["Viruz_Wrench",1],["PartWheel",1],["PartEngine",1],["FoodCanChickenSoup",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemMorphine",1],["ItemWaterbottleUnfilled",1],["FMradio_Mag",1],["FoodCanWBBeansEmpty",1],["Viruz_HandCan",1],["FoodCanPeaSoupEmpty",1],["30Rnd_556x45_Stanag",30],["CUP_8Rnd_B_Beneli_74Pellets",8],["Hatchet_Swing",100000],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",100]],[["CUP_muzzle_mfsup_SCAR_L"],[1]],[[],[]]],[["wheel_1_1_steering",1],["wheel_1_2_steering",0.036],["wheel_2_1_steering",1],["wheel_2_2_steering",0.03],["palivo",0.8],["motor",0.016],["karoserie",0.07],["glass1",0.609],["glass2",0.155],["sklo predni L",0.2],["glass3",0.8],["glass5",0.4],["glass6",0.8],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_3_steering",0.8]],0.956,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2778,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2779,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2780","RDS_S1203_Civ_01","0",[159.011,[6076.41,2995.24,-0.066]],[[[],[]],[["CUP_10x_303_M",10],["ItemTentDome",1],["CUP_10x_303_M",10],["CUP_20Rnd_B_765x17_Ball_M",20]],[[],[]],[[],[]]],[["wheel_1_1_steering",0.458],["wheel_1_2_steering",1],["wheel_2_1_steering",0.863],["wheel_2_2_steering",1],["palivo",1],["motor",1],["glass1",1],["glass2",0.886],["glass3",0.292],["glass4",1],["glass5",1],["glass6",1],["glass7",1],["glass8",1],["sklo predni P",0.2],["wheel_2_4_steering",0.8],["wheel_2_3_steering",0.4]],0.811,1.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2780,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2822","VIRUZ_Woodfloor_New","28",[54.215,[6074.81,3000.75,2.327]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2822,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2823","VIRUZ_WoodRamp_New","28",[144.215,[6070.69,3006.48,0.099]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2823,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2824","VIRUZ_Woodfloor_New","10",[234.215,[6070.54,2997.67,2.216]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2824,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2825","VIRUZ_WoodWall_New","10",[54.217,[6076.96,3002.3,4.093]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2825,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811238,0.584716,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2826","VIRUZ_Woodfloor_New","10",[144.217,[6077.9,2996.47,2.995]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2826,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584717,-0.811237,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2828","VIRUZ_WoodWall_New","10",[234.215,[6068.39,2996.13,3.863]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2828,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2829","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,4.609]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2829,"B76561197988048248",1,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2830","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,4.982]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2830,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2835","VIRUZ_WoodGate_new","10",[324.215,[6073.27,3002.9,3.683]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2835,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2837","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.48,4.643]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2837,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584744,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2838","VIRUZ_Woodfloor_New","10",[234.215,[6073.62,2993.39,5.935]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2838,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2839","VIRUZ_Woodfloor_New","10",[54.215,[6070.54,2997.67,5.216]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2839,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2841","VIRUZ_WoodWindow_new","10",[144.215,[6075.16,2991.25,7.982]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2841,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2842","VIRUZ_WoodWindow_new","10",[144.215,[6079.45,2994.33,7.99]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2842,"B76561197988048248",1,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2843","VIRUZ_WoodWindow_new","10",[234.215,[6071.48,2991.85,7.609]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2843,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2844","VIRUZ_Woodfloor_New","10",[234.217,[6074.81,3000.75,5.327]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2844,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2848","VIRUZ_WoodWall_New","28",[234.215,[6073.87,3006.58,0.514]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2848,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2849","VIRUZ_WoodRamp_New","10",[144.215,[6066.41,3003.4,-0.1]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2849,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2850","VIRUZ_WoodWall_New","28",[54.217,[6065.31,3000.41,0.12]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2850,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811235,0.584721,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2852","VIRUZ_WoodWall_New","10",[234.217,[6080.08,2997.82,1.624]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2852,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811238,-0.584716,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2854","VIRUZ_WoodGate_new","10",[54.215,[6068.39,2996.13,0.863]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2854,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2855","VIRUZ_WoodWall_New","10",[54.215,[6080.04,2998.02,1.713]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2855,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2856","VIRUZ_WoodWall_New","10",[144.215,[6079.45,2994.33,1.99]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2856,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.584744,-0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2857","VIRUZ_WoodWall_New","10",[324.217,[6075.16,2991.25,1.982]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2857,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584717,0.811237,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2858","VIRUZ_WoodGate_new","10",[54.215,[6071.48,2991.85,1.609]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2858,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2860","VIRUZ_WoodWindow_new","10",[324.215,[6072.08,2995.53,7.222]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2860,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2861","VIRUZ_WoodWindow_new","10",[324.215,[6076.36,2998.62,7.298]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2861,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.584743,0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2862","VIRUZ_WoodWindow_new","10",[234.215,[6080.04,2998.02,7.713]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2862,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2865","Land_PortableLight_single_F","28",[107.619,[6081.23,2995.93,3.422]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2865,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.953091,-0.302683,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2867","Land_PortableLight_single_F","28",[8.896,[6075.36,3004.19,2.24]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2867,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.154636,0.987972,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2868","VIRUZ_Woodstair_New","10",[234.215,[6077.9,2996.47,7.644]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2868,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2869","VIRUZ_Woodfloor_New","10",[234.215,[6073.61,2993.38,8.935]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2869,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2870","VIRUZ_WoodWindow_new","10",[54.215,[6080.04,2998.02,10.713]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2870,"B76561197988048248",0,"[2016,10,16,21,57]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2872","Land_Portable_generator_F","10",[334.107,[6073.26,3004.31,-0.098]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2872,"B76561197988048248",0,"[2016,10,16,21,57]","[[-0.436698,0.899608,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2873","VIRUZ_WoodWall_New","40",[234.215,[6076.96,3002.3,1.093]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2873,"B76561197988048248",0,"[2016,10,16,18,0]","[[-0.811218,-0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2875","VIRUZ_WoodWindow_new","40",[144.217,[6079.44,2994.34,4.99]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2875,"B76561197988048248",1,"[2016,10,16,18,0]","[[0.584717,-0.811237,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2876","VIRUZ_WoodWindow_new","40",[54.215,[6080.08,2997.82,4.624]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2876,"B76561197988048248",1,"[2016,10,16,18,0]","[[0.811218,0.584743,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2877","VIRUZ_WoodDoor_new","40",[144.215,[6068.99,2999.81,3.51]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2877,"B76561197988048248",1,"[2016,10,16,18,0]","[[0.584743,-0.811218,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2878","Land_PortableLight_single_F","40",[290.892,[6070.39,2993.87,5.789]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2878,"B76561197988048248",0,"[2016,10,16,18,0]","[[-0.934254,0.356607,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2879","MetalBarrel_burning_F","40",[271.125,[6067.51,2998.12,2.074]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2879,"B76561197988048248",0,"[2016,10,16,18,0]","[[-0.999807,0.0196282,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2880","VIRUZ_Woodfloor_New","40",[54.217,[6073.61,2993.39,2.934]],[],[],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2880,"B76561197988048248",0,"[2016,10,16,18,0]","[[0.811237,0.584717,0],[0,0,1]]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2885","TentStorageDome","59",[343,[11046.7,2674.16,0.215]],[[[],[]],[["CUP_6Rnd_45ACP_M",6],["itemCanOpener",1],["CUP_30Rnd_556x45_Stanag",29],["ItemTentDome",1],["CUP_6Rnd_45ACP_M",6],["FoodCanChickenChunksEmpty",1],["itemCanOpener",1],["FoodCanPeaSoupEmpty",1],["CUP_30Rnd_Sa58_M",30],["FoodCanTRSoupEmpty",1],["ItemWaterbottle",1],["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",10],["Viruz_Hammer",1],["PartFueltank",1],["PartWheel",1],["CUP_17Rnd_9x19_glock17",17],["PartWheel",1],["FoodCanCGBeansEmpty",1],["FoodCanChickenSoupEmpty",1],["ItemSodaYodaEmpty",1],["itemCanOpener",1]],[["ItemCompass","acc_lampflashlight"],[6,1]],[[],[]]],[],0.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2885,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2886","Sandbag1_DZ","86",[34.998,[5517.3,2090.16,0]],[],[],0.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2886,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2888","TentStorageDome","116",[173,[2672.47,9913.21,-0.003]],[[[],[]],[],[[],[]],[[],[]]],[],0.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2888,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2892","RDS_Gaz24_Civ_02","0",[131,[4477.32,4586.78,0.023]],[],[["wheel_1_2_steering",0.6],["wheel_2_1_steering",0.6],["wheel_2_2_steering",0.6],["palivo",1],["motor",0.2],["karoserie",0.4],["glass1",1],["glass3",0.8],["glass4",0.4],["glass5",0.8],["glass6",0.8],["sklo predni P",0.8],["sklo predni L",1],["wheel_1_4_steering",0.8],["wheel_1_3_steering",0.4],["wheel_2_4_steering",0.6],["wheel_2_3_steering",1]],0.023,1.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2892,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2893","RDS_Golf4_Civ_01","0",[136.621,[9514.3,8527.49,-0.07]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_golf4"],[4]]],[["wheel_1_1_steering",1],["wheel_1_2_steering",1],["wheel_2_1_steering",1],["wheel_2_2_steering",1],["palivo",0.727],["motor",0.8],["karoserie",1],["glass1",1],["glass2",1],["glass3",1],["glass4",1],["glass5",1],["glass6",1],["sklo predni P",1],["sklo predni L",0.4],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.2],["wheel_2_4_steering",1],["wheel_2_3_steering",0.6]],0.996,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2893,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2894","C_Heli_light_01_sheriff_F","0",[58.533,[9502.6,11306.8,0.004]],[[[],[]],[],[[],[]],[[],[]]],[["fuel_hit",1],["hull_hit",1],["engine_hit",0.4],["avionics_hit",1],["main_rotor_hit",0.4],["glass1",0.6],["glass2",0.6],["glass3",1],["glass4",0.2],["engine_1_hit",0.6],["ammo_hit",0.6],["sklo predni P",0.6],["sklo predni L",0.4],["engine_3_hit",1],["slingLoad0",1],["transmission",0.4],["glass5",0.4],["glass6",0.4],["light",0.4],["hydraulics",0.4],["gear",0.4],["HStabilizerL1",0.2],["VStabilizer1",0.8],["tail boom",1],["pitot tube",0.2],["static port",0.8],["starter2",1],["starter3",1]],0.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2894,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2895","B_Heli_Light_01_F","0",[83,[7100,7750,300]],[[[],[]],[],[[],[]],[[],[]]],[["fuel_hit",0.8],["hull_hit",0.8],["avionics_hit",0.2],["tail_rotor_hit",0.6],["glass1",0.4],["glass2",0.2],["glass3",0.4],["glass4",0.4],["engine_1_hit",0.2],["engine_2_hit",0.2],["ammo_hit",1],["sklo predni P",0.2],["sklo predni L",0.8],["engine_3_hit",0.2],["slingLoad0",1],["transmission",0.6],["glass5",1],["glass6",0.8],["light",0.4],["hydraulics",0.6],["gear",0.4],["HStabilizerL1",0.6],["HStabilizerR1",1],["tail boom",0.4],["pitot tube",0.4],["static port",0.6],["starter2",0.4],["starter3",0.8]],0.75,1.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2895,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2896","SUV_01_Black_SRV","0",[74.052,[8994.58,9951.29,-0.142]],[[[],[]],[],[[],[]],[[],[]]],[["wheel_1_1_steering",0.4],["wheel_1_2_steering",0.2],["wheel_2_1_steering",0.4],["wheel_2_2_steering",1],["palivo",0.4],["engine",0.8],["glass2",0.6],["glass3",0.2],["glass4",0.2],["glass5",0.8],["glass6",1],["sklo predni P",1],["sklo predni L",0.6],["wheel_1_4_steering",0.8],["wheel_1_3_steering",0.2],["wheel_2_4_steering",0.2],["wheel_2_3_steering",1]],0.999,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2896,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2897","C_Heli_light_01_wasp_F","0",[282.745,[12767.1,8120.63,0.014]],[[[],[]],[],[[],[]],[[],[]]],[["fuel_hit",0.4],["avionics_hit",0.4],["main_rotor_hit",1],["tail_rotor_hit",0.6],["glass1",0.2],["glass4",0.8],["engine_1_hit",0.6],["engine_2_hit",0.8],["ammo_hit",1],["sklo predni P",0.2],["sklo predni L",0.2],["engine_3_hit",0.4],["slingLoad0",1],["transmission",0.4],["glass5",0.8],["glass6",0.6],["gear",0.8],["HStabilizerL1",0.2],["HStabilizerR1",0.8],["VStabilizer1",0.6],["tail boom",0.2],["pitot tube",1],["static port",0.4],["starter1",0.2],["starter2",0.8],["starter3",0.6]],0.466,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2897,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2898","RDS_Lada_Civ_03","0",[306.283,[10226.6,2179.55,0.033]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_lada"],[5]]],[["wheel_1_1_steering",1],["wheel_1_2_steering",0.8],["wheel_2_1_steering",0.2],["wheel_2_2_steering",0.4],["palivo",0.8],["motor",0.8],["glass1",0.4],["glass2",0.2],["glass3",1],["glass4",0.4],["glass6",1],["sklo predni P",0.2],["sklo predni L",1],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.4],["wheel_2_4_steering",0.8],["wheel_2_3_steering",0.2]],0.793,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2898,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2899","I_Boat_Armed_01_minigun_F","0",[215.837,[7565.8,1207.05,99.582]],[[[],[]],[],[[],[]],[[],[]]],[["karoserie",0.6],["Engine",1]],0.116,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2899,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2900","BAF_Offroad_D","0",[192.923,[4969.82,12585.4,-0.099]],[[[],[]],[],[[],[]],[[],[]]],[["motor",0.8],["wheel_1_1_steering",1],["wheel_1_2_steering",1],["wheel_2_2_steering",0.6],["sklo predni P",1],["sklo predni L",1],["glass1",0.2],["glass2",0.2],["glass3",0.4],["glass4",0.6],["glass5",1],["glass6",1],["karoserie",0.2],["wheel_1_3_steering",0.6],["wheel_1_2_steering",1],["wheel_2_3_steering",0.8],["wheel_2_2_steering",0.6]],0.482,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2900,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2901","C_Boat_Civil_01_police_F","0",[305.597,[12365.8,736.046,141.466]],[[[],[]],[],[[],[]],[[],[]]],[["karoserie",0.2],["engine1",0.8],["engine",0.2]],0.101,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2901,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2902","SUV_01_Orange_SRV","0",[280.607,[10033.4,5987.6,-0.044]],[[[],[]],[],[[],[]],[[],[]]],[["wheel_1_1_steering",0.4],["wheel_1_2_steering",0.6],["wheel_2_1_steering",0.6],["wheel_2_2_steering",0.6],["engine",0.6],["glass1",0.2],["glass4",0.4],["glass5",0.4],["glass6",0.4],["sklo predni P",0.8],["sklo predni L",1],["karoserie",0.6],["wheel_1_4_steering",0.4],["wheel_1_3_steering",1],["wheel_2_4_steering",0.2]],0.994,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2902,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2903","LandRover_CZ_EP1","0",[353.705,[12569.2,10800.6,-0.343]],[[[],[]],[["ItemSodaDietEmpty",1]],[[],[]],[[],[]]],[["motor",0.8],["palivo",0.4],["wheel_1_1_steering",0.2],["wheel_1_2_steering",1],["wheel_2_1_steering",0.2],["wheel_2_2_steering",1],["sklo predni P",0.6],["sklo predni L",0.4],["glass1",0.2],["glass2",0.2],["glass3",0.6],["glass4",1],["glass5",1],["glass6",1],["karoserie",0.8],["wheel_1_2_steering",1],["wheel_2_3_steering",0.8],["wheel_2_2_steering",1]],1.0,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2903,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2904","RDS_Lada_Civ_04","0",[160.536,[6668.57,5653.12,0.071]],[[[],[]],[],[[],[]],[["RDS_Sparewheel_lada"],[4]]],[["wheel_1_1_steering",0.6],["wheel_1_2_steering",0.2],["wheel_2_1_steering",0.8],["wheel_2_2_steering",0.6],["palivo",0.4],["motor",0.8],["karoserie",0.8],["glass1",0.8],["glass2",1],["glass3",0.6],["glass5",0.6],["glass6",0.8],["sklo predni L",0.6],["wheel_1_4_steering",0.6],["wheel_1_3_steering",0.8],["wheel_2_4_steering",0.2],["wheel_2_3_steering",0.4]],0.477,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2904,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2905","RDS_Hatchback_01_F","0",[242.021,[1135.66,4272.31,-0.039]],[[[],[]],[],[[],[]],[[],[]]],[["wheel_1_2_steering",1],["fuel",0.4],["engine",1],["karoserie",0.8],["glass1",0.6],["glass2",0.4],["glass4",0.6],["sklo predni P",0.8],["glass5",0.4],["glass6",0.4],["wheel_1_4_steering",0.8],["wheel_1_3_steering",1],["wheel_2_3_steering",0.8]],0.121,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2905,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2906","ACR_LandRover_AMB","0",[269.569,[7097.85,7739.36,0.027]],[[[],[]],[],[[],[]],[[],[]]],[["motor",0.8],["palivo",0.732],["wheel_1_1_steering",0.262],["wheel_1_2_steering",0.112],["wheel_2_1_steering",0.678],["wheel_2_2_steering",0.146],["sklo predni P",0.4],["sklo predni L",0.8],["glass1",0.501],["glass2",1],["glass3",1],["glass4",1],["glass5",1],["glass6",1],["karoserie",0.392],["wheel_1_3_steering",0.6],["wheel_1_2_steering",0.112],["wheel_2_3_steering",1],["wheel_2_2_steering",0.146]],0.156,0.03]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2906,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2907","B_Heli_Light_01_F","0",[157.662,[9042.01,3872.32,0.039]],[[[],[]],[],[[],[]],[[],[]]],[["fuel_hit",0.2],["hull_hit",0.4],["engine_hit",0.8],["avionics_hit",0.2],["main_rotor_hit",0.4],["glass1",0.8],["glass2",0.6],["glass3",0.6],["glass4",0.8],["engine_1_hit",0.6],["engine_2_hit",0.2],["sklo predni P",0.6],["sklo predni L",0.6],["engine_3_hit",0.4],["slingLoad0",0.8],["transmission",0.6],["glass5",0.6],["glass6",0.4],["light",0.4],["hydraulics",0.2],["gear",0.8],["HStabilizerR1",0.8],["VStabilizer1",0.4],["tail boom",0.4],["pitot tube",0.8],["starter1",1],["starter2",0.4],["starter3",0.8]],0.096,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2907,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2908","RDS_Lada_Civ_05","0",[139,[7100,7750,300]],[],[["wheel_1_1_steering",0.4],["wheel_1_2_steering",1],["wheel_2_1_steering",0.2],["palivo",0.4],["motor",0.4],["karoserie",0.8],["glass1",0.6],["glass2",0.8],["glass3",0.8],["glass4",0.8],["glass5",0.8],["glass6",0.4],["sklo predni P",0.8],["sklo predni L",0.4],["wheel_1_4_steering",0.6],["wheel_1_3_steering",0.4],["wheel_2_4_steering",0.8],["wheel_2_3_steering",0.4]],0.478,1.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2908,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2909","RDS_Van_01_transport_F","0",[45.801,[12696.9,5794.02,0.041]],[[[],[]],[],[[],[]],[[],[]]],[["wheel_1_1_steering",0.8],["wheel_1_2_steering",0.8],["wheel_2_1_steering",0.4],["wheel_2_2_steering",0.2],["fueltank",0.2],["glass1",0.6],["glass2",0.8],["glass3",0.8],["glass4",1],["sklo predni P",1],["sklo predni L",0.4],["glass6",0.4],["wheel_1_4_steering",0.4],["wheel_1_3_steering",0.2],["wheel_2_4_steering",0.2],["wheel_2_3_steering",0.4]],0.128,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2909,"B",0,"[]","[]"]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 302 Params: 1:
+2016-10-19 13:44:16 HiveExt: [Information] Result: ["OBJ","2910","RDS_Lada_Civ_05","0",[12,[5215.17,8699.53,0.007]],[],[["wheel_1_1_steering",0.8],["wheel_2_1_steering",1],["wheel_2_2_steering",0.6],["palivo",0.6],["motor",1],["karoserie",0.8],["glass1",1],["glass5",0.8],["glass6",0.2],["sklo predni P",0.4],["wheel_1_4_steering",0.2],["wheel_1_3_steering",0.2],["wheel_2_4_steering",0.6],["wheel_2_3_steering",0.4]],0.571,0.0]
+2016-10-19 13:44:16 HiveExt: [Information] Method: 999 Params: SELECT ObjectID, OwnerUID, Locked, LastFix, Worldprecision FROM object_data :[]:
+2016-10-19 13:44:16 HiveExt: [Information] Result: [2910,"B",0,"[]","[]"]
+2016-10-19 13:44:37 HiveExt: [Information] Method: 307 Params: 
+2016-10-19 13:44:37 HiveExt: [Information] Result: ["PASS",[2016,10,19,13,44]]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2769:[153.335,[4666.07,10415.7,0.011]]:0.611:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2769:[[[HandFlashlight,CUP_arifle_Mk17_CQC],[1,1]],[[FoodmeatCooked,1],[FoodmeatCooked,1],[FoodmeatCooked,1],[ItemWaterbottle,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[FoodMRE,1],[ItemWaterbottleUnfilled,1],[FoodmeatCooked,1],[ItemHeatPack,1],[ItemPainkiller,1],[ItemPainkiller,1],[ItemPainkiller,1],[ItemHeatPack,1],[ItemMatchbox,1],[ItemWaterbottle,1],[FoodmeatCooked,1],[FoodmeatCooked,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBandage,1],[ItemBloodbag,1],[FoodmeatCooked,1],[FoodCanChickenSoup,1],[ItemSodaLaranja,1],[ItemSodaDiet,1],[ItemSodaLimao,1],[ItemSodaGrape,1],[ItemHeatPack,1],[ItemHeatPack,1],[ItemWaterbottleUnfilled,1],[ItemMatchbox,1],[ItemSodaLaranja,1],[ItemSodaBeergolden,1],[16Rnd_9x21_Mag,16],[ItemEpinephrine,1],[ItemEpinephrine,1],[ItemEpinephrine,1],[ItemMatchbox,1],[ItemSodaHam,1],[ItemSodaGrape,1]],[[CUP_optic_Kobra,CUP_optic_SB_11_4x20_PM],[1,1]],[[RDS_Sparewheel_lada],[11]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2769:[[wheel_1_2_steering,0.4],[wheel_2_1_steering,0.4],[wheel_2_2_steering,0.6],[palivo,0.6],[motor,0.2],[glass1,0.6],[glass4,0.8],[glass5,0.8],[glass6,0.6],[sklo predni P,0.2],[sklo predni L,1],[wheel_1_4_steering,0.2],[wheel_1_3_steering,0.4],[wheel_2_4_steering,0.6]]:0.039:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2894:[58.606,[9502.6,11306.8,0.004]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2894:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2894:[[fuel_hit,1],[hull_hit,1],[engine_hit,0.4],[avionics_hit,1],[main_rotor_hit,0.4],[glass1,0.6],[glass2,0.6],[glass3,1],[glass4,0.2],[engine_1_hit,0.6],[ammo_hit,0.6],[sklo predni P,0.6],[sklo predni L,0.4],[engine_3_hit,1],[slingLoad0,1],[transmission,0.4],[glass5,0.4],[glass6,0.4],[light,0.4],[hydraulics,0.4],[gear,0.4],[HStabilizerL1,0.2],[VStabilizer1,0.8],[tail boom,1],[pitot tube,0.2],[static port,0.8],[starter2,1],[starter3,1]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2897:[282.96,[12767.2,8120.66,0.014]]:0.466:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2897:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2897:[[fuel_hit,0.4],[avionics_hit,0.4],[main_rotor_hit,1],[tail_rotor_hit,0.6],[glass1,0.2],[glass4,0.8],[engine_1_hit,0.6],[engine_2_hit,0.8],[ammo_hit,1],[sklo predni P,0.2],[sklo predni L,0.2],[engine_3_hit,0.4],[slingLoad0,1],[transmission,0.4],[glass5,0.8],[glass6,0.6],[gear,0.8],[HStabilizerL1,0.2],[HStabilizerR1,0.8],[VStabilizer1,0.6],[tail boom,0.2],[pitot tube,1],[static port,0.4],[starter1,0.2],[starter2,0.8],[starter3,0.6]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2898:[303.228,[10226.9,2179.18,0.026]]:0.793:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2898:[[[],[]],[],[[],[]],[[RDS_Sparewheel_lada],[6]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2898:[[wheel_1_1_steering,1],[wheel_1_2_steering,0.8],[wheel_2_1_steering,0.2],[wheel_2_2_steering,0.4],[palivo,0.8],[motor,0.8],[glass1,0.4],[glass2,0.2],[glass3,1],[glass4,0.4],[glass6,1],[sklo predni P,0.2],[sklo predni L,1],[wheel_1_4_steering,0.2],[wheel_1_3_steering,0.4],[wheel_2_4_steering,0.8],[wheel_2_3_steering,0.2]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2899:[215.931,[7563.97,1207.09,99.569]]:0.116:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2899:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2899:[[karoserie,0.6],[Engine,1]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2900:[192.952,[4969.79,12585.4,-0.099]]:0.482:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2900:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2900:[[motor,0.8],[wheel_1_1_steering,1],[wheel_1_2_steering,1],[wheel_2_2_steering,0.6],[sklo predni P,1],[sklo predni L,1],[glass1,0.2],[glass2,0.2],[glass3,0.4],[glass4,0.6],[glass5,1],[glass6,1],[karoserie,0.2],[wheel_1_3_steering,0.6],[wheel_1_2_steering,1],[wheel_2_3_steering,0.8],[wheel_2_2_steering,0.6]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2901:[306.409,[12365.8,736.203,141.451]]:0.101:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2901:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2901:[[karoserie,0.2],[engine1,0.8],[engine,0.2]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2903:[353.493,[12569.5,10800.5,-0.235]]:1:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2903:[[[],[]],[[ItemSodaDietEmpty,1]],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2903:[[motor,0.8],[palivo,0.4],[wheel_1_1_steering,0.2],[wheel_1_2_steering,1],[wheel_2_1_steering,0.2],[wheel_2_2_steering,1],[sklo predni P,0.6],[sklo predni L,0.4],[glass1,0.2],[glass2,0.2],[glass3,0.6],[glass4,1],[glass5,1],[glass6,1],[karoserie,0.8],[wheel_1_2_steering,1],[wheel_2_3_steering,0.8],[wheel_2_2_steering,1]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2904:[160.199,[6668.9,5653.43,0.074]]:0.477:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2904:[[[],[]],[],[[],[]],[[RDS_Sparewheel_lada],[4]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2904:[[wheel_1_1_steering,0.6],[wheel_1_2_steering,0.2],[wheel_2_1_steering,0.8],[wheel_2_2_steering,0.6],[palivo,0.4],[motor,0.8],[karoserie,0.8],[glass1,0.8],[glass2,1],[glass3,0.6],[glass5,0.6],[glass6,0.8],[sklo predni L,0.6],[wheel_1_4_steering,0.6],[wheel_1_3_steering,0.8],[wheel_2_4_steering,0.2],[wheel_2_3_steering,0.4]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2905:[242.126,[1135.55,4272.36,-0.038]]:0.121:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2905:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2905:[[wheel_1_2_steering,1],[fuel,0.4],[engine,1],[karoserie,0.8],[glass1,0.6],[glass2,0.4],[glass4,0.6],[sklo predni P,0.8],[glass5,0.4],[glass6,0.4],[wheel_1_4_steering,0.8],[wheel_1_3_steering,1],[wheel_2_3_steering,0.8]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2906:[269.573,[7097.84,7739.36,0.027]]:0.156:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2906:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2906:[[motor,0.8],[palivo,0.732],[wheel_1_1_steering,0.262],[wheel_1_2_steering,0.112],[wheel_2_1_steering,0.678],[wheel_2_2_steering,0.146],[sklo predni P,0.4],[sklo predni L,0.8],[glass1,0.501],[glass2,1],[glass3,1],[glass4,1],[glass5,1],[glass6,1],[karoserie,0.392],[wheel_1_3_steering,0.6],[wheel_1_2_steering,0.112],[wheel_2_3_steering,1],[wheel_2_2_steering,0.146]]:0.03:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2907:[158.449,[9042.49,3872.28,0.037]]:0.096:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2907:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2907:[[fuel_hit,0.2],[hull_hit,0.4],[engine_hit,0.8],[avionics_hit,0.2],[main_rotor_hit,0.4],[glass1,0.8],[glass2,0.6],[glass3,0.6],[glass4,0.8],[engine_1_hit,0.6],[engine_2_hit,0.2],[sklo predni P,0.6],[sklo predni L,0.6],[engine_3_hit,0.4],[slingLoad0,0.8],[transmission,0.6],[glass5,0.6],[glass6,0.4],[light,0.4],[hydraulics,0.2],[gear,0.8],[HStabilizerR1,0.8],[VStabilizer1,0.4],[tail boom,0.4],[pitot tube,0.8],[starter1,1],[starter2,0.4],[starter3,0.8]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2909:[46.563,[12697,5793.49,0.042]]:0.128:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2909:[[[],[]],[],[[],[]],[[],[]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2909:[[wheel_1_1_steering,0.8],[wheel_1_2_steering,0.8],[wheel_2_1_steering,0.4],[wheel_2_2_steering,0.2],[fueltank,0.2],[glass1,0.6],[glass2,0.8],[glass3,0.8],[glass4,1],[sklo predni P,1],[sklo predni L,0.4],[glass6,0.4],[wheel_1_4_steering,0.4],[wheel_1_3_steering,0.2],[wheel_2_4_steering,0.2],[wheel_2_3_steering,0.4]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 305 Params: 2910:[11.705,[5215.39,8699.42,-0.046]]:0.571:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 303 Params: 2910:[[[],[]],[],[[],[]],[[RDS_Sparewheel_lada],[1]]]:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:44:57 HiveExt: [Information] Method: 306 Params: 2910:[[wheel_1_1_steering,0.8],[wheel_2_1_steering,1],[wheel_2_2_steering,0.6],[palivo,0.6],[motor,0.8],[karoserie,0.8],[glass1,1],[glass5,0.8],[glass6,0.2],[sklo predni P,0.4],[wheel_1_4_steering,0.2],[wheel_1_3_steering,0.2],[wheel_2_4_steering,0.6],[wheel_2_3_steering,0.4]]:0:
+2016-10-19 13:44:57 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:45:48 HiveExt: [Information] Method: 101 Params: 76561198065694695:1:Mateuus:
+2016-10-19 13:45:48 HiveExt: [Information] Result: ["PASS",false,"185",[53,[6798.3,2367.53,51.71]],[["U_B_Guerilla2_3_srv",["ItemAntibiotic"]],["V_BandollierB_cbr",[]],["B_Carryall_oli",["30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","HandGrenade","HandGrenade","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","30Rnd_9x21_Mag","FirstAidKit","FirstAidKit"]],"H_Beret_02","G_Sport_Blackred","Rangefinder",["LMG_Mk200_F",[],"200Rnd_65x39_cased_Box"],["",[],""],["hgun_P07_F",["muzzle_snds_L"],"30Rnd_9x21_Mag"],["ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","NVGoggles"]],["",[],[]],[81,1006,1006],"Survivor2_DZ",0.96]
+2016-10-19 13:45:48 HiveExt: [Information] Method: 102 Params: 185:
+2016-10-19 13:45:48 HiveExt: [Information] Result: ["PASS",[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[490.727,1060.56]],[27,11,0,0],["LMG_Mk200_F","afalpknlmstpsraswrfldnon",42],[53,[6798.3,2367.53,51.71]],1934,1]
+2016-10-19 13:45:54 HiveExt: [Information] Method: 103 Params: 76561198065694695:185:0:
+2016-10-19 13:45:54 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:46:00 HiveExt: [Information] Method: 201 Params: 185:[248,[6794.97,2365.72,0.001]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[490.727,1060.56]]:false:false:0:0:11291:0:[LMG_Mk200_F,amovpknlmstpsraswrfldnon,42]:0:0:Survivor2_DZ:0:
+2016-10-19 13:46:00 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:46:13 HiveExt: [Information] Method: 201 Params: 185:[230,[6750.61,2362.78,0.001]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[490.727,1060.56]]:false:false:0:0:44:0:[LMG_Mk200_F,amovpercmrunsraswrfldf,42]:0:0::0:
+2016-10-19 13:46:13 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:46:25 HiveExt: [Information] Method: 201 Params: 185:[230,[6722.23,2339.93,0.001]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[503.525,1072.63]]:false:false:0:0:36:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:46:25 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:46:37 HiveExt: [Information] Method: 201 Params: 185:[53,[6531.83,2299.22,1.213]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[503.525,1072.63]]:false:false:0:0:195:0:[LMG_Mk200_F,amovpercmrunsraswrfldf,42]:0:0::0:
+2016-10-19 13:46:37 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:46:49 HiveExt: [Information] Method: 201 Params: 185:[23,[6534.61,2299.26,1.213]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[503.525,1072.63]]:false:false:0:0:3:1:[LMG_Mk200_F,amovpercmrunsraswrfldl,42]:0:0::0:
+2016-10-19 13:46:49 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:46:50 HiveExt: [Information] Method: 201 Params: 185:[36,[6533.56,2300.05,1.213]]:[[U_B_Guerilla2_3_srv,[ItemAntibiotic]],[V_BandollierB_cbr,[]],[B_Carryall_oli,[30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,HandGrenade,HandGrenade,5Rnd_127x108_Mag,5Rnd_127x108_Mag,5Rnd_127x108_Mag,5Rnd_127x108_Mag,30Rnd_9x21_Mag,FirstAidKit,FirstAidKit]],H_Beret_02,G_Sport_Blackred,Rangefinder,[LMG_Mk200_F,[],200Rnd_65x39_cased_Box],[,[],],[hgun_P07_F,[muzzle_snds_L],30Rnd_9x21_Mag],[ItemMap,ItemCompass,ItemWatch,ItemRadio,ItemGPS,NVGoggles]]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[503.525,1072.63]]:false:false:0:0:1:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:46:50 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:47:03 HiveExt: [Information] Method: 201 Params: 185:[36,[6533.56,2300.05,1.213]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[510.813,1084.07]]:false:false:0:0:0:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:47:03 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:47:15 HiveExt: [Information] Method: 201 Params: 185:[36,[6533.56,2300.05,1.213]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[510.813,1084.07]]:false:false:0:0:0:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:47:15 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:47:27 HiveExt: [Information] Method: 201 Params: 185:[349,[6530.25,2302.17,1.213]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[510.813,1084.07]]:false:false:0:0:4:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:47:27 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:47:39 HiveExt: [Information] Method: 201 Params: 185:[174,[6828.98,2431.03,0.001]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[510.966,1087.8]]:false:false:0:0:325:0:[LMG_Mk200_F,amovpercmevasraswrfldf,42]:0:0::0:
+2016-10-19 13:47:39 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:47:51 HiveExt: [Information] Method: 201 Params: 185:[251,[6835.99,2386.92,0.235]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[510.966,1087.8]]:false:false:0:0:45:1:[LMG_Mk200_F,amovpercmevasraswrfldf,42]:0:0::0:
+2016-10-19 13:47:51 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:48:03 HiveExt: [Information] Method: 201 Params: 185:[155,[6804.36,2710.34,0.001]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[523.93,1105.36]]:false:false:0:0:325:0:[LMG_Mk200_F,amovpercmrunsraswrfldfr,42]:0:0::0:
+2016-10-19 13:48:03 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:48:16 HiveExt: [Information] Method: 201 Params: 185:[258,[6810.36,2702.91,0.11]]:[[U_B_Guerilla2_3_srv,[ItemAntibiotic]],[V_BandollierB_cbr,[]],[B_Carryall_oli,[30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,30Rnd_9x21_Mag,HandGrenade,HandGrenade,5Rnd_127x108_Mag,5Rnd_127x108_Mag,5Rnd_127x108_Mag,5Rnd_127x108_Mag,30Rnd_9x21_Mag,FirstAidKit,FirstAidKit]],H_Beret_02,G_Sport_Blackred,Rangefinder,[LMG_Mk200_F,[],[200Rnd_65x39_cased_Box,169]],[,[],],[hgun_P07_F,[muzzle_snds_L],30Rnd_9x21_Mag],[ItemMap,ItemCompass,ItemWatch,ItemRadio,ItemGPS,NVGoggles]]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[523.93,1105.36]]:false:false:0:0:10:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:48:16 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:48:28 HiveExt: [Information] Method: 201 Params: 185:[258,[6810.36,2702.91,0.11]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[523.93,1105.36]]:false:false:0:0:0:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:48:28 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:48:42 HiveExt: [Information] Method: 201 Params: 185:[258,[6810.36,2702.91,0.11]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[527.002,1112.24]]:false:false:0:0:0:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:48:42 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:48:54 HiveExt: [Information] Method: 201 Params: 185:[258,[6810.36,2702.91,0.11]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[527.002,1112.24]]:false:false:0:0:0:1:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:48:54 HiveExt: [Information] Result: ["PASS"]
+2016-10-19 13:49:06 HiveExt: [Information] Method: 201 Params: 185:[258,[6810.36,2702.91,0.11]]:[]::[false,false,false,false,false,false,true,11151.6,[],[0,0],0,[527.155,1115.97]]:false:false:0:0:0:0:[LMG_Mk200_F,amovpercmstpsraswrfldnon,42]:0:0::0:
+2016-10-19 13:49:06 HiveExt: [Information] Result: ["PASS"]
