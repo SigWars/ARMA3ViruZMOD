@@ -45,20 +45,14 @@ class CfgWorlds {
 		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
-	/*class Esseker : CAWorld {
+	class Chernarus : CAWorld {
 		
 		cutscenes[] = {"Stratis_intro1"};
-		description = "ViruZ Esseker"; 
+		description = "ViruZ Chernarus"; 
 		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
-		LandGrid = 12;
-		clutterGrid = 1.0;
-		clutterDist = 150;
-		noDetailDist = 40;
-		fullDetailDist = 15;
-		minTreesInForestSquare = 2;
-		minRocksInRockSquare = 2;
-	};*/
+		
+	};
 		
 	class Esseker: CAWorld
 	{

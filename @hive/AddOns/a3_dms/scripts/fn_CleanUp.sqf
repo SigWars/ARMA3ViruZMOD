@@ -46,12 +46,12 @@ removeAllContainers _object;
 	{
 		detach _object;
 	};
-_fliesSound = _object getVariable ["ExileFliesSound", objNull];
+	_fliesSound = _object getVariable ["ExileFliesSound", objNull];
 	if !(isNull _fliesSound) then 
 	{
 		deleteVehicle _fliesSound;
 	};
-_fliesParticles = _object getVariable ["ExileFliesParticles", objNull];
+	_fliesParticles = _object getVariable ["ExileFliesParticles", objNull];
 	if !(isNull _fliesParticles) then 
 	{
 		_fliesParticles setDamage 999; 

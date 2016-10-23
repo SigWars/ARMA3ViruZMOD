@@ -189,12 +189,14 @@ if (_randomSpot) then {
 			// switched to floor
 			if (_spawnSelection == 9) then {
 				// random spawn location selected, lets get the marker and spawn in somewhere
-				_mkr = "spawn" + str(floor(random 5));
+				//_mkr = "spawn" + str(ceil(random 5));
+				_mkr = [getMarkerPos "spawn1",getMarkerPos "spawn2",getMarkerPos "spawn3",getMarkerPos "spawn4",getMarkerPos "spawn5"] call BIS_fnc_selectRandom;
 			} else {
 				// spawn is not random, lets spawn in our location that was selected
-				_mkr = "spawn" + str(_spawnSelection);
+				_mkrStatic = "spawn" + str(_spawnSelection);
+				_mkr = getMarkerPos _mkrStatic;
 			};
-			_position = ([(getMarkerPos _mkr),0,600,10,0,5000,0] call BIS_fnc_findSafePos);
+			_position = ([_mkr,0,600,10,0,5000,0] call BIS_fnc_findSafePos);
 			_isNear = count (_position nearEntities ["Man",100]) == 0;
 			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
 		//Island Check		//TeeChange

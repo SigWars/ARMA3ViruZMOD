@@ -43,21 +43,35 @@ _needUpdate = _object in needUpdate_objects;
 
 // TODO ----------------------
 _object_position = {
-	private["_position","_worldspace","_fuel","_key"];
+	private["_position","_precisePos","_worldspace","_fuel","_key","_key2"];
 	_position = getPosATL _object;
-	_worldspace = [
+
+	//Calcule precise worldprecision
+	_precisePos = [(getposATL _object call VIRUZ_SVCalcPrecision),vectordir _object,vectorup _object];
+	_preciseVector = [_precisePos select 1,_precisePos select 2];
+	_preciseCalc = _precisePos deleteAt 0;
+	_preciseWorldPos = (_preciseCalc select 0) vectorAdd (_preciseCalc select 1);
+	_objDir = direction _object;
+	_precisePosFinal = [_objDir,_preciseWorldPos];
+	/*_worldspace = [
 	
 		direction _object,_position
-		/*round(direction _object),
-		_position*/
-	];
+		//round(direction _object),
+		//_position
+	];*/
+	
 	_fuel = 0;
 	if (_object isKindOf "AllVehicles") then {
 		_fuel = fuel _object;
 	};
-	_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
+	/*_key = format["CHILD:305:%1:%2:%3:",_objectID,_precisePosFinal,_fuel];
 	diag_log ("HIVE: WRITE: "+ str(_key));
 
+	_key call server_hiveWrite;
+	*/
+	//Save precise position in database
+	_key = format["CHILD:999:UPDATE `object_data` SET `WorldPrecision` = '%1', `Worldspace` = '%2' WHERE `ObjectID` = '%3' OR `ObjectUID` = '%4' LIMIT 1:[]:",_precisePos,_precisePosFinal,_objectID,_uid];
+	diag_log format["VZ_UPDATE_PRECISE_POSITION: key Query: %1",_key];
 	_key call server_hiveWrite;
 };
 

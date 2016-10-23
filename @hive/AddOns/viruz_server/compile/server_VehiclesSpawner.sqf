@@ -121,7 +121,7 @@ while {true} do {
 			_key call server_hiveWrite;
 			
 			_vehicle setVariable ["lastUpdate",time];
-//			needUpdate_objects set [count needUpdate_objects,_vehicle];
+			[_vehicle,"all"] call server_updateObject;
 			viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_vehicle];
 			_vehicle call fnc_vehicleEventHandler;
 		};

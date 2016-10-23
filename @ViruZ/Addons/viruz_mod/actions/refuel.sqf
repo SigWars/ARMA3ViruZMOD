@@ -4,7 +4,7 @@ private["_vehicle","_curFuel","_newFuel","_timeLeft","_cansGear","_capacity","_c
 _vehicle = 		cursorTarget;
 _cansGear = ["ItemJerrycan", player] call PTm_fnc_filterGear;
 
-//_canSize = 		getNumber(configFile >> "cfgMagazines" >> "ItemJerrycan" >> "fuelQuantity");
+_canSize = 		getNumber(configFile >> "cfgMagazines" >> "ItemJerrycan" >> "fuelQuantity");
 _configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
 _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameType = 	getText(_configVeh >> "displayName");

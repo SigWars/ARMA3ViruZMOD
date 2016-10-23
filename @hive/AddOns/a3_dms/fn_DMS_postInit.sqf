@@ -163,7 +163,7 @@ if (DMS_ShowDifficultyColorLegend) then
 	private "_title";
 	_title = createmarker ["DMS_MissionMarker_DifficultyColorLegend",[-500,-200]];
 	_title setMarkerColor "ColorRed";
-	_title setmarkertext "DMS Mission Difficulties Color Legend";
+	_title setmarkertext "Mission Color Difficulties";
 	_title setMarkerType "mil_dot";
 	_title setMarkerAlpha 0.5;
 	{

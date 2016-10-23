@@ -31,7 +31,7 @@ diagHit = 1;
 #include "AH\infiSTAR_AdminMenu.hpp"
 #include "CfgVehiclesSpawner.inc"				// Configs Spawn  de Vehiculos
 #include "CfgSpawnCrashSite.inc"				// Helicrash configs
-#include "Configs\CfgLoot\CfgBuildingLoot.hpp" 	// Custom Loot
+#include "Configs\CfgLoot\CfgBuildingLoot_Chernarus.hpp" 	// Custom Loot Chernarus
 #include "Configs\CfgCrafting\CfgCrafting.hpp" 	// Craft Recipes  //precisa adicionar na vehicles allowed do server caso não seja magazine
 #include "Configs\CfgMap\Chernarus.hpp"			// Arvores / Metal / Pedra etc..
 #include "snap_build\points.hpp"
@@ -48,16 +48,18 @@ class RscTitles
 class cfgGame {
 	
 	/// Параметры для юзеров
-	mapArea[]			= {-20000, 20000}; 		// Значения координат, в метрах, за которые игроку противопоказанно выходить : mapArea[] = {}; - Без ограничений
-	maxZeds				= 500;					// Макс кол-во зомби, которое может быть отспавнено на всей карте, то есть, всеми клиентами (игроками)
-	maxLocalZombies		= 30;					// Макс кол-во зомби, которое может быть отспавнено каждым клиентом (игроком)
-	maxWildZombies		= 3;					// Макс кол-во зомби, которое может быть отспавнено каждым клиентом (игроком), вне населённых пунктов
-	zedsRespawnDelay	= 10;					// Tempo de respawn do zumbi em relação a uma casa em especifico, o tempo é marcado em minutos.
+	mapArea[]			= {}; 					// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
+	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
+	maxLocalZombies		= 3;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
+	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
+	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi, (segundos)
+	zedsRespawnDelay	= 3;					// Tempo de respawn do zumbi em relação a uma casa em especifico, o tempo é marcado em minutos.(Esta condição é Checada após Checar viruzZedspawnDelay)
 	maxBuildDistance 	= 50;					// Distancia maxima que podes cosntruir ao redor do gerador
 	maxBuildCount		= 80;					// Quantidade maxima de objetos que pode construir
-	maxAnimals			= 5;					// Quantidade maxima de animais por player
+	maxAnimals			= 1;					// Quantidade maxima de animais que pode ser spawnado por jogador
+	DebugVehicleLoadInventory = true;			// Habilita o debug de inventario de vehiculos ao serem carregados no server/ANTENÇAO, False - deleta o invetario do vehiculo.
 	
-	///	Стартовый инвентарь нового персонажа
+	//	Player start Items
 	/*
 	[
 		["uniform class", [array items in uniform]],

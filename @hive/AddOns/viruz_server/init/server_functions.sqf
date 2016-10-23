@@ -1,7 +1,7 @@
 waituntil {!isnil "bis_fnc_init"};
 /******************************************************************************************************************
 ViruZ Mod for Arma 3
-Update Object Position, Owner etc by type
+Server precompile functions
 Autor: SigWar
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
@@ -33,10 +33,20 @@ server_objectSpawnerMonitor  =			compile preprocessFileLineNumbers "\z\addons\vi
 server_objectSpawner  =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_objectSpawner.sqf";
 server_WreckSpawner  =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_WreckSpawner.sqf";
 PTm_fnc_modulePoster =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_modulePoster.sqf";
-//vzserver_spawnBuilds =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnBuilds.sqf";
-//vzserver_spawnVehicles =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnVehicles.sqf";
+server_StartSpawnBulds = 				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnBuilds.sqf";
+server_StartSpawnVehicles =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnVehicles.sqf";
 //PTm_fnc_windowsAreBroke =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_windowsAreBroke.sqf";
 //server_manikenSync =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_manikenSync.sqf";
+
+VIRUZ_SVCalcPrecision = compileFinal '
+	private["_low", "_high"];
+	_low = [
+		(_this select 0) - ((_this select 0) % 1),
+		(_this select 1) - ((_this select 1) % 1),
+		(_this select 2) - ((_this select 2) % 1)
+	];
+	_high = _this vectorDiff _low;
+	[_low, _high]';
 
 vehicle_handleInteract = {
 	private["_object"];

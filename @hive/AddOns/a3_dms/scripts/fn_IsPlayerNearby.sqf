@@ -35,7 +35,7 @@ try
 				throw _x;
 			};
 		} forEach (crew _x);
-	} forEach (_pos nearEntities [["Survivor1_DZ","LandVehicle", "Air", "Ship"], _dis]);
+	} forEach (_pos nearEntities [["Survivor2_DZ","LandVehicle", "Air", "Ship"], _dis]);
 
 	if (DMS_DEBUG) then
 	{

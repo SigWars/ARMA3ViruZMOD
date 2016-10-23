@@ -1,9 +1,11 @@
 []execVM "\z\addons\viruz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 /*
-ViruZ Mod for Arma 3
-Autor: SigWar
+	ViruZ Mod for Arma 3
+	server_monitor.sqf
+	Autor: SigWar
+	Start load database entryes and load objects and vehicles in world.
+	http://www.viruzmod.com
 */
-
 
 viruz_versionNo = 		getText(configFile >> "CfgMods" >> "ViruZ" >> "version");
 viruz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "ViruZ" >> "hiveVersion");
@@ -70,13 +72,10 @@ if (_script != "") then
 			//diag_log ("HIVE: Streamed " + str(_val) + " objects");
 		};
 	
-		spawnBuilds = [_myArray] execVM "\z\addons\viruz_server\compile\vzserver_spawnBuilds.sqf";
+		[_myArray] call server_StartSpawnBulds;
 		
-		waitUntil { sleep 20; scriptDone spawnBuilds };
+		[_myArray] spawn server_StartSpawnVehicles;
 		
-		spawnVehicles = [_myArray] execVM "\z\addons\viruz_server\compile\vzserver_spawnVehicles.sqf";
-		
-		waitUntil { scriptDone spawnVehicles };
 		
 		if ((count arrayObjectID) == 0) then {arrayObjectID = [0]};
 		// # END OF STREAMING #
@@ -113,6 +112,6 @@ handler_spawnCrashSite = [] spawn server_spawnCrashSite; // Start spawn heli cra
 handler_VehiclesSpawner = [] spawn server_VehiclesSpawner; // Start spawn vehicle logic
 handler_objectSpawner = [] spawn server_objectSpawner; //Start spawn object in map
 
-waitUntil { sleep 60; scriptDone handler_objectSpawner };
+//waitUntil { sleep 60; scriptDone handler_objectSpawner };
 allowConnection = true;
 publicVariable "allowConnection";

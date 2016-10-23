@@ -111,6 +111,8 @@ if (_crate getVariable ["DMS_CrateEnableRope",DMS_EnableBoxMoving]) then
 	_crate enableRopeAttach true;
 };
 
+_crate setVariable ["DMSwin",true,true];//viruz
+
 
 if ((_lootValues isEqualType []) && {!((_lootValues select 1) isEqualType {})}) then
 {

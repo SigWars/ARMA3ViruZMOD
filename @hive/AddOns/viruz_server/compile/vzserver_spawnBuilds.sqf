@@ -1,7 +1,20 @@
+/*
+	ViruZ Mod for Arma 3
+	vzserver_spawnBuilds.sqf
+	Autor: SigWar
+	Load database entryes and trow Builds in world.
+	http://www.viruzmod.com
+*/
+private ["_myArray","_debugLoadInventory","_countr","_idKey","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_objectID","_OwnerUID","_Locked","_LastFix","_Worldprecision","_deletado","_deletado","_dir","_pos","_centerMap","_wsDone","_mapaatual","_object","_objWpnTypes","_objWpnQty","_isOK","_block","_classMag","_ammoCount","_selection","_dam"];
+
+//Array com os dados da database
 _myArray = _this select 0;
 
+//Revisar
 _construction = 		getArray(configFile >> "CfgHiveObjects" >> "Construction");
-_tendas = ["TentStorage","TentStorageDome","CamoNet_BLUFOR_big_F","CamoNet_BLUFOR_F","CamoNet_BLUFOR_open_F"];
+
+//Tendas ignoradas na worldprecision
+_tendas = ["TentStorage","TentStorageDome","CamoNet_BLUFOR_big_F","CamoNet_BLUFOR_F","CamoNet_BLUFOR_open_F","Sandbag1_DZ"];
 
 /// Debug load inventory in vehicles
 _debugLoadInventory = (missionConfigFile >> "cfgGame" >> "DebugVehicleLoadInventory") call BIS_fnc_getCfgData;
@@ -14,25 +27,6 @@ _Structures = [];
 	_Structures SET [count _Structures,_x select 1];
 }forEach (getArray(configFile >> "CfgConstruction" >> "Structures"));
 
-//vehicles
-_Civilian = [];
-{
-	_Civilian SET [count _Civilian,_x select 0];
-}forEach (getArray(missionConfigFile >> "cfgVehiclesSpawner" >> "Civilian"));
-
-_Military = [];
-{
-	_Military SET [count _Military,_x select 0];
-}forEach (getArray(missionConfigFile >> "cfgVehiclesSpawner" >> "Military"));
-
-_Ships = [];
-{
-	_Ships SET [count _Ships,_x select 0];
-}forEach (getArray(missionConfigFile >> "cfgVehiclesSpawner" >> "Ships"));
-
-_VZvehicles = + _Civilian + _Military + _Ships;
-
-	
 	_countr = 0;		
 		{
 				
@@ -96,7 +90,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 			};
 			
-			if (_damage < 1 and !(_type in _VZvehicles)) then {
+			if (_damage < 1 and (_type in _Structures)) then {
 				diag_log format["OBJ: %1 - %2", _idKey,_type];
 				
 				//Create it

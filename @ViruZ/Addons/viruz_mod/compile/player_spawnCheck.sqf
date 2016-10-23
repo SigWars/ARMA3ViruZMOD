@@ -45,7 +45,7 @@ switch (_nearbytype) do {
 };
 */
 
-_players = _position nearEntities ["AllPlayers_2",_radius+200];
+_players = _position nearEntities [["AllPlayers_2", "Survivor2_DZ"], _radius+200];
 viruz_maxGlobalZombies = viruz_maxLocalZombies;
 {
 	viruz_maxGlobalZombies = viruz_maxGlobalZombies + 10;

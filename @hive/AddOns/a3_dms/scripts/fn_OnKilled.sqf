@@ -131,7 +131,7 @@ if (!isNull _av) then
 		) then
 		{
 			_av setDamage 1;
-			_av setVariable ["ExileDiedAt",time];
+			_av setVariable ["DMSBot",true,true];
 
 			[if (_av isKindOf "Air") then {30} else {5}, {_this enableSimulationGlobal false}, _av, false, false] call ExileServer_system_thread_addTask;
 
@@ -304,7 +304,7 @@ if (isPlayer _killer) then
 
 
 	// Fix for players killing AI from mounted vehicle guns
-	if (!(_killer isKindOf "Survivor1_DZ") && {!isNull (gunner _killer)}) then
+	if (!(_killer isKindOf "Survivor2_DZ") && {!isNull (gunner _killer)}) then
 	{
 		_playerObj = gunner _killer;
 	};
@@ -369,5 +369,5 @@ if (isPlayer _killer) then
 
 
 // Let Exile handle the AI Body cleanup.
-_unit setVariable ["ExileDiedAt",time];
+_unit setVariable ["DMSBot",true,true]; //DMS_BOT
 _unit setVariable ["DMS_KillerObj",[_playerObj,_killer] select (isNull _playerObj)];

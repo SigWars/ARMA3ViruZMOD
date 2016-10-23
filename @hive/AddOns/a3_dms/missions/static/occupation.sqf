@@ -438,11 +438,11 @@ _added =
 		[
 			"kill",
 			[_group,_group2,_group3]
-		]/*,
+		],
 		[
 			"playerNear",
 			[_pos,100]
-		]*/
+		]
 	],
 	_groupReinforcementsInfo,
 	[

@@ -498,14 +498,58 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"arifle_TRG21_F",
 											"arifle_TRG20_F",
 											"arifle_Mk20_plain_F",
-											"arifle_Mk20_F"
+											"arifle_Mk20_F",
+											
+											//CUP WEAPONS ASSAULT RIFLES
+											"CUP_arifle_AK47",
+											"CUP_arifle_AK74",
+											"CUP_arifle_AK74M",
+											"CUP_arifle_AK74M_GL",
+											"CUP_arifle_AK107",
+											"CUP_arifle_AKS74",
+											"CUP_arifle_AKS74U",
+											"CUP_arifle_AKM",
+											"CUP_arifle_AKS_Gold",
+											"CUP_arifle_AKS",
+											"CUP_arifle_RPK74",
+											"CUP_arifle_FNFAL",
+											"CUP_arifle_G36A",
+											"CUP_arifle_L85A2",
+											"CUP_arifle_M16A2",
+											"CUP_arifle_M4A1",
+											"CUP_arifle_M4A1_camo",
+											"CUP_arifle_M4A1_black",
+											"CUP_arifle_M4A1_desert",
+											"CUP_arifle_M4A3_desert",
+											"CUP_arifle_M4A1_camo_Aim",
+											"CUP_arifle_M4A1_camo_AIM_snds",
+											"CUP_arifle_Sa58P",
+											"CUP_arifle_Sa58P_des",
+											"CUP_arifle_Sa58V",
+											"CUP_arifle_Sa58V_camo",
+											"CUP_arifle_Mk16_CQC",
+											"CUP_arifle_Mk16_CQC_FG",
+											"CUP_arifle_Mk16_STD",
+											"CUP_arifle_xm8_sharpshooter"
 										];
 	DMS_assault_pistols =				[							// Pistols for Assault Class (Set to empty array if you don't want to give them any pistols)
 											"hgun_ACPC2_F",
 											"hgun_Rook40_F",
 											"hgun_P07_F",
 											"hgun_Pistol_heavy_01_F",
-											"hgun_Pistol_heavy_02_F"
+											"hgun_Pistol_heavy_02_F",
+											
+											//CUP CUP WEAPONS PISTOLAS
+											"CUP_hgun_TaurusTracker455_gold",
+											"CUP_hgun_TaurusTracker455",
+											"CUP_hgun_SA61",
+											"CUP_hgun_Phantom_Flashlight",
+											"CUP_hgun_Phantom",
+											"CUP_hgun_Makarov",
+											"CUP_hgun_M9",
+											"CUP_hgun_Glock17",
+											"CUP_hgun_Duty",
+											"CUP_hgun_Colt1911"
 										];
 	DMS_assault_optics =				[							// Optics for Assault Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -524,14 +568,50 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_assault_suppressor_chance		= 25;						// Percentage chance that an Assault Class AI will get a suppressor
 
 	DMS_assault_items =					[							// Items for Assault Class AI (Loot stuff that goes in uniform/vest/backpack)
-											//"ViruZ_Bandagem ETC",
+											//VIRUZ ITENS
+											"ItemHeatPack",
+											"ItemBloodbag",
+											"ItemAntibiotic",
+											"ItemPainkiller",
+											"ItemWaterBottle",
+											"ItemSodaOriginal",
+											"ItemSodaDiet",
+											"ItemSodaHam",
+											"ItemSodaLaranja",
+											"ItemSodaLimao",
+											"ItemSodaBeergolden",
+											"FoodCanWBBeans",
+											"FoodCanMHBeans",
+											"FoodCanEsardines",
+											"FoodCanChickenSoup",
+											"FoodCanSpaghetti2",
+											"FoodCanOranges",
+											"FoodMRE"
 										];
 	DMS_assault_equipment =				[							// Equipment for Assault Class AI (stuff that goes in toolbelt slots)
 											"ItemGPS"
 										];
 	DMS_assault_RandItemCount =			2;							// How many random items to add to the AI's inventory.
 	DMS_assault_RandItems =				[							// The random items that will be added to the AI's inventory.
-											//"ViruZ_Bandagem ETC",
+											//VIRUZ ITENS
+											"ItemHeatPack",
+											"ItemBloodbag",
+											"ItemAntibiotic",
+											"ItemPainkiller",
+											"ItemWaterBottle",
+											"ItemSodaOriginal",
+											"ItemSodaDiet",
+											"ItemSodaHam",
+											"ItemSodaLaranja",
+											"ItemSodaLimao",
+											"ItemSodaBeergolden",
+											"FoodCanWBBeans",
+											"FoodCanMHBeans",
+											"FoodCanEsardines",
+											"FoodCanChickenSoup",
+											"FoodCanSpaghetti2",
+											"FoodCanOranges",
+											"FoodMRE"
 										];
 	DMS_assault_helmets	=				[							// Helmets for Assault Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -578,6 +658,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_TacVest_gen_F",
 											"V_PlateCarrier1_rgr_noflag_F",
 											#endif
+											/*
 											"V_PlateCarrierH_CTRG",
 											"V_PlateCarrierSpec_rgr",
 											"V_PlateCarrierGL_blk",
@@ -587,6 +668,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_PlateCarrierSpec_mtp",
 											"V_PlateCarrierL_CTRG",
 											"V_TacVest_blk_POLICE",
+											*/
 											"V_PlateCarrierIA2_dgtl"
 										];
 	DMS_assault_backpacks =				[							// Backpacks for Assault Class
@@ -601,7 +683,16 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"B_Carryall_cbr",
 											"B_FieldPack_oucamo",
 											"B_FieldPack_cbr",
-											"B_Bergen_blk"
+											"B_Bergen_blk",
+											
+											//CUP MOCHILAS
+											"CUP_B_AlicePack_Khaki",
+											"CUP_B_AlicePack_Bedroll",
+											"CUP_B_USPack_Coyote",
+											"CUP_B_GER_Pack_Tropentarn",
+											"CUP_B_GER_Pack_Flecktarn",
+											"CUP_B_CivPack_WDL",
+											"CUP_B_AssaultPack_Coyote"
 										];
 
 	//Machine Gun Class
@@ -617,15 +708,33 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"LMG_Zafir_F",
 											"LMG_Mk200_F",
 											"arifle_MX_SW_Black_F",
-											"Exile_Weapon_RPK",
-											"Exile_Weapon_PKP"
+											
+											//CUP WEAPONS MACHINE GUNS
+											"CUP_arifle_RPK74M",
+											"CUP_arifle_RPK74_45",
+											"CUP_lmg_PKM",
+											"CUP_lmg_Mk48_wdl",
+											"CUP_lmg_Mk48_des",
+											"CUP_lmg_M240"
 										];
 	DMS_MG_pistols =				[							// Pistols for Assault Class (Set to empty array if you don't want to give them any pistols)
 											"hgun_ACPC2_F",
 											"hgun_Rook40_F",
 											"hgun_P07_F",
 											"hgun_Pistol_heavy_01_F",
-											"hgun_Pistol_heavy_02_F"
+											"hgun_Pistol_heavy_02_F",
+											
+											//CUP CUP WEAPONS PISTOLAS
+											"CUP_hgun_TaurusTracker455_gold",
+											"CUP_hgun_TaurusTracker455",
+											"CUP_hgun_SA61",
+											"CUP_hgun_Phantom_Flashlight",
+											"CUP_hgun_Phantom",
+											"CUP_hgun_Makarov",
+											"CUP_hgun_M9",
+											"CUP_hgun_Glock17",
+											"CUP_hgun_Duty",
+											"CUP_hgun_Colt1911"
 										];
 	DMS_MG_optics =						[							//	Optics for MG Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -643,14 +752,50 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_MG_suppressor_chance			= 10;						// Percentage chance that an MG Class AI will get a suppressor
 
 	DMS_MG_items =						[							// Items for MG Class AI (Loot stuff that goes in uniform/vest/backpack)
-											//"ViruZ_Bandagem ETC",
+											//VIRUZ ITENS
+											"ItemHeatPack",
+											"ItemBloodbag",
+											"ItemAntibiotic",
+											"ItemPainkiller",
+											"ItemWaterBottle",
+											"ItemSodaOriginal",
+											"ItemSodaDiet",
+											"ItemSodaHam",
+											"ItemSodaLaranja",
+											"ItemSodaLimao",
+											"ItemSodaBeergolden",
+											"FoodCanWBBeans",
+											"FoodCanMHBeans",
+											"FoodCanEsardines",
+											"FoodCanChickenSoup",
+											"FoodCanSpaghetti2",
+											"FoodCanOranges",
+											"FoodMRE"
 										];
 	DMS_MG_equipment =					[							// Equipment for MG Class AI (stuff that goes in toolbelt slots)
 											"Binocular"
 										];
 	DMS_MG_RandItemCount =				3;							// How many random items to add to the AI's inventory.
 	DMS_MG_RandItems =					[							// The random items that will be added to the AI's inventory.
-											//"ViruZ_Bandagem ETC",
+											//VIRUZ ITENS
+											"ItemHeatPack",
+											"ItemBloodbag",
+											"ItemAntibiotic",
+											"ItemPainkiller",
+											"ItemWaterBottle",
+											"ItemSodaOriginal",
+											"ItemSodaDiet",
+											"ItemSodaHam",
+											"ItemSodaLaranja",
+											"ItemSodaLimao",
+											"ItemSodaBeergolden",
+											"FoodCanWBBeans",
+											"FoodCanMHBeans",
+											"FoodCanEsardines",
+											"FoodCanChickenSoup",
+											"FoodCanSpaghetti2",
+											"FoodCanOranges",
+											"FoodMRE"
 										];
 	DMS_MG_helmets =					[							// Helmets for MG Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -704,7 +849,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_TacVest_gen_F",
 											"V_PlateCarrier1_rgr_noflag_F",
 											#endif
-											"V_PlateCarrierH_CTRG",
+											/*"V_PlateCarrierH_CTRG",
 											"V_PlateCarrierSpec_rgr",
 											"V_PlateCarrierGL_blk",
 											"V_PlateCarrierGL_mtp",
@@ -712,10 +857,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_PlateCarrierSpec_blk",
 											"V_PlateCarrierSpec_mtp",
 											"V_PlateCarrierL_CTRG",
-											"V_TacVest_blk_POLICE",
-											"V_PlateCarrierIA2_dgtl",
-											"V_HarnessO_brn",
-											"V_HarnessO_gry"
+											"V_TacVest_blk_POLICE",*/
+											"V_PlateCarrierIA2_dgtl"
 										];
 	DMS_MG_backpacks =					[							// Backpacks for MG Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -728,7 +871,16 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"B_Carryall_oli",
 											"B_Kitbag_mcamo",
 											"B_Carryall_cbr",
-											"B_Bergen_blk"
+											"B_Bergen_blk",
+											
+											//CUP MOCHILAS
+											"CUP_B_AlicePack_Khaki",
+											"CUP_B_AlicePack_Bedroll",
+											"CUP_B_USPack_Coyote",
+											"CUP_B_GER_Pack_Tropentarn",
+											"CUP_B_GER_Pack_Flecktarn",
+											"CUP_B_CivPack_WDL",
+											"CUP_B_AssaultPack_Coyote"
 										];
 
 	//Sniper Class
@@ -748,7 +900,18 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											#ifdef GIVE_AI_APEX_WEAPONS
 											"srifle_DMR_07_ghex_F",
 											#endif
-											"srifle_DMR_01_F"
+											"srifle_DMR_01_F",
+											
+											//CUP CUP WEAPONS SNIPERS
+											"CUP_srifle_VSSVintorez_pso",
+											"CUP_srifle_VSSVintorez",
+											"CUP_srifle_SVD_wdl_ghillie",
+											"CUP_srifle_Mk12SPR_LeupoldM3LR",
+											"CUP_srifle_M24_wdl_LeupoldMk4LRT",
+											"CUP_srifle_M24_des_LeupoldMk4LRT",
+											"CUP_srifle_M14",
+											"CUP_srifle_LeeEnfield_rail",
+											"CUP_srifle_CZ550"
 											
 										];
 	DMS_sniper_pistols =				[							// Pistols for Assault Class (Set to empty array if you don't want to give them any pistols)
@@ -759,7 +922,19 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"hgun_Rook40_F",
 											"hgun_P07_F",
 											"hgun_Pistol_heavy_01_F",
-											"hgun_Pistol_heavy_02_F"
+											"hgun_Pistol_heavy_02_F",
+											
+											//CUP CUP WEAPONS PISTOLAS
+											"CUP_hgun_TaurusTracker455_gold",
+											"CUP_hgun_TaurusTracker455",
+											"CUP_hgun_SA61",
+											"CUP_hgun_Phantom_Flashlight",
+											"CUP_hgun_Phantom",
+											"CUP_hgun_Makarov",
+											"CUP_hgun_M9",
+											"CUP_hgun_Glock17",
+											"CUP_hgun_Duty",
+											"CUP_hgun_Colt1911"
 										];
 	DMS_sniper_optics =					[							// Optics for Sniper Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -780,7 +955,33 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_sniper_suppressor_chance		= 15;						// Percentage chance that a Sniper Class AI will get a suppressor
 
 	DMS_sniper_items =					[							// Items for Sniper Class AI (Loot stuff that goes in uniform/vest/backpack)
-											//"Viruz_Bandagem ETC"
+											//VIRUZ Medicos
+											"ItemHeatPack",
+											"ItemBloodbag",
+											"ItemAntibiotic",
+											"ItemPainkiller",
+											"ItemEpinephrine",
+											"ItemMorphine",
+											"ItemBandage",
+											
+											
+											//Viruz Drinks
+											"ItemWaterBottle",
+											"ItemSodaOriginal",
+											"ItemSodaDiet",
+											"ItemSodaHam",
+											"ItemSodaLaranja",
+											"ItemSodaLimao",
+											"ItemSodaBeergolden",
+											
+											//Viruz Food
+											"FoodCanWBBeans",
+											"FoodCanMHBeans",
+											"FoodCanEsardines",
+											"FoodCanChickenSoup",
+											"FoodCanSpaghetti2",
+											"FoodCanOranges",
+											"FoodMRE"
 										];
 	DMS_sniper_equipment =				[							// Equipment for Sniper Class AI (stuff that goes in toolbelt slots)
 											"Rangefinder",
@@ -788,7 +989,33 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 										];
 	DMS_sniper_RandItemCount =			3;							// How many random items to add to the AI's inventory.
 	DMS_sniper_RandItems =				[							// The random items that will be added to the AI's inventory.
-											//"Viruz_Bandagem ETC"
+											//VIRUZ Medicos
+											"ItemHeatPack",
+											"ItemBloodbag",
+											"ItemAntibiotic",
+											"ItemPainkiller",
+											"ItemEpinephrine",
+											"ItemMorphine",
+											"ItemBandage",
+											
+											
+											//Viruz Drinks
+											"ItemWaterBottle",
+											"ItemSodaOriginal",
+											"ItemSodaDiet",
+											"ItemSodaHam",
+											"ItemSodaLaranja",
+											"ItemSodaLimao",
+											"ItemSodaBeergolden",
+											
+											//Viruz Food
+											"FoodCanWBBeans",
+											"FoodCanMHBeans",
+											"FoodCanEsardines",
+											"FoodCanChickenSoup",
+											"FoodCanSpaghetti2",
+											"FoodCanOranges",
+											"FoodMRE"
 										];
 	DMS_sniper_helmets =				[							// Helmets for Sniper Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -829,7 +1056,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_PlateCarrierGL_tna_F",
 											"V_PlateCarrier2_rgr_noflag_F",
 											#endif
-											"V_PlateCarrierH_CTRG",
+											/*"V_PlateCarrierH_CTRG",
 											"V_PlateCarrierSpec_rgr",
 											"V_PlateCarrierGL_blk",
 											"V_PlateCarrierGL_mtp",
@@ -837,10 +1064,9 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_PlateCarrierSpec_blk",
 											"V_PlateCarrierSpec_mtp",
 											"V_PlateCarrierL_CTRG",
-											"V_TacVest_blk_POLICE",
-											"V_PlateCarrierIA2_dgtl",
-											"V_HarnessO_brn",
-											"V_HarnessO_gry"
+											"V_TacVest_blk_POLICE",*/
+											"V_PlateCarrierIA2_dgtl"
+											
 										];
 	DMS_sniper_backpacks =				[							// Backpacks for Sniper Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -856,7 +1082,16 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"B_Carryall_oli",
 											"B_Kitbag_mcamo",
 											"B_Carryall_cbr",
-											"B_Bergen_blk"
+											"B_Bergen_blk",
+											
+											//CUP MOCHILAS
+											"CUP_B_AlicePack_Khaki",
+											"CUP_B_AlicePack_Bedroll",
+											"CUP_B_USPack_Coyote",
+											"CUP_B_GER_Pack_Tropentarn",
+											"CUP_B_GER_Pack_Flecktarn",
+											"CUP_B_CivPack_WDL",
+											"CUP_B_AssaultPack_Coyote"
 										];
 
 	DMS_ai_SupportedClasses =			[							// Allowed AI classes. If you want to create your own class, make sure you define everything as I've defined above, and add it here
@@ -935,7 +1170,18 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 												["srifle_LRR_F",1],
 												["srifle_EBR_F",1],
 												["hgun_Pistol_heavy_01_F",1],
-												["hgun_PDW2000_F",1]
+												["hgun_PDW2000_F",1],
+												
+												//CUP CUP WEAPONS SNIPERS
+												["CUP_srifle_VSSVintorez_pso",1],
+												["CUP_srifle_VSSVintorez",1],
+												["CUP_srifle_SVD_wdl_ghillie",1],
+												["CUP_srifle_Mk12SPR_LeupoldM3LR",1],
+												["CUP_srifle_M24_wdl_LeupoldMk4LRT",1],
+												["CUP_srifle_M24_des_LeupoldMk4LRT",1],
+												["CUP_srifle_M14",1],
+												["CUP_srifle_LeeEnfield_rail",1],
+												["CUP_srifle_CZ550",1]
 											],
 											[
 												["ItemGPS",1],
@@ -957,7 +1203,15 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 												["7Rnd_408_Mag",3],
 												["20Rnd_762x51_Mag",5],
 												["11Rnd_45ACP_Mag",3],
-												["30Rnd_9x21_Mag",3]
+												["30Rnd_9x21_Mag",3],
+												//CUP CUP WEAPONS SNIPERS MAGAZINE
+												["CUP_20Rnd_9x39_SP5_VSS_M",2],
+												["CUP_10Rnd_9x39_SP5_VSS_M",2],
+												["CUP_10Rnd_762x54_SVD_M",2],
+												["CUP_30Rnd_556x45_Stanag",5],
+												["CUP_5Rnd_762x51_M24",5],
+												["CUP_10x_303_M",2],
+												["CUP_5x_22_LR_17_HMR_M",2]
 											],
 											[
 												["B_Carryall_cbr",1],
@@ -1001,16 +1255,70 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"srifle_DMR_01_F",
 											"srifle_GM6_F",
 											"srifle_LRR_F",
-											"arifle_MXM_Black_F"
+											"arifle_MXM_Black_F",
+											
+											
+											//CUP WEAPONS ASSAULT RIFLES
+											"CUP_arifle_AK47",
+											"CUP_arifle_AK74",
+											"CUP_arifle_AK74M",
+											"CUP_arifle_AK74M_GL",
+											"CUP_arifle_AK107",
+											"CUP_arifle_AKS74",
+											"CUP_arifle_AKS74U",
+											"CUP_arifle_AKM",
+											"CUP_arifle_AKS_Gold",
+											"CUP_arifle_AKS",
+											"CUP_arifle_RPK74",
+											"CUP_arifle_FNFAL",
+											"CUP_arifle_G36A",
+											"CUP_arifle_L85A2",
+											"CUP_arifle_M16A2",
+											"CUP_arifle_M4A1",
+											"CUP_arifle_M4A1_camo",
+											"CUP_arifle_M4A1_black",
+											"CUP_arifle_M4A1_desert",
+											"CUP_arifle_M4A3_desert",
+											"CUP_arifle_M4A1_camo_Aim",
+											"CUP_arifle_M4A1_camo_AIM_snds",
+											"CUP_arifle_Sa58P",
+											"CUP_arifle_Sa58P_des",
+											"CUP_arifle_Sa58V",
+											"CUP_arifle_Sa58V_camo",
+											"CUP_arifle_Mk16_CQC",
+											"CUP_arifle_Mk16_CQC_FG",
+											"CUP_arifle_Mk16_STD",
+											"CUP_arifle_xm8_sharpshooter"
 										];
 	DMS_BoxFood =						[							// List of food that can spawn in a crate.
-											//"Viruz_Comidas"
+											//ViruZ Itens
+											"FoodCanWBBeans",
+											"FoodCanMHBeans",
+											"FoodCanEsardines",
+											"FoodCanChickenSoup",
+											"FoodCanSpaghetti2",
+											"FoodCanOranges",
+											"FoodMRE"
 										];
 	DMS_BoxDrinks =						[
-											//"Viruz_Bebidas"
+											//Viruz Itens
+											"ItemWaterBottle",
+											"ItemSodaOriginal",
+											"ItemSodaDiet",
+											"ItemSodaHam",
+											"ItemSodaLaranja",
+											"ItemSodaLimao",
+											"ItemSodaBeergolden"
 										];
 	DMS_BoxMeds =						[
-											//"Viruz_Medico"
+											//Viruz Itens
+											"ItemHeatPack",
+											"ItemBloodbag",
+											"ItemAntibiotic",
+											"ItemPainkiller",
+											"ItemEpinephrine",
+											"ItemMorphine",
+											"ItemBandage"
 										];
 	DMS_BoxSurvivalSupplies	=			[							//List of survival supplies (food/drink/meds) that can spawn in a crate. "DMS_BoxFood", "DMS_BoxDrinks", and "DMS_BoxMeds" is automatically added to this list.
 											//"Viruz_Itens de Sobrevivencia",
@@ -1025,10 +1333,30 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											//"Itens de Base Pra Criar"
 										] + DMS_Box_BaseParts_Wood + DMS_Box_BaseParts_Wood + DMS_Box_BaseParts_Wood + DMS_Box_BaseParts_Concrete;
 	DMS_BoxCraftingMaterials =			[
-											//"Materiasis"
+											"Viruz_Woodboard",
+											"Viruz_CinderBlock",
+											"PartFueltank",
+											"PartGeneric",
+											"PartEngine",
+											"PartVRotor",
+											"Viruz_HandCan",
+											"Viruz_Laptop",
+											"ItemWire",
+											"equip_nails",
+											"ItemSandbag",
+											"PartGlass",
+											"Viruz_MobilePhone",
+											"Viruz_SmartPhone",
+											"ItemGenerator",
+											"ItemJerryCan"
 										];
 	DMS_BoxTools =						[
-											//"Ferramentas"
+											"MeleeHatchet",
+											"ViruZ_Maleta",
+											"Viruz_Hammer",
+											"Viruz_Serrote",
+											"Viruz_Wrench",
+											"ItemCanOpener"
 										];
 	DMS_BoxBuildingSupplies	=			[							// List of building supplies that can spawn in a crate ("DMS_BoxBaseParts", "DMS_BoxCraftingMaterials", and "DMS_BoxTools" are automatically added to this list. "DMS_BoxCraftingMaterials" is added twice for weight.)
 											//"Itens Raros Etc.."
@@ -1051,7 +1379,16 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"B_Carryall_cbr",
 											"B_FieldPack_oucamo",
 											"B_FieldPack_cbr",
-											"B_Bergen_blk"
+											"B_Bergen_blk",
+											
+											//CUP MOCHILAS
+											"CUP_B_AlicePack_Khaki",
+											"CUP_B_AlicePack_Bedroll",
+											"CUP_B_USPack_Coyote",
+											"CUP_B_GER_Pack_Tropentarn",
+											"CUP_B_GER_Pack_Flecktarn",
+											"CUP_B_CivPack_WDL",
+											"CUP_B_AssaultPack_Coyote"
 										];
 	DMS_BoxItems						= DMS_BoxSurvivalSupplies+DMS_BoxBuildingSupplies+DMS_BoxOptics;	// Random "items" can spawn optics, survival supplies, or building supplies
 
@@ -1062,7 +1399,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_RareLoot						= true;						// Potential chance to spawn rare loot in any crate.
 	DMS_RareLootAmount					= 1;						// How many rare loot items to add.
 	DMS_RareLootList =					[							// List of rare loot to spawn
-											//"Itens Raros"
+											"CUP_srifle_M107_LeupoldVX3",
+											"CUP_10Rnd_127x99_m107",
+											"CUP_srifle_G22_des_SBPMII",
+											"CUP_5Rnd_762x67_G22"
 										];
 	DMS_RareLootChance					= 10;						// Percentage Chance to spawn rare loot in any crate | Default: 10%
 
@@ -1072,7 +1412,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"B_T_LSV_01_armed_F",
 											"O_T_LSV_02_armed_F",
 											#endif
-											"O_T_LSV_02_armed_F" // até achar um outro
+											"O_T_LSV_02_armed_F", // até achar um outro
+											//CUP VEHICLES
+											"CUP_B_LR_Special_GMG_GB_D",
+											"CUP_B_LR_MG_GB_W"
 										];
 
 	DMS_MilitaryVehicles =				[							// List of (unarmed) military vehicles that can spawn
@@ -1080,7 +1423,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"B_T_LSV_01_unarmed_F",
 											"O_T_LSV_02_unarmed_F",
 											#endif
-											"O_T_LSV_02_unarmed_F" // até achar um outro
+											"O_T_LSV_02_unarmed_F", // até achar um outro
+											"CUP_B_LR_Special_CZ_W"
 										];
 
 	DMS_TransportTrucks =				[							// List of transport trucks that can spawn
@@ -1104,7 +1448,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"B_T_VTOL_01_infantry_F",
 											"O_T_VTOL_02_infantry_F",
 											#endif
-											"O_T_LSV_02_unarmed_F" // até achar um outro
+											"O_T_LSV_02_unarmed_F", // até achar um outro
+											//CUP VEHICLES
+											"CUP_B_UH1D_GER_KSK", 
+											"CUP_B_UH1D_GER_KSK_Des"
 										];
 
 	DMS_ReinforcementHelis =			[							// List of helis that can spawn for AI paratrooper reinforcements.

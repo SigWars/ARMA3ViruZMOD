@@ -26,6 +26,16 @@
 
 */
 
+ViruZServer_object_vehicle_event_onGetIn = {
+private["_vehicleObject"];
+_vehicleObject = _this select 0;
+	if !(simulationEnabled _vehicleObject) then 
+	{
+		_vehicleObject enableSimulationGlobal true;
+	};
+	true
+};
+
 if !(params
 [
 	"_vehicleClass",
@@ -73,8 +83,8 @@ if ((getTerrainHeightASL _position)>0) then
 _vehObj setVariable ["ExileMoney",0,true];
 _vehObj setVariable ["ExileIsPersistent", false];
 _vehObj setVariable ["ExileIsSimulationMonitored", false];
-_vehObj addMPEventHandler ["MPKilled", { if (isServer) then {_this call ExileServer_object_vehicle_event_onMPKilled;};}];
-_vehObj addEventHandler ["GetIn", {_this call ExileServer_object_vehicle_event_onGetIn}];
+//_vehObj addMPEventHandler ["MPKilled", { if (isServer) then {_this call ExileServer_object_vehicle_event_onMPKilled;};}];
+_vehObj addEventHandler ["GetIn", {_this call ViruZServer_object_vehicle_event_onGetIn}];
 
 
 if (!isNil "AVS_Version") then

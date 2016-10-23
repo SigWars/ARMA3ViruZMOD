@@ -141,11 +141,11 @@ if (_isInside) then {
 		} else {
 			if (["concrete",viruz_surfaceType] call fnc_inString) then {
 //				_visibleTerrain = 1.0;
-				_audibleTerrain = 1.5;
+				_audibleTerrain = 1.0;
 			} else {
 				if (["rock",viruz_surfaceType] call fnc_inString) then {
 //					_visibleTerrain = 1.0;
-					_audibleTerrain = 1.5;
+					_audibleTerrain = 1.0;
 				};
 			};
 		};

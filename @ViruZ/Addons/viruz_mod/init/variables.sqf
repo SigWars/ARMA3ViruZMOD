@@ -682,8 +682,11 @@ if(!isDedicated) then {
 	viruz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
 	viruz_heartBeat = 		false;
 	viruzClickTime =			0;
-	viruz_spawnDelay =		120;
-	viruz_zedsRespawnDelay = call {
+	viruz_spawnDelay = call { //Tempo de Respawn de Zumbis baseado no player
+		_viruz_spawnDelay = (missionConfigFile >> "cfgGame" >> "viruzZedspawnDelay") call BIS_fnc_getCfgData;
+		if (isNil "_viruz_spawnDelay") then {120} else {_viruz_spawnDelay}
+	};
+	viruz_zedsRespawnDelay = call { //Depreciado
 		_zedsRespawnDelay = (missionConfigFile >> "cfgGame" >> "zedsRespawnDelay") call BIS_fnc_getCfgData;
 		if (isNil "_zedsRespawnDelay") then {3} else {_zedsRespawnDelay}
 	};

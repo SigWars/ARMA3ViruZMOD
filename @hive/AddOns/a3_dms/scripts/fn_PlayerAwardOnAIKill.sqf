@@ -32,7 +32,7 @@ exitWith
 
 private _playerUID = getPlayerUID _playerObj;
 
-if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivor1_DZ"}}) then
+if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivor2_DZ"}}) then
 {
 	// Check for individually defined AI money/respect/rank.
 	private _moneyChange = _unit getVariable ["DMS_AI_Money",0];

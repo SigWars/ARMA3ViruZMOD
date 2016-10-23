@@ -1,8 +1,8 @@
 
 class cfgVehiclesSpawner {
 	
-	frequency = (10* 60);		// Especifica o tempo em segundos. neste caso, (50 min) para gerar outro exemplo da tecnologia, o valor deste parametro nao e alterado na forma funcional
-	variance = (5* 60);		// Tambem na segunda. neste caso, (15 min), a configuracao e adotada para o calculo do tempo de aleatoriedade e adicionado ao valor do parametro acima
+	frequency = (1* 60);		// Especifica o tempo em segundos. neste caso, (50 min) para gerar outro exemplo da tecnologia, o valor deste parametro nao e alterado na forma funcional
+	variance = (0);		// Tambem na segunda. neste caso, (15 min), a configuracao e adotada para o calculo do tempo de aleatoriedade e adicionado ao valor do parametro acima
 	spawnChance = 1;			// Possibilidade gerar outro exemplo de tecnologia, escala de 0 a 1
 
 	/// То есть в функционале расчёт выглядит подобным образом

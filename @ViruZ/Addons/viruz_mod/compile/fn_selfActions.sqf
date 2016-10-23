@@ -218,7 +218,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
 	//_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
-	_isVehicletype = typeOf cursorTarget in ["Quadbike_SRV_BLACK", "Quadbike_SRV_BLUE", "Quadbike_SRV_RED","Quadbike_SRV_WHITE"];
+	_isVehicletype = typeOf cursorTarget in ["Quadbike_SRV_BLACK", "Quadbike_SRV_BLUE", "Quadbike_SRV_RED","Quadbike_SRV_WHITE","dbo_CIV_ol_bike","dbo_CIV_new_bike"];
 	_isMan = cursorTarget isKindOf "Man";
 	_ownerID = cursorTarget getVariable ["characterID","0"];
 	_isAnimal = typeOf cursorTarget in ["Fowl_Base_F","Hen_random_F","Cock_random_F","Rabbit_F","Goat_random_F","Goat_small_random_F","Sheep_random_F"];

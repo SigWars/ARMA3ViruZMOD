@@ -1,18 +1,21 @@
+/*
+	ViruZ Mod for Arma 3
+	vzserver_spawnVehicles.sqf
+	Autor: SigWar
+	Load database entryes and trow vehicles in world.
+	http://www.viruzmod.com
+*/
+private ["_myArray","_allVehicles","_debugLoadInventory","_Civilian","_Military","_Ships","_VZvehicles","_countr","_idKey","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_objectID","_OwnerUID","_Locked","_LastFix","_Worldprecision","_deletado","_deletado","_dir","_pos","_centerMap","_wsDone","_mapaatual","_object","_objWpnTypes","_objWpnQty","_isOK","_block","_classMag","_ammoCount","_selection","_dam"];
+
+sleep 30;
+
 _myArray = _this select 0;
-
-
+_allVehicles = [];
 /// Debug load inventory in vehicles
 _debugLoadInventory = (missionConfigFile >> "cfgGame" >> "DebugVehicleLoadInventory") call BIS_fnc_getCfgData;
 if (isNil "_debugLoadInventory") then {_debugLoadInventory = true;};
 if (typename _debugLoadInventory == typename "") then {_debugLoadInventory = call compile _debugLoadInventory;};
 
-//Viruz Build system
-_Structures = [];
-{
-	_Structures SET [count _Structures,_x select 1];
-}forEach (getArray(configFile >> "CfgConstruction" >> "Structures"));
-
-//vehicles
 _Civilian = [];
 {
 	_Civilian SET [count _Civilian,_x select 0];
@@ -92,9 +95,28 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				
 				//Create it
 				_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
+				_object setVectorDirAndUp (call compile _Worldprecision);
+				_object setposATL _pos;
+				_allVehicles pushBack _object;
+				_object setDamage _damage;
+				_object setdir _dir;
+				
 				_object setVariable ["lastUpdate",time];
 				_object setVariable ["ObjectID", _idKey, true];
 				_object setVariable ["CharacterID", _ownerID, true];
+				
+				if (_object isKindOf "AllVehicles") then {
+					{
+						_selection = _x select 0;
+						_dam = _x select 1;
+						if (_selection in viruZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
+						[_object,_selection,_dam] call object_setFixServer;
+					} forEach _hitpoints;
+					_object setvelocity [0,0,1];
+					_object setFuel _fuel;
+					_object call fnc_vehicleEventHandler;
+				};
+				_object allowDamage false;
 				
 				clearWeaponCargoGlobal  _object;
 				clearMagazineCargoGlobal  _object;
@@ -102,11 +124,10 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				clearBackpackCargoGlobal _object;
 				
 				//set direction of objects are not structures
-				_object setdir _dir;
-				
+				//_object setdir _dir;
 				
 				//set damage for objects
-				_object setDamage _damage;
+				//_object setDamage _damage;
 								
 				// Debug clear inventory in database
 				if !(_debugLoadInventory) then {[_object, "gear"] spawn server_updateObject;};
@@ -190,7 +211,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 					} forEach _objWpnTypes;
 				};	
 				
-				if (_object isKindOf "AllVehicles") then {
+				/*if (_object isKindOf "AllVehicles") then {
 					{
 						_selection = _x select 0;
 						_dam = _x select 1;
@@ -200,8 +221,11 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
 					_object call fnc_vehicleEventHandler;
-				};
-
+				};*/
 				viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_object];
 			};
 		} forEach _myArray;
+		sleep 20;
+		{_x allowDamage true} count _allVehicles;
+		
+		"27091995" serverCommand "#unlock";
