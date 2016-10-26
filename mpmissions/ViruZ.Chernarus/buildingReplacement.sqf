@@ -40,12 +40,12 @@ if (isServer) then
 	_dmdRep0021=[["Land_HouseV_3I2"],["Land_i_Shop_02_V3_F"]];
 	_dmdRep0022=[["Land_HouseV_1L1"],["Land_i_Stone_HouseBig_V2_F"]];	
 	_dmdRep0023=[["Land_houseV_2T1"],["Land_i_Stone_HouseBig_V3_F"]];
-	_dmdRep0024=[["Land_houseV_2T2"],["Land_House_Small_03_F"]];	
+	_dmdRep0024=[["Land_houseV_2T2"],["Land_House_C_5_EP1"]];	
 	_dmdRep0025=[["Land_HouseV_1T"],["Land_i_Stone_HouseSmall_V1_F"]];	
-	_dmdRep0026=[["Land_HouseV_2L"],["Land_House_Small_05_F"]];	
-	_dmdRep0027=[["Land_HouseV2_03B"],["Land_Shop_Town_03_F"]];
+	_dmdRep0026=[["Land_HouseV_2L"],["Land_House_C_4_EP1"]];	
+	_dmdRep0027=[["Land_HouseV2_03B"],["Land_Panelak2"]];
 	_dmdRep0028=[["Land_HouseV2_01A"],["Land_i_House_Big_01_V1_F"]];
-	_dmdRep0029=[["Land_HouseV2_01B"],["Land_Addon_04_F"]];	
+	_dmdRep0029=[["Land_HouseV2_01B"],["Land_Dum_mesto_in"]];	
 	_dmdRep0030=[["Land_HouseV2_03"],["Land_i_Shed_Ind_F"]];	
 	//_dmdRep0031=[["Land_HouseV2_02_Interier"],["Land_i_House_Big_02_V2_dam_F"]];
 	//_dmdRep0032=[["Land_HouseV2_04_interier"],["Land_i_Shop_01_V3_dam_F"]];

@@ -66,7 +66,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -82,8 +82,8 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
-			0.03,	//Comidas
+			0.03,	//Lixos
+			0.04,	//Comidas
 			0.04,	//Bebidas
 			0.03,	//MochilasLow
 			0.03,	//CraftItens
@@ -108,7 +108,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -124,8 +124,8 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
-			0.03,	//Comidas
+			0.03,	//Lixos
+			0.04,	//Comidas
 			0.04,	//Bebidas
 			0.03,	//MochilasLow
 			0.03,	//CraftItens
@@ -149,7 +149,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -168,8 +168,8 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
-			0.03,	//Comidas
+			0.03,	//Lixos
+			0.04,	//Comidas
 			0.04,	//Bebidas
 			0.03,	//MochilasMedias
 			0.03,	//CraftItens
@@ -196,7 +196,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -214,8 +214,8 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
-			0.03,	//Comidas
+			0.03,	//Lixos
+			0.04,	//Comidas
 			0.04,	//Bebidas
 			0.03,	//MochilasMedias
 			0.03,	//CraftItens
@@ -241,7 +241,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -262,8 +262,8 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
-			0.03,	//Comidas
+			0.03,	//Lixos
+			0.04,	//Comidas
 			0.04,	//Bebidas
 			0.03,	//MochilasMedias
 			0.03,	//CraftItens
@@ -292,7 +292,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},	
@@ -310,7 +310,7 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
+			0.03,	//Lixos
 			0.02,   //PistolasMedias
 			0.02,   //Mag_PistolasMedias
 			0.06,   //RoupasUpper
@@ -337,7 +337,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},	
@@ -367,7 +367,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},	
@@ -392,8 +392,8 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
-			0.03,	//Comidas
+			0.03,	//Lixos
+			0.04,	//Comidas
 			0.04,	//Bebidas
 			0.02,   //ArmasCivis
 			0.03,   //Mag_ArmasCivis
@@ -419,7 +419,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},	
@@ -445,8 +445,8 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.05,	//Lixos
-			0.03,	//Comidas
+			0.03,	//Lixos
+			0.04,	//Comidas
 			0.04,	//Bebidas
 			0.03,   //MochilasLow
 			0.02,   //ArmasCivis
@@ -495,7 +495,7 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.06,	//Lixos
+			0.03,	//Lixos
 			0.05,   //CarParts
 			0.02,   //Boat_Backpack
 			0.04,   //Machado
@@ -520,7 +520,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},		
@@ -536,7 +536,7 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.06,	//Lixos
+			0.03,	//Lixos
 			0.05,   //CarParts
 			0.02,   //Boat_Backpack
 			0.04,   //Machado
@@ -557,7 +557,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		itemType[] =	{
 			{"","trash"},
 			{"","Items_Magazine"},
@@ -585,7 +585,7 @@ class CfgBuildingLoot {
 		zombieClass[] = { "VZ_Doctor", "VZ_Assistant"};
 		minRoaming = 0;
 		maxRoaming = 1;
-		lootChance = 0.3;
+		lootChance = 0.4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -593,8 +593,8 @@ class CfgBuildingLoot {
 			{"","Medical_Especial"}
 		};
 		itemChance[] =	{
-			0.03,	//lixo
-			0.07,	//Medical_Lite
+			0.02,	//lixo
+			0.08,	//Medical_Lite
 			0.04	//Medical_Especial
 		};
 	};
