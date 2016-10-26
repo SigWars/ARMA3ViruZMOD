@@ -8,7 +8,8 @@ onLoadName = "VIRUZ MOD";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
-disableChannels[]={0};
+disableChannels[]={{0,true,true},{1,true,false}};
+skipLobby = 1;
 enableItemsDropping = 0;
 briefing = 0;
 debriefing= 0;
@@ -48,7 +49,7 @@ class RscTitles
 class cfgGame {
 	
 	/// Параметры для юзеров
-	mapArea[]			= {}; 					// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
+	mapArea[]			= {-20000, 20000}; 					// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
 	maxLocalZombies		= 3;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades

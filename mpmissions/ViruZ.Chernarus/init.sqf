@@ -18,8 +18,6 @@ if (!isDedicated) then {
 	["PTm_loadingScreen"] call BIS_fnc_startLoadingScreen;
 };
 
-#include "buildingReplacement.sqf"
-
 //REALLY IMPORTANT VALUES
 viruZ_instance =	1;					//The instance
 viruzHiveRequest = [];
@@ -56,6 +54,10 @@ call compile preProcessFileLineNumbers "cmEarplugs\config.sqf";
 
 //cmEARPLUGS CODE END
 //////////////////////////////////////////////////////////////////////////
+
+//BUILD REPLACEMENT
+#include "buildingReplacement.sqf"
+
 
 if (isServer) then {
 	_serverMonitor = 	[] execVM "\z\addons\viruz_mod\system\server_monitor.sqf";
