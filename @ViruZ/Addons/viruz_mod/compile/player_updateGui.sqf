@@ -1,4 +1,4 @@
-private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible"];
+private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_vzhumanitystat","_vzhumanitytext","_ctrlHumanity","_vzhumanity"];
 disableSerialization;
 
 _foodVal = 		1 - (viruz_hunger / SleepFood);
@@ -13,31 +13,38 @@ if (uiNamespace getVariable ['DZ_displayUI', 0] == 1) exitWith {
 
 
 _display = uiNamespace getVariable 'VIRUZ_GUI_display';
-_StatusUI = uiNamespace getVariable ['VIRUZ_INV_display',displayNull];
+//_StatusUI = uiNamespace getVariable ['VIRUZ_INV_display',displayNull];
 
-if !(isNull _StatusUI) then {
-_ctrlBlood = 	_StatusUI displayCtrl 1300;
-_ctrlFood = 	_StatusUI displayCtrl 1301;
-_ctrlThirst = 	_StatusUI displayCtrl 1302;
-_ctrlTemp 	= 	_StatusUI displayCtrl 1306;					//TeeChange
-};
+//if !(isNull _StatusUI) then {
+_ctrlBlood = 	_display displayCtrl 1300;
+_ctrlFood = 	_display displayCtrl 1301;
+_ctrlThirst = 	_display displayCtrl 1302;
+_ctrlTemp 	= 	_display displayCtrl 1306;					//TeeChange
+//};
 //hint format ["%1",_StatusUI];
 
 _ctrlBleed = 	_display displayCtrl 1303;
 _bloodVal =		r_player_blood / r_player_bloodTotal;
 _ctrlEar = 		_display displayCtrl 1304;
 _ctrlEye = 		_display displayCtrl 1305;
+
+//ViruZ Humanity System
+_vzhumanitystat =   _display displayCtrl 1308;
+_ctrlHumanity 	=   _display displayCtrl 1309;
+
+
+
 //_ctrlHumanity = _display displayCtrl 1207;
 _ctrlCombat = _display displayCtrl 1307;
 _ctrlFracture = 	_display displayCtrl 1203;
 
 //Food/Water/Blood
-if !(isNull _StatusUI) then {
+//if !(isNull _StatusUI) then {
 _ctrlBlood ctrlSetTextColor 	[(Viruz_GUI_R + (0.3 * (1-_bloodVal))),(Viruz_GUI_G * _bloodVal),(Viruz_GUI_B * _bloodVal), 0.5];
 _ctrlFood ctrlSetTextColor 		[(Viruz_GUI_R + (0.3 * (1-_foodVal))),(Viruz_GUI_G * _foodVal),(Viruz_GUI_B * _foodVal), 0.5];
 _ctrlThirst ctrlSetTextColor 	[(Viruz_GUI_R + (0.3 * (1-_thirstVal))),(Viruz_GUI_G * _thirstVal),(Viruz_GUI_B * _thirstVal), 0.5];
 _ctrlTemp ctrlSetTextColor 		[(Viruz_GUI_R + (0.3 * (1-_tempVal))), (Viruz_GUI_G * _tempVal), _tempVal, 0.5];	// Color ranges from iceblue (cold) to red (hot)
-};
+//};
 _ctrlCombat ctrlSetTextColor	[(Viruz_GUI_R + (0.3 * (1-_combatVal))),(Viruz_GUI_G * _combatVal),(Viruz_GUI_B * _combatVal), 0.5];
 
 /* 
@@ -98,12 +105,12 @@ if ( _tempLvl <= 28 )							then { _tempImg = 0 };
 
 _temp = "\z\addons\viruz_mod\gui\status_temp_" + str(_tempImg) + "_ca.paa";
 
-if !(isNull _StatusUI) then {
+//if !(isNull _StatusUI) then {
 _ctrlBlood ctrlSetText _blood;
 _ctrlThirst ctrlSetText _thirst;
 _ctrlFood ctrlSetText _food;
 _ctrlTemp ctrlSetText _temp;
-};
+//};
 /*
 	Visual:
 */
@@ -136,10 +143,10 @@ if (!canStand player) then {
 if (_combatVal == 0) then {
 	_ctrlCombat call player_guiControlFlash;
 };
-if !(isNull _StatusUI) then {
+//if !(isNull _StatusUI) then {
 if (_bloodVal < 0.2) then {
 	_ctrlBlood call player_guiControlFlash;
-};
+//};
 
 if (_thirstVal < 0.2) then {
 	_ctrlThirst call player_guiControlFlash;
@@ -158,6 +165,46 @@ if (_tempVal > 0.8) then {	//TeeChange
 if (r_player_injured) then {
 	_ctrlBleed call player_guiControlFlash;
 };
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Humanity System
+_vzhumanitytext = "";
+_vzhumanity = player getVariable["humanity",0];
+
+
+
+
+
+	if(_vzhumanity >= 15000) then{ //Hero 3
+        _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_3_ca.paa";
+    } else {
+        if(_vzhumanity >= 7500) then{ //Hero 2
+            _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_2_ca.paa";
+        } else {
+            if(_vzhumanity >= 5000) then{ //Hero 1
+                _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_1_ca.paa";
+            } else {
+                if(_vzhumanity <= -5000) then{ //Bandit 1
+                    _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_1_ca.paa";
+                } else {
+                    if(_vzhumanity <= -7500) then{ //Bandit 2
+                        _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_2_ca.paa";
+                    } else {
+                        if(_vzhumanity <= -15000) then{ //Bandit 3
+                            _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_3_ca.paa";
+						} else { 
+							_vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_survivor_ca.paa";
+						};
+                    };
+                };
+			};
+        };
+    };
+
+	_vzhumanitystat ctrlSetText _vzhumanitytext;
+	_ctrlHumanity ctrlSetText format["%1", _vzhumanity];
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /*
 _humanity = player getVariable["humanity",0];

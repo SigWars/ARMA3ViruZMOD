@@ -217,21 +217,21 @@ class RscTitles
 			};*/
 		};
 		class Controls{
-			/*class RscPicture_1301: RscPictureGUI
-			{
-				idc = 1301;
-				//text = "\z\addons\viruz_mod\gui\status_food_inside_ca.paa";
-				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.93 * safezoneH + safezoneY;
-				w = 0.06;
-				h = 0.08;
-			};
 			class RscPicture_1300: RscPictureGUI
 			{
 				idc = 1300;
 				//text = "\z\addons\viruz_mod\gui\status_blood_inside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.86 * safezoneH + safezoneY;
+				w = 0.06;
+				h = 0.08;
+			};
+			class RscPicture_1301: RscPictureGUI
+			{
+				idc = 1301;
+				//text = "\z\addons\viruz_mod\gui\status_food_inside_ca.paa";
+				x = 0.955313 * safezoneW + safezoneX;
+				y = 0.93 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
 			};
@@ -244,15 +244,6 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 			};
-			class RscPicture_1306: RscPictureGUI
-			{
-				idc = 1306;
-				//text = "\z\addons\viruz_mod\gui\status_temp_ca.paa";
-				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.72 * safezoneH + safezoneY;
-				w = 0.06;
-				h = 0.08;
-			};*/
 			class RscPicture_1303: RscPictureGUI
 			{
 				idc = 1303;
@@ -281,6 +272,15 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 			};
+			class RscPicture_1306: RscPictureGUI
+			{
+				idc = 1306;
+				//text = "\z\addons\viruz_mod\gui\status_temp_ca.paa";
+				x = 0.955313 * safezoneW + safezoneX;
+				y = 0.72 * safezoneH + safezoneY;
+				w = 0.06;
+				h = 0.08;
+			};
 			class RscPicture_1307 : RscPictureGUI {
 				idc = 1307;
 				text = "\z\addons\viruz_mod\gui\status_combat_inside_ca.paa";
@@ -289,6 +289,34 @@ class RscTitles
 				w = 0.06;
 				h = 0.08;
 			};
+			
+			////////////////////////////////////////////////////////////////////
+			//Humanity System
+			//Hero - Survivor - Bandit
+			//Icon
+			class RscPicture_1308: RscPictureGUI
+			{
+				idc = 1308;
+				text = "";
+				x= 0.933125 * safezoneW + safezoneX;
+				y= 0.159 * safezoneH + safezoneY;
+				w= 128 * pixelW;
+				h= 128 * pixelH;
+				colorBackground[] = {255,255,255,255};
+				colorText[] = { 255 , 255 , 255 , 255 };
+			};
+			
+			class RscHumanityText_1309: RscStructuredTextGUI
+			{
+				idc = 1309;
+				text = "";
+				x = 0.943 * safezoneW + safezoneX;
+				y = 0.260 * safezoneH + safezoneY;
+				w = 0.1;
+				h = 0.055;
+				colorText[] = {0,0,0,0};
+			};
+			////////////////////////////////////////////////////////////////////
 			/*class RscPicture_1701: RscPictureGUI
 
 			{
