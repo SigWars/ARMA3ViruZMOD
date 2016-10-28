@@ -3,7 +3,7 @@
 
 	<job id='0'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>033000</start>
+		<start>023000</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 30 minutes</cmd>
@@ -11,7 +11,7 @@
 	
 	<job id='1'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>034500</start>
+		<start>024500</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 15 minutes</cmd>
@@ -19,7 +19,7 @@
 	
 	<job id='2'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035900</start>
+		<start>025900</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 1 minute</cmd>
@@ -27,7 +27,7 @@
 	
 	<job id='3'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035950</start>
+		<start>025950</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 10 seconds</cmd>
@@ -35,7 +35,7 @@
 	
 	<job id='4'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035951</start>
+		<start>025951</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 9 seconds</cmd>
@@ -43,7 +43,7 @@
 	
 	<job id='5'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035952</start>
+		<start>025952</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 8 seconds</cmd>
@@ -51,7 +51,7 @@
 	
 	<job id='6'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035953</start>
+		<start>025953</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 7 seconds</cmd>
@@ -59,7 +59,7 @@
 		
 	<job id='7'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035954</start>
+		<start>025954</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 6 seconds</cmd>
@@ -67,7 +67,7 @@
 	
 	<job id='8'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035955</start>
+		<start>025955</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 5 seconds</cmd>
@@ -75,7 +75,7 @@
 	
 	<job id='9'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035956</start>
+		<start>025956</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 4 seconds</cmd>
@@ -83,7 +83,7 @@
 	
 	<job id='10'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035957</start>
+		<start>025957</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 3 seconds</cmd>
@@ -91,7 +91,7 @@
 	
 	<job id='11'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035958</start>
+		<start>025958</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 2 seconds</cmd>
@@ -99,7 +99,7 @@
 	
 	<job id='12'>
 		<day>1,2,3,4,5,6,7</day>
-		<start>035959</start>
+		<start>025959</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>say -1  This server will restart in 1 seconds</cmd>
@@ -107,7 +107,7 @@
 	
 	<job id="13">
 		<day>1,2,3,4,5,6,7</day>
-		<start>040000</start>
+		<start>030000</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>C:\Arma3Server\Premod_stop.bat</cmd>

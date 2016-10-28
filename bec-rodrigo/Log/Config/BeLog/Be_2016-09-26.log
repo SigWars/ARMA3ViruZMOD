@@ -1,0 +1,304 @@
+﻿00:00:50 : Rcon client logging in
+﻿00:00:52 : No Valid response. Trying to reconnect.!
+﻿00:00:52 : Rcon client logging in
+﻿00:00:52 : RCon admin #0 (127.0.0.1:61884) logged in
+﻿00:01:37 : No Valid response. Trying to reconnect.!
+﻿00:01:37 : Rcon client logging in
+﻿00:01:37 : RCon admin #0 (127.0.0.1:61884) logged in
+﻿00:02:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:17:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:32:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:47:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:02:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:17:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:32:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:47:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:02:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:17:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:32:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:47:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:02:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:17:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:32:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:47:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:02:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:17:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:32:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:47:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:49:52 : Player #0 will-jam (109.159.8.12:2304) connected
+﻿04:49:54 : Player #0 will-jam - GUID: 2e25da64364d896ea104ed34c455af9b
+﻿04:49:54 : Verified GUID (2e25da64364d896ea104ed34c455af9b) of player #0 will-jam
+﻿04:49:57 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿05:02:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:17:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:26:26 : Player #0 will-jam disconnected
+﻿05:32:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:37:45 : Player #0 Viper (69.247.163.224:2304) connected
+﻿05:37:46 : Player #0 Viper - GUID: d2227308a91a9b1d76a15425242dc374
+﻿05:37:47 : Verified GUID (d2227308a91a9b1d76a15425242dc374) of player #0 Viper
+﻿05:38:10 : Player #0 Viper disconnected
+﻿05:38:31 : Player #0 Viper (69.247.163.224:2304) connected
+﻿05:38:33 : Player #0 Viper - GUID: d2227308a91a9b1d76a15425242dc374
+﻿05:38:33 : Verified GUID (d2227308a91a9b1d76a15425242dc374) of player #0 Viper
+﻿05:38:41 : Player #1 Hellhog (24.12.172.243:2304) connected
+﻿05:38:42 : Player #1 Hellhog - GUID: aadd23bc2011a3123033fb294c6fd81d
+﻿05:38:43 : Verified GUID (aadd23bc2011a3123033fb294c6fd81d) of player #1 Hellhog
+﻿05:47:10 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:49:57 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿05:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿05:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿06:00:51 : Rcon client logging in
+﻿06:00:51 : RCon admin #0 (127.0.0.1:53857) logged in
+﻿06:01:14 : Player #0 Viper (69.247.163.224:2304) connected
+﻿06:01:15 : Player #0 Viper - GUID: d2227308a91a9b1d76a15425242dc374
+﻿06:01:15 : Verified GUID (d2227308a91a9b1d76a15425242dc374) of player #0 Viper
+﻿06:01:18 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿06:01:22 : Player #1 Hellhog (24.12.172.243:2304) connected
+﻿06:01:23 : Player #1 Hellhog - GUID: aadd23bc2011a3123033fb294c6fd81d
+﻿06:01:24 : Verified GUID (aadd23bc2011a3123033fb294c6fd81d) of player #1 Hellhog
+﻿06:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:51:54 : Player #2 [Yakuza] R@kyeR (5.83.124.100:2304) connected
+﻿06:51:56 : Player #3 nicolò (79.13.61.191:2304) connected
+﻿06:51:56 : Player #2 [Yakuza] R@kyeR - GUID: adfa18df8c628458098ce7cf3d7a8655
+﻿06:51:57 : Player #3 nicolò - GUID: d223f93bc88ba3a1a880510c7945db25
+﻿06:51:58 : Verified GUID (d223f93bc88ba3a1a880510c7945db25) of player #3 nicolò
+﻿06:52:28 : Verified GUID (adfa18df8c628458098ce7cf3d7a8655) of player #2 [Yakuza] R@kyeR
+﻿06:57:42 : Player #0 Viper disconnected
+﻿06:58:10 : Player #1 Hellhog disconnected
+﻿07:01:18 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿07:01:40 : Player #0 [EXS]TheBoogyMan (73.225.206.238:2304) connected
+﻿07:01:42 : Player #0 [EXS]TheBoogyMan - GUID: c4ade00f41ab47c40fda838d8aecc233
+﻿07:01:42 : Verified GUID (c4ade00f41ab47c40fda838d8aecc233) of player #0 [EXS]TheBoogyMan
+﻿07:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:19:08 : Player #2 [Yakuza] R@kyeR disconnected
+﻿07:21:59 : Player #1 [Yakuza] R@kyeR (5.83.124.100:2304) connected
+﻿07:22:01 : Player #1 [Yakuza] R@kyeR - GUID: adfa18df8c628458098ce7cf3d7a8655
+﻿07:22:05 : Verified GUID (adfa18df8c628458098ce7cf3d7a8655) of player #1 [Yakuza] R@kyeR
+﻿07:31:34 : Player #0 [EXS]TheBoogyMan disconnected
+﻿07:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:43:58 : Player #0 [ViruZ]Slv_ (131.72.172.195:2304) connected
+﻿07:44:00 : Player #0 [ViruZ]Slv_ - GUID: 8a1ca575a823965e0a36d3b79b47a893
+﻿07:44:00 : Verified GUID (8a1ca575a823965e0a36d3b79b47a893) of player #0 [ViruZ]Slv_
+﻿07:46:01 : Player #0 [ViruZ]Slv_ disconnected
+﻿07:46:46 : Player #0 Romulo Matos (131.72.172.195:2304) connected
+﻿07:46:48 : Player #0 Romulo Matos - GUID: 8a1ca575a823965e0a36d3b79b47a893
+﻿07:46:48 : Verified GUID (8a1ca575a823965e0a36d3b79b47a893) of player #0 Romulo Matos
+﻿07:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:48:16 : Player #0 Romulo Matos disconnected
+﻿07:54:02 : Player #0 Too_Good67 (58.164.102.69:2304) connected
+﻿07:54:04 : Player #0 Too_Good67 - GUID: 0f17374cc536837d0ddbb23ac96672c7
+﻿07:54:04 : Verified GUID (0f17374cc536837d0ddbb23ac96672c7) of player #0 Too_Good67
+﻿08:01:18 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿08:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:13:25 : Player #2 [Yakuza]Shinobu (2.227.182.115:2304) connected
+﻿08:13:27 : Player #2 [Yakuza]Shinobu - GUID: baebe6c50e6b7934e8e2ba2378bc7b5f
+﻿08:13:27 : Verified GUID (baebe6c50e6b7934e8e2ba2378bc7b5f) of player #2 [Yakuza]Shinobu
+﻿08:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:22:33 : Player #4 Rémi (70.82.31.160:2304) connected
+﻿08:22:35 : Player #4 Rémi - GUID: e61bf28b8b5de61d40c865be729ab7c5
+﻿08:22:35 : Verified GUID (e61bf28b8b5de61d40c865be729ab7c5) of player #4 Rémi
+﻿08:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:37:36 : Player #1 [Yakuza] R@kyeR disconnected
+﻿08:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:52:29 : Player #1 [Yakuza] R@kyeR (5.83.124.100:2304) connected
+﻿08:52:32 : Player #1 [Yakuza] R@kyeR - GUID: adfa18df8c628458098ce7cf3d7a8655
+﻿08:52:58 : Verified GUID (adfa18df8c628458098ce7cf3d7a8655) of player #1 [Yakuza] R@kyeR
+﻿08:56:37 : Player #4 Rémi disconnected
+﻿08:57:43 : Player #4 Anthony (66.76.9.202:2304) connected
+﻿08:57:44 : Player #4 Anthony - GUID: 4c042e1214a4e807fab41fcf320cd54a
+﻿08:57:45 : Verified GUID (4c042e1214a4e807fab41fcf320cd54a) of player #4 Anthony
+﻿08:58:40 : Player #4 Anthony disconnected
+﻿09:00:37 : Player #4 will-jam (109.159.8.12:2304) connected
+﻿09:00:39 : Player #4 will-jam - GUID: 2e25da64364d896ea104ed34c455af9b
+﻿09:00:39 : Verified GUID (2e25da64364d896ea104ed34c455af9b) of player #4 will-jam
+﻿09:01:18 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿09:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:17:13 : Player #5 KillerClown (68.50.223.158:2304) connected
+﻿09:17:14 : Player #5 KillerClown - GUID: b10236547f5ffab702d6c5ab4cd1c1d4
+﻿09:17:15 : Verified GUID (b10236547f5ffab702d6c5ab4cd1c1d4) of player #5 KillerClown
+﻿09:23:37 : Player #4 will-jam disconnected
+﻿09:24:56 : Player #5 KillerClown (b10236547f5ffab702d6c5ab4cd1c1d4) has been kicked by BattlEye: Client not responding
+﻿09:31:29 : Player #0 Too_Good67 disconnected
+﻿09:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:01:18 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿10:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:38:42 : Player #2 [Yakuza]Shinobu disconnected
+﻿10:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:00:20 : Player #1 [Yakuza] R@kyeR disconnected
+﻿11:00:36 : Player #3 nicolò disconnected
+﻿11:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿11:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿12:00:52 : Rcon client logging in
+﻿12:00:52 : RCon admin #0 (127.0.0.1:49248) logged in
+﻿12:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:30:38 : Player #0 BlackJack (206.174.125.140:2304) connected
+﻿16:30:40 : Player #0 BlackJack - GUID: 78a8ae118661b92f9e6b0deb080f96b1
+﻿16:30:40 : Verified GUID (78a8ae118661b92f9e6b0deb080f96b1) of player #0 BlackJack
+﻿16:30:42 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿16:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:35:33 : Player #0 BlackJack disconnected
+﻿16:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:33:48 : Player #0 UKlukam43567 (2.227.182.115:2304) connected
+﻿17:33:50 : Player #0 UKlukam43567 - GUID: baebe6c50e6b7934e8e2ba2378bc7b5f
+﻿17:33:50 : Verified GUID (baebe6c50e6b7934e8e2ba2378bc7b5f) of player #0 UKlukam43567
+﻿17:33:52 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿17:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:47:49 : Player #0 UKlukam43567 disconnected
+﻿17:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿17:54:25 : Player #0 Rémi (70.82.31.160:2304) connected
+﻿17:54:26 : Player #0 Rémi - GUID: e61bf28b8b5de61d40c865be729ab7c5
+﻿17:54:26 : Verified GUID (e61bf28b8b5de61d40c865be729ab7c5) of player #0 Rémi
+﻿17:54:29 : Player #1 [GHOST] Foca no Jogo (191.191.26.99:2304) connected
+﻿17:54:30 : Player #1 [GHOST] Foca no Jogo - GUID: eb62df060220c2b8708d54ad15f28ca5
+﻿17:54:31 : Verified GUID (eb62df060220c2b8708d54ad15f28ca5) of player #1 [GHOST] Foca no Jogo
+﻿17:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:56:40 : Player #1 [GHOST] Foca no Jogo disconnected
+﻿17:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿18:00:49 : Rcon client logging in
+﻿18:00:49 : RCon admin #0 (127.0.0.1:63445) logged in
+﻿18:02:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:17:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:25:22 : Player #0 Rémi (70.82.31.160:2304) connected
+﻿18:25:24 : Player #0 Rémi - GUID: e61bf28b8b5de61d40c865be729ab7c5
+﻿18:25:24 : Verified GUID (e61bf28b8b5de61d40c865be729ab7c5) of player #0 Rémi
+﻿18:25:27 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿18:32:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:47:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:02:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:17:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:25:27 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿19:32:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:47:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:58:58 : Player #1 [CST]TangoDown (201.8.127.177:2304) connected
+﻿19:59:02 : Player #1 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿19:59:02 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #1 [CST]TangoDown
+﻿20:01:35 : Player #2 Romulo Matos (131.72.172.195:2304) connected
+﻿20:01:37 : Player #2 Romulo Matos - GUID: 8a1ca575a823965e0a36d3b79b47a893
+﻿20:01:37 : Verified GUID (8a1ca575a823965e0a36d3b79b47a893) of player #2 Romulo Matos
+﻿20:02:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:04:35 : Player #2 Romulo Matos disconnected
+﻿20:05:44 : Player #1 [CST]TangoDown disconnected
+﻿20:14:14 : Player #1 o.Buddhasack (173.18.59.183:2304) connected
+﻿20:14:16 : Player #1 o.Buddhasack - GUID: 94b00e7fba130a4376e6668b8fea497f
+﻿20:14:16 : Verified GUID (94b00e7fba130a4376e6668b8fea497f) of player #1 o.Buddhasack
+﻿20:16:55 : Player #1 o.Buddhasack disconnected
+﻿20:17:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:25:27 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿20:32:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:37:50 : Player #1 bruce_000 (68.194.58.209:2304) connected
+﻿20:37:52 : Player #1 bruce_000 - GUID: ef6be30048daaab886d6eaa5b85634fd
+﻿20:37:52 : Verified GUID (ef6be30048daaab886d6eaa5b85634fd) of player #1 bruce_000
+﻿20:43:21 : Player #1 bruce_000 disconnected
+﻿20:47:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:02:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:17:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:23:59 : Player #1 Nightmares Witness (24.127.200.209:2304) connected
+﻿21:24:01 : Player #1 Nightmares Witness - GUID: ba2d85c90adfe9779f8b8853b1d63a15
+﻿21:24:01 : Verified GUID (ba2d85c90adfe9779f8b8853b1d63a15) of player #1 Nightmares Witness
+﻿21:24:25 : Player #2 Pootis (75.75.111.64:2304) connected
+﻿21:24:26 : Player #2 Pootis - GUID: b45aa16263a7b0981bbf864f9ba64944
+﻿21:24:27 : Verified GUID (b45aa16263a7b0981bbf864f9ba64944) of player #2 Pootis
+﻿21:25:27 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿21:26:12 : Player #0 Rémi disconnected
+﻿21:32:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:33:18 : Player #0 archn (24.127.200.209:1024) connected
+﻿21:33:20 : Player #0 archn - GUID: 87018adccae0f853d7f09164cddeeb1a
+﻿21:33:20 : Verified GUID (87018adccae0f853d7f09164cddeeb1a) of player #0 archn
+﻿21:33:45 : Player #1 Nightmares Witness disconnected
+﻿21:34:14 : Player #1 Nightmares Witness (24.127.200.209:2304) connected
+﻿21:34:15 : Player #1 Nightmares Witness - GUID: ba2d85c90adfe9779f8b8853b1d63a15
+﻿21:34:15 : Verified GUID (ba2d85c90adfe9779f8b8853b1d63a15) of player #1 Nightmares Witness
+﻿21:34:40 : Player #0 archn disconnected
+﻿21:38:05 : Player #0 archn (24.127.200.209:1024) connected
+﻿21:38:07 : Player #0 archn - GUID: 87018adccae0f853d7f09164cddeeb1a
+﻿21:38:07 : Verified GUID (87018adccae0f853d7f09164cddeeb1a) of player #0 archn
+﻿21:38:45 : Player #0 archn disconnected
+﻿21:43:05 : Player #0 archn (24.127.200.209:1024) connected
+﻿21:43:07 : Player #0 archn - GUID: 87018adccae0f853d7f09164cddeeb1a
+﻿21:43:07 : Verified GUID (87018adccae0f853d7f09164cddeeb1a) of player #0 archn
+﻿21:43:50 : Player #0 archn disconnected
+﻿21:47:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:55:05 : Player #0 archn (24.127.200.209:1024) connected
+﻿21:55:07 : Player #0 archn - GUID: 87018adccae0f853d7f09164cddeeb1a
+﻿21:55:07 : Verified GUID (87018adccae0f853d7f09164cddeeb1a) of player #0 archn
+﻿21:55:26 : Player #0 archn disconnected
+﻿21:56:11 : Player #1 Nightmares Witness disconnected
+﻿21:58:30 : Player #2 Pootis disconnected
+﻿22:02:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:17:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:22:54 : Player #0 Rémi (70.82.31.160:2304) connected
+﻿22:22:55 : Player #0 Rémi - GUID: e61bf28b8b5de61d40c865be729ab7c5
+﻿22:22:56 : Verified GUID (e61bf28b8b5de61d40c865be729ab7c5) of player #0 Rémi
+﻿22:23:02 : Player #0 Rémi disconnected
+﻿22:23:06 : Player #0 Rémi (70.82.31.160:2304) connected
+﻿22:23:07 : Player #0 Rémi - GUID: e61bf28b8b5de61d40c865be729ab7c5
+﻿22:23:08 : Verified GUID (e61bf28b8b5de61d40c865be729ab7c5) of player #0 Rémi
+﻿22:25:27 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿22:32:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:47:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:59:50 : Player #1 1nfr4r3d (104.163.148.87:2304) connected
+﻿22:59:52 : Player #1 1nfr4r3d - GUID: 43eda8ebb70c5a76a0ea6abc2acd8621
+﻿22:59:52 : Verified GUID (43eda8ebb70c5a76a0ea6abc2acd8621) of player #1 1nfr4r3d
+﻿23:02:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:09:09 : Player #0 Rémi disconnected
+﻿23:11:19 : Player #1 1nfr4r3d disconnected
+﻿23:17:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:32:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:47:09 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿23:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.

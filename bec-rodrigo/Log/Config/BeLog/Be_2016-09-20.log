@@ -1,0 +1,266 @@
+﻿00:03:40 : Rcon client logging in
+﻿00:03:40 : RCon admin #0 (127.0.0.1:65292) logged in
+﻿00:10:04 : Rcon client logging in
+﻿00:10:04 : RCon admin #0 (127.0.0.1:62109) logged in
+﻿00:18:08 : No Valid response. Trying to reconnect.!
+﻿00:18:08 : Rcon client logging in
+﻿00:18:08 : RCon admin #0 (127.0.0.1:62109) logged in
+﻿00:33:46 : Lost Connection!
+﻿00:33:46 : Closing socket & exiting!
+﻿00:34:34 : Rcon client logging in
+﻿00:34:34 : RCon admin #0 (127.0.0.1:52880) logged in
+﻿00:35:27 : Player #0 [CST]TangoDown (187.127.132.123:2304) connected
+﻿00:35:28 : Player #0 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿00:35:29 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #0 [CST]TangoDown
+﻿00:35:29 : Player #0 [CST]TangoDown (6f8b5e99741f23cf28ac2eafe8555195) has been kicked by BattlEye: Admin Kick (BEC : You are not whitelisted on this server.)
+﻿00:35:30 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿00:35:54 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:37:57 : Rcon client logging in
+﻿00:37:57 : RCon admin #1 (127.0.0.1:61627) logged in
+﻿00:37:58 : Player #0 [CST]TangoDown (187.127.132.123:2304) connected
+﻿00:38:00 : Player #0 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿00:38:01 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #0 [CST]TangoDown
+﻿00:38:33 : RCon admin #1: (To [CST]TangoDown) BEC : You have about 60 seconds left to join the mission.
+﻿00:39:17 : RCon admin #1: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:45:04 : Lost Connection!
+﻿00:45:04 : Closing socket & exiting!
+﻿00:45:53 : Rcon client logging in
+﻿00:45:53 : RCon admin #0 (127.0.0.1:63668) logged in
+﻿00:46:35 : Player #0 [CST]TangoDown (187.127.132.123:2304) connected
+﻿00:46:37 : Player #0 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿00:46:37 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #0 [CST]TangoDown
+﻿00:46:38 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿00:47:13 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:02:13 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:15:34 : Player #0 [CST]TangoDown disconnected
+﻿01:17:13 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:18:12 : Lost Connection!
+﻿01:18:12 : Closing socket & exiting!
+﻿01:18:59 : Rcon client logging in
+﻿01:18:59 : RCon admin #0 (127.0.0.1:54220) logged in
+﻿01:20:05 : Rcon client logging in
+﻿01:20:05 : RCon admin #0 (127.0.0.1:55639) logged in
+﻿01:21:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:36:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:51:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:06:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:21:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:36:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:51:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:06:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:21:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:36:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:51:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:06:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:21:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:36:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:51:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:06:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:21:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:36:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿05:51:25 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿06:01:20 : Rcon client logging in
+﻿06:01:21 : RCon admin #0 (127.0.0.1:61030) logged in
+﻿06:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿11:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿12:00:51 : Rcon client logging in
+﻿12:00:51 : RCon admin #0 (127.0.0.1:52708) logged in
+﻿12:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:02:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:17:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:32:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:47:12 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿17:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿18:01:20 : Rcon client logging in
+﻿18:01:21 : RCon admin #0 (127.0.0.1:58025) logged in
+﻿18:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:17:09 : Player #0 Robin Nudes (179.178.71.111:2304) connected
+﻿18:17:12 : Player #0 Robin Nudes - GUID: 9c32f0703cc3196eeff39a56542bb787
+﻿18:17:13 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿18:17:14 : Verified GUID (9c32f0703cc3196eeff39a56542bb787) of player #0 Robin Nudes
+﻿18:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:17:45 : RCon admin #0: (To Robin Nudes) BEC : You have about 60 seconds left to join the mission.
+﻿18:18:13 : RCon admin #0: (To Robin Nudes) BEC : You have about 30 seconds left to join the mission.
+﻿18:18:30 : RCon admin #0: (To Robin Nudes) BEC : You have about 15 seconds left to join the mission.
+﻿18:18:45 : Player #0 Robin Nudes (9c32f0703cc3196eeff39a56542bb787) has been kicked by BattlEye: Admin Kick (BEC : Lobby idling to long)
+﻿18:18:51 : Player #0 Robin Nudes (179.178.71.111:2304) connected
+﻿18:18:53 : Player #0 Robin Nudes - GUID: 9c32f0703cc3196eeff39a56542bb787
+﻿18:18:55 : Verified GUID (9c32f0703cc3196eeff39a56542bb787) of player #0 Robin Nudes
+﻿18:19:25 : RCon admin #0: (To Robin Nudes) BEC : You have about 60 seconds left to join the mission.
+﻿18:19:57 : RCon admin #0: (To Robin Nudes) BEC : You have about 30 seconds left to join the mission.
+﻿18:20:11 : RCon admin #0: (To Robin Nudes) BEC : You have about 15 seconds left to join the mission.
+﻿18:20:26 : Player #0 Robin Nudes (9c32f0703cc3196eeff39a56542bb787) has been kicked by BattlEye: Admin Kick (BEC : Lobby idling to long)
+﻿18:21:24 : Player #0 Robin Nudes (179.178.71.111:2304) connected
+﻿18:21:27 : Player #0 Robin Nudes - GUID: 9c32f0703cc3196eeff39a56542bb787
+﻿18:21:28 : Verified GUID (9c32f0703cc3196eeff39a56542bb787) of player #0 Robin Nudes
+﻿18:30:03 : Player #0 Robin Nudes disconnected
+﻿18:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:04:29 : Player #0 [CST]Fernandes (186.241.9.37:2304) connected
+﻿22:04:31 : Player #0 [CST]Fernandes - GUID: d5749be0d0e584866add1e0c4349ae82
+﻿22:04:31 : Verified GUID (d5749be0d0e584866add1e0c4349ae82) of player #0 [CST]Fernandes
+﻿22:04:33 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿22:05:04 : RCon admin #0: (To [CST]Fernandes) BEC : You have about 60 seconds left to join the mission.
+﻿22:10:56 : Player #1 Benini (62.151.189.227:2304) connected
+﻿22:10:58 : Player #1 Benini - GUID: 19c269b0763ed77b6844bc0a2549267e
+﻿22:10:58 : Verified GUID (19c269b0763ed77b6844bc0a2549267e) of player #1 Benini
+﻿22:11:04 : Player #1 Benini disconnected
+﻿22:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:54:26 : Player #1 [CST]TangoDown (187.127.132.123:2304) connected
+﻿22:54:31 : Player #1 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿22:54:31 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #1 [CST]TangoDown
+﻿22:55:04 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 60 seconds left to join the mission.
+﻿22:55:33 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 30 seconds left to join the mission.
+﻿22:55:49 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 15 seconds left to join the mission.
+﻿22:56:04 : Player #1 [CST]TangoDown (6f8b5e99741f23cf28ac2eafe8555195) has been kicked by BattlEye: Admin Kick (BEC : Lobby idling to long)
+﻿22:58:02 : Player #1 [CST]TangoDown (187.127.132.123:2304) connected
+﻿22:58:03 : Player #1 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿22:58:03 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #1 [CST]TangoDown
+﻿22:58:35 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 60 seconds left to join the mission.
+﻿22:59:04 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 30 seconds left to join the mission.
+﻿22:59:21 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 15 seconds left to join the mission.
+﻿22:59:35 : Player #1 [CST]TangoDown (6f8b5e99741f23cf28ac2eafe8555195) has been kicked by BattlEye: Admin Kick (BEC : Lobby idling to long)
+﻿23:00:01 : Player #1 [CST]TangoDown (187.127.132.123:2304) connected
+﻿23:00:03 : Player #1 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿23:00:03 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #1 [CST]TangoDown
+﻿23:00:23 : Player #1 [CST]TangoDown disconnected
+﻿23:01:45 : Player #1 [CST]TangoDown (187.127.132.123:2304) connected
+﻿23:01:49 : Player #1 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿23:01:49 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #1 [CST]TangoDown
+﻿23:02:02 : Player #1 [CST]TangoDown disconnected
+﻿23:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:04:18 : Player #1 [CST]TangoDown (187.127.132.123:2304) connected
+﻿23:04:20 : Player #1 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿23:04:20 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #1 [CST]TangoDown
+﻿23:04:33 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿23:04:52 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 60 seconds left to join the mission.
+﻿23:05:23 : Player #1 [CST]TangoDown disconnected
+﻿23:07:10 : Player #1 AndiniTheGreat (173.94.184.197:2304) connected
+﻿23:07:12 : Player #1 AndiniTheGreat - GUID: d92dddb2422f62e65712ec49d2a857f3
+﻿23:07:12 : Verified GUID (d92dddb2422f62e65712ec49d2a857f3) of player #1 AndiniTheGreat
+﻿23:07:38 : Player #2 [CST]TangoDown (187.127.132.123:2304) connected
+﻿23:07:43 : Player #2 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿23:07:44 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #2 [CST]TangoDown
+﻿23:07:45 : RCon admin #0: (To AndiniTheGreat) BEC : You have about 60 seconds left to join the mission.
+﻿23:08:16 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 60 seconds left to join the mission.
+﻿23:08:47 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 30 seconds left to join the mission.
+﻿23:09:01 : RCon admin #0: (To [CST]TangoDown) BEC : You have about 15 seconds left to join the mission.
+﻿23:09:16 : Player #2 [CST]TangoDown (6f8b5e99741f23cf28ac2eafe8555195) has been kicked by BattlEye: Admin Kick (BEC : Lobby idling to long)
+﻿23:10:14 : Player #2 [CST]TangoDown (187.127.132.123:2304) connected
+﻿23:10:16 : Player #2 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿23:10:16 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #2 [CST]TangoDown
+﻿23:10:31 : Player #2 [CST]TangoDown disconnected
+﻿23:13:13 : Rcon client logging in
+﻿23:13:13 : RCon admin #1 (127.0.0.1:56964) logged in
+﻿23:14:33 : RCon admin #1: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:18:08 : Player #2 [CST]TangoDown (187.127.132.123:2304) connected
+﻿23:18:13 : Player #2 [CST]TangoDown - GUID: 6f8b5e99741f23cf28ac2eafe8555195
+﻿23:18:13 : Verified GUID (6f8b5e99741f23cf28ac2eafe8555195) of player #2 [CST]TangoDown
+﻿23:21:54 : Player #1 AndiniTheGreat disconnected
+﻿23:27:14 : Player #1 Sada TwinkleToes (69.14.198.81:2304) connected
+﻿23:27:16 : Player #1 Sada TwinkleToes - GUID: 0a422f632366d2c99958d60d0d3f68e9
+﻿23:27:16 : Verified GUID (0a422f632366d2c99958d60d0d3f68e9) of player #1 Sada TwinkleToes
+﻿23:29:33 : RCon admin #1: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:30:16 : Player #3 [ViruZ]Slv_ (131.72.172.195:2304) connected
+﻿23:30:18 : Player #3 [ViruZ]Slv_ - GUID: 8a1ca575a823965e0a36d3b79b47a893
+﻿23:30:18 : Verified GUID (8a1ca575a823965e0a36d3b79b47a893) of player #3 [ViruZ]Slv_
+﻿23:30:39 : Player #1 Sada TwinkleToes disconnected
+﻿23:31:00 : Player #1 Sada TwinkleToes (69.14.198.81:2304) connected
+﻿23:31:02 : Player #1 Sada TwinkleToes disconnected
+﻿23:39:48 : Player #1 Jordan (99.72.245.194:2304) connected
+﻿23:39:51 : Player #1 Jordan disconnected
+﻿23:39:52 : Player #1 Jordan (99.72.245.194:2304) connected
+﻿23:39:54 : Player #1 Jordan - GUID: f171df774d7e1b6cd0fd2e7619ca30a0
+﻿23:39:54 : Verified GUID (f171df774d7e1b6cd0fd2e7619ca30a0) of player #1 Jordan
+﻿23:40:48 : Player #3 [ViruZ]Slv_ disconnected
+﻿23:44:33 : RCon admin #1: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:46:15 : Player #1 Jordan disconnected
+﻿23:50:00 : RCon admin #1: (Global) The server will auto restart in 10 minutes.
+﻿23:55:00 : RCon admin #1: (Global) The server will auto restart in 5 minutes.
+﻿23:55:25 : RCon admin #1: (Global) The server will auto restart in 5 minutes.
+﻿23:55:50 : RCon admin #1: (Global) The server will auto restart in 5 minutes.
+﻿23:56:15 : RCon admin #1: (Global) The server will auto restart in 5 minutes.
+﻿23:56:40 : RCon admin #1: (Global) The server will auto restart in 5 minutes.
+﻿23:57:05 : RCon admin #1: (Global) The server will auto restart in 5 minutes.
+﻿23:59:00 : RCon admin #1: (Global) The server will auto restart in 60 seconds.
+﻿23:59:33 : RCon admin #1: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:59:33 : Player #0 [CST]Fernandes disconnected

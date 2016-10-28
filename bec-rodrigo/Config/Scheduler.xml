@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Scheduler>
+
+	<job id='0'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>033000</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 30 minutes</cmd>
+	</job>
+	
+	<job id='1'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>034500</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 15 minutes</cmd>
+	</job>
+	
+	<job id='2'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035900</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 1 minute</cmd>
+	</job>
+	
+	<job id='3'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035950</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 10 seconds</cmd>
+	</job>
+	
+	<job id='4'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035951</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 9 seconds</cmd>
+	</job>
+	
+	<job id='5'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035952</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 8 seconds</cmd>
+	</job>
+	
+	<job id='6'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035953</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 7 seconds</cmd>
+	</job>
+		
+	<job id='7'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035954</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 6 seconds</cmd>
+	</job>
+	
+	<job id='8'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035955</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 5 seconds</cmd>
+	</job>
+	
+	<job id='9'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035956</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 4 seconds</cmd>
+	</job>
+	
+	<job id='10'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035957</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 3 seconds</cmd>
+	</job>
+	
+	<job id='11'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035958</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 2 seconds</cmd>
+	</job>
+	
+	<job id='12'>
+		<day>1,2,3,4,5,6,7</day>
+		<start>035959</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>say -1  This server will restart in 1 seconds</cmd>
+	</job>
+	
+	<job id="13">
+		<day>1,2,3,4,5,6,7</day>
+		<start>040000</start>
+		<runtime>000000</runtime>
+		<loop>0</loop>
+		<cmd>C:\Arma3Server\Premod_restart.bat</cmd>
+	</job>
+	
+	<job id="14">
+		<day>1,2,3,4,5,6,7</day>
+		<start>000000</start>
+		<runtime>000020</runtime>
+		<loop>0</loop>
+		<cmd>say -1  Aperte a tecla HOME para obter ajuda!</cmd>
+    </job>
+	
+</Scheduler>
+
+

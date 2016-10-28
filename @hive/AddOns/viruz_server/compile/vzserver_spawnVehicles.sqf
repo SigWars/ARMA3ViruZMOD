@@ -16,6 +16,12 @@ _debugLoadInventory = (missionConfigFile >> "cfgGame" >> "DebugVehicleLoadInvent
 if (isNil "_debugLoadInventory") then {_debugLoadInventory = true;};
 if (typename _debugLoadInventory == typename "") then {_debugLoadInventory = call compile _debugLoadInventory;};
 
+//Viruz Build system
+_Structures = [];
+{
+	_Structures SET [count _Structures,_x select 1];
+}forEach (getArray(configFile >> "CfgConstruction" >> "Structures"));
+
 _Civilian = [];
 {
 	_Civilian SET [count _Civilian,_x select 0];
@@ -95,7 +101,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				
 				//Create it
 				_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
-				_object setVectorDirAndUp (call compile _Worldprecision);
+				//_object setVectorDirAndUp (call compile _Worldprecision);
 				_object setposATL _pos;
 				_allVehicles pushBack _object;
 				_object setDamage _damage;

@@ -1,0 +1,163 @@
+﻿00:00:51 : Rcon client logging in
+﻿00:00:51 : RCon admin #0 (127.0.0.1:61468) logged in
+﻿00:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿00:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿01:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿02:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿03:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿04:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:32:29 : Player #0 will-jam (109.159.8.12:2304) connected
+﻿05:32:31 : Player #0 will-jam - GUID: 2e25da64364d896ea104ed34c455af9b
+﻿05:32:31 : Verified GUID (2e25da64364d896ea104ed34c455af9b) of player #0 will-jam
+﻿05:32:33 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿05:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿05:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿05:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿05:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿06:00:51 : Rcon client logging in
+﻿06:00:51 : RCon admin #0 (127.0.0.1:64739) logged in
+﻿06:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿06:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:12:29 : Player #0 will-jam (109.159.8.12:2302) connected
+﻿07:12:30 : Player #0 will-jam - GUID: 2e25da64364d896ea104ed34c455af9b
+﻿07:12:31 : Verified GUID (2e25da64364d896ea104ed34c455af9b) of player #0 will-jam
+﻿07:12:33 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿07:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿07:50:23 : Player #0 will-jam disconnected
+﻿08:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿08:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿09:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿10:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:02:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:17:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:32:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:47:11 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿11:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿11:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿11:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿12:00:52 : Rcon client logging in
+﻿12:00:52 : RCon admin #0 (127.0.0.1:50757) logged in
+﻿12:01:51 : Lost Connection!
+﻿12:01:51 : Closing socket & exiting!
+﻿12:02:13 : Rcon client logging in
+﻿12:02:13 : RCon admin #0 (127.0.0.1:49905) logged in
+﻿12:03:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:18:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:33:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿12:48:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:03:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:18:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:33:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿13:48:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:03:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:18:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:33:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿14:48:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:03:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:18:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:33:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿15:48:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:03:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:18:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:33:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿16:48:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:03:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:18:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:33:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:48:33 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿17:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿17:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿17:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.
+﻿18:01:20 : Rcon client logging in
+﻿18:01:21 : RCon admin #0 (127.0.0.1:49823) logged in
+﻿18:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿18:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:17:30 : Player #0 Rémi (70.82.31.160:2304) connected
+﻿19:17:32 : Player #0 Rémi - GUID: e61bf28b8b5de61d40c865be729ab7c5
+﻿19:17:32 : Verified GUID (e61bf28b8b5de61d40c865be729ab7c5) of player #0 Rémi
+﻿19:17:35 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿19:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿19:38:01 : Player #1 Jack Luciano (24.122.211.74:2304) connected
+﻿19:38:03 : Player #1 Jack Luciano - GUID: f52a2fcd192bd02f0c40d4ad5e5c1307
+﻿19:38:03 : Verified GUID (f52a2fcd192bd02f0c40d4ad5e5c1307) of player #1 Jack Luciano
+﻿19:41:12 : Player #1 Jack Luciano disconnected
+﻿19:47:16 : Player #0 Rémi disconnected
+﻿19:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:42:47 : Player #0 [GHOST] Foca no Jogo (191.191.26.99:2304) connected
+﻿20:42:49 : Player #0 [GHOST] Foca no Jogo - GUID: eb62df060220c2b8708d54ad15f28ca5
+﻿20:42:50 : Verified GUID (eb62df060220c2b8708d54ad15f28ca5) of player #0 [GHOST] Foca no Jogo
+﻿20:42:52 : Starting with Arma 3 1.58 all server admins will have to define a dedicated port in BEServer.cfg in order to be able to use BE RCon. Please see https://www.battleye.com/support/documentation/ for details.
+﻿20:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿20:51:08 : Player #0 [GHOST] Foca no Jogo disconnected
+﻿21:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿21:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿22:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:02:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:17:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:32:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:47:41 : RCon admin #0: (Global) This server auto restarts 4 times per day, 06:00, 12:00, 18:00 and 00:00
+﻿23:50:00 : RCon admin #0: (Global) The server will auto restart in 10 minutes.
+﻿23:55:00 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:55:25 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:55:50 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:56:15 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:56:40 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:57:05 : RCon admin #0: (Global) The server will auto restart in 5 minutes.
+﻿23:59:00 : RCon admin #0: (Global) The server will auto restart in 60 seconds.

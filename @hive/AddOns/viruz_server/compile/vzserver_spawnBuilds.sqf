@@ -27,6 +27,23 @@ _Structures = [];
 	_Structures SET [count _Structures,_x select 1];
 }forEach (getArray(configFile >> "CfgConstruction" >> "Structures"));
 
+_Civilian = [];
+ {
+ 	_Civilian SET [count _Civilian,_x select 0];
+ }forEach (getArray(missionConfigFile >> "cfgVehiclesSpawner" >> "Civilian"));
+ 
+ _Military = [];
+ {
+ 	_Military SET [count _Military,_x select 0];
+ }forEach (getArray(missionConfigFile >> "cfgVehiclesSpawner" >> "Military"));
+ 
+ _Ships = [];
+ {
+ 	_Ships SET [count _Ships,_x select 0];
+ }forEach (getArray(missionConfigFile >> "cfgVehiclesSpawner" >> "Ships"));
+ 
+ _VZvehicles = + _Civilian + _Military + _Ships;
+
 	_countr = 0;		
 		{
 				
@@ -83,6 +100,7 @@ _Structures = [];
 					case "Bornholm": { _centerMap = getMarkerPos "center"; _nearestRadius = 10000; };
 					case "Esseker": { _centerMap = getMarkerPos "center";  _nearestRadius = 6000; };
 					case "Altis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+					case "Chernarus": { _centerMap = getMarkerPos "center";  _nearestRadius = 7000; };
 				};	
 				
 				_pos = [_centerMap,0,4000,10,0,2000,0] call BIS_fnc_findSafePos;

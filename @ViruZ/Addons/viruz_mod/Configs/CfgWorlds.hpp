@@ -10,7 +10,10 @@ class CfgWorlds {
 		class DayLightingBrightAlmost; // External class reference
 		class DayLightingRainy; // External class reference
 		class DefaultClutter; // External class reference
-  
+		cutscenes[] = {"Stratis_intro1"};
+		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
+		
 		class Weather : Weather {
 			class Lighting; // External class reference
 			
