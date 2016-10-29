@@ -3,7 +3,7 @@
 	Author: GRIMandinfiSTAR
 	Contact: bruno.marcetic@gmail.com or infiSTAR23@gmail.com // www.infiSTAR.de
 	Antihack & AdminTools - ChristianLorenzen - www.infiSTAR.de-License: (CC)
-	#2271
+	#1311
 */
 class RscTextInfi
 {
@@ -457,67 +457,9 @@ coefMax=1;
 color[]={1,1,1,1};
 };
 };
-class RscHTML_infiSTAR {
-colorBackground[]={0,0,0,0.25};
-colorText[] = {0.8784, 0.8471, 0.651, 1.0};
-colorLink[] = {0.8784, 0.8471, 0.651, 1.0};
-colorBold[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPicture[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPictureLink[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPictureSelected[] = {0.8784, 0.8471, 0.651, 1.0};
-colorPictureBorder[] = {0.8784, 0.8471, 0.651, 1.0};
-filename="";
-colorLinkActive[] = {1, 0.537, 0, 1};
-sizeEx = 0.03921;
-type = 9;
-style=0;
-prevPage = "\ca\ui\data\arrow_left_ca.paa";
-nextPage = "\ca\ui\data\arrow_right_ca.paa";
-shadow = 2;
-class H1 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 6;
-align = "left";
-};
-class H2 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 5;
-align = "left";
-};
-class H3 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 4;
-align = "left";
-};
-class H4 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 3;
-align = "left";
-};
-class H5 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921 * 2;
-align = "left";
-};
-class H6 {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.03921;
-align = "left";
-};
-class P {
-font = "PuristaLight";
-fontBold = "PuristaBold";
-sizeEx = 0.02921;
-align = "left";
-};
-};
-class infiSTAR_AdminMenu {
+
+
+class infiSTAR_AdminMenu{
 idd=-1338;
 movingenable=false;
 enablesimulation=true;
@@ -547,8 +489,7 @@ infiSTAR_BTN_34,
 infiSTAR_BTN_35,
 infiSTAR_BTN_36,
 infiSTAR_BTN_37,
-infiSTAR_BTN_38,
-infi_HTML_1
+infiSTAR_BTN_38
 };
 class infiSTAR_TXT_1000:RscTextInfi
 {
@@ -800,18 +741,4 @@ y=0.082*safezoneH+safezoneY;
 w=0.0916667*safezoneW;
 h=0.033*safezoneH;
 };
-class infi_HTML_1: RscHTML_infiSTAR
-{
-idc = 1;
-x = 0.535 * safezoneW + safezoneX;
-y = 0.06 * safezoneH + safezoneY;
-w = 0.32 * safezoneW;
-h = 0.25 * safezoneH;
-colorBackground[] = {0,0,0,0};
-onLoad = "if(!isNil'HTML_LOAD_URL')then{(_this select 0) htmlLoad HTML_LOAD_URL;};";
-};
-};
-class CfgCommands
-{
-	allowedHTMLLoadURIs[] = {"http://*"};
 };
