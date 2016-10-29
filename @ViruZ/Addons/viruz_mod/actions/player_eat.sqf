@@ -100,7 +100,7 @@ if (viruz_hunger < 0) then {viruz_hunger = 0;};
 
 
 //Ensure Control is visible
-_display = uiNamespace getVariable 'VIRUZ_INV_display';
+_display = uiNamespace getVariable 'VIRUZ_GUI_display';
 (_display displayCtrl 1301) ctrlShow true;
 
 if (r_player_blood / r_player_bloodTotal >= 0.2) then {

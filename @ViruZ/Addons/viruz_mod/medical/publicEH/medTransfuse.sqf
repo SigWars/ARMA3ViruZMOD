@@ -21,7 +21,7 @@ if (_unit == player) then {
 	};
 	
 	//Ensure Control is visible
-	_display = uiNamespace getVariable 'VIRUZ_INV_display';
+	_display = uiNamespace getVariable 'VIRUZ_GUI_display';
 	_control = 	_display displayCtrl 1300;
 	_control ctrlShow true;
 	

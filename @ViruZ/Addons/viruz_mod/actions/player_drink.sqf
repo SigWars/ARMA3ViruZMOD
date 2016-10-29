@@ -77,7 +77,7 @@ viruz_thirst = viruz_thirst - _drinkValue;
 if (viruz_thirst < 0) then { viruz_thirst = 0; }; 
 
 //Ensure Control is visible
-_display = uiNamespace getVariable 'VIRUZ_INV_display';
+_display = uiNamespace getVariable 'VIRUZ_GUI_display';
 (_display displayCtrl 1302) ctrlShow true;
 
 cutText [format[(localize  "str_player_consumed"),_text], "PLAIN DOWN"];
