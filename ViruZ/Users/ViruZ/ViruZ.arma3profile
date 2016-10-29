@@ -12,7 +12,8 @@ class DifficultyPresets
 			enemyTags=0;
 			detectedMines=0;
 			commands=0;
-			waypoints=1;
+			waypoints=2;
+			squadRadar=1;
 			weaponInfo=1;
 			stanceIndicator=1;
 			reducedDamage=0;
@@ -23,7 +24,7 @@ class DifficultyPresets
 			cameraShake=0;
 			scoreTable=0;
 			deathMessages=0;
-			vonID=1;
+			vonID=0;
 			mapContent=0;
 			autoReport=0;
 			multipleSaves=0;
