@@ -60,3 +60,5 @@ BEServer.dll
 /config
 /steamapps
 /TADST
+*.log
+/BEC/Log/Config/Error/*.log
