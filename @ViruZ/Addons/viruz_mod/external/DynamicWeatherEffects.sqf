@@ -25,55 +25,80 @@ if (count _this > 4) then { _debug = _this select 4; } else { _debug = false; };
 
 // Minimum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to 1 and less than or equal to 
 // _maxWeatherChangeTimeMin. When weather changes, it is fog OR overcast that changes, not both at the same time. (Suggested value: 10).
-_minWeatherChangeTimeMin = 10;
-
+_minWeatherChangeTimeMin = (missionConfigFile >> "cfgClima" >> "minWeatherChangeTimeMin") call BIS_fnc_getCfgData;
+	if (isNil "minWeatherChangeTimeMin") then {10} else {_minWeatherChangeTimeMin}
+};	
 // Maximum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to _minWeatherChangeTimeMin.
 // (Suggested value: 20).
-_maxWeatherChangeTimeMin = 20;
+_maxWeatherChangeTimeMin = (missionConfigFile >> "cfgClima" >> "maxWeatherChangeTimeMin") call BIS_fnc_getCfgData;
+	if (isNil "maxWeatherChangeTimeMin") then {20} else {_maxWeatherChangeTimeMin}
+};
 
 // Minimum time in minutes that weather (fog and overcast) stays constant between weather changes. Must be less than or equal to 0 and 
 // greater than or equal to _minWeatherChangeTimeMin. (Suggested value: 5).
-_minTimeBetweenWeatherChangesMin = 5;
+_minTimeBetweenWeatherChangesMin = (missionConfigFile >> "cfgClima" >> "minTimeBetweenWeatherChangesMin") call BIS_fnc_getCfgData;
+	if (isNil "minTimeBetweenWeatherChangesMin") then {5} else {_minTimeBetweenWeatherChangesMin}
+};
 
 // Maximum time in minutes that weather (fog and overcast) stays unchanged between weather changes. Must be greater than or equal to 
 // _minWeatherChangeTimeMin. (Suggested value: 10).
-_maxTimeBetweenWeatherChangesMin = 10;
+_maxTimeBetweenWeatherChangesMin = (missionConfigFile >> "cfgClima" >> "maxTimeBetweenWeatherChangesMin") call BIS_fnc_getCfgData;
+	if (isNil "maxTimeBetweenWeatherChangesMin") then {10} else {_maxTimeBetweenWeatherChangesMin}
+};
 
 // Fog intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumFog
 // (0 = no fog, 1 = pea soup). (Suggested value: 0).
-_minimumFog = 0;
+_minimumFog = (missionConfigFile >> "cfgClima" >> "minimumFog") call BIS_fnc_getCfgData;
+	if (isNil "minimumFog") then {0} else {_minimumFog}
+};
 
 // Fog intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumFog
 // (0 = no fog, 1 = pea soup). (Suggested value: 0.8).
-_maximumFog = 0.6;
+_maximumFog = (missionConfigFile >> "cfgClima" >> "maximumFog") call BIS_fnc_getCfgData;
+	if (isNil "maximumFog") then {0.4} else {_maximumFog}
+};
 
 // Overcast intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumOvercast
 // (0 = no overcast, 1 = maximum overcast). (Suggested value: 0).
-_minimumOvercast = 0;
+_minimumOvercast = (missionConfigFile >> "cfgClima" >> "minimumOvercast") call BIS_fnc_getCfgData;
+	if (isNil "minimumOvercast") then {0} else {_minimumOvercast}
+};
 
 // Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
 // (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
-_maximumOvercast = 1;
+_maximumOvercast = (missionConfigFile >> "cfgClima" >> "maximumOvercast") call BIS_fnc_getCfgData;
+	if (isNil "maximumOvercast") then {0.5} else {_maximumOvercast}
+};
 
 // When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
 // (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);
-_minimumRain = 0;
+_minimumRain = (missionConfigFile >> "cfgClima" >> "minimumRain") call BIS_fnc_getCfgData;
+	if (isNil "minimumRain") then {0} else {_minimumRain}
+};
 
 // When raining, rain intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumRain
 // (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0.8);
-_maximumRain = 0.8;
+_maximumRain = (missionConfigFile >> "cfgClima" >> "maximumRain") call BIS_fnc_getCfgData;
+	if (isNil "maximumRain") then {0.8} else {_maximumRain}
+};
 
 // Wind vector strength never falls below this value. Must be greater or equal to 0 and less than or equal to _maximumWind.
 // (Suggested value: 0);
-_minimumWind = 0;
+_minimumWind = (missionConfigFile >> "cfgClima" >> "minimumWind") call BIS_fnc_getCfgData;
+	if (isNil "minimumWind") then {0.8} else {_minimumWind}
+};
 
 // Wind vector strength never exceeds this value. Must be greater or equal to 0 and greater than or equal to _minimumWind.
 // (Suggested value: 8).
-_maximumWind = 8;
+_maximumWind = (missionConfigFile >> "cfgClima" >> "maximumWind") call BIS_fnc_getCfgData;
+	if (isNil "maximumWind") then {8} else {_maximumWind}
+};
 
 // Probability in percent for wind to change when weather changes. If set to 0 then wind will never change. If set to 100 then rain will 
 // change every time the weather (fog or overcast) start to change. (Suggested value: 25);
-_windChangeProbability = 25;
+_windChangeProbability = (missionConfigFile >> "cfgClima" >> "windChangeProbability") call BIS_fnc_getCfgData;
+	if (isNil "windChangeProbability") then {25} else {_windChangeProbability}
+};
 
 // A "rain interval" is defined as "a time interval during which it may rain in any intensity (or it may not rain at all)". When overcast 
 // goes above 0.75, a chain of rain intervals (defined below) is started. It cycles on until overcast falls below 0.75. At overcast 
@@ -82,11 +107,15 @@ _windChangeProbability = 25;
 // Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100 
 // if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then 
 // lower this value and vice versa. (Suggested value: 50).
-_rainIntervalRainProbability = 30;
+_rainIntervalRainProbability = (missionConfigFile >> "cfgClima" >> "rainIntervalRainProbability") call BIS_fnc_getCfgData;
+	if (isNil "rainIntervalRainProbability") then {30} else {_rainIntervalRainProbability}
+};
 
 // Minimum time in minutes for rain intervals. Must be greater or equal to 0 and less than or equal to _maxRainIntervalTimeMin.
 // (Suggested value: 0).
-_minRainIntervalTimeMin = 0;
+_minRainIntervalTimeMin = (missionConfigFile >> "cfgClima" >> "minRainIntervalTimeMin") call BIS_fnc_getCfgData;
+	if (isNil "minRainIntervalTimeMin") then {0} else {_minRainIntervalTimeMin}
+};
 
 // Maximum time in minutes for rain intervals. Must be greater than or equal to _minRainIntervalTimeMin. (Suggested value:
 // (_maxWeatherChangeTimeMin + _maxTimeBetweenWeatherChangesMin) / 2).
@@ -95,7 +124,9 @@ _maxRainIntervalTimeMin = (_maxWeatherChangeTimeMin + _maxTimeBetweenWeatherChan
 // If set to true, then the rain is forced to stop after one rain interval during which it has rained (use this for example if you only want 
 // small occational cloudbursts ). If set to false, then the rain may stop, but it may also just change intensity for an 
 // immedeate new rain interval. (Suggested value: false).
-_forceRainToStopAfterOneRainInterval = false;
+_forceRainToStopAfterOneRainInterval = (missionConfigFile >> "cfgClima" >> "forceRainToStopAfterOneRainInterval") call BIS_fnc_getCfgData;
+	if (isNil "forceRainToStopAfterOneRainInterval") then {false} else {_forceRainToStopAfterOneRainInterval}
+};
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////

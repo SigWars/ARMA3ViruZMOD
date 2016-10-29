@@ -8,9 +8,8 @@ onLoadName = "VIRUZ MOD";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
-//                    GLOBAL        SIDE LADO     COMANDO         GRUPO        VEHICLE         DIRECT          SYSTEM          SIDE
-disableChannels[]={{0,true,true},{1,true,true},{2,true,true},{3,false,false},{4,false,false},{5,false,false},{6,true,false},{7,false,true}};
-skipLobby = 1;
+//                    GLOBAL        SIDE LADO     COMANDO         GRUPO        VEHICLE         DIRECT          SYSTEM      
+disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{3,false,false},{4,false,false},{5,false,false},{6,false,true}};
 enableItemsDropping = 0;
 briefing = 0;
 debriefing= 0;
@@ -90,17 +89,77 @@ class cfgGame {
 		{"ItemMap"}
 	};
 	
+};
+
+class cfgClima {
+	// Minimum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to 1 and less than or equal to 
+	// _maxWeatherChangeTimeMin. When weather changes, it is fog OR overcast that changes, not both at the same time. (Suggested value: 10).
+	minWeatherChangeTimeMin = 10;
 	
-	/*PlayerStartKit[] = {
-		{{"U_C_Citizen_clothes1","U_C_Citizen_clothes2","U_C_Citizen_clothes3","U_B_Guerilla2_2_srv","U_B_Guerilla2_3_srv"}, {"ItemBandage"}},
-		{"V_Rangemaster_belt", {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","ItemMap","ItemBandage","ItemPainkiller","HandFlashlight","acc_lampflashlight","Battery_mag"}},
-		{{"B_FieldPack_khk"}, {"itemCanOpener","MeleeHatchet","Hatchet_Swing"}},
-		"",
-		{"G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red"},
-		"Binocular",
-		{{"hgun_P07_F", "hgun_Rook40_F"}, {}, "16Rnd_9x21_Mag"},
-		{{"", "", "hgun_PDW2000_F"}, {}, ""},
-		{"", {}, ""},
-		{}
-	};*/
+	// Maximum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to _minWeatherChangeTimeMin.
+	// (Suggested value: 20).
+	maxWeatherChangeTimeMin = 20;
+	
+	// Minimum time in minutes that weather (fog and overcast) stays constant between weather changes. Must be less than or equal to 0 and 
+	// greater than or equal to _minWeatherChangeTimeMin. (Suggested value: 5).
+	minTimeBetweenWeatherChangesMin = 5;
+	
+	// Maximum time in minutes that weather (fog and overcast) stays unchanged between weather changes. Must be greater than or equal to 
+	// _minWeatherChangeTimeMin. (Suggested value: 10).
+	maxTimeBetweenWeatherChangesMin = 10;
+	
+	// Fog intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumFog
+	// (0 = no fog, 1 = pea soup). (Suggested value: 0).
+	minimumFog = 0;
+	
+	// Fog intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumFog
+	// (0 = no fog, 1 = pea soup). (Suggested value: 0.8).
+	maximumFog = 0.4;
+	
+	// Overcast intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumOvercast
+	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 0).
+	minimumOvercast = 0;
+	
+	// Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
+	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
+	maximumOvercast = 0.3;
+
+	// When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
+	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);
+	minimumRain = 0;
+	
+	// When raining, rain intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumRain
+	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0.8);
+	maximumRain = 0.8;
+	
+	// Wind vector strength never falls below this value. Must be greater or equal to 0 and less than or equal to _maximumWind.
+	// (Suggested value: 0);
+	minimumWind = 0;
+	
+	// Wind vector strength never exceeds this value. Must be greater or equal to 0 and greater than or equal to _minimumWind.
+	// (Suggested value: 8).
+	maximumWind = 8;
+
+	// Probability in percent for wind to change when weather changes. If set to 0 then wind will never change. If set to 100 then rain will 
+	// change every time the weather (fog or overcast) start to change. (Suggested value: 25);
+	windChangeProbability = 25;
+
+	// A "rain interval" is defined as "a time interval during which it may rain in any intensity (or it may not rain at all)". When overcast 
+	// goes above 0.75, a chain of rain intervals (defined below) is started. It cycles on until overcast falls below 0.75. At overcast 
+	// below 0.75 rain intervals never execute (thus it cannot rain).
+
+	// Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100 
+	// if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then 
+	// lower this value and vice versa. (Suggested value: 50).
+	rainIntervalRainProbability = 30;
+
+	// Minimum time in minutes for rain intervals. Must be greater or equal to 0 and less than or equal to _maxRainIntervalTimeMin.
+	// (Suggested value: 0).
+	minRainIntervalTimeMin = 0;
+
+	// If set to true, then the rain is forced to stop after one rain interval during which it has rained (use this for example if you only want 
+	// small occational cloudbursts ). If set to false, then the rain may stop, but it may also just change intensity for an 
+	// immedeate new rain interval. (Suggested value: false).
+	forceRainToStopAfterOneRainInterval = false;
+
 };
