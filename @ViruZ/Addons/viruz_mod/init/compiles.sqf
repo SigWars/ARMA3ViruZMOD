@@ -117,6 +117,20 @@ if (!isDedicated) then {
 //	onPreloadStarted 			"viruz_preloadFinished = false;";
 //	onPreloadFinished 			"viruz_preloadFinished = true;";
 	
+	//Test
+	SelectedInventoryItem = nil;
+	VZClient_object_item_craft = 								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_object_item_craft.sqf";
+	VZClient_item_getCrafting = 								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_item_getCrafting.sqf";
+	VZClient_item_getCrafting =									compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_item_getCrafting.sqf";
+	VZClient_gui_itemDescription_event_onTabelaButton = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_gui_itemDescription_event_onTabelaButton.sqf";
+	VZClient_gui_itemDescription_event_onCraftingDoubleClick =  compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_gui_itemDescription_event_onCraftingDoubleClick.sqf";
+	VZClient_gui_crafting_show = 								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_gui_crafting_show.sqf";
+	ViruZClient_gui_itemDescription_show =						compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZClient_gui_itemDescription_show.sqf";
+	ViruZClient_gui_inventory_event_onItemDoubleClick =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZClient_gui_inventory_event_onItemDoubleClick.sqf";
+	ViruZClient_gear_getConfigNameByClassName =					compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZClient_gear_getConfigNameByClassName.sqf";
+	ViruZClient_gear_getConfigEntryByDisplayName =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZClient_gear_getConfigEntryByDisplayName.sqf";
+	
+	
 	//Crafting
 	fn_updateCraftUI = compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_updateCraftUI.sqf";
 	player_craftItem = compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_craftItem.sqf";
