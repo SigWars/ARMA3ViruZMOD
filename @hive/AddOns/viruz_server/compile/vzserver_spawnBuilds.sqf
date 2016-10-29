@@ -83,6 +83,7 @@ _Structures = [];
 					case "Bornholm": { _centerMap = getMarkerPos "center"; _nearestRadius = 10000; };
 					case "Esseker": { _centerMap = getMarkerPos "center";  _nearestRadius = 6000; };
 					case "Altis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+					case "Chernarus": { _centerMap = getMarkerPos "center";  _nearestRadius = 7000; };
 				};	
 				
 				_pos = [_centerMap,0,4000,10,0,2000,0] call BIS_fnc_findSafePos;

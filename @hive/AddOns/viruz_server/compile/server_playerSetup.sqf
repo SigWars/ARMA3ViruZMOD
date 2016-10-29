@@ -193,8 +193,8 @@ if (_randomSpot) then {
 				_mkr = [getMarkerPos "spawn1",getMarkerPos "spawn2",getMarkerPos "spawn3",getMarkerPos "spawn4",getMarkerPos "spawn5"] call BIS_fnc_selectRandom;
 			} else {
 				// spawn is not random, lets spawn in our location that was selected
-				_mkrStatic = "spawn" + str(_spawnSelection);
-				_mkr = getMarkerPos _mkrStatic;
+				_mkr = "spawn" + str(_spawnSelection);
+				_mkr = getMarkerPos _mkr;
 			};
 			_position = ([_mkr,0,600,10,0,5000,0] call BIS_fnc_findSafePos);
 			_isNear = count (_position nearEntities ["Man",100]) == 0;
