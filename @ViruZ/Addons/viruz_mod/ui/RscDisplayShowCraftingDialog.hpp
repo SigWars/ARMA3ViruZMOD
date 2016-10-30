@@ -1,4 +1,3 @@
-class RscButtonMenuCancel;
 class RscDisplayShowCraftingDialog
 {
 	idd = 200000;
@@ -54,10 +53,10 @@ class RscDisplayShowCraftingDialog
 			color[] = {1,1,1,0.7};
 			action = "closeDialog 0;";
 			text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArcadeMap\icon_exit_cross_ca.paa"; //--- ToDo: Localize;
-			x = 51.2 * GUI_GRID_W + GUI_GRID_X;
-			y = 0.2 * GUI_GRID_H + GUI_GRID_Y;
-			w = 1 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			x = 0.820719 * safezoneW + safezoneX;
+			y = 0.2338 * safezoneH + safezoneY;
+			w = 0.0103125 * safezoneW;
+			h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,0.7};
 			colorActive[] = {1,1,1,1};
 			tooltip = "Close"; //--- ToDo: Localize;
@@ -87,11 +86,12 @@ class RscDisplayShowCraftingDialog
 		class DropdownQuantity: RscCombo
 		{
 			idc = 200008;
-			x = 40.9 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 5.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			x = 0.715531 * safezoneW + safezoneX;
+			y = 0.346 * safezoneH + safezoneY;
+			w = 0.0567187 * safezoneW;
+			h = 0.022 * safezoneH;
 		};
+		
 		class ButtonCancel: RscButtonMenuCancel
 		{
 			x = 0.775343 * safezoneW + safezoneX;

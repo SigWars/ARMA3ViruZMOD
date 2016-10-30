@@ -1,4 +1,3 @@
-class RscButtonMenuCancel2;
 class RscDisplayShowItemDialog
 {
 	idd = 100000;
@@ -30,10 +29,10 @@ class RscDisplayShowItemDialog
 		class BackgroundMenu: RscText
 		{
 			idc = 100003;
-			x = 40.1 * GUI_GRID_W + GUI_GRID_X;
-			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 12 * GUI_GRID_W;
-			h = 21 * GUI_GRID_H;
+			x = 0.707281 * safezoneW + safezoneX;
+			y = 0.258 * safezoneH + safezoneY;
+			w = 0.12375 * safezoneW;
+			h = 0.462 * safezoneH;
 			colorBackground[] = {0.05,0.05,0.05,0.7};
 		};
 		class BackgroundTop: RscText
@@ -154,7 +153,7 @@ class RscDisplayShowItemDialog
 		class ButtonConsume: RscButton
 		{
 			idc = 100014;
-			action = "closeDialog 0; [SelectedInventoryItem select 0] call ExileClient_object_item_consume;";
+			action = "closeDialog 0; [SelectedInventoryItem select 0] call object_item_consume;";
 			text = "CONSUME"; //--- ToDo: Localize;
 			x = 0.737188 * safezoneW + safezoneX;
 			y = 0.4252 * safezoneH + safezoneY;
@@ -164,7 +163,7 @@ class RscDisplayShowItemDialog
 		class ButtonUse: RscButton
 		{
 			idc = 100015;
-			action = "closeDialog 0; [SelectedInventoryItem select 0] call ExileClient_object_item_use;";
+			action = "closeDialog 0; [SelectedInventoryItem select 0] call object_item_use;";
 			text = "USE"; //--- ToDo: Localize;
 			x = 0.737188 * safezoneW + safezoneX;
 			y = 0.4626 * safezoneH + safezoneY;
@@ -174,14 +173,14 @@ class RscDisplayShowItemDialog
 		class ButtonConstruct: RscButton
 		{
 			idc = 100016;
-			action = "closeDialog 0; [SelectedInventoryItem select 0] call ExileClient_object_item_construct;";
+			action = "closeDialog 0; [SelectedInventoryItem select 0] call object_item_construct;";
 			text = "CONSTRUCT"; //--- ToDo: Localize;
 			x = 0.737188 * safezoneW + safezoneX;
 			y = 0.5044 * safezoneH + safezoneY;
 			w = 0.0567187 * safezoneW;
 			h = 0.022 * safezoneH;
 		};
-		class ButtonCancel: RscButtonMenuCancel2
+		class ButtonCancel: RscButtonMenuCancel
 		{
 			x = 0.737188 * safezoneW + safezoneX;
 			y = 0.6892 * safezoneH + safezoneY;

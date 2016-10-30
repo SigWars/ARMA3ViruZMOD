@@ -43,6 +43,7 @@ class RscCombo;
 class RscButtonMenuOK;
 class HScrollbar; //ui
 class BackgroundSlotPrimary;
+class RscButtonMenuCancel;
 
 
 

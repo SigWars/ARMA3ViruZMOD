@@ -1,15 +1,4 @@
-/**
- * ExileClient_object_item_craft
- *
- * Exile Mod
- * www.exilemod.com
- * © 2015 Exile Mod Team
- *
- * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
- * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
- */
- 
-private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName"];
+private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut"];
 _getcraftingClassName = _this select 0;
 _quantityToCraft = _this select 1;
 _quantityCrafted = 0;
@@ -40,14 +29,14 @@ if ( getNumber(_recipeConfig >> "requiresOcean") == 1 ) then
 		_metSideConditions = false;
 	};
 };
-if ( getNumber(_recipeConfig >> "requiresFire") == 1 ) then
+if ( getNumber(_recipeConfig >> "requiresFire") == 1 ) then //VOU ATIVAR ???
 {
 	if !([player, 4] call ExileClient_util_world_isFireInRange) then 
 	{
 		_metSideConditions = false;
 	};
 };
-if ( getNumber(_recipeConfig >> "requiresConcreteMixer") == 1 ) then
+if ( getNumber(_recipeConfig >> "requiresConcreteMixer") == 1 ) then //FUTUROOOOOOOOOOOOOOOOOOO
 {
 	_concreteMixer = (ASLtoAGL (getPosASL player)) call ExileClient_util_world_getNearestConcreteMixer;
 	if (isNull _concreteMixer) then 
@@ -62,13 +51,13 @@ if( _interactionModelGroupClassName != "" ) then
 {
 	_interactionModelGroupModels = getArray(missionConfigFile >> "CfgInteractionModels" >> _interactionModelGroupClassName >> "models");
 	_foundObject = false;
-	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call ExileClient_util_model_isNearby) then
+	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call VZClient_util_model_isNearby) then //Ainda tem que fazer
 	{
 		_foundObject = true;	
 	}
 	else 
 	{
-		if ( _interactionModelGroupModels call ExileClient_util_model_isLookingAt ) then
+		if ( _interactionModelGroupModels call VZClientClient_util_model_isLookingAt ) then//Ainda tem que fazer
 		{
 			_foundObject = true;
 		};
@@ -120,10 +109,31 @@ if (_metSideConditions) then
 						_returnedItemQuantity = _x select 0;
 						_returnedItemClassName = _x select 1;
 						_addedItems = [_addedItems, _returnedItemClassName, _returnedItemQuantity] call BIS_fnc_addToPairs;
-						for "_i" from 1 to _returnedItemQuantity do 
-						{
-							player addItem _returnedItemClassName;
+						
+						
+						_nearByPile= nearestObjects [getPosATL player, ["GroundWeaponHolder"],2];
+						if (count _nearByPile == 0) then { 
+							_itemOut = createVehicle ["GroundWeaponHolder", getPosATL player, [], 1, "CAN_COLLIDE"];
+						if ( isClass (configFile >> "CfgWeapons" >> _returnedItemClassName)) then {
+								_itemOut addWeaponCargoGlobal [_returnedItemClassName,_returnedItemQuantity];
 						};
+						if ( isClass (configFile >> "CfgMagazines" >> _returnedItemClassName)) then {
+								_itemOut addMagazineCargoGlobal [_returnedItemClassName,_returnedItemQuantity];
+						};
+							player reveal _itemOut;
+							
+						}else{
+						
+						_itemOut = _nearByPile select 0;
+						if ( isClass (configFile >> "CfgWeapons" >> _returnedItemClassName)) then {
+								_itemOut addWeaponCargoGlobal [_returnedItemClassName,_returnedItemQuantity];
+						};
+						if ( isClass (configFile >> "CfgMagazines" >> _returnedItemClassName)) then {
+								_itemOut addMagazineCargoGlobal [_returnedItemClassName,_returnedItemQuantity];
+						};
+							player reveal _itemOut;	
+						};
+							//player addItem _returnedItemClassName;
 					} 
 					forEach _returnedItems;
 					_quantityCrafted = _quantityCrafted + 1;
@@ -136,23 +146,25 @@ if (_quantityCrafted > -1) then
 {
 	if (_quantityCrafted > 0) then
 	{	
-		_feedbackMessage = "";
+		//_feedbackMessage = "";
 		{
 			_returnedItemClassName = _x select 0;
 			_returnedItemQuantity = _x select 1;
 			_returnedItemName = getText(configFile >> "CfgMagazines" >> _returnedItemClassName >> "displayName");
+			
+			/*
 			if (_feedbackMessage != "") then 
 			{
 				_feedbackMessage = _feedbackMessage + "<br/>";
 			};
-			_feedbackMessage = _feedbackMessage + format ["+%1x %2", _returnedItemQuantity, _returnedItemName];
+			_feedbackMessage = _feedbackMessage + format ["+%1x %2", _returnedItemQuantity, _returnedItemName];*/
 		}
 		forEach _addedItems;
-	//	["SuccessTitleAndText", ["Crafting completed!", _feedbackMessage]] call ExileClient_gui_toaster_addTemplateToast;
+		cutText [format["Crafting completed! %1 %2 Crafted",_returnedItemQuantity,_returnedItemName], "PLAIN DOWN"];
 	}
 	else 
 	{
-		//["ErrorTitleAndText", ["Failed to craft!", "You do not have enough inventory space left!"]] call ExileClient_gui_toaster_addTemplateToast;
+		cutText [format["Failed to craft!"], "PLAIN DOWN"];
 	};
 };
 true

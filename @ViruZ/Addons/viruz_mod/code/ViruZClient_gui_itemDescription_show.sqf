@@ -25,6 +25,7 @@ createDialog "RscDisplayShowItemDialog";
 waitUntil { !isNull findDisplay 100000 };
 _dialog = uiNameSpace getVariable ["RscDisplayShowItemDialog", displayNull];
 
+
 //Buttons
 (_dialog displayCtrl 100014) ctrlEnable false; //Consumir
 (_dialog displayCtrl 100015) ctrlEnable false; //Usar
@@ -51,7 +52,7 @@ if( isClass(_SelectItemConfig >> "Event" >> "Consumivel") )  then
 };
 
 //Verificar se o item é usavel?  se sim ativar o botão
-if( isClass(_SelectItemConfig >> "Event" >> "Usavel") )  then
+if( isClass(_SelectItemConfig >> "ItemActions" >> "Use") )  then
 {
 	(_dialog displayCtrl 100015) ctrlEnable true;
 };
