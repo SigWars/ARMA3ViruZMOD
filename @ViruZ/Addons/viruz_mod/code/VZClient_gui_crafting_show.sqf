@@ -19,7 +19,7 @@ waitUntil { !isNull findDisplay 200000 };
 uiNameSpace setVariable ["RscCraftingClassName", _getcraftingClassName];
 _dialog = uiNameSpace getVariable ["RscDisplayShowCraftingDialog", displayNull];
 
-(_dialog displayCtrl 100004) ctrlSetText _craftname; //Mostrar Nome do Item
+
 
 _description = format["<t size='1.5'  align='left'>%1</t><br/><br/>", _craftname];
 {
@@ -131,6 +131,7 @@ else
 };
 (_dialog displayCtrl 200006) ctrlSetText _craftingImagem;
 (_dialog displayCtrl 200009) ctrlSetStructuredText parseText _description;
+(_dialog displayCtrl 200004) ctrlSetText _craftname; //Mostrar Nome do Item
 true
 
 
