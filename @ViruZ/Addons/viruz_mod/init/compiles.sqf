@@ -306,6 +306,16 @@ if (!isDedicated) then {
 			_nill = execvm "\z\addons\viruz_mod\actions\playerstats.sqf";
 		};*/
 		
+		//Open Craft Menu "0"
+		if (_dikCode == 0x0B) then {
+			if (craftOpen == 1) then {
+				craftOpen = 0;
+				closeDialog 0;
+			} else {
+				createDialog "RscDisplayCraftingMenu";
+			};
+		};
+		
 		//Home help Menu
 		if (_dikCode == 0xC7) then {
 			if (helpMenu == 1 ) then {

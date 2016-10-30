@@ -706,6 +706,8 @@ if(!isDedicated) then {
 	viruzDebug = false;
 	viruzState = -1;
 	helpMenu = 0;
+	craftOpen = 0;
+	
 	zombie_hitchance = call {
 		_zombie_hitchance = (missionConfigFile >> "cfgGame" >> "zombie_hitchance") call BIS_fnc_getCfgData;
 		if (isNil "_zombie_hitchance") then {8} else {_zombie_hitchance}
