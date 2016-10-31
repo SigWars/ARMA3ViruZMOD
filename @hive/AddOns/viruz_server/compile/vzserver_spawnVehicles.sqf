@@ -96,7 +96,9 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				//Create it
 				_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
 				if (count _Worldprecision >= 2) then {
-					_object setVectorDirAndUp (call compile _Worldprecision);
+					if (count (_worldspace select 1) == 3) then {
+						_object setVectorDirAndUp (call compile _Worldprecision);
+					};
 				};
 				_object setposATL _pos;
 				_allVehicles pushBack _object;
