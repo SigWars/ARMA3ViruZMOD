@@ -95,7 +95,9 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				
 				//Create it
 				_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
-				_object setVectorDirAndUp (call compile _Worldprecision);
+				if (count _Worldprecision >= 2) then {
+					_object setVectorDirAndUp (call compile _Worldprecision);
+				};
 				_object setposATL _pos;
 				_allVehicles pushBack _object;
 				_object setDamage _damage;
@@ -104,6 +106,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				_object setVariable ["lastUpdate",time];
 				_object setVariable ["ObjectID", _idKey, true];
 				_object setVariable ["CharacterID", _ownerID, true];
+				_object setVariable["ViruZMod",1];
 				
 				if (_object isKindOf "AllVehicles") then {
 					{

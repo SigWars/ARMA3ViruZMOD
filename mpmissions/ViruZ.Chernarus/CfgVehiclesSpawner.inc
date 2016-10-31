@@ -2,56 +2,39 @@
 class cfgVehiclesSpawner {
 	
 	frequency = (10* 60);		// Especifica o tempo em segundos. neste caso, (50 min) para gerar outro exemplo da tecnologia, o valor deste parametro nao e alterado na forma funcional
-	variance = (5 * 60);		// Tambem na segunda. neste caso, (15 min), a configuracao e adotada para o calculo do tempo de aleatoriedade e adicionado ao valor do parametro acima
+	variance = (10* 60);		// Tambem na segunda. neste caso, (15 min), a configuracao e adotada para o calculo do tempo de aleatoriedade e adicionado ao valor do parametro acima
 	spawnChance = 1;			// Possibilidade gerar outro exemplo de tecnologia, escala de 0 a 1
 
 	Civilian[] = {
-	//{"RDS_Ikarus_Civ_01",1},
-    //{"RDS_Ikarus_Civ_02",1},
-    //{"RDS_Lada_Civ_01",1},
-    //{"RDS_Lada_Civ_02",1},
-    //{"RDS_Lada_Civ_03",1},
-    //{"RDS_Lada_Civ_04",1},
-    //{"RDS_Lada_Civ_05",1},
-    {"RDS_S1203_Civ_01",1},
-    {"RDS_S1203_Civ_02",1},	
-	{"RDS_S1203_Civ_03",1},
-    //{"RDS_Gaz24_Civ_01",1},
-    //{"RDS_Gaz24_Civ_02",1},
-    //{"RDS_Gaz24_Civ_03",1},
-    //{"RDS_Golf4_Civ_01",1},
-    //{"RDS_Octavia_Civ_01",3},
-    {"RDS_Hatchback_01_F",3},
-	//{"RDS_Van_01_transport_F",5},
-	//{"RDS_Van_01_fuel_F",5},
-    //{"RDS_Van_01_box_F",5},
-	//{"SUV_01_Bardo_SRV",1},
-	//{"SUV_01_Black_SRV",1},
-	//{"SUV_01_Gray_SRV",1},
-	//{"SUV_01_Orange_SRV",1},
-	{"Civilian_Offroad_01_white",1},
-	{"LandRover_TK_CIV_EP1",1}, 	//landhover do mod
-	{"BAF_Offroad_D", 1},
+	{"I_C_Van_01_transport_brown_F",2},		//van aberta
+	{"C_Van_01_box_red_F",2},				//van fechada
+	{"C_Van_01_transport_F",2},				//van aberta
+    {"RDS_tt650_Civ_01",5},					//yamaha tt 650
+	{"RDS_JAWA353_Civ_01",4},				//moto titan
+	{"I_Heli_light_03_unarmed_F",3},		//Hellcat desarmado
+	{"O_T_LSV_02_unarmed_viper_F",3},
+	{"C_Offroad_02_unarmed_black_F",2},
+	{"Civilian_Offroad_01_white",5},
+	{"LandRover_TK_CIV_EP1",3}, 	//landhover do mod
+	{"BAF_Offroad_D", 5},
 	{"BAF_Offroad_W", 1},
 	{"LandRover_CZ_EP1", 1},
 	{"LandRover_ACR", 1},
 	{"ACR_LandRover_AMB", 1},
-	{"B_Heli_Light_01_F",1}, 				//Helis
-	{"C_Heli_light_01_ion_F",1},
-	{"C_Heli_light_01_wasp_F",1},
-	{"C_Heli_light_01_sheriff_F",1},
-	{"C_Heli_light_01_speedy_F",1},
-	{"dbo_CIV_ol_bike",3}, //BIKES
-	{"dbo_CIV_new_bike",3}
+	{"B_Heli_Light_01_F",5}, 				//Humminbird com prancha lateral pilotagem civil
+	{"B_Heli_Light_01_stripped_F",5},
+	{"O_Heli_Light_02_unarmed_F",3},
+	{"I_Heli_Transport_02_F",5},
+	{"C_Heli_light_01_speedy_F",1}
 	};
 	Military[] = {
-	{"B_Heli_Light_01_F", 1}, //Helis
-	{"I_Heli_light_03_unarmed_F", 1},
-	{"O_Heli_Transport_04_F", 1}
+	{"B_Heli_Light_01_F", 2}, //Helis
+	{"I_Heli_light_03_unarmed_F", 2},
+	{"O_Heli_Transport_04_F", 2}
 	};
 	Ships[] = {
-	{"C_Boat_Civil_01_F", 3},
-	{"C_Boat_Civil_01_police_F", 3},
-	{"C_Boat_Civil_01_rescue_F", 3}
+	{"C_Boat_Civil_01_F", 1},
+	{"C_Boat_Civil_01_police_F", 1},
+	{"C_Boat_Civil_01_rescue_F", 1}
 	};
 };
