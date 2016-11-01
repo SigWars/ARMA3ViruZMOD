@@ -5,7 +5,7 @@
 	Load database entryes and trow vehicles in world.
 	http://www.viruzmod.com
 */
-private ["_myArray","_allVehicles","_debugLoadInventory","_Civilian","_Military","_Ships","_VZvehicles","_countr","_idKey","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_objectID","_OwnerUID","_Locked","_LastFix","_Worldprecision","_deletado","_deletado","_dir","_pos","_centerMap","_wsDone","_mapaatual","_object","_objWpnTypes","_objWpnQty","_isOK","_block","_classMag","_ammoCount","_selection","_dam"];
+private ["_myArray","_allVehicles","_debugLoadInventory","_Civilian","_Military","_Ships","_VZvehicles","_countr","_idKey","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_objectID","_OwnerUID","_Locked","_LastFix","_Worldprecision","_deletado","_deletado","_dir","_pos","_centerMap","_wsDone","_mapaatual","_object","_precise","_objWpnTypes","_objWpnQty","_isOK","_block","_classMag","_ammoCount","_selection","_dam"];
 
 sleep 30;
 
@@ -95,9 +95,10 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				
 				//Create it
 				_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
-				if (count _Worldprecision >= 2) then {
-					if (count (_worldspace select 1) == 3) then {
-						_object setVectorDirAndUp (call compile _Worldprecision);
+				_precise = call compile _Worldprecision;
+				if (count _precise >= 2) then {
+					if (count (_precise select 1) == 3) then {
+						_object setVectorDirAndUp _precise;
 					};
 				};
 				_object setposATL _pos;

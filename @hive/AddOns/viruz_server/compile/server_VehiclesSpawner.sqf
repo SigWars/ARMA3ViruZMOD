@@ -99,7 +99,7 @@ while {true} do {
 			_array = [];
 			{
 				_selection = getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _x >> "name");
-				_Hit = [0, 0.2, 0.4, 0.6, 0.8, 1] call BIS_fnc_selectRandom;
+				_Hit = [0, 0.2, 0.4] call BIS_fnc_selectRandom;
 				if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 				if (_selection != "" and local _vehicle) then {
 					_strH = "hit_" + (_selection);
@@ -112,7 +112,7 @@ while {true} do {
 				};
 			} forEach _HitPoints;
 			
-			_Fuel = random 1;
+			_Fuel = [0.4, 0.6, 0.8] call BIS_fnc_selectRandom;
 			_vehicle setFuel _Fuel;
 
 			//Send request
@@ -121,7 +121,6 @@ while {true} do {
 			_key call server_hiveWrite;
 			
 			_vehicle setVariable ["lastUpdate",time];
-			[_vehicle,"all"] call server_updateObject;
 			viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_vehicle];
 			_vehicle call fnc_vehicleEventHandler;
 		};
