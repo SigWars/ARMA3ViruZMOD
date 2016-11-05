@@ -12,7 +12,7 @@ cd /d %becpath%
 :arma3server
 start "BattleEye Extended Control" "BEC Control.bat"
 echo (%time%) arma3server started.
-start /wait "viruz" /min /high "C:\Arma3Server\arma3server.exe" -port=2302 -lock "-config=C:\Arma3Server\ViruZ\serverchernarus.cfg" "-cfg=C:\Arma3Server\ViruZ\basic.cfg" "-profiles=ViruZ" -name=ViruZ -filePatching "-mod=@CBA_A3;@ViruZ;@CUP_Terrains_Core-1.2.0;@CUP_Terrains_Maps-1.2.0;@CUP_Weapons;" "-Servermod=@hive;@CBA_A3;@infiSTAR_A3;@ViruZ;@CUP_Terrains_Core-1.2.0;@CUP_Terrains_Maps-1.2.0;@CUP_Weapons;" -cpuCount=8 -autoinit -loadmissiontomemory
+start /wait "viruz" /min /high "C:\Arma3Server\arma3server.exe" -port=2302 "-config=C:\Arma3Server\ViruZ\serverchernarus.cfg" "-cfg=C:\Arma3Server\ViruZ\basic.cfg" "-profiles=ViruZ" -name=ViruZ "-mod=@CBA_A3;@ViruZ;@CUP_Terrains_Core-1.2.0;@CUP_Terrains_Maps-1.2.0;@CUP_Weapons;" "-Servermod=@hive;@CBA_A3;@infiSTAR_A3;@ViruZ;@CUP_Terrains_Core-1.2.0;@CUP_Terrains_Maps-1.2.0;@CUP_Weapons;" -enableHT -autoinit
 echo (%time%) WARNING: arma3server closed or crashed, restarting.
 // TIMEOUT /T 180 /NOBREAK
 goto arma3server
