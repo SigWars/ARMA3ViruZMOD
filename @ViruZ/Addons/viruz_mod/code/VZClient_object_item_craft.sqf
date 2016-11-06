@@ -29,13 +29,7 @@ if ( getNumber(_recipeConfig >> "requiresOcean") == 1 ) then
 		_metSideConditions = false;
 	};
 };
-if ( getNumber(_recipeConfig >> "requiresFire") == 1 ) then //VOU ATIVAR ???
-{
-	if !([player, 4] call ExileClient_util_world_isFireInRange) then 
-	{
-		_metSideConditions = false;
-	};
-};
+
 if ( getNumber(_recipeConfig >> "requiresConcreteMixer") == 1 ) then //FUTUROOOOOOOOOOOOOOOOOOO
 {
 	_concreteMixer = (ASLtoAGL (getPosASL player)) call ExileClient_util_world_getNearestConcreteMixer;
@@ -46,18 +40,25 @@ if ( getNumber(_recipeConfig >> "requiresConcreteMixer") == 1 ) then //FUTUROOOO
 };
 */
 
+if ( getNumber(_recipeConfig >> "requiresFire") == 1 ) then
+{
+	if !([player, 4] call VZClient_util_world_isFireInRange) then 
+	{
+		_metSideConditions = false;
+	};
+};
 
 if( _interactionModelGroupClassName != "" ) then
 {
-	_interactionModelGroupModels = getArray(missionConfigFile >> "CfgInteractionModels" >> _interactionModelGroupClassName >> "models");
+	_interactionModelGroupModels = getArray(missionConfigFile >> worldname >> _interactionModelGroupClassName >> "models");
 	_foundObject = false;
-	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call VZClient_util_model_isNearby) then //Ainda tem que fazer
+	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call VZClient_util_model_isNearby) then
 	{
 		_foundObject = true;	
 	}
 	else 
 	{
-		if ( _interactionModelGroupModels call VZClientClient_util_model_isLookingAt ) then//Ainda tem que fazer
+		if ( _interactionModelGroupModels call VZClient_util_model_isLookingAt ) then
 		{
 			_foundObject = true;
 		};

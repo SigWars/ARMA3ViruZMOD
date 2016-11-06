@@ -3,7 +3,7 @@ private["_hasFood","_item","_text","_cansGear"];
 player removeAction s_player_fillfuel;
 s_player_fillfuel = -1;
 
-_cansGear = ["ItemJerrycan", player] call PTm_fnc_filterGear;
+_cansGear = ["ItemJerrycanEmpty", player] call PTm_fnc_filterGear;
 _maxFuelInCan = getNumber (configFile >> "CfgMagazines" >> "ItemJerrycan" >> "count");
 _qtyEmptyCans = {(_x select 1) < _maxFuelInCan} count _cansGear;
 

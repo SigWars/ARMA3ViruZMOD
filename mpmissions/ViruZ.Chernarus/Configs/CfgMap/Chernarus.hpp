@@ -5,6 +5,26 @@ class Chernarus {
 	spawnChanceCinder = 1;  //    0.20 = 20% / 1 = 100%
 	maxQtyCinder = 2;
 	
+
+	class FuelSource
+	{
+		name = "Fuel pumps, stations or barrels";
+		models[] = 
+		{
+			//Chernarus
+			"Land_Fuel_tank_big",
+			"Land_A_FuelStation_Feed",
+			"Land_A_FuelStation_Shed",
+			
+			"fuelstation_feed_f.p3d",
+			"metalbarrel_f.p3d",
+			"flexibletank_01_f.p3d",
+			//Tanoa
+			"fuelstation_01_pump_f.p3d",
+			"fuelstation_02_pump_f.p3d"
+		};	
+	};
+	
 	blockedArea[] = {
 			/*
 			{ { 1433, 8071, 0 }, 250 }, //Roenne NorthEast

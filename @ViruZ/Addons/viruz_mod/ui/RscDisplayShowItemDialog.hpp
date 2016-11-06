@@ -153,7 +153,7 @@ class RscDisplayShowItemDialog
 		class ButtonConsume: RscButton
 		{
 			idc = 100014;
-			action = "closeDialog 0; [SelectedInventoryItem select 0] call object_item_consume;";
+			action = "closeDialog 0;";
 			text = "CONSUME"; //--- ToDo: Localize;
 			x = 0.737188 * safezoneW + safezoneX;
 			y = 0.4252 * safezoneH + safezoneY;
@@ -163,7 +163,7 @@ class RscDisplayShowItemDialog
 		class ButtonUse: RscButton
 		{
 			idc = 100015;
-			action = "closeDialog 0; [SelectedInventoryItem select 0] call object_item_use;";
+			action = "closeDialog 0;";
 			text = "USE"; //--- ToDo: Localize;
 			x = 0.737188 * safezoneW + safezoneX;
 			y = 0.4626 * safezoneH + safezoneY;
@@ -177,6 +177,16 @@ class RscDisplayShowItemDialog
 			text = "CONSTRUCT"; //--- ToDo: Localize;
 			x = 0.737188 * safezoneW + safezoneX;
 			y = 0.5044 * safezoneH + safezoneY;
+			w = 0.0567187 * safezoneW;
+			h = 0.022 * safezoneH;
+		};
+		class ButtonFill: RscButton
+		{
+			idc = 100017;
+			action = "closeDialog 0;";
+			text = "FILL"; //--- ToDo: Localize;
+			x = 0.324687 * safezoneW + safezoneX;
+			y = 0.511 * safezoneH + safezoneY;
 			w = 0.0567187 * safezoneW;
 			h = 0.022 * safezoneH;
 		};

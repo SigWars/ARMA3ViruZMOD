@@ -1,13 +1,14 @@
 class CfgCrafting
 {
-	
 	class ViruZ_ResumoCrafting
 	{
 			displayName = "";
 			pictureItem = ""; 
 			returnedItems[] = {};
+			requiresFire = 0;
 			componentes[] = {}; 
 			ferramentas[] = {};
+			requiredInteractionModelGroup = "";
 	};
 	
 	class Blueprint_Hatchet: ViruZ_ResumoCrafting
@@ -108,5 +109,234 @@ class CfgCrafting
 			{1, "PartWoodPile"}
 		};
 	};
+	
+	class Blueprint_WaterBottle: ViruZ_ResumoCrafting
+	{
+		displayName = "Water Bottle";
+		pictureItem = "ItemWaterbottle"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "ItemWaterbottle"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "ItemWaterbottleBoiled"}
+		};
+	};
+	
+	class Blueprint_FoodSteakCooked: ViruZ_ResumoCrafting
+	{
+		displayName = "Food Steak Cooked";
+		pictureItem = "FoodSteakCooked"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FoodSteakCooked"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FoodSteakRaw"}
+		};
+	};
+	
+	class Blueprint_FoodmeatCooked: ViruZ_ResumoCrafting
+	{
+		displayName = "Food Meat Cooked";
+		pictureItem = "FoodmeatCooked"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FoodmeatCooked"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FoodmeatRaw"}
+		};
+	};
+	
+	class Blueprint_FishCookedTrout: ViruZ_ResumoCrafting
+	{
+		displayName = "Fish Cooked Trout";
+		pictureItem = "FishCookedTrout"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FishCookedTrout"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FishRawTrout"}
+		};
+	};
+	
+	class Blueprint_FishCookedSeaBass: ViruZ_ResumoCrafting
+	{
+		displayName = "Fish Cooked SeaBass";
+		pictureItem = "FishCookedSeaBass"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FishCookedTrout"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FishRawSeaBass"}
+		};
+	};
+	
+	class Blueprint_FishCookedTuna: ViruZ_ResumoCrafting
+	{
+		displayName = "Fish Cooked Tuna";
+		pictureItem = "FishCookedTuna"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FishCookedTuna"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FishRawTuna"}
+		};
+	};
+	
+	class Blueprint_FoodmuttonCooked: ViruZ_ResumoCrafting
+	{
+		displayName = "Food Mutton Cooked";
+		pictureItem = "FoodmuttonCooked"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FoodmuttonCooked"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FoodmuttonRaw"}
+		};
+	};
+	
+	class Blueprint_FoodchickenCooked: ViruZ_ResumoCrafting
+	{
+		displayName = "Food Chicken Cooked";
+		pictureItem = "FoodchickenCooked"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FoodchickenCooked"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FoodchickenRaw"}
+		};
+	};
+	
+	class Blueprint_FoodbaconCooked: ViruZ_ResumoCrafting
+	{
+		displayName = "Food Bacon Cooked";
+		pictureItem = "FoodbaconCooked"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FoodbaconCooked"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FoodbaconRaw"}
+		};
+	};
+	
+	class Blueprint_FoodrabbitCooked: ViruZ_ResumoCrafting
+	{
+		displayName = "Food Rabbit Cooked";
+		pictureItem = "FoodrabbitCooked"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FoodrabbitCooked"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FoodrabbitRaw"}
+		};
+	};
+	
+	class Blueprint_FoodbeefCooked: ViruZ_ResumoCrafting
+	{
+		displayName = "Food Beef Cooked";
+		pictureItem = "FoodbeefCooked"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "FoodbeefCooked"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "FoodbeefRaw"}
+		};
+	};
+	
+	class Blueprint_ItemJerrycan: ViruZ_ResumoCrafting
+	{
+		displayName = "Fill Jerrycan";
+		pictureItem = "ItemJerrycan"; //Classe do Item para chamar a imagem
+		requiredInteractionModelGroup = "FuelSource";
+		returnedItems[] =
+		{
+			{1, "ItemJerrycan"}
+		};
+		ferramentas[] =
+		{
+			
+		};
+		componentes[] = 
+		{
+			{1, "ItemJerrycanEmpty"}
+		};
+	};
+	
 	
 };

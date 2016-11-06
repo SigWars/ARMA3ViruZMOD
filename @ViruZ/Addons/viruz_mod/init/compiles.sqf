@@ -95,6 +95,7 @@ if (!isDedicated) then {
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_sleep.sqf";
 	electronics_build =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\Electronics_build.sqf";
+	jerry_fill =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\jerry_fill.sqf";
 	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\ui_selectSlot.sqf";
@@ -119,6 +120,9 @@ if (!isDedicated) then {
 	
 	//Test
 	SelectedInventoryItem = nil;
+	VZClient_util_world_isFireInRange = 						compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_util_world_isFireInRange.sqf";
+	VZClient_util_model_isNearby =								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_util_model_isNearby.sqf";
+	VZClient_util_model_isLookingAt = 							compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_util_model_isLookingAt.sqf";
 	VZClient_object_item_craft = 								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_object_item_craft.sqf";
 	VZClient_item_getCrafting = 								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_item_getCrafting.sqf";
 	VZClient_item_getCrafting =									compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_item_getCrafting.sqf";
