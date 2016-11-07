@@ -39,6 +39,18 @@ class CfgMagazines {
 		mass=40;
 	};
 	
+	class Viruz_CardBoardBox: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName="CardBoard Box";
+		model="\viruz_equip\items\viruz_cardboardbox.p3d";
+		picture = "\viruz_equip\viruzico\viruz_cardboardbox_ca.paa";
+		descriptionShort = "Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.";
+		mass=5;
+	};
+	
 	//////////////////////////////////COSTRUÇÃO/////////////////////////////////////////////
 	class ItemTent : CA_Magazine {
 		scope = public;
@@ -306,6 +318,20 @@ class CfgMagazines {
 			};
 		};
 	};*/
+	
+	class ItemEtool : CA_Magazine {
+		scope = public;
+		displayName = "Shovel";
+		model="\A3\Structures_F_EPA\Items\Tools\Shovel_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_shovel.paa";
+		descriptionShort = $STR_EQUIP_DESC_1;
+		
+		class ItemInfo {
+			type = 620;
+			allowedSlots[] = {701,801,901};
+			mass = 10;
+		};
+	};
 	
 	class FMradio_Mag : CA_Magazine {
 		scope = public;

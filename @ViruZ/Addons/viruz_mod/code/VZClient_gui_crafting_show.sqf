@@ -84,7 +84,8 @@ if( _interactionModelGroupClassName != "" ) then
 	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call VZClient_util_model_isNearby) then
 	{
 		_foundObject = true;	
-	}
+	};
+	/*
 	else 
 	{
 		if ( _interactionModelGroupModels call VZClient_util_model_isLookingAt) then
@@ -92,6 +93,7 @@ if( _interactionModelGroupClassName != "" ) then
 			_foundObject = true;
 		};
 	};
+	*/
 	if (_foundObject) then
 	{
 		_description = _description + format["<t size='1'  align='right' color='%1'>%2</t>", "#b2ec00", "FOUND"];

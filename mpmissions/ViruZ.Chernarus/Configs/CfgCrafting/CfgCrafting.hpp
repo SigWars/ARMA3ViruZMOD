@@ -338,5 +338,25 @@ class CfgCrafting
 		};
 	};
 	
+	class Blueprint_CementBag: ViruZ_ResumoCrafting
+	{
+		displayName = "Cement Bag";
+		pictureItem = "Viruz_CementBag"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{1, "Viruz_CementBag"}
+		};
+		ferramentas[] =
+		{
+			"ItemEtool"
+		};
+		componentes[] = 
+		{
+			{5, "Viruz_Rock"},
+			{3, "Viruz_Clinquer"},
+			{1, "Viruz_CardBoardBox"}
+		};
+	};
+	
 	
 };

@@ -65,20 +65,7 @@ class CfgWeapons {
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 	};
-	
-	class ItemEtool : ItemCore {
-		scope = public;
-		displayName = "Shovel";
-		model="\A3\Structures_F_EPA\Items\Tools\Shovel_F.p3d";
-		picture = "\viruz_equip\viruzico\viruz_shovel.paa";
-		descriptionShort = $STR_EQUIP_DESC_1;
-		
-		class ItemInfo {
-			type = 620;
-			allowedSlots[] = {701,801,901};
-			mass = 10;
-		};
-	};
+
 	class ItemKnife : ItemCore {
 		scope = public;
 		displayName = "Military Knife";

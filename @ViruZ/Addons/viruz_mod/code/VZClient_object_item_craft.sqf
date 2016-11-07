@@ -55,14 +55,16 @@ if( _interactionModelGroupClassName != "" ) then
 	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call VZClient_util_model_isNearby) then
 	{
 		_foundObject = true;	
-	}
-	else 
+	};
+	
+	/*else 
 	{
 		if ( _interactionModelGroupModels call VZClient_util_model_isLookingAt ) then
 		{
 			_foundObject = true;
 		};
-	};
+	};*/
+	
 	if !(_foundObject) then
 	{
 		_metSideConditions = false;
