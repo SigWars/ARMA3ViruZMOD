@@ -2,6 +2,43 @@ class CfgMagazines {
 	class CA_Magazine;	// External class reference
 	class HandGrenade;
 	
+	
+	///////////////////////////////////CRAFTING RECIPES/////////////////////////////////////
+	class Viruz_Rock: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName="Rock";
+		model="\viruz_equip\items\viruz_rock.p3d";
+		picture = "\viruz_equip\viruzico\viruz_rock_ca.paa";
+		descriptionShort = "Piece of rock, perfect for construction!!!";
+		mass=6;
+	};
+	class Viruz_Clinquer: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName="Clinker (cement)";
+		model="\viruz_equip\items\viruz_clinquer.p3d";
+		picture = "\viruz_equip\viruzico\viruz_clinquer_ca.paa";
+		descriptionShort = "Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.";
+		mass=4;
+	};
+	
+	class Viruz_CementBag: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName="Cement Bag";
+		model="\viruz_equip\items\viruz_cementbag.p3d";
+		picture = "\viruz_equip\viruzico\viruz_cementbag_ca.paa";
+		descriptionShort = "A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.";
+		mass=40;
+	};
+	
 	//////////////////////////////////COSTRUÇÃO/////////////////////////////////////////////
 	class ItemTent : CA_Magazine {
 		scope = public;
@@ -449,13 +486,6 @@ class CfgMagazines {
 		descriptionShort = $STR_EQUIP_DESC_39;
 		mass = 40;
 		allowedSlots[] = {901};
-		
-		class ItemActions {
-			class Fill {
-				text = $str_actions_self_10;
-				script = "spawn jerry_fill;";
-			};
-		};
 	};
 	
 	class PartFueltank : CA_Magazine {
