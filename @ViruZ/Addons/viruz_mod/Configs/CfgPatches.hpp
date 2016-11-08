@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {"U_C_Citizen_clothes1","U_C_Citizen_clothes2","U_C_Citizen_clothes3"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"viruz_equip","viruz_zombie","viruz_builds","viruz_sound"}; //"DZ_Anims_Rtm","DZ_Anims","A3_Functions_F_Zed"
+		requiredAddons[] = {"viruz_equip","viruz_zombie","viruz_builds","viruz_sound","A3_Weapons_F_Items"}; //"DZ_Anims_Rtm","DZ_Anims","A3_Functions_F_Zed"
 	};
 	class DZ_DebriefingRemoved
 	{

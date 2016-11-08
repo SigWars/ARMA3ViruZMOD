@@ -56,7 +56,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_hasBlood = 	"ItemBloodbag" in magazines player;	
 	_hasToolbox = 	"ItemToolbox" in items player;
 	_hasJerry = 	"ItemJerrycan" in magazines player;
-	_hasEtool = 	"ItemEtool" in weapons player;
+	_hasEtool = 	"ItemEtool" in magazines player;
 	_hasWire = 		"ItemWire" in magazines player;
 	_hasPainkillers = 	"ItemPainkiller" in magazines player;
 

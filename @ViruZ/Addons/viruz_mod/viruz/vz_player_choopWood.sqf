@@ -2,7 +2,7 @@
 ViruZ Mod for Arma 3
 Autor: SigWar
 **********************/
-private["_currentPos", "_object", "_type", "_objects", "_sel_object"]; 
+private["_currentPos", "_object", "_type", "_objects", "_sel_object","_LastDamage"]; 
 
 _currentPos = player modelToWorld[0, 5, 0];
 if !(surfaceIsWater _currentPos) then {
@@ -23,14 +23,22 @@ _quantidade = 0;
 //chances
 _spawnChanceWood = getNumber (missionConfigFile >> worldname >> "spawnChanceWood");
 _maxQtyWood = getNumber (missionConfigFile >> worldname >> "maxQtyWood");
-_spawnChanceCinder = getNumber (missionConfigFile >> worldname >> "spawnChanceCinder");
-_maxQtyCinder = getNumber (missionConfigFile >> worldname >> "maxQtyCinder");
+
+_spawnChanceRocks = getNumber (missionConfigFile >> worldname >> "spawnChanceRocks");
+_maxQtyRocks = getNumber (missionConfigFile >> worldname >> "maxQtyRocks");
+
+_spawnChanceClinquer = getNumber (missionConfigFile >> worldname >> "spawnChanceClinquer");
+_maxQtyClinquer = getNumber (missionConfigFile >> worldname >> "maxQtyClinquer");
+
+_spawnChanceScrap = getNumber (missionConfigFile >> worldname >> "spawnChanceScrap");
+_maxQtyScrap = getNumber (missionConfigFile >> worldname >> "maxQtyScrap");
+
 
 //Objects List
 _treesLootList = getArray(missionConfigFile >> worldname >> "Trees");
-_CinderLootList = getArray(missionConfigFile >> worldname >> "Cinder");
 _WrecksLootList = getArray(missionConfigFile >> worldname >> "Wrecks");
 _RocksLootList = getArray(missionConfigFile >> worldname >> "Rocks");
+_ClinquerLootList = getArray(missionConfigFile >> worldname >> "ClinquerRocks");
 {
     _strObj = str _x;
 	_sel_object = _x;	
@@ -43,23 +51,23 @@ _RocksLootList = getArray(missionConfigFile >> worldname >> "Rocks");
 			_maxQty = _maxQtyWood;
 			_spawnChance = _spawnChanceWood;
 		};
-		if (_p3dName in _CinderLootList) then{
-			_type = "Cinder";
-			_object = _sel_object;
-			_maxQty = _maxQtyCinder;
-			_spawnChance = _spawnChanceCinder;
-		};
 		if (_p3dName in _WrecksLootList) then{
 			_type = "Wrecks";
 			_object = _sel_object;
-			_maxQty = 1;
-			_spawnChance = _spawnChanceCinder;
+			_maxQty = _maxQtyScrap;
+			_spawnChance = _spawnChanceScrap;
 		};
 		if (_p3dName in _RocksLootList) then{
 			_type = "Rocks";
 			_object = _sel_object;
-			_maxQty = _maxQtyCinder;
-			_spawnChance = _spawnChanceCinder;
+			_maxQty = _maxQtyRocks;
+			_spawnChance = _spawnChanceRocks;
+		};
+		if (_p3dName in _ClinquerLootList) then{
+			_type = "ClinquerRocks";
+			_object = _sel_object;
+			_maxQty = _maxQtyClinquer;
+			_spawnChance = _spawnChanceClinquer;
 		};
 	};
     if !(isNull _object) exitWith {};
@@ -73,10 +81,11 @@ if (!isNull _object) then {
 		[player,60,false,(getPosATL player)] spawn player_alertZombies;
 			
 			switch (_type) do {
-				case "Trees": { _item = "PartWoodPile"; _object setDamage 1; };
+				case "Trees": { _item = "PartWoodPile"; _LastDamage = damage _object; _object setDamage _LastDamage + 0.30;  };
 				case "Cinder": { _item = "ViruZ_Cinderblock";};
 				case "Wrecks": { _item = "PartGeneric"; };
-				case "Rocks": { _item = "ViruZ_Cinderblock"; };
+				case "Rocks": { _item = "Viruz_Rock"; };
+				case "ClinquerRocks": {_item = "Viruz_Clinquer";};
 				};
 				
 			//_quantidade = floor(random _maxQty);

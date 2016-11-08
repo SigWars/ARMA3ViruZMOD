@@ -1,4 +1,4 @@
-private["_getcraftingClassName","_craftingConfig","_craftname","_imagemItemClassName","_imagem","_craftingImagem","_OkCrafting","_CraftingQuantidade","_getItemMagazine","_componentes","_returnedItems","_ferramentas","_dialog","_description","_getcomponenteQuantity","_getcomponenteItemClassName","_getcomponenteItemName","_equippedComponentQuantity","_ferramentasItemClassName","_ferramentasItemName","_equippedferramentasQuantity","_interactionModelGroupClassName","_interactionModelGroupName","_interactionModelGroupModels","_foundObject","_listBoxIndex"];
+private["_getcraftingClassName","_craftingConfig","_craftname","_imagemItemClassName","_imagem","_craftingImagem","_OkCrafting","_CraftingQuantidade","_getItemMagazine","_componentes","_returnedItems","_ferramentas","_dialog","_description","_getcomponenteQuantity","_getcomponenteItemClassName","_getcomponenteItemName","_equippedComponentQuantity","_ferramentasItemClassName","_ferramentasItemName","_equippedferramentasQuantity","_interactionModelGroupClassName","_interactionModelGroupName","_interactionModelGroupModels","_foundObject","_listBoxIndex","_interactionModelGroupConfig"];
 
 //Classes
 _getcraftingClassName = _this;
@@ -59,25 +59,41 @@ forEach _componentes;
 }
 forEach _ferramentas;
 
+if ( getNumber(_craftingConfig >> "requiresFire") == 1 ) then
+{
+	_description = _description + format["<t size='1' font='puristaMedium' align='left'>%1</t>", "Fire"];
+	if( [player, 4] call VZClient_util_world_isFireInRange ) then 
+	{
+		_description = _description + format["<t size='1' font='puristaMedium' align='right' color='%1'>%2</t>", "#b2ec00", "FOUND"];
+	}
+	else 
+	{
+		_description = _description + format["<t size='1' font='puristaMedium' align='right' color='%1'>%2</t>", "#ea0000", "NOT FOUND"];
+		_OkCrafting = false;
+	};
+	_description = _description + "<br/>";
+};
 _interactionModelGroupClassName = getText(_craftingConfig >> "requiredInteractionModelGroup");
 if( _interactionModelGroupClassName != "" ) then
-{
-	_interactionModelGroupConfig = missionConfigFile >> "CfgInteractionModels" >> _interactionModelGroupClassName;
+{	
+	_interactionModelGroupConfig = missionConfigFile >> worldname >> _interactionModelGroupClassName;
 	_interactionModelGroupName = getText(_interactionModelGroupConfig >> "name");
 	_interactionModelGroupModels = getArray(_interactionModelGroupConfig >> "models");
 	_description = _description + format["<t size='1'  align='left'>%1</t>", _interactionModelGroupName];
 	_foundObject = false;
-	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call VZClient_util_model_isNearby) then //Tenho que fazer a Ainda
+	if ([ASLtoAGL (getPosASL player), 10, _interactionModelGroupModels] call VZClient_util_model_isNearby) then
 	{
 		_foundObject = true;	
-	}
+	};
+	/*
 	else 
 	{
-		if ( _interactionModelGroupModels call VZClient_util_model_isLookingAt ) then //Tenho que fazer a Ainda
+		if ( _interactionModelGroupModels call VZClient_util_model_isLookingAt) then
 		{
 			_foundObject = true;
 		};
 	};
+	*/
 	if (_foundObject) then
 	{
 		_description = _description + format["<t size='1'  align='right' color='%1'>%2</t>", "#b2ec00", "FOUND"];
