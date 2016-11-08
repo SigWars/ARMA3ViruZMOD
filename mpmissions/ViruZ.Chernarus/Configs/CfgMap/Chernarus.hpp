@@ -58,7 +58,11 @@ class Chernarus {
 
 ClinquerRocks[] = {
 	"bo_r2_boulder1.p3d",
-	"bo_r2_boulder2.p3d"
+	"bo_r2_boulder2.p3d",
+	"r2_boulder1.p3d",
+	"r2_boulder2.p3d",
+	"r_tk_boulder_01_ep1.p3d",
+	"r_tk_boulder_02_ep1.p3d"
 };
 
 Rocks[] = {
@@ -94,8 +98,6 @@ Rocks[] = {
 			"stone_small_f.p3d",
 			"stone_big_f.p3d",
 			"bluntrock_spike.p3d",
-			"r2_boulder1.p3d",
-			"r2_boulder2.p3d",
 			"r2_rock1.p3d",
 			"r2_rocktower.p3d",
 			"r2_rockwall.p3d",
@@ -133,8 +135,6 @@ Rocks[] = {
 			"r_tk_rock_03_ep1.p3d",
 			"r_tk_boulder_03_ep1.p3d",
 			"r_tk_rock_02_ep1.p3d",
-			"r_tk_boulder_01_ep1.p3d",
-			"r_tk_boulder_02_ep1.p3d",
 			"r_tk_rock_01_ep1.p3d",
 			"cliff_stone_big_lc_f.p3d",
 			"cliff_wall_long_f.p3d",
