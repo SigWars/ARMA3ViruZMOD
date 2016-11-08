@@ -358,5 +358,26 @@ class CfgCrafting
 		};
 	};
 	
+	class Blueprint_CinderBlockMold: ViruZ_ResumoCrafting
+	{
+		displayName = "CinderBlock Mold";
+		pictureItem = "Viruz_CinderBlockMold"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{1, "Viruz_CinderBlockMold"}
+		};
+		ferramentas[] =
+		{
+			"Viruz_Hammer",
+			"Viruz_Serrote"
+			
+		};
+		componentes[] = 
+		{
+			{2, "Viruz_Woodboard"},
+			{1, "equip_nails"}
+		};
+	};
+	
 	
 };

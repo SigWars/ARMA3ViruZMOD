@@ -1,4 +1,4 @@
-private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut"];
+private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx"];
 _getcraftingClassName = _this select 0;
 _quantityToCraft = _this select 1;
 _quantityCrafted = 0;
@@ -150,6 +150,13 @@ if (_quantityCrafted > -1) then
 	if (_quantityCrafted > 0) then
 	{	
 		//_feedbackMessage = "";
+		
+		//Chamar Som
+		_sfx = getText(configFile >> "CfgMagazines" >> _returnedItemClassName >> "sfx");
+		if !(_sfx == "") then {
+			[player,_sfx,0,false,5] call viruz_zombieSpeak;
+		};
+		
 		{
 			_returnedItemClassName = _x select 0;
 			_returnedItemQuantity = _x select 1;
@@ -163,6 +170,7 @@ if (_quantityCrafted > -1) then
 			_feedbackMessage = _feedbackMessage + format ["+%1x %2", _returnedItemQuantity, _returnedItemName];*/
 		}
 		forEach _addedItems;
+		
 		cutText [format["Crafting completed! %1 %2 Crafted",_returnedItemQuantity,_returnedItemName], "PLAIN DOWN"];
 	}
 	else 

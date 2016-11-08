@@ -51,6 +51,19 @@ class CfgMagazines {
 		mass=5;
 	};
 	
+	class Viruz_CinderBlockMold: CA_Magazine
+	{
+		scope = public;
+		sfx = "chopwood";
+		type = 256;
+		count = 1;
+		displayName="CinderBlock Mold";
+		model="\viruz_equip\items\viruz_cinderblockmold.p3d";
+		picture = "\viruz_equip\viruzico\viruz_cinderblockmold_ca.paa";
+		descriptionShort = "Mold to create cinder blocks.";
+		mass=15;
+	};
+	
 	//////////////////////////////////COSTRUÇÃO/////////////////////////////////////////////
 	class ItemTent : CA_Magazine {
 		scope = public;
@@ -493,6 +506,7 @@ class CfgMagazines {
 	class ItemJerrycan : CA_Magazine {
 		scope = public;
 		count = 20;
+		sfx = "refuel";
 		fuelQuantity = 20;
 		type = (256 * 3);
 		displayName = $STR_EQUIP_NAME_19;
