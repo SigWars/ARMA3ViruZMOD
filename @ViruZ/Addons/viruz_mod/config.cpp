@@ -43,6 +43,7 @@ class RscCombo;
 class RscButtonMenuOK;
 class HScrollbar; //ui
 class BackgroundSlotPrimary;
+class RscButtonMenuCancel;
 
 
 
@@ -80,6 +81,8 @@ class BackgroundSlotPrimary;
 #include "ui\RscDisplayDiary.hpp"
 #include "ui\RscDisplayGenderSelect.hpp"
 #include "ui\RscDisplayInventory.hpp"
+#include "ui\RscDisplayShowItemDialog.hpp"
+#include "ui\RscDisplayShowCraftingDialog.hpp"
 //#include "Configs\CfgCrafting\CfgCrafting.hpp" //Novo craft
 
 #include "Configs\CfgFunctions.hpp"

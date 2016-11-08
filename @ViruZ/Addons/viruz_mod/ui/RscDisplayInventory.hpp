@@ -681,7 +681,7 @@ class RscDisplayInventory
 		class UniformContainer: GroundContainer
 		{
 			idc = 633;
-			onMouseButtonDblClick = "_this call player_selectSlot;";
+			onLBDblClick = "_this call ViruZClient_gui_inventory_event_onItemDoubleClick;";
 			x = "15.1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "6 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 			w = "11 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -715,6 +715,7 @@ class RscDisplayInventory
 		class VestContainer: UniformContainer
 		{
 			idc = 638;
+			onLBDblClick = "_this call ViruZClient_gui_inventory_event_onItemDoubleClick;";
 		};
 		class BackpackTab: UniformTab
 		{
@@ -744,6 +745,7 @@ class RscDisplayInventory
 		class BackpackContainer: UniformContainer
 		{
 			idc = 619;
+			onLBDblClick = "_this call ViruZClient_gui_inventory_event_onItemDoubleClick;";
 		};
 		class TotalLoad: GroundLoad
 		{
