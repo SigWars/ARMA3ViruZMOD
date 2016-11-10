@@ -136,7 +136,7 @@ if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivo
 		{
 			private _msg = format
 			[
-				"%1 killed %2 from %3 meters away and received %4 poptabs, and %5 respect.",
+				"%1 killed %2 from %3 meters away and received %4 poptabs, and %5 humanity.",
 				name _playerObj,
 				_unitName,
 				if (_distance isEqualTo []) then {floor(_unit distance _playerObj)} else {_distance},

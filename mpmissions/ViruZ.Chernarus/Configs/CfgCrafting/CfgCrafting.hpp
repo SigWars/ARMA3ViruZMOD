@@ -379,5 +379,45 @@ class CfgCrafting
 		};
 	};
 	
+	class Blueprint_IronBar: ViruZ_ResumoCrafting
+	{
+		displayName = "IronBar";
+		pictureItem = "Viruz_IronBar"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
+		returnedItems[] =
+		{
+			{1, "Viruz_IronBar"}
+		};
+		ferramentas[] =
+		{
+			"Viruz_Hammer",
+			"Viruz_Pliers",
+			"Viruz_Grinder",
+			"Viruz_Gloves"
+		};
+		componentes[] = 
+		{
+			{4, "PartGeneric"}
+		};
+	};
+	
+	class Blueprint_Test: ViruZ_ResumoCrafting
+	{
+		displayName = "Test";
+		pictureItem = "Viruz_CinderBlockMold"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{1, "Viruz_CinderBlockMold"}
+		};
+		ferramentas[] =
+		{			
+			
+		};
+		componentes[] = 
+		{
+			{1, "Viruz_Antiseptic"}
+		};
+	};
+	
 	
 };

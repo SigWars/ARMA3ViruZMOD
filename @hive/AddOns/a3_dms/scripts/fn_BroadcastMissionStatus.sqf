@@ -61,38 +61,6 @@ private _status =
 			format["%1: %2",toUpper _messageTitle,_message] remoteExecCall ["systemChat",-2];
 		};
 
-		case "exiletoasts":
-		{
-			private _toast_type =
-				switch (_status) do
-				{
-					case "win": {"SuccessEmpty"};
-					case "lose": {"ErrorEmpty"};
-					default {"InfoEmpty"};		// case "start":
-				};
-
-			[
-			    "toastRequest",
-			    [
-			        _toast_type,
-			        [
-			            format
-			            [
-			                "<t color='%1' size='%2' font='%3'>%4</t><br/><t color='%5' size='%6' font='%7'>%8</t>",
-			                _titleColor,
-			                DMS_ExileToasts_Title_Size,
-			                DMS_ExileToasts_Title_Font,
-			                _messageTitle,
-			                DMS_ExileToasts_Message_Color,
-			                DMS_ExileToasts_Message_Size,
-			                DMS_ExileToasts_Message_Font,
-			                _message
-			            ]
-			        ]
-			    ]
-			] call ExileServer_system_network_send_broadcast;
-		};
-
 		case "standardhintrequest":
 		{
 			format

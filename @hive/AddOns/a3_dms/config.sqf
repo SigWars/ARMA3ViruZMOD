@@ -146,16 +146,16 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_MinDistFromSouthBorder			= 250;						// Missions won't spawn in a position this many meters close to the southern map border.
 	DMS_MinDistFromNorthBorder			= 250;						// Missions won't spawn in a position this many meters close to the northern map border.
 	DMS_SpawnZoneMarkerTypes =			[							// If you're using custom spawn zone markers, make sure you define them here. CASE SENSITIVE!!!
-											"ExileSpawnZoneIcon"
+											"SpawnZoneIcon"
 										];
 	DMS_TraderZoneMarkerTypes =			[							// If you're using custom trader markers, make sure you define them here. CASE SENSITIVE!!!
-											"ExileTraderZoneIcon"
+											"TraderZoneIcon"
 										];
 	DMS_MixerMarkerTypes =				[							// If you're using custom concrete mixer map markers, make sure you define them here. CASE SENSITIVE!!!
-											"ExileConcreteMixerZoneIcon"
+											"ConcreteMixerZoneIcon"
 										];
 	DMS_ContaminatedZoneMarkerTypes =	[							// If you're using custom contaminated zone markers, make sure you define them here. CASE SENSITIVE!!!
-											"ExileContaminatedZoneIcon"
+											"ContaminatedZoneIcon"
 										];
 	/*Mission spawn location settings*/
 
@@ -184,7 +184,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_MinServerFPS					= 10; 						// Minimum server FPS for missions to start
 
 	/*Mission notification settings*/
-	DMS_PlayerNotificationTypes =		[									// Notification types. Supported values are: ["dynamicTextRequest", "standardHintRequest", "systemChatRequest", "textTilesRequest", "ExileToasts"]. Details below.
+	DMS_PlayerNotificationTypes =		[									// Notification types. Supported values are: ["dynamicTextRequest", "standardHintRequest", "systemChatRequest", "textTilesRequest"]. Details below.
 											//"dynamicTextRequest"		// You should use either "dynamicTextRequest" or "textTilesRequest", and I think "textTilesRequest" looks better, but this is less performance-intensive.
 											"standardHintRequest"		// Hints are a bit wonky...
 											//"textTilesRequest",			// Keep in mind you can only have 1 "text tile" message up at a time, so the message will disappear if the player gets a kill or something while the message is shown. This message type is also performance-intensive, so I advise against it.
@@ -192,13 +192,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											//"ExileToasts"					// Default notification type since Exile 0.98, see (http://www.exilemod.com/devblog/new-ingame-notifications/)
 										];
 
-		/*Exile Toasts Notification Settings*/
-	DMS_ExileToasts_Title_Size			= 22;						// Size for Client Exile Toasts  mission titles.
-	DMS_ExileToasts_Title_Font			= "puristaMedium";			// Font for Client Exile Toasts  mission titles.
-	DMS_ExileToasts_Message_Color		= "#FFFFFF";				// Exile Toasts color for "ExileToast" client notification type.
-	DMS_ExileToasts_Message_Size		= 19;						// Exile Toasts size for "ExileToast" client notification type.
-	DMS_ExileToasts_Message_Font		= "PuristaLight";			// Exile Toasts font for "ExileToast" client notification type.
-		/*Exile Toasts Notification Settings*/
+		
 
 		/*Dynamic Text Notification Settings*/
 	DMS_dynamicText_Duration			= 7;						// Number of seconds that the message will last on the screen.
@@ -207,7 +201,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_dynamicText_Title_Font			= "puristaMedium";			// Font for Client Dynamic Text mission titles.
 	DMS_dynamicText_Message_Color		= "#FFFFFF";				// Dynamic Text color for "dynamicTextRequest" client notification type.
 	DMS_dynamicText_Message_Size		= 0.65;						// Dynamic Text size for "dynamicTextRequest" client notification type.
-	DMS_dynamicText_Message_Font		= "OrbitronMedium";			// Dynamic Text font for "dynamicTextRequest" client notification type.
+	DMS_dynamicText_Message_Font		= "Zeppelin33";			// Dynamic Text font for "dynamicTextRequest" client notification type.
 		/*Dynamic Text Notification Settings*/
 
 		/*Standard Hint Notification Settings*/
@@ -215,7 +209,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_standardHint_Title_Font			= "puristaMedium";			// Font for Client Standard Hint mission titles.
 	DMS_standardHint_Message_Color		= "#FFFFFF";				// Standard Hint color for "standardHintRequest" client notification type.
 	DMS_standardHint_Message_Size		= 1;						// Standard Hint size for "standardHintRequest" client notification type.
-	DMS_standardHint_Message_Font		= "OrbitronMedium";			// Standard Hint font for "standardHintRequest" client notification type.
+	DMS_standardHint_Message_Font		= "Zeppelin33";			// Standard Hint font for "standardHintRequest" client notification type.
 		/*Standard Hint Notification Settings*/
 
 		/*Text Tiles Notification Settings*/
@@ -225,7 +219,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_textTiles_Title_Font			= "puristaMedium";			// Font for Client Text Tiles mission titles.
 	DMS_textTiles_Message_Color			= "#FFFFFF";				// Text Tiles color for "textTilesRequest" client notification type.
 	DMS_textTiles_Message_Size			= 1.25;						// Text Tiles size for "textTilesRequest" client notification type.
-	DMS_textTiles_Message_Font			= "OrbitronMedium";			// Text Tiles font for "textTilesRequest" client notification type.
+	DMS_textTiles_Message_Font			= "Zeppelin33";			// Text Tiles font for "textTilesRequest" client notification type.
 		/*Text Tiles Notification Settings*/
 
 	/*Mission notification settings*/
@@ -291,7 +285,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 
 
 
-	DMS_findSafePosBlacklist =			[								// This list defines areas where missions WILL NOT spawn. For position blacklist info refer to: http://www.exilemod.com/topic/61-dms-defents-mission-system/?do=findComment&comment=31190
+	DMS_findSafePosBlacklist =			[								// This list defines areas where missions WILL NOT spawn. For position blacklist info refer to:
 											// There are examples in the altis map config (it blacklists the salt flats) and in the tavi/taviana map configs.
 
 											//[[2350,4680],100]		// This random example blacklists any position within 100 meters of coordinates "[2350,4680]"
@@ -569,24 +563,9 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 
 	DMS_assault_items =					[							// Items for Assault Class AI (Loot stuff that goes in uniform/vest/backpack)
 											//VIRUZ ITENS
-											"ItemHeatPack",
-											"ItemBloodbag",
-											"ItemAntibiotic",
 											"ItemPainkiller",
 											"ItemWaterBottle",
-											"ItemSodaOriginal",
-											"ItemSodaDiet",
-											"ItemSodaHam",
-											"ItemSodaLaranja",
-											"ItemSodaLimao",
-											"ItemSodaBeergolden",
-											"FoodCanWBBeans",
-											"FoodCanMHBeans",
-											"FoodCanEsardines",
-											"FoodCanChickenSoup",
-											"FoodCanSpaghetti2",
-											"FoodCanOranges",
-											"FoodMRE"
+											"FoodCanOranges"
 										];
 	DMS_assault_equipment =				[							// Equipment for Assault Class AI (stuff that goes in toolbelt slots)
 											"ItemGPS"
@@ -596,6 +575,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											//VIRUZ ITENS
 											"ItemHeatPack",
 											"ItemBloodbag",
+											"ItemMorphine",
 											"ItemAntibiotic",
 											"ItemPainkiller",
 											"ItemWaterBottle",
@@ -620,10 +600,19 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"H_HelmetSpecO_ghex_F",
 											"H_HelmetCrew_O_ghex_F",
 											#endif
-											"H_HelmetSpecB_paint1",
-											"H_HelmetIA_camo",
-											"H_HelmetLeaderO_ocamo",
-											"H_HelmetLeaderO_oucamo"
+											"H_HelmetB_light_sand", //Light Combat Helmet (Sand) Level I
+											"H_HelmetB_plain_blk", //Combat Helmet (Black) Level II
+											"H_Booniehat_indp",
+											"H_Cap_headphones",
+											"H_Cap_blu",
+											"H_Cap_red",
+											"H_Cap_oli",
+											"H_Cap_blk_CMMG",
+											"H_MilCap_ocamo",
+											"H_MilCap_oucamo",
+											"H_ShemagOpen_khk",
+											"H_Beret_Colonel"
+											
 										];
 	DMS_assault_clothes	=				[							// Uniforms for Assault Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -635,19 +624,17 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"U_I_C_Soldier_Camo_F",
 											"U_B_CTRG_Soldier_urb_1_F",
 											#endif
-											"U_O_CombatUniform_ocamo",
-											"U_O_PilotCoveralls",
-											//"U_B_Wetsuit",
-											"U_BG_Guerilla3_1",
-											"U_BG_Guerilla2_3",
-											"U_BG_Guerilla2_2",
-											"U_BG_Guerilla1_1",
-											"U_BG_Guerrilla_6_1",
-											"U_IG_Guerilla3_2",
-											"U_B_SpecopsUniform_sgg",
-											"U_I_OfficerUniform",
-											"U_B_CTRG_3",
-											"U_I_G_resistanceLeader_F"
+											"U_OrestesBody", //Jacket and Shorts
+											"U_NikosBody", //Nikos Clothes
+											"U_C_Poloshirt_tricolour", //Commoner Clothes (Tricolor)
+											"U_IG_Guerilla3_2", //Guerilla Smocks 1
+											"U_BG_Guerilla2_1", //Guerilla Outfit (Plain, Dark)
+											"U_BG_leader", //Guerilla Uniform
+											"U_C_HunterBody_grn", //Hunting Clothes
+											"U_Competitor", //Competitor Suit
+											"U_B_Wetsuit", //Wetsuit [NATO]
+											"U_NikosAgedBody", //Underwear 1
+											"U_B_CTRG_3" //CTRG Combat Uniform (Rolled-up)
 										];
 	DMS_assault_vests =					[							// Vests for Assault Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -658,18 +645,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_TacVest_gen_F",
 											"V_PlateCarrier1_rgr_noflag_F",
 											#endif
-											/*
-											"V_PlateCarrierH_CTRG",
-											"V_PlateCarrierSpec_rgr",
-											"V_PlateCarrierGL_blk",
-											"V_PlateCarrierGL_mtp",
-											"V_PlateCarrierGL_rgr",
-											"V_PlateCarrierSpec_blk",
-											"V_PlateCarrierSpec_mtp",
-											"V_PlateCarrierL_CTRG",
-											"V_TacVest_blk_POLICE",
-											*/
-											"V_PlateCarrierIA2_dgtl"
+											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
+											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
+											"V_RebreatherIA", //Rebreather [AAF] Armor Level I
+											"V_Press_F" //	Vest (Press) Armor Level II
 										];
 	DMS_assault_backpacks =				[							// Backpacks for Assault Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -753,23 +732,9 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 
 	DMS_MG_items =						[							// Items for MG Class AI (Loot stuff that goes in uniform/vest/backpack)
 											//VIRUZ ITENS
-											"ItemHeatPack",
 											"ItemBloodbag",
 											"ItemAntibiotic",
-											"ItemPainkiller",
-											"ItemWaterBottle",
 											"ItemSodaOriginal",
-											"ItemSodaDiet",
-											"ItemSodaHam",
-											"ItemSodaLaranja",
-											"ItemSodaLimao",
-											"ItemSodaBeergolden",
-											"FoodCanWBBeans",
-											"FoodCanMHBeans",
-											"FoodCanEsardines",
-											"FoodCanChickenSoup",
-											"FoodCanSpaghetti2",
-											"FoodCanOranges",
 											"FoodMRE"
 										];
 	DMS_MG_equipment =					[							// Equipment for MG Class AI (stuff that goes in toolbelt slots)
@@ -780,6 +745,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											//VIRUZ ITENS
 											"ItemHeatPack",
 											"ItemBloodbag",
+											"ItemMorphine",
 											"ItemAntibiotic",
 											"ItemPainkiller",
 											"ItemWaterBottle",
@@ -805,16 +771,18 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"H_HelmetLeaderO_ghex_F",
 											"H_HelmetCrew_O_ghex_F",
 											#endif
-											"H_PilotHelmetHeli_I",
-											"H_PilotHelmetHeli_O",
-											"H_PilotHelmetFighter_I",
-											"H_PilotHelmetFighter_O",
-											"H_HelmetCrew_O",
-											"H_CrewHelmetHeli_I",
-											"H_HelmetSpecB_paint1",
-											"H_HelmetIA_camo",
-											"H_HelmetLeaderO_ocamo",
-											"H_HelmetLeaderO_oucamo"
+											"H_HelmetB_light_snakeskin", //Light Combat Helmet (Snakeskin)Level I
+											"H_HelmetIA_camo", //MICH2 (Camo) Level II
+											"H_Cap_blk_ION", //Cap (ION)
+											"H_Cap_blk_Raven", //Cap [AAF]
+											"H_Booniehat_khk_hs", //Booniehat (Headset)
+											"H_Watchcap_sgg", //Beanie (Sage)
+											"H_Hat_blue", //Hat (Blue)
+											"H_StrawHat", //Straw Hat
+											"H_MilCap_ocamo",
+											"H_MilCap_oucamo",
+											"H_ShemagOpen_khk",
+											"H_Beret_Colonel"
 										];
 	DMS_MG_clothes =					[							// Uniforms for MG Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -838,7 +806,18 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"U_B_SpecopsUniform_sgg",
 											"U_I_OfficerUniform",
 											"U_B_CTRG_3",
-											"U_I_G_resistanceLeader_F"
+											"U_I_G_resistanceLeader_F",
+											"U_OrestesBody", //Jacket and Shorts
+											"U_NikosBody", //Nikos Clothes
+											"U_C_Poloshirt_tricolour", //Commoner Clothes (Tricolor)
+											"U_IG_Guerilla3_2", //Guerilla Smocks 1
+											"U_BG_Guerilla2_1", //Guerilla Outfit (Plain, Dark)
+											"U_BG_leader", //Guerilla Uniform
+											"U_C_HunterBody_grn", //Hunting Clothes
+											"U_Competitor", //Competitor Suit
+											"U_B_Wetsuit", //Wetsuit [NATO]
+											"U_NikosAgedBody", //Underwear 1
+											"U_B_CTRG_3" //CTRG Combat Uniform (Rolled-up)
 										];
 	DMS_MG_vests =						[							// Vests for MG Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -849,16 +828,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_TacVest_gen_F",
 											"V_PlateCarrier1_rgr_noflag_F",
 											#endif
-											/*"V_PlateCarrierH_CTRG",
-											"V_PlateCarrierSpec_rgr",
-											"V_PlateCarrierGL_blk",
-											"V_PlateCarrierGL_mtp",
-											"V_PlateCarrierGL_rgr",
-											"V_PlateCarrierSpec_blk",
-											"V_PlateCarrierSpec_mtp",
-											"V_PlateCarrierL_CTRG",
-											"V_TacVest_blk_POLICE",*/
-											"V_PlateCarrierIA2_dgtl"
+											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
+											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
+											"V_RebreatherIA", //Rebreather [AAF] Armor Level I
+											"V_Press_F" //	Vest (Press) Armor Level II
 										];
 	DMS_MG_backpacks =					[							// Backpacks for MG Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -957,30 +930,13 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_sniper_items =					[							// Items for Sniper Class AI (Loot stuff that goes in uniform/vest/backpack)
 											//VIRUZ Medicos
 											"ItemHeatPack",
-											"ItemBloodbag",
 											"ItemAntibiotic",
-											"ItemPainkiller",
-											"ItemEpinephrine",
-											"ItemMorphine",
 											"ItemBandage",
-											
-											
+
 											//Viruz Drinks
 											"ItemWaterBottle",
-											"ItemSodaOriginal",
-											"ItemSodaDiet",
-											"ItemSodaHam",
-											"ItemSodaLaranja",
-											"ItemSodaLimao",
-											"ItemSodaBeergolden",
-											
+
 											//Viruz Food
-											"FoodCanWBBeans",
-											"FoodCanMHBeans",
-											"FoodCanEsardines",
-											"FoodCanChickenSoup",
-											"FoodCanSpaghetti2",
-											"FoodCanOranges",
 											"FoodMRE"
 										];
 	DMS_sniper_equipment =				[							// Equipment for Sniper Class AI (stuff that goes in toolbelt slots)
@@ -1024,10 +980,18 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"H_HelmetSpecO_ghex_F",
 											"H_HelmetLeaderO_ghex_F",
 											#endif
-											"H_HelmetSpecB_paint1",
-											"H_HelmetIA_camo",
-											"H_HelmetLeaderO_ocamo",
-											"H_HelmetLeaderO_oucamo"
+											"H_HelmetB_light_sand", //Light Combat Helmet (Sand) Level I
+											"H_HelmetB_plain_blk", //Combat Helmet (Black) Level II
+											"H_Booniehat_indp",
+											"H_Cap_headphones",
+											"H_Cap_blu",
+											"H_Cap_red",
+											"H_Cap_oli",
+											"H_Cap_blk_CMMG",
+											"H_MilCap_ocamo",
+											"H_MilCap_oucamo",
+											"H_ShemagOpen_khk",
+											"H_Beret_Colonel"
 										];
 	DMS_sniper_clothes =				[							// Uniforms for Sniper Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -1056,16 +1020,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_PlateCarrierGL_tna_F",
 											"V_PlateCarrier2_rgr_noflag_F",
 											#endif
-											/*"V_PlateCarrierH_CTRG",
-											"V_PlateCarrierSpec_rgr",
-											"V_PlateCarrierGL_blk",
-											"V_PlateCarrierGL_mtp",
-											"V_PlateCarrierGL_rgr",
-											"V_PlateCarrierSpec_blk",
-											"V_PlateCarrierSpec_mtp",
-											"V_PlateCarrierL_CTRG",
-											"V_TacVest_blk_POLICE",*/
-											"V_PlateCarrierIA2_dgtl"
+											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
+											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
+											"V_RebreatherIA", //Rebreather [AAF] Armor Level I
+											"V_Press_F" //	Vest (Press) Armor Level II
 											
 										];
 	DMS_sniper_backpacks =				[							// Backpacks for Sniper Class
@@ -1369,8 +1327,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"optic_MRCO",
 											"optic_SOS",
 											"optic_DMS",
-											"optic_LRPS",
-											"optic_Nightstalker"			// Nightstalker scope lost thermal in Exile v0.9.4
+											"optic_LRPS"
 										];
 	DMS_BoxBackpacks =					[							//List of backpacks that can spawn in a crate
 											"B_Bergen_rgr",
@@ -1404,7 +1361,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"CUP_srifle_G22_des_SBPMII",
 											"CUP_5Rnd_762x67_G22"
 										];
-	DMS_RareLootChance					= 10;						// Percentage Chance to spawn rare loot in any crate | Default: 10%
+	DMS_RareLootChance					= 20;						// Percentage Chance to spawn rare loot in any crate | Default: 10%
 
 	// Vehicles
 	DMS_ArmedVehicles =					[							// List of armed vehicles that can spawn
@@ -1455,10 +1412,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 										];
 
 	DMS_ReinforcementHelis =			[							// List of helis that can spawn for AI paratrooper reinforcements.
-											//"B_Heli_Transport_01_camo_F"		// Ghosthawk: You'll have to whitelist this in infistar if you want to use it.
+											"B_Heli_Transport_01_camo_F"		// Ghosthawk: You'll have to whitelist this in infistar if you want to use it.
 										] + DMS_TransportHelis;
 
 	DMS_CarThievesVehicles =			[							// List of vehicles that can spawn in the "car thieves" mission. By default, it's just "DMS_MilitaryVehicles" and "DMS_TransportTrucks".
-											//"Exile_Car_Offroad_Armed_Guerilla01"
+											"O_T_LSV_02_unarmed_F"
 										] + DMS_MilitaryVehicles + DMS_TransportTrucks;
 /* Loot Settings */

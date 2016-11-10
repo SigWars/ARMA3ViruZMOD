@@ -1,4 +1,4 @@
-private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_cfgtype","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx"];
+private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_cfgtype","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx","_RetiredSize","_cansGear","_maxCount","_qtyCans"];
 _getcraftingClassName = _this select 0;
 _quantityToCraft = _this select 1;
 _quantityCrafted = 0;
@@ -100,9 +100,45 @@ if (_metSideConditions) then {
 					{
 						_componentQuantity = _x select 0;
 						_componentItemClassName = _x select 1;
+						
 						for "_i" from 1 to _componentQuantity do 
 						{
-							player removeItem _componentItemClassName;
+							_RetiredSize = getNumber(configFile >> "CfgMagazines" >> _componentItemClassName >> "RetiredSize");
+							if (_RetiredSize > 0) then {
+							
+							_cansGear = [_componentItemClassName, player] call PTm_fnc_filterGear;
+							_maxCount = getNumber (configFile >> "CfgMagazines" >> _componentItemClassName >> "count");
+							_qtyCans = _cansGear select 0 select 1;
+							
+							if(_qtyCans > 0) then{
+								_qtyCans = _qtyCans - _RetiredSize;
+								
+								player removeItem _componentItemClassName;
+								
+								_nearByPile= nearestObjects [getPosATL player, ["GroundWeaponHolder"],2];
+								
+								if (count _nearByPile == 0) then { 
+									_itemOut = createVehicle ["GroundWeaponHolder", getPosATL player, [], 1, "CAN_COLLIDE"];
+								if ( isClass (configFile >> "CfgMagazines" >> _componentItemClassName)) then {
+									_itemOut addMagazineAmmoCargo [_componentItemClassName, 1, _qtyCans];
+								};
+									player reveal _itemOut;
+								}else{
+								
+									_itemOut = _nearByPile select 0;
+								if ( isClass (configFile >> "CfgMagazines" >> _componentItemClassName)) then {
+									_itemOut addMagazineAmmoCargo [_componentItemClassName, 1, _qtyCans];
+								};
+									player reveal _itemOut;	
+								};	
+								
+								hint format ["_cansGear: %1  |  _qtyCans: %2",_cansGear,_qtyCans];
+							};
+						
+							}else{
+							
+								player removeItem _componentItemClassName;
+							};
 						};
 					}forEach _components;
 					

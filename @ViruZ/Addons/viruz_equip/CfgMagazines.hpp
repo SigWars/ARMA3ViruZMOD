@@ -3,7 +3,132 @@ class CfgMagazines {
 	class HandGrenade;
 	
 	
-	///////////////////////////////////CRAFTING RECIPES/////////////////////////////////////
+	///////////////////////////////////FERRAMENTAS///////////////////////////////////////////
+	
+	class Viruz_Hammer : CA_Magazine {
+	
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Hammer";
+		model="\A3\Structures_F\Items\Tools\Hammer_F.p3d";
+		picture = "\viruz_equip\viruzico\hammer.paa";
+		descriptionShort = "ViruZ";
+		mass=15;
+	};
+	
+	class Viruz_Serrote : CA_Magazine {
+
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "Saw";
+		model="\A3\Structures_F\Items\Tools\Saw_F.p3d";
+		picture = "\viruz_equip\viruzico\saw.paa";
+		descriptionShort = "ViruZ";
+		mass=15;
+	};
+	
+	class Viruz_Wrench : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "Wrench";
+		model="\A3\Structures_F\Items\Tools\Wrench_F.p3d";
+		picture = "\viruz_equip\viruzico\Wrench.paa";
+		descriptionShort = "ViruZ";
+		mass=8;
+	};
+	
+	class Viruz_Pliers : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "Pliers";
+		model="\A3\Structures_F\Items\Tools\Pliers_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_pliers.paa";
+		descriptionShort = "ViruZ";
+		mass=8;
+	};
+	
+	class Viruz_File : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "File (tools)";
+		model="\A3\Structures_F\Items\Tools\File_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_file.paa";
+		descriptionShort = "ViruZ";
+		mass=8;
+	};
+	
+	class Viruz_Grinder : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "Grinder";
+		model="\A3\Structures_F\Items\Tools\Grinder_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_grinder.paa";
+		descriptionShort = "ViruZ";
+		mass=25;
+	};
+	
+	class Viruz_Screwdriver : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "Screwdriver (Phillips)";
+		model="\A3\Structures_F\Items\Tools\Screwdriver_V2_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_screwdriver.paa";
+		descriptionShort = "ViruZ";
+		mass=8;
+	};
+	
+	class Viruz_Gloves : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "Gloves";
+		model="\A3\Structures_F\Items\Tools\Gloves_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_gloves.paa";
+		descriptionShort = "ViruZ";
+		mass=4;
+	};
+	
+	class Viruz_Drill : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName = "Drill";
+		model="\A3\Structures_F\Items\Tools\DrillAku_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_drill.paa";
+		descriptionShort = "ViruZ";
+		mass=8;
+	};
+	
+	class Viruz_CanisterOil : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 10;
+		displayName = "Canister (Oil)";
+		model="\A3\Structures_F\Items\Vessels\CanisterOil_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_canisteroil.paa";
+		descriptionShort = "ViruZ";
+		mass=20;
+	};
+	
+	class Viruz_DuctTape : CA_Magazine {
+		scope = public;
+		type = 256;
+		count = 10;
+		displayName = "DuctTape";
+		model="\A3\Structures_F_EPA\Items\Tools\DuctTape_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_ducttape.paa";
+		descriptionShort = "ViruZ";
+		mass=8;
+	};
+	
+	///////////////////////////////////RESOURCES////////////////////////////////////////////	
 	class Viruz_Rock: CA_Magazine
 	{
 		scope = public;
@@ -25,6 +150,53 @@ class CfgMagazines {
 		picture = "\viruz_equip\viruzico\viruz_clinquer_ca.paa";
 		descriptionShort = "Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.";
 		mass=4;
+	};
+	///////////////////////////////////BUILD ITENS/////////////////////////////////////
+	class Viruz_CinderBlock: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName="CinderBlock";
+		model="\viruz_equip\items\viruz_cinderblock.p3d";
+		picture = "\viruz_equip\viruzico\cinderblock.paa";
+		descriptionShort = "ViruZ";
+		mass=5;
+	};
+	
+	class Viruz_Woodboard: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 10;
+		displayName="WoodBoard";
+		model="\viruz_equip\items\viruz_woodboard.p3d";
+		picture = "\viruz_equip\viruzico\woodboard_ca.paa";
+		descriptionShort = "ViruZ";
+		mass=10;
+	};
+	
+	class Viruz_IronBar: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName="IronBar";
+		model="\viruz_equip\items\viruz_ironbar.p3d";
+		picture = "\viruz_equip\viruzico\viruz_ironbar.paa";
+		descriptionShort = "ViruZ";
+		mass=15;
+	};
+	
+	class equip_nails : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Box of Nails";
+		model = "\A3\Structures_F_EPA\Items\Tools\Matches_F.p3d";
+		picture = "\viruz_equip\viruzico\nail_box_ca.paa";
+		descriptionShort = $STR_EQUIP_DESC_3;
+		mass = 4;
 	};
 	
 	class Viruz_CementBag: CA_Magazine
@@ -149,6 +321,18 @@ class CfgMagazines {
 
 	//////////////////////////////////FERRAMENTAS///////////////////////////////////////////
 	
+	class Viruz_Saucepan: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 1;
+		displayName="Saucepan";
+		model="\viruz_equip\items\viruz_saucepan.p3d";
+		picture = "\viruz_equip\viruzico\viruz_saucepan_ca.paa";
+		descriptionShort = "ViruZMod!!!";
+		mass=6;
+	};
+	
 	class itemCanOpener: CA_Magazine {
 		scope = public;
 		count = 1;
@@ -176,23 +360,23 @@ class CfgMagazines {
 			};
 		};
 	};
-	
-	class equip_nails : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = "Box of Nails";
-		model = "\A3\Structures_F_EPA\Items\Tools\Matches_F.p3d";
-		picture = "\viruz_equip\viruzico\nail_box_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_3;
-		mass = 4;
-	};
-	
-	
-	
 	///////////////////////////////////////////////////////////////////////////////////////
 	
 	//////////////////////////////////MEDICOS//////////////////////////////////////////////
+	
+	class Viruz_Antiseptic: CA_Magazine
+	{
+		scope = public;
+		type = 256;
+		count = 10;
+		RetiredSize = 2;
+		ammo = "Antiseptic";
+		displayName="Antiseptic";
+		model="\A3\Structures_F_EPA\Items\Medical\DisinfectantSpray_F.p3d";
+		picture = "\viruz_equip\viruzico\viruz_antiseptic_ca.paa";
+		descriptionShort = "They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.";
+		mass=3;
+	};
 	
 	class ItemBandage : CA_Magazine {
 		scope = public;
@@ -332,6 +516,7 @@ class CfgMagazines {
 		};
 	};*/
 	
+	
 	class ItemEtool : CA_Magazine {
 		scope = public;
 		displayName = "Shovel";
@@ -390,41 +575,6 @@ class CfgMagazines {
 		mass=80;
 	};
 	
-	class Viruz_Hammer : CA_Magazine {
-	
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = "Hammer";
-		model="\A3\Structures_F\Items\Tools\Hammer_F.p3d";
-		picture = "\viruz_equip\viruzico\hammer.paa";
-		descriptionShort = "ViruZ";
-		mass=15;
-	};
-	
-	class Viruz_Serrote : CA_Magazine {
-
-		scope = public;
-		type = 256;
-		count = 1;
-		displayName = "Saw";
-		model="\A3\Structures_F\Items\Tools\Saw_F.p3d";
-		picture = "\viruz_equip\viruzico\saw.paa";
-		descriptionShort = "ViruZ";
-		mass=15;
-	};
-	
-	class Viruz_Wrench : CA_Magazine {
-		scope = public;
-		type = 256;
-		count = 1;
-		displayName = "Wrench";
-		model="\A3\Structures_F\Items\Tools\Wrench_F.p3d";
-		picture = "\viruz_equip\viruzico\Wrench.paa";
-		descriptionShort = "ViruZ";
-		mass=8;
-	};
-	
 	class Viruz_HandCan : CA_Magazine {
 	
 		scope = public;
@@ -473,31 +623,6 @@ class CfgMagazines {
 		descriptionShort = "ViruZ";
 		mass=5;
 	};
-	
-	class Viruz_CinderBlock: CA_Magazine
-	{
-		scope = public;
-		type = 256;
-		count = 1;
-		displayName="CinderBlock";
-		model="\viruz_equip\items\viruz_cinderblock.p3d";
-		picture = "\viruz_equip\viruzico\cinderblock.paa";
-		descriptionShort = "ViruZ";
-		mass=5;
-	};
-	
-	class Viruz_Woodboard: CA_Magazine
-	{
-		scope = public;
-		type = 256;
-		count = 10;
-		displayName="WoodBoard";
-		model="\viruz_equip\items\viruz_woodboard.p3d";
-		picture = "\viruz_equip\viruzico\woodboard_ca.paa";
-		descriptionShort = "ViruZ";
-		mass=10;
-	};
-	
 	///////////////////////////////////////////////////////////////////////////////////////
 	
 	
