@@ -6,7 +6,7 @@
 		hiddenSelections[] = {};	/// default caps don't have any changeable selections
 		hitpointName = "HitHead";	/// what hitpoint is covered with the cap to have additional protection
 	};
-	/*class VZ_zedcap: ItemCore
+	class VZ_zedcap: ItemCore
 	{
 		scope = 2; /// scope needs to be 2 to have a visible class
 		displayName  = "Police cap"; /// how would the stuff be displayed in inventory and on ground
@@ -62,4 +62,4 @@
 			passThrough = 1; /// this cap doesn't provide any protection
 			hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
 		};		
-	};*/
+	};

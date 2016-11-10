@@ -67,10 +67,10 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_poloshirt_1_co.paa"};
 	};
 	
-	/*class z_policeman : zZombie_Base {
+	class z_policeman : zZombie_Base {
 		_generalMacro = "z_policeman";
 		hiddenSelectionsTextures[] = {"\A3\characters_f\civil\data\c_poloshirt_2_co.paa"};
-	};*/
+	};
 	
 	class z_suit1 : zZombie_Base {
 		_generalMacro = "z_suit1";
@@ -875,6 +875,9 @@ class VZ_Policeman : zZombie_Base
 	};
 };
 
+
+
+
 class VZ_Doctor_base: zZombie_Base
 	{
 		_generalMacro = "VZ_Doctor_base";
@@ -914,8 +917,8 @@ class VZ_Doctor: VZ_Doctor_base
 			\rds_a2port_cman\doctor\data\doctor_co.paa
 		};
 		attendant = 1;
-		linkedItems[] = {""}; /// items directly in inventory slots
-		respawnLinkedItems[] = {""};
+		linkedItems[] = {"VZ_maskmed"}; /// items directly in inventory slots
+		respawnLinkedItems[] = {"VZ_maskmed"};
 		//uniformClass = "rds_uniform_doctor";
 	};
 
@@ -944,8 +947,8 @@ class VZ_Assistant: VZ_Doctor_base
 		{
 			\rds_a2port_cman\doctor\data\doctor_3_co.paa
 		};
-		linkedItems[] = {""}; /// items directly in inventory slots
-		respawnLinkedItems[] = {""};
+		linkedItems[] = {"VZ_maskmed"}; /// items directly in inventory slots
+		respawnLinkedItems[] = {"VZ_maskmed"};
 		//uniformClass = "rds_uniform_assistant";
 	};
 	//New SigWar
@@ -959,10 +962,10 @@ class VZ_zed: zZombie_Base /// class visible in editor
 		backpack = "";
 		magazines[] = {};
 		respawnMagazines[] = {};
-		linkedItems[] = {""}; /// items directly in inventory slots
-		respawnLinkedItems[] = {""};
+		linkedItems[] = {"VZ_zedcap"}; /// items directly in inventory slots
+		respawnLinkedItems[] = {"VZ_zedcap"};
 	};
-	/*class VZ_woman: zZombie_Base /// class visible in editor
+	class VZ_woman: zZombie_Base /// class visible in editor
 	{
 		scope = 2; /// scope needs to be 2 to have a visible class
 		displayName = "VIRUZ Woman survivor"; /// what's displayed in editor or on cursor over
@@ -974,7 +977,7 @@ class VZ_zed: zZombie_Base /// class visible in editor
 		respawnMagazines[] = {};
 		linkedItems[] = {}; /// items directly in inventory slots
 		respawnLinkedItems[] = {};
-	};*/
+	};
 	class VZ_boomer: zZombie_Base /// class visible in editor
 	{
 		scope = 2; /// scope needs to be 2 to have a visible class
@@ -991,7 +994,7 @@ class VZ_zed: zZombie_Base /// class visible in editor
 		cost = 1000000;
 	
 	};
-	/*class VZ_officer: zZombie_Base /// class visible in editor
+	class VZ_officer: zZombie_Base /// class visible in editor
 	{
 		scope = 2; /// scope needs to be 2 to have a visible class
 		displayName = "VIRUZ Officer zombie"; /// what's displayed in editor or on cursor over
@@ -1004,7 +1007,7 @@ class VZ_zed: zZombie_Base /// class visible in editor
 		linkedItems[] = {"VZ_hatofficer"}; /// items directly in inventory slots
 		respawnLinkedItems[] = {"VZ_hatofficer"};
 	};
-	/*class VZ_zedwoman: zZombie_Base /// class visible in editor
+	class VZ_zedwoman: zZombie_Base /// class visible in editor
 	{
 		scope = 2; /// scope needs to be 2 to have a visible class
 		displayName = "VIRUZ Woman zombie"; /// what's displayed in editor or on cursor over
@@ -1016,7 +1019,7 @@ class VZ_zed: zZombie_Base /// class visible in editor
 		respawnMagazines[] = {};
 		linkedItems[] = {}; /// items directly in inventory slots
 		respawnLinkedItems[] = {};
-	};*/
+	};
 	class VZ_zedmalebig: zZombie_Base /// class visible in editor
 	{
 		scope = 2; /// scope needs to be 2 to have a visible class
@@ -1040,7 +1043,7 @@ class VZ_zed: zZombie_Base /// class visible in editor
 		backpack = "";
 		magazines[] = {};
 		respawnMagazines[] = {};
-		linkedItems[] = {""}; /// items directly in inventory slots
-		respawnLinkedItems[] = {""};
+		linkedItems[] = {"VZ_maskmed"}; /// items directly in inventory slots
+		respawnLinkedItems[] = {"VZ_maskmed"};
 	};
 };

@@ -1,3 +1,4 @@
+#include "BIS_AddonInfo.hpp"
 #define ReadAndWrite		0
 #define ReadAndCreate		1
 #define ReadOnly		2

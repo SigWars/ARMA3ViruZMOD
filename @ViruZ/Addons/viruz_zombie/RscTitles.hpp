@@ -16,7 +16,7 @@ class RscTitles {
 			y = "0.00001 * safezoneH + safezoneY";
 			w = "1 * safezoneW";
 			h = "1 * safezoneH";
-			text = "\viruz_zombie\textures\ui\viruz_screen_death_ca.paa";
+			text = "\viruz_zombie\textures\ui\screen_death_ca.paa";
 		};
 	};
 	
