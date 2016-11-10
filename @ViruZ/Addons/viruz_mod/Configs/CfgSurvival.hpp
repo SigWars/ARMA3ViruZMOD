@@ -1,16 +1,5 @@
 class CfgSurvival {
-/*
-	class Inventory {
-		class Default {
-			uniforms[] = {"U_C_Citizen_clothes1","U_C_Citizen_clothes2","U_C_Citizen_clothes3"};
-			magazines[] = {"ItemBandage","ItemPainkiller"};
-			weapons[] = {};
-			backpackWeapon = "HandFlashlight";
-			backpack = "B_FieldPack_cbr";
-			vest = "";
-		};
-	};
-*/
+
 	class Meat {
 		class Default {
 			yield = 2;
@@ -25,15 +14,15 @@ class CfgSurvival {
 			rawfoodtype = "FoodmeatRaw";
 		};
 		class Goat_Base_F: Default { //сам козел базовый класс на всякий пожарный
-			yield = 4;
+			yield = 3;
 			rawfoodtype = "FoodmeatRaw";
 		};
 		class Sheep_random_F: Default { //овца
-			yield = 6;
+			yield = 3;
 			rawfoodtype = "FoodmeatRaw";
 		};
 		class Goat_random_F: Default { //еще козел
-			yield = 4;
+			yield = 3;
 			rawfoodtype = "FoodmeatRaw";
 		};
 		class Snake_random_F: Default { // змея
@@ -41,7 +30,7 @@ class CfgSurvival {
 			rawfoodtype = "FoodmeatRaw";
 		};
 		class Goat_small_random_F: Default { // еще козел
-			yield = 4;
+			yield = 3;
 			rawfoodtype = "FoodmeatRaw";
 		};
 		class Hen_random_F: Default { //курица

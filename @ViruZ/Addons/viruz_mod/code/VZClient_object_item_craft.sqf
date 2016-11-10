@@ -1,4 +1,4 @@
-private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx"];
+private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_cfgtype","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx"];
 _getcraftingClassName = _this select 0;
 _quantityToCraft = _this select 1;
 _quantityCrafted = 0;
@@ -8,6 +8,7 @@ _returnedItems = getArray(_recipeConfig >> "returnedItems");
 _interactionModelGroupClassName = getText(_recipeConfig >> "requiredInteractionModelGroup");
 _components = getArray(_recipeConfig >> "componentes");
 _tools = getArray(_recipeConfig >> "ferramentas");
+_cfgtype = _returnedItemClassName call ViruZClient_gear_getConfigNameByClassName;
 _equippedMagazines = magazines player;
 _addedItems = [];
 _concreteMixer = objNull;
@@ -65,13 +66,11 @@ if( _interactionModelGroupClassName != "" ) then
 		};
 	};*/
 	
-	if !(_foundObject) then
-	{
+	if !(_foundObject) then {
 		_metSideConditions = false;
 	};
 };
-if (_metSideConditions) then
-{
+if (_metSideConditions) then {
 	for "_i" from 1 to _quantityToCraft do 
 	{
 		_hasAllComponents = true;
@@ -83,10 +82,9 @@ if (_metSideConditions) then
 			{
 				_hasAllComponents = false;
 			};
-		}
-		forEach _components;
-		if (_hasAllComponents) then
-		{
+		}forEach _components;
+		
+		if (_hasAllComponents) then	{
 		/*
 			if !(isNull _concreteMixer) then 
 			{
@@ -106,8 +104,8 @@ if (_metSideConditions) then
 						{
 							player removeItem _componentItemClassName;
 						};
-					}
-					forEach _components;
+					}forEach _components;
+					
 					{
 						_returnedItemQuantity = _x select 0;
 						_returnedItemClassName = _x select 1;
@@ -137,45 +135,27 @@ if (_metSideConditions) then
 							player reveal _itemOut;	
 						};
 							//player addItem _returnedItemClassName;
-					} 
-					forEach _returnedItems;
+					}forEach _returnedItems;
+						//Chamar Som
+					_sfx = getText(configFile >> _cfgtype >> _returnedItemClassName >> "sfx");
+						if !(_sfx == "") then {
+						[player,_sfx,0,false,5] call viruz_zombieSpeak;
+					};
 					_quantityCrafted = _quantityCrafted + 1;
 				};
 			//};
 		//};
 	};
 };
-if (_quantityCrafted > -1) then 
-{
-	if (_quantityCrafted > 0) then
-	{	
-		//_feedbackMessage = "";
-		
-		//Chamar Som
-		_sfx = getText(configFile >> "CfgMagazines" >> _returnedItemClassName >> "sfx");
-		if !(_sfx == "") then {
-			[player,_sfx,0,false,5] call viruz_zombieSpeak;
-		};
-		
+if (_quantityCrafted > 0) then {	
 		{
-			_returnedItemClassName = _x select 0;
-			_returnedItemQuantity = _x select 1;
-			_returnedItemName = getText(configFile >> "CfgMagazines" >> _returnedItemClassName >> "displayName");
-			
-			/*
-			if (_feedbackMessage != "") then 
-			{
-				_feedbackMessage = _feedbackMessage + "<br/>";
-			};
-			_feedbackMessage = _feedbackMessage + format ["+%1x %2", _returnedItemQuantity, _returnedItemName];*/
-		}
-		forEach _addedItems;
+			_returnedItemName = getText(configFile >> _cfgtype >> _returnedItemClassName >> "displayName");			
+						
+		}forEach _addedItems;
 		
 		cutText [format["Crafting completed! %1 %2 Crafted",_returnedItemQuantity,_returnedItemName], "PLAIN DOWN"];
-	}
-	else 
-	{
+	}else{
 		cutText [format["Failed to craft!"], "PLAIN DOWN"];
 	};
-};
+	
 true

@@ -5,7 +5,7 @@
 
 if (!viruz_isSwimming) then
 {
-	createDialog "horde_journal_front_cover";
+	//createDialog "horde_journal_front_cover";
 };
 
 // if (alive player) then {

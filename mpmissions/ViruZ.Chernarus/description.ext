@@ -36,15 +36,8 @@ diagHit = 1;
 #include "Configs\CfgCrafting\CfgCrafting.hpp" 	// Craft Recipes  //precisa adicionar na vehicles allowed do server caso não seja magazine
 #include "Configs\CfgMap\Chernarus.hpp"			// Arvores / Metal / Pedra etc..
 #include "snap_build\points.hpp"
-/*#include "Configs\extra_rc.hpp" 				// VZgroup
-#include "dzgm\defines.hpp"
 
-class RscTitles
-{
-    #include "dzgm\icons.hpp"
-};
-#include "dzgm\groupManagement.hpp"				// VZgroup */
-//#include "Configs\CfgMap\CfgViruzBuildings.hpp" // Objetos que poden ser construidos
+
 
 class cfgGame {
 	
@@ -55,6 +48,9 @@ class cfgGame {
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
 	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi, (segundos)
 	zedsRespawnDelay	= 3;					// Tempo de respawn do zumbi em relação a uma casa em especifico, o tempo é marcado em minutos.(Esta condição é Checada após Checar viruzZedspawnDelay)
+	zombie_hitchance	= 8;					// Chance que o zumbi tem de acertar o player
+	zombie_mindamage	= 0.8;					// Damage minim
+	zombie_adddamage	= 1.2;					// Damage adicional que o zumbi pode dar	
 	maxBuildDistance 	= 50;					// Distancia maxima que podes cosntruir ao redor do gerador
 	maxBuildCount		= 80;					// Quantidade maxima de objetos que pode construir
 	maxAnimals			= 1;					// Quantidade maxima de animais que pode ser spawnado por jogador
@@ -122,7 +118,7 @@ class cfgClima {
 	
 	// Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
 	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
-	maximumOvercast = 0.3;
+	maximumOvercast = 1;
 
 	// When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
 	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);

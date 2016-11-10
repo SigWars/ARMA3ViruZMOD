@@ -300,8 +300,8 @@ class RscTitles
 				text = "";
 				x= 0.933125 * safezoneW + safezoneX;
 				y= 0.159 * safezoneH + safezoneY;
-				w= 128 * pixelW;
-				h= 128 * pixelH;
+				w= 64 * pixelW;
+				h= 64 * pixelH;
 				colorBackground[] = {255,255,255,255};
 				colorText[] = { 255 , 255 , 255 , 255 };
 			};

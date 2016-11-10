@@ -30,7 +30,8 @@ viruz_previousID = 0;
 	while {true} do {
 		player setFatigue 0;
 		player enableStamina false;
-		uiSleep 6;
+		player enableAimPrecision false;
+		uiSleep 10;
 	};
 };
 
@@ -78,5 +79,5 @@ if (!isDedicated) then {
 
 waitUntil {time > 0}; 
 //enableEnvironment true;
-[] execVM "vehicleManager.sqf"; // AgentRev FPS Fix
+//[] execVM "vehicleManager.sqf"; // AgentRev FPS Fix
 //[] execVM "admintools\Activate.sqf";

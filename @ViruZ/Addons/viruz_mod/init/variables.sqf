@@ -157,7 +157,7 @@ boil_tin_cans = [
 	
 ];
 
-viruz_combatLog = "";
+//viruz_combatLog = "";
 canRoll = true;
 
 
@@ -382,7 +382,7 @@ SleepWater =			1440; //minutes (24 hours) default = 1440
 SleepTemperatur	= 		90 / 100;	//Firs Value = Minutes untill Player reaches the coldest Point at night (without other effects! night factor expected to be -1)			//TeeChange
 SleepText=				0;
 //Server Variables
-allowConnection = 		false;
+//allowConnection = 		false;
 isSinglePlayer =		false;
 viruz_serverObjectMonitor = [];
 arrayObjectID = [];
@@ -443,8 +443,8 @@ viruz_resetSelfActions = {
 call viruz_resetSelfActions;
 
 //Engineering variables
-viruz_buildtarget = objNull;
-s_player_lastTarget =	objNull;
+//viruz_buildtarget = objNull;
+//s_player_lastTarget =	objNull;
 s_player_repairActions = [];
 
 //Initialize Medical Variables
@@ -549,11 +549,11 @@ USEC_typeOfWounds = [
 ];
 
 //Initialize Zombie Variables
-viruz_zombieTargetList = [
+/*viruz_zombieTargetList = [
 	["SoldierWB",50],
 	["Air",500],
 	["LandVehicle",200]
-];
+];*/
 viruzHit = [];
 viruzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 viruzSaveGroup = []; 		//use to save group in DB
@@ -562,12 +562,12 @@ viruzHideBody = objNull;
 //holster
 dazy_keyWeapon = profileNamespace getVariable["viruz_Holster", 35]; // 35 = H
 //ViruZ settings
-Tempo_Pulado = 0;
-viruz_dawn = 60;
-viruz_dusk = 120;
-VIRUZ_agentnumber = 0;
-viruz_animalDistance = 300;
-viruz_zSpawnDistance = 500;
+//Tempo_Pulado = 0;
+//viruz_dawn = 60;
+//viruz_dusk = 120;
+//VIRUZ_agentnumber = 0;
+viruz_animalDistance = 300; //used in player_animal.check to set max spawn distance to animals
+viruz_zSpawnDistance = 500; //used by server to set trigger distance to spawn zombies
 
 
 viruz_maxAnimals = call {
@@ -691,8 +691,8 @@ if(!isDedicated) then {
 		if (isNil "_zedsRespawnDelay") then {3} else {_zedsRespawnDelay}
 	};
 	viruz_spawnWait =		-120;
-	viruz_lootDelay =		3;
-	viruz_lootWait =			-300;
+	//viruz_lootDelay =		3;
+	//viruz_lootWait =			-300;
 	viruz_spawnZombies =		0;
 	//used to count global zeds around players
 	viruz_CurrentZombies = 0;

@@ -4,7 +4,6 @@ if (!isDedicated) then {
 	_config1 = 	configFile >> "CfgMagazines" >> "FoodEdible";
 	_config2 = 	configFile >> "CfgWeapons" >> "Loot";
 
-//	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 //	player_ReammoMagazines =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_ReammoMagazines.sqf";
 	vz_playerAutorun =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_autorun.sqf";
 	ptm_fnc_getInventory =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_getInventory.sqf";
@@ -13,11 +12,9 @@ if (!isDedicated) then {
 	HandFlashLight_monitor =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\HandFlashLight_monitor.sqf";
 	maniken_gearSync =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\maniken_gearSync.sqf";
 	player_addEventHandlers =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\init\player_addEventHandlers.sqf";
-//	player_ObjectInBuildingCheck = compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_ObjectInBuildingCheck.sqf";
 	MP_say =					compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\say.sqf";
 	MP_SwitchMove =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\switchmove.sqf";
 	MP_PlayMove =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\PlayMove.sqf";
-//	BIS_Effects_Burn = 			compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf"; 
 	player_zombieCheck = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_zombieCheck.sqf";	//Run on a players computer, checks if the player is near a zombie
 	player_zombieAttack = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_zombieAttack.sqf";	//Run on a players computer, causes a nearby zombie to attack them
 	fnc_buildingPositions = 	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_buildingPositions.sqf"; //check build locations to spawn zombie
@@ -35,11 +32,9 @@ if (!isDedicated) then {
 	building_spawnLoot =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\building_spawnLoot.sqf";
 	player_taskHint =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_taskHint.sqf";
 	building_spawnZombies =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\building_spawnZombies.sqf";
-	//animal_monitor =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\animal_monitor.sqf";
 	building_monitor =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\building_monitor.sqf";
 	player_fired =				compileFinal preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
 	player_packTent =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_packTent.sqf";
-	//control_zombieAgent = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\control_zombieAgent.sqf";
 	player_updateGui =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_updateGui.sqf";
 	player_crossbowBolt =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_crossbowBolt.sqf";
 	spawn_flies = 				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\spawn_flies.sqf";
@@ -86,7 +81,6 @@ if (!isDedicated) then {
 	player_useMeds =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_useMeds.sqf";
 	player_fillWater = 			compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\water_fill.sqf";
 	player_makeFire =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_makefire.sqf";
-	//player_chopWood =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_chopWood.sqf";
 	player_build =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_build.sqf";
 	player_wearClothes =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_wearClothes.sqf";
 	player_dropWeapon =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_dropWeapon.sqf";
@@ -98,18 +92,9 @@ if (!isDedicated) then {
 	jerry_fill =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\jerry_fill.sqf";
 	
 	//ui
-	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\ui_selectSlot.sqf";
 	player_gearSync	=			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_gearSync.sqf";
 	player_gearSet	=			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_gearSet.sqf";
 	ui_changeDisplay = 			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\ui_changeDisplay.sqf";
-	
-	//playerstats
-	horde_epeen_fnc_fill_page = compile preProcessFile "\z\addons\viruz_mod\actions\playerstats\fill_page_fnc.sqf";
-	horde_epeen_determine_humanity_fnc = compile preProcessFile "\z\addons\viruz_mod\actions\playerstats\determine_humanity_fnc.sqf";
-	horde_epeen_setText_journal_fnc = compile preProcessFile "\z\addons\viruz_mod\actions\playerstats\epeen_setText_journal.sqf";
-	horde_epeen_setText_humanity_fnc = compile preProcessFile "\z\addons\viruz_mod\actions\playerstats\epeen_setText_humanity.sqf";
-	horde_epeen_setText_stats_fnc = compile preProcessFile "\z\addons\viruz_mod\actions\playerstats\epeen_setText_stats.sqf";
-	horde_epeen_show_humanity_fnc = compile preProcessFile "\z\addons\viruz_mod\actions\playerstats\show_humanity_fnc.sqf";
 	
 	//System
 	player_monitor =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\player_monitor.sqf";
@@ -119,12 +104,9 @@ if (!isDedicated) then {
 //	onPreloadFinished 			"viruz_preloadFinished = true;";
 	
 	//Test
-	SelectedInventoryItem = nil;
 	VZClient_util_world_isFireInRange = 						compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_util_world_isFireInRange.sqf";
 	VZClient_util_model_isNearby =								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_util_model_isNearby.sqf";
-	VZClient_util_model_isLookingAt = 							compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_util_model_isLookingAt.sqf";
 	VZClient_object_item_craft = 								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_object_item_craft.sqf";
-	VZClient_item_getCrafting = 								compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_item_getCrafting.sqf";
 	VZClient_item_getCrafting =									compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_item_getCrafting.sqf";
 	VZClient_gui_itemDescription_event_onTabelaButton = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_gui_itemDescription_event_onTabelaButton.sqf";
 	VZClient_gui_itemDescription_event_onCraftingDoubleClick =  compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\VZClient_gui_itemDescription_event_onCraftingDoubleClick.sqf";
@@ -134,11 +116,6 @@ if (!isDedicated) then {
 	ViruZClient_gear_getConfigNameByClassName =					compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZClient_gear_getConfigNameByClassName.sqf";
 	ViruZClient_gear_getConfigEntryByDisplayName =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZClient_gear_getConfigEntryByDisplayName.sqf";
 	
-	
-	//Crafting
-	fn_updateCraftUI = compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_updateCraftUI.sqf";
-	player_craftItem = compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_craftItem.sqf";
-	player_checkRecipe = compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_checkRecipe.sqf";
 	
 	//ViruZ
 	player_goFishing =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\actions\player_goFishing.sqf"; //fishing
@@ -345,10 +322,6 @@ if (!isDedicated) then {
 			};			
 		};
 		
-		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (time - viruz_lastCheckBit > 10)) then {
-			viruz_lastCheckBit = time;
-			call viruz_forceSave;
-		};
 		if (_dikCode in actionKeys "Headlights") then {
 			if (currentWeapon player == "HandFlashlight") then {
 				if !(player isFlashlightOn (currentWeapon player)) then {
@@ -372,11 +345,32 @@ if (!isDedicated) then {
 			_idOnPause = [] spawn viruz_onPause;
 		};
 		*/
-		//Hide Command menu by SigWar
-		if (_dikCode == 0x02 or _dikCode == 0x03 or _dikCode == 0x04 or _dikCode == 0x05 or _dikCode == 0x06) then {
+		//Hide Command and switch Primary weapon
+		if (_dikCode == 0x02) then {
+			showCommandingMenu "";
+			player selectWeapon (primaryWeapon player);
+			_handled = true;
+		};
+		//Hide Command and switch handgun weapon
+		if (_dikCode == 0x03) then {
+			showCommandingMenu "";
+			player selectWeapon (handgunWeapon player);
+			_handled = true;
+		};
+		
+		//Hide Command and switch melee weapon
+		if (_dikCode == 0x04) then {
+			showCommandingMenu "";
+			player selectWeapon (secondaryWeapon player);
+			_handled = true;
+		};
+		
+		//Hide Command and switch melee weapon
+		if (_dikCode == 0x05 or _dikCode == 0x06) then {
 			showCommandingMenu "";
 			_handled = true;
 		};
+		
 		//Autorun
 		if (_dikCode == 0xD2) then {
 			if (vzautoRun > 0 and !(surfaceisWater position player)) then {r_interrupt = false; vzautoRun = -1; player switchmove "";} else {vzautoRun = 1; []spawn vz_playerAutorun;};

@@ -10,7 +10,10 @@ ADD ACTIONS FOR SELF
 	
 */
 
-private["_menClose","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_vehicle","_inVehicle","_color","_part"];
+private["_vehicle","_inVehicle","_color","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasbottleitem","_hastinitem","_hasKnife","_hasToolbox","_hasTent","_onLadder",
+"_nearLight","_canPickLight","_canDo","_Structures","_isHarvested","_isVehicle","_isVehicletype","_isMan","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable",
+"_isTent","_isFuel","_isAlive","_isManiken","_canmove","_text","_rawmeat","_hasRawMeat","_allFixed","_hitpoints","_damage","_part","_cmpt","_string","_dogHandle","_lieDown","_warn",
+"_speed"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -88,7 +91,7 @@ if((count _Structures > 0) and !_inVehicle and _canDo) then {
 	player removeAction s_player_fishing;
 	s_player_fishing = -1;
 	};
-	if (_inVehicle and (driver _vehicle != player)) then {
+	if (_inVehicle and (driver _vehicle != player) and _isWater) then {
 		if (s_player_fishing_veh < 0) then {
 			s_player_fishing_veh = _vehicle addAction [localize "STR_ACTION_CAST", "\z\addons\viruz_mod\actions\player_goFishing.sqf",_vehicle, 0.5, false, true];
 		};
@@ -133,7 +136,7 @@ if((count _vehicles > 0) and !_inVehicle and _canDo) then {
 
 //Allow player lock and unlock builds
 if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 15) and (typeOf cursorTarget in VIRUZ_BUILDS + VIRUZ_GATES)) then {
-	private["_building","_locked","_LockerUID","_UIDdono","_savedGroup","_sameGroup","_numDoors","_doorPos","_dist","_doorNum","_maxDist"];
+	private["_building","_casaName","_locked","_LockerUID","_UIDdono","_savedGroup","_sameGroup","_numDoors","_doorPos","_dist","_doorNum","_maxDist"];
 	_building = cursorTarget;
 	_casaName = typeOf _building in VIRUZ_BUILDS + VIRUZ_GATES;
 		
@@ -217,12 +220,10 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 15)
 if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6)) then {	//Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
-	//_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
-	_isVehicletype = typeOf cursorTarget in ["Quadbike_SRV_BLACK", "Quadbike_SRV_BLUE", "Quadbike_SRV_RED","Quadbike_SRV_WHITE","dbo_CIV_ol_bike","dbo_CIV_new_bike"];
+	_isVehicletype = typeOf cursorTarget in ["Quadbike_SRV_BLACK", "Quadbike_SRV_BLUE", "Quadbike_SRV_RED","Quadbike_SRV_WHITE","RDS_tt650_Civ_01","RDS_JAWA353_Civ_01"];
 	_isMan = cursorTarget isKindOf "Man";
 	_ownerID = cursorTarget getVariable ["characterID","0"];
 	_isAnimal = typeOf cursorTarget in ["Fowl_Base_F","Hen_random_F","Cock_random_F","Rabbit_F","Goat_random_F","Goat_small_random_F","Sheep_random_F"];
-	//_isAnimal = cursorTarget isKindOf "Animal_Base_F";
 	_isDog =  (cursorTarget isKindOf "DZ_Pastor" || cursorTarget isKindOf "DZ_Fin");
 	_isZombie = cursorTarget isKindOf "zZombie_Base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
@@ -297,7 +298,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	};
 	*/
 	//flip vehicle
-	if ((_isVehicletype) and !_canmove and _isAlive and (player distance cursorTarget >= 2) and (count (crew cursorTarget))== 0 and ((vectorUp cursorTarget) select 2) < 0.5) then {
+	if ((_isVehicletype) and _isAlive and (player distance cursorTarget >= 2) and (count (crew cursorTarget))== 0) then {
 		if (s_player_flipveh  < 0) then {
 			s_player_flipveh = player addAction [format[localize "str_actions_flipveh",_text], "\z\addons\viruz_mod\actions\player_flipvehicle.sqf",cursorTarget, 1, true, true, "", ""];		
 		};	
@@ -307,14 +308,14 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	};
 	
 	//Allow player to fill jerrycan
-	if(_hasFuelE and _isFuel and _canDo) then {
+	/*if(_hasFuelE and _isFuel and _canDo) then {
 		if (s_player_fillfuel < 0) then {
 			s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\viruz_mod\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
 		};
 	} else {
 		player removeAction s_player_fillfuel;
 		s_player_fillfuel = -1;
-	};
+	};*/
 	
 	if (!alive cursorTarget and _isAnimal and _hasKnife and !_isHarvested and _canDo) then {
 		if (s_player_butcher < 0) then {

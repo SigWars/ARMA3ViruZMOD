@@ -1,0 +1,62 @@
+version=2;
+activeKeys[]={};
+difficulty="Custom";
+class DifficultyPresets
+{
+	defaultPreset="Custom";
+	myArmorCoef=1;
+	groupArmorCoef=1;
+	fadeDistanceStart=40;
+	fadeDistanceSpan=10;
+	recoilCoef=0.5;
+	visionAidCoef=0.5;
+	divingLimitMultiplier=1;
+	animSpeedCoef=0;
+	cancelThreshold=0;
+	showCadetHints=0;
+	showCadetWP=0;
+	class CustomDifficulty
+	{
+		class Options
+		{
+			reducedDamage=0;
+			groupIndicators=0;
+			friendlyTags=0;
+			enemyTags=0;
+			detectedMines=0;
+			commands=0;
+			waypoints=2;
+			weaponInfo=2;
+			stanceIndicator=0;
+			staminaBar=0;
+			weaponCrosshair=1;
+			visionAid=0;
+			thirdPersonView=1;
+			cameraShake=0;
+			scoreTable=0;
+			deathMessages=0;
+			vonID=1;
+			mapContent=1;
+			autoReport=0;
+			multipleSaves=0;
+		};
+		aiLevelPreset=3;
+	};
+	class CustomAILevel
+	{
+		skillAI=0.5;
+		precisionAI=0.5;
+	};
+};
+singleVoice=0;
+maxSamplesPlayed=96;
+sceneComplexity=400000;
+shadowZDistance=100;
+viewDistance=1000;
+preferredObjectViewDistance=800;
+terrainGrid=25;
+volumeCD=10;
+volumeFX=10;
+volumeSpeech=10;
+volumeVoN=10;
+vonRecThreshold=0.029999999;

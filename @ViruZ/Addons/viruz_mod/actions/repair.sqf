@@ -35,7 +35,8 @@ if (_section and _hasToolbox) then {
 		viruzSetFix call object_setFixServer;
 		//};
 		
-		player playActionNow "Medic";
+		//player playActionNow "Medic";
+		player playMoveNow "Acts_carFixingWheel";
 		sleep 1;
 		
 		_dis=20;

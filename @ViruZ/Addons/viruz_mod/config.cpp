@@ -70,37 +70,18 @@ class RscButtonMenuCancel;
 #include "ui\CfgInGameUI.hpp"
 #include "ui\RscPictureGUI.hpp"
 #include "ui\RscStructuredTextGUI.hpp"
-#include "ui\RscButtonActionMenu.hpp"
-#include "ui\DZ_ItemInteraction.hpp"
 #include "ui\RscTitles.hpp"
 #include "ui\RscDisplayStart.hpp"
 #include "ui\RscDisplayMain.hpp"
 #include "ui\RscDisplayDebriefing.hpp"
 #include "ui\RscDisplayMissionFail.hpp"
-#include "ui\RscDisplayGameOptions.hpp"
-#include "ui\RscDisplayDiary.hpp"
-#include "ui\RscDisplayGenderSelect.hpp"
 #include "ui\RscDisplayInventory.hpp"
 #include "ui\RscDisplayShowItemDialog.hpp"
 #include "ui\RscDisplayShowCraftingDialog.hpp"
-//#include "Configs\CfgCrafting\CfgCrafting.hpp" //Novo craft
+
 
 #include "Configs\CfgFunctions.hpp"
 #include "Configs\CfgWorlds.hpp"
-//#include "Configs\CfgMissions.hpp"
-
-//#include "Configs\CfgObjectCompositions.hpp"
-//Livro
-#include "Configs\RscDisplay\includes.hpp"
-//#include "Configs\CfgPlayerStats\defines.hpp"
-//#include "Configs\CfgPlayerStats\p__cover.hpp"
-//#include "Configs\CfgPlayerStats\p_journal_humanity.hpp"
-//#include "Configs\CfgPlayerStats\p_humanity_art.hpp"
-//#include "Configs\CfgPlayerStats\p_zombies_killed.hpp"
-//#include "Configs\CfgPlayerStats\p_bandits_killed.hpp"
-//#include "Configs\CfgPlayerStats\p_headshots.hpp"
-//#include "Configs\CfgPlayerStats\p_murders.hpp"
-//#include "Configs\CfgPlayerStats\sound.hpp"
 
 #include "Configs\CfgVehicles.hpp"
 #include "Configs\CfgWeapons.hpp"

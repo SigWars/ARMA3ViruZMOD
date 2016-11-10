@@ -1,5 +1,7 @@
 ﻿/*
 	Author: SigWar
+	sync player gear on close inventory
+	sync nearest objects inventory on close player inventory
 */
 
 private ["_objects","_inventory"];
@@ -20,3 +22,7 @@ if (_debug) then {
 
 viruz_unsaved = true;
 viruz_Magazines = _inventory;
+
+//Force player update on close inventory
+viruzPlayerSave = [player,viruz_Magazines,true];
+publicVariableServer "viruzPlayerSave";

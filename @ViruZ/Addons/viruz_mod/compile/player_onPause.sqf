@@ -1,15 +1,9 @@
-private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
+private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 		disableSerialization;
+		
 		waitUntil {
 			_display = findDisplay 49;
 			!isNull _display;
-		};
-		[] spawn { 
-			disableSerialization;
-			while {!isnull (findDisplay 49)} do {
-				closeDialog 602;
-				sleep 0.1;	
-			};
 		};
 		
 		_btnRespawn = _display displayCtrl 1010;
@@ -18,15 +12,14 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 		_btnAbort ctrlEnable false;
 		_timeOut = 0;
 		_timeMax = 30;
-		viruz_lastCheckBit = time;
 		
-		if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
-		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true; _btnAbort ctrlEnable true;};
+		if(r_player_dead) exitWith {_btnAbort ctrlEnable true};
+		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true; _btnAbort ctrlEnable true};
 		
-		//force gear save instant
-		//if (time - viruz_lastCheckBit > 10) then {
-			call viruz_forceSave;
-		//};			
+		//save inventory
+		/*_inventory = player call ptm_fnc_getInventory;
+		viruzPlayerSave = [player,_inventory,false];
+		publicVariableServer "viruzPlayerSave";		*/
 				
 		while {!isNull _display} do {
 			switch true do {
@@ -53,3 +46,11 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 			_timeOut = _timeOut + 1;
 		};
 		cutText ["", "PLAIN DOWN"];
+		
+		[] spawn { 
+			disableSerialization;
+				while {!isnull (findDisplay 49)} do {
+					closeDialog 602;
+					sleep 0.1;	
+				};
+		};

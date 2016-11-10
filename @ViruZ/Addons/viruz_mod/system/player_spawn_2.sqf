@@ -117,7 +117,7 @@ while {true} do {
 
 	//Record Check
 	_lastUpdate = 	time - viruZ_lastPlayerUpdate;
-	if (_lastUpdate > 8) then {
+	if (_lastUpdate > 20) then { //orinal valor 8
 		//POSITION?
 		_distance = viruz_myPosition distance player;
 		if (_distance > 10) then {
