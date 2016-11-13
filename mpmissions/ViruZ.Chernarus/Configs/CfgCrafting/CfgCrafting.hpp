@@ -2,6 +2,8 @@ class CfgCrafting
 {
 	class ViruZ_ResumoCrafting
 	{
+			sound ="repair";
+			moveaction ="Medic";
 			displayName = "";
 			pictureItem = ""; 
 			returnedItems[] = {};
@@ -403,11 +405,13 @@ class CfgCrafting
 	
 	class Blueprint_Test: ViruZ_ResumoCrafting
 	{
+
 		displayName = "Test";
 		pictureItem = "Viruz_CinderBlockMold"; //Classe do Item para chamar a imagem
 		returnedItems[] =
 		{
-			{1, "Viruz_CinderBlockMold"}
+			{1, "Viruz_CinderBlockMold"},
+			{1, "Viruz_Antiseptic"}
 		};
 		ferramentas[] =
 		{			

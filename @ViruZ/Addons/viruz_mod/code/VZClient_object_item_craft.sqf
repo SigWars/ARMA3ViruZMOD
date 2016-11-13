@@ -1,14 +1,15 @@
-private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_returnedItems","_interactionModelGroupClassName","_components","_tools","_cfgtype","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx","_RetiredSize","_cansGear","_maxCount","_qtyCans"];
+private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_sfx","_anim","_returnedItems","_interactionModelGroupClassName","_components","_tools","_cfgtype","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx","_RetiredSize","_cansGear","_maxCount","_qtyCans"];
 _getcraftingClassName = _this select 0;
 _quantityToCraft = _this select 1;
 _quantityCrafted = 0;
 _metSideConditions = true;
 _recipeConfig = missionConfigFile >> "CfgCrafting" >> _getcraftingClassName;
+_sfx = getText(_recipeConfig >> "sound");
+_anim = getText(_recipeConfig >> "moveaction");
 _returnedItems = getArray(_recipeConfig >> "returnedItems");
 _interactionModelGroupClassName = getText(_recipeConfig >> "requiredInteractionModelGroup");
 _components = getArray(_recipeConfig >> "componentes");
 _tools = getArray(_recipeConfig >> "ferramentas");
-_cfgtype = _returnedItemClassName call ViruZClient_gear_getConfigNameByClassName;
 _equippedMagazines = magazines player;
 _addedItems = [];
 _concreteMixer = objNull;
@@ -84,7 +85,17 @@ if (_metSideConditions) then {
 			};
 		}forEach _components;
 		
-		if (_hasAllComponents) then	{
+			if (_hasAllComponents) then	{
+				
+				//Play animation
+				if !(_anim == "") then {
+					player playActionNow _anim;
+				};
+				//Play sound
+				if !(_sfx == "") then {
+					[player,_sfx,0,false,5] call viruz_zombieSpeak;
+				};
+			
 		/*
 			if !(isNull _concreteMixer) then 
 			{
@@ -96,7 +107,7 @@ if (_metSideConditions) then {
 			{
 			*/
 			//	if ([_components, _returnedItems] call VZClient_util_inventory_canExchangeItems) then
-			//	{
+			//{
 					{
 						_componentQuantity = _x select 0;
 						_componentItemClassName = _x select 1;
@@ -132,7 +143,7 @@ if (_metSideConditions) then {
 									player reveal _itemOut;	
 								};	
 								
-								hint format ["_cansGear: %1  |  _qtyCans: %2",_cansGear,_qtyCans];
+								//hint format ["_cansGear: %1  |  _qtyCans: %2",_cansGear,_qtyCans];
 							};
 						
 							}else{
@@ -173,25 +184,29 @@ if (_metSideConditions) then {
 							//player addItem _returnedItemClassName;
 					}forEach _returnedItems;
 						//Chamar Som
-					_sfx = getText(configFile >> _cfgtype >> _returnedItemClassName >> "sfx");
-						if !(_sfx == "") then {
-						[player,_sfx,0,false,5] call viruz_zombieSpeak;
-					};
 					_quantityCrafted = _quantityCrafted + 1;
 				};
 			//};
 		//};
 	};
 };
+
 if (_quantityCrafted > 0) then {	
+		_txt = "";  
 		{
-			_returnedItemName = getText(configFile >> _cfgtype >> _returnedItemClassName >> "displayName");			
-						
+			_nameitem =  _x select 0;
+			_cfgtype = _nameitem call ViruZClient_gear_getConfigNameByClassName;
+			_returnedItemName = getText(configFile >> _cfgtype >> _nameitem >> "displayName");
+
+			_slct = parseText format["<t color='#FFFFFF'>%1 %2 Crafted</t>",_x select 1,_returnedItemName];
+			_txt = format["%1 <br/> %2",_txt,_slct];
+	
 		}forEach _addedItems;
 		
-		cutText [format["Crafting completed! %1 %2 Crafted",_returnedItemQuantity,_returnedItemName], "PLAIN DOWN"];
+		hint parseText format["<t color='#0040FF'>Crafting completed!</t><br/><t color='#FFFFFF'>%1</t>",_txt];
+
 	}else{
 		cutText [format["Failed to craft!"], "PLAIN DOWN"];
 	};
-	
+	[["Item1", ["My","Array","Elements"]],["Item2",["Smell","Like","Fromage"]]];
 true

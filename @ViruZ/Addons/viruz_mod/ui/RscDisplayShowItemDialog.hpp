@@ -11,10 +11,10 @@ class RscDisplayShowItemDialog
 		class BackgroundItemInfo: RscText
 		{
 			idc = 100001;
-			x = 0.29375 * safezoneW + safezoneX;
-			y = 0.258 * safezoneH + safezoneY;
-			w = 0.12375 * safezoneW;
-			h = 0.462 * safezoneH;
+			x = 0.329878 * safezoneW + safezoneX;
+			y = 0.258329 * safezoneH + safezoneY;
+			w = 0.0876386 * safezoneW;
+			h = 0.153931 * safezoneH;
 			colorBackground[] = {0.05,0.05,0.05,0.7};
 		};
 		class BackgroundContent: RscText
@@ -29,20 +29,20 @@ class RscDisplayShowItemDialog
 		class BackgroundMenu: RscText
 		{
 			idc = 100003;
-			x = 0.707281 * safezoneW + safezoneX;
-			y = 0.258 * safezoneH + safezoneY;
-			w = 0.12375 * safezoneW;
-			h = 0.462 * safezoneH;
+			x = 0.329878 * safezoneW + safezoneX;
+			y = 0.417543 * safezoneH + safezoneY;
+			w = 0.0876386 * safezoneW;
+			h = 0.302358 * safezoneH;
 			colorBackground[] = {0.05,0.05,0.05,0.7};
 		};
 		class BackgroundTop: RscText
 		{
 			idc = 100004;
 			text = "ITEM"; //--- ToDo: Localize;
-			x = 0.294781 * safezoneW + safezoneX;
-			y = 0.2316 * safezoneH + safezoneY;
-			w = 0.53625 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.329878 * safezoneW + safezoneX;
+			y = 0.236119 * safezoneH + safezoneY;
+			w = 0.37486 * safezoneW;
+			h = 0.0219901 * safezoneH;
 			colorBackground[] = {0.1,0.1,0.1,1};
 		};
 		class ButtonClose: RscActiveText
@@ -52,8 +52,8 @@ class RscDisplayShowItemDialog
 			color[] = {1,1,1,0.7};
 			action = "closeDialog 0;";
 			text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArcadeMap\icon_exit_cross_ca.paa"; //--- ToDo: Localize;
-			x = 0.814531 * safezoneW + safezoneX;
-			y = 0.236 * safezoneH + safezoneY;
+			x = 0.691052 * safezoneW + safezoneX;
+			y = 0.240077 * safezoneH + safezoneY;
 			w = 0.0103125 * safezoneW;
 			h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,0.7};
@@ -67,30 +67,31 @@ class RscDisplayShowItemDialog
 		{
 			idc = 100006;
 			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.269 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.198 * safezoneH;
+			x = 0.335033 * safezoneW + safezoneX;
+			y = 0.269104 * safezoneH + safezoneY;
+			w = 0.0773282 * safezoneW;
+			h = 0.131941 * safezoneH;
 		};
 		class ButtonDescription: RscButton
 		{
 			idc = 100007;
 			action = "'DESCRIPTION' call VZClient_gui_itemDescription_event_onTabelaButton;";
 			text = "DESCRIPTION"; //--- ToDo: Localize;
-			x = 0.737188 * safezoneW + safezoneX;
-			y = 0.2888 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.349028 * safezoneW + safezoneX;
+			y = 0.634676 * safezoneH + safezoneY;
+			w = 0.0515521 * safezoneW;
+			h = 0.0219901 * safezoneH;
+
 		};
 		class ButtonCrafting: RscButton
 		{
 			idc = 100008;
 			action = "'CRAFTING' call VZClient_gui_itemDescription_event_onTabelaButton;";
-			text = "CRAFTING"; //--- ToDo: Localize;
-			x = 0.737188 * safezoneW + safezoneX;
-			y = 0.3284 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
+			text = "CRAFTS"; //--- ToDo: Localize;
+			x = 0.349055 * safezoneW + safezoneX;
+			y = 0.556295 * safezoneH + safezoneY;
+			w = 0.0515521 * safezoneW;
+			h = 0.0219901 * safezoneH;
 		};
 		class DetalhesTabela: RscControlsGroup
 		{
@@ -155,47 +156,47 @@ class RscDisplayShowItemDialog
 			idc = 100014;
 			action = "closeDialog 0;";
 			text = "CONSUME"; //--- ToDo: Localize;
-			x = 0.737188 * safezoneW + safezoneX;
-			y = 0.4252 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.329878 * safezoneW + safezoneX;
+			y = 0.43403 * safezoneH + safezoneY;
+			w = 0.0412417 * safezoneW;
+			h = 0.0439802 * safezoneH;
 		};
 		class ButtonUse: RscButton
 		{
 			idc = 100015;
 			action = "closeDialog 0;";
 			text = "USE"; //--- ToDo: Localize;
-			x = 0.737188 * safezoneW + safezoneX;
-			y = 0.4626 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.376275 * safezoneW + safezoneX;
+			y = 0.43403 * safezoneH + safezoneY;
+			w = 0.0412417 * safezoneW;
+			h = 0.0439802 * safezoneH;
 		};
 		class ButtonConstruct: RscButton
 		{
 			idc = 100016;
 			action = "closeDialog 0; [SelectedInventoryItem select 0] call object_item_construct;";
-			text = "CONSTRUCT"; //--- ToDo: Localize;
-			x = 0.737188 * safezoneW + safezoneX;
-			y = 0.5044 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
+			text = "BUILD"; //--- ToDo: Localize;
+			x = 0.349055 * safezoneW + safezoneX;
+			y = 0.586641 * safezoneH + safezoneY;
+			w = 0.0515521 * safezoneW;
+			h = 0.0219901 * safezoneH;
 		};
 		class ButtonFill: RscButton
 		{
 			idc = 100017;
 			action = "closeDialog 0;";
 			text = "FILL"; //--- ToDo: Localize;
-			x = 0.324687 * safezoneW + safezoneX;
-			y = 0.511 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.349055 * safezoneW + safezoneX;
+			y = 0.501319 * safezoneH + safezoneY;
+			w = 0.0515521 * safezoneW;
+			h = 0.0219901 * safezoneH;
 		};
 		class ButtonCancel: RscButtonMenuCancel
 		{
-			x = 0.737188 * safezoneW + safezoneX;
-			y = 0.6892 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = 0.349055 * safezoneW + safezoneX;
+			y = 0.685596 * safezoneH + safezoneY;
+			w = 0.0515521 * safezoneW;
+			h = 0.0219901 * safezoneH;
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.8};
 		};

@@ -276,8 +276,8 @@ while {true} do {
 			if (!r_player_unconscious) then {
 				viruz_canDisconnect = true;
 				//["viruzDiscoRem",getPlayerUID player] call callRpcProcedure;
-				viruzDiscoRem = getPlayerUID player;
-				publicVariable "viruzDiscoRem";
+				//viruzDiscoRem = getPlayerUID player;
+				//publicVariable "viruzDiscoRem";
 				
 				//Ensure Control is hidden
 				_display = uiNamespace getVariable 'VIRUZ_GUI_display';

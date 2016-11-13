@@ -226,7 +226,6 @@ class CfgMagazines {
 	class Viruz_CinderBlockMold: CA_Magazine
 	{
 		scope = public;
-		sfx = "chopwood";
 		type = 256;
 		count = 1;
 		displayName="CinderBlock Mold";
@@ -248,7 +247,7 @@ class CfgMagazines {
 		mass = 60;
 		
 		class ItemActions {
-			class Construtivel {
+			class Buildable {
 				text = $STR_PITCH_TENT;
 				script = "spawn player_tentPitch;";
 			};
@@ -289,7 +288,7 @@ class CfgMagazines {
 		mass = 10;
 		
 		class ItemActions {
-			class Construtivel {
+			class Buildable {
 				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require = "ItemEtool";
@@ -309,7 +308,7 @@ class CfgMagazines {
 		mass = 10;
 		
 		class ItemActions {
-			class Construtivel {
+			class Buildable {
 				text = $STR_ACTIONS_BUILD;
 				script = "spawn player_build;";
 				require = "ItemToolbox";
@@ -631,7 +630,6 @@ class CfgMagazines {
 	class ItemJerrycan : CA_Magazine {
 		scope = public;
 		count = 20;
-		sfx = "refuel";
 		fuelQuantity = 20;
 		type = (256 * 3);
 		displayName = $STR_EQUIP_NAME_19;
@@ -755,7 +753,7 @@ class CfgMagazines {
 		mass = 60;
 		
 	class ItemActions {
-			class Construtivel {
+			class Buildable {
 				text = $STR_PITCH_CamoNet;
 				script = "spawn player_tentPitch;";
 			};
@@ -778,7 +776,7 @@ class CfgMagazines {
 		type = 256;
 	
 		class ItemActions {
-			class Construtivel {
+			class Buildable {
 				text = "$STR_USE";
 				script = "spawn electronics_build";
 				create = "Land_Camping_Light_off_F";
@@ -812,7 +810,6 @@ class CfgMagazines {
 		class ItemWaterbottle : FoodDrink {
 		scope = public;
 		refillable = 1;
-		sfx = "drink";
 		displayName = $STR_EQUIP_NAME_12;
 		model="\A3\Structures_F_EPA\Items\Food\Canteen_F.p3d";
 		picture = "\viruz_equip\viruzico\canteen.paa";
@@ -845,7 +842,6 @@ class CfgMagazines {
 	
 	class ItemSodaOriginal : FoodDrink {
 		scope = public;
-		sfx = "soda";
 		displayName = "Soda Original";
 		model = "\viruz_equip\items\sodaoriginal.p3d";
 		picture = "\viruz_equip\viruzico\sodaoriginal_ca.paa";

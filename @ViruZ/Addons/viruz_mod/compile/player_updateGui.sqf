@@ -170,19 +170,19 @@ _vzhumanity = player getVariable["humanity",0];
 
 
 	//Survivor
-	if (_vzhumanity > -5000 and _vzhumanity < 5000) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_survivor_ca.paa"; };
+	if (_vzhumanity >= -4999 and _vzhumanity <= 4999) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_survivor_ca.paa"; };
 	//Hero 1
-    if(_vzhumanity > 5000 and _vzhumanity < 7500) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_1_ca.paa"; };
+    if(_vzhumanity >= 5000 and _vzhumanity <= 7499) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_1_ca.paa"; };
 	//Hero 2
-	if(_vzhumanity > 7500 and _vzhumanity < 14500) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_2_ca.paa"; }; 
+	if(_vzhumanity >= 7500 and _vzhumanity <= 14999) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_2_ca.paa"; }; 
 	//Hero 3
-	if(_vzhumanity > 15000) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_3_ca.paa"; };
+	if(_vzhumanity >= 15000) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_hero_lv_3_ca.paa"; };
 	//Bandit 1
-    if(_vzhumanity > -5000 and _vzhumanity < -7500) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_1_ca.paa"; }; 
+    if(_vzhumanity <= -5000 and _vzhumanity >= -7499) then { _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_1_ca.paa"; }; 
     //Bandit 2                
-	if(_vzhumanity > -7500 and _vzhumanity < -15000) then{ _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_2_ca.paa"; }; 
+	if(_vzhumanity <= -7500 and _vzhumanity >= -14999) then{ _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_2_ca.paa"; }; 
 	//Bandit 3
-	if(_vzhumanity > -15000) then{ _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_3_ca.paa"; };
+	if(_vzhumanity <= -15000) then{ _vzhumanitytext = "\z\addons\viruz_mod\gui\humanity\hud_icon_bandit_lv_3_ca.paa"; };
 	
 
 	_vzhumanitystat ctrlSetText _vzhumanitytext;

@@ -298,7 +298,7 @@ class RscTitles
 			{
 				idc = 1308;
 				text = "";
-				x= 0.933125 * safezoneW + safezoneX;
+				x= 0.955313 * safezoneW + safezoneX;
 				y= 0.159 * safezoneH + safezoneY;
 				w= 64 * pixelW;
 				h= 64 * pixelH;
@@ -310,7 +310,7 @@ class RscTitles
 			{
 				idc = 1309;
 				text = "";
-				x = 0.943 * safezoneW + safezoneX;
+				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.260 * safezoneH + safezoneY;
 				w = 0.1;
 				h = 0.055;

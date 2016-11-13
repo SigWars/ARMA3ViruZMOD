@@ -29,9 +29,9 @@ _dialog = uiNameSpace getVariable ["RscDisplayShowItemDialog", displayNull];
 //Buttons
 (_dialog displayCtrl 100014) ctrlEnable false; //Consumir
 (_dialog displayCtrl 100015) ctrlEnable false; //Usar
-(_dialog displayCtrl 100016) ctrlEnable false; //Construir
+(_dialog displayCtrl 100016) ctrlEnable false; //Build
 (_dialog displayCtrl 100017) ctrlEnable false; //Fill
-(_dialog displayCtrl 100017) ctrlShow false; //Fill
+//(_dialog displayCtrl 100017) ctrlShow false; //Fill
 
 //Itens Informações
 (_dialog displayCtrl 100006) ctrlSetText _GetItemImagem; //Mostrar Foto
@@ -70,10 +70,10 @@ if( isClass(_SelectItemConfig >> "ItemActions" >> "Use") )  then
 	(_dialog displayCtrl 100015) ctrlSetEventHandler ["ButtonClick",_compileUse]; 
 };
 
-//Verificar se o tem é Construtivel? se sim ativar o botão
-if( isClass(_SelectItemConfig >> "ItemActions" >> "Construtivel") )  then
+//Verificar se o item é Buildable? se sim ativar o botão
+if( isClass(_SelectItemConfig >> "ItemActions" >> "Buildable") )  then
 {
-	_usingConfigBuild = configFile >> "CfgMagazines" >> _GetItemClassName >> "ItemActions" >> "Construtivel";
+	_usingConfigBuild = configFile >> "CfgMagazines" >> _GetItemClassName >> "ItemActions" >> "Buildable";
 	_cfgActionsBuild =  getText(_usingConfigBuild >> "script");
 	_compileBuild =  format["_id = '%2' %1",_cfgActionsBuild,_GetItemClassName];
 	
@@ -88,12 +88,12 @@ if( isClass(_SelectItemConfig >> "ItemActions" >> "Fill") )  then
 	_cfgActionsFill =  getText(_usingConfigFill >> "script");
 	_compileFill =  format["_id = '%2' %1",_cfgActionsFill,_GetItemClassName];
 	
-	(_dialog displayCtrl 100017) ctrlShow true;
+	//(_dialog displayCtrl 100017) ctrlShow true;
 	(_dialog displayCtrl 100017) ctrlEnable true;
 	(_dialog displayCtrl 100017) ctrlSetEventHandler ["ButtonClick",_compileFill]; 
 };
 
-//Mostrar o nome do item na Tabela de Detalhes
+//Mostrar o nome do item na DetalhesTabela
 (_dialog displayCtrl 100010) ctrlSetStructuredText parseText format["<t size='1.5' color='#ffffff' align='left'>%1</t><br/>", _GetItemDisplayName];
 
 _itemDescription = ""; 

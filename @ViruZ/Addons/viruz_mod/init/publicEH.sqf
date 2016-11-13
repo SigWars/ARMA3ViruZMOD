@@ -22,9 +22,9 @@
 
 //Server only
 if (isServer) then {
-	"viruzDeath"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
-	"viruzDiscoAdd"		addPublicVariableEventHandler {viruz_disco set [count viruz_disco,(_this select 1)];};
-	"viruzDiscoRem"		addPublicVariableEventHandler {viruz_disco = viruz_disco - [(_this select 1)];};
+	"viruzDeath"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied}; 				//called on player die
+	//"viruzDiscoAdd"		addPublicVariableEventHandler {viruz_disco set [count viruz_disco,(_this select 1)];};				//add player on var to check - No more used
+	//"viruzDiscoRem"		addPublicVariableEventHandler {viruz_disco = viruz_disco - [(_this select 1)];};				// no more used
 	"viruzPlayerSave"	addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
 	"viruzPublishObj"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
 	"viruzSaveGroup"	addPublicVariableEventHandler {(_this select 1) call server_saveGroup};
@@ -35,7 +35,7 @@ if (isServer) then {
 	"viruzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
 	"viruzUpdate"		addPublicVariableEventHandler {_id = (_this select 1) spawn viruz_processUpdate};
 	"viruzLoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn viruz_recordLogin};
-	"viruzCharSave"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync};
+	//"viruzCharSave"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync};
 	//Checking
 	"viruzSetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
 	"viruzSetFix"		addPublicVariableEventHandler {(_this select 1) call object_setFixServer};

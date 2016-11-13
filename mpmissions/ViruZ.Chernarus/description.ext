@@ -9,7 +9,7 @@ OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
 //                    GLOBAL        SIDE LADO     COMANDO         GRUPO        VEHICLE         DIRECT          SYSTEM      
-disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{3,false,false},{4,false,false},{5,false,false},{6,false,true}};
+disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{3,false,false},{4,true,true},{5,false,false},{6,false,true}};
 enableItemsDropping = 0;
 briefing = 0;
 debriefing= 0;
@@ -44,11 +44,11 @@ class cfgGame {
 	/// Параметры для юзеров
 	mapArea[]			= {-20000, 20000}; 					// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
-	maxLocalZombies		= 3;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
+	maxLocalZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
 	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi, (segundos)
 	zedsRespawnDelay	= 3;					// Tempo de respawn do zumbi em relação a uma casa em especifico, o tempo é marcado em minutos.(Esta condição é Checada após Checar viruzZedspawnDelay)
-	zombie_hitchance	= 8;					// Chance que o zumbi tem de acertar o player
+	zombie_hitchance	= 8;					// Chance que o zumbi tem de acertar o player  0 = 0% / 10 = 100%
 	zombie_mindamage	= 0.8;					// Damage minim
 	zombie_adddamage	= 1.2;					// Damage adicional que o zumbi pode dar	
 	maxBuildDistance 	= 50;					// Distancia maxima que podes cosntruir ao redor do gerador

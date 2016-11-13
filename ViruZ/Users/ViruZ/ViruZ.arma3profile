@@ -28,7 +28,7 @@ class DifficultyPresets
 			waypoints=2;
 			weaponInfo=2;
 			stanceIndicator=0;
-			staminaBar=0;
+			staminaBar=1;
 			weaponCrosshair=1;
 			visionAid=0;
 			thirdPersonView=1;
@@ -36,7 +36,7 @@ class DifficultyPresets
 			scoreTable=0;
 			deathMessages=0;
 			vonID=1;
-			mapContent=1;
+			mapContent=0;
 			autoReport=0;
 			multipleSaves=0;
 		};
