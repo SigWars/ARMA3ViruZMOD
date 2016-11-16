@@ -22,7 +22,3 @@ if (_debug) then {
 
 viruz_unsaved = true;
 viruz_Magazines = _inventory;
-
-//Force player update on close inventory
-viruzPlayerSave = [player,viruz_Magazines,true];
-publicVariableServer "viruzPlayerSave";

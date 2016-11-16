@@ -71,7 +71,6 @@ _allFixed = true;
 //update if repaired
 if (_allFixed) then {
 	_vehicle setDamage 0;
-	//["viruzUpdateVehicle",[_vehicle,"repair"]] call callRpcProcedure;
 	viruzSetFix = [_vehicle,_selection,0];
 	publicVariable "viruzSetFix";
 	if (local _vehicle) then {

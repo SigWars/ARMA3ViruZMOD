@@ -39,19 +39,23 @@ class CfgWorlds {
 		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
+	class Tanoa : CAWorld {
+		cutscenes[] = {"Stratis_intro1"};
+		description = "ViruZ Tanoa";
+		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
+	};
 	class Bornholm : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
-		description = "ViruZ Bornholm"; // Имя мира
+		description = "ViruZ Bornholm";
 		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
 	class Chernarus : CAWorld {
-		
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Chernarus"; 
 		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
-		
 	};
 		
 	class Esseker: CAWorld
@@ -1012,15 +1016,4 @@ class CfgWorlds {
 		};
 	};
 
-};
-
-class CfgMissions {
-	class Cutscenes {
-		class Altis_intro1 {
-			directory = "a3\viruz_map_altis_scenes\scenes\intro1.Altis";
-		};
-		class Stratis_intro1 {
-			directory = "a3\viruz_map_stratis_scenes\scenes\intro1.Stratis";
-		};
-	};
 };

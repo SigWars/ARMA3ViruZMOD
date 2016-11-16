@@ -416,61 +416,63 @@ class CfgLoadingScreens
 		};
 		Altis[]=
 		{
-			"\z\addons\viruz_mod\loading\Altis\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\Altis\loading_2.jpg",
-			"\z\addons\viruz_mod\loading\Altis\loading_3.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		Stratis[]=
 		{
-			"\z\addons\viruz_mod\loading\Stratis\loading_1.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		thirsk[]=
 		{
-			"\z\addons\viruz_mod\loading\thrisk\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\thrisk\loading_2.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		thirskw[]=
 		{
-			"\z\addons\viruz_mod\loading\thriskw\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\thriskw\loading_2.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		newhaven[]=
 		{
-			"\z\addons\viruz_mod\loading\newhaven\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\newhaven\loading_2.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		Bornholm[]=
 		{
-			"\z\addons\viruz_mod\loading\Bornholm\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\Bornholm\loading_2.jpg",
-			"\z\addons\viruz_mod\loading\Bornholm\loading_3.jpg",
-			"\z\addons\viruz_mod\loading\Bornholm\loading_4.jpg",
-			"\z\addons\viruz_mod\loading\Bornholm\loading_5.jpg",
-			"\z\addons\viruz_mod\loading\Bornholm\loading_6.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		Esseker[]=
 		{
-			"\z\addons\viruz_mod\loading\Esseker\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\Esseker\loading_2.jpg",
-			"\z\addons\viruz_mod\loading\Esseker\loading_3.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		Taviana[]=
 		{
-			"\z\addons\viruz_mod\loading\Esseker\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\Esseker\loading_2.jpg",
-			"\z\addons\viruz_mod\loading\Esseker\loading_3.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		Chernarus[]=
 		{
-			"\z\addons\viruz_mod\loading\Chernarus\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\Chernarus\loading_2.jpg",
-			"\z\addons\viruz_mod\loading\Chernarus\loading_3.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 		namalsk[]=
 		{
-			"\z\addons\viruz_mod\loading\Namalsk\loading_1.jpg",
-			"\z\addons\viruz_mod\loading\Namalsk\loading_2.jpg",
-			"\z\addons\viruz_mod\loading\Namalsk\loading_3.jpg"
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
 	};
 };

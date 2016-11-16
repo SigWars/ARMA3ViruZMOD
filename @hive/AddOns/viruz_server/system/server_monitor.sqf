@@ -74,8 +74,9 @@ if (_script != "") then
 	
 		[_myArray] call server_StartSpawnBulds;
 		
-		[_myArray] spawn server_StartSpawnVehicles;
+		handle_server_spawn_vehicles = [_myArray] spawn server_StartSpawnVehicles;
 		
+		waitUntil { /*sleep 60;*/ scriptDone handle_server_spawn_vehicles };
 		
 		if ((count arrayObjectID) == 0) then {arrayObjectID = [0]};
 		// # END OF STREAMING #
@@ -98,12 +99,9 @@ if (_script != "") then
 		diag_log ("HIVE: Local Time set to " + str(_date));
 	};
 	
-	createCenter civilian;
-	if (isDedicated) then {
-		endLoadingScreen;
-	};	
-	
+createCenter civilian;
 if (isDedicated) then {
+	endLoadingScreen;
 	_id = [] execFSM "\z\addons\viruz_server\system\server_cleanup.fsm";
 };
 
@@ -112,6 +110,6 @@ handler_spawnCrashSite = [] spawn server_spawnCrashSite; // Start spawn heli cra
 handler_VehiclesSpawner = [] spawn server_VehiclesSpawner; // Start spawn vehicle logic
 handler_objectSpawner = [] spawn server_objectSpawner; //Start spawn object in map
 
-//waitUntil { sleep 60; scriptDone handler_objectSpawner };
+
+
 allowConnection = true;
-publicVariable "allowConnection";

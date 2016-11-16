@@ -21,7 +21,6 @@ while {_isOk} do {
 
 		[player,"bandage",0,false] call viruz_zombieSpeak;
 
-		//["usecBandage",[_unit,player]] call broadcastRpcCallAll;
 		usecBandage = [_unit,player];
 		publicVariable "usecBandage";
 		
@@ -30,8 +29,7 @@ while {_isOk} do {
 			_id = [player,player] execVM "\z\addons\viruz_mod\medical\publicEH\medBandaged.sqf";
 			viruz_sourceBleeding =	objNull;
 		} else {
-		//viruzHumanity = [player,20];
-		[player,20] call player_humanityChange;
+			[player,20] call player_humanityChange;
 		};
 
 		{_unit setVariable[_x,false,true];} forEach USEC_woundHit;

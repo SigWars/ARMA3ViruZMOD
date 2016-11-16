@@ -63,7 +63,7 @@ if (count _array > 0) then {
 				_wait = 0;
 			};
 			if (!_canHitFree and !_isBandit) then {
-				//["viruzHumanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
+				
 				viruzHumanity = [_source,_humanity,_wait];
 				publicVariable "viruzHumanity";
 			};

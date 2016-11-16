@@ -1,7 +1,7 @@
 /*
 
 */
-private ["_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout"];
+private ["_object","_myGroup","_id","_playerID","_playerName","_characterID","_playerIDtoarray","_timeout","_inventory"];
 _playerID = _this select 0;
 _playerName = _this select 1;
 _object = call compile format["player%1",_playerID];
@@ -29,8 +29,8 @@ if (!isNull _object) then {
 	{ [_x,"gear"] call server_updateObject } foreach 
 		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "ViruZHolder_base"], 10]);
 	if (alive _object) then {
-		//[_object,(magazines _object),true,(unitBackpack _object)] call server_playerSync;
-		[_object,[],true] call server_playerSync;
+		_inventory = _object call ptm_fnc_getInventory;
+		[_object,_inventory,true] call server_playerSync;
 		_myGroup = group _object;
 		deleteVehicle _object;
 		deleteGroup _myGroup;

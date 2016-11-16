@@ -6,7 +6,6 @@ if (!isDedicated) then {
 
 //	player_ReammoMagazines =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_ReammoMagazines.sqf";
 	vz_playerAutorun =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_autorun.sqf";
-	ptm_fnc_getInventory =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_getInventory.sqf";
 	PTm_fnc_filterGear =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_filterGear.sqf";
 	PTm_fnc_getMagazinesEmpty = compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_getMagazinesEmpty.sqf";
 	HandFlashLight_monitor =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\HandFlashLight_monitor.sqf";
@@ -95,7 +94,7 @@ if (!isDedicated) then {
 	player_gearSync	=			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_gearSync.sqf";
 	player_gearSet	=			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_gearSet.sqf";
 	ui_changeDisplay = 			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\ui_changeDisplay.sqf";
-	
+	player_bakckTolobby = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_BacktoLobby.sqf";
 	//System
 	player_monitor =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\player_monitor.sqf";
 	player_spawn_1 =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\player_spawn_1.sqf";
@@ -252,7 +251,7 @@ if (!isDedicated) then {
 	};
 		
 	viruz_spaceInterrupt = {
-		private ["_dikCode", "_handled"];
+		private ["_dikCode", "_handled", "_handWeapon"];
 		_dikCode = 	_this select 1;
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
@@ -348,20 +347,32 @@ if (!isDedicated) then {
 		//Hide Command and switch Primary weapon
 		if (_dikCode == 0x02) then {
 			showCommandingMenu "";
-			player selectWeapon (primaryWeapon player);
+			_handWeapon = currentweapon player;
+			if (_handWeapon != (primaryWeapon player) ) then {
+				player selectWeapon (primaryWeapon player);
+				_handWeapon = (primaryWeapon player);
+			};
 			_handled = true;
 		};
 		//Hide Command and switch handgun weapon
 		if (_dikCode == 0x03) then {
 			showCommandingMenu "";
-			player selectWeapon (handgunWeapon player);
+			_handWeapon = currentweapon player;
+			if (_handWeapon != (handgunWeapon player) ) then {
+				player selectWeapon (handgunWeapon player);
+				_handWeapon = (handgunWeapon player);
+			};
 			_handled = true;
 		};
 		
 		//Hide Command and switch melee weapon
 		if (_dikCode == 0x04) then {
 			showCommandingMenu "";
-			player selectWeapon (secondaryWeapon player);
+			_handWeapon = currentweapon player;
+			if (_handWeapon != (secondaryWeapon player) ) then {
+				player selectWeapon (secondaryWeapon player);
+				_handWeapon = (secondaryWeapon player);
+			};
 			_handled = true;
 		};
 		
@@ -373,7 +384,7 @@ if (!isDedicated) then {
 		
 		//Autorun
 		if (_dikCode == 0xD2) then {
-			if (vzautoRun > 0 and !(surfaceisWater position player)) then {r_interrupt = false; vzautoRun = -1; player switchmove "";} else {vzautoRun = 1; []spawn vz_playerAutorun;};
+			if (vzautoRun > 0 and !(surfaceisWater position player)) then {r_interrupt = false; vzautoRun = -1; player switchmove ""; player selectWeapon viruz_Holster;} else {vzautoRun = 1; []spawn vz_playerAutorun;};
 			_handled = true;
 		};
 		//VZgroup
@@ -1040,16 +1051,18 @@ private ["_container","_count","_type"];
 		};
 	};
 	*/
+	
 	viruz_originalPlayer =		player;
 };
 
 	progressLoadingScreen 0.8;
-
+	
 	//Both
 	
 //	fnc_ManikenAddItems =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_ManikenAddItems.sqf";
 //	maniken_gearSyncMP =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\maniken_gearSyncMP.sqf";
 //	BIS_fnc_selectRandom =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_selectRandom.sqf";		//Checks which actions for nearby casualty
+	ptm_fnc_getInventory =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_getInventory.sqf";		//get player inventory client/server
 	fnc_buildWeightedArray = 	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_buildWeightedArray.sqf";		//Checks which actions for nearby casualty
 	fnc_usec_damageVehicle =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_damageHandlerVehicle.sqf";		//Event handler run on damage
 	zombie_initialize = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\init\zombie_init.sqf";
@@ -1059,7 +1072,7 @@ private ["_container","_count","_type"];
 	object_getHit =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\object_getHit.sqf";			//gets the hit value for a HitPoint (i.e. HitLegs) against the selection (i.e. "legs"), returns the value
 	object_setHit =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\object_setHit.sqf";			//process the hit as a NORMAL damage (useful for persistent vehicles)
 	object_processHit =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\object_processHit.sqf";		//process the hit in the REVO damage system (records and sets hit)
-	object_delLocal =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\object_delLocal.sqf";
+	//object_delLocal =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\object_delLocal.sqf";		//cleaning 1
 	object_cargoCheck =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\object_cargoCheck.sqf";		//Run by the player or server to monitor changes in cargo contents
 	fnc_usec_damageHandler =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_damageHandler.sqf";		//Event handler run on damage
 	// Vehicle damage fix

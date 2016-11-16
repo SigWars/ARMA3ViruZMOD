@@ -41,6 +41,7 @@ class RscShortcutButtonMain;
 class RscListBox;
 class RscCombo;
 class RscButtonMenuOK;
+class RscActivePicture;
 class HScrollbar; //ui
 class BackgroundSlotPrimary;
 class RscButtonMenuCancel;
@@ -78,10 +79,12 @@ class RscButtonMenuCancel;
 #include "ui\RscDisplayInventory.hpp"
 #include "ui\RscDisplayShowItemDialog.hpp"
 #include "ui\RscDisplayShowCraftingDialog.hpp"
+#include "ui\RscDisplayMPInterrupt.hpp"
 
 
 #include "Configs\CfgFunctions.hpp"
 #include "Configs\CfgWorlds.hpp"
+#include "Configs\CfgMissions.hpp"
 
 #include "Configs\CfgVehicles.hpp"
 #include "Configs\CfgWeapons.hpp"

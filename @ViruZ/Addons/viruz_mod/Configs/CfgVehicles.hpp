@@ -1,10 +1,23 @@
 class CfgVehicles {
-	class Civilian;
-	class B_Soldier_F;
-	class SoldierWB {
+	//New APEX Additions
+	class All {};
+	class AllVehicles: All {};
+	class Land: AllVehicles {};
+	class Man:Land {};
+	class CAManBase: Man {};
+	//New APEX Additions end.
+	
+	class SoldierWB: CAManBase {
 		class UniformSlotInfo;
 	};
-	class Underwear_F {
+	
+	
+	class Civilian;
+	class B_Soldier_F;
+	/*class SoldierWB {
+		class UniformSlotInfo;
+	};*/
+	class Underwear_F: SoldierWB {
 		class EventHandlers;
 	};
 	class Camping_base_F;
@@ -18,8 +31,8 @@ class CfgVehicles {
 	class I_Boat_Transport_01_F;
 	class B_Lifeboat;
 	class C_Rubberboat;
-	class Hatchback_01_base_F;
-	class C_Hatchback_01_sport_F {
+	//class Hatchback_01_base_F;
+	/*class C_Hatchback_01_sport_F {
 		class EventHandlers;
 	};
 	class SUV_01_base_F {
@@ -27,7 +40,7 @@ class CfgVehicles {
 	};
 	class C_Offroad_01_F {
 		class EventHandlers;
-	};
+	};*/
 	class NonStrategic;
 	class House;
 	class House_F;
@@ -81,10 +94,10 @@ class CfgVehicles {
 	#include "CfgVehicles\Boat\cfg_B_Lifeboat_SRV.hpp"
 	#include "CfgVehicles\Boat\cfg_C_Rubberboat_SRV.hpp"
 	
-	#include "CfgVehicles\Car\cfg_Hatchback_01_F.hpp"
+	/*#include "CfgVehicles\Car\cfg_Hatchback_01_F.hpp"
 	#include "CfgVehicles\Car\cfg_Hatchback_01_sport_F.hpp"
 	#include "CfgVehicles\Car\cfg_SUV_01_F.hpp"
-	#include "CfgVehicles\Car\cfg_Offroad_01_F.hpp"
+	#include "CfgVehicles\Car\cfg_Offroad_01_F.hpp"*/
 	
 	#include "CfgVehicles\Furniture\cfg_Land_ShelvesMetal_F.hpp"
 	#include "CfgVehicles\Furniture\cfg_Land_Metal_rack_F.hpp"

@@ -99,7 +99,7 @@ check_publishobject = {
 	_allowed
 };
 
-//event Handlers
+//event Handlers used in fireplace and traps monitor to remove all ARMA handles
 eh_localCleanup = {
 	private ["_object"];
 	_object = _this select 0;
@@ -145,7 +145,7 @@ server_hiveReadWrite = {
 	_resultArray
 };
 
-server_characterSync = {
+/*server_characterSync = {
 	private ["_characterID","_playerPos","_playerGear","_playerBackp","_medical","_currentState","_currentModel","_key"];
 	_characterID = 	_this select 0;	
 	_playerPos =	_this select 1;
@@ -158,10 +158,11 @@ server_characterSync = {
 	_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,0,0,0,0,_currentState,0,0,_currentModel,0];
 	//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
 	_key call server_hiveWrite;
-};
+};*/
 
 //onPlayerConnected 		"[_uid,_name] spawn server_onPlayerConnect;";
 onPlayerDisconnected 		"[_uid,_name] call server_onPlayerDisconnect;";
+//addMissionEventHandler ["HandleDisconnect",{_this call server_onPlayerDisconnect;}];
 
 server_getDiff =	{
 	private["_variable","_object","_vNew","_vOld","_result"];

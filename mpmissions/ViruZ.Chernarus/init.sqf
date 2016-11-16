@@ -62,7 +62,6 @@ call compile preProcessFileLineNumbers "cmEarplugs\config.sqf";
 
 if (isServer) then {
 	_serverMonitor = 	[] execVM "\z\addons\viruz_mod\system\server_monitor.sqf";
-	
 };
 
 if (!isDedicated) then {
@@ -76,8 +75,5 @@ if (!isDedicated) then {
 	_playerMonitor = 	[] execVM "\z\addons\viruz_mod\system\player_monitor.sqf";
 	execVM "\z\addons\viruz_mod\external\vzgm\init.sqf";
 };
-
+execFSM "fn_ASM.fsm";
 waitUntil {time > 0}; 
-//enableEnvironment true;
-//[] execVM "vehicleManager.sqf"; // AgentRev FPS Fix
-//[] execVM "admintools\Activate.sqf";

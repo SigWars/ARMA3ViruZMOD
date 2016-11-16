@@ -1,21 +1,12 @@
 disableSerialization;
 
+viruzCanConnect = false;
+ViruzDebugMode = 0;			//Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High
+ViruzDebugType = "NONE";	//Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN"
+
 config_VehiclesCheck =		getArray(configFile >> "CfgObjectCheck" >> "vehicles");
 config_ObjectIgnore =		getArray(configFile >> "CfgObjectCheck" >> "ignore");
 
-//Model Variables
-/*Bandit1_DZ = 	"Bandit1_DZ";
-BanditW1_DZ = 	"BanditW1_DZ";
-Survivor1_DZ = 	"Survivor2_DZ";
-Survivor2_DZ = 	"Survivor2_DZ";
-SurvivorW2_DZ = "SurvivorW2_DZ";
-Sniper1_DZ = 	"Sniper1_DZ";
-Camo1_DZ = 		"Camo1_DZ";
-Soldier1_DZ = 	"Soldier1_DZ";
-Rocket_DZ = 	"Rocket_DZ";
-
-AllPlayers = ["Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ"];
-AllPlayersVehicles = ["Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];*/
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
 BanditW1_DZ = "Bandit1_DZ";
@@ -382,7 +373,6 @@ SleepWater =			1440; //minutes (24 hours) default = 1440
 SleepTemperatur	= 		90 / 100;	//Firs Value = Minutes untill Player reaches the coldest Point at night (without other effects! night factor expected to be -1)			//TeeChange
 SleepText=				0;
 //Server Variables
-//allowConnection = 		false;
 isSinglePlayer =		false;
 viruz_serverObjectMonitor = [];
 arrayObjectID = [];
@@ -442,9 +432,6 @@ viruz_resetSelfActions = {
 };
 call viruz_resetSelfActions;
 
-//Engineering variables
-//viruz_buildtarget = objNull;
-//s_player_lastTarget =	objNull;
 s_player_repairActions = [];
 
 //Initialize Medical Variables
@@ -548,12 +535,6 @@ USEC_typeOfWounds = [
 	"neck","pilot"
 ];
 
-//Initialize Zombie Variables
-/*viruz_zombieTargetList = [
-	["SoldierWB",50],
-	["Air",500],
-	["LandVehicle",200]
-];*/
 viruzHit = [];
 viruzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 viruzSaveGroup = []; 		//use to save group in DB
@@ -561,11 +542,7 @@ viruzUpdateBuild = []; 		//Viruz build system use to update objects
 viruzHideBody = objNull;
 //holster
 dazy_keyWeapon = profileNamespace getVariable["viruz_Holster", 35]; // 35 = H
-//ViruZ settings
-//Tempo_Pulado = 0;
-//viruz_dawn = 60;
-//viruz_dusk = 120;
-//VIRUZ_agentnumber = 0;
+
 viruz_animalDistance = 300; //used in player_animal.check to set max spawn distance to animals
 viruz_zSpawnDistance = 500; //used by server to set trigger distance to spawn zombies
 
@@ -682,6 +659,7 @@ if(!isDedicated) then {
 	viruz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
 	viruz_heartBeat = 		false;
 	viruzClickTime =			0;
+
 	viruz_spawnDelay = call { //Tempo de Respawn de Zumbis baseado no player
 		_viruz_spawnDelay = (missionConfigFile >> "cfgGame" >> "viruzZedspawnDelay") call BIS_fnc_getCfgData;
 		if (isNil "_viruz_spawnDelay") then {120} else {_viruz_spawnDelay}
@@ -691,8 +669,6 @@ if(!isDedicated) then {
 		if (isNil "_zedsRespawnDelay") then {3} else {_zedsRespawnDelay}
 	};
 	viruz_spawnWait =		-120;
-	//viruz_lootDelay =		3;
-	//viruz_lootWait =			-300;
 	viruz_spawnZombies =		0;
 	//used to count global zeds around players
 	viruz_CurrentZombies = 0;
@@ -703,7 +679,6 @@ if(!isDedicated) then {
 	viruzGearSave = 			false;
 	viruz_unsaved =			false;
 	viruz_scaleLight = 		0;
-	viruzDebug = false;
 	viruzState = -1;
 	helpMenu = 0;
 	craftOpen = 0;
@@ -720,8 +695,4 @@ if(!isDedicated) then {
 		_zombie_adddamage = (missionConfigFile >> "cfgGame" >> "zombie_adddamage") call BIS_fnc_getCfgData;
 		if (isNil "_zombie_adddamage") then {1.2} else {_zombie_adddamage}
 	};
-	//uiNamespace setVariable ['VIRUZ_GUI_display',displayNull];
-	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {
-	//	viruzDebug = true;
-	//};
 };

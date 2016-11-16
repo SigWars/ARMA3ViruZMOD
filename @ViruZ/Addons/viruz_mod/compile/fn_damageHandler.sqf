@@ -21,28 +21,6 @@ _humanityHit = 0;
 _myKills = 0;
 _unitIsPlayer = _unit == player;
 
-//Publish Damage
-	//player sidechat format["Processed damage for %1",_unit];
-	//USEC_SystemMessage = format["CLIENT: %1 damaged for %2 (in vehicle: %5)",_unit,_damage,_isMinor,_isHeadHit,_inVehicle];
-	//PublicVariable "USEC_SystemMessage";
-
-/*
-if (_isPlayer) then {
-	if (_damage > 0.1) then {
-		viruz_canDisconnect = false;
-		//["viruzDiscoAdd",getPlayerUID player] call callRpcProcedure;
-		viruzDiscoAdd = getPlayerUID player;
-		publicVariable "viruzDiscoAdd";
-				
-		viruz_damageCounter = time;
-		
-		//Ensure Control is visible
-		_display = uiNamespace getVariable 'VIRUZ_GUI_display';
-		_control = 	_display displayCtrl 1204;
-		_control ctrlShow true;
-	};
-};
-*/
 
 if (_unitIsPlayer) then {
 	if (_hit == "") then {
@@ -55,9 +33,10 @@ if (_unitIsPlayer) then {
 			_isBandit = 	(typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
+				
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
-				//["viruzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
+				
 				viruzHumanity = [_this select 0,_this select 1,30];
 				publicVariable "viruzHumanity";
 			};
@@ -85,9 +64,11 @@ if (_damage > 0.4) then {
 		case 2: {_scale = _scale + 200};
 	};
 	if (_unitIsPlayer) then {
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		};
+		
 		//Cause blood loss
-		//Log Damage
-		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };

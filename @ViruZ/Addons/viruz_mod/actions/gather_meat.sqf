@@ -29,7 +29,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 		_qty =	getNumber (_config >> "yield");
 	};
 	
-	if (_hasKnifeBlunt) then { _qty = round(_qty / 2); };
+	if (_hasKnife) then { _qty = round(_qty / 2); };
 	
 	_array = [_item,_qty];
 

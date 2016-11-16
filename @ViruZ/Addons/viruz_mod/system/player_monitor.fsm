@@ -62,7 +62,10 @@ item57[] = {"Selected",4,218,-454.342682,472.308899,-354.342682,522.308899,0.000
 item58[] = {"Process_2",2,250,-327.540283,471.796387,-227.540283,521.796387,0.000000,"Process"};
 item59[] = {"",7,210,-206.307434,495.143127,-198.307434,503.143250,0.000000,""};
 item60[] = {"",7,210,-206.307434,420.143188,-198.307434,428.143188,0.000000,""};
-item61[] = {"____FAKE____",9,32,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+item61[] = {"Cant_Connect",4,218,86.160278,96.545715,186.160278,146.545715,2.000000,"Cant Connect"};
+item62[] = {"ERROR__Cant_conn",2,4346,211.160278,96.545715,311.160278,146.545715,0.000000,"ERROR:" \n "Cant connect"};
+item63[] = {"Too_Long",4,218,336.160278,96.545715,436.160278,146.545715,0.000000,"Too" \n "Long"};
+item64[] = {"____FAKE____",9,32,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -76,63 +79,67 @@ link9[] = {8,9};
 link10[] = {9,10};
 link11[] = {9,12};
 link12[] = {9,13};
-link13[] = {10,11};
-link14[] = {11,12};
-link15[] = {12,15};
-link16[] = {13,14};
-link17[] = {14,38};
-link18[] = {15,16};
-link19[] = {16,17};
-link20[] = {17,18};
-link21[] = {17,20};
-link22[] = {17,44};
-link23[] = {18,19};
-link24[] = {19,39};
-link25[] = {20,21};
-link26[] = {21,22};
-link27[] = {22,23};
-link28[] = {23,24};
-link29[] = {23,26};
-link30[] = {24,25};
-link31[] = {25,40};
-link32[] = {26,27};
-link33[] = {27,28};
-link34[] = {27,30};
-link35[] = {28,48};
-link36[] = {29,32};
-link37[] = {30,31};
-link38[] = {31,41};
-link39[] = {32,33};
-link40[] = {33,34};
-link41[] = {34,35};
-link42[] = {35,37};
-link43[] = {37,36};
-link44[] = {38,14};
-link45[] = {39,19};
-link46[] = {40,25};
-link47[] = {41,31};
-link48[] = {42,6};
-link49[] = {43,42};
-link50[] = {44,50};
-link51[] = {45,46};
-link52[] = {47,60};
-link53[] = {48,49};
-link54[] = {49,29};
-link55[] = {50,53};
-link56[] = {51,47};
-link57[] = {52,51};
-link58[] = {52,54};
-link59[] = {53,52};
-link60[] = {54,55};
-link61[] = {55,56};
-link62[] = {56,57};
-link63[] = {57,58};
-link64[] = {58,59};
-link65[] = {59,60};
-link66[] = {60,20};
-link67[] = {46,61};
-globals[] = {0.000000,0,0,0,0,640,480,1,105,6316128,1,-238.987122,376.095276,327.536133,-217.087936,646,572,1};
-window[] = {2,-1,-1,-1,-1,738,78,1308,78,3,664};
+link13[] = {9,61};
+link14[] = {10,11};
+link15[] = {11,12};
+link16[] = {12,15};
+link17[] = {13,14};
+link18[] = {14,38};
+link19[] = {15,16};
+link20[] = {16,17};
+link21[] = {17,18};
+link22[] = {17,20};
+link23[] = {17,44};
+link24[] = {18,19};
+link25[] = {19,39};
+link26[] = {20,21};
+link27[] = {21,22};
+link28[] = {22,23};
+link29[] = {23,24};
+link30[] = {23,26};
+link31[] = {24,25};
+link32[] = {25,40};
+link33[] = {26,27};
+link34[] = {27,28};
+link35[] = {27,30};
+link36[] = {28,48};
+link37[] = {29,32};
+link38[] = {30,31};
+link39[] = {31,41};
+link40[] = {32,33};
+link41[] = {33,34};
+link42[] = {34,35};
+link43[] = {35,37};
+link44[] = {37,36};
+link45[] = {38,14};
+link46[] = {39,19};
+link47[] = {40,25};
+link48[] = {41,31};
+link49[] = {42,6};
+link50[] = {43,42};
+link51[] = {44,50};
+link52[] = {45,46};
+link53[] = {47,60};
+link54[] = {48,49};
+link55[] = {49,29};
+link56[] = {50,53};
+link57[] = {51,47};
+link58[] = {52,51};
+link59[] = {52,54};
+link60[] = {53,52};
+link61[] = {54,55};
+link62[] = {55,56};
+link63[] = {56,57};
+link64[] = {57,58};
+link65[] = {58,59};
+link66[] = {59,60};
+link67[] = {60,20};
+link68[] = {61,62};
+link69[] = {62,63};
+link70[] = {63,62};
+link71[] = {46,64};
+globals[] = {0.000000,0,0,0,0,640,480,1,108,6316128,1,-539.258545,476.371277,360.029785,-543.975037,646,575,1};
+window[] = {2,-1,-1,-1,-1,683,23,1253,23,3,664};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -318,7 +325,9 @@ class FSM
                          "progressLoadingScreen 0.3;" \n
                          "" \n
                          "_playerUID = getPlayerUID player;" \n
-                         "_podeConectar = allowConnection;"/*%FSM</STATEINIT""">*/;
+                         "" \n
+                         "viruzCanConnect = [player, false];" \n
+                         "publicVariableServer ""viruzCanConnect"";"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -341,6 +350,17 @@ class FSM
                                         to="ERROR__No_Player";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"_playerUID == """""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Cant_Connect">*/
+                                class Cant_Connect
+                                {
+                                        itemno = 61;
+                                        priority = 2.000000;
+                                        to="ERROR__Cant_conn";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!viruzCanConnect"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -422,8 +442,6 @@ class FSM
                          "progressLoadingScreen 0.5;" \n
                          "" \n
                          "_msg = [];" \n
-                         "" \n
-                         "//[""viruzLogin"",[_playerUID,player]] call callRpcProcedure;" \n
                          "" \n
                          "viruzLogin = [_playerUID,player];" \n
                          "publicVariable ""viruzLogin"";" \n
@@ -1249,6 +1267,8 @@ class FSM
                          "case ""Altis"": {createDialog ""RscDisplaySpawnSelecterAltis"";};" \n
                          "case ""Bornholm"": {createDialog ""RscDisplaySpawnSelecterBorn"";};" \n
                          "case ""Esseker"": {createDialog ""RscDisplaySpawnEsseker"";};" \n
+                         "case ""Chernarus"": {createDialog ""RscDisplaySpawnRandom"";};" \n
+                         "case ""Tanoa"": {createDialog ""RscDisplaySpawnRandom"";};" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -1290,11 +1310,50 @@ class FSM
                         };
                 };
                 /*%FSM</STATE>*/
+                /*%FSM<STATE "ERROR__Cant_conn">*/
+                class ERROR__Cant_conn
+                {
+                        name = "ERROR__Cant_conn";
+                        itemno = 62;
+                        init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
+                         "selectNoPlayer;" \n
+                         "_myTime = time;" \n
+                         "1 cutText [""YOU NEED WAIT SERVER LOAD! BACK TO LOB AND TRY IN FELL MINUTES"", ""PLAIN"",15];" \n
+                         "" \n
+                         "/*_LoadMsg = ""<t color='#0033FF' size = '2'>The server is starting!</t><br />" \n
+                         "<t color='#FFFF00' size = '1'>Go back to the lobby and try again in a few minutes</t><br />"";" \n
+                         "" \n
+                         "[" \n
+                         "		_LoadMsg, //structured text" \n
+                         "		0.24 * safezoneW + safezoneX, //number - x" \n
+                         "		0.01 * safezoneH + safezoneY, //number - y" \n
+                         "		15, //number - duration" \n
+                         "		1, // number - fade in time" \n
+                         "		0, // number - delta y" \n
+                         "		0 //number - layer ID" \n
+                         "] spawn bis_fnc_dynamicText;*/"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Too_Long">*/
+                                class Too_Long
+                                {
+                                        itemno = 63;
+                                        priority = 0.000000;
+                                        to="ERROR__Cant_conn";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
                 /*%FSM<STATE "____FAKE____">*/
                 class ____FAKE____
                 {
                         name = "____FAKE____";
-                        itemno = 61;
+                        itemno = 64;
                         init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links

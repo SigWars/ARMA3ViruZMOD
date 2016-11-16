@@ -88,7 +88,6 @@ player setVariable ["messing",[viruz_hunger,viruz_thirst],true];
 player setVariable["USEC_BloodQty",r_player_blood,true];
 player setVariable["medForceUpdate",true];
 
-//["viruzPlayerSave",[player,[],true]] call callRpcProcedure;
 viruzPlayerSave = [player,[],true];
 publicVariable "viruzPlayerSave";
 

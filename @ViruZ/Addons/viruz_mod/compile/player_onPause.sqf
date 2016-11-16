@@ -1,26 +1,21 @@
 private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 		disableSerialization;
+		_display = findDisplay 49;
 		
 		waitUntil {
-			_display = findDisplay 49;
 			!isNull _display;
 		};
 		
 		_btnRespawn = _display displayCtrl 1010;
-		_btnAbort = _display displayCtrl 104;
+		_btnAbort = _display displayCtrl 20004;
 		_btnRespawn ctrlEnable false;
 		_btnAbort ctrlEnable false;
 		_timeOut = 0;
 		_timeMax = 30;
 		
-		if(r_player_dead) exitWith {_btnAbort ctrlEnable true};
-		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true; _btnAbort ctrlEnable true};
+		if(missionnamespace getVariable r_player_dead) exitWith {_btnAbort ctrlEnable true};
+		if(missionnamespace getVariable r_fracture_legs) exitWith {_btnRespawn ctrlEnable true; _btnAbort ctrlEnable true};
 		
-		//save inventory
-		/*_inventory = player call ptm_fnc_getInventory;
-		viruzPlayerSave = [player,_inventory,false];
-		publicVariableServer "viruzPlayerSave";		*/
-				
 		while {!isNull _display} do {
 			switch true do {
 				case ({isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1) : {
@@ -47,10 +42,10 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 		};
 		cutText ["", "PLAIN DOWN"];
 		
-		[] spawn { 
-			disableSerialization;
+		null = [] spawn { 
+				disableSerialization;
 				while {!isnull (findDisplay 49)} do {
 					closeDialog 602;
-					sleep 0.1;	
+					sleep 1;	
 				};
 		};
