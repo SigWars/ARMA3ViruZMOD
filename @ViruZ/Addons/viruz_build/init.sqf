@@ -4,8 +4,9 @@ if (isDedicated) exitWith {};
 if (!(isnil "viruz_build_keydown")) exitwith {};
 
 viruz_build_zeus_array = [];
-//viruz_build_array = getArray(missionConfigFile >> "CfgViruzBuildings" >> "ViruzBuildings");
-viruz_build_array = [
+viruz_build_array = getArray(missionConfigFile >> "cfgViruzBuilds" >> "BuildsReq");
+
+/*viruz_build_array = [
 ["ViruZ Modular",
 ["VIRUZ_Woodfloor_New",[["Viruz_Woodboard",4]]],
 ["VIRUZ_WoodWall_New",[["Viruz_Woodboard",4]]],
@@ -89,7 +90,7 @@ viruz_build_array = [
 ["Land_CampingTable_F",[["PartGeneric",3]]],
 ["Land_CampingTable_small_F",[["PartGeneric",1]]]
 ]
-];
+];*/
 
 viruz_build_categorieId = 0;
 viruz_build_classnameId = 0;

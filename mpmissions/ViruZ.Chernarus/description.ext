@@ -42,6 +42,7 @@ diagHit = 1;
 #include "CfgSpawnCrashSite.inc"				// Helicrash configs
 #include "Configs\CfgLoot\CfgBuildingLoot_Chernarus.hpp" 	// Custom Loot Chernarus
 #include "Configs\CfgCrafting\CfgCrafting.hpp" 	// Craft Recipes  //precisa adicionar na vehicles allowed do server caso não seja magazine
+#include "Configs\CfgCrafting\CfgBuild.hpp" 	// Build requeriments
 #include "Configs\CfgMap\Chernarus.hpp"			// Arvores / Metal / Pedra etc..
 #include "snap_build\points.hpp"
 

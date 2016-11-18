@@ -95,6 +95,8 @@ if (!isDedicated) then {
 	player_gearSet	=			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_gearSet.sqf";
 	ui_changeDisplay = 			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\ui_changeDisplay.sqf";
 	player_bakckTolobby = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_BacktoLobby.sqf";
+	viruz_onPause =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_onPause.sqf";
+	
 	//System
 	player_monitor =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\player_monitor.sqf";
 	player_spawn_1 =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\system\player_spawn_1.sqf";
@@ -339,12 +341,10 @@ if (!isDedicated) then {
 				};
 			};
 		};
-		/*
 		if (_dikCode in actionKeys "IngamePause") then {
 			_idOnPause = [] spawn viruz_onPause;
 		};
-		*/
-		//Hide Command and switch Primary weapon
+				//Hide Command and switch Primary weapon
 		if (_dikCode == 0x02) then {
 			showCommandingMenu "";
 			_handWeapon = currentweapon player;

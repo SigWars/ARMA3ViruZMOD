@@ -30,31 +30,31 @@ class CfgWorlds {
 	class Altis : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Altis";
-		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
 	class Stratis : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Stratis";
-		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
 	class Tanoa : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Tanoa";
-		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
 	class Bornholm : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Bornholm";
-		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
 	class Chernarus : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Chernarus"; 
-		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
 		
@@ -62,7 +62,7 @@ class CfgWorlds {
 	{
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Esseker";
-		pictureMap = "z\addons\viruz_mod\gui\sss.paa";
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		worldName="Esseker\Esseker.wrp";
 		clutterDist = 250;

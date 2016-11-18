@@ -14,7 +14,6 @@ class cfgVehiclesSpawner {
 	{"I_Heli_light_03_unarmed_F",3},		//Hellcat desarmado
 	{"O_T_LSV_02_unarmed_viper_F",3},
 	{"C_Offroad_02_unarmed_black_F",2},
-	{"Civilian_Offroad_01_white",5},
 	{"LandRover_TK_CIV_EP1",3}, 	//landhover do mod
 	{"BAF_Offroad_D", 5},
 	{"BAF_Offroad_W", 1},

@@ -18,7 +18,6 @@ class RscDisplayMain : RscStandardDisplay
 	
 	class controls 
 	{
-		
 		delete Spotlight1;
 		delete Spotlight2;
 		delete Spotlight3;
@@ -30,12 +29,18 @@ class RscDisplayMain : RscStandardDisplay
 		delete InfoDLCsOwned;
 		delete InfoNews;
 		
-		class VersionNumber;
+		/*class VersionNumber;
 		class VIRUZ_Version : VersionNumber
 		{
-			/*idc = -1;
+			idc = -1;
 			text = "0.0.6";
-			y = "22 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";*/
+			y = "22 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+		};*/
+		
+		class Logo: RscActivePicture
+		{
+			idc = 1005;
+			text = ""; //--- ToDo: Localize;
 		};
 		
 		class LogoVZ: RscActivePicture
@@ -47,14 +52,14 @@ class RscDisplayMain : RscStandardDisplay
 			onKillFocus = "(_this select 0) ctrlsettextcolor [0.9,0.9,0.9,1];";
 			onLoad = "(_this select 0) ctrlshow !isClass (configfile >> 'CfgPatches' >> 'A3_Map_Tanoabuka')";
 
-			idc = 1005;
-			text = "\a3\Ui_f\data\Logos\arma3_shadow_ca.paa"; //--- ToDo: Localize;
-			x = 0.427835 * safezoneW + safezoneX;
-			y = -0.0458901 * safezoneH + safezoneY;
-			w = 0.144329 * safezoneW;
-			h = 0.223955 * safezoneH;
+			idc = 17001;
+			text = "z\addons\viruz_mod\gui\viruz_logo_ca.paa"; //--- ToDo: Localize;
+			x = 0.427815 * safezoneW + safezoneX;
+			y = -0.059929 * safezoneH + safezoneY;
+			w = 0.14437 * safezoneW;
+			h = 0.279964 * safezoneH;
 			colorActive[] = {1,1,1,1};
-			tooltip = "View game credits, see the names behind Arma 3."; //--- ToDo: Localize;
+			tooltip = "View game site, see the names behind ViruZ."; //--- ToDo: Localize;
 		};
 		
 		class LogoViruZ: LogoVZ
@@ -62,12 +67,12 @@ class RscDisplayMain : RscStandardDisplay
 			show = 1;
 			onLoad = "(_this select 0) ctrlshow isClass (configfile >> 'CfgPatches' >> 'A3_Map_Tanoabuka')";
 
-			idc = 17001;
+			idc = 17002;
 			text = "z\addons\viruz_mod\gui\viruz_logo_ca.paa"; //--- ToDo: Localize;
-			x = 0.427835 * safezoneW + safezoneX;
-			y = -0.0458901 * safezoneH + safezoneY;
-			w = 0.144329 * safezoneW;
-			h = 0.223955 * safezoneH;
+			x = 0.427815 * safezoneW + safezoneX;
+			y = -0.059929 * safezoneH + safezoneY;
+			w = 0.14437 * safezoneW;
+			h = 0.279964 * safezoneH;
 			colorActive[] = {1,1,1,1};
 			tooltip = "View game site, see the names behind ViruZ."; //--- ToDo: Localize;
 		};
