@@ -29,7 +29,7 @@ _savedGroup = profileNamespace getVariable["savedGroup",[]];
 if (count _savedGroup > 1) then {
 			
 	if (_ownerUid in _savedGroup and _mover in _savedGroup ) then {
-			_sameGroup = true;
+		_sameGroup = true;
 	};
 		
 };
@@ -37,7 +37,7 @@ if (count _savedGroup > 1) then {
 if ( _mover != _ownerUid and !_sameGroup) then { 
 		cutText ["You are not the owner of this object or is not in the same group!", "PLAIN DOWN"];
 } else {
-	[_Object,"MoveObject",_hasPoles] spawn VZ_move_object;
+	[_Object,"MoveObject",_hasPoles] spawn ViruZClient_move_object;
 };
 
 

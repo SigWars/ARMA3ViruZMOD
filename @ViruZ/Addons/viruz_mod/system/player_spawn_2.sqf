@@ -213,7 +213,7 @@ while {true} do {
 	};
 	
 	//auto regen life
-	if (!r_player_infected and r_player_blood < 8000 and viruz_combat == 0 and _speed < 0.1 and viruz_hunger < 1500 and viruz_thirst < 1499 ) then {
+	if (!r_player_infected and r_player_blood < 8000 and viruz_combat == 0 and _speed < 0.1 and viruz_hunger < 1500 and viruz_thirst < 1499 and !r_player_unconscious) then {
 		_healtime = _healtime + 1;
 		if (_healtime > 5) then {
 			_healtime = 0;

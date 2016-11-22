@@ -38,16 +38,6 @@ server_StartSpawnVehicles =				compile preprocessFileLineNumbers "\z\addons\viru
 //PTm_fnc_windowsAreBroke =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_windowsAreBroke.sqf";
 //server_manikenSync =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_manikenSync.sqf";
 
-VIRUZ_SVCalcPrecision = compileFinal '
-	private["_low", "_high"];
-	_low = [
-		(_this select 0) - ((_this select 0) % 1),
-		(_this select 1) - ((_this select 1) % 1),
-		(_this select 2) - ((_this select 2) % 1)
-	];
-	_high = _this vectorDiff _low;
-	[_low, _high]';
-
 vehicle_handleInteract = {
 	private["_object"];
 	_object = _this select 0;

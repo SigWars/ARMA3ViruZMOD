@@ -298,7 +298,7 @@ class DZ_Melee: Mode_SemiAuto
 class CfgWeapons
 {
 	class SlotInfo;
-	class LinkedItems;
+	//class LinkedItems;
 	class Default;
 	class ItemCore;
 	class InventoryMuzzleItem_Base_F;
@@ -306,7 +306,7 @@ class CfgWeapons
 	class InventoryFlashLightItem_Base_F;
 	class InventoryUnderItem_Base_F;
 	class Snip;
-	class GunParticles;
+	//class GunParticles;
 	class muzzle_snds_L;
 	class muzzle_snds_H_MG;
 	class muzzle_snds_H;
@@ -322,8 +322,7 @@ class CfgWeapons
 	class Pistol_Base_F;
 	class Rifle_Base_F;
 	class Rifle_Long_Base_F;
-	class WeaponSlotsInfo;
-	class ItemInfo;
+	//class WeaponSlotsInfo;
 	class CowsSlot;
 	class PointerSlot;
 	class UGL_F;
@@ -457,7 +456,7 @@ class CfgWeapons
 				script="spawn player_chopWood;";
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		class WeaponSlotsInfo
 		{
 			mass=35;
 			allowedSlots[]={901,801,701};

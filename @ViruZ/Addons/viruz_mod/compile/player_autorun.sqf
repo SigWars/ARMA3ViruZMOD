@@ -1,12 +1,13 @@
-private ["_pos","_surface"];
+private ["_surface"];
 r_interrupt = false;
 viruz_Holster = currentweapon player;
 
 if ((animationState player) != "amovpercmstpsnonwnondnon") then {
 player action["switchWeapon", player, player, 100];
+
+waitUntil {	((animationState player) == "amovpercmstpsnonwnondnon");};
 };
 
-sleep 2.5;
 while {vzautoRun > 0} do {
 	_surface = surfaceisWater position player;
 	sleep 0.05;
@@ -14,12 +15,12 @@ while {vzautoRun > 0} do {
 			r_interrupt = false; vzautoRun = -1; player switchmove ""; player selectWeapon viruz_Holster; hintSilent "Cant run in water!"; 	
 		} else {
 			if (r_interrupt) then {
-					r_interrupt = false; vzautoRun = -1; player switchmove ""; player selectWeapon viruz_Holster; hintSilent "Autorun finished!"; 
+					r_interrupt = false; vzautoRun = -1; player switchmove ""; player selectWeapon viruz_Holster; //hintSilent "Autorun finished!"; 
 				} else {
 					if ((player getVariable["combattimeout", 0] >= time)) then {
 						r_interrupt = false; vzautoRun = -1; player switchmove ""; player selectWeapon viruz_Holster; hintSilent "Cant run in combat!"; 
 					} else {
-					player playAction "FastF";
+					player playActionNow "FastF";
 				};
 			};	
 		};	

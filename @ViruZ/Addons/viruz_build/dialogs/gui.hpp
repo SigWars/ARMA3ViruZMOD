@@ -48,29 +48,29 @@ class viruz_build_dialogMenu
 			style = ST_CENTER;
 			action = "closeDialog 0; [cursorTarget] call viruz_fnc_openconstructionmenu";
 		};
-		class RscButton002 : viruz_RscButton
+		/*class RscButton002 : viruz_RscButton
 		{
 			idc = 1501;
-			text = "Move object";
+			text = "Under construction";
 			x = 0.27; 
 			y = 0.45;
 			h = 0.10;
 			w = 0.21;
 			style = ST_CENTER;
-			action = "[cursorTarget] call viruz_fnc_moveObject; closeDialog 0;";
-		};
+			//action = "[cursorTarget] call viruz_fnc_moveObject; closeDialog 0;";
+		};*/
 		class RscButton003 : viruz_RscButton
 		{
 			idc = 1502;
 			text = "Remove object";
-			x = 0.52; 
-			y = 0.45;
-			h = 0.10;
+			x = 0.3875;
+			y = 0.44;
 			w = 0.21;
+			h = 0.1;
 			style = ST_CENTER;
 			action = "[cursorTarget] call viruz_fnc_removeObject; closeDialog 0;";
 		};
-		class RscButton004 : viruz_RscButton
+		/*class RscButton004 : viruz_RscButton
 		{
 			idc = 1503;
 			text = "Align to Ground"; //only class
@@ -80,14 +80,18 @@ class viruz_build_dialogMenu
 			w = 0.21;
 			style = ST_CENTER;
 			action = "[] call viruz_fnc_alignObject; closeDialog 0;";
-		};
+		};*/
 		class RscButton005 : viruz_RscButton
 		{
 			text = "Cancel";
-			x = 0.52; 
+			/*x = 0.52; 
 			y = 0.61;
 			h = 0.10;
+			w = 0.21;*/
+			x = 0.3875;
+			y = 0.6;
 			w = 0.21;
+			h = 0.1;
 			style = ST_CENTER;
 			action = "closeDialog 0;";
 		};

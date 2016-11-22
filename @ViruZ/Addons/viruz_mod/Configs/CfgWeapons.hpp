@@ -3,7 +3,6 @@
 	class ItemCore;
 	class Uniform_Base;
 	class UniformItem;
-	class ItemInfo;
 	class Rifle;
 	class PistolCore;
 	class SlotInfo;

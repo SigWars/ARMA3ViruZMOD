@@ -523,11 +523,6 @@ class CfgMagazines {
 		picture = "\viruz_equip\viruzico\viruz_shovel.paa";
 		descriptionShort = $STR_EQUIP_DESC_1;
 		
-		class ItemInfo {
-			type = 620;
-			allowedSlots[] = {701,801,901};
-			mass = 10;
-		};
 	};
 	
 	class FMradio_Mag : CA_Magazine {

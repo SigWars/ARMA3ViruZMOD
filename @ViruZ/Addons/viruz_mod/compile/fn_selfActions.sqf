@@ -135,7 +135,7 @@ if((count _vehicles > 0) and !_inVehicle and _canDo) then {
 };
 
 //Allow player lock and unlock builds
-if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 15) and (typeOf cursorTarget in VIRUZ_BUILDS + VIRUZ_GATES)) then {
+if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 10) and (typeOf cursorTarget in VIRUZ_BUILDS + VIRUZ_GATES)) then {
 	private["_building","_casaName","_locked","_LockerUID","_UIDdono","_savedGroup","_sameGroup","_numDoors","_doorPos","_dist","_doorNum","_maxDist"];
 	_building = cursorTarget;
 	_casaName = typeOf _building in VIRUZ_BUILDS + VIRUZ_GATES;

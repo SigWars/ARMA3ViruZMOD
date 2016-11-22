@@ -5,7 +5,8 @@ Autor: SigWar
 This work is licensed under ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA). 
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 */
-private ["_couldFix","_findTable","_findGen","_objects","_countCinder","_countWood","_countMetal","_WorkStation","_cindercount","_woodcount","_nailcount","_metalcount","_arrayWood","_arrayCinder","_arrayNail","_arrayMetal"];
+private ["_couldFix","_findTable","_findGen","_objects","_Structures","_countCinder","_countWood","_countMetal","_WorkStation","_cindercount","_woodcount","_nailcount",
+"_metalcount","_arrayWood","_arrayCinder","_arrayNail","_arrayMetal"];
 
 _couldFix = true;
 
@@ -17,10 +18,13 @@ _WorkStation = _findTable select 0;
 _inventoryHolder = _WorkStation;
 _findGen = nearestObjects [_WorkStation, ["Land_Portable_generator_F"], 50];
 _generator = _findGen select 0;
+if (isNull _generator) exitWith { cutText ["No generator found!!, Maintenance table need to be 50 meters from the generator", "PLAIN DOWN",2]; };
 _objects = nearestObjects [_generator, [], 55];
 
-if (count _findGen < 1) exitWith { cutText ["No generator found!!, Maintenance table need to be 50 meters from the generator", "PLAIN DOWN",2]; };
-
+_Structures = [];
+{
+	_Structures SET [count _Structures,_x select 1];
+}forEach (getArray(configFile >> "CfgConstruction" >> "Structures"));
 
 //count number of Houses
 _countCinder = [];
@@ -42,7 +46,7 @@ _countMetal = [];
 	
 } forEach _objects;
 
-_ressNailreq = count _countMetal;
+_ressNailreq = (round ( count _countWood / 3 ) min 1);
 _ressCinderreq = count _countCinder;
 _ressWooodreq = count _countWood;
 _ressMetalreq = count _countMetal;
@@ -107,18 +111,25 @@ if (count _Builds >= 1 and _couldFix) then {
 			
 			//save in database
 			{
-				_objectID 	= _x getVariable ["ObjectID","0"];
-				_objectUID	= _x getVariable ["ObjectUID","0"];
-				_OwnerUID	= _x getVariable ["OwnerUID","0"];
-								
-				if (_OwnerUID != "0") then {
+				if (typeOf _x in _Structures) then {
 					_x setDamage 0;
-					viruzUpdateBuild = ["RepairBuild",_objectID,_objectUID,currentDate];
-					publicVariable "viruzUpdateBuild";
+					viruzUpdateVehicle = [_x,"maintainBuild"];
+					publicVariable "viruzUpdateVehicle";
 				};
+			
 			}foreach _objects;
 		
-		cutText ["Maintenance made for more 7 Days","PLAIN DOWN"];
+		
+		//Text mensage
+		[
+			"<t color='#0033FF' size = '.7'>Maintenance made for more 7 Days</t><br />", //structured text
+			0.24 * safezoneW + safezoneX, //number - x
+			0.01 * safezoneH + safezoneY, //number - y
+			5, //number - duration
+			1, // number - fade in time
+			0, // number - delta y
+			0 //number - layer ID
+		] spawn bis_fnc_dynamicText;
 				
 }else {
 	//cutText [format["You need %1 Cinder Blocks + %2 Wooden Pile + %3 Metal Scraps + %4 Box of Nails to fix and update you builds",_ressCinderreq,_ressWooodreq,_ressMetalreq,_ressNailreq ],"PLAIN DOWN",2];
