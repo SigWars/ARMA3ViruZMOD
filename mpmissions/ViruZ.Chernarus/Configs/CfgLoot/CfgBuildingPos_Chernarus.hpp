@@ -7,9 +7,9 @@
 ///////////////////////////////////////////////////
 
 
-	//CasaCivilsLow
+	//Basic_Residence
 	
-	class Land_HouseV2_04_interier: CasaCivilsLow
+	class Land_HouseV2_04_interier: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -31,7 +31,7 @@
 		};
 	};
 	
-	class Land_rail_station_big: CasaCivilsLow
+	class Land_rail_station_big: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -48,7 +48,7 @@
 		};
 	};
 	
-	class Land_HouseV_1I4: CasaCivilsLow
+	class Land_HouseV_1I4: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -65,7 +65,7 @@
 		};
 	};
 	
-	class Land_BoatSmall_1: CasaCivilsLow
+	class Land_BoatSmall_1: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -75,7 +75,7 @@
 		};
 	};
 	
-	class Land_i_House_Small_02_V1_F: CasaCivilsLow
+	class Land_i_House_Small_02_V1_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -87,7 +87,7 @@
 		};
 	};
 
-	class Land_Slum_House03_F: CasaCivilsLow
+	class Land_Slum_House03_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -97,7 +97,7 @@
 		};
 	};
 
-	class Land_i_House_Small_03_V1_F: CasaCivilsLow
+	class Land_i_House_Small_03_V1_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -109,7 +109,7 @@
 		};
 	};
 	
-	class Land_Slum_House01_F: CasaCivilsLow
+	class Land_Slum_House01_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -118,7 +118,7 @@
 		};
 	};
 	
-	class Land_i_Stone_HouseBig_V3_F: CasaCivilsLow
+	class Land_i_Stone_HouseBig_V3_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -131,7 +131,7 @@
 		};
 	};
 	
-	class Land_i_Stone_HouseSmall_V1_F: CasaCivilsLow
+	class Land_i_Stone_HouseSmall_V1_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -144,7 +144,7 @@
 	};
 
 	/** APEX
-	class Land_House_Small_05_F: CasaCivilsLow
+	class Land_House_Small_05_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -155,7 +155,7 @@
 	};
 	*/
 	
-	class Land_i_Stone_Shed_V3_F: CasaCivilsLow
+	class Land_i_Stone_Shed_V3_F: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -166,9 +166,9 @@
 	};
 	
 	/////////////////////////////////////////////////////////////////////////////////
-	//CasaCivilUpper
+	//Special_Residence
 	
-	class Land_u_House_Big_01_V1_F: CasaCivilUpper
+	class Land_u_House_Big_01_V1_F: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -184,7 +184,7 @@
 		};
 	};
 	
-	class Land_HouseV2_02_Interier: CasaCivilUpper
+	class Land_HouseV2_02_Interier: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -202,7 +202,7 @@
 		};
 	};
 	
-	class Land_Panelak: CasaCivilUpper
+	class Land_Panelak: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -247,7 +247,7 @@
 		};
 	};
 
-	class Land_Panelak2: CasaCivilUpper
+	class Land_Panelak2: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -289,7 +289,7 @@
 		};
 	};
 	
-	class Land_i_House_Big_02_V1_F: CasaCivilUpper
+	class Land_i_House_Big_02_V1_F: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -305,7 +305,7 @@
 		};
 	};
 	
-	class Land_i_House_Big_01_V3_F: CasaCivilUpper
+	class Land_i_House_Big_01_V3_F: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -321,7 +321,7 @@
 		};
 	};
 	
-	class Land_Offices_01_V1_F: CasaCivilUpper
+	class Land_Offices_01_V1_F: Office
 	{
 		lootPos[] =
 		{
@@ -374,7 +374,7 @@
 	};
 	
 	/** APEX
-	class Land_House_Small_03_F: CasaCivilUpper
+	class Land_House_Small_03_F: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -388,7 +388,7 @@
 	};
 	*/
 	
-	class Land_House_C_5_EP1: CasaCivilUpper
+	class Land_House_C_5_EP1: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -422,7 +422,7 @@
 		};
 	};
 	
-	class Land_i_House_Big_01_V1_F: CasaCivilUpper
+	class Land_i_House_Big_01_V1_F: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -439,7 +439,7 @@
 	};
 	
 	/** APEX
-	class Land_Addon_04_F: CasaCivilUpper
+	class Land_Addon_04_F: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -465,7 +465,7 @@
 	};
 	**/
 	
-	class Land_Dum_mesto_in: CasaCivilUpper
+	class Land_Dum_mesto_in: Special_Residence
 	{
 		lootPos[] =
 		{
@@ -507,9 +507,9 @@
 	
 	
 	/////////////////////////////////////////////////////////////////////////////////
-	//Mercados
+	//Market
 	
-	class Land_A_GeneralStore_01: Mercados
+	class Land_A_GeneralStore_01: Market
 	{
 		lootPos[] =
 		{
@@ -732,9 +732,9 @@
 	};
 	
 	/////////////////////////////////////////////////////////////////////////////////
-	//Restaurantes
+	//Restaurant
 	
-	class Land_A_Pub_01: Restaurantes
+	class Land_A_Pub_01: Restaurant
 	{
 		lootPos[] =
 		{
@@ -805,7 +805,7 @@
 		};
 	};
 	
-	class Land_i_Shop_01_V2_F: Restaurantes
+	class Land_i_Shop_01_V2_F: Basic_Store
 	{
 		lootPos[] =
 		{
@@ -822,7 +822,7 @@
 		};
 	};
 
-	class Land_i_Shop_01_V1_F: Restaurantes
+	class Land_i_Shop_01_V1_F: Military_Store
 	{
 		lootPos[] =
 		{
@@ -839,7 +839,7 @@
 		};
 	};
 	
-	class Land_Shop_Town_03_F: Restaurantes
+	class Land_Shop_Town_03_F: Basic_Store
 	{
 		lootPos[] =
 		{
@@ -866,7 +866,7 @@
 		};
 	};
 	
-	class Land_u_Shop_01_V1_F: Restaurantes
+	class Land_u_Shop_01_V1_F: Military_Store
 	{
 		lootPos[] =
 		{
@@ -883,7 +883,7 @@
 		};
 	};
 	
-	class Land_HouseB_Tenement: Restaurantes
+	class Land_HouseB_Tenement: Restaurant
 	{
 		lootPos[] =
 		{
@@ -933,7 +933,7 @@
 		};
 	};
 	
-	class Land_House_C_4_EP1: Restaurantes
+	class Land_House_C_4_EP1: Restaurant
 	{
 		lootPos[] =
 		{
@@ -981,7 +981,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Bombeiros
 	
-	class Land_a_stationhouse: Bombeiros
+	class Land_a_stationhouse: Fire_Department
 	{
 		lootPos[] =
 		{
@@ -1058,7 +1058,7 @@
 	
 	/////////////////////////////////////////////////////////////////////////////////
 	//Escolas
-	class Land_A_Office01: Escolas
+	class Land_A_Office01: Office
 	{
 		lootPos[] =
 		{
@@ -1199,7 +1199,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Celeiros
 	
-	class Land_Stodola_old_open: Celeiros
+	class Land_Stodola_old_open: Barn
 	{
 		lootPos[] =
 		{
@@ -1229,7 +1229,7 @@
 		};
 	};
 	
-	class Land_Stodola_open: Celeiros
+	class Land_Stodola_open: Barn
 	{
 		lootPos[] =
 		{
@@ -1243,7 +1243,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//CeleirosBig
 	
-	class Land_Barn_W_01: CeleirosBig
+	class Land_Barn_W_01: Barn
 	{
 		lootPos[] =
 		{
@@ -1259,7 +1259,7 @@
 		};
 	};
 	
-	class Land_Farm_Cowshed_a: CeleirosBig
+	class Land_Farm_Cowshed_a: Barn
 	{
 		lootPos[] =
 		{
@@ -1272,7 +1272,7 @@
 		};
 	};
 
-	class Land_Farm_Cowshed_b: CeleirosBig
+	class Land_Farm_Cowshed_b: Barn
 	{
 		lootPos[] =
 		{
@@ -1285,7 +1285,7 @@
 		};
 	};
 
-	class Land_Farm_Cowshed_c: CeleirosBig
+	class Land_Farm_Cowshed_c: Barn
 	{
 		lootPos[] =
 		{
@@ -1297,7 +1297,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Industriais
 	
-	class Land_Ind_Workshop01_L: Industriais
+	class Land_Ind_Workshop01_L: Factory
 	{
 		lootPos[] =
 		{
@@ -1316,7 +1316,7 @@
 		};
 	};
 	
-	class Land_Ind_Garage01: Industriais
+	class Land_Ind_Garage01: Factory
 	{
 		lootPos[] =
 		{
@@ -1329,7 +1329,7 @@
 		};
 	};
 	
-	class Land_Ind_Workshop01_04: Industriais
+	class Land_Ind_Workshop01_04: Factory
 	{
 		lootPos[] =
 		{
@@ -1349,7 +1349,7 @@
 		};
 	};
 
-	class Land_Ind_Expedice_3: Industriais
+	class Land_Ind_Expedice_3: Factory
 	{
 		lootPos[] =
 		{
@@ -1367,7 +1367,7 @@
 		};
 	};
 	
-	class Land_Hangar_2: Industriais
+	class Land_Hangar_2: Hangar
 	{
 		lootPos[] =
 		{
@@ -1382,7 +1382,7 @@
 		};
 	};
 	
-	class Land_Nav_Boathouse: Industriais
+	class Land_Nav_Boathouse: Factory
 	{
 		lootPos[] =
 		{
@@ -1401,7 +1401,7 @@
 		};
 	};
 	
-	class Land_A_FuelStation_Build: Industriais
+	class Land_A_FuelStation_Build: Factory
 	{
 		lootPos[] =
 		{
@@ -1413,7 +1413,7 @@
 		};
 	};
 
-	class Land_Ind_Workshop01_02: Industriais
+	class Land_Ind_Workshop01_02: Factory
 	{
 		lootPos[] =
 		{
@@ -1422,7 +1422,7 @@
 		};
 	};
 
-	class Land_Sara_hasic_zbroj: Industriais
+	class Land_Sara_hasic_zbroj: Factory
 	{
 		lootPos[] =
 		{
@@ -1433,7 +1433,7 @@
 		};
 	};
 
-	class Land_Barn_Metal: Industriais
+	class Land_Barn_Metal: Construction
 	{
 		lootPos[] =
 		{
@@ -1452,7 +1452,7 @@
 		};
 	};
 	
-	class Land_cargo_house_slum_F: Industriais
+	class Land_cargo_house_slum_F: Church
 	{
 		lootPos[] =
 		{
@@ -1461,7 +1461,7 @@
 		};
 	};
 	
-	class Land_Shed_02_F: Industriais
+	class Land_Shed_02_F: Factory
 	{
 		lootPos[] =
 		{
@@ -1473,7 +1473,7 @@
 		};
 	};
 	
-	class Land_Shed_W01: Industriais
+	class Land_Shed_W01: Factory
 	{
 		lootPos[] =
 		{
@@ -1481,7 +1481,7 @@
 		};
 	};
 	
-	class Land_u_Shed_Ind_F: Industriais
+	class Land_u_Shed_Ind_F: Factory
 	{
 		lootPos[] =
 		{
@@ -1498,7 +1498,7 @@
 		};
 	};
 	
-	class Land_A_BuildingWIP: Industriais
+	class Land_A_BuildingWIP: Construction
 	{
 		lootPos[] =
 		{
@@ -1568,7 +1568,7 @@
 		};
 	};
 	
-	class Land_Misc_PowerStation: Industriais
+	class Land_Misc_PowerStation: Factory
 	{
 		lootPos[] =
 		{
@@ -1584,7 +1584,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Fabricas
 	
-	class Land_Tovarna2: Fabricas
+	class Land_Tovarna2: Construction
 	{
 		lootPos[] =
 		{
@@ -1629,7 +1629,7 @@
 		};
 	};
 	
-	class Land_Ind_Pec_01: Fabricas
+	class Land_Ind_Pec_01: Construction
 	{
 		lootPos[] =
 		{
@@ -1649,7 +1649,7 @@
 		};
 	};
 	
-	class Land_Ind_TankBig: Fabricas
+	class Land_Ind_TankBig: Construction
 	{
 		lootPos[] =
 		{
@@ -1660,7 +1660,7 @@
 		};
 	};
 	
-	class Land_Shed_Ind02: Fabricas
+	class Land_Shed_Ind02: Factory
 	{
 		lootPos[] =
 		{
@@ -1695,7 +1695,7 @@
 		};
 	};
 	
-	class Land_ReservoirTower_F: Fabricas
+	class Land_ReservoirTower_F: Construction
 	{
 		lootPos[] =
 		{
@@ -1705,7 +1705,7 @@
 		};
 	};
 	
-	class Land_i_Shed_Ind_F: Fabricas
+	class Land_i_Shed_Ind_F: Factory
 	{
 		lootPos[] =
 		{
@@ -1726,7 +1726,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Igrejas
 	
-	class Land_Church_03: Igrejas
+	class Land_Church_03: Church
 	{
 		lootPos[] =
 		{
@@ -1855,7 +1855,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Hangares
 	
-	class Land_Ss_hangar: Hangares
+	class Land_Ss_hangar: Hangar
 	{
 		lootPos[] =
 		{
@@ -1876,7 +1876,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//MilitaresLow
 	
-	class Land_Hlidac_budka: MilitaresLow
+	class Land_Hlidac_budka: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -1890,7 +1890,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//MilitaresMedios
 	
-	class Land_Mil_ControlTower: MilitaresMedios
+	class Land_Mil_ControlTower: Medium_Military
 	{
 		lootPos[] =
 		{
@@ -1907,7 +1907,7 @@
 		};
 	};
 	
-	class Land_Cargo_Tower_V1_No5_F: MilitaresMedios
+	class Land_Cargo_Tower_V1_No5_F: Special_Military
 	{
 		lootPos[] =
 		{
@@ -1932,7 +1932,7 @@
 		};
 	};
 
-	class Land_MilOffices_V1_F: MilitaresMedios
+	class Land_MilOffices_V1_F: Medium_Military
 	{
 		lootPos[] =
 		{
@@ -1953,7 +1953,7 @@
 		};
 	};
 	
-	class Land_Misc_deerstand: MilitaresMedios
+	class Land_Misc_deerstand: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -1962,7 +1962,7 @@
 		};
 	};
 	
-	class Land_tent_east: MilitaresMedios
+	class Land_tent_east: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -1974,7 +1974,7 @@
 		};
 	};
 	
-	class CampEast_EP1: MilitaresMedios
+	class CampEast_EP1: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -1985,7 +1985,7 @@
 		};
 	};
 	
-	class Land_Cargo_House_V3_F: MilitaresMedios
+	class Land_Cargo_House_V3_F: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -1995,7 +1995,7 @@
 		};
 	};
 	
-	class Land_i_Barracks_V1_F: MilitaresMedios
+	class Land_i_Barracks_V1_F: Special_Military
 	{
 		lootPos[] =
 		{
@@ -2037,7 +2037,7 @@
 		};
 	};
 	
-	class Land_Airport_Tower_F: MilitaresMedios
+	class Land_Airport_Tower_F: Medium_Military
 	{
 		lootPos[] =
 		{
@@ -2081,7 +2081,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//MilitaresHigh
 	
-	class Land_Barrack2_EP1: MilitaresHigh
+	class Land_Barrack2_EP1: Special_Military
 	{
 		lootPos[] =
 		{
@@ -2114,7 +2114,7 @@
 		};
 	};
 	
-	class Land_Mil_Barracks_i: MilitaresHigh
+	class Land_Mil_Barracks_i: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -2148,7 +2148,7 @@
 		};
 	};
 	
-	class Land_Cargo_HQ_V1_F: MilitaresHigh
+	class Land_Cargo_HQ_V1_F: Medium_Military
 	{
 		lootPos[] =
 		{

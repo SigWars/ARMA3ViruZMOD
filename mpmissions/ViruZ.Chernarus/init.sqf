@@ -77,3 +77,6 @@ if (!isDedicated) then {
 };
 execFSM "fn_ASM.fsm";
 waitUntil {time > 0}; 
+if (hasInterface) then {
+	[] execVM "antidupe.sqf";
+};

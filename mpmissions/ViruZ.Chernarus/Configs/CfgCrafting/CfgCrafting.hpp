@@ -15,21 +15,23 @@ class CfgCrafting
 	
 	class Blueprint_Hatchet: ViruZ_ResumoCrafting
 	{
+		sound = "";
 		displayName = "Hatchet";
 		pictureItem = "MeleeHatchet"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
 		returnedItems[] =
 		{
 			{1, "MeleeHatchet"}
 		};
 		ferramentas[] =
 		{
-			"Viruz_Hammer"
+			"Viruz_Hammer",
+			"Viruz_Pliers"
 		};
 		componentes[] = 
 		{
 			{1, "PartWoodPile"},
-			{1, "equip_nails"},
-			{1, "Viruz_Wrench"}
+			{3, "PartGeneric"}
 		};
 	};
 	
@@ -43,13 +45,34 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			"Viruz_Wrench"
+			"Viruz_Screwdriver",
+			"Viruz_Phillips"
 		};
 		componentes[] = 
 		{
-			{1, "Viruz_HandCan"},
-			{2, "Battery_mag"},
-			{1, "Viruz_MobilePhone"}
+			{2, "Viruz_HandyCam"},
+			{2, "Viruz_SmartPhone"},
+			{2, "Viruz_MobilePhone"}
+		};
+	};
+
+	class Blueprint_CinderBlock: ViruZ_ResumoCrafting
+	{
+		displayName = "Cinderblock";
+		pictureItem = "Viruz_CinderBlock"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{5, "Viruz_CinderBlock"}
+		};
+		ferramentas[] =
+		{
+			"Viruz_CinderBlockMold"
+		};
+		componentes[] = 
+		{
+			{1, "Viruz_CementBag"},
+			{5, "Viruz_Rock"},
+
 		};
 	};
 	
@@ -67,11 +90,11 @@ class CfgCrafting
 		};
 		componentes[] = 
 		{
-			{1, "Viruz_Hammer"},
-			{1, "Viruz_Serrote"},
 			{1, "Viruz_Wrench"},
-			{1, "ItemWire"},
-			{1, "Viruz_Maleta"}
+			{1, "Viruz_Suitcase"},
+			{1,"Viruz_Screwdriver"},
+			{1,"Viruz_Phillips"},
+			{1,"Viruz_Pliers"}
 		};
 	};
 	
@@ -85,35 +108,37 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			"Viruz_Wrench"
+			"Viruz_Phillips"
 		};
 		componentes[] = 
 		{
-			{1, "Viruz_Laptop"},
-			{5, "Battery_mag"}
+			{1, "Viruz_SmartPhone"},
+			{1, "Viruz_MobilePhone"}
 		};
 	};
 	
 	class Blueprint_WoodBoard: ViruZ_ResumoCrafting
 	{
+		sound = "build_0";
 		displayName = "WoodBoard";
 		pictureItem = "Viruz_Woodboard"; //Classe do Item para chamar a imagem
 		returnedItems[] =
 		{
-			{2, "Viruz_Woodboard"}
+			{1, "Viruz_Woodboard"}
 		};
 		ferramentas[] =
 		{
-			"Viruz_Serrote"
+			"Viruz_Saw"
 		};
 		componentes[] = 
 		{
-			{1, "PartWoodPile"}
+			{3, "PartWoodPile"}
 		};
 	};
 	
 	class Blueprint_WaterBottle: ViruZ_ResumoCrafting
 	{
+		sound = "fillwater_0";		
 		displayName = "Water Bottle";
 		pictureItem = "ItemWaterbottle"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -123,16 +148,17 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			""
 		};
 		componentes[] = 
 		{
-			{1, "ItemWaterbottleBoiled"}
+			{1, "ItemWaterbottleUnfilled"}
 		};
 	};
 	
 	class Blueprint_FoodSteakCooked: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Food Steak Cooked";
 		pictureItem = "FoodSteakCooked"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -142,7 +168,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -152,6 +178,7 @@ class CfgCrafting
 	
 	class Blueprint_FoodmeatCooked: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Food Meat Cooked";
 		pictureItem = "FoodmeatCooked"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -161,7 +188,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -171,6 +198,7 @@ class CfgCrafting
 	
 	class Blueprint_FishCookedTrout: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Fish Cooked Trout";
 		pictureItem = "FishCookedTrout"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -180,7 +208,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -190,6 +218,7 @@ class CfgCrafting
 	
 	class Blueprint_FishCookedSeaBass: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Fish Cooked SeaBass";
 		pictureItem = "FishCookedSeaBass"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -199,7 +228,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -209,6 +238,7 @@ class CfgCrafting
 	
 	class Blueprint_FishCookedTuna: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Fish Cooked Tuna";
 		pictureItem = "FishCookedTuna"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -218,7 +248,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -228,6 +258,7 @@ class CfgCrafting
 	
 	class Blueprint_FoodmuttonCooked: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Food Mutton Cooked";
 		pictureItem = "FoodmuttonCooked"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -237,7 +268,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -247,6 +278,7 @@ class CfgCrafting
 	
 	class Blueprint_FoodchickenCooked: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Food Chicken Cooked";
 		pictureItem = "FoodchickenCooked"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -256,7 +288,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -266,6 +298,7 @@ class CfgCrafting
 	
 	class Blueprint_FoodbaconCooked: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Food Bacon Cooked";
 		pictureItem = "FoodbaconCooked"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -275,7 +308,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -285,6 +318,7 @@ class CfgCrafting
 	
 	class Blueprint_FoodrabbitCooked: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Food Rabbit Cooked";
 		pictureItem = "FoodrabbitCooked"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -294,7 +328,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -304,6 +338,7 @@ class CfgCrafting
 	
 	class Blueprint_FoodbeefCooked: ViruZ_ResumoCrafting
 	{
+		sound = "cook_0";		
 		displayName = "Food Beef Cooked";
 		pictureItem = "FoodbeefCooked"; //Classe do Item para chamar a imagem
 		requiresFire = 1;
@@ -313,7 +348,7 @@ class CfgCrafting
 		};
 		ferramentas[] =
 		{
-			
+			"Viruz_Saucepan"
 		};
 		componentes[] = 
 		{
@@ -323,6 +358,7 @@ class CfgCrafting
 	
 	class Blueprint_ItemJerrycan: ViruZ_ResumoCrafting
 	{
+		sound = "refuel_0";		
 		displayName = "Fill Jerrycan";
 		pictureItem = "ItemJerrycan"; //Classe do Item para chamar a imagem
 		requiredInteractionModelGroup = "FuelSource";
@@ -344,6 +380,7 @@ class CfgCrafting
 	{
 		displayName = "Cement Bag";
 		pictureItem = "Viruz_CementBag"; //Classe do Item para chamar a imagem
+		requiresFire = 1;
 		returnedItems[] =
 		{
 			{1, "Viruz_CementBag"}
@@ -362,6 +399,7 @@ class CfgCrafting
 	
 	class Blueprint_CinderBlockMold: ViruZ_ResumoCrafting
 	{
+		sound = "build_0";		
 		displayName = "CinderBlock Mold";
 		pictureItem = "Viruz_CinderBlockMold"; //Classe do Item para chamar a imagem
 		returnedItems[] =
@@ -381,7 +419,7 @@ class CfgCrafting
 		};
 	};
 	
-	class Blueprint_IronBar: ViruZ_ResumoCrafting
+/*	class Blueprint_IronBar: ViruZ_ResumoCrafting
 	{
 		displayName = "IronBar";
 		pictureItem = "Viruz_IronBar"; //Classe do Item para chamar a imagem
@@ -422,6 +460,6 @@ class CfgCrafting
 			{1, "Viruz_Antiseptic"}
 		};
 	};
-	
+*/	
 	
 };

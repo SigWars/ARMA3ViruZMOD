@@ -1,24 +1,19 @@
 class CfgMusic
 {
-	class PitchWhine
-	{
-		name = "PitchWhine";
-		sound[] = {"\viruz_sound\effects\pitchWine.ogg", db+20, 1.0};
-	};
 	class viruz_track_death_1
 	{
 		name = "ViruZTrackDeath";
 		sound[] = {"\viruz_sound\tracks\track_death_1.ogg", db+0, 1.0};
 	};
-		class viruz_track_28
+	class viruz_track_28
 	{
 		name = "ViruZTrack28";
-		sound[] = {"\viruz_sound\tracks\28_days.ogg", db+0, 1.0};
+		sound[] = {"\viruz_sound\tracks\track_intro.ogg", db+0, 1.0};
 	};
 	class viruz_track_intro_1
 	{
 		name = "ViruZTrackIntro";
-		sound[] = {"\viruz_sound\tracks\evil_main.ogg", db+0, 1.0};
+		sound[] = {"\viruz_sound\tracks\track_intro.ogg", db+0, 1.0};
 		duration = ;
 	};
 	class z_suspense_0

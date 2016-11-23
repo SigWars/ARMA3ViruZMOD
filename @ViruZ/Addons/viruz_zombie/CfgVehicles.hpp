@@ -118,8 +118,8 @@ class CfgVehicles {
 		
 		modelSides[] = {3, 1};
 		nakedUniform = "U_BasicBody";
-		linkedItems[] = {"V_Chestrig_khk"};
-		respawnLinkedItems[] = {"V_Chestrig_khk"};
+		linkedItems[] = {"V_Rangemaster_belt"};
+		respawnLinkedItems[] = {"V_Rangemaster_belt"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\A3\Characters_F\BLUFOR\Data\clothing1_co.paa"};
@@ -146,16 +146,16 @@ class CfgVehicles {
 	class z_soldier_heavy : z_soldier {
 		_generalMacro = "z_soldier_heavy";
 		displayName = "Zombie Soldier (Heavy)";
-		linkedItems[] = {"V_Chestrig_khk", "H_HelmetB"};
-		respawnLinkedItems[] = {"V_Chestrig_khk", "H_HelmetB"};
+		linkedItems[] = {"V_Rangemaster_belt", "H_Booniehat_mcamo"};
+		respawnLinkedItems[] = {"V_Rangemaster_belt", "H_Booniehat_mcamo"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 	};
 	
 		class z_soldier_heavy2 : z_soldier {
 		_generalMacro = "z_soldier_heavy";
 		displayName = "Zombie Soldier (Heavy)";
-		linkedItems[] = {"V_Chestrig_khk", "H_HelmetB"};
-		respawnLinkedItems[] = {"V_Chestrig_khk", "H_HelmetB"};
+		linkedItems[] = {"V_Rangemaster_belt", "H_Booniehat_khk"};
+		respawnLinkedItems[] = {"V_Rangemaster_belt", "H_Booniehat_khk"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		moves = "CfgMovesZombieCrouch";
 	};
@@ -183,8 +183,8 @@ class CfgVehicles {
 				armor = 0.7*5;
 			};
 		};
-		linkedItems[] = {"H_PilotHelmetHeli_B", "V_TacVest_oli"};
-		respawnLinkedItems[] = {"H_PilotHelmetHeli_B", "V_TacVest_oli"};
+		linkedItems[] = {"H_Cap_oli_hs", "V_Rangemaster_belt"};
+		respawnLinkedItems[] = {"H_Cap_oli_hs", "V_Rangemaster_belt"};
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\pilot_suit_rus_co.paa"};
 		

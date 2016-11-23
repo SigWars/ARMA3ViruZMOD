@@ -298,7 +298,6 @@ class DZ_Melee: Mode_SemiAuto
 class CfgWeapons
 {
 	class SlotInfo;
-	//class LinkedItems;
 	class Default;
 	class ItemCore;
 	class InventoryMuzzleItem_Base_F;
@@ -306,7 +305,6 @@ class CfgWeapons
 	class InventoryFlashLightItem_Base_F;
 	class InventoryUnderItem_Base_F;
 	class Snip;
-	//class GunParticles;
 	class muzzle_snds_L;
 	class muzzle_snds_H_MG;
 	class muzzle_snds_H;
@@ -322,7 +320,6 @@ class CfgWeapons
 	class Pistol_Base_F;
 	class Rifle_Base_F;
 	class Rifle_Long_Base_F;
-	//class WeaponSlotsInfo;
 	class CowsSlot;
 	class PointerSlot;
 	class UGL_F;
@@ -404,28 +401,28 @@ class CfgWeapons
 			{
 				begin1[]=
 				{
-					"viruz_weapons\melee\sounds\swing_0.wss",
+					"viruz_weapons\melee\sounds\swing_0.ogg",
 					1.994328,
 					0.94999999,
 					10
 				};
 				begin2[]=
 				{
-					"viruz_weapons\melee\sounds\swing_1.wss",
+					"viruz_weapons\melee\sounds\swing_1.ogg",
 					1.994328,
 					0.69999999,
 					10
 				};
 				begin3[]=
 				{
-					"viruz_weapons\melee\sounds\swing_0.wss",
+					"viruz_weapons\melee\sounds\swing_0.ogg",
 					1.994328,
 					0.60000002,
 					10
 				};
 				begin4[]=
 				{
-					"viruz_weapons\melee\sounds\swing_1.wss",
+					"viruz_weapons\melee\sounds\swing_1.ogg",
 					1.994328,
 					0.80000001,
 					10

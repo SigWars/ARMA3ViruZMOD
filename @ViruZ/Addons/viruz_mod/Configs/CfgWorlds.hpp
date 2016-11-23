@@ -1,31 +1,12 @@
 class CfgWorlds {
 	class DefaultWorld {
-		class Weather {
-			class Overcast; // External class reference
-		};
+		class Grid;
+		class DefaultClutter;
 	};
  
 	class CAWorld : DefaultWorld {
-		class Grid {};
-		class DayLightingBrightAlmost; // External class reference
-		class DayLightingRainy; // External class reference
-		class DefaultClutter; // External class reference
-  
-		class Weather : Weather {
-			class Lighting; // External class reference
-			
-			class Overcast : Overcast {
-				class Weather1; // External class reference
-				class Weather2; // External class reference
-				class Weather3; // External class reference
-				class Weather4; // External class reference
-				class Weather5; // External class reference
-				class Weather6; // External class reference
-			};
-		};
-		
+
 	};
-	class DefaultLighting;
  
 	class Altis : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
@@ -51,15 +32,8 @@ class CfgWorlds {
 		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
-	class Chernarus : CAWorld {
-		cutscenes[] = {"Stratis_intro1"};
-		description = "ViruZ Chernarus"; 
-		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
-		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
-	};
 		
-	class Esseker: CAWorld
-	{
+	class Esseker: CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Esseker";
 		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
@@ -1014,6 +988,13 @@ class CfgWorlds {
 				angle=0;
 			};
 		};
+	};
+
+	class Chernarus: CAWorld {
+		cutscenes[] = {"Stratis_intro1"};
+		description = "ViruZ Chernarus"; 
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
+		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
 
 };

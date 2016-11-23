@@ -511,8 +511,8 @@ if (isServer) then {
             _forceStop = false;
             
             while {true} do {
-                
-                if (overcast > 0.75) then {
+                 //0.75
+                if (overcast > 0.30) then {
                     
                     if (time >= _nextRainEventTime) then {
                         private ["_rainTimeSec"];

@@ -8,7 +8,7 @@
 
 class HelicrashViruZ: Default {
 		zombieChance = 0.4;
-		minRoaming = 2;
+		minRoaming = 3;
 		maxRoaming = 4;
 		zombieClass[] = {"z_soldier_heavy","z_soldier_pilot","z_soldier"};
 		lootChance = 0.5;
@@ -36,7 +36,7 @@ class HelicrashViruZ: Default {
 //holders
 	
 class VZBox_MediaV: HelicrashViruZ{ //HELICRASH BOX
-		lootChance = 0.9;
+		lootChance = 0.7;
 		isObjectHolder = 1;
 		isBuildingPos = 0;
 };

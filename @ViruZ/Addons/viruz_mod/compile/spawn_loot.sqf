@@ -120,7 +120,7 @@ if !(_full) then {
 	
 	/////////////////////////////////////////////////////////////////////////////////
 	//Lixo
-	case "trash": {
+	case "Trash": {
 		//Item is one magazine
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
@@ -128,141 +128,220 @@ if !(_full) then {
 	
 	////////////////////////////////////////////////////////////////////////////////
 	//Bebidas
-	case "Bebidas": {
+	case "Drink": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
 	
 	////////////////////////////////////////////////////////////////////////////////
 	//Comidas
-	case "Comidas": {
+	case "Food": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
 		
 	////////////////////////////////////////////////////////////////////////////////
-	//CraftItens
-	case "CraftItens": {
+	//Loot básico casas
+	case "Basic_Items": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
 	////////////////////////////////////////////////////////////////////////////////
-	//CraftBuildItens
-	case "CraftBuildItens": {
+	//Loot casas
+	case "Residence_Items": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
 	
 	////////////////////////////////////////////////////////////////////////////////
-	//Items_Magazine
-	case "Items_Magazine": {
+	//Loot escritório/escola
+	case "Office_Items": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-		
+
+	////////////////////////////////////////////////////////////////////////////////
+	//Loot básico de sobrevivência
+	case "Basic_survival": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+
+	////////////////////////////////////////////////////////////////////////////////
+	//Loot itens de sobrevivência
+	case "Survival_items": {
+		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+
+	////////////////////////////////////////////////////////////////////////////////
+	//Materiais
+	case "Materials": {
+		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+				
 	////////////////////////////////////////////////////////////////////////////////
 	//Ferramentas
-	case "Ferramentas": {
+	case "Tools": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
 		
 	////////////////////////////////////////////////////////////////////////////////
-	//Perças para Carros e Heli (Futuro = Separado os 2 Carro e Heli)
+	//Peças veículos
 	case "CarParts": {
 		//Item is one magazine
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	
+/*	case "HeliParts": {
+		//Item is one magazine
+		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "BikeParts": {
+		//Item is one magazine
+		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+*/		
 	////////////////////////////////////////////////////////////////////////////////
-	//Medical
+	//Médicos
 	
 	case "Medical_Lite": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "Medical_Especial": {
+	case "Medical_Special": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
 		
 	////////////////////////////////////////////////////////////////////////////////
-	//Mochilas Classe
+	//Mochilas
 	
-	case "Boat_Backpack": {
+	case "Boat_Backpacks": {
 		_item addBackpackCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "MochilasLow": {
+	case "Light_Backpacks": {
 		_item addBackpackCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "MochilasMedias": {
+	case "Medium_Backpacks": {
 		_item addBackpackCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "MochilasHigh": {
+	case "Heavy_Backpacks": {
 		_item addBackpackCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
 	
 	////////////////////////////////////////////////////////////////////////////////
-	//Roupas Classes
+	//Roupas
 	
-	case "RoupasLow": {
+	case "Civilian_Glasses": {
 		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "RoupasUpper": {
+	case "Civilian_Clothes": {
 		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "RoupasMilitares": {
+	case "Civilian_Vests": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+	case "Civilian_Special": {
 		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-	
+	case "Civilian_Headgear": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Military_Glasses": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Military_Clothes": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Military_Vests": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Military_Armor": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Military_Headgear": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Military_Helmet": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Military_Gear_Special": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
 	
 	////////////////////////////////////////////////////////////////////////////////
 	//Granadas de Mão
 	
-	case "trow": {
+	case "Offensive_Grenades": {
 		//Item is one magazine
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};	
+	case "Smoke_Grenades": {
+		//Item is one magazine
+		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
 		
 	////////////////////////////////////////////////////////////////////////////////
-	//Pistolas Classes e Munições
-	case "PistolasLow": {
+	//Lanternas
+	case "Flashlights": {
 		[_item, _iClass] call _fnc_SpawnWeapon;
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "Mag_PistolasLow": {
-		//Item is one magazine
-		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
-		_item setVariable ["looted",_dateNow,true];
-		};
-		
-	case "PistolasMedias": {
+
+	////////////////////////////////////////////////////////////////////////////////
+	//Pistolas e Munições
+	case "Pistols_Low": {
 		[_item, _iClass] call _fnc_SpawnWeapon;
 		_item setVariable ["looted",_dateNow,true];
 		};
-	case "Mag_PistolasMedias": {
-		//Item is one magazine
+	case "Mag_Pistols_Low": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-		
-	case "PistolasHigh": {
+	case "Attach_Pistols_Low": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Pistols_Low_Special": {
 		[_item, _iClass] call _fnc_SpawnWeapon;
 		_item setVariable ["looted",_dateNow,true];
 		};
-	
-	case "Mag_PistolasHigh": {
-		//Item is one magazine
+	case "Pistols_High": {
+		[_item, _iClass] call _fnc_SpawnWeapon;
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Mag_Pistols_High": {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Attach_Pistols_High": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};
+	case "Pistols High Special": {
+		[_item, _iClass] call _fnc_SpawnWeapon;
 		_item setVariable ["looted",_dateNow,true];
 		};
 

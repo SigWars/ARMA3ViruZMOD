@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1303.5199,1191.6204,5012.7295};
-		dir[]={0.74105066,-0.66912001,0.057073288};
-		up[]={0.66718495,0.74311501,0.05138503};
-		aside[]={0.076794893,1.6022168e-006,-0.99711335};
+		pos[]={2879.1055,225.08989,5354.7139};
+		dir[]={-0.98831481,-0.15053123,-0.027992722};
+		up[]={-0.15058303,0.9885844,-0.0042656865};
+		aside[]={-0.028313721,1.1297907e-006,0.99970144};
 	};
 };
 binarizationWanted=0;
@@ -200,21 +200,25 @@ class Mission
 	class Intel
 	{
 		briefingName="ViruZ Chernarus";
-		startWeather=0.1;
-		startWind=0.1;
+		startWeather=0;
+		startWind=0;
+		startLightnings=0.43422538;
 		startWaves=0.1;
-		forecastWeather=0.1;
-		forecastWind=0.1;
+		forecastWeather=0;
+		forecastWind=0;
 		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		rainForced=1;
+		lightningsForced=1;
+		windForced=1;
 		year=2035;
 		month=6;
-		day=24;
-		minute=0;
-		startFogBase=0.001;
-		forecastFogBase=0.001;
-		startFogDecay=0.0049999999;
-		forecastFogDecay=0.0049999999;
+		day=13;
+		hour=2;
+		minute=-23;
+		startFogBase=-1000;
+		forecastFogBase=-1000;
+		startFogDecay=0;
+		forecastFogDecay=0;
 	};
 	class Entities
 	{

@@ -10,7 +10,8 @@
 class CfgLoot {
 ///////////////////////////////////////////////////
 //Lixo
-	trash[] = {
+
+	Trash[] = {
 		{
 			"FoodCanWBBeansEmpty",
 			"FoodCanMHBeansEmpty",
@@ -38,8 +39,8 @@ class CfgLoot {
 			"ItemSodaDietEmpty",
 			"ItemSodaGrapeEmpty",
 			"ItemSodaHamEmpty",
-			"ItemSodaLaranjaEmpty",
-			"ItemSodaLimaoEmpty",
+			"ItemSodaOrangeEmpty",
+			"ItemSodaLemonEmpty",
 			"ItemSodaYodaEmpty", 
 			"ItemSodaBeergoldenEmpty"	
 		},
@@ -81,15 +82,15 @@ class CfgLoot {
 ///////////////////////////////////////////////////
 //Bebidas
 
-	Bebidas[] = {
+	Drink[] = {
 		{
 			"ItemSodaOriginal",  
 			"ItemSodaDarth",
 			"ItemSodaDiet",
 			"ItemSodaGrape",
 			"ItemSodaHam",
-			"ItemSodaLaranja",
-			"ItemSodaLimao",
+			"ItemSodaOrange",
+			"ItemSodaLemon",
 			"ItemSodaYoda", 
 			"ItemSodaBeergolden"
 
@@ -100,8 +101,8 @@ class CfgLoot {
 			0.05,	//ItemSodaDiet
 			0.05,	//ItemSodaGrape
 			0.05,	//ItemSodaHam
-			0.05,	//"ItemSodaLaranja
-			0.05,	//ItemSodaLimao
+			0.05,	//"ItemSodaOrange
+			0.05,	//ItemSodaLemon
 			0.05,	//ItemSodaYoda
 			0.05	//ItemSodaBeergolden
 
@@ -111,7 +112,7 @@ class CfgLoot {
 ///////////////////////////////////////////////////
 //Comidas
 	
-	Comidas[] = {
+	Food[] = {
 		{
 			"FoodCanWBBeans",
 			"FoodCanMHBeans",
@@ -161,103 +162,179 @@ class CfgLoot {
 	};
 
 ///////////////////////////////////////////////////
-//CraftItens //addItemCargoGlobal
+//Loot básico e de residências
 
-	CraftItens[] = {
-		{
-			"Viruz_HandCan",
-			"Viruz_MobilePhone",
-			"Viruz_SmartPhone",
-			"Chemlight_green",
-			"Chemlight_red",
-			"Chemlight_yellow",
-			"Chemlight_blue"
-		},
-		{
-			0.02, 	//HandCam
-			0.04, 	//MobilePhone
-			0.04, 	//SmartPhone
-			0.02,	//Chemlight_green
-			0.02,	//Chemlight_red
-			0.02,	//Chemlight_yellow
-			0.02	//Chemlight_blue	
-		}
-	};
-
-///////////////////////////////////////////////////
-//CraftBuildItens //addItemCargoGlobal
-
-	CraftBuildItens[] = {
-		{
-			"Viruz_Laptop",
-			"Chemlight_green",
-			"Chemlight_red",
-			"Chemlight_yellow",
-			"Chemlight_blue"
-
-	
-		},
-		{
-			0.04, 	//Laptop
-			0.02,	//Chemlight_green
-			0.02,	//Chemlight_red
-			0.02,	//Chemlight_yellow
-			0.02	//Chemlight_blue	
-
-		}
-	};
-
-///////////////////////////////////////////////////
-//Itens //addItemCargoGlobal
-
-	Items_Magazine[] = {
+	Basic_Items[] = {
 		{
 			"ItemMatchbox",
-			"FMradio_Mag",
+			"Chemlight_blue",
 			"Chemlight_green",
 			"Chemlight_red",
 			"Chemlight_yellow",
+			"Viruz_CardBoardBox"
+		},
+		{
+			0.03, 	//Matchbox
+			0.02,	//Chemlight blue
+			0.02,	//Chemlight green
+			0.02,	//Chemlight red
+			0.02,	//Chemlight yellow
+			0.02	//Cardboard box
+			
+		}
+	};
+
+
+	Residence_Items[] = {
+		{
+			"Viruz_HandyCam",
+			"Viruz_MobilePhone",
+			"Viruz_SmartPhone",
+			"Viruz_Laptop",
+			"Viruz_Saucepan",
+			"ItemMatchbox",
+			"ItemCanOpener",
+			"Viruz_Suitcase",
 			"Chemlight_blue",
-			"Battery_mag"
+			"Chemlight_green",
+			"Chemlight_red",
+			"Chemlight_yellow",			
+			"Viruz_CardBoardBox"
+
+		},
+		{
+			0.02, 	//Handycam
+			0.04, 	//Mobilephone
+			0.03, 	//Smartphone
+			0.02,	//Laptop
+			0.04,	//Saucepan
+			0.06,	//Matchbox
+			0.04,	//Can opener
+			0.03,	//Suitcase
+			0.02,	//Chemlight blue
+			0.02,	//Chemlight green
+			0.02,	//Chemlight red
+			0.02,	//Chemlight yellow
+			0.02	//Cardboard box
+			
+		}
+	};
+
+///////////////////////////////////////////////////
+//Loot escritório/escola //addMagazineCargoGlobal
+
+	Office_Items[] = {
+		{
+			"Viruz_HandyCam",
+			"Viruz_MobilePhone",
+			"Viruz_SmartPhone",
+			"Viruz_Laptop",
+			"ItemMatchbox",
+			"Chemlight_blue",
+			"Chemlight_green",
+			"Chemlight_red",
+			"Chemlight_yellow",
+			"Viruz_Suitcase",
+			"Viruz_CardBoardBox"
+
+		},
+		{
+			0.03, 	//Handycam
+			0.02,	//Mobilephone
+			0.03,	//Smartphone
+			0.04,	//Laptop
+			0.02,	//Matchbox
+			0.02,	//Chemlight blue
+			0.02,	//Chemlight green
+			0.02,	//Chemlight red
+			0.02,	//Chemlight yellow
+			0.03,	//Suitcase
+			0.02	//Cardboard box
+		}
+	};
+
+///////////////////////////////////////////////////
+//Loot militar/sobrevivência
+
+	Basic_Survival[] = {	//addItemCargoGlobal
+		{
+			"ItemCompass",
+			"Binocular",
+			"ItemKnife",
+			"ItemWatch",
+			"ItemGPS"
 			
 		},
 		{
-			0.08, 	//ItemMatchbox
-			0.04,	//Radio FM
-			0.02,	//Chemlight_green
-			0.02,	//Chemlight_red
-			0.02,	//Chemlight_yellow
-			0.02,	//Chemlight_blue	
-			0.03    //Battery_mag
+			0.05,	//Compass
+			0.04,	//Binocular
+			0.03, 	//Knife
+			0.03,	//Watch
+			0.01	//GPS
+		}
+	};
+
+	Survival_Items[] = {	//addMagazineCargoGlobal
+		{
+			"ItemTent",
+			"ItemWaterBottle"
+		},
+		{
+			0.03,	//Tent
+			0.05	//Canteen
+		}
+	};
+		
+///////////////////////////////////////////////////
+//Materiais //addMagazineCargoGlobal
+
+	Materials[] = {
+		{
+			"ItemSandbag",
+			"ItemWire",
+			"equip_nails",
+			"Viruz_CementBag",
+			"Viruz_CardBoardBox"
+			
+		},
+		{
+			0.04, 	//Sandbag
+			0.06,	//Metal wire
+			0.06,	//Box of nails
+			0.02,	//Cement bag
+			0.05	//Cardboard box
 
 		}
 	};
 	
 ///////////////////////////////////////////////////
-//Ferramentas
+//Ferramentas //addMagazineCargoGlobal
 
-	Ferramentas[] = {
+	Tools[] = {
 		{
 			"Viruz_Hammer",
-			"Viruz_Serrote",
+			"Viruz_Saw",
 			"Viruz_Wrench",
-			"ItemSandbag",
-			"ItemWire",
-			"equip_nails"
+			"Viruz_Screwdriver",
+			"Viruz_Phillips",
+			"Viruz_Pliers",
+			"ItemEtool"
+
 		},
 		{
-			0.05,	//martelo
-			0.05,	//serrote
-			0.05,	//chave de boca
-			0.02,	//saco de areia
-			0.04,	//cabo de metal
-			0.04	//pregos
+			0.05,	//Hammer
+			0.05,	//Saw
+			0.05,	//Wrench
+			0.05,	//Scredriver
+			0.05,	//Phillips screwdriver
+			0.05,	//Pliers
+			0.05	//Shovel
 				
 		}
 	};
 
 ///////////////////////////////////////////////////
-//Perças para Carros e Heli (Futuro = Separado os 2 Carro e Heli)
+//Peças reparo veículos //addMagazineCargoGlobal
 
 	CarParts[] = {
 		{
@@ -278,9 +355,39 @@ class CfgLoot {
 			0.04
 		}
 	};
-	
+/*
+	HeliParts[] = {
+		{
+			"PartGlass",
+			"PartVRotor",
+			"ItemJerrycan"
+
+		},
+		{
+			0.07,
+			0.03,
+			0.05
+
+		}
+	};
+
+	BikeParts[] = {
+		{
+			"PartWheel",
+			"PartBody",
+			"PartHandlebar"
+
+		},
+		{
+			0.07,
+			0.05,
+			0.05
+
+		}
+	};
+*/	
 ///////////////////////////////////////////////////
-//Medical
+//Medical //addMagazineCargoGlobal
 
 	Medical_Lite[] = {
 		{
@@ -298,7 +405,7 @@ class CfgLoot {
 		}
 	};
 	
-	Medical_Especial[] = {
+	Medical_Special[] = {
 		{
 			"ItemBandage",
 			"ItemPainkiller",
@@ -322,9 +429,9 @@ class CfgLoot {
 	
 	
 ///////////////////////////////////////////////////
-//Mochilas Classe
+//Mochilas //addVehicleCargoGlobal
 
-	Boat_Backpack[] = {
+	Boat_Backpacks[] = {
 		{
 			"Boat_rescue_backpack_4",
 			"Boat_transport_backpack_1",
@@ -341,22 +448,35 @@ class CfgLoot {
 		}
 	};
 	
-	MochilasLow[] = {
+	Light_Backpacks[] = {
 		{
-			"CUP_B_GER_Medic_FLecktarn", // 200
-			"CUP_B_USMC_AssaultPack", // 200
-			"CUP_B_RPGPack_Khaki" // 180
+			"CUP_B_ACRScout_m95", // 60
+			"CUP_B_AssaultPack_ACU", // 150
+			"CUP_B_AssaultPack_Black", // 150
+			"CUP_B_AssaultPack_Coyote", // 150
+			"CUP_B_MedicPack_ACU", // 150
+			"B_AssaultPack_khk", // 160
+			"B_AssaultPack_Kerry" // 160
+
+			
 		},
 		{
-			0.05, // "CUP_B_GER_Medic_FLecktarn"
-			0.05, // "CUP_B_USMC_AssaultPack"
-			0.06 // "CUP_B_RPGPack_Khaki"
-			
+			0.06, //"CUP_B_ACRScout_m95",
+			0.03, //"CUP_B_AssaultPack_ACU",
+			0.03, //"CUP_B_AssaultPack_Black",
+			0.03, //"CUP_B_AssaultPack_Coyote",
+			0.03, //"CUP_B_MedicPack_ACU"
+			0.02, //"B_AssaultPack_khk",
+			0.02 //"B_AssaultPack_Kerry",
+
 		}
 	};
 	
-	MochilasMedias[] = {
+	Medium_Backpacks[] = {
 		{
+			"CUP_B_RPGPack_Khaki", // 180
+			"CUP_B_GER_Medic_FLecktarn", // 200
+			"CUP_B_USMC_AssaultPack", // 200
 			"B_Kitbag_cbr", // 280
 			"B_Kitbag_sgg", // 280
 			"CUP_B_SLA_Medicbag", // 280
@@ -365,8 +485,13 @@ class CfgLoot {
 			"CUP_B_GER_Pack_Tropentarn", // 280
 			"CUP_B_USPack_Black", // 280
 			"CUP_B_USPack_Coyote" // 280
+
+			
 		},
 		{
+			0.06, // "CUP_B_RPGPack_Khaki"
+			0.05, // "CUP_B_GER_Medic_FLecktarn"
+			0.05, // "CUP_B_USMC_AssaultPack"
 			0.03, // "B_Kitbag_cbr"
 			0.03, // "B_Kitbag_sgg"
 			0.03, // "CUP_B_SLA_Medicbag"
@@ -374,11 +499,13 @@ class CfgLoot {
 			0.03, // "CUP_B_GER_Pack_Flecktarn"
 			0.03, // "CUP_B_GER_Pack_Tropentarn"
 			0.03, // "CUP_B_USPack_Black"
-			0.03 // "CUP_B_USPack_Coyote"
+			0.03  // "CUP_B_USPack_Coyote"
+
+
 		}
 	};
 	
-	MochilasHigh[] = {
+	Heavy_Backpacks[] = {
 		{
 			"CUP_B_AlicePack_Khaki", // 300
 			"CUP_B_ACRPara_m95", // 300
@@ -402,11 +529,12 @@ class CfgLoot {
 	};
 	
 ////////////////////////////////////////////////////
-//Roupas
+////Roupas //addMagazineCargoGlobal
+///////////////
+////Civis
 
-	RoupasLow[] = {
+	Civilian_Glasses[] = {
 		{
-			//GLASSES
 			"G_Diving",
 			"G_Shades_Black",
 			"G_Shades_Blue",
@@ -422,24 +550,35 @@ class CfgLoot {
 			"G_Sport_Blackyellow",
 			"G_Sport_Greenblack",
 			"G_Sport_Checkered",
-			"G_Sport_Red",
-			
-			//ARMA 3 ROUPAS CIVIS by LeoHN
-			"U_C_Poloshirt_blue",
-			"U_C_Poloshirt_burgundy",
-			"U_C_Poloshirt_stripped",
-			"U_C_Poloshirt_tricolour",
-			"U_C_Poloshirt_salmon",
-			"U_C_Poloshirt_redwhite",
-			"U_C_Poor_1",
-			"U_C_HunterBody_grn",
-			"U_I_G_Story_Protagonist_F",
-			"U_I_G_resistanceLeader_F",
-			"U_BG_Guerrilla_6_1",
-			"U_Marshal",
+			"G_Sport_Red"
+
+		},
+		{
+			0.04,	//G_Diving
+			0.05,	//G_Shades_Black
+			0.05,	//G_Shades_Blue
+			0.05,	//G_Sport_Blackred
+			0.05,	//G_Spectacles
+			0.05,	//G_Spectacles_Tinted
+			0.05,	//G_Lowprofile
+			0.05,	//G_Shades_Green
+			0.05,	//G_Shades_Red
+			0.05,	//G_Squares
+			0.05,	//G_Squares_Tinted
+			0.05,	//G_Sport_BlackWhite
+			0.05,	//G_Sport_Blackyellow
+			0.05,	//G_Sport_Greenblack
+			0.05,	//G_Sport_Checkered
+			0.05	//G_Sport_Red
+
+		}
+	};
+	
+	Civilian_Clothes[] = {
+		{	//ARMA3
+			"U_Rangemaster",
 			"U_Competitor",
-			
-			//ROUPAS CIVIS DO MOD
+			//RDS
 			"rds_uniform_citizen1",
 			"rds_uniform_citizen2",
 			"rds_uniform_citizen3",
@@ -452,450 +591,185 @@ class CfgLoot {
 			"rds_uniform_Woodlander2",
 			"rds_uniform_Woodlander3",
 			"rds_uniform_Woodlander4",
+			"rds_uniform_Villager1",
+			"rds_uniform_Villager2",
+			"rds_uniform_Villager3",
+			"rds_uniform_Villager4",
+			"rds_uniform_Rocker1",
+			"rds_uniform_Rocker2",
+			"rds_uniform_Rocker3",
+			"rds_uniform_Rocker4",
 			"rds_uniform_Functionary1",
-			"rds_uniform_Functionary2",
-			"rds_uniform_Policeman",
-			
-			//COLETES CIVIS
+			"rds_uniform_Functionary2"
+
+		},
+		{
+			//ARMA3
+			0.05,	//U_Rangemaster",
+			0.03,	//U_Competitor",
+			//RDS
+			0.05,	//rds_uniform_citizen1
+			0.05,	//rds_uniform_citizen2
+			0.05,	//rds_uniform_citizen3
+			0.05,	//rds_uniform_citizen4
+			0.05,	//rds_uniform_Profiteer1
+			0.05,	//rds_uniform_Profiteer2
+			0.05,	//rds_uniform_Profiteer3
+			0.05,	//rds_uniform_Profiteer4
+			0.05,	//rds_uniform_Woodlander1
+			0.05,	//rds_uniform_Woodlander2
+			0.05,	//rds_uniform_Woodlander3
+			0.05,	//rds_uniform_Woodlander4
+			0.05,	//rds_uniform_Villager1
+			0.05,	//rds_uniform_Villager2
+			0.05,	//rds_uniform_Villager3
+			0.05,	//rds_uniform_Villager4
+			0.05,	//rds_uniform_Rocker1
+			0.05,	//rds_uniform_Rocker2
+			0.05,	//rds_uniform_Rocker3
+			0.05,	//rds_uniform_Rocker4
+			0.05,	//rds_uniform_Functionary1
+			0.05	//rds_uniform_Functionary2
+
+		}
+	};
+
+	Civilian_Vests[] = {
+		{
 			"V_Rangemaster_belt",
 			"V_BandollierB_khk",
 			"V_BandollierB_cbr",
 			"V_BandollierB_rgr",
 			"V_BandollierB_blk",
-			"V_BandollierB_oli",
-			"V_Chestrig_khk",
-			"V_Chestrig_rgr",
-			"V_Chestrig_blk",
-			"V_Chestrig_oli",
-			"V_TacVest_khk",
-			"V_TacVest_brn",
-			"V_TacVest_oli",
-			"V_TacVest_blk",
-			"V_TacVest_camo",
-			"V_TacVest_blk_POLICE",
-			"V_TacVestIR_blk",
-			"V_TacVestCamo_khk",
-			
-			//HEADGEAR
-			"H_Cap_red",
-			"H_Cap_blu",
-			"H_Cap_oli",
-			"H_Cap_tan",
-			"H_Cap_blk",
-			"H_Cap_grn",
-			"H_Cap_grn_BI",
-			"H_Cap_blk_ION",
-			"H_Bandanna_surfer",
-			"H_Bandanna_gry",
-			"H_Bandanna_sgg",
-			"H_TurbanO_blk",
-			"H_StrawHat",
-			"H_StrawHat_dark",
-			"H_Hat_blue",
-			"H_Hat_brown",
-			"H_Hat_grey",
-			"H_Hat_checker",
-			"H_Hat_tan"
+			"V_BandollierB_oli"
 
 		},
 		{
-			//GLASSES
-			0.04,	//G_Diving
-			0.05,	//G_Shades_Black
-			0.05,	//G_Shades_Blue
-			0.05,	//G_Sport_Blackred
-			0.05,	//G_Spectacles
-			0.05,	//G_Spectacles_Tinted
-			0.05,	//G_Lowprofile
-			0.05,	//G_Shades_Green
-			0.05,	//G_Shades_Red
-			0.05,	//G_Squares
-			0.05,	//G_Squares_Tinted
-			0.05,	//G_Sport_BlackWhite
-			0.05,	//G_Sport_Blackyellow
-			0.05,	//G_Sport_Greenblack
-			0.05,	//G_Sport_Checkered
-			0.05,	//G_Sport_Red
-			
-			//ARMA 3 ROUPAS CIVIS by LeoHN
-			0.03,	//U_C_Poloshirt_blue",
-			0.03,	//U_C_Poloshirt_burgundy",
-			0.03,	//U_C_Poloshirt_stripped",
-			0.03,	//U_C_Poloshirt_tricolour",
-			0.03,	//U_C_Poloshirt_salmon",
-			0.03,	//U_C_Poloshirt_redwhite",
-			0.03,	//U_C_Poor_1",
-			0.03,	//U_C_HunterBody_grn",
-			0.03,	//U_I_G_Story_Protagonist_F",
-			0.03,	//U_I_G_resistanceLeader_F",
-			0.03,	//U_BG_Guerrilla_6_1",
-			0.03,	//U_Marshal",
-			0.03,	//U_Competitor",
-
-			//ROUPAS CIVIS DO MOD
-			0.05,	//rds_uniform_citizen1",
-			0.05,	//rds_uniform_citizen2",
-			0.05,	//rds_uniform_citizen3",
-			0.05,	//rds_uniform_citizen4",
-			0.05,	//rds_uniform_Profiteer1",
-			0.05,	//rds_uniform_Profiteer2",
-			0.05,	//rds_uniform_Profiteer3",
-			0.05,	//rds_uniform_Profiteer4",
-			0.05,	//rds_uniform_Woodlander1",
-			0.05,	//rds_uniform_Woodlander2",
-			0.05,	//rds_uniform_Woodlander3",
-			0.05,	//rds_uniform_Woodlander4",
-			0.05,	//rds_uniform_Functionary1",
-			0.05,	//rds_uniform_Functionary2",
-			0.05,	//rds_uniform_Policeman",
-			
-			//COLETES CIVIS
-			0.05,	//V_Rangemaster_belt",
-			0.05,	//V_BandollierB_khk",
-			0.05,	//V_BandollierB_cbr",
-			0.05,	//V_BandollierB_rgr",
-			0.05,	//V_BandollierB_blk",
-			0.05,	//V_BandollierB_oli",
-			0.03,	//V_Chestrig_khk",
-			0.03,	//V_Chestrig_rgr",
-			0.03,	//V_Chestrig_blk",
-			0.03,	//V_Chestrig_oli",
-			0.02,	//V_TacVest_khk",
-			0.02,	//V_TacVest_brn",
-			0.02,	//V_TacVest_oli",
-			0.02,	//V_TacVest_blk",
-			0.02,	//V_TacVest_camo",
-			0.02,	//V_TacVest_blk_POLICE",
-			0.02,	//V_TacVestIR_blk",
-			0.02,	//V_TacVestCamo_khk"
-			
-			//HEADGEAR
-			0.05,	//H_Cap_red
-			0.05,	//H_Cap_blu
-			0.05,	//H_Cap_oli
-			0.05,	//H_Cap_tan
-			0.05,	//H_Cap_blk
-			0.05,	//H_Cap_grn
-			0.05,	//H_Cap_grn_BI
-			0.05,	//H_Cap_blk_ION
-			0.05,	//H_Bandanna_surfer
-			0.05,	//H_Bandanna_gry
-			0.05,	//H_Bandanna_sgg
-			0.05,	//H_TurbanO_blk
-			0.05,	//H_StrawHat
-			0.05,	//H_StrawHat_dark
-			0.05,	//H_Hat_blue
-			0.05,	//H_Hat_brown
-			0.05,	//H_Hat_grey
-			0.05,	//H_Hat_checker
-			0.05	//H_Hat_tan
-
-		}
-	};
-
-
-	RoupasUpper[] = {
-		{
-			//GLASSES
-			"G_Diving",
-			"G_Shades_Black",
-			"G_Shades_Blue",
-			"G_Sport_Blackred",
-			"G_Spectacles",
-			"G_Spectacles_Tinted",
-			"G_Lowprofile",
-			"G_Shades_Green",
-			"G_Shades_Red",
-			"G_Squares",
-			"G_Squares_Tinted",
-			"G_Sport_BlackWhite",
-			"G_Sport_Blackyellow",
-			"G_Sport_Greenblack",
-			"G_Sport_Checkered",
-			"G_Sport_Red",
-			
-			//ARMA 3 ROUPAS CIVIS by LeoHN
-			"U_C_Poloshirt_blue",
-			"U_C_Poloshirt_burgundy",
-			"U_C_Poloshirt_stripped",
-			"U_C_Poloshirt_tricolour",
-			"U_C_Poloshirt_salmon",
-			"U_C_Poloshirt_redwhite",
-			"U_C_Poor_1",
-			"U_C_HunterBody_grn",
-			"U_I_G_Story_Protagonist_F",
-			"U_I_G_resistanceLeader_F",
-			"U_BG_Guerrilla_6_1",
-			"U_Marshal",
-			"U_Competitor",
-			
-			//ROUPAS CIVIS DO MOD
-			"rds_uniform_citizen1",
-			"rds_uniform_citizen2",
-			"rds_uniform_citizen3",
-			"rds_uniform_citizen4",
-			"rds_uniform_Profiteer1",
-			"rds_uniform_Profiteer2",
-			"rds_uniform_Profiteer3",
-			"rds_uniform_Profiteer4",
-			"rds_uniform_Woodlander1",
-			"rds_uniform_Woodlander2",
-			"rds_uniform_Woodlander3",
-			"rds_uniform_Woodlander4",
-			"rds_uniform_Functionary1",
-			"rds_uniform_Functionary2",
-			"rds_uniform_Policeman",
-			
-			//COLETES CIVIS
-			"V_HarnessO_brn",
-			"V_HarnessOGL_brn",
-			"V_HarnessO_gry",
-			"V_HarnessOGL_gry",
-			"V_HarnessOSpec_brn",
-			"V_HarnessOSpec_gry",
-			"V_RebreatherB",
-			"V_RebreatherIR",
-			"V_RebreatherIA",
-			
-			//HEADGEAR
-			"H_Cap_red",
-			"H_Cap_blu",
-			"H_Cap_oli",
-			"H_Cap_tan",
-			"H_Cap_blk",
-			"H_Cap_grn",
-			"H_Cap_grn_BI",
-			"H_Cap_blk_ION",
-			"H_Bandanna_surfer",
-			"H_Bandanna_gry",
-			"H_Bandanna_sgg",
-			"H_TurbanO_blk",
-			"H_StrawHat",
-			"H_StrawHat_dark",
-			"H_Hat_blue",
-			"H_Hat_brown",
-			"H_Hat_grey",
-			"H_Hat_checker",
-			"H_Hat_tan"
-
-		},
-		{
-			//GLASSES
-			0.04,	//G_Diving
-			0.05,	//G_Shades_Black
-			0.05,	//G_Shades_Blue
-			0.05,	//G_Sport_Blackred
-			0.05,	//G_Spectacles
-			0.05,	//G_Spectacles_Tinted
-			0.05,	//G_Lowprofile
-			0.05,	//G_Shades_Green
-			0.05,	//G_Shades_Red
-			0.05,	//G_Squares
-			0.05,	//G_Squares_Tinted
-			0.05,	//G_Sport_BlackWhite
-			0.05,	//G_Sport_Blackyellow
-			0.05,	//G_Sport_Greenblack
-			0.05,	//G_Sport_Checkered
-			0.05,	//G_Sport_Red
-			
-			//ARMA 3 ROUPAS CIVIS by LeoHN
-			0.03,	//U_C_Poloshirt_blue",
-			0.03,	//U_C_Poloshirt_burgundy",
-			0.03,	//U_C_Poloshirt_stripped",
-			0.03,	//U_C_Poloshirt_tricolour",
-			0.03,	//U_C_Poloshirt_salmon",
-			0.03,	//U_C_Poloshirt_redwhite",
-			0.03,	//U_C_Poor_1",
-			0.03,	//U_C_HunterBody_grn",
-			0.03,	//U_I_G_Story_Protagonist_F",
-			0.03,	//U_I_G_resistanceLeader_F",
-			0.03,	//U_BG_Guerrilla_6_1",
-			0.03,	//U_Marshal",
-			0.03,	//U_Competitor",
-
-			//ROUPAS CIVIS DO MOD
-			0.05,	//rds_uniform_citizen1",
-			0.05,	//rds_uniform_citizen2",
-			0.05,	//rds_uniform_citizen3",
-			0.05,	//rds_uniform_citizen4",
-			0.05,	//rds_uniform_Profiteer1",
-			0.05,	//rds_uniform_Profiteer2",
-			0.05,	//rds_uniform_Profiteer3",
-			0.05,	//rds_uniform_Profiteer4",
-			0.05,	//rds_uniform_Woodlander1",
-			0.05,	//rds_uniform_Woodlander2",
-			0.05,	//rds_uniform_Woodlander3",
-			0.05,	//rds_uniform_Woodlander4",
-			0.05,	//rds_uniform_Functionary1",
-			0.05,	//rds_uniform_Functionary2",
-			0.05,	//rds_uniform_Policeman",
-			
-			//COLETES CIVIS
-			0.04,	// V_HarnessO_brn
-			0.04,	// V_HarnessOGL_brn
-			0.04,	// V_HarnessO_gry
-			0.04,	// V_HarnessOGL_gry
-			0.04,	// V_HarnessOSpec_brn
-			0.04,	// V_HarnessOSpec_gry
-			0.01,	// V_RebreatherB
-			0.01,	// V_RebreatherIR
-			0.01,	// V_RebreatherIA	
-			
-			//HEADGEAR
-			0.05,	//H_Cap_red
-			0.05,	//H_Cap_blu
-			0.05,	//H_Cap_oli
-			0.05,	//H_Cap_tan
-			0.05,	//H_Cap_blk
-			0.05,	//H_Cap_grn
-			0.05,	//H_Cap_grn_BI
-			0.05,	//H_Cap_blk_ION
-			0.05,	//H_Bandanna_surfer
-			0.05,	//H_Bandanna_gry
-			0.05,	//H_Bandanna_sgg
-			0.05,	//H_TurbanO_blk
-			0.05,	//H_StrawHat
-			0.05,	//H_StrawHat_dark
-			0.05,	//H_Hat_blue
-			0.05,	//H_Hat_brown
-			0.05,	//H_Hat_grey
-			0.05,	//H_Hat_checker
-			0.05	//H_Hat_tan
+			0.06,	//V_Rangemaster_belt
+			0.03,	//V_BandollierB_khk
+			0.03,	//V_BandollierB_cbr
+			0.03,	//V_BandollierB_rgr
+			0.03,	//V_BandollierB_blk
+			0.03	//V_BandollierB_oli
 
 		}
 	};
 	
-	RoupasMilitares[] = {
+	Civilian_Special[] = {
 		{
-			//ROUPAS Militares
-			"U_B_CombatUniform_mcam",
-			"U_B_CombatUniform_mcam_tshirt",
-			"U_B_GhillieSuit",
-			"U_B_Wetsuit",
-			"U_O_CombatUniform_ocamo_srv",
-			"U_O_GhillieSuit_srv",
-			"U_O_Wetsuit_srv",			
-			"U_B_Guerilla1_1_srv",
-			"U_B_leader_srv",
-			"U_gorka_e",
-			"U_gorka2_e",
-			"U_gorka3_e",
-			"U_gorka4_e",
-			"U_gorka5_e",
-			"U_gorka6_e",
-			"U_gorka7_e",
-			"U_gorka8_e",
-			"Item_U_B_FullGhillie_sard",
-			"german_feldbluse_fleck",
-			"german_feldbluse_tropen",
-			"german_feldbluse_fleck_kurz",
-			"german_feldbluse_tropen_kurz",
+			"V_Press_F",
+			"V_TacVest_blk_POLICE"
 			
+		},
+		{
+			0.04,	//V_Press_F
+			0.01	//V_TacVest_blk_POLICE
 			
-			//HEADGEAR Militares
-			"H_Shemag_khk",
-			"H_Shemag_tan",
+		}
+	};
+
+	Civilian_Headgear[] = {
+		{	
+			//ARMA3
+			"H_Cap_red",
+			"H_Cap_blu",
+			"H_Cap_oli",
+			"H_Cap_tan",
+			"H_Cap_blk",
+			"H_Cap_grn",
+			"H_Cap_grn_BI",
+			"H_Cap_blk_ION",
+			"H_Cap_press",
+			"H_Cap_police",
+			"H_Bandanna_surfer",
+			"H_Bandanna_gry",
+			"H_Bandanna_sgg",
 			"H_Shemag_olive",
-			"H_Shemag_olive_hs",
 			"H_ShemagOpen_khk",
 			"H_ShemagOpen_tan",
-			"H_Watchcap_blk",
-			"H_Watchcap_cbr",
-			"H_Watchcap_camo",
-			"H_Watchcap_khk",
-			"H_HelmetB_grass",
-			"H_HelmetB_snakeskin",
-			"H_HelmetB_desert",
-			"H_HelmetB_black",
-			"H_HelmetB_sand",
-			"H_HelmetB_camo",
-			"H_Beret_blk",
-			"H_Beret_grn",
-			"H_Beret_brn_SF",
-			"H_Beret_grn_SF",
-			"H_Beret_ocamo",
-			"Balaclava_GRY",
-			"Balaclava_Black",
-			"L_Shemagh_Tan",
-			"LBG_Shemagh_Tan",
-			"PU_shemagh_White",
-			"booniehat_fleck",
-			"feldmuetze_fleck",
-			"feldmuetze_fleck_helmet",
-			"m92_gras_fleck",
-			"m92_fleck_gt",
-			"m92_gras_fleck_h",
-			"m92_tropen_h",
-			"bwk_goggles_tropen",
-			
-			//GLASSES Militares
+			"H_StrawHat",
+			"H_StrawHat_dark",
+			"H_Hat_blue",
+			"H_Hat_brown",
+			"H_Hat_camo",
+			"H_Hat_grey",
+			"H_Hat_checker",
+			"H_Hat_tan",
+			//RDS
+			"rds_worker_cap1",
+			"rds_worker_cap2",
+			"rds_worker_cap3",
+			"rds_worker_cap4",
+			"rds_Villager_cap1",
+			"rds_Villager_cap2",
+			"rds_Villager_cap3",
+			"rds_Villager_cap4",
+			"rds_Profiteer_cap1",
+			"rds_Profiteer_cap2",
+			"rds_Profiteer_cap3",
+			"rds_Profiteer_cap4",
+			"rds_Woodlander_cap1",
+			"rds_Woodlander_cap2",
+			"rds_Woodlander_cap3",
+			"rds_Woodlander_cap4"
+
+		},
+		{
+			//ARMA3
+			0.05,	//H_Cap_red
+			0.05,	//H_Cap_blu
+			0.05,	//H_Cap_oli
+			0.05,	//H_Cap_tan
+			0.05,	//H_Cap_blk
+			0.05,	//H_Cap_grn
+			0.05,	//H_Cap_grn_BI
+			0.05,	//H_Cap_blk_ION
+			0.05,	//H_Cap_press
+			0.05,	//H_Cap_police			
+			0.05,	//H_Bandanna_surfer
+			0.05,	//H_Bandanna_gry
+			0.05,	//H_Bandanna_sgg
+			0.05,	//H_Shemag_olive
+			0.05,	//H_ShemagOpen_khk
+			0.05,	//H_ShemagOpen_tan			
+			0.05,	//H_StrawHat
+			0.05,	//H_StrawHat_dark
+			0.05,	//H_Hat_blue
+			0.05,	//H_Hat_brown
+			0.05,	//H_Hat_camo
+			0.05,	//H_Hat_grey
+			0.05,	//H_Hat_checker
+			0.05,	//H_Hat_tan
+			//RDS
+			0.05,	//rds_worker_cap1
+			0.05,	//rds_worker_cap2
+			0.05,	//rds_worker_cap3
+			0.05,	//rds_worker_cap4
+			0.05,	//rds_Villager_cap1
+			0.05,	//rds_Villager_cap2
+			0.05,	//rds_Villager_cap3
+			0.05,	//rds_Villager_cap4
+			0.05,	//rds_Profiteer_cap1
+			0.05,	//rds_Profiteer_cap2
+			0.05,	//rds_Profiteer_cap3
+			0.05,	//rds_Profiteer_cap4
+			0.05,	//rds_Woodlander_cap1
+			0.05,	//rds_Woodlander_cap2
+			0.05,	//rds_Woodlander_cap3
+			0.05	//rds_Woodlander_cap4
+
+		}
+	};
+
+	Military_Glasses[] = {
+		{
 			"G_Tactical_Clear",
 			"G_Tactical_Black",
 			"G_Combat",
 			"G_Aviator"
+			
 		},
 		{
-			
-			0.02,	//U_B_CombatUniform_mcam
-			0.02,	//U_B_CombatUniform_mcam_tshirt
-			0.03,	//U_B_GhillieSuit
-			0.04,	//U_B_Wetsuit
-			0.05,	//U_O_CombatUniform_ocamo_srv
-			0.02,	//U_O_GhillieSuit_srv
-			0.03,	//U_O_Wetsuit_srv
-			0.02,	//U_B_Guerilla1_1_srv
-			0.03,	//U_B_leader_srv
-			0.06,	//U_gorka_e
-			0.06,	//U_gorka2_e
-			0.06,	//U_gorka3_e
-			0.06,	//U_gorka4_e
-			0.06,	//U_gorka5_e
-			0.06,	//U_gorka6_e
-			0.06,	//U_gorka7_e
-			0.06,	//U_gorka8_e
-			0.03,	//Item_U_B_FullGhillie_sard
-			0.04,	//german_feldbluse_fleck
-			0.04,	//german_feldbluse_tropen
-			0.05,	//german_feldbluse_fleck_kurz
-			0.06,	//german_feldbluse_tropen_kurz
-			
-			//HEADGEAR Militares
-			0.04,	//H_Shemag_khk
-			0.04,	//H_Shemag_tan
-			0.04,	//H_Shemag_olive
-			0.04,	//H_Shemag_olive_hs
-			0.04,	//H_ShemagOpen_khk
-			0.04,	//H_ShemagOpen_tan
-			0.05,	//H_Watchcap_blk
-			0.05,	//H_Watchcap_cbr
-			0.05,	//H_Watchcap_camo
-			0.05,	//H_Watchcap_khk
-			0.05,	//H_HelmetB_grass
-			0.05,	//H_HelmetB_snakeskin
-			0.05,	//H_HelmetB_desert
-			0.05,	//H_HelmetB_black
-			0.05,	//H_HelmetB_sand
-			0.05,	//H_HelmetB_camo
-			0.05,	//H_Beret_blk
-			0.05,	//H_Beret_grn
-			0.05,	//H_Beret_brn_SF
-			0.05,	//H_Beret_grn_SF
-			0.05,	//H_Beret_ocamo
-			0.03,	//Balaclava_GRY
-			0.03,	//Balaclava_Black
-			0.04,	//L_Shemagh_Tan
-			0.04,	//LBG_Shemagh_Tan
-			0.04,	//PU_shemagh_White
-			0.01,	//booniehat_fleck
-			0.01,	//feldmuetze_fleck
-			0.01,	//feldmuetze_fleck_helmet
-			0.01,	//m92_gras_fleck
-			0.01,	//m92_fleck_gt
-			0.01,	//m92_gras_fleck_h
-			0.01,	//m92_tropen_h
-			0.01,	//bwk_goggles_tropen
-			
-			//GLASSES Militares
 			0.05,	//G_Tactical_Clear
 			0.05,	//G_Tactical_Black
 			0.05,	//G_Combat
@@ -904,209 +778,509 @@ class CfgLoot {
 		}
 	};
 	
+	Military_Clothes[] = {
+		{
+			"U_BG_Guerilla1_1",					//6 cinders
+			"U_BG_Guerilla2_1",					//6 cinders
+			"U_BG_Guerilla2_2",					//6 cinders
+			"U_BG_Guerilla2_3",					//6 cinders
+			"U_B_GEN_Commander_F",				//6 cinders
+			"U_B_CombatUniform_mcam",			//8 cinders
+			"U_B_CombatUniform_mcam_tshirt",	//8 cinders
+			"U_B_CombatUniform_mcam_vest",		//8 cinders
+			"U_BG_leader",						//8 cinders
+			"U_B_HeliPilotCoveralls",			//8 cinders
+			"U_B_CTRG1",						//8 cinders
+			"U_B_CTRG2",						//8 cinders
+			"U_B_CTRG3",						//8 cinders
+			"U_I_G_Story_Protagonist_F",		//8 cinders
+			"U_I_G_resistanceLeader_F",			//8 cinders
+			"U_B_GEN_Soldier_F",				//8 cinders
+			"U_B_Guerilla1_1_srv",				//10 cinders
+			"U_B_Guerilla2_2_srv",				//10 cinders
+			"U_B_Guerilla2_3_srv",				//10 cinders
+			"U_B_Guerilla3_1_srv",				//10 cinders
+			"U_B_Guerilla3_2_srv",				//10 cinders
+			"U_B_Learder_srv"					//10 cinders
+
+		},
+		{
+			0.08,	//U_BG_Guerilla1_1
+			0.08,	//U_BG_Guerilla2_1
+			0.08,	//U_BG_Guerilla2_2
+			0.08,	//U_BG_Guerilla2_3
+			0.08,	//U_B_GEN_Commander_F
+			0.06,	//U_B_CombatUniform_mcam
+			0.06,	//U_B_CombatUniform_mcam_tshirt
+			0.06,	//U_B_CombatUniform_mcam_vest
+			0.06,	//U_BG_leader
+			0.06,	//U_B_HeliPilotCoveralls
+			0.06,	//U_B_CTRG1
+			0.06,	//U_B_CTRG2
+			0.06,	//U_B_CTRG3
+			0.06,	//U_I_G_Story_Protagonist_F
+			0.06,	//U_I_G_resistanceLeader_F
+			0.06,	//U_B_GEN_Soldier_F
+			0.04,	//U_B_Guerilla1_1_srv
+			0.04,	//U_B_Guerilla2_2_srv
+			0.04,	//U_B_Guerilla2_3_srv
+			0.04,	//U_B_Guerilla3_1_srv
+			0.04,	//U_B_Guerilla3_2_srv
+			0.04	//U_B_Learder_srv
+
+		}
+	};
+
+	Military_Vests[] = {
+		{
+			"V_HarnessOGL_brn",
+			"V_HarnessOGL_gry",
+			"V_Chestrig_khk",
+			"V_Chestrig_rgr",
+			"V_Chestrig_blk",
+			"V_Chestrig_oli",
+			"V_HarnessO_brn"
+
+		},
+		{
+			0.08,	//V_HarnessOGL_brn
+			0.08,	//V_HarnessOGL_gry
+			0.05,	//V_Chestrig_khk
+			0.05,	//V_Chestrig_rgr
+			0.05,	//V_Chestrig_blk
+			0.05,	//V_Chestrig_oli
+			0.02	//V_HarnessO_brn
+
+		}
+	};
+	
+	Military_Armor[] = {
+		{
+			"V_RebreatherB",
+			"V_RebreatherIR",
+			"V_RebreatherIA",
+			"V_TacVest_khk",
+			"V_TacVest_brn",
+			"V_TacVest_oli",
+			"V_TacVest_blk",
+			"V_TacVest_camo",
+			"V_TacVestIR_blk",
+			"V_TacVest_gen_F"
+			
+		},
+		{
+			0.08,	//V_RebreatherB
+			0.08,	//V_RebreatherIR
+			0.08,	//V_RebreatherIA
+			0.06,	//V_TacVest_khk
+			0.06,	//V_TacVest_brn
+			0.06,	//V_TacVest_oli
+			0.06,	//V_TacVest_blk
+			0.06,	//V_TacVest_camo
+			0.04,	//V_TacVestIR_blk
+			0.02	//V_TacVest_gen_F
+			
+		}
+	};
+	
+	Military_Headgear[] = {
+		{
+			"H_Cap_blk_CMMG",
+			"H_Cap_blk_Raven",
+			"H_Cap_brn_SPECOPS",
+			"H_Cap_tan_specops_US",
+			"H_Cap_khaki_specops_UK",
+			"H_Cap_usblack",
+			"H_Beret_blk",
+			"H_Beret_grn",
+			"H_Beret_brn_SF",
+			"H_Beret_grn_SF",
+			"H_Beret_ocamo",
+			"H_Beret_02",
+			"H_Beret_Colonel",
+			"H_Booniehat_khk",
+			"H_Booniehat_oli",
+			"H_Booniehat_mcamo",
+			"H_Booniehat_tan",
+			"H_Booniehat_dgtl"
+		
+		},
+		{
+			0.05,	//H_Cap_blk_CMMG
+			0.05,	//H_Cap_blk_Raven
+			0.05,	//H_Cap_brn_SPECOPS
+			0.05,	//H_Cap_tan_specops_US
+			0.05,	//H_Cap_khaki_specops_UK
+			0.05,	//H_Cap_usblack
+			0.05,	//H_Beret_blk
+			0.05,	//H_Beret_grn
+			0.05,	//H_Beret_brn_SF
+			0.05,	//H_Beret_grn_SF
+			0.05,	//H_Beret_ocamo
+			0.05,	//H_Beret_02
+			0.05,	//H_Beret_Colonel
+			0.05,	//H_Booniehat_khk
+			0.05,	//H_Booniehat_oli
+			0.05,	//H_Booniehat_mcamo
+			0.05,	//H_Booniehat_tan
+			0.05	//H_Booniehat_dgtl
+			
+		}
+	};
+	
+	Military_Helmet[] = {
+		{
+			"H_HelmetB_light_grass",
+			"H_HelmetB_light_snakeskin",
+			"H_HelmetB_light_desert",
+			"H_HelmetB_light_black",
+			"H_HelmetB_light_sand",
+			"H_HelmetB_light_camo",
+			"H_HelmetB_grass",
+			"H_HelmetB_snakeskin",
+			"H_HelmetB_desert",
+			"H_HelmetB_black",
+			"H_HelmetB_sand",
+			"H_HelmetB_camo"
+		
+		},
+		{
+			0.07,	//H_HelmetB_light_grass
+			0.07,	//H_HelmetB_light_snakeskin
+			0.07,	//H_HelmetB_light_desert
+			0.07,	//H_HelmetB_light_black
+			0.07,	//H_HelmetB_light_sand
+			0.07,	//H_HelmetB_light_camo
+			0.03,	//H_HelmetB_grass
+			0.03,	//H_HelmetB_snakeskin
+			0.03,	//H_HelmetB_desert
+			0.03,	//H_HelmetB_black
+			0.03,	//H_HelmetB_sand
+			0.03	//H_HelmetB_camo
+		}
+	};
+
+	Military_Gear_Special[] = {
+		{
+			//Clothes
+			"U_B_Pilot_Coveralls",
+			"U_B_Wetsuit",
+			"U_B_GhillieSuit",
+			"U_B_FullGhillie_lsh",
+			"U_B_FullGhillie_sard",
+			"U_B_FullGhillie_ard",
+			//Armor
+			"V_PlateCarrierIA1_dgtl",
+			"V_PlateCarrier1_rgr",
+			"V_PlateCarrier_Kerry",
+			//Helmet
+			"H_HelmetCrew_B",
+			"H_HelmetCrew_O",
+			"H_HelmetCrew_I",
+			"H_HelmetO_ocamo"
+
+		},
+		{
+			//Clothes
+			0.08,	//U_B_Pilot_Coveralls
+			0.06,	//U_B_Wetsuit
+			0.04,	//U_B_GhillieSuit
+			0.02,	//U_B_FullGhillie_lsh
+			0.02,	//U_B_FullGhillie_sard
+			0.02,	//U_B_FullGhillie_ard
+			//Armor
+			0.01,	//V_PlateCarrierIA1_dgtl
+			0.01,	//V_PlateCarrier1_rgr
+			0.01,	//V_PlateCarrier_Kerry
+			//Helmet
+			0.01,	//"H_HelmetCrew_B",
+			0.01,	//"H_HelmetCrew_O",
+			0.01,	//"H_HelmetCrew_I",
+			0.01	//"H_HelmetO_ocamo"
+		}
+	};
+			
+			
 ///////////////////////////////////////////////////
-//Granadas de Mão
-	trow[] = {
+//Granadas //addWeaponCargoGlobal
+	Offensive_Grenades[] = {
 		{
 			"HandGrenade",
-			"MiniGrenade",
+			"MiniGrenade"
+		},
+		{
+			0.02,	//HandGrenade
+			0.02	//MiniGrenade
+			
+		}
+	};
+	
+	Smoke_Grenades[] = {
+		{
 			"SmokeShell",
 			"SmokeShellOrange",
 			"SmokeShellBlue",
 			"SmokeShellPurple",
 			"SmokeShellYellow",
 			"SmokeShellGreen",
-			"SmokeShellRed",
+			"SmokeShellRed"
+		},
+		{
+			0.05,	//SmokeShell
+			0.05,	//SmokeShell
+			0.05,	//SmokeShell
+			0.05,	//SmokeShell
+			0.05,	//SmokeShell
+			0.05,	//SmokeShell
+			0.05	//SmokeShell
+			
+		}
+	};	
+
+/*	Flare_Grenades[] = {
+		{
 			"FlareWhite_F",
 			"FlareGreen_F",
 			"FlareRed_F",
 			"FlareYellow_F"
 		},
 		{
-			0.02,	//HandGrenade
-			0.02,	//MiniGrenade
-			0.05,	//SmokeShell
-			0.05,	//SmokeShell
-			0.05,	//SmokeShell
-			0.05,	//SmokeShell
-			0.05,	//SmokeShell
-			0.05,	//SmokeShell
-			0.05,	//SmokeShell
 			0.05,	//FlareWhite_F
 			0.05,	//FlareGreen_F
 			0.05,	//FlareRed_F
 			0.05	//FlareYellow_F
-		}
-	};
-	
-///////////////////////////////////////////////////
-//PistolasLow e Munições //addWeaponCargoGlobal
-
-	PistolasLow[] = {
-		{
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Duty",
-			"CUP_hgun_PB6P9",
-			"CUP_hgun_Phantom",
-			"hgun_P07_F"
-									
-		},
-		{
-			0.07,	//CUP_hgun_Makarov
-			0.06,	//CUP_hgun_Duty
-			0.06,	//CUP_hgun_PB6P9
-			0.06,	//CUP_hgun_Phantom
-			0.03    //hgun_P07_F
-						
-		}
-	};
-	
-	Mag_PistolasLow[] = {
-		{
-			"CUP_8Rnd_9x18_Makarov_M", 		
-			"16Rnd_9x21_Mag", 				
-			"CUP_8Rnd_9x18_MakarovSD_M",				
-			"CUP_18Rnd_9x19_Phantom", 			
-			"30Rnd_9x21_Mag"
-									
-		},
-		{
-			0.05,	//CUP_8Rnd_9x18_Makarov_M
-			0.04,	//16Rnd_9x21_Mag
-			0.03,	//CUP_8Rnd_9x18_MakarovSD_M
-			0.03,	//CUP_18Rnd_9x19_Phantom
-			0.02	//30Rnd_9x21_Mag
-						
-		}
-	};
-
-///////////////////////////////////////////////////
-//PistolasMedias e Munições //addWeaponCargoGlobal
-
-	PistolasMedias[] = {
-		{
-			"CUP_hgun_Glock17",
-			"CUP_hgun_Colt1911",
-			"CUP_hgun_TaurusTracker455",
-			"CUP_hgun_SA61",
-			"hgun_ACPC2_F",
-			"hgun_ACPC2_snds_F",
-			"hgun_Pistol_heavy_01_F",
-			"hgun_Pistol_heavy_01_snds_F",
-			"hgun_Rook40_F",
-			"hgun_Rook40_snds_F"
 			
-									
-		},
-		{
-			0.07,	//CUP_hgun_Glock17
-			0.06,	//CUP_hgun_Colt1911
-			0.06,	//CUP_hgun_TaurusTracker455
-			0.06,	//CUP_hgun_SA61
-			0.04,	//hgun_ACPC2_F
-			0.03,	//hgun_ACPC2_snds_F
-			0.06,	//hgun_Pistol_heavy_01_F
-			0.06,	//hgun_Pistol_heavy_01_snds_F
-			0.06,	//hgun_Rook40_F
-			0.03	//hgun_Rook40_snds_F
-						
 		}
 	};
-	
-	Mag_PistolasMedias[] = {
-		{
-			"CUP_17Rnd_9x19_glock17", 		
-			"CUP_7Rnd_45ACP_1911", 				
-			"CUP_6Rnd_45ACP_M",				
-			"CUP_20Rnd_B_765x17_Ball_M", 			
-			"30Rnd_9x21_Mag",
-			"9Rnd_45ACP_Mag",
-			"11Rnd_45ACP_Mag",
-			"16Rnd_9x21_Mag"
-									
-		},
-		{
-			0.05,	//CUP_17Rnd_9x19_glock17
-			0.04,	//CUP_7Rnd_45ACP_1911
-			0.03,	//CUP_6Rnd_45ACP_M
-			0.03,	//CUP_20Rnd_B_765x17_Ball_M
-			0.02,	//30Rnd_9x21_Mag
-			0.03,	//11Rnd_45ACP_Mag
-			0.03	//16Rnd_9x21_Mag
-						
-		}
-	};
-	
-	
+*/	
 ///////////////////////////////////////////////////
-//PistolasHigh" e Munições //addWeaponCargoGlobal
+//Flashlights //addWeaponCargoGlobal
 
-	PistolasHigh[] = {
+	Flashlights[] = {
 		{
-			"CUP_hgun_M9",
-			"CUP_hgun_M9_snds",
-			"CUP_hgun_MicroUzi",
-			"CUP_hgun_MicroUzi_snds",
-			"CUP_hgun_TaurusTracker455_gold",
-			"hgun_PDW2000_F",
-			"hgun_PDW2000_Holo_F",
-			"hgun_PDW2000_Holo_snds_F",
-			"hgun_PDW2000_snds_F",
-			"hgun_Rook40_snds_F",
-			"hgun_Pistol_heavy_02_F",
-			"hgun_Pistol_heavy_02_Yorris_F"
+			"rds_weap_latarka_janta",
+			"rds_weap_latarka_lts1"
 			
-									
 		},
 		{
-			0.06,	//CUP_hgun_M9
-			0.03,	//CUP_hgun_M9_snds
-			0.06,	//CUP_hgun_MicroUzi
-			0.03,	//CUP_hgun_MicroUzi_snds
-			0.06,	//CUP_hgun_TaurusTracker455_gold
-			0.03,	//hgun_PDW2000_F
-			0.03,	//hgun_PDW2000_Holo_F
-			0.03,	//hgun_PDW2000_Holo_snds_F
-			0.03,	//hgun_PDW2000_snds_F
-			0.03,	//hgun_Rook40_snds_F
-			0.04,	//hgun_Pistol_heavy_02_F
-			0.04	//hgun_Pistol_heavy_02_Yorris_F
-						
+			0.05,	//Flashlight janta
+			0.05	//Flashlight lts1
+			
 		}
 	};
-	
-	Mag_PistolasHigh[] = {
-		{
-			"CUP_15Rnd_9x19_M9", 		
-			"CUP_30Rnd_9x19_UZI", 				
-			"CUP_6Rnd_45ACP_M",				
-			"30Rnd_9x21_Mag", 			
-			"6Rnd_45ACP_Cylinder",
-			"16Rnd_9x21_Mag"
-									
-		},
-		{
-			0.03,	//CUP_15Rnd_9x19_M9
-			0.04,	//CUP_30Rnd_9x19_UZI
-			0.05,	//CUP_6Rnd_45ACP_M
-			0.02,	//30Rnd_9x21_Mag
-			0.03,	//6Rnd_45ACP_Cylinder
-			0.03	//16Rnd_9x21_Mag
-						
-		}
-	};
-	
+
 ///////////////////////////////////////////////////
-//ArmasCivis e Munições //addWeaponCargoGlobal
+//Pistols //addWeaponCargoGlobal
+
+	Pistols_Low[] = {
+		{
+
+			"CUP_hgun_SA61",					//hit: 3
+			"CUP_hgun_Duty",					//hit: 4
+			"hgun_P07_khk_F",					//hit: 4
+			"hgun_P07_F",						//hit: 4
+			"hgun_Rook40_F",					//hit: 4
+			"CUP_hgun_TaurusTracker455",		//hit: 4
+			"CUP_hgun_TaurusTracker455_gold",	//hit: 4
+			"CUP_hgun_Colt1911",				//hit: 4
+			"hgun_ACPC2_F",						//hit: 4
+			"hgun_Pistol_heavy_02_F",			//hit: 4
+			"hgun_Pistol_heavy_01_F"			//hit: 4
+
+		},
+		{
+			0.09,	//SA61
+			0.08,	//Duty
+			0.06,	//P07
+			0.06,	//P07
+			0.06,	//Rook40		
+			0.05,	//Taurus
+			0.04,	//Taurus gold
+			0.05,	//Colt1911
+			0.05,	//ACPC2
+			0.04,	//Pistol heavy 02
+			0.03	//Pistol heavy 01
+			
+		}
+	};
+
+	Mag_Pistols_Low[] = {
+		{
+			"CUP_20Rnd_B_765x17_Ball_M",	//SA61
+			"16Rnd_9x21_Mag",				//Duty,P07,Rook40
+			"30Rnd_9x21_Mag",				//P07,Rook40
+			"CUP_6Rnd_45ACP_M",				//Taurus
+			"CUP_7Rnd_45ACP_1911",			//Colt1911
+			"9Rnd_45ACP_Mag",				//ACPC2
+			"6Rnd_45ACP_Cylinder",			//Pistol Heavy 02
+			"11Rnd_45ACP_Mag"				//Pistol Heavy 01
+
+
+		},
+		{
+			0.07,	//SA61
+			0.07,	//Duty,P07,Rook40
+			0.05,	//P07,Rook40
+			0.04,	//Taurus
+			0.04,	//Colt1911		
+			0.03,	//ACPC2
+			0.03,	//Pistol Heavy 02
+			0.03	//Pistol Heavy 01
+		
+		}
+	};		
+
+	Attach_Pistols_Low[] = {
+		{
+			"CUP_acc_CZ_M3X",	//Duty
+			"muzzle_snds_L",	//P07,Rook40
+			"muzzle_snds_acp",	//Colt1911,ACPC2,Pistol Heavy 01
+			"optic_Yorris",		//Pistol Heavy 02
+			"optic_MRD"			//Pistol Heavy 01
+			
+		},
+		{
+			0.05,	//Duty
+			0.04,	//P07,Rook40
+			0.04,	//Colt1911,ACPC2,Pistol Heavy 01		
+			0.03,	//Pistol Heavy 02
+			0.03	//Pistol Heavy 01	
+		
+		}
+	};
+		
+	Pistols_Low_Special[] = {
+		{
+			"CUP_hgun_Duty_M3X",				//Duty w/flashlight
+			"hgun_P07_snds_F",					//P07 w/sound supressor
+			"hgun_Rook40_snds_F",				//Rook40 w/sound supressor
+			"CUP_hgun_Colt1911_snds",			//Colt1911 w/sound supressor
+			"hgun_ACPC2_snds_F",				//ACPC2 w/sound supressor
+			"hgun_Pistol_heavy_02_Yorris_F",	//Pistol Heavy 02 w/optic
+			"hgun_Pistol_heavy_01_snds_F",		//Pistol Heavy 01 w/sound supressor
+			"hgun_Pistol_heavy_01_MRD_F"		//Pistol Heavy 01 w/optic
+
+		},
+		{		
+			0.07,	//Duty w/flashlight
+			0.07,	//P07 w/sound supressor
+			0.07,	//Rook40 w/sound supressor
+			0.05,	//Colt1911 w/sound supressor
+			0.05,	//ACPC2 w/sound supressor
+			0.03,	//Pistol Heavy 02 w/optic
+			0.03,	//Pistol Heavy 01 w/sound supressor
+			0.03	//Pistol Heavy 01 w/optic
+//			0.03	//Pistol Heavy 01 w/optic&sound supressor
+		}
+	};
+		
+	Pistols_High[] = {
+		{
+			"CUP_hgun_Makarov",	//hit: 6
+			"CUP_hgun_PB6P9",	//hit: 6
+			"CUP_hgun_Compact",	//hit: 6
+			"CUP_hgun_M9",		//hit: 6
+			"CUP_hgun_Glock17",	//hit: 6
+			"CUP_hgun_Phantom",	//hit: 6
+			"CUP_hgun_MicroUzi"	//hit: 6
+
+		},
+		{
+			0.07,	//Makarov
+			0.07,	//PB6P9
+			0.05,	//Compact
+			0.04,	//M9
+			0.03,	//Glock17		
+			0.03,	//Phantom
+			0.02	//MicroUzi	
+		
+		}
+	};		
+
+	Mag_Pistols_High[] = {
+		{
+			"CUP_8Rnd_9x18_Makarov_M",		//Makarov,PB6P9
+			"CUP_8Rnd_9x18_MakarovSD_M",	//Makarov,PB6P9
+			"CUP_10Rnd_9x19_Compact",		//Compact
+			"CUP_15Rnd_9x19_M9",			//M9
+			"CUP_17Rnd_9x19_glock17",		//Glock17
+			"CUP_18Rnd_9x19_Phantom",		//Phantom
+			"CUP_30Rnd_9x19_UZI"			//MicroUzi
+
+		},
+		{
+			0.07,	//Makarov,PB6P9
+			0.07,	//Makarov,PB6P9
+			0.06,	//Compact
+			0.05,	//M9
+			0.05,	//Glock17		
+			0.05,	//Phantom
+			0.03	//MicroUzi		
+		
+		}
+	};		
+
+	Attach_Pistols_High[] = {
+		{
+			"CUP_muzzle_PB6P9",				//PB6P9
+			"CUP_muzzle_snds_M9",			//M9
+			"muzzle_snds_L",				//Glock17,Phantom
+			"CUP_acc_CZ_M3X",				//Phantom
+			"CUP_acc_Glock17_Flashlight",	//Glock17
+			"CUP_muzzle_snds_MicroUzi"		//MicroUzi
+
+		},
+		{
+			0.07,	//PB6P9
+			0.07,	//M9
+			0.06,	//Glock17,Phantom
+			0.05,	//Phantom
+			0.05,	//Glock17		
+			0.04	//MicroUzi	
+		
+		}
+	};		
+
+	Pistols_High_Special[] = {
+		{
+			"CUP_hgun_PB6P9_snds",				//PB6P9 w/sound supressor
+			"CUP_hgun_M9_snds",					//M9 w/sound supressor
+			"CUP_hgun_glock17_snds",			//Glock17 w/sound supressor
+			"CUP_hgun_glock17_flashlight",		//Glock17 w/flashlight
+			"CUP_hgun_glock17_flashlight_snds",	//Glock17 w/flashlight&sound supressor
+			"CUP_hgun_Phantom_snds",			//Phantom w/sound supressor
+			"CUP_hgun_Phantom_Flashlight",		//Phantom w/flashlight
+			"CUP_hgun_Phantom_Flashlight_snds",	//Phantom w/flashlight&sound supressor
+			"CUP_hgun_MicroUzi_snds"			//MicroUzi w/sound supressor
+
+		},
+		{
+			0.07,	//PB6P9 w/sound supressor
+			0.07,	//M9 w/sound supressor
+			0.06,	//Glock17 w/sound supressor
+			0.05,	//Glock17 w/flashlight
+			0.04,	//Glock17 w/flashlight&sound supressor
+			0.06,	//Phantom w/sound supressor
+			0.05,	//Phantom w/flashlight
+			0.04,	//Phantom w/flashlight&sound supressor
+			0.03	//MicroUzi w/sound supressor
+		
+		}
+	};		
+
+///////////////////////////////////////////////////
+//Rifles //addWeaponCargoGlobal
 
 	ArmasCivis[] = {
 		{
-			"CUP_srifle_LeeEnfield_rail",	
-			"CUP_sgun_M1014"			
+			"CUP_srifle_LeeEnfield",		//hit: 14
+			"CUP_srifle_LeeEnfield_rail",	//hit: 14
+			"CUP_sgun_M1014"				//hit: 25
 		},
 		{
-			0.03,	//CUP_srifle_LeeEnfield_rail	
-			0.06,	//CUP_sgun_M1014				
+			0.06,	//CUP_srifle_LeeEnfield
+			0.06,	//CUP_srifle_LeeEnfield_rail	
+			0.04	//CUP_sgun_M1014				
 		}
 	};
 	
@@ -1128,6 +1302,12 @@ class CfgLoot {
 
 ///////////////////////////////////////////////////
 //ArmasLow e Munições //addWeaponCargoGlobal
+
+//			"hgun_PDW2000_F",
+//			"hgun_PDW2000_Holo_F",
+//			"hgun_PDW2000_Holo_snds_F",
+//			"hgun_PDW2000_snds_F",
+
 
 	ArmasLow[] = {
 		{
@@ -1514,4 +1694,4 @@ class CfgLoot {
 					
 		}
 	};
-};
+};	

@@ -4,7 +4,7 @@ class CfgSFX {
 		sounds[] = {"Generator1"};
 		name = "Generator1";
 		//RandSamp0[] = {SOUNDFILE,VOLUME,PITCH,DISTANCE,PROBABILLITY,Min DELAY,Mid DELAY,Max DELAY}
-		Generator1[] = 	{"\viruz_sound\effects\generator1",db+10,1,200,1,0,0,0};
+		Generator1[] = 	{"\viruz_sound\effects\generator_1.ogg",db+10,1,200,1,0,0,0};
 		Empty[] = 	{"",0,0,0,0,0,0,0};
 	};
 

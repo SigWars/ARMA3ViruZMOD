@@ -55,14 +55,14 @@ class CfgAmmo {
 		model = "\viruz_equip\items\sodaoriginalE.p3d";
 		CraterEffects = "NoCrater";
 		explosionEffects = "NoExplosion";
-		soundHit[] = {"viruz_equip\sound\can_hit_0", 0.5, 1, 60};
+		soundHit[] = {"viruz_equip\sound\can_hit_0.ogg", 0.5, 1, 60};
 	};
 	
 	class TinCan : ThrownObjects {
 		model = "\viruz_equip\items\canspaghetti1E.p3d";
 		CraterEffects = "NoCrater";
 		explosionEffects = "NoExplosion";
-		soundHit[] = {"viruz_equip\sound\can_hit_1", 0.5, 1, 60};
+		soundHit[] = {"viruz_equip\sound\can_hit_1.ogg", 0.5, 1, 60};
 	};
 	
 };
