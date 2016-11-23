@@ -84,7 +84,7 @@ if (_script != "") then
 		
 //Set the Time
 	//Send request
-	_key = "CHILD:307:";
+	/*_key = "CHILD:307:";
 	_result = _key call server_hiveReadWrite;
 	_outcome = _result select 0;
 	if(_outcome == "PASS") then {
@@ -97,13 +97,19 @@ if (_script != "") then
 		};
 
 		diag_log ("HIVE: Local Time set to " + str(_date));
+	};*/
+	viuruzStartDate = call {
+	_viuruzStartDate = (missionConfigFile >> "cfgGame" >> "viuruzStartDate") call BIS_fnc_getCfgData;
+	if (isNil "_viuruzStartDate") then {[2035, 6, 10, 7, 0]} else {_viuruzStartDate}
 	};
 	
-createCenter civilian;
-if (isDedicated) then {
+	setDate = viuruzStartDate;
+	createCenter civilian;
+
+	if (isDedicated) then {
 	endLoadingScreen;
 	_id = [] execFSM "\z\addons\viruz_server\system\server_cleanup.fsm";
-};
+	};
 
 
 handler_spawnCrashSite = [] spawn server_spawnCrashSite; // Start spawn heli crash logic

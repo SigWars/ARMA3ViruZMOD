@@ -6,6 +6,10 @@ By SigWar
 private["_hasMeds","_med","_effect"];
 _med = "ItemAntibiotic";
 _hasMeds = _med in magazines player;
+_dis=6;
+_sfx = "painkiller";
+[player,_sfx,0,false,_dis] call viruz_zombieSpeak;
+		
 if (_hasMeds) then {
 	player removeMagazine _med;
 };

@@ -1,6 +1,10 @@
 // bleed.sqf
 _unit = (_this select 3) select 0;
 
+_dis=6;
+_sfx = "painkiller";
+[player,_sfx,0,false,_dis] call viruz_zombieSpeak;
+
 _unit setVariable ["USEC_inPain", false, true];
 
 call fnc_usec_medic_removeActions;

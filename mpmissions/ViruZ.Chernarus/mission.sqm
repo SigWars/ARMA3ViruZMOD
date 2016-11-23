@@ -213,8 +213,8 @@ class Mission
 		year=2035;
 		month=6;
 		day=13;
-		hour=2;
-		minute=-23;
+		hour=7;
+		minute=00;
 		startFogBase=-1000;
 		forecastFogBase=-1000;
 		startFogDecay=0;

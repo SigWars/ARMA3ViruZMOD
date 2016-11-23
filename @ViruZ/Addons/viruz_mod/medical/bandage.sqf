@@ -3,6 +3,11 @@
 	Bandage Script by SigWar
 *****************************************/
 _unit = (_this select 3) select 0;
+
+_dis=6;
+_sfx = "bandage";
+[player,_sfx,0,false,_dis] call viruz_zombieSpeak;
+
 player removeMagazine "ItemBandage";
 
 call fnc_usec_medic_removeActions;

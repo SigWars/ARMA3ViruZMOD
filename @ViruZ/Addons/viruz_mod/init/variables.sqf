@@ -668,6 +668,11 @@ if(!isDedicated) then {
 		_zedsRespawnDelay = (missionConfigFile >> "cfgGame" >> "zedsRespawnDelay") call BIS_fnc_getCfgData;
 		if (isNil "_zedsRespawnDelay") then {3} else {_zedsRespawnDelay}
 	};
+	lootDelaytime = call { //Depreciado
+		_lootDelaytime = (missionConfigFile >> "cfgGame" >> "lootDelaytime") call BIS_fnc_getCfgData;
+		if (isNil "_lootDelaytime") then {900} else {_lootDelaytime}
+	};
+	
 	viruz_spawnWait =		-120;
 	viruz_spawnZombies =		0;
 	//used to count global zeds around players

@@ -10,8 +10,8 @@ _nearestCity = _this select 6;
   		
 _looted = (_x getVariable ["looted",-0.1]);
 _cleared = (_x getVariable ["cleared",true]);
-_dateNow = (DateToNumber date);
-_age = (_dateNow - _looted) * 525948;
+_dateNow = time;
+_age = _dateNow - _looted;
 //diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 if ((_age > 10) and (!_cleared)) then {
 	_nearByObj = nearestObjects [(getPosATL _x), VIRUZ_LOOTHOLDER,((sizeOf _type)+5)];

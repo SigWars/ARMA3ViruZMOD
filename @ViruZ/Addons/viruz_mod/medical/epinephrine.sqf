@@ -1,5 +1,10 @@
 // bleed.sqf
 _unit = (_this select 3) select 0;
+
+_dis=6;
+_sfx = "morphine";
+[player,_sfx,0,false,_dis] call viruz_zombieSpeak;
+
 _isDead = _unit getVariable["USEC_isDead",false];
 call fnc_usec_medic_removeActions;
 

@@ -39,7 +39,7 @@ if (_obj isKindOf "Maniken_Base") then {
 		_index = _weights select _index;
 		_itemType = _itemTypes select _index;
 		[_itemType select 0, _itemType select 1 , _obj]  call fnc_ManikenAddItems;
-		_obj setVariable ["created",(DateToNumber date),true];
+		_obj setVariable ["created",time,true];
 	};
 } else {
 	
@@ -56,7 +56,7 @@ if (_obj isKindOf "Maniken_Base") then {
 				_index = _weights select _index;
 				_itemType = _itemTypes select _index;
 				[_itemType select 0, _itemType select 1 , [_iPos, _zPos], 0.0,"GroundWeaponHolder"]  call spawn_loot;
-				_obj setVariable ["created",(DateToNumber date),true];
+				_obj setVariable ["created",time,true];
 			};
 		};
 	} forEach _configPos;
@@ -73,7 +73,7 @@ if (_obj isKindOf "Maniken_Base") then {
 				_index = _weights select _index;
 				_itemType = _itemTypes select _index;
 				[_itemType select 0, _itemType select 1 , [_x, _zPos], 0.0,"GroundWeaponHolder"]  call spawn_loot;
-				_obj setVariable ["created",(DateToNumber date),true];
+				_obj setVariable ["created",time,true];
 			};
 		};
 	} forEach _buildingPos;
@@ -90,7 +90,7 @@ if (_isObjectHolder > 0) then {
 		_index = _weights select _index;
 		_itemType = _itemTypes select _index;
 		[_itemType select 0, _itemType select 1 , [[],false], 0.0, "objectHolder", _obj]  call spawn_loot;
-		_obj setVariable ["created",(DateToNumber date),true];
+		_obj setVariable ["created",time,true];
 	};
 };
 

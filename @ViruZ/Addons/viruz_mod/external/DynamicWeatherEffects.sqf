@@ -77,7 +77,7 @@ _minimumOvercast = call {
 // (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
 _maximumOvercast = call {
 	(missionConfigFile >> "cfgClima" >> "maximumOvercast") call BIS_fnc_getCfgData;
-	if (isNil "maximumOvercast") then {1} else {_maximumOvercast}
+	if (isNil "maximumOvercast") then {0.4} else {_maximumOvercast}
 };
 
 // When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain

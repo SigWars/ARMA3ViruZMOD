@@ -583,8 +583,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"ItemSodaOriginal",
 											"ItemSodaDiet",
 											"ItemSodaHam",
-											"ItemSodaLaranja",
-											"ItemSodaLimao",
+											"ItemSodaOrange",
+											"ItemSodaLemon",
 											"ItemSodaBeergolden",
 											"FoodCanWBBeans",
 											"FoodCanMHBeans",
@@ -648,7 +648,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											#endif
 //											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
 											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
-											"V_RebreatherIA", //Rebreather [AAF] Armor Level I
+											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
 //											"V_Press_F" //	Vest (Press) Armor Level II
 										];
 	DMS_assault_backpacks =				[							// Backpacks for Assault Class
@@ -691,13 +691,13 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											
 											//CUP WEAPONS MACHINE GUNS
 											"CUP_arifle_RPK74M",
-											"CUP_arifle_RPK74_45",
+											"CUP_arifle_RPK74_45"
 //											"CUP_lmg_PKM",
 //											"CUP_lmg_Mk48_wdl",
 //											"CUP_lmg_Mk48_des",
 //											"CUP_lmg_M240"
 										];
-	DMS_MG_pistols =				[							// Pistols for Assault Class (Set to empty array if you don't want to give them any pistols)
+	DMS_MG_pistols =					[							// Pistols for Assault Class (Set to empty array if you don't want to give them any pistols)
 											"hgun_ACPC2_F",
 											"hgun_Rook40_F",
 											"hgun_P07_F",
@@ -753,8 +753,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"ItemSodaOriginal",
 											"ItemSodaDiet",
 											"ItemSodaHam",
-											"ItemSodaLaranja",
-											"ItemSodaLimao",
+											"ItemSodaOrange",
+											"ItemSodaLemon",
 											"ItemSodaBeergolden",
 											"FoodCanWBBeans",
 											"FoodCanMHBeans",
@@ -830,7 +830,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											#endif
 											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
 											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
-											"V_RebreatherIA", //Rebreather [AAF] Armor Level I
+											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
 //											"V_Press_F" //	Vest (Press) Armor Level II
 										];
 	DMS_MG_backpacks =					[							// Backpacks for MG Class
@@ -962,8 +962,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"ItemSodaOriginal",
 											"ItemSodaDiet",
 											"ItemSodaHam",
-											"ItemSodaLaranja",
-											"ItemSodaLimao",
+											"ItemSodaOrange",
+											"ItemSodaLemon",
 											"ItemSodaBeergolden",
 											
 											//Viruz Food
@@ -1024,7 +1024,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											#endif
 											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
 											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
-											"V_RebreatherIA", //Rebreather [AAF] Armor Level I
+											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
 //											"V_Press_F" //	Vest (Press) Armor Level II
 											
 										];
@@ -1057,12 +1057,12 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 
 	DMS_ai_SupportedClasses =			[							// Allowed AI classes. If you want to create your own class, make sure you define everything as I've defined above, and add it here
 											"assault",
-											"MG"
+											"MG",
 											"sniper"
 										];
 
 	DMS_ai_SupportedRandomClasses = 	[							// Allowed "random" AI presets here if you want to create different random presets.
-											"random"
+											"random",
 											"random_non_assault",
 											"random_non_MG",
 											"random_non_sniper"
@@ -1100,7 +1100,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_AI_launcher_ammo_count			= 0;						// How many rockets an AI will get with its launcher
 	DMS_ai_remove_launchers				= true;						// Remove rocket launchers on AI death
 
-/*	DMS_AI_wep_launchers_AT =			[							// AT Launchers
+	DMS_AI_wep_launchers_AT =			[							// AT Launchers
 											#ifdef GIVE_AI_APEX_WEAPONS
 											"launch_RPG7_F",
 											#endif
@@ -1111,7 +1111,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_AI_wep_launchers_AA =			[							// AA Launchers
 											"launch_B_Titan_F"
 										];
-*/
+
 	DMS_RHeli_Height					= 500;						// Altitude of the heli when flying to drop point.
 	DMS_RHeli_MinDistFromDrop			= 500;						// Minimum distance for the reinforcement heli to spawn from drop point.
 	DMS_RHeli_MaxDistFromDrop			= 5000;						// Maximum distance for the reinforcement heli to spawn from drop point.
@@ -1267,8 +1267,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"ItemSodaOriginal",
 											"ItemSodaDiet",
 											"ItemSodaHam",
-											"ItemSodaLaranja",
-											"ItemSodaLimao",
+											"ItemSodaOrange",
+											"ItemSodaLemon",
 											"ItemSodaBeergolden"
 										];
 	DMS_BoxMeds =						[
@@ -1368,7 +1368,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_RareLootChance					= 10;						// Percentage Chance to spawn rare loot in any crate | Default: 10%
 
 	// Vehicles
-/*	DMS_ArmedVehicles =					[							// List of armed vehicles that can spawn
+	DMS_ArmedVehicles =					[							// List of armed vehicles that can spawn
 											#ifdef USE_APEX_VEHICLES
 											"B_T_LSV_01_armed_F",
 											"O_T_LSV_02_armed_F",
@@ -1395,7 +1395,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_RefuelTrucks =					[							// List of refuel trucks that can spawn
 											"O_T_LSV_02_unarmed_F" // até achar um outro
 										];
-*/
+
 	DMS_CivilianVehicles =				[							// List of civilian vehicles that can spawn
 											#ifdef USE_APEX_VEHICLES
 											"C_Offroad_02_unarmed_F",
@@ -1411,9 +1411,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											#endif
 //											"O_T_LSV_02_unarmed_F", // até achar um outro
 											//CUP VEHICLES
-//											"CUP_B_UH1D_GER_KSK",
-//											"CUP_B_UH1D_GER_KSK_Des"
-											""
+											"CUP_B_UH1D_GER_KSK",
+											"CUP_B_UH1D_GER_KSK_Des"
 										];
 
 	DMS_ReinforcementHelis =			[							// List of helis that can spawn for AI paratrooper reinforcements.
@@ -1427,5 +1426,5 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"C_Offroad_01_F",
 											"LandRover_ACR",
 											"BAF_Offroad_W"
-										] ;//+ DMS_MilitaryVehicles + DMS_TransportTrucks;
+										]+ DMS_MilitaryVehicles + DMS_TransportTrucks;
 /* Loot Settings */

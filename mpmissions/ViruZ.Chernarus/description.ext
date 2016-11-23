@@ -51,19 +51,21 @@ diagHit = 1;
 class cfgGame {
 	
 	/// Параметры для юзеров
-	mapArea[]			= {-20000, 20000}; 					// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
+	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
 	maxLocalZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
-	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi, (segundos)
-	zedsRespawnDelay	= 3;					// Tempo de respawn do zumbi em relação a uma casa em especifico, o tempo é marcado em minutos.(Esta condição é Checada após Checar viruzZedspawnDelay)
+	lootDelaytime		= 300;					// Tempo de espera para respawnar loot (segundos)
+	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi em relação e o player, (segundos)
+	zedsRespawnDelay	= 300;					// Tempo de respawn do zumbi em relação a uma casa em especifico, Esta condição é Checada após Checar viruzZedspawnDelay, (segundos)
 	zombie_hitchance	= 8;					// Chance que o zumbi tem de acertar o player  0 = 0% / 10 = 100%
 	zombie_mindamage	= 0.8;					// Damage minim
 	zombie_adddamage	= 1.2;					// Damage adicional que o zumbi pode dar	
 	maxBuildDistance 	= 50;					// Distancia maxima que podes cosntruir ao redor do gerador
 	maxBuildCount		= 80;					// Quantidade maxima de objetos que pode construir
 	maxAnimals			= 1;					// Quantidade maxima de animais que pode ser spawnado por jogador
-	DebugVehicleLoadInventory = true;			// Habilita o debug de inventario de vehiculos ao serem carregados no server/ANTENÇAO, False - deleta o invetario do vehiculo.
+	viuruzStartDate		= [2035, 6, 6, 7, 0];	// Data em que o server inicia, Isto tem relação com a clariadade da lua e suas fases, Noites sem lua são extremamente escuras. (ARMA 3 - 1.60)
+	DebugVehicleLoadInventory = true;			// Habilita o debug de inventario de vehiculos ao serem carregados no server/ANTENÇAO, False - deleta o invetario dos vehiculos.
 	
 	//	Player start Items
 	/*
@@ -119,7 +121,7 @@ class cfgClima {
 	
 	// Fog intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumFog
 	// (0 = no fog, 1 = pea soup). (Suggested value: 0.8).
-	maximumFog = 1;
+	maximumFog = 0.4;
 	
 	// Overcast intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumOvercast
 	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 0).
@@ -127,7 +129,7 @@ class cfgClima {
 	
 	// Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
 	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
-	maximumOvercast = 0.5;
+	maximumOvercast = 0.4;
 
 	// When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
 	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);
@@ -154,9 +156,9 @@ class cfgClima {
 	// below 0.75 rain intervals never execute (thus it cannot rain).
 
 	// Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100 
-	// if you want it to rain constantly when overcast is greater than 0.30. In short: if you think that it generally rains to often then 
+	// if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then 
 	// lower this value and vice versa. (Suggested value: 50).
-	rainIntervalRainProbability = 50;
+	rainIntervalRainProbability = 30;
 
 	// Minimum time in minutes for rain intervals. Must be greater or equal to 0 and less than or equal to _maxRainIntervalTimeMin.
 	// (Suggested value: 0).
@@ -165,6 +167,6 @@ class cfgClima {
 	// If set to true, then the rain is forced to stop after one rain interval during which it has rained (use this for example if you only want 
 	// small occational cloudbursts ). If set to false, then the rain may stop, but it may also just change intensity for an 
 	// immedeate new rain interval. (Suggested value: false).
-	forceRainToStopAfterOneRainInterval = true;
+	forceRainToStopAfterOneRainInterval = false;
 
 };

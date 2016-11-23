@@ -37,9 +37,9 @@ class cfgViruzBuilds
 		},
 
 		{"Internal Suplyes",
-		{"Land_Camping_Light_off_F",{{"Viruz_HandCan",1}}},
-		{"Land_BarrelWater_grey_F",{{"Viruz_Maleta",1}}},
-		{"Land_BarrelWater_F",{{"Viruz_Maleta",1}}},
+		{"Land_Camping_Light_off_F",{{"Viruz_HandyCam",1}}},
+		{"Land_BarrelWater_grey_F",{{"Viruz_Suitcase",1}}},
+		{"Land_BarrelWater_F",{{"Viruz_Suitcase",1}}},
 		{"MetalBarrel_burning_F",{{"PartGeneric",1},{"PartWoodPile",2}}},
 		{"Saco_de_Dormir",{{"ItemSandbag",5}}}
 		},

@@ -582,7 +582,7 @@ class CfgBuildingLoot {
 		lootChance = 0.4;
 		lootPos[] = {};
 		itemType[] =	{
-			{"","trash"},
+			{"","Trash"},
 			{"","Medical_Lite"},
 			{"","Medical_Special"}
 		};

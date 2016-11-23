@@ -1,5 +1,10 @@
 // bleed.sqf
 _unit = (_this select 3) select 0;
+
+_dis=6;
+_sfx = "transfusion";
+[player,_sfx,0,false,_dis] call viruz_zombieSpeak;
+
 _lowBlood = 	_unit getVariable ["USEC_lowBlood", false];
 _injured = 		_unit getVariable ["USEC_injured", false];
 _inPain = 		_unit getVariable ["USEC_inPain", false];

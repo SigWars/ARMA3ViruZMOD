@@ -11,8 +11,8 @@ _maxZombies = _this select 7;
 
 
 _zombied = (_x getVariable ["zombieSpawn",-0.1]);
-_dateNow = (DateToNumber date);
-_age = (_dateNow - _zombied) * 525948;
+_dateNow = time;
+_age = _dateNow - _zombied;
 if (_age > 1) then {
 	_x setVariable ["zombieSpawn",_dateNow,true];
 	[_x] call building_spawnZombies;

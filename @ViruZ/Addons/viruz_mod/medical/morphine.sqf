@@ -1,6 +1,10 @@
 // bleed.sqf
 _unit = (_this select 3) select 0;
 
+_dis=6;
+_sfx = "morphine";
+[player,_sfx,0,false,_dis] call viruz_zombieSpeak;
+
 _unit setVariable ["hit_legs",0];
 _unit setVariable ["hit_hands",0];
 

@@ -9,7 +9,7 @@ _num = switch (_type) do {
 	case "cough": 		{2};
 	case "chase": 		{14};
 	case "spotted": 	{13};
-	case "hit": 		{6};
+	case "hit": 		{11};
 	case "attack": 		{13};
 	case "idle": 		{35};
 	case "scream": 		{4};
@@ -20,6 +20,14 @@ _num = switch (_type) do {
 	case "dog_bark":	{4};
 	case "dog_growl":	{3};
 	case "dog_qq":		{2};
+	case "soda":		{3};
+	case "boil":		{0};
+	case "painkiller":	{3};
+	case "morphine":	{0};
+	case "bandage":		{2};
+	case "transfusion":	{2};
+	case "pain":		{5};
+	
 };
 
 if (count _this > 4) then {

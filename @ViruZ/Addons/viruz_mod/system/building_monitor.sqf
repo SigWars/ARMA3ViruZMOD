@@ -21,4 +21,4 @@ while {_run} do {
 {deleteVehicle _x;} forEach _items;
 
 
-_building setVariable ["looted",(DateToNumber date),true];
+_building setVariable ["looted",time,true];

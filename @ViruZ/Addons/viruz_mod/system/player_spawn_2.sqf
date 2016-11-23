@@ -233,7 +233,9 @@ while {true} do {
 	
 	//Pain Shake Effects
 	if (r_player_inpain and !r_player_unconscious) then {
-		playSound "breath_1";
+		//playSound "breath_1";
+		_sfx = "pain";
+		[player,_sfx,0,false,1] call viruz_zombieSpeak;
 		addCamShake [2, 1, 25];
 	};
 	

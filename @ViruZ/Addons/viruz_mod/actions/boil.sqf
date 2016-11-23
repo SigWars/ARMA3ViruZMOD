@@ -26,7 +26,7 @@ if (_hasbottleitem and _hastinitem) then {
         sleep 1;
 
         _dis=10;
-        _sfx = "cook";
+        _sfx = "boil";
         [player,_sfx,0,false,_dis] call viruz_zombieSpeak;
         [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 

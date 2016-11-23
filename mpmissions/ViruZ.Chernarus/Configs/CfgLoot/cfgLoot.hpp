@@ -1037,7 +1037,7 @@ class CfgLoot {
 		}
 	};	
 
-/*	Flare_Grenades[] = {
+	Flare_Grenades[] = {
 		{
 			"FlareWhite_F",
 			"FlareGreen_F",
@@ -1052,7 +1052,7 @@ class CfgLoot {
 			
 		}
 	};
-*/	
+	
 ///////////////////////////////////////////////////
 //Flashlights //addWeaponCargoGlobal
 

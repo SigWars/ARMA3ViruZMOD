@@ -3,7 +3,7 @@ private["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies"
 //_Keepspawning = _this select 1;
 _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
-_dateNow = (DateToNumber date);
+_dateNow = time;
 _maxZombies = viruz_maxLocalZombies;
 _maxWildZombies = viruz_maxWildZombies;
 _age = -1;
@@ -126,16 +126,16 @@ if (_nearbyCount < 1) exitwith
 	if ((_dis < 50) and (_dis > 1) and _canLoot and !_inVehicle) then {
 		_looted = (_x getVariable ["looted",-0.1]);
 		_cleared = (_x getVariable ["cleared",true]);
-		_dateNow = (DateToNumber date);
-		_age = (_dateNow - _looted) * 525948;
+		_dateNow = time;
+		_age = _dateNow - _looted;
 		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
-		if ((_age > 10) and (!_cleared)) then {
+		if ((_age > lootDelaytime) and (!_cleared)) then {
 			_nearByObj = nearestObjects [(getPosATL _x), VIRUZ_LOOTHOLDER,((sizeOf _type)+5)];
 			{deleteVehicle _x} forEach _nearByObj;
 			_x setVariable ["cleared",true,true];
 			_x setVariable ["looted",_dateNow,true];
 		};
-		if ((_age > 10) and (_cleared)) then {
+		if ((_age > lootDelaytime) and (_cleared)) then {
 			//Register
 			_x setVariable ["looted",_dateNow,true];
 			//cleanup
@@ -150,8 +150,8 @@ if (_nearbyCount < 1) exitwith
 				if (viruz_spawnZombies < viruz_maxLocalZombies) then {
 						//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 						_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-						_dateNow = (DateToNumber date);
-						_age = (_dateNow - _zombied) * 525948;
+						_dateNow = time;
+						_age = (_dateNow - _zombied);
 						//if (_age > 3) then {
 						if (_age > viruz_zedsRespawnDelay) then {
 							_x setVariable ["zombieSpawn",_dateNow,true];
