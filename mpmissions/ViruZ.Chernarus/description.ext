@@ -64,7 +64,7 @@ class cfgGame {
 	maxBuildDistance 	= 50;					// Distancia maxima que podes cosntruir ao redor do gerador
 	maxBuildCount		= 80;					// Quantidade maxima de objetos que pode construir
 	maxAnimals			= 1;					// Quantidade maxima de animais que pode ser spawnado por jogador
-	viuruzStartDate		= [2035, 6, 6, 7, 0];	// Data em que o server inicia, Isto tem relação com a clariadade da lua e suas fases, Noites sem lua são extremamente escuras. (ARMA 3 - 1.60)
+	viuruzStartSetDate		= [2035, 6, 6, 7, 0];	// Data em que o server inicia, Isto tem relação com a clariadade da lua e suas fases, Noites sem lua são extremamente escuras. (ARMA 3 - 1.60)
 	DebugVehicleLoadInventory = true;			// Habilita o debug de inventario de vehiculos ao serem carregados no server/ANTENÇAO, False - deleta o invetario dos vehiculos.
 	
 	//	Player start Items

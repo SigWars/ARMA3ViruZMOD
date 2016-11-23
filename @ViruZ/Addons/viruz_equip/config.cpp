@@ -58,13 +58,7 @@ class CfgWeapons {
 		picture="\A3\Weapons_F\Items\data\UI\gear_Toolkit_CA.paa";
 		model="\A3\Weapons_F\Items\Toolkit";
 		mass = 10;
-		
-		/*class ItemInfo {
-			type = 620;
-			allowedSlots[] = {901}; //only 901
-			mass = 10;
-			uniformModel = "\A3\Weapons_F\Items\Toolkit";
-		};*/
+
 	};
 
 	class ItemKnife : ItemCore {
@@ -73,13 +67,8 @@ class CfgWeapons {
 		model = "\viruz_equip\items\viruz_mknife.p3d";
 		picture = "\viruz_equip\viruzico\mkinife.paa";
 		descriptionShort = $STR_EQUIP_DESC_4;
-		mass = 10
-		
-		/*class ItemInfo {
-			type = 620;
-			allowedSlots[] = {701,801,901};
-			mass = 10;
-		};*/
+		mass = 10;
+
 	};
 	
 };

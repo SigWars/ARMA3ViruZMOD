@@ -99,7 +99,7 @@ if (_script != "") then
 		diag_log ("HIVE: Local Time set to " + str(_date));
 	};*/
 	viuruzStartDate = call {
-	_viuruzStartDate = (missionConfigFile >> "cfgGame" >> "viuruzStartDate") call BIS_fnc_getCfgData;
+	_viuruzStartDate = (missionConfigFile >> "cfgGame" >> "viuruzStartSetDate") call BIS_fnc_getCfgData;
 	if (isNil "_viuruzStartDate") then {[2035, 6, 10, 7, 0]} else {_viuruzStartDate}
 	};
 	

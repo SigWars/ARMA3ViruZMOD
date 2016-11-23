@@ -21,7 +21,7 @@ _config = configFile >> "CfgMagazines" >> _itemorignal;
 _text = getText (_config >> "displayName");
 
 //getting type of sfx (now just drink od soda open and drink)
-_sfx =  "drinksoda"
+_sfx =  "soda";
 
 if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,"drink"] , "PLAIN DOWN"]};
 
