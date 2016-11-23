@@ -180,7 +180,7 @@ class CfgSounds {
 		sound[] = {"\viruz_sound\gore\panic_1.ogg",1,1,40};
 		titles[] = {};
 	};
-	class z_dog_callBack {
+	class dog_callBack {
 		name = "";
 		sound[] = {"\viruz_sound\action\dog\dog_callBack.ogg",1,1,100};
 		titles[] = {};
@@ -650,36 +650,28 @@ class CfgSounds {
 		sound[] = {"\viruz_sound\action\z_hit_11.ogg",1,1,20};
 	};
 
-	class z_fracture_0 : gore_1 {
+	class z_fracture_0 : z_gore_1 {
 		sound[] = {"\viruz_sound\gore\fracture_0.ogg",1,1,80};
 	};
-	class z_fracture_1 : gore_1 {
+	class z_fracture_1 : z_gore_2 {
 		sound[] = {"\viruz_sound\gore\fracture_1.ogg",1,1,80};
 	};
-	class z_scream_0 : gore_1 {
+	class z_scream_0 : z_gore_1 {
 		sound[] = {"\viruz_sound\gore\scream_short_0.ogg",1,1,80};
 	};
-	class z_scream_1 : gore_1 {
+	class z_scream_1 : z_gore_2 {
 		sound[] = {"\viruz_sound\gore\scream_short_1.ogg",1,1,80};
 	};
-	class z_scream_2 : gore_1 {
+	class z_scream_2 : z_gore_1 {
 		sound[] = {"\viruz_sound\gore\scream_short_2.ogg",1,1,80};
 	};
-	class z_scream_3 : gore_1 {
+	class z_scream_3 : z_gore_1 {
 		sound[] = {"\viruz_sound\gore\scream_short_3.ogg",1,1,80};
 	};
-	class z_scream_4 : gore_1 {
+	class z_scream_4 : z_gore_2 {
 		sound[] = {"\viruz_sound\gore\scream_short_4.ogg",1,1,80};
 	};
-	class z_panic_0 {
-		name = "";
-		sound[] = {"\viruz_sound\gore\panic_0.ogg",1,1,80};
-		titles[] = {0, ""};
-	};
-	class z_panic_1 : z_panic_0 {
-		sound[] = {"\viruz_sound\gore\panic_1.ogg",1,1,80};
-	};
-	class z_gore_short_loop : gore_1 {
+	class z_gore_short_loop : z_gore_2 {
 		sound[] = {"\viruz_sound\gore\gore_short_loop.ogg",1,1,60};
 	};
 };
