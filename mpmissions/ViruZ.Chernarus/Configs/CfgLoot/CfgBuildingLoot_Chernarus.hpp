@@ -43,6 +43,7 @@ class CfgBuildingLoot {
 			"VZ_Assistant",
 			"VZ_SchoolTeacher"
 		};
+		maxSpawns = 2;
 		lootChance = 0;
 		lootPos[] = {};
 		itemType[] = {};

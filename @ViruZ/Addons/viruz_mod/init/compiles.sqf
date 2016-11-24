@@ -26,7 +26,6 @@ if (!isDedicated) then {
 	player_weaponFiredNear =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_weaponFiredNear.sqf";
 	player_animalCheck =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_animalCheck.sqf";
 	player_spawnCheck = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_spawnCheck.sqf";
-	player_spawnLootCheck =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_spawnlootCheck.sqf";
 	player_spawnZedCheck =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_spawnzedCheck.sqf";
 	building_spawnLoot =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\building_spawnLoot.sqf";
 	player_taskHint =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_taskHint.sqf";

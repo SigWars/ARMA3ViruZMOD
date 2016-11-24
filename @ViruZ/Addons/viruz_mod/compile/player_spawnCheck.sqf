@@ -1,4 +1,6 @@
-private["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_nearbyBuildings","_radius","_locationstypes","_nearestCity","_position","_nearbytype","_posLoot","_index","_checkPos","_result","_isOk","_isLootGroundSpawn"];
+private["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_nearbyBuildings","_radius","_locationstypes","_nearestCity","_position",
+"_nearbytype","_posLoot","_index","_checkPos","_result","_isOk","_isLootGroundSpawn","_players","_spawnZombies","_nearBy","_nearbyCount","_config","_canLoot","_dis","_nearPlayer",
+"_looted","_cleared","_nearByObj","_zombied"];
 //_type = _this select 0;
 //_Keepspawning = _this select 1;
 _isAir = vehicle player iskindof "Air";
@@ -6,7 +8,7 @@ _inVehicle = (vehicle player != player);
 _dateNow = time;
 _maxZombies = viruz_maxLocalZombies;
 _maxWildZombies = viruz_maxWildZombies;
-_age = -1;
+_age = 0;
 
 _nearbyBuildings = [];
 _radius = 200; 
@@ -46,10 +48,10 @@ switch (_nearbytype) do {
 */
 
 _players = _position nearEntities [["AllPlayers_2", "Survivor2_DZ"], _radius+200];
-viruz_maxGlobalZombies = viruz_maxLocalZombies;
+/*viruz_maxGlobalZombies = viruz_maxLocalZombies;
 {
 	viruz_maxGlobalZombies = viruz_maxGlobalZombies + 10;
-} foreach _players;
+} foreach _players;*/
 
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
 viruz_spawnZombies = 0;
@@ -62,52 +64,8 @@ viruz_spawnZombies = 0;
 }foreach _spawnZombies;
 
 viruz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
-/*
-if ("ItemMap_Debug" in items player) then {
-	deleteMarkerLocal "MaxZeds";
-	deleteMarkerLocal "Counter";
-	deleteMarkerLocal "Loot30";
-	deleteMarkerLocal "Loot120";
-	deleteMarkerLocal "Agro80";
-	
-	_markerstr = createMarkerLocal ["MaxZeds", _position];
-	_markerstr setMarkerColorLocal "ColorYellow";
-	_markerstr setMarkerShapeLocal "ELLIPSE";
-	_markerstr setMarkerBrushLocal "Border";
-	_markerstr setMarkerSizeLocal [_radius, _radius];
 
-	_markerstr1 = createMarkerLocal ["Counter", _position];
-	_markerstr1 setMarkerColorLocal "ColorRed";
-	_markerstr1 setMarkerShapeLocal "ELLIPSE";
-	_markerstr1 setMarkerBrushLocal "Border";
-	_markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];
-	
-	_markerstr2 = createMarkerLocal ["Agro80", _position];
-	_markerstr2 setMarkerColorLocal "ColorRed";
-	_markerstr2 setMarkerShapeLocal "ELLIPSE";
-	_markerstr2 setMarkerBrushLocal "Border";
-	_markerstr2 setMarkerSizeLocal [80, 80];
-
-	_markerstr2 = createMarkerLocal ["Loot30", _position];
-	_markerstr2 setMarkerColorLocal "ColorRed";
-	_markerstr2 setMarkerShapeLocal "ELLIPSE";
-	_markerstr2 setMarkerBrushLocal "Border";
-	_markerstr2 setMarkerSizeLocal [30, 30];
-
-	_markerstr3 = createMarkerLocal ["Loot120", _position];
-	_markerstr3 setMarkerColorLocal "ColorBlue";
-	_markerstr3 setMarkerShapeLocal "ELLIPSE";
-	_markerstr3 setMarkerBrushLocal "Border";
-	_markerstr3 setMarkerSizeLocal [120, 120];
-
-diag_log ("SpawnWait: " +str(time - viruz_spawnWait));
-diag_log ("LocalZombies: " +str(viruz_spawnZombies) + "/" +str(viruz_maxLocalZombies));
-diag_log ("GlobalZombies: " +str(viruz_CurrentZombies) + "/" +str(viruz_maxGlobalZombies));
-diag_log ("viruz_maxCurrentZeds: " +str(viruz_maxCurrentZeds) + "/" +str(viruz_maxZeds));
-
-};
-*/	
-_nearBy = nearestObjects [_position, ["building","Maniken_Base"]+VIRUZ_LOOTHOLDER, _radius];
+_nearBy = nearestObjects [_position, ["building","Maniken_Base"], _radius];
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
 {
@@ -123,19 +81,20 @@ if (_nearbyCount < 1) exitwith
 	_dis = _x distance player;
 	
 	//Loot
-	if ((_dis < 50) and (_dis > 1) and _canLoot and !_inVehicle) then {
-		_looted = (_x getVariable ["looted",-0.1]);
-		_cleared = (_x getVariable ["cleared",true]);
-		_dateNow = time;
-		_age = _dateNow - _looted;
+	if ((_dis < 120) and (_dis > 5) and _canLoot and !_inVehicle) then {
+		_nearPlayer = (position _x) nearEntities [["Survivor2_DZ"],((sizeOf _type)+1)];
+		_looted = _x getVariable ["looted",0];
+		_cleared = _x getVariable ["cleared",false];
+		_dateNow = time + lootDelaytime;
 		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
-		if ((_age > lootDelaytime) and (!_cleared)) then {
+		if ((time > _looted) and (count _nearPlayer < 1) and !_cleared) then {
 			_nearByObj = nearestObjects [(getPosATL _x), VIRUZ_LOOTHOLDER,((sizeOf _type)+5)];
 			{deleteVehicle _x} forEach _nearByObj;
 			_x setVariable ["cleared",true,true];
-			_x setVariable ["looted",_dateNow,true];
+			_x setVariable ["looted",0,true];
+			_x setVariable ["spawnCount",0,true];
 		};
-		if ((_age > lootDelaytime) and (_cleared)) then {
+		if ((time > _looted) and _cleared) then {
 			//Register
 			_x setVariable ["looted",_dateNow,true];
 			//cleanup

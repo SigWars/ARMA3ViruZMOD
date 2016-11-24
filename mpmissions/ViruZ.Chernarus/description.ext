@@ -50,12 +50,12 @@ diagHit = 1;
 
 class cfgGame {
 	
-	/// Параметры для юзеров
+	/// ViruZ Parametros
 	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
 	maxLocalZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
-	lootDelaytime		= 300;					// Tempo de espera para respawnar loot (segundos)
+	lootDelaytime		= 900;					// Tempo de espera para respawnar loot (segundos)
 	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi em relação e o player, (segundos)
 	zedsRespawnDelay	= 300;					// Tempo de respawn do zumbi em relação a uma casa em especifico, Esta condição é Checada após Checar viruzZedspawnDelay, (segundos)
 	zombie_hitchance	= 8;					// Chance que o zumbi tem de acertar o player  0 = 0% / 10 = 100%
@@ -64,7 +64,7 @@ class cfgGame {
 	maxBuildDistance 	= 50;					// Distancia maxima que podes cosntruir ao redor do gerador
 	maxBuildCount		= 80;					// Quantidade maxima de objetos que pode construir
 	maxAnimals			= 1;					// Quantidade maxima de animais que pode ser spawnado por jogador
-	viuruzStartSetDate		= [2035, 6, 6, 7, 0];	// Data em que o server inicia, Isto tem relação com a clariadade da lua e suas fases, Noites sem lua são extremamente escuras. (ARMA 3 - 1.60)
+	viuruzStartSetDate[]= {2035, 6, 6, 7, 0};	// Data em que o server inicia, Tem relação com a claridade da lua e suas fases, Noites sem lua são extremamente escuras. (ARMA 3 - 1.60)
 	DebugVehicleLoadInventory = true;			// Habilita o debug de inventario de vehiculos ao serem carregados no server/ANTENÇAO, False - deleta o invetario dos vehiculos.
 	
 	//	Player start Items
