@@ -84,7 +84,7 @@ if (_nearbyCount < 1) exitwith
 	if ((_dis < 120) and (_dis > 5) and _canLoot and !_inVehicle) then {
 		_nearPlayer = (position _x) nearEntities [["Survivor2_DZ"],((sizeOf _type)+1)];
 		_looted = _x getVariable ["looted",0];
-		_cleared = _x getVariable ["cleared",false];
+		_cleared = _x getVariable ["cleared",true];
 		_dateNow = time + lootDelaytime;
 		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 		if ((time > _looted) and (count _nearPlayer < 1) and !_cleared) then {
