@@ -486,10 +486,71 @@ r_player_removeActions2 = {
 
 USEC_woundHit 	= [
 	"",
-	"body",
+	"face_hub",	// Face 
+	"neck",		// Neck
+	"head",		// Head
+	"pelvis",	// Pelvis 
+	"spine1",	// Abdomen
+	"spine2",	// Diafragma
+	"spine3",	// Chest
+	"body",		// HitPelvis max HitAbdomen max HitDiaphragm max HitChest
+	"arms",		// Arms	
+	"hands",	// Hands
+	"legs"		// Legs
+];
+USEC_woundPoint	= [
+	["neck"],
+	["neck"],
+	["neck"],
+	["pelvis"],
+	["pelvis"],
+	["pelvis"],
+	["pelvis"],
+	["LeftShoulder","lelbow","rightShoulder","relbow"],
+	["LeftShoulder","lelbow","rightShoulder","relbow"], // Left/Right Arm Points
+	["LeftHandMiddle1","rightHandMiddle1"], // Left/Right Hands Points
+	["lfemur","rfemur"] // Left/Right Legs Points
+	
+	
+	
+	/*["Pelvis","aimpoint"],	//""
+	["Pelvis","aimpoint"],	//body
+	["Pelvis","aimpoint"],	//arms
+	["Pelvis","aimpoint"],	//pelvis
+	["neck","pilot"], 		//neck 
+	["lelbow","relbow"],	//hands
+	["RightFoot","LeftFoot"], //legs 
+	["neck","pilot"],		//head_hit
+	["RightFoot","LeftFoot"], //spine2 
+	["RightFoot","LeftFoot"], //spine3 
+	["Pelvis","aimpoint"]*/
+];
+USEC_MinorWounds 	= [
 	"hands",
-	"legs",
-	"head_hit"
+	"legs"
+];
+
+USEC_typeOfWounds = [
+	"neck",
+	"pelvis",
+	"LeftShoulder",
+	"lelbow",
+	"rightShoulder",
+	"relbow",
+	"LeftShoulder",
+	"lelbow",
+	"rightShoulder",
+	"relbow",
+	"LeftHandMiddle1",
+	"rightHandMiddle1",
+	"lfemur",
+	"rfemur"
+	
+	/*"Pelvis",
+	"aimpoint",
+	"lelbow","relbow",
+	"RightFoot","LeftFoot",
+	"neck","pilot"*/
 ];
 VIRUZ_woundHit 	= [
 	[
@@ -516,24 +577,7 @@ VIRUZ_woundHit_dog = [
 	],
 	[0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2]
 ];
-USEC_MinorWounds 	= [
-	"hands",
-	"legs"
-];
-USEC_woundPoint	= [
-	["Pelvis","aimpoint"],
-	["aimpoint"], //,"RightShoulder","LeftShoulder"
-	["lelbow","relbow"],
-	["RightFoot","LeftFoot"],
-	["neck","pilot"]
-];
-USEC_typeOfWounds = [
-	"Pelvis",
-	"aimpoint",
-	"lelbow","relbow",
-	"RightFoot","LeftFoot",
-	"neck","pilot"
-];
+
 
 viruzHit = [];
 viruzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent

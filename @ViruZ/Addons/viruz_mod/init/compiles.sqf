@@ -496,7 +496,7 @@ if (!isDedicated) then {
 			viruz_heartBeat = true;
 			if (_humanity < -3000) then {
 				_delay = ((10000 + _humanity) / 5500) + 0.3;
-				playSound "heartbeat_1";
+				playSound "z_heartbeat_1";
 				sleep _delay;
 			};
 			viruz_heartBeat = false;

@@ -31,7 +31,7 @@ if ((!r_player_handler1) && (r_handlerCount == 0)) then {
 		"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
 		0 fadeSound 0.05;
 		
-		playSound "heartbeat_1";
+		playSound "z_heartbeat_1";
 		sleep 1;
 		_bloodLow = ((r_player_blood/r_player_bloodTotal) < 0.5);
 		

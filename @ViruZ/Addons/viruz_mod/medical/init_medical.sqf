@@ -67,7 +67,7 @@ while {true} do {
 	if (!r_player_unconscious) then {
 		if (((r_player_blood/r_player_bloodTotal) < 0.17)) then {
 			r_player_lowblood = true;
-			playSound "heartbeat_1";
+			playSound "z_heartbeat_1";
 			addCamShake [2, 0.5, 25];
 			if (r_player_lowblood) then {
 				0 fadeSound ((r_player_blood/r_player_bloodTotal) + 0.5);

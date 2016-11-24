@@ -108,7 +108,8 @@ if (_damage > 0.1) then {
 if (_damage > 0.4) then {	//0.25
 	/*
 		BLEEDING
-	*/		
+	*/
+	diag_log format ["HIT = %1", _hit];
 	_wound = _hit call fnc_usec_damageGetWound;
 	_isHit = _unit getVariable[_wound,false];
 	if (_unitIsPlayer) then {	

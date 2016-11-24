@@ -43,15 +43,15 @@ class CfgBuildingLoot {
 			"VZ_Assistant",
 			"VZ_SchoolTeacher"
 		};
-		maxSpawns = 2;
 		lootChance = 0;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] = {};
 		itemChance[] = {};
 		hangPos[] = {};
 		vehPos[] = {};
 		isObjectHolder = 0;
-		isBuildingPos = 1;
+		isBuildingPos = 0;
 	};
 	
 	////////////////////////////////////////////////////////////////////////////////
@@ -222,7 +222,7 @@ class CfgBuildingLoot {
 			0.04,   //Mag pistolas low
 			0.03,	//Armas civis
 			0.03,	//Mag armas civis
-			0.06	//Knife
+			0.05	//Knife
 		};
 	};
 	
@@ -241,6 +241,7 @@ class CfgBuildingLoot {
 		maxRoaming = 1;
 		lootChance = 0.3;
 		lootPos[] = {};
+		maxSpawns = 7;
 		itemType[] =	{
 			{"","Trash"},
 			{"","Food"},
@@ -349,7 +350,7 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.04,	//Trash
-			0.08,	//Light_Backpacks
+			0.07,	//Light_Backpacks
 			0.08,	//Basic_Items
 			0.03,	//Basic_Survival
 			0.06,	//Military_Glasses
@@ -446,7 +447,7 @@ class CfgBuildingLoot {
 			0.02,	//Pistolas low
 			0.02,	//Mag pistolas Low
 			0.06,	//Office items
-			0.06	//Flashlights
+			0.05	//Flashlights
 		
 		};
 	};
@@ -488,7 +489,7 @@ class CfgBuildingLoot {
 			0.04,   //Flashlights
 			0.04,   //Basic items
 			0.04,   //Materials
-			0.05   //Jerrycan
+			0.04   //Jerrycan
 			
 		};
 	};

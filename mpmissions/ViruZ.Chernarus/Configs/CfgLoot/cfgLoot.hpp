@@ -207,9 +207,9 @@ class CfgLoot {
 			0.04, 	//Mobilephone
 			0.03, 	//Smartphone
 			0.02,	//Laptop
-			0.04,	//Saucepan
+			0.05,	//Saucepan
 			0.06,	//Matchbox
-			0.04,	//Can opener
+			0.05,	//Can opener
 			0.03,	//Suitcase
 			0.02,	//Chemlight blue
 			0.02,	//Chemlight green
@@ -328,7 +328,7 @@ class CfgLoot {
 			0.05,	//Scredriver
 			0.05,	//Phillips screwdriver
 			0.05,	//Pliers
-			0.05	//Shovel
+			0.04	//Shovel
 				
 		}
 	};
