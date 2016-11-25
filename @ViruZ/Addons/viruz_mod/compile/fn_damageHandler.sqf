@@ -8,6 +8,7 @@ private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlaye
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
+diag_log format ["DAMAGE BASE = %1", _damage];
 _unconscious = _unit getVariable ["NORRN_unconscious", false];
 _source = _this select 3;
 _ammo = _this select 4;
@@ -45,18 +46,48 @@ if (_unitIsPlayer) then {
 };
 
 //PVP Damage
-_scale = 200;
-if (_damage > 0.4) then {
+_scale = 400;
+if (_damage > 0.2) then {
 	if (_ammo != "zombie") then {
 		_scale = _scale + 50;
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE SCALE NO ZOMBIE = %1", _scale];
+		};	
 	};
 	if (_isHeadHit) then {
 		_scale = _scale + 500;
 	};
 	if ((isPlayer _source) and !(player == _source)) then {
-		_scale = _scale + 800;
+		_scale = _scale + viruz_pvpmod;
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE SCALE PLAYER = %1", _scale];
+		};
 		if (_isHeadHit) then {
 			_scale = _scale + 500;
+		};
+	};
+	if (_damage > 0.4) then {
+		_scale = _scale + 500;
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE SCALE > 0.4 = %1", _scale];
+		};
+	};
+	if (_damage > 0.5) then {
+		_scale = _scale + viruz_hitmod5;
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE SCALE > 0.5 = %1", _scale];
+		};
+	};
+	if (_damage > 0.6) then {
+		_scale = _scale + viruz_hitmod6;
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE SCALE > 0.6 = %1", _scale];
+		};
+	};
+	if (_damage > 0.7) then {
+		_scale = _scale + viruz_hitmod7;
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE SCALE > 0.7 = %1", _scale];
 		};
 	};
 	switch (_type) do {
@@ -70,6 +101,9 @@ if (_damage > 0.4) then {
 		
 		//Cause blood loss
 		r_player_blood = r_player_blood - (_damage * _scale);
+		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE TOTAL DAMAGE = %1", (_damage * _scale)];
+		};
 	};
 };
 
@@ -109,7 +143,7 @@ if (_damage > 0.4) then {	//0.25
 	/*
 		BLEEDING
 	*/
-	diag_log format ["HIT = %1", _hit];
+	//diag_log format ["HIT = %1", _hit];
 	_wound = _hit call fnc_usec_damageGetWound;
 	_isHit = _unit getVariable[_wound,false];
 	if (_unitIsPlayer) then {	

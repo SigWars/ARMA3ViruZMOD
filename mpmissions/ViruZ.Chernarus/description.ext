@@ -67,6 +67,15 @@ class cfgGame {
 	viuruzStartSetDate[]= {2035, 6, 6, 7, 0};	// Data em que o server inicia, Tem relação com a claridade da lua e suas fases, Noites sem lua são extremamente escuras. (ARMA 3 - 1.60)
 	DebugVehicleLoadInventory = true;			// Habilita o debug de inventario de vehiculos ao serem carregados no server/ANTENÇAO, False - deleta o invetario dos vehiculos.
 	
+	/************DAMAGE HANDLER MODIFIER*********
+	*	Sets damage modifier based on ammo hit	*
+	*********************************************/
+	viruz_pvpmod  = 800;	// Modificador dano base PvP	
+	viruz_hitmod5 = 900;	// viruz_pvpmod + viruz_hitmod5
+	viruz_hitmod6 = 1300;	// viruz_pvpmod + viruz_hitmod5 + viruz_hitmod6
+	viruz_hitmod7 = 1200;	// viruz_pvpmod + viruz_hitmod5 + viruz_hitmod6 + viruz_hitmod7
+	
+	
 	//	Player start Items
 	/*
 	[

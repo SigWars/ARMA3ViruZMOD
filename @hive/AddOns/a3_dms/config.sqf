@@ -399,7 +399,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_remove_roadkill					= true; 					// Remove gear from AI bodies that are roadkilled
 	DMS_remove_roadkill_chance			= 50;						// Percentage chance that roadkilled AI bodies will be deleted
 	DMS_explode_onRoadkill				= true;						// Whether or not to spawn an explosion when an AI gets run over. It will likely take out the 2 front wheels. Should help mitigate the ineffective AI vs. striders issue ;)
-	DMS_RemoveNVG						= true;					// Remove NVGs from AI bodies
+	DMS_RemoveNVG						= true;						// Remove NVGs from AI bodies
 
 	DMS_MaxAIDistance					= 500;						// The maximum distance an AI unit can be from a mission before he is killed. Helps with AI running away and forcing the mission to keep running. Set to 0 if you don't want it.
 	DMS_AIDistanceCheckFrequency		= 60;						// How often to check within DMS_fnc_TargetsKilled whether or not the AI is out of the maximum radius. Lower values increase frequency and increase server load, greater values decrease frequency and may cause longer delays for "runaway" AI.
@@ -447,7 +447,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_AI_WP_Radius_base				= 5;						// Waypoint radius for AI in bases.
 	DMS_AI_WP_Radius_heli				= 500;						// Waypoint radius for AI in helis.
 
-	DMS_AI_destroyVehicleChance			= 80;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
+	DMS_AI_destroyVehicleChance			= 100;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
 
 	DMS_AI_destroyStaticWeapon			= true;						// Whether or not to destroy static HMGs after AI death.
 	DMS_AI_destroyStaticWeapon_chance	= 100;						// Percent chance that a static weapon will be destroyed (only applied if "DMS_AI_destroyStaticWeapon" is true)
@@ -564,6 +564,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_assault_items =					[							// Items for Assault Class AI (Loot stuff that goes in uniform/vest/backpack)
 											//VIRUZ ITENS
 											"ItemPainkiller",
+											"ItemBandage",
 											"ItemWaterBottle",
 											"FoodCanOranges"
 										];
@@ -601,7 +602,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"H_HelmetSpecO_ghex_F",
 											"H_HelmetCrew_O_ghex_F",
 											#endif
-											"H_HelmetB_light_sand", //Light Combat Helmet (Sand) Level I
+//											"H_HelmetB_light_sand", //Light Combat Helmet (Sand) Level I
 //											"H_HelmetB_plain_blk", //Combat Helmet (Black) Level II
 											"H_Booniehat_indp",
 //											"H_Cap_headphones",
@@ -647,8 +648,8 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_PlateCarrier1_rgr_noflag_F",
 											#endif
 //											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
-											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
-											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
+//											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
+//											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
 //											"V_Press_F" //	Vest (Press) Armor Level II
 										];
 	DMS_assault_backpacks =				[							// Backpacks for Assault Class
@@ -772,7 +773,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"H_HelmetLeaderO_ghex_F",
 											"H_HelmetCrew_O_ghex_F",
 											#endif
-											"H_HelmetB_light_snakeskin", //Light Combat Helmet (Snakeskin)Level I
+//											"H_HelmetB_light_snakeskin", //Light Combat Helmet (Snakeskin)Level I
 //											"H_HelmetIA_camo", //MICH2 (Camo) Level II
 											"H_Cap_blk_ION", //Cap (ION)
 											"H_Cap_blk_Raven", //Cap [AAF]
@@ -813,7 +814,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"U_IG_Guerilla3_2", //Guerilla Smocks 1
 											"U_BG_Guerilla2_1", //Guerilla Outfit (Plain, Dark)
 											"U_BG_leader", //Guerilla Uniform
-//											"U_C_HunterBody_grn", //Hunting Clothes
+											"U_C_HunterBody_grn", //Hunting Clothes
 											"U_Competitor", //Competitor Suit
 //											"U_B_Wetsuit", //Wetsuit [NATO]
 											"U_NikosAgedBody", //Underwear 1
@@ -828,9 +829,9 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_TacVest_gen_F",
 											"V_PlateCarrier1_rgr_noflag_F",
 											#endif
-											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
-											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
-											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
+//											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
+//											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
+//											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
 //											"V_Press_F" //	Vest (Press) Armor Level II
 										];
 	DMS_MG_backpacks =					[							// Backpacks for MG Class
@@ -922,7 +923,6 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 //											"optic_SOS",
 //											"optic_DMS",
 //											"optic_LRPS"
-											""
 										];
 	DMS_sniper_optic_chance				= 70;						// Percentage chance that a Sniper Class AI will get an optic
 	DMS_sniper_bipod_chance				= 50;						// Percentage chance that a Sniper Class AI will get a bipod
@@ -943,7 +943,6 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 	DMS_sniper_equipment =				[							// Equipment for Sniper Class AI (stuff that goes in toolbelt slots)
 //											"Rangefinder",
 //											"ItemGPS"
-											""
 										];
 	DMS_sniper_RandItemCount =			3;							// How many random items to add to the AI's inventory.
 	DMS_sniper_RandItems =				[							// The random items that will be added to the AI's inventory.
@@ -982,10 +981,10 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"H_HelmetSpecO_ghex_F",
 											"H_HelmetLeaderO_ghex_F",
 											#endif
-											"H_HelmetB_light_sand", //Light Combat Helmet (Sand) Level I
+//											"H_HelmetB_light_sand", //Light Combat Helmet (Sand) Level I
 //											"H_HelmetB_plain_blk", //Combat Helmet (Black) Level II
 											"H_Booniehat_indp",
-//											"H_Cap_headphones",
+											"H_Cap_headphones",
 											"H_Cap_blu",
 											"H_Cap_red",
 											"H_Cap_oli",
@@ -1022,9 +1021,9 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"V_PlateCarrierGL_tna_F",
 											"V_PlateCarrier2_rgr_noflag_F",
 											#endif
-											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
-											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
-											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
+//											"V_I_G_resistanceLeader_F", //Tactical Vest (Stavrou) Armor Level I
+//											"V_RebreatherB", //	Rebreather [NATO] 	Armor Level I
+//											"V_RebreatherIA" //Rebreather [AAF] Armor Level I
 //											"V_Press_F" //	Vest (Press) Armor Level II
 											
 										];
@@ -1052,7 +1051,6 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 //											"CUP_B_GER_Pack_Flecktarn",
 //											"CUP_B_CivPack_WDL",
 //											"CUP_B_AssaultPack_Coyote"
-											""
 										];
 
 	DMS_ai_SupportedClasses =			[							// Allowed AI classes. If you want to create your own class, make sure you define everything as I've defined above, and add it here
@@ -1334,13 +1332,13 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"optic_LRPS"
 										];
 	DMS_BoxBackpacks =					[							//List of backpacks that can spawn in a crate
-											"B_Bergen_rgr",
-											"B_Carryall_oli",
-											"B_Kitbag_mcamo",
-											"B_Carryall_cbr",
-											"B_FieldPack_oucamo",
-											"B_FieldPack_cbr",
-											"B_Bergen_blk",
+//											"B_Bergen_rgr",
+//											"B_Carryall_oli",
+//											"B_Kitbag_mcamo",
+//											"B_Carryall_cbr",
+//											"B_FieldPack_oucamo",
+//											"B_FieldPack_cbr",
+//											"B_Bergen_blk",
 											
 											//CUP MOCHILAS
 											"CUP_B_AlicePack_Khaki",

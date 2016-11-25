@@ -341,7 +341,6 @@ class CfgBuildingLoot {
 			{"","Military_Glasses"},
 			{"","Military_Clothes"},
 			{"","Military_Headgear"},			
-			{"","Civilian_Special"},
 			{"","ArmasCivis"},
 			{"","Mag_ArmasCivis"},
 			{"ItemKnife","weapon"},
@@ -356,7 +355,6 @@ class CfgBuildingLoot {
 			0.06,	//Military_Glasses
 			0.07,	//Military_Clothes
 			0.04,	//Military_Headgear
-			0.02,   //Civilian_Special
 			0.03,   //Mag_Pistolas low
 			0.02,   //Armas civis
 			0.02,   //Mag_armas civis

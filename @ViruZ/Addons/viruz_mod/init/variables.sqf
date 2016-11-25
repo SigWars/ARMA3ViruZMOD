@@ -744,4 +744,21 @@ if(!isDedicated) then {
 		_zombie_adddamage = (missionConfigFile >> "cfgGame" >> "zombie_adddamage") call BIS_fnc_getCfgData;
 		if (isNil "_zombie_adddamage") then {1.2} else {_zombie_adddamage}
 	};
+	viruz_hitmod5 = call {
+		_viruz_hitmod5 = (missionConfigFile >> "cfgGame" >> "viruz_hitmod5") call BIS_fnc_getCfgData;
+		if (isNil "_viruz_hitmod5") then {900} else {_viruz_hitmod5}
+	};
+	viruz_hitmod6 = call {
+		_viruz_hitmod6 = (missionConfigFile >> "cfgGame" >> "viruz_hitmod6") call BIS_fnc_getCfgData;
+		if (isNil "_viruz_hitmod6") then {1300} else {_viruz_hitmod6}
+	};
+	viruz_hitmod7 = call {
+		_viruz_hitmod7 = (missionConfigFile >> "cfgGame" >> "viruz_hitmod7") call BIS_fnc_getCfgData;
+		if (isNil "_viruz_hitmod7") then {1200} else {_viruz_hitmod7}
+	};
+	viruz_pvpmod = call {
+		_viruz_pvpmod = (missionConfigFile >> "cfgGame" >> "viruz_pvpmod") call BIS_fnc_getCfgData;
+		if (isNil "_viruz_pvpmod") then {800} else {_viruz_pvpmod}
+	};
+
 };

@@ -118,7 +118,7 @@ class CfgVehicles {
 			};
 			class HitAbdomen: HitPelvis
 			{
-				armor=0;
+				armor=1;
 				material=-1;
 				name="spine1";
 				passThrough=0.1;
@@ -129,7 +129,7 @@ class CfgVehicles {
 			};
 			class HitDiaphragm: HitAbdomen
 			{
-				armor=0;
+				armor=1;
 				material=-1;
 				name="spine2";
 				passThrough=0.1;
@@ -140,7 +140,7 @@ class CfgVehicles {
 			};
 			class HitChest: HitDiaphragm
 			{
-				armor=0;
+				armor=1;
 				material=-1;
 				name="spine3";
 				passThrough=0.1;
@@ -151,7 +151,7 @@ class CfgVehicles {
 			};
 			class HitBody: HitChest
 			{
-				armor=1;
+				armor=1000;
 				material=-1;
 				name="body";
 				passThrough=0.1;
