@@ -8,7 +8,6 @@ private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlaye
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
-diag_log format ["DAMAGE BASE = %1", _damage];
 _unconscious = _unit getVariable ["NORRN_unconscious", false];
 _source = _this select 3;
 _ammo = _this select 4;
@@ -22,6 +21,32 @@ _humanityHit = 0;
 _myKills = 0;
 _unitIsPlayer = _unit == player;
 
+diag_log format ["DAMAGE _source = %1", _source];
+diag_log format ["DAMAGE _hit = %1", _hit];
+diag_log format ["DAMAGE _damage = %1", _damage];
+diag_log format ["DAMAGE _ammo = %1", _ammo];
+//Publish Damage
+	//player sidechat format["Processed damage for %1",_unit];
+	//USEC_SystemMessage = format["CLIENT: %1 damaged for %2 (in vehicle: %5)",_unit,_damage,_isMinor,_isHeadHit,_inVehicle];
+	//PublicVariable "USEC_SystemMessage";
+
+/*
+if (_isPlayer) then {
+	if (_damage > 0.1) then {
+		dayz_canDisconnect = false;
+		//["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
+		dayzDiscoAdd = getPlayerUID player;
+		publicVariable "dayzDiscoAdd";
+				
+		dayz_damageCounter = time;
+		
+		//Ensure Control is visible
+		_display = uiNamespace getVariable 'DAYZ_GUI_display';
+		_control = 	_display displayCtrl 1204;
+		_control ctrlShow true;
+	};
+};
+*/
 
 if (_unitIsPlayer) then {
 	if (_hit == "") then {
@@ -34,60 +59,29 @@ if (_unitIsPlayer) then {
 			_isBandit = 	(typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
-				
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
-				
-				viruzHumanity = [_this select 0,_this select 1,30];
-				publicVariable "viruzHumanity";
+				//["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
+				dayzHumanity = [_this select 0,_this select 1,30];
+				publicVariable "dayzHumanity";
 			};
 		};
 	};
 };
 
 //PVP Damage
-_scale = 400;
-if (_damage > 0.2) then {
+_scale = 200;
+if (_damage > 0.4) then {
 	if (_ammo != "zombie") then {
 		_scale = _scale + 50;
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log format ["DAMAGE SCALE NO ZOMBIE = %1", _scale];
-		};	
 	};
 	if (_isHeadHit) then {
 		_scale = _scale + 500;
 	};
 	if ((isPlayer _source) and !(player == _source)) then {
-		_scale = _scale + viruz_pvpmod;
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log format ["DAMAGE SCALE PLAYER = %1", _scale];
-		};
+		_scale = _scale + 800;
 		if (_isHeadHit) then {
 			_scale = _scale + 500;
-		};
-	};
-	if (_damage > 0.4) then {
-		_scale = _scale + 500;
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log format ["DAMAGE SCALE > 0.4 = %1", _scale];
-		};
-	};
-	if (_damage > 0.5) then {
-		_scale = _scale + viruz_hitmod5;
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log format ["DAMAGE SCALE > 0.5 = %1", _scale];
-		};
-	};
-	if (_damage > 0.6) then {
-		_scale = _scale + viruz_hitmod6;
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log format ["DAMAGE SCALE > 0.6 = %1", _scale];
-		};
-	};
-	if (_damage > 0.7) then {
-		_scale = _scale + viruz_hitmod7;
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log format ["DAMAGE SCALE > 0.7 = %1", _scale];
 		};
 	};
 	switch (_type) do {
@@ -95,15 +89,11 @@ if (_damage > 0.2) then {
 		case 2: {_scale = _scale + 200};
 	};
 	if (_unitIsPlayer) then {
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
-		};
-		
 		//Cause blood loss
+		//Log Damage
+		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
 		r_player_blood = r_player_blood - (_damage * _scale);
-		if ( ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
-			diag_log format ["DAMAGE TOTAL DAMAGE = %1", (_damage * _scale)];
-		};
+		diag_log format ["DAMAGE _ammo = %1", (_damage * _scale)];
 	};
 };
 
@@ -142,8 +132,7 @@ if (_damage > 0.1) then {
 if (_damage > 0.4) then {	//0.25
 	/*
 		BLEEDING
-	*/
-	//diag_log format ["HIT = %1", _hit];
+	*/		
 	_wound = _hit call fnc_usec_damageGetWound;
 	_isHit = _unit getVariable[_wound,false];
 	if (_unitIsPlayer) then {	
@@ -192,7 +181,7 @@ if (_damage > 0.4) then {	//0.25
 		if (!_isInjured) then {
 			_unit setVariable["USEC_injured",true,true];
 			if ((_unitIsPlayer) and (_ammo != "zombie")) then {
-				viruz_sourceBleeding = _source;
+				dayz_sourceBleeding = _source;
 			};
 		};
 		//Set ability to give blood

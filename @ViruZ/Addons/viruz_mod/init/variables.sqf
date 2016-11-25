@@ -1,7 +1,7 @@
 disableSerialization;
 
 viruzCanConnect = false;
-ViruzDebugMode = 0;			//Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High
+ViruzDebugMode = 3;			//Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High
 ViruzDebugType = "NONE";	//Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN"
 
 config_VehiclesCheck =		getArray(configFile >> "CfgObjectCheck" >> "vehicles");
@@ -506,8 +506,8 @@ USEC_woundPoint	= [
 	["pelvis"],
 	["pelvis"],
 	["pelvis"],
-	["LeftShoulder","lelbow","rightShoulder","relbow"],
-	["LeftShoulder","lelbow","rightShoulder","relbow"], // Left/Right Arm Points
+	["lelbow","relbow"],
+	["lelbow","relbow"], // Left/Right Arm Points
 	["LeftHandMiddle1","rightHandMiddle1"], // Left/Right Hands Points
 	["lfemur","rfemur"] // Left/Right Legs Points
 	
@@ -759,6 +759,10 @@ if(!isDedicated) then {
 	viruz_pvpmod = call {
 		_viruz_pvpmod = (missionConfigFile >> "cfgGame" >> "viruz_pvpmod") call BIS_fnc_getCfgData;
 		if (isNil "_viruz_pvpmod") then {800} else {_viruz_pvpmod}
+	};
+	viruz_zmbmod = call {
+		_viruz_zmbmod = (missionConfigFile >> "cfgGame" >> "viruz_zmbmod") call BIS_fnc_getCfgData;
+		if (isNil "_viruz_zmbmod") then {0} else {_viruz_zmbmod}
 	};
 
 };

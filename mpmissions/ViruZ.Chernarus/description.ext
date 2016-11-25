@@ -74,6 +74,7 @@ class cfgGame {
 	viruz_hitmod5 = 900;	// viruz_pvpmod + viruz_hitmod5
 	viruz_hitmod6 = 1300;	// viruz_pvpmod + viruz_hitmod5 + viruz_hitmod6
 	viruz_hitmod7 = 1200;	// viruz_pvpmod + viruz_hitmod5 + viruz_hitmod6 + viruz_hitmod7
+	viruz_zmbmod  = 1000;	// Modificador de dano do zumbi Random(zombie_mindamage<->zombie_adddamage)* viruz_zmbmod 
 	
 	
 	//	Player start Items
