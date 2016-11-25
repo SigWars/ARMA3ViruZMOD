@@ -20,11 +20,11 @@ _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
 _unitIsPlayer = _unit == player;
-
 diag_log format ["DAMAGE _source = %1", _source];
 diag_log format ["DAMAGE _hit = %1", _hit];
 diag_log format ["DAMAGE _damage = %1", _damage];
 diag_log format ["DAMAGE _ammo = %1", _ammo];
+
 //Publish Damage
 	//player sidechat format["Processed damage for %1",_unit];
 	//USEC_SystemMessage = format["CLIENT: %1 damaged for %2 (in vehicle: %5)",_unit,_damage,_isMinor,_isHeadHit,_inVehicle];
@@ -33,15 +33,15 @@ diag_log format ["DAMAGE _ammo = %1", _ammo];
 /*
 if (_isPlayer) then {
 	if (_damage > 0.1) then {
-		dayz_canDisconnect = false;
-		//["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
-		dayzDiscoAdd = getPlayerUID player;
-		publicVariable "dayzDiscoAdd";
+		viruz_canDisconnect = false;
+		//["viruzDiscoAdd",getPlayerUID player] call callRpcProcedure;
+		viruzDiscoAdd = getPlayerUID player;
+		publicVariable "viruzDiscoAdd";
 				
-		dayz_damageCounter = time;
+		viruz_damageCounter = time;
 		
 		//Ensure Control is visible
-		_display = uiNamespace getVariable 'DAYZ_GUI_display';
+		_display = uiNamespace getVariable 'VIRUZ_GUI_display';
 		_control = 	_display displayCtrl 1204;
 		_control ctrlShow true;
 	};
@@ -61,9 +61,9 @@ if (_unitIsPlayer) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
-				//["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
-				dayzHumanity = [_this select 0,_this select 1,30];
-				publicVariable "dayzHumanity";
+				//["viruzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
+				viruzHumanity = [_this select 0,_this select 1,30];
+				publicVariable "viruzHumanity";
 			};
 		};
 	};
@@ -93,7 +93,7 @@ if (_damage > 0.4) then {
 		//Log Damage
 		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
 		r_player_blood = r_player_blood - (_damage * _scale);
-		diag_log format ["DAMAGE _ammo = %1", (_damage * _scale)];
+		diag_log format ["DAMAGE TOTAL = %1", (_damage * _scale)];
 	};
 };
 
@@ -181,7 +181,7 @@ if (_damage > 0.4) then {	//0.25
 		if (!_isInjured) then {
 			_unit setVariable["USEC_injured",true,true];
 			if ((_unitIsPlayer) and (_ammo != "zombie")) then {
-				dayz_sourceBleeding = _source;
+				viruz_sourceBleeding = _source;
 			};
 		};
 		//Set ability to give blood
