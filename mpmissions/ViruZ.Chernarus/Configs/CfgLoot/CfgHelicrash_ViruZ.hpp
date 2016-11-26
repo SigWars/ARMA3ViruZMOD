@@ -24,18 +24,18 @@ class HelicrashViruZ: Default {
 		};
 		itemChance[] =	{
 			0.02,	//ArmasHigh
-			0.01,	//Mag_ArmasHigh
+			0.02,	//Mag_ArmasHigh
 			0.04,	//ArmasMedias
-			0.02,	//Mag_ArmasMedias
+			0.04,	//Mag_ArmasMedias
 			0.06,	//ArmasLow
-			0.04,	//Mag_ArmasLow
-			0.04	//Acessorios_Optic
+			0.06,	//Mag_ArmasLow
+			0.05	//Acessorios_Optic
 		};
 	};
 	
 //holders
 	
-class VZBox_MediaV: HelicrashViruZ{ //HELICRASH BOX
+class VZBox_MediaV: HelicrashViruZ { //HELICRASH BOX
 		lootChance = 0.7;
 		isObjectHolder = 1;
 		isBuildingPos = 0;

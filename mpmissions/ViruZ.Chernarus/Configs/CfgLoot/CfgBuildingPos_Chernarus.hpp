@@ -388,7 +388,7 @@
 	};
 	*/
 	
-	class Land_House_C_5_EP1: Special_Residence
+	class Land_House_C_5_EP1: Basic_Residence
 	{
 		lootPos[] =
 		{
@@ -1784,17 +1784,6 @@
 		};
 	};
 	
-	class Land_Ind_TankBig: Construction
-	{
-		lootPos[] =
-		{
-			{-5.15332,0.139648,5.41479},
-			{3.53223,1.00439,5.41478},
-			{-1.40771,5.35254,5.41478},
-			{-0.231445,-4.0957,5.38402}
-		};
-	};
-	
 	class Land_Shed_Ind02: Factory
 	{
 		lootPos[] =
@@ -1827,16 +1816,6 @@
 			{-4.66797,2.21484,-3.98837},
 			{-4.70313,6.5415,-3.89417},
 			{-4.73828,9.93555,-3.98848}
-		};
-	};
-	
-	class Land_ReservoirTower_F: Construction
-	{
-		lootPos[] =
-		{
-			{-0.751465,-2.47852,-1.75916},
-			{-2.91455,0.279297,-1.75916},
-			{0.206055,2.92871,-1.75916}
 		};
 	};
 	
@@ -2109,7 +2088,7 @@
 		};
 	};
 	
-	class CampEast_EP1: Basic_Military
+	class CampEast_EP1: Medium_Military
 	{
 		lootPos[] =
 		{
@@ -2216,7 +2195,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//MilitaresHigh
 	
-	class Land_Barrack2_EP1: Special_Military
+	class Land_Barrack2_EP1: Basic_Military
 	{
 		lootPos[] =
 		{

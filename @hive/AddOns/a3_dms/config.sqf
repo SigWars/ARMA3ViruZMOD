@@ -605,7 +605,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 //											"H_HelmetB_light_sand", //Light Combat Helmet (Sand) Level I
 //											"H_HelmetB_plain_blk", //Combat Helmet (Black) Level II
 											"H_Booniehat_indp",
-//											"H_Cap_headphones",
+											"H_Cap_headphones",
 											"H_Cap_blu",
 											"H_Cap_red",
 											"H_Cap_oli",
@@ -777,7 +777,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 //											"H_HelmetIA_camo", //MICH2 (Camo) Level II
 											"H_Cap_blk_ION", //Cap (ION)
 											"H_Cap_blk_Raven", //Cap [AAF]
-//											"H_Booniehat_khk_hs", //Booniehat (Headset)
+											"H_Booniehat_khk_hs", //Booniehat (Headset)
 											"H_Watchcap_sgg", //Beanie (Sage)
 											"H_Hat_blue", //Hat (Blue)
 											"H_StrawHat", //Straw Hat
@@ -1306,7 +1306,6 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"PartGlass",
 											"Viruz_MobilePhone",
 											"Viruz_SmartPhone",
-											"ItemGenerator",
 											"ItemJerryCan"
 										];
 	DMS_BoxTools =						[
@@ -1315,7 +1314,9 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"Viruz_Hammer",
 											"Viruz_Saw",
 											"Viruz_Wrench",
-											"ItemCanOpener"
+											"Viruz_Phillips",
+											"Viruz_Screwdriver",
+											"ItemEtool"
 										];
 	DMS_BoxBuildingSupplies	=			[							// List of building supplies that can spawn in a crate ("DMS_BoxBaseParts", "DMS_BoxCraftingMaterials", and "DMS_BoxTools" are automatically added to this list. "DMS_BoxCraftingMaterials" is added twice for weight.)
 											//"Itens Raros Etc.."

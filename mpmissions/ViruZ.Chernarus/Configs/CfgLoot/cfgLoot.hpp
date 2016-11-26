@@ -101,7 +101,7 @@ class CfgLoot {
 			0.05,	//ItemSodaDiet
 			0.05,	//ItemSodaGrape
 			0.05,	//ItemSodaHam
-			0.05,	//"ItemSodaOrange
+			0.05,	//ItemSodaOrange
 			0.05,	//ItemSodaLemon
 			0.05,	//ItemSodaYoda
 			0.05	//ItemSodaBeergolden
@@ -167,56 +167,46 @@ class CfgLoot {
 	Basic_Items[] = {
 		{
 			"ItemMatchbox",
-			"Chemlight_blue",
-			"Chemlight_green",
-			"Chemlight_red",
-			"Chemlight_yellow",
 			"Viruz_CardBoardBox"
 		},
 		{
-			0.03, 	//Matchbox
-			0.02,	//Chemlight blue
-			0.02,	//Chemlight green
-			0.02,	//Chemlight red
-			0.02,	//Chemlight yellow
-			0.02	//Cardboard box
-			
+			0.04, 	//Matchbox
+			0.01	//Cardboard box
+
 		}
 	};
 
 
-	Residence_Items[] = {
+	Houseware_Items[] = {
 		{
-			"Viruz_HandyCam",
-			"Viruz_MobilePhone",
-			"Viruz_SmartPhone",
-			"Viruz_Laptop",
 			"Viruz_Saucepan",
 			"ItemMatchbox",
 			"ItemCanOpener",
 			"Viruz_Suitcase",
-			"Chemlight_blue",
-			"Chemlight_green",
-			"Chemlight_red",
-			"Chemlight_yellow",			
 			"Viruz_CardBoardBox"
 
 		},
 		{
+			0.06,	//Saucepan
+			0.06,	//Matchbox
+			0.06,	//Can opener
+			0.04,	//Suitcase
+			0.02	//Cardboard box
+		}
+	};
+
+	Eletronic_Items[] = {
+		{	
+			"Viruz_HandyCam",
+			"Viruz_MobilePhone",
+			"Viruz_SmartPhone"
+//			"Viruz_Laptop"
+		},
+		{
 			0.02, 	//Handycam
 			0.04, 	//Mobilephone
-			0.03, 	//Smartphone
-			0.02,	//Laptop
-			0.05,	//Saucepan
-			0.06,	//Matchbox
-			0.05,	//Can opener
-			0.03,	//Suitcase
-			0.02,	//Chemlight blue
-			0.02,	//Chemlight green
-			0.02,	//Chemlight red
-			0.02,	//Chemlight yellow
-			0.02	//Cardboard box
-			
+			0.03	//Smartphone
+//			0.02	//Laptop
 		}
 	};
 
@@ -225,30 +215,18 @@ class CfgLoot {
 
 	Office_Items[] = {
 		{
-			"Viruz_HandyCam",
 			"Viruz_MobilePhone",
 			"Viruz_SmartPhone",
-			"Viruz_Laptop",
-			"ItemMatchbox",
-			"Chemlight_blue",
-			"Chemlight_green",
-			"Chemlight_red",
-			"Chemlight_yellow",
+//			"Viruz_Laptop",
 			"Viruz_Suitcase",
 			"Viruz_CardBoardBox"
 
 		},
 		{
-			0.03, 	//Handycam
-			0.02,	//Mobilephone
-			0.03,	//Smartphone
-			0.04,	//Laptop
-			0.02,	//Matchbox
-			0.02,	//Chemlight blue
-			0.02,	//Chemlight green
-			0.02,	//Chemlight red
-			0.02,	//Chemlight yellow
-			0.03,	//Suitcase
+			0.03,	//Mobilephone
+			0.04,	//Smartphone
+//			0.04,	//Laptop
+			0.04,	//Suitcase
 			0.02	//Cardboard box
 		}
 	};
@@ -260,16 +238,18 @@ class CfgLoot {
 		{
 			"ItemCompass",
 			"Binocular",
-			"ItemKnife",
 			"ItemWatch",
+			"ItemMap",
+			"ItemKnife",
 			"ItemGPS"
 			
 		},
 		{
-			0.05,	//Compass
+			0.04,	//Compass
 			0.04,	//Binocular
-			0.03, 	//Knife
-			0.03,	//Watch
+			0.04,	//Watch
+			0.04,	//Map
+			0.04,	//Knife
 			0.01	//GPS
 		}
 	};
@@ -277,11 +257,19 @@ class CfgLoot {
 	Survival_Items[] = {	//addMagazineCargoGlobal
 		{
 			"ItemTent",
-			"ItemWaterBottle"
+			"ItemWaterBottle",
+			"Chemlight_blue",
+			"Chemlight_green",
+			"Chemlight_red",
+			"Chemlight_yellow"
 		},
 		{
 			0.03,	//Tent
 			0.05	//Canteen
+			0.04,	//Chemlight blue
+			0.04,	//Chemlight green
+			0.04,	//Chemlight red
+			0.04	//Chemlight yellow
 		}
 	};
 		
@@ -295,14 +283,14 @@ class CfgLoot {
 			"equip_nails",
 			"Viruz_CementBag",
 			"Viruz_CardBoardBox"
-			
+
 		},
 		{
 			0.04, 	//Sandbag
 			0.06,	//Metal wire
 			0.06,	//Box of nails
 			0.02,	//Cement bag
-			0.05	//Cardboard box
+			0.04	//Cardboard box
 
 		}
 	};
@@ -329,7 +317,7 @@ class CfgLoot {
 			0.05,	//Phillips screwdriver
 			0.05,	//Pliers
 			0.04	//Shovel
-				
+
 		}
 	};
 
@@ -342,20 +330,18 @@ class CfgLoot {
 			"PartFueltank",
 			"PartEngine",
 			"PartGlass",
-			"PartVRotor",
 			"ItemJerrycan"
 
 		},
 		{
-			0.09,
-			0.07,
-			0.05,
-			0.06,
-			0.03,
-			0.04
+			0.07,	//PartWheel
+			0.06,	//PartFueltank
+			0.05,	//PartEngine
+			0.05,	//PartGlass
+			0.05	//ItemJerrycan
 		}
 	};
-/*
+
 	HeliParts[] = {
 		{
 			"PartGlass",
@@ -364,13 +350,13 @@ class CfgLoot {
 
 		},
 		{
-			0.07,
-			0.03,
-			0.05
+			0.04,	//PartGlass
+			0.04,	//PartVRotor
+			0.05	//ItemJerrycan
 
 		}
 	};
-
+/*
 	BikeParts[] = {
 		{
 			"PartWheel",
@@ -395,11 +381,11 @@ class CfgLoot {
 			"ItemPainkiller",
 			"ItemAntibiotic",
 			"ItemHeatPack"
-			
+
 		},
 		{
 			0.05,
-			0.05,
+			0.04,
 			0.04,
 			0.03
 		}
@@ -414,7 +400,7 @@ class CfgLoot {
 			"ItemBloodbag",
 			"ItemEpinephrine",
 			"ItemMorphine"
-			
+
 		},
 		{
 			0.04,
@@ -450,81 +436,77 @@ class CfgLoot {
 	
 	Light_Backpacks[] = {
 		{
-			"CUP_B_ACRScout_m95", // 60
-			"CUP_B_AssaultPack_ACU", // 150
-			"CUP_B_AssaultPack_Black", // 150
-			"CUP_B_AssaultPack_Coyote", // 150
-			"CUP_B_MedicPack_ACU", // 150
-			"B_AssaultPack_khk", // 160
-			"B_AssaultPack_Kerry" // 160
+			"CUP_B_ACRScout_m95",			// 60
+			"CUP_B_AssaultPack_ACU",		// 150
+			"CUP_B_AssaultPack_Black",		// 150
+			"CUP_B_AssaultPack_Coyote",		// 150
+			"CUP_B_MedicPack_ACU",			// 150
+			"B_AssaultPack_khk",			// 160
+			"B_AssaultPack_Kerry"			// 160
 
-			
 		},
 		{
-			0.06, //"CUP_B_ACRScout_m95",
-			0.03, //"CUP_B_AssaultPack_ACU",
-			0.03, //"CUP_B_AssaultPack_Black",
-			0.03, //"CUP_B_AssaultPack_Coyote",
-			0.03, //"CUP_B_MedicPack_ACU"
-			0.02, //"B_AssaultPack_khk",
-			0.02 //"B_AssaultPack_Kerry",
+			0.06,	//CUP_B_ACRScout_m95
+			0.03,	//CUP_B_AssaultPack_ACU
+			0.03,	//CUP_B_AssaultPack_Black
+			0.03,	//CUP_B_AssaultPack_Coyote
+			0.03,	//CUP_B_MedicPack_ACU
+			0.02,	//B_AssaultPack_khk
+			0.02	//B_AssaultPack_Kerry
 
 		}
 	};
 	
 	Medium_Backpacks[] = {
 		{
-			"CUP_B_RPGPack_Khaki", // 180
-			"CUP_B_GER_Medic_FLecktarn", // 200
-			"CUP_B_USMC_AssaultPack", // 200
-			"B_Kitbag_cbr", // 280
-			"B_Kitbag_sgg", // 280
-			"CUP_B_SLA_Medicbag", // 280
-			"CUP_B_CivPack_WDL", // 280
-			"CUP_B_GER_Pack_Flecktarn", // 280
-			"CUP_B_GER_Pack_Tropentarn", // 280
-			"CUP_B_USPack_Black", // 280
-			"CUP_B_USPack_Coyote" // 280
+			"CUP_B_RPGPack_Khaki",			// 180
+			"CUP_B_GER_Medic_FLecktarn",	// 200
+			"CUP_B_USMC_AssaultPack",		// 200
+			"B_Kitbag_cbr",					// 280
+			"B_Kitbag_sgg",					// 280
+			"CUP_B_SLA_Medicbag",			// 280
+			"CUP_B_CivPack_WDL",			// 280
+			"CUP_B_GER_Pack_Flecktarn",		// 280
+			"CUP_B_GER_Pack_Tropentarn",	// 280
+			"CUP_B_USPack_Black",			// 280
+			"CUP_B_USPack_Coyote"			// 280
 
-			
 		},
 		{
-			0.06, // "CUP_B_RPGPack_Khaki"
-			0.05, // "CUP_B_GER_Medic_FLecktarn"
-			0.05, // "CUP_B_USMC_AssaultPack"
-			0.03, // "B_Kitbag_cbr"
-			0.03, // "B_Kitbag_sgg"
-			0.03, // "CUP_B_SLA_Medicbag"
-			0.03, // "CUP_B_CivPack_WDL"
-			0.03, // "CUP_B_GER_Pack_Flecktarn"
-			0.03, // "CUP_B_GER_Pack_Tropentarn"
-			0.03, // "CUP_B_USPack_Black"
-			0.03  // "CUP_B_USPack_Coyote"
-
+			0.06,	// CUP_B_RPGPack_Khaki
+			0.05,	// CUP_B_GER_Medic_FLecktarn
+			0.05,	// CUP_B_USMC_AssaultPack
+			0.03,	// B_Kitbag_cbr
+			0.03,	// B_Kitbag_sgg
+			0.03,	// CUP_B_SLA_Medicbag
+			0.03,	// CUP_B_CivPack_WDL
+			0.03,	// CUP_B_GER_Pack_Flecktarn
+			0.03,	// CUP_B_GER_Pack_Tropentarn
+			0.03,	// CUP_B_USPack_Black
+			0.03	// CUP_B_USPack_Coyote
 
 		}
 	};
 	
 	Heavy_Backpacks[] = {
 		{
-			"CUP_B_AlicePack_Khaki", // 300
-			"CUP_B_ACRPara_m95", // 300
-			"CUP_B_HikingPack_Civ", // 300
-			"CUP_B_USMC_MOLLE", // 300
-			"CUP_B_USMC_MOLLE_WDL", // 300
-			"B_Carryall_khk", // 320
-			"B_Carryall_ocamo" // 320
-			
-			
+			"CUP_B_AlicePack_Khaki",	// 300
+			"CUP_B_ACRPara_m95",		// 300
+			"CUP_B_HikingPack_Civ",		// 300
+			"CUP_B_USMC_MOLLE",			// 300
+			"CUP_B_USMC_MOLLE_WDL",		// 300
+			"B_Carryall_khk",			// 320
+			"B_Carryall_ocamo"			// 320
+
 		},
 		{
-			0.05, // "CUP_B_AlicePack_Khaki"
-			0.04, // "CUP_B_ACRPara_m95"
-			0.03, // "CUP_B_HikingPack_Civ"
-			0.02, // "CUP_B_USMC_MOLLE"
-			0.02, // "CUP_B_USMC_MOLLE_WDL"
-			0.01, // "B_Carryall_khk"
-			0.01 // "B_Carryall_ocamo"
+			0.05,	// "CUP_B_AlicePack_Khaki"
+			0.04,	// "CUP_B_ACRPara_m95"
+			0.03,	// "CUP_B_HikingPack_Civ"
+			0.02,	// "CUP_B_USMC_MOLLE"
+			0.02,	// "CUP_B_USMC_MOLLE_WDL"
+			0.01,	// "B_Carryall_khk"
+			0.01	// "B_Carryall_ocamo"
 		}
 	};
 	
@@ -767,7 +749,7 @@ class CfgLoot {
 			"G_Tactical_Black",
 			"G_Combat",
 			"G_Aviator"
-			
+
 		},
 		{
 			0.05,	//G_Tactical_Clear
@@ -866,7 +848,7 @@ class CfgLoot {
 			"V_TacVest_camo",
 			"V_TacVestIR_blk",
 			"V_TacVest_gen_F"
-			
+
 		},
 		{
 			0.08,	//V_RebreatherB
@@ -879,7 +861,7 @@ class CfgLoot {
 			0.06,	//V_TacVest_camo
 			0.04,	//V_TacVestIR_blk
 			0.02	//V_TacVest_gen_F
-			
+
 		}
 	};
 	
@@ -903,7 +885,7 @@ class CfgLoot {
 			"H_Booniehat_mcamo",
 			"H_Booniehat_tan",
 			"H_Booniehat_dgtl"
-		
+
 		},
 		{
 			0.05,	//H_Cap_blk_CMMG
@@ -924,7 +906,7 @@ class CfgLoot {
 			0.05,	//H_Booniehat_mcamo
 			0.05,	//H_Booniehat_tan
 			0.05	//H_Booniehat_dgtl
-			
+
 		}
 	};
 	
@@ -942,7 +924,7 @@ class CfgLoot {
 			"H_HelmetB_black",
 			"H_HelmetB_sand",
 			"H_HelmetB_camo"
-		
+
 		},
 		{
 			0.07,	//H_HelmetB_light_grass
@@ -1011,7 +993,7 @@ class CfgLoot {
 		{
 			0.02,	//HandGrenade
 			0.02	//MiniGrenade
-			
+
 		}
 	};
 	
@@ -1033,7 +1015,7 @@ class CfgLoot {
 			0.05,	//SmokeShell
 			0.05,	//SmokeShell
 			0.05	//SmokeShell
-			
+
 		}
 	};	
 
@@ -1049,7 +1031,7 @@ class CfgLoot {
 			0.05,	//FlareGreen_F
 			0.05,	//FlareRed_F
 			0.05	//FlareYellow_F
-			
+
 		}
 	};
 	
@@ -1060,12 +1042,12 @@ class CfgLoot {
 		{
 			"rds_weap_latarka_janta",
 			"rds_weap_latarka_lts1"
-			
+
 		},
 		{
 			0.05,	//Flashlight janta
 			0.05	//Flashlight lts1
-			
+
 		}
 	};
 
@@ -1074,7 +1056,6 @@ class CfgLoot {
 
 	Pistols_Low[] = {
 		{
-
 			"CUP_hgun_SA61",					//hit: 3
 			"CUP_hgun_Duty",					//hit: 4
 			"hgun_P07_khk_F",					//hit: 4
@@ -1100,7 +1081,7 @@ class CfgLoot {
 			0.05,	//ACPC2
 			0.04,	//Pistol heavy 02
 			0.03	//Pistol heavy 01
-			
+
 		}
 	};
 
@@ -1115,7 +1096,6 @@ class CfgLoot {
 			"6Rnd_45ACP_Cylinder",			//Pistol Heavy 02
 			"11Rnd_45ACP_Mag"				//Pistol Heavy 01
 
-
 		},
 		{
 			0.07,	//SA61
@@ -1126,7 +1106,7 @@ class CfgLoot {
 			0.03,	//ACPC2
 			0.03,	//Pistol Heavy 02
 			0.03	//Pistol Heavy 01
-		
+
 		}
 	};		
 
@@ -1137,7 +1117,7 @@ class CfgLoot {
 			"muzzle_snds_acp",	//Colt1911,ACPC2,Pistol Heavy 01
 			"optic_Yorris",		//Pistol Heavy 02
 			"optic_MRD"			//Pistol Heavy 01
-			
+
 		},
 		{
 			0.05,	//Duty
@@ -1145,7 +1125,7 @@ class CfgLoot {
 			0.04,	//Colt1911,ACPC2,Pistol Heavy 01		
 			0.03,	//Pistol Heavy 02
 			0.03	//Pistol Heavy 01	
-		
+
 		}
 	};
 		
@@ -1193,7 +1173,7 @@ class CfgLoot {
 			0.03,	//Glock17		
 			0.03,	//Phantom
 			0.02	//MicroUzi	
-		
+
 		}
 	};		
 
@@ -1216,7 +1196,7 @@ class CfgLoot {
 			0.05,	//Glock17		
 			0.05,	//Phantom
 			0.03	//MicroUzi		
-		
+
 		}
 	};		
 
@@ -1237,7 +1217,7 @@ class CfgLoot {
 			0.05,	//Phantom
 			0.05,	//Glock17		
 			0.04	//MicroUzi	
-		
+
 		}
 	};		
 
@@ -1264,7 +1244,7 @@ class CfgLoot {
 			0.05,	//Phantom w/flashlight
 			0.04,	//Phantom w/flashlight&sound supressor
 			0.03	//MicroUzi w/sound supressor
-		
+
 		}
 	};		
 
@@ -1289,14 +1269,13 @@ class CfgLoot {
 			"CUP_15Rnd_9x19_M9",
 			"CUP_8Rnd_B_Beneli_74Slug",
 			"CUP_8Rnd_B_Beneli_74Pellets"
-									
+
 		},
 		{
 			0.03,	//CUP_15Rnd_9x19_M9
 			0.02,	//CUP_8Rnd_B_Beneli_74Slug
 			0.05	//CUP_8Rnd_B_Beneli_74Pellets
 
-						
 		}
 	};
 
@@ -1317,14 +1296,14 @@ class CfgLoot {
 			"CUP_smg_bizon_snds",
 			"CUP_arifle_M16A2",
 			"arifle_Mk20_ACO_F"
-			
+
 		},
 		{
-			0.06,  //"CUP_smg_MP5SD6"
-			0.06,  //"CUP_smg_EVO"
-			0.06,  //"CUP_smg_bizon"
-			0.02,  //"CUP_smg_bizon_snds"
-			0.05,  //"CUP_arifle_M16A2"
+			0.06,  //CUP_smg_MP5SD6
+			0.06,  //CUP_smg_EVO
+			0.06,  //CUP_smg_bizon
+			0.02,  //CUP_smg_bizon_snds
+			0.05,  //CUP_arifle_M16A2
 			0.05   //arifle_Mk20_ACO_F
 		}
 	};
@@ -1335,7 +1314,7 @@ class CfgLoot {
 			"CUP_30Rnd_9x19_EVO",
 			"CUP_64Rnd_9x19_Bizon_M",
 			"30Rnd_556x45_Stanag"
-									
+
 		},
 		{
 			0.03,	//CUP_30Rnd_9x19_MP5
@@ -1343,7 +1322,6 @@ class CfgLoot {
 			0.05,	//CUP_64Rnd_9x19_Bizon_M
 			0.06    //30Rnd_556x45_Stanag
 
-						
 		}
 	};	
 ///////////////////////////////////////////////////
@@ -1405,7 +1383,7 @@ class CfgLoot {
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_G36",
 			"CUP_5x_22_LR_17_HMR_M"
-									
+
 		},
 		{
 			0.05, // "CUP_30Rnd_762x39_AK47_M",
@@ -1416,7 +1394,7 @@ class CfgLoot {
 			0.09, // "CUP_30Rnd_556x45_Stanag",
 			0.09, // "CUP_30Rnd_556x45_G36"
 			0.04  // "CUP_5x_22_LR_17_HMR_M"
-		
+
 		}
 	};	
 ///////////////////////////////////////////////////
@@ -1434,7 +1412,7 @@ class CfgLoot {
 			"CUP_arifle_Sa58V",
 			"CUP_arifle_FNFAL_railed",
 			"CUP_arifle_Mk17_CQC",
-			
+
 			//LMG
 			"CUP_srifle_L129A1",
 			"CUP_lmg_Mk48_wdl",
@@ -1445,7 +1423,7 @@ class CfgLoot {
 			"CUP_lmg_M240",
 			"CUP_lmg_M249",
 			"CUP_lmg_PKM",
-			
+
 			//Sniper
 			"CUP_srifle_SVD_wdl_ghillie",
 			"CUP_srifle_M24_ghillie",
@@ -1466,7 +1444,7 @@ class CfgLoot {
 			0.04,	//CUP_arifle_Sa58V
 			0.03,	//CUP_arifle_FNFAL_railed
 			0.03,	//CUP_arifle_Mk17_CQC
-			
+
 			//LMG
 			0.03,	//CUP_srifle_L129A1
 			0.03,	//CUP_lmg_Mk48_wdl
@@ -1477,7 +1455,7 @@ class CfgLoot {
 			0.03,	//CUP_lmg_M240
 			0.03,	//CUP_lmg_M249
 			0.03,	//CUP_lmg_PKM
-			
+
 			//Sniper
 			0.02,	//CUP_srifle_SVD_wdl_ghillie
 			0.02,	//CUP_srifle_M24_ghillie
@@ -1498,7 +1476,7 @@ class CfgLoot {
 			"CUP_20Rnd_762x51_FNFAL_M",
 			"CUP_20Rnd_762x51_B_SCAR",
 			"20Rnd_762x51_Mag",
-			
+
 			//LMG
 			"CUP_200Rnd_TE1_Red_Tracer_556x45_M249",
 			"CUP_100Rnd_TE4_Green_Tracer_556x45_M249",
@@ -1507,7 +1485,7 @@ class CfgLoot {
 			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
 			"CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1",
 			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-			
+
 			//Sniper
 			"CUP_10Rnd_762x54_SVD_M",
 			"CUP_5Rnd_762x51_M24",
@@ -1525,7 +1503,7 @@ class CfgLoot {
 			0.04,	//CUP_20Rnd_762x51_FNFAL_M
 			0.05,   //CUP_20Rnd_762x51_B_SCAR
 			0.05,	//20Rnd_762x51_Mag
-			
+
 			//LMG
 			0.04,	//CUP_200Rnd_TE1_Red_Tracer_556x45_M249
 			0.04,	//CUP_100Rnd_TE4_Green_Tracer_556x45_M249
@@ -1534,7 +1512,7 @@ class CfgLoot {
 			0.04,	//CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
 			0.04,	//CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1
 			0.04,	//CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M
-			
+
 			//Sniper
 			0.04,	//CUP_10Rnd_762x54_SVD_M
 			0.04,	//CUP_5Rnd_762x51_M24
@@ -1621,7 +1599,7 @@ class CfgLoot {
 			"CUP_acc_XM8_light_module",
 			"CUP_acc_CZ_M3X",
 			"CUP_acc_Glock17_Flashlight"
-			
+
 		},
 		{
 			0.03, // "optic_MRCO",	//MRCO ARMA 3
@@ -1691,7 +1669,7 @@ class CfgLoot {
 			0.03, // "CUP_acc_XM8_light_module",
 			0.03, // "CUP_acc_CZ_M3X",
 			0.03 // "CUP_acc_Glock17_Flashlight"
-					
+
 		}
 	};
 };	

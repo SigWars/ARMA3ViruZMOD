@@ -4,7 +4,15 @@ class CfgVehicles {
 	class AllVehicles: All {};
 	class Land: AllVehicles {};
 	class Man:Land {};
-	class CAManBase: Man {};
+	class CAManBase: Man {
+		class HitPoints
+		{
+			class HitHead;
+			class HitBody;
+			class HitHands;
+			class HitLegs;
+		};
+	};
 	//New APEX Additions end.
 	
 	class SoldierWB: CAManBase {
