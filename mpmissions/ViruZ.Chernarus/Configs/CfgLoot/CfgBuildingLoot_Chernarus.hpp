@@ -42,7 +42,7 @@ class CfgBuildingLoot {
 		};
 		maxRoaming = 1;
 		lootChance = 0.3;
-		maxSpawns = 3;
+		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -105,7 +105,7 @@ class CfgBuildingLoot {
 		};
 		maxRoaming = 1;
 		lootChance = 0.3;
-		maxSpawns = 4;
+		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -155,6 +155,7 @@ class CfgBuildingLoot {
 			"VZ_boomer"
 		};
 		lootChance = 0.3;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -193,8 +194,8 @@ class CfgBuildingLoot {
 			0.05,	//Tools
 			0.04,   //Pistols low
 			0.04,   //Mag pistols low
-			0.03,	//Armas civis
-			0.03,	//Mag armas civis
+			0.02,	//Armas civis
+			0.02,	//Mag armas civis
 			0.05	//Knife
 		};
 	};
@@ -212,7 +213,6 @@ class CfgBuildingLoot {
 		};
 		lootChance = 0.3;
 		lootPos[] = {};
-		maxSpawns = 7;
 		itemType[] =	{
 			{"","Trash"},
 			{"","Food"},
@@ -233,16 +233,16 @@ class CfgBuildingLoot {
 			0.03,	//Trash
 			0.08,	//Food
 			0.08,	//Drink
-			0.06,	//Flashlights
+			0.04,	//Flashlights
 			0.06,	//Houseware items
 			0.05,	//Medical Lite
-			0.04,   //Light backpacks
-			0.02,   //Medium backpacks
+			0.03,   //Light backpacks
+			0.01,   //Medium backpacks
 			0.03,   //Pistols Low
 			0.03,   //Mag pistols low
 			0.03,	//Tools
 			0.05,	//Knife
-			0.02	//Cardboard box
+			0.01	//Cardboard box
 		};
 	};
 
@@ -259,7 +259,7 @@ class CfgBuildingLoot {
 		};
 		maxRoaming = 1;
 		lootChance = 0.3;
-		maxSpawns = 4;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -274,9 +274,9 @@ class CfgBuildingLoot {
 			0.04,	//Trash
 			0.06,	//Food
 			0.06,	//Drink
-			0.04,	//Light backpacks
+			0.03,	//Light backpacks
 			0.06,	//Medical Lite
-			0.04	//Tools
+			0.03	//Tools
 
 		};
 	};
@@ -294,7 +294,7 @@ class CfgBuildingLoot {
 		};
 		maxRoaming = 1;
 		lootChance = 0.3;
-		maxSpawns = 4;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -311,17 +311,17 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.04,	//Trash
+			0.05,	//Trash
 			0.05,	//Light_Backpacks
 			0.03,	//Medium backpacks
-			0.06,	//Basic_Survival
-			0.06,	//Military_Glasses
+			0.07,	//Basic_Survival
+			0.07,	//Military_Glasses
 			0.05,	//Military_Clothes
-			0.06,	//Military_Headgear
-			0.04,	//Pistols low
-			0.04,   //Mag pistols low
-			0.02,   //Armas civis
-			0.02	//Mag armas civis
+			0.07,	//Military_Headgear
+			0.05,	//Pistols low
+			0.05,   //Mag pistols low
+			0.03,   //Armas civis
+			0.03	//Mag armas civis
 		};
 	};
 	
@@ -339,6 +339,7 @@ class CfgBuildingLoot {
 		minRoaming = 1;
 		maxRoaming = 3;
 		lootChance = 0.3;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},	
@@ -363,7 +364,7 @@ class CfgBuildingLoot {
 			0.05,   //Mag pistols high
 			0.07,   //Military glasses
 			0.07,   //Military clothes
-			0.06,   //Military vests
+			0.05,   //Military vests
 			0.07,   //Military headgear
 			0.04,   //Armas civis
 			0.04,   //Mag armas civis
@@ -416,7 +417,8 @@ class CfgBuildingLoot {
 			"VZ_Woodlander1","VZ_Woodlander2","VZ_Woodlander3","VZ_Woodlander4"
 		};
 		maxRoaming = 1;
-		lootChance = 0.3;
+		lootChance = 0.3;]
+		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -454,7 +456,7 @@ class CfgBuildingLoot {
 	class Factory: Default {
 		maxRoaming = 1;
 		lootChance = 0.2;
-		maxSpawns = 4;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -463,8 +465,7 @@ class CfgBuildingLoot {
 			{"MeleeHatchet","weapon"},
 			{"ItemKnife","weapon"},
 			{"","Flashlights"},
-			{"","Tools"},
-			{"","Basic_Items"}
+			{"","Tools"}
 
 		};
 		itemChance[] =	{
@@ -474,8 +475,7 @@ class CfgBuildingLoot {
 			0.04,   //Hatchet
 			0.04,   //Knife
 			0.04,	//Flashlights
-			0.05,	//Tools
-			0.04	//Basic items
+			0.05	//Tools
 
 		};
 	};
@@ -498,9 +498,9 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.03,	//Trash
-			0.05,   //Car parts
-			0.05,   //Hatchet
-			0.05,   //Knife
+			0.03,   //Car parts
+			0.03,   //Hatchet
+			0.03,   //Knife
 			0.03,   //Flashlights
 			0.07,   //Materials
 			0.05	//Tools
@@ -512,7 +512,7 @@ class CfgBuildingLoot {
 	class Pharmacy: Default {
 		zombieClass[] = { "VZ_Doctor", "VZ_Assistant","VZ_Policeman"};
 		maxRoaming = 1;
-		maxSpawns = 4;
+		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -529,7 +529,7 @@ class CfgBuildingLoot {
 	class Hospital: Default {
 		zombieClass[] = { "VZ_Doctor", "VZ_Assistant","VZ_Policeman"};
 		lootChance = 0.4;
-		maxSpawns = 6;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -548,6 +548,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.3;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -568,7 +569,6 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.3;
-		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -587,19 +587,19 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.03,	//Trash
-			0.04,	//PistolasMedias
-			0.04,	//Mag_PistolasMedias
+			0.04,	//Trash
+			0.05,	//PistolasMedias
+			0.05,	//Mag_PistolasMedias
 			0.03,	//ArmasMedias
 			0.03,	//Mag_ArmasMedias
 			0.06, 	//Military_Clothes
-			0.06,	//Military_Vests
+			0.04,	//Military_Vests
 			0.06,	//Military_Headgear
 			0.03,	//Smoke_Grenades
 			0.04,	//Medium_Backpacks
 			0.08,	//Basic_Survival
 			0.08,	//Survival_Items
-			0.03	//FoodMRE
+			0.04	//FoodMRE
 			
 		};
 	};
@@ -609,7 +609,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.3;
-		maxSpawns = 4;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -630,7 +630,7 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.03,	//Trash
+			0.04,	//Trash
 			0.06,	//PistolasMedias
 			0.06,	//Mag_PistolasMedias
 			0.05,	//ArmasMedias
@@ -639,8 +639,8 @@ class CfgBuildingLoot {
 			0.05, 	//Military_Clothes
 			0.05,	//Military_Vests
 			0.05,	//Military_Headgear
-			0.03,	//Smoke_Grenades
-			0.03,	//Offensive_Grenades
+			0.04,	//Smoke_Grenades
+			0.02,	//Offensive_Grenades
 			0.05,	//Medium_Backpacks
 			0.07,	//Basic_Survival
 			0.07,	//Survival_Items
@@ -656,6 +656,7 @@ class CfgBuildingLoot {
 	    minRoaming = 1;
 		maxRoaming = 2;
 		lootChance = 0.3;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -678,8 +679,8 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.03,	//Trash
-			0.04,	//PistolasHigh
-			0.04,	//Mag_PistolasHigh
+			0.05,	//PistolasHigh
+			0.05,	//Mag_PistolasHigh
 			0.03,	//ArmasHigh
 			0.03,	//Mag_ArmasHigh
 			0.04,	//Acessorios_Optic

@@ -204,8 +204,8 @@ class CfgLoot {
 		},
 		{
 			0.02, 	//Handycam
-			0.04, 	//Mobilephone
-			0.03	//Smartphone
+			0.06, 	//Mobilephone
+			0.04	//Smartphone
 //			0.02	//Laptop
 		}
 	};
@@ -223,10 +223,10 @@ class CfgLoot {
 
 		},
 		{
-			0.03,	//Mobilephone
-			0.04,	//Smartphone
+			0.04,	//Mobilephone
+			0.05,	//Smartphone
 //			0.04,	//Laptop
-			0.04,	//Suitcase
+			0.05,	//Suitcase
 			0.02	//Cardboard box
 		}
 	};
@@ -473,7 +473,7 @@ class CfgLoot {
 
 		},
 		{
-			0.06,	// CUP_B_RPGPack_Khaki
+			0.07,	// CUP_B_RPGPack_Khaki
 			0.05,	// CUP_B_GER_Medic_FLecktarn
 			0.05,	// CUP_B_USMC_AssaultPack
 			0.03,	// B_Kitbag_cbr
@@ -500,11 +500,11 @@ class CfgLoot {
 
 		},
 		{
-			0.05,	// "CUP_B_AlicePack_Khaki"
+			0.04,	// "CUP_B_AlicePack_Khaki"
 			0.04,	// "CUP_B_ACRPara_m95"
-			0.03,	// "CUP_B_HikingPack_Civ"
-			0.02,	// "CUP_B_USMC_MOLLE"
-			0.02,	// "CUP_B_USMC_MOLLE_WDL"
+			0.04,	// "CUP_B_HikingPack_Civ"
+			0.04,	// "CUP_B_USMC_MOLLE"
+			0.04,	// "CUP_B_USMC_MOLLE_WDL"
 			0.01,	// "B_Carryall_khk"
 			0.01	// "B_Carryall_ocamo"
 		}
@@ -991,8 +991,8 @@ class CfgLoot {
 			"MiniGrenade"
 		},
 		{
-			0.02,	//HandGrenade
-			0.02	//MiniGrenade
+			0.01,	//HandGrenade
+			0.03	//MiniGrenade
 
 		}
 	};

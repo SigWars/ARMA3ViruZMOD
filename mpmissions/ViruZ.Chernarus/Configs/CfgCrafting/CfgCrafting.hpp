@@ -71,7 +71,7 @@ class CfgCrafting
 		componentes[] = 
 		{
 			{1, "Viruz_CementBag"},
-			{5, "Viruz_Rock"},
+			{5, "Viruz_Rock"}
 
 		};
 	};
@@ -90,8 +90,8 @@ class CfgCrafting
 		};
 		componentes[] = 
 		{
-			{1, "Viruz_Wrench"},
-			{1, "Viruz_Suitcase"},
+			{1,"Viruz_Wrench"},
+			{1,"Viruz_Suitcase"},
 			{1,"Viruz_Screwdriver"},
 			{1,"Viruz_Phillips"},
 			{1,"Viruz_Pliers"}

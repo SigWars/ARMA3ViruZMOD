@@ -109,9 +109,9 @@ addSwitchableUnit viruz_originalPlayer;
 setPlayable viruz_originalPlayer;
 selectPlayer viruz_originalPlayer;
 
-_myGroup = group _body;
+/*_myGroup = group _body;
 [_body] joinSilent viruz_firstGroup;
-deleteGroup _myGroup;
+deleteGroup _myGroup;*/
 
 3 cutRsc ["default", "PLAIN",3];
 4 cutRsc ["default", "PLAIN",3];

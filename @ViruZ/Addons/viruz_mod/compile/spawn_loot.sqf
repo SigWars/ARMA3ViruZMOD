@@ -306,7 +306,11 @@ if !(_full) then {
 		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
 		_item setVariable ["looted",_dateNow,true];
 		};
-		
+	case "Flare_Grenades": {
+		//Item is one magazine
+		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+		};		
 	////////////////////////////////////////////////////////////////////////////////
 	//Lanternas
 	case "Flashlights": {
