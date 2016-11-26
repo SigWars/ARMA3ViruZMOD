@@ -24,7 +24,6 @@ class CfgLoot {
 			"FoodCanPeachesEmpty",
 			"FoodCanPearsEmpty",
 			"FoodCanEsardinesEmpty",
-			"FoodCanPsardinesEmpty",
 			"FoodCanChickenSoupEmpty",
 			"FoodCanPotatoSoupEmpty",
 			"FoodCanPeaSoupEmpty",
@@ -56,8 +55,7 @@ class CfgLoot {
 			0.05,
 			0.05,
 			0.05,
-			0.05,
-			0.05,
+			
 			0.05,
 			0.05,
 			0.05,
@@ -125,7 +123,6 @@ class CfgLoot {
 			"FoodCanPeaches",
 			"FoodCanPears",
 			"FoodCanEsardines",
-			"FoodCanPsardines",
 			"FoodCanChickenSoup",
 			"FoodCanPotatoSoup",
 			"FoodCanPeaSoup",
@@ -148,7 +145,6 @@ class CfgLoot {
 			0.03,	//FoodCanPeaches
 			0.03,	//FoodCanPears
 			0.03,	//FoodCanEsardines
-			0.03,	//FoodCanPsardines
 			0.03,	//FoodCanChickenSoup
 			0.03,	//FoodCanPotatoSoup
 			0.03,	//FoodCanPeaSoup

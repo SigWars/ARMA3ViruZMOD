@@ -417,7 +417,7 @@ class CfgBuildingLoot {
 			"VZ_Woodlander1","VZ_Woodlander2","VZ_Woodlander3","VZ_Woodlander4"
 		};
 		maxRoaming = 1;
-		lootChance = 0.3;]
+		lootChance = 0.3;
 		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
