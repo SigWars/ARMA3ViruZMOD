@@ -265,7 +265,7 @@ class CfgLoot {
 		},
 		{
 			0.03,	//Tent
-			0.05	//Canteen
+			0.05,	//Canteen
 			0.04,	//Chemlight blue
 			0.04,	//Chemlight green
 			0.04,	//Chemlight red
