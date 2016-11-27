@@ -71,7 +71,7 @@ while {true} do {
 			if (_vehicleTypeModel == "Ships") then {
 				_position = [_spawnPosition,0,(_locationRadiusA * 10),10,2,2000,1] call BIS_fnc_findSafePos;
 			} else {
-				_position = [_spawnPosition,0,_locationRadiusA,10,0,2000,0] call BIS_fnc_findSafePos;
+				_position = [_spawnPosition,0,(_locationRadiusA * 5),2,0,4000,0] call BIS_fnc_findSafePos;
 			};
 
 			diag_log(format["VEHICLESSPAWNER: Spawning '%1' NOW! (%2) at: %3", _vehicleName, time, str(_position)]);

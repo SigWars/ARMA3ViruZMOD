@@ -9,7 +9,7 @@ OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
 //                    GLOBAL        SIDE LADO     COMANDO         GRUPO        VEHICLE         DIRECT          SYSTEM      
-disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{3,false,false},{4,false,false},{5,false,false},{6,false,true}};
+disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{3,false,false},{4,true,true},{5,false,false},{6,false,true}};
 enableItemsDropping = 0;
 briefing = 0;
 debriefing= 0;
