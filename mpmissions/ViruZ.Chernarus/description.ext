@@ -53,7 +53,7 @@ class cfgGame {
 	/// ViruZ Parametros
 	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
-	maxLocalZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
+	maxLocalZombies		= 2;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
 	lootDelaytime		= 900;					// Tempo de espera para respawnar loot (segundos)
 	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi em relação e o player, (segundos)

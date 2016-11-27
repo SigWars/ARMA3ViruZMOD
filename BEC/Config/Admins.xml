@@ -17,18 +17,4 @@
 	
 	-->
 	
-	<admin id="0">
-		<name>nux</name>
-		<guid>1b23823128cb748f813a62af1e52579c</guid>
-		<group>0</group>
-		<groupname>Super Admin</groupname>
-	</admin>
-	
-	<admin id="1">
-		<name>alfred</name>
-		<guid>c1335fcdf0af5870a2ec12ad5a34c206</guid>
-		<group>3</group>
-		<groupname>Noob Admin</groupname>
-	</admin>
-	
 </BEAdmins>
