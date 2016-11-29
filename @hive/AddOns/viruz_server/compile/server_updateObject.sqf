@@ -250,10 +250,8 @@ switch (_type) do {
 	};
 	
 	case "PublishBuild": {
-			if (!([_object,_type] in needUpdate_objects)) then {
-			diag_log format["DEBUG PUBLISH: Added to NeedUpdate=%1",_object];
-			needUpdate_objects set [count needUpdate_objects, [_object,"monitorPublishBuild"]];
-		};
+		needUpdate_objects set [count needUpdate_objects, [_object,"monitorPublishBuild"]];
+		diag_log format["DEBUG PUBLISH: Added to NeedUpdate=%1",_object];
 	};
 	
 	case "DelObject": {

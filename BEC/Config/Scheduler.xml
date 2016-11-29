@@ -107,7 +107,7 @@
 	
 	<job id="13">
 		<day>1,2,3,4,5,6,7</day>
-		<start>040000</start>
+		<start>030000</start>
 		<runtime>000000</runtime>
 		<loop>0</loop>
 		<cmd>C:\Arma3Server\Premod_stop.bat</cmd>

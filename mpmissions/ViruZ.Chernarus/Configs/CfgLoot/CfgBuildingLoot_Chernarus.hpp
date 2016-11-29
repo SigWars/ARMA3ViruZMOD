@@ -79,7 +79,9 @@ class CfgBuildingLoot {
 			{"","Food"},
 			{"","Drink"},
 			{"","Flashlights"},
-			{"","Basic_Items"}
+			{"","Basic_Items"},
+			{"","Mag_ArmasCivis"},
+			{"","ArmasCivis"}
 
 		};
 		itemChance[] =	{
@@ -87,7 +89,9 @@ class CfgBuildingLoot {
 			0.04,	//Food
 			0.04,	//Drink
 			0.03,	//Flashlights
-			0.02	//Basic items
+			0.02,	//Basic items
+			0.02,	//MAg_ArmasCivis
+			0.02	//Armas Civis
 
 		};
 	};
@@ -121,7 +125,9 @@ class CfgBuildingLoot {
 			{"","Civilian_Clothes"},
 			{"","Pistols_Low"},
 			{"","Mag_Pistols_Low"},
-			{"ItemKnife","weapon"}
+			{"ItemKnife","weapon"},
+			{"","Mag_ArmasCivis"},
+			{"","ArmasCivis"}
 			
 		};
 		itemChance[] =	{
@@ -138,7 +144,9 @@ class CfgBuildingLoot {
 			0.05,   //Civilian clothes
 			0.02,   //Pistols Low
 			0.02,   //Mag_Pistols Low
-			0.04	//Knife
+			0.04,	//Knife
+			0.02,	//Mag_armasCivis
+			0.02	//Armas Civis
 
 		};
 	};
@@ -226,7 +234,10 @@ class CfgBuildingLoot {
 			{"","Mag_Pistols_Low"},
 			{"","Tools"},
 			{"ItemKnife","weapon"},
-			{"Viruz_CardBoardBox","magazine"}
+			{"Viruz_CardBoardBox","magazine"},
+			{"","Mag_ArmasCivis"},
+			{"","ArmasCivis"}
+			
 			
 		};
 		itemChance[] =	{
@@ -242,7 +253,9 @@ class CfgBuildingLoot {
 			0.03,   //Mag pistols low
 			0.03,	//Tools
 			0.05,	//Knife
-			0.01	//Cardboard box
+			0.01,	//Cardboard box
+			0.01,	//Mag_Armascivis
+			0.01	//Armas civis
 		};
 	};
 
@@ -267,7 +280,9 @@ class CfgBuildingLoot {
 			{"","Drink"},
 			{"","Light_Backpacks"},
 			{"","Medical_Lite"},
-			{"","Tools"}
+			{"","Tools"},
+			{"","Mag_ArmasCivis"},
+			{"","ArmasCivis"}
 			
 		};
 		itemChance[] =	{
@@ -276,7 +291,9 @@ class CfgBuildingLoot {
 			0.06,	//Drink
 			0.03,	//Light backpacks
 			0.06,	//Medical Lite
-			0.03	//Tools
+			0.03,	//Tools
+			0.01,	//Mag_armascivis
+			0.01	//ArmasCivis
 
 		};
 	};
@@ -342,7 +359,7 @@ class CfgBuildingLoot {
 		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
-			{"","Trash"},	
+			//{"","Trash"},	
 			{"","Pistols_High"},
 			{"","Mag_Pistols_High"},			
 			{"","Military_Glasses"},
@@ -359,7 +376,7 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.04,	//Trash
+			//0.04,	//Trash
 			0.05,   //Pistols high
 			0.05,   //Mag pistols high
 			0.07,   //Military glasses
@@ -571,7 +588,7 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		itemType[] =	{
-			{"","Trash"},
+			//{"","Trash"},
 			{"","Pistols_High"},
 			{"","Mag_Pistols_High"},
 			{"","ArmasMedias"},
@@ -587,7 +604,7 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.04,	//Trash
+			//0.04,	//Trash
 			0.05,	//PistolasMedias
 			0.05,	//Mag_PistolasMedias
 			0.03,	//ArmasMedias
@@ -612,7 +629,7 @@ class CfgBuildingLoot {
 		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
-			{"","Trash"},
+			//{"","Trash"},
 			{"","Pistols_High"},
 			{"","Mag_Pistols_High"},
 			{"","ArmasMedias"},
@@ -630,7 +647,7 @@ class CfgBuildingLoot {
 			
 		};
 		itemChance[] =	{
-			0.04,	//Trash
+			//0.04,	//Trash
 			0.06,	//PistolasMedias
 			0.06,	//Mag_PistolasMedias
 			0.05,	//ArmasMedias
@@ -659,7 +676,7 @@ class CfgBuildingLoot {
 		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
-			{"","Trash"},
+			//{"","Trash"},
 			{"","Pistols_High"},
 			{"","Mag_Pistols_High"},
 			{"","ArmasHigh"},
@@ -678,7 +695,7 @@ class CfgBuildingLoot {
 
 		};
 		itemChance[] =	{
-			0.03,	//Trash
+		//	0.03,	//Trash
 			0.05,	//PistolasHigh
 			0.05,	//Mag_PistolasHigh
 			0.03,	//ArmasHigh

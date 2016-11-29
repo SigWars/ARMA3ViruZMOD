@@ -70,13 +70,13 @@ _crate_loot_values1 =
 [
 	2,		// Weapons
 	[15,DMS_BoxBuildingSupplies],		// Items
-	2 		// Backpacks
+	1 		// Backpacks
 ];
 _crate_loot_values2 =
 [
-	1,		// Weapons
-	20,		// Items
-	5 		// Backpacks
+	2,		// Weapons
+	15,		// Items
+	1 		// Backpacks
 ];
 
 

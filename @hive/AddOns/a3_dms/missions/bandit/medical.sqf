@@ -68,9 +68,9 @@ _vehicle = ["Exile_Car_Ural_Covered_Worker",_pos] call DMS_fnc_SpawnNonPersisten
 // Set crate loot values
 _crate_loot_values =
 [
-	5,		// Weapons
+	1,		// Weapons
 	[10,DMS_BoxMeds],		// Items
-	3 		// Backpacks
+	1 		// Backpacks
 ];
 
 

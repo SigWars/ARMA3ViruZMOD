@@ -12,7 +12,447 @@ class CfgCrafting
 			ferramentas[] = {};
 			requiredInteractionModelGroup = "";
 	};
+//*******************CONVERT CLOTHES IN BANDAGE************************************************
+
+	class Blueprint_Bandage1: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"U_Competitor"}
+		};
+	};
+
+	class Blueprint_Bandage2: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_citizen1"}
+		};
+	};
 	
+	class Blueprint_Bandage3: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_citizen2"}
+		};
+	};
+	
+	class Blueprint_Bandage4: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_citizen3"}
+		};
+	};
+	
+	class Blueprint_Bandage5: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_citizen4"}
+		};
+	};
+	
+	class Blueprint_Bandage6: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Profiteer1"}
+		};
+	};
+	
+	class Blueprint_Bandage7: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Profiteer2"}
+		};
+	};
+	
+	class Blueprint_Bandage8: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Profiteer3"}
+		};
+	};
+	
+	class Blueprint_Bandage9: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Profiteer4"}
+		};
+	};
+	
+	class Blueprint_Bandage10: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Woodlander1"}
+		};
+	};
+	
+	class Blueprint_Bandage11: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Woodlander2"}
+		};
+	};
+	
+	class Blueprint_Bandage12: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Woodlander3"}
+		};
+	};
+	
+	
+	class Blueprint_Bandage13: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Woodlander4"}
+		};
+	};
+	
+	class Blueprint_Bandage14: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Villager1"}
+		};
+	};
+	
+	class Blueprint_Bandage15: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Villager2"}
+		};
+	};
+	
+	class Blueprint_Bandage16: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Villager3"}
+		};
+	};
+	
+	class Blueprint_Bandage17: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Villager4"}
+		};
+	};
+	
+	class Blueprint_Bandage18: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Rocker1"}
+		};
+	};
+	
+	class Blueprint_Bandage19: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Rocker2"}
+		};
+	};
+	
+	class Blueprint_Bandage20: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Rocker3"}
+		};
+	};
+	
+	class Blueprint_Bandage21: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Rocker4"}
+		};
+	};
+	
+	class Blueprint_Bandage22: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Functionary1"}
+		};
+	};
+	
+	class Blueprint_Bandage23: ViruZ_ResumoCrafting
+	{
+		sound = "";
+		displayName = "Cloth bandage";
+		pictureItem = "ItemBandage"; //Classe do Item para chamar a imagem
+		returnedItems[] =
+		{
+			{2, "ItemBandage"}
+		};
+		ferramentas[] =
+		{
+
+		};
+		componentes[] = 
+		{
+			{1,"rds_uniform_Functionary2"}
+		};
+	};
+	
+//*********************************************************************************************************
 	class Blueprint_Hatchet: ViruZ_ResumoCrafting
 	{
 		sound = "";
@@ -409,7 +849,7 @@ class CfgCrafting
 		ferramentas[] =
 		{
 			"Viruz_Hammer",
-			"Viruz_Serrote"
+			"Viruz_SaW"
 			
 		};
 		componentes[] = 

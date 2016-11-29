@@ -63,43 +63,43 @@ switch (_difficulty) do
 	case "easy":
 	{
 		_AICount = (4 + (round (random 4)));
-		_crate_weapons 		= (4 + (round (random 2)));
-		_crate_items 		= (3 + (round (random 3)));
+		_crate_weapons 		= (1 + (round (random 1)));
+		_crate_items 		= (4 + (round (random 2)));
 		_crate_backpacks 	= (1 + (round (random 1)));
 	};
 
 	case "moderate":
 	{
 		_AICount = (4 + (round (random 6)));
-		_crate_weapons 		= (6 + (round (random 3)));
-		_crate_items 		= (6 + (round (random 3)));
-		_crate_backpacks 	= (2 + (round (random 1)));
+		_crate_weapons 		= (2 + (round (random 1)));
+		_crate_items 		= (5 + (round (random 4)));
+		_crate_backpacks 	= (1 + (round (random 1)));
 	};
 
 	case "difficult":
 	{
 		_AICount = (6 + (round (random 6)));
-		_crate_weapons 		= (8 + (round (random 3)));
-		_crate_items 		= (8 + (round (random 4)));
-		_crate_backpacks 	= (3 + (round (random 1)));
+		_crate_weapons 		= (3 + (round (random 2)));
+		_crate_items 		= (6 + (round (random 6)));
+		_crate_backpacks 	= (2 + (round (random 2)));
 	};
 
 	//case "hardcore":
 	default
 	{
 		_AICount = (8 + (round (random 8)));
-		_crate_weapons 		= (10 + (round (random 6)));
-		_crate_items 		= (15 + (round (random 8)));
-		_crate_backpacks 	= (4 + (round (random 1)));
+		_crate_weapons 		= (2 + (round (random 1)));
+		_crate_items 		= (6 + (round (random 2)));
+		_crate_backpacks 	= (1 + (round (random 1)));
 	};
 };
 
 //_msgStart = ['#FFFF00',format["A %1 research camp has been spotted, find out what they are up to",_difficulty]];
 _msgStart = ['#FFFF00',"A research camp has been spotted, find out what they are up to"];
-
+/*
 _crate_weapon_list	= ["arifle_SDAR_F","arifle_MX_GL_Black_F","MMG_01_hex_F","MMG_01_tan_F","MMG_02_black_F","MMG_02_camo_F","MMG_02_sand_F","hgun_PDW2000_F","SMG_01_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F"];
 _crate_item_list	= ["H_HelmetLeaderO_ocamo","H_HelmetLeaderO_ocamo","H_HelmetLeaderO_oucamo","H_HelmetLeaderO_oucamo","U_B_survival_uniform","U_B_Wetsuit","U_O_Wetsuit","U_I_Wetsuit","H_HelmetB_camo","H_HelmetSpecB","H_HelmetSpecO_blk","Exile_Item_EMRE","Exile_Item_InstantCoffee","Exile_Item_PowerDrink","Exile_Item_InstaDoc"];
-
+*/
 
 
 _group =

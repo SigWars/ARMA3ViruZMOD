@@ -66,9 +66,9 @@ _crate = ["Box_NATO_Wps_F",_pos] call DMS_fnc_SpawnCrate;
 // Set crate loot values
 _crate_loot_values =
 [
-	8,		// Weapons
+	2,		// Weapons
 	5,		// Items
-	2 		// Backpacks
+	1 		// Backpacks
 ];
 
 

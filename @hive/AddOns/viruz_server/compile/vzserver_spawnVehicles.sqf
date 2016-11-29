@@ -44,7 +44,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 			_ownerID = 		_x select 3;
 			_worldspace =	_x select 4;
 			_intentory =	_x select 5;
-			_hitPoints =	_x select 6;
+			_hitpoints =	_x select 6;
 			_fuel =			_x select 7;
 			_damage = 		_x select 8;
 			_objectID = 	_x select 9;
@@ -52,14 +52,10 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 			_Locked =		_x select 11;
 			_LastFix = 		_x select 12;
 			_Worldprecision = _x select 13;
-			_deletado = 	false;
-						
+			
 			if (_damage < 1 and (_type in _VZvehicles)) then {
 			
-				arrayObjectID set [count arrayObjectID, parseNumber _idKey];
-				
-				
-							
+										
 				_dir = 0;
 				_pos = [0,0,0];
 				_centerMap = [];
@@ -98,47 +94,29 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 					
 					//Create it
 					_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
-					//_object setVectorDirAndUp (call compile _Worldprecision);
+					_object allowDamage false;
+					_object setposATL _pos;
+					_object setdir _dir;
+					
 					_precise = call compile _Worldprecision;
 					if (count _precise >= 2) then {
 						if (count (_precise select 1) == 3) then {
 							_object setVectorDirAndUp _precise;
 						};
 					};
-					_object setposATL _pos;
-					_allVehicles pushBack _object;
-					_object setDamage _damage;
-					_object setdir _dir;
 					
+					_allVehicles pushBack [_object,_damage,_hitpoints];
+												
 					_object setVariable ["lastUpdate",time];
 					_object setVariable ["ObjectID", _idKey, true];
 					_object setVariable ["CharacterID", _ownerID, true];
 					_object setVariable["ViruZMod",1];
-					
-					if (_object isKindOf "AllVehicles") then {
-						{
-							_selection = _x select 0;
-							_dam = _x select 1;
-							if (_selection in viruZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
-							[_object,_selection,_dam] call object_setFixServer;
-						} forEach _hitpoints;
-						_object setvelocity [0,0,1];
-						_object setFuel _fuel;
-						_object call fnc_vehicleEventHandler;
-					};
-					_object allowDamage false;
 					
 					clearWeaponCargoGlobal  _object;
 					clearMagazineCargoGlobal  _object;
 					clearItemCargoGlobal _object;
 					clearBackpackCargoGlobal _object;
 					
-					//set direction of objects are not structures
-					//_object setdir _dir;
-					
-					//set damage for objects
-					//_object setDamage _damage;
-									
 					// Debug clear inventory in database
 					if !(_debugLoadInventory) then {[_object, "gear"] spawn server_updateObject;};
 					
@@ -220,22 +198,33 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 							_countr = _countr + 1;
 						} forEach _objWpnTypes;
 					};	
-					
-					/*if (_object isKindOf "AllVehicles") then {
-						{
-							_selection = _x select 0;
-							_dam = _x select 1;
-							if (_selection in viruZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
-							[_object,_selection,_dam] call object_setFixServer;
-						} forEach _hitpoints;
-						_object setvelocity [0,0,1];
-						_object setFuel _fuel;
-						_object call fnc_vehicleEventHandler;
-					};*/
-					//viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_object];
 				};
+				if !(parseNumber _idKey in arrayObjectID) then {
+					arrayObjectID set [count arrayObjectID, parseNumber _idKey];
+				};
+		
 		} forEach _myArray;
 		sleep 20;
-		{_x allowDamage true} count _allVehicles;
+
+		{
+			_object = _x select 0;
+			_damage = _x select 1;
+			_hitpoints = _x select 2;
+			
+			_object allowDamage true;
+			_object setDamage _damage;
+			
+			{
+				_selection = _x select 0;
+				_dam = _x select 1;
+				if (_dam > 0.7) then {_dam = 0.7};
+				[_object,_selection,_dam] call object_setFixServer;
+			} forEach _hitpoints;
+			
+			//_object setvelocity [0,0,1];
+			_object setFuel _fuel;
+			_object call fnc_vehicleEventHandler;
+			
+		}forEach _allVehicles
 		
 		//"susenha" serverCommand "#unlock";

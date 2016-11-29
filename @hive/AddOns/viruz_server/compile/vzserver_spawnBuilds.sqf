@@ -49,8 +49,6 @@ _Structures = [];
 						
 			if (_damage < 1 and (_type in _Structures)) then {
 				
-				arrayObjectID set [count arrayObjectID, parseNumber _idKey];
-				
 				_passedDays = 0;
 				if ( _type in _Structures and _LastFix != "[]" ) then {
 					_dateNow = call compile ("real_date" callExtension ""); //need real_date.dll to work THX to KillzoneKid
@@ -253,4 +251,6 @@ _Structures = [];
 				
 				//viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_object];
 			};
+			
+			arrayObjectID set [count arrayObjectID, parseNumber _idKey];
 		} forEach _myArray;

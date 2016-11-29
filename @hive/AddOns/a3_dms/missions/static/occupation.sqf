@@ -414,7 +414,7 @@ _missionObjs =
 [
 	[_missionAIUnits],			// armed AI vehicle and static gun(s). Note, we don't add the base itself because we don't want to delete it and respawn it if the mission respawns.
 	[],
-	[[_crate,[30 + (random 20),100 + (random 40),15 + (random 5)]]]			// weapons,items,backpacks
+	[[_crate,[6 + (random 5),30 + (random 15),5 + (random 5)]]]			// weapons,items,backpacks
 ];
 
 // Create Markers

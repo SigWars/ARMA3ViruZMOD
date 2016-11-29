@@ -90,9 +90,9 @@ _vehicle = [_vehClass,[_pos,3+(random 5),random 360] call DMS_fnc_SelectOffsetPo
 // Set crate loot values
 _crate_loot_values =
 [
-	5,		// Weapons
-	10,		// Items
-	3 		// Backpacks
+	2,		// Weapons
+	5,		// Items
+	1 		// Backpacks
 ];
 
 

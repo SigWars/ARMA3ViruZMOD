@@ -64,15 +64,15 @@ switch (_difficulty) do
 	{
 		_AICount = (4 + (round (random 2)));
 		_crate_weapons 		= (1 + (round (random 1)));
-		_crate_items 		= (2 + (round (random 5)));
-		_crate_backpacks 	= (2 + (round (random 1)));
+		_crate_items 		= (4 + (round (random 5)));
+		_crate_backpacks 	= (1 + (round (random 1)));
 	};
 
 	case "moderate":
 	{
 		_AICount = (6 + (round (random 5)));
 		_crate_weapons 		= (2 + (round (random 1)));
-		_crate_items 		= (4 + (round (random 5)));
+		_crate_items 		= (6 + (round (random 5)));
 		_crate_backpacks 	= (2 + (round (random 1)));
 	};
 
