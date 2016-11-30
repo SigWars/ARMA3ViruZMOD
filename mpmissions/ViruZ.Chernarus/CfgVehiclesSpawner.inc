@@ -28,8 +28,7 @@ class cfgVehiclesSpawner {
 	};
 	Military[] = {
 	{"B_Heli_Light_01_F", 2}, //Helis
-	{"I_Heli_light_03_unarmed_F", 2},
-	{"O_Heli_Transport_04_F", 2}
+	{"I_Heli_light_03_unarmed_F", 2}
 	};
 	Ships[] = {
 	{"C_Boat_Civil_01_F", 1},

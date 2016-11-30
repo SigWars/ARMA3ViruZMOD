@@ -26,19 +26,18 @@ switch (_tipo) do {
 				
 		//diag_log format["PUBLISH ACTION %1-%2-%3-%4-%5-%6-%7",_object,_class,_worldspace,_worldprecision,_charID,_objOwner,_LastFix];
 		_objUID = _worldspace call viruz_objectUID2;
-		
 		_object setVariable ["ObjectUID", _objUID,true];
-		_object setVariable ["ViruZMod",1];
-		
+				
 		_idKey = ([arrayObjectID,1] call BIS_fnc_findExtreme) + 1;
+		arrayObjectID set [count arrayObjectID, _idKey];
+		
 		_object setVariable ["ObjectID", str(_idKey), true];
+		_object setVariable ["ViruZMod",1];
 		
 		_key = format["CHILD:999:INSERT INTO object_data (ObjectID, ObjectUID, Instance, Classname, Datestamp, CharacterID, Worldspace, Inventory, OwnerUID, LastFix, Worldprecision) VALUES (%1, %2, %3, '%4', now(), %5, '%6', '%7', %8, '%9', '%10') :[]:",str(_idKey),_objUID,viruZ_instance,_class,_charID,_worldspace,_inventoryDB,_objOwner,_LastFix,_worldprecision];
 		diag_log format["VZ_PUBLISH_OBJ: key Query: %1",_key];
 		_result = _key call server_hiveReadWrite;
 		diag_log format["VZ_PUBLISH_OBJ: result: %1",_result];
-		
-		arrayObjectID set [count arrayObjectID, _idKey];
 		
 		if (count _result > 2) exitWith { 
 			diag_log format["VZ_PUBLISH_OBJ: RESULT FAILED!, READED TO NEEDUPDATEOBJECT: %1",_object];

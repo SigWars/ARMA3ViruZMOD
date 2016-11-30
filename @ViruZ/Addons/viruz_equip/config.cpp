@@ -33,6 +33,10 @@ class CfgWeapons {
 	
 	class Default;	// External class reference
 	class ItemCore;	// External class reference
+	class ItemRadio;
+	class ItemCompass;
+	class ItemWatch;
+	class Itemmap;
 	//class ItemInfo;
 	//class InventoryItem_Base_F; //viruz_build
 	
@@ -51,23 +55,32 @@ class CfgWeapons {
 		showToPlayer = false;
 	};
 	
-	class ItemToolbox : ItemCore {
+	class ItemToolbox : ItemRadio {
+		
 		scope = public;
 		displayName="$STR_A3_cfgWeapons_ToolKit0";
+		count=1;
 		descriptionShort="$STR_A3_cfgWeapons_ToolKit1";
 		picture="\A3\Weapons_F\Items\data\UI\gear_Toolkit_CA.paa";
 		model="\A3\Weapons_F\Items\Toolkit";
-		mass = 10;
+		class ItemInfo
+		{
+			mass=10;
+		};
 
 	};
 
-	class ItemKnife : ItemCore {
+	class ItemKnife : ItemWatch {
 		scope = public;
 		displayName = "Military Knife";
+		count=1;
 		model = "\viruz_equip\items\viruz_mknife.p3d";
 		picture = "\viruz_equip\viruzico\mkinife.paa";
 		descriptionShort = $STR_EQUIP_DESC_4;
-		mass = 10;
+		class ItemInfo
+		{
+			mass=1;
+		};
 
 	};
 	
