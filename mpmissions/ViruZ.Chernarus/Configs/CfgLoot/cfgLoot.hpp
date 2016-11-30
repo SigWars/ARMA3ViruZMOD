@@ -236,7 +236,6 @@ class CfgLoot {
 			"Binocular",
 			"ItemWatch",
 			"ItemMap",
-			"ItemKnife",
 			"ItemGPS"
 			
 		},
@@ -245,7 +244,6 @@ class CfgLoot {
 			0.04,	//Binocular
 			0.04,	//Watch
 			0.04,	//Map
-			0.04,	//Knife
 			0.01	//GPS
 		}
 	};
@@ -257,6 +255,7 @@ class CfgLoot {
 			"Chemlight_blue",
 			"Chemlight_green",
 			"Chemlight_red",
+			"ItemKnife",
 			"Chemlight_yellow"
 		},
 		{
@@ -265,6 +264,7 @@ class CfgLoot {
 			0.04,	//Chemlight blue
 			0.04,	//Chemlight green
 			0.04,	//Chemlight red
+			0.04,	//Knife
 			0.04	//Chemlight yellow
 		}
 	};

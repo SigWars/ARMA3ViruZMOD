@@ -4,6 +4,28 @@ class CfgMagazines {
 	
 	
 	///////////////////////////////////FERRAMENTAS///////////////////////////////////////////
+	class ItemToolbox : CA_Magazine {
+		
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName="ToolBox";
+		descriptionShort="$STR_A3_cfgWeapons_ToolKit1";
+		picture="\A3\Weapons_F\Items\data\UI\gear_Toolkit_CA.paa";
+		model="\A3\Weapons_F\Items\Toolkit.p3d";
+		mass=10;
+	};
+
+	class ItemKnife : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "Military Knife";
+		model = "\viruz_equip\items\viruz_mknife.p3d";
+		picture = "\viruz_equip\viruzico\mkinife.paa";
+		descriptionShort = $STR_EQUIP_DESC_4;
+		mass=1;
+	};
 	
 	class Viruz_Hammer : CA_Magazine {
 	

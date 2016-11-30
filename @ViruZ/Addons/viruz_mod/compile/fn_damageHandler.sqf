@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_isHeadHit","_headParts","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -13,7 +13,7 @@ _source = _this select 3;
 _ammo = _this select 4;
 _type = [_damage,_ammo] call fnc_usec_damageType;
 _isMinor = (_hit in USEC_MinorWounds);
-_isHeadHit = (_hit == "head_hit");
+_isHeadHit = (_hit in USEC_HeadParts);
 _evType = "";
 _recordable = false;
 _isPlayer = (isPlayer _source);

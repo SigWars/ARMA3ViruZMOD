@@ -107,7 +107,7 @@ if !(_full) then {
 	////////////////////////////////////////////////////////////////////////////////
 	
 	/////////////////////////////////////////////////////////////////////////////////
-	//
+	// basic class dont touch here
 	case "weapon": {
 		//Item is a weapon, add it and a random quantity of magazines
 		_item addWeaponCargoGlobal [_iItem,1];
@@ -116,7 +116,19 @@ if !(_full) then {
 			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
 		};
 		_item setVariable ["looted",_dateNow,true];
-		};
+	};
+	
+	case "magazine": {
+		//Item is one magazine
+		_item addMagazineCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+	};
+	
+	case "item": {
+		_item addItemCargoGlobal [(_iClass call _fnc_SelectType),1];
+		_item setVariable ["looted",_dateNow,true];
+	};
+	// end of basic class
 	
 	/////////////////////////////////////////////////////////////////////////////////
 	//Lixo

@@ -54,36 +54,6 @@ class CfgWeapons {
 		enableAttack = false;
 		showToPlayer = false;
 	};
-	
-	class ItemToolbox : ItemRadio {
-		
-		scope = public;
-		displayName="$STR_A3_cfgWeapons_ToolKit0";
-		count=1;
-		descriptionShort="$STR_A3_cfgWeapons_ToolKit1";
-		picture="\A3\Weapons_F\Items\data\UI\gear_Toolkit_CA.paa";
-		model="\A3\Weapons_F\Items\Toolkit";
-		class ItemInfo
-		{
-			mass=10;
-		};
-
-	};
-
-	class ItemKnife : ItemWatch {
-		scope = public;
-		displayName = "Military Knife";
-		count=1;
-		model = "\viruz_equip\items\viruz_mknife.p3d";
-		picture = "\viruz_equip\viruzico\mkinife.paa";
-		descriptionShort = $STR_EQUIP_DESC_4;
-		class ItemInfo
-		{
-			mass=1;
-		};
-
-	};
-	
 };
 
 #include "CfgMagazines.hpp"

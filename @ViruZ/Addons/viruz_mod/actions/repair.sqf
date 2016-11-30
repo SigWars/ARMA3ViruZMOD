@@ -7,7 +7,7 @@ _hitpoint = _array select 2;
 _type = typeOf _vehicle;
 
 //
-_hasToolbox = 	"ItemToolbox" in assignedItems player;
+_hasToolbox = 	"ItemToolbox" in magazines player;
 _section = _part in magazines player;
 
 //moving this here because we need to know which part needed if we don't have it

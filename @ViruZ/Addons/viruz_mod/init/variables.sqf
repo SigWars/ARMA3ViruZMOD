@@ -525,6 +525,11 @@ USEC_woundPoint	= [
 	["RightFoot","LeftFoot"], //spine3 
 	["Pelvis","aimpoint"]*/
 ];
+USEC_HeadParts 	= [
+	"face_hub",
+	"head",
+	"head_hit"
+];
 USEC_MinorWounds 	= [
 	"hands",
 	"legs"

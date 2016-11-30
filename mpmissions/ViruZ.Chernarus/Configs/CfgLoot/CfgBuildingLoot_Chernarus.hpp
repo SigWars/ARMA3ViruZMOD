@@ -125,7 +125,7 @@ class CfgBuildingLoot {
 			{"","Civilian_Clothes"},
 			{"","Pistols_Low"},
 			{"","Mag_Pistols_Low"},
-			{"ItemKnife","weapon"},
+			{"ItemKnife","magazine"},
 			{"","Mag_ArmasCivis"},
 			{"","ArmasCivis"}
 			
@@ -183,7 +183,7 @@ class CfgBuildingLoot {
 			{"","Mag_Pistols_Low"},
 			{"","ArmasCivis"},
 			{"","Mag_ArmasCivis"},
-			{"ItemKnife","weapon"}
+			{"ItemKnife","magazine"}
 			
 		};
 		itemChance[] =	{
@@ -233,7 +233,7 @@ class CfgBuildingLoot {
 			{"","Pistols_Low"},
 			{"","Mag_Pistols_Low"},
 			{"","Tools"},
-			{"ItemKnife","weapon"},
+			{"ItemKnife","magazine"},
 			{"Viruz_CardBoardBox","magazine"},
 			{"","Mag_ArmasCivis"},
 			{"","ArmasCivis"}
@@ -370,7 +370,7 @@ class CfgBuildingLoot {
 			{"","Mag_ArmasCivis"},
 			{"","Tools"},
 			{"MeleeHatchet","weapon"},
-			{"ItemKnife","weapon"},
+			{"ItemKnife","magazine"},
 			{"","Flashlights"}
 			
 			
@@ -445,7 +445,7 @@ class CfgBuildingLoot {
 			{"","Pistols_Low"},
 			{"","Mag_Pistols_Low"},
 			{"MeleeHatchet","weapon"},
-			{"ItemKnife","weapon"},
+			{"ItemKnife","magazine"},
 			{"","Flashlights"},
 			{"","Basic_Items"},
 			{"","Materials"},
@@ -480,7 +480,7 @@ class CfgBuildingLoot {
 			{"","CarParts"},
 			{"","Materials"},
 			{"MeleeHatchet","weapon"},
-			{"ItemKnife","weapon"},
+			{"ItemKnife","magazine"},
 			{"","Flashlights"},
 			{"","Tools"}
 
@@ -507,7 +507,7 @@ class CfgBuildingLoot {
 			{"","Trash"},
 			{"","CarParts"},
 			{"MeleeHatchet","weapon"},
-			{"ItemKnife","weapon"},
+			{"ItemKnife","magazine"},
 			{"","Flashlights"},
 			{"","Materials"},
 			{"","Tools"}

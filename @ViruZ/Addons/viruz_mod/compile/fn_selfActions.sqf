@@ -33,8 +33,8 @@ _hastinitem = false;
 } forEach boil_tin_cans;
 
 
-_hasKnife = 	"ItemKnife" in assignedItems player;
-_hasToolbox = 	"ItemToolbox" in assignedItems player;
+_hasKnife = 	"ItemKnife" in magazines player;
+_hasToolbox = 	"ItemToolbox" in magazines player;
 _hasTent = 		"ItemTent" in items player;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 //_nearLight = 	nearestObject [player,"LitObject"];
