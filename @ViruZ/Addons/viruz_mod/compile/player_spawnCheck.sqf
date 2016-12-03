@@ -48,10 +48,10 @@ switch (_nearbytype) do {
 */
 
 _players = _position nearEntities [["AllPlayers_2", "Survivor2_DZ"], _radius+200];
-/*viruz_maxGlobalZombies = viruz_maxLocalZombies;
+viruz_maxGlobalZombies = viruz_maxLocalZombies;
 {
-	viruz_maxGlobalZombies = viruz_maxGlobalZombies + 10;
-} foreach _players;*/
+	viruz_maxGlobalZombies = viruz_maxGlobalZombies + 1;
+} foreach _players;
 
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
 viruz_spawnZombies = 0;
@@ -65,7 +65,7 @@ viruz_spawnZombies = 0;
 
 viruz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
 
-_nearBy = nearestObjects [_position, ["building","Maniken_Base"], _radius];
+_nearBy = nearestObjects [_position, ["building","Maniken_Base"]+VIRUZ_LOOTHOLDER, _radius];
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
 {
@@ -107,12 +107,10 @@ if (_nearbyCount < 1) exitwith
 		if (viruz_maxCurrentZeds < viruz_maxZeds) then {
 			if (viruz_CurrentZombies < viruz_maxGlobalZombies) then {
 				if (viruz_spawnZombies < viruz_maxLocalZombies) then {
-						//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
-						_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-						_dateNow = time;
-						_age = (_dateNow - _zombied);
+						_zombied = (_x getVariable ["zombieSpawn",0]);
+						_dateNow = time + viruz_zedsRespawnDelay;
 						//if (_age > 3) then {
-						if (_age > viruz_zedsRespawnDelay) then {
+						if (time > _zombied) then {
 							_x setVariable ["zombieSpawn",_dateNow,true];
 							[_x] call building_spawnZombies;
 						};

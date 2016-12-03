@@ -8,8 +8,8 @@ _index = lbCurSel _groupListBox;
 _playerData = _groupListBox lbData _index;
 _check = 0;
 {
-	if ((!isNull _x) && {isPlayer _x} && {str(_x) == _playerData}) exitWith {_pTarget = _x;_check = 1;};
-} count playableUnits;
+	if ( (Alive _x) && (!isNull _x) && {isPlayer _x} && {str(_x) == _playerData}) exitWith {_pTarget = _x;_check = 1;};
+} count allUnits;
 
 if (_pTarget == player) exitWith {systemChat "You can not kick yourself";};
 if (_check == 0) exitWith {systemChat "You must select someone to kick first";};

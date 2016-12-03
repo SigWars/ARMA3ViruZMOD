@@ -1,18 +1,20 @@
 ﻿respawn = "BASE";
 respawndelay = 5;
-respawnButton = 1;
-onLoadMission= "fb.com/equipeundeadbrasil/";
-OnLoadIntro = "De seu feedback na pagina";
-author = "SigWar, Mateuus";
+respawnButton = 0;
+onLoadMission= "www.viruzmod.com";
+OnLoadIntro = "De seu feedback no forum";
+author = "SigWar, Mateuus, RK";
 onLoadName = "VIRUZ MOD";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
+corpseManagerMode = 0;
+wreckManagerMode = 0;
 //                    GLOBAL        SIDE LADO     COMANDO         GRUPO        VEHICLE         DIRECT          SYSTEM      
 disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{3,false,false},{4,true,true},{5,false,false},{6,false,true}};
 enableItemsDropping = 0;
 briefing = 0;
-debriefing= 0;
+debriefing= 1;
 joinUnassigned = 0; // By default a new player is not auto assigned a free playable slot in the mission lobby in Multiplayer. Set it to 0/false to make him auto assigned to the side with least players
 onPauseScript = "\z\addons\viruz_mod\compile\player_onPause.sqf";
 //loadScreen = "\z\addons\viruz_mod\gui\viruz_logo_ca.paa";
@@ -36,8 +38,21 @@ aiKills = 1;
 diagRadio = 1;
 diagHit = 1;
 
+class CfgDebriefing
+{  
+	class END2
+	{
+		title = "I need to rest a little";
+		subtitle = "I'll continue my walk soon.";
+		description = "";
+		pictureBackground = "";
+		picture = "";//"b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
 /* Настройка игрового процесса	*/
-#include "AH\infiSTAR_AdminMenu.hpp"
+#include "infiSTAR_AdminMenu.hpp"
 #include "CfgVehiclesSpawner.inc"				// Configs Spawn  de Vehiculos
 #include "CfgSpawnCrashSite.inc"				// Helicrash configs
 #include "Configs\CfgLoot\CfgBuildingLoot_Chernarus.hpp" 	// Custom Loot Chernarus

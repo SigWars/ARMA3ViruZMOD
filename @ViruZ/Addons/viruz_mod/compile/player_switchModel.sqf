@@ -10,7 +10,7 @@ _currentAnim 	= animationState player;
 //Get PlayerID
 private ["_playerUID"];
 	_playerUID = "";
-	if (count playableUnits == 0 and isServer) then {
+	if (count allUnits == 0 and isServer) then {
 		//In Single Player
 		isSinglePlayer = true;
 		player sidechat "Single player Mode detected!";
@@ -42,16 +42,12 @@ private ["_playerUID"];
 	_newUnit 	setPosATL _position;
 	_newUnit 	setDir _dir;
 
-//Clear New Character
-//	{_newUnit removeMagazine _x;} forEach  magazines _newUnit;
-//	removeAllWeapons _newUnit;	
-
 //Debug Message
 	diag_log "Swichtable Unit Created.";
 
 //Make New Unit Playable
 	addSwitchableUnit _newUnit;
-	setPlayable _newUnit;
+	//setPlayable _newUnit;
 	selectPlayer _newUnit;
 	//VZgroup
 	if ((count units _oldGroup > 1) && {!isNil "viruzLoginRecord"}) then {

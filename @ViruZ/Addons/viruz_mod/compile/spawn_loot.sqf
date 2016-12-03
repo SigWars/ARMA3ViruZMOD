@@ -19,36 +19,13 @@ _fnc_SelectType = {
 	_canType
 };
 
-_fnc_CheckHolder = {
-	private ["_item","_iClass","_weaponsInside","_magsInside","_itemsInside","_weaponCount","_magsCount","_itemsCount","_minLoot"];
-	_item = _this select 0;
-	_iClass = _this select 1;
-	_full = false;
-	
-	_weaponsInside = weaponCargo _item;
-	if (isNil {_weaponsInside select 0}) then {_weaponCount = 0; } else {_weaponCount = Count _weaponsInside;};
-	//if (_weaponCount >= 2 and _iClass in ["weapon","melee_lite","melee_especial","pistol_lite","pistol_especial","weapons_lmg","weapons_smg","weapons_rifle","snipe_drm","snipe_especial"]) then { _full = true; };
-
-	_magsInside = magazineCargo _item;
-	if (isNil {_magsInside select 0}) then {_magsCount = 0; } else {_magsCount = Count _magsInside;};
-	//if (_magsCount >= 5 and _iClass in ["magazine","furniture_food","furniture_medical","medical_lite","medical_especial","mag_pistol_lite","mag_pistol_especial","magazine_lmg","magazine_smg","magazine_rifle","magazine_dmr","magazine_sniper"]) then { _full = true; };
-
-	_itemsInside = itemCargo _item;
-	if (isNil {_itemsInside select 0}) then {_itemsCount = 0; } else {_itemsCount = Count _itemsInside;};
-	//if (_itemsCount >= 3 and _iClass in ["item","items_lite","uniform_civilian","uniform_military","headgear_civilian","headgear_military","glasses_civilian","glasses_military"]) then { _full = true; };
-	_minLoot = + _weaponCount + _magsCount + _itemsCount;
-	if (_minLoot >= 3 ) then { _full = true; };
-	
-	_full
-};
-
 // timestamp for later clearing
 _dateNow = time;
 
-_iItem = 	_this select 0; //PRIMEIRA "PRIMEIRA"," " DA ItemTypes - Classe do Item
-_iClass = 	_this select 1;	//SEGUNDA " ","SEGUNDA"	DA ItemTypes - Typo de Item - Weapon - MagaZine - Item - Mochila - Object - Ou classes especificas
-_iPos =	(_this select 2) select 0; // Posição onde Spawnar
-_zPos =	(_this select 2) select 1; // Confirma se a posição e em um holder e seta o posição
+_iItem = 	_this select 0; 
+_iClass = 	_this select 1;	
+_iPos =	(_this select 2) select 0;
+_zPos =	(_this select 2) select 1;
 _radius =	_this select 3; // Distancia
 _full = false;
 
@@ -56,23 +33,16 @@ switch (_this select 4) do {
 	case "GroundWeaponHolder": { //Cria um holder para spawnar se nao existir
 		if !(_iClass == "object") then {
 			_item = createVehicle ["GroundWeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-			_full = false;
 		};
 	};
 	case "objectHolder": { //Checa se é um Holder e usa ele para spawnar os items
 		// WeaponBox
 		_item = _this select 5;
-		_full = [_item,_iClass] call _fnc_CheckHolder;
 	};
-	//default {};
 };
 
 
-if !(_full) then {
-
-	switch (_iClass) do {
-
-	
+switch (_iClass) do {
 	
 	/*default {
 		
@@ -421,10 +391,8 @@ if !(_full) then {
 	case "object": {
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
 		};
-	};
+};
 
 if (_zPos) then {
 	_item setPosATL _iPos;
 };
-
-};//checka se esta full

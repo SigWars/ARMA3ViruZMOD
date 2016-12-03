@@ -14,7 +14,6 @@ class CfgMusic
 	{
 		name = "ViruZTrackIntro";
 		sound[] = {"\viruz_sound\tracks\track_intro.ogg", db+0, 1.0};
-		duration = ;
 	};
 	class z_suspense_0
 	{

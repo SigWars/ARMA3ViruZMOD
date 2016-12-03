@@ -55,7 +55,7 @@ class CfgLoot {
 			0.05,
 			0.05,
 			0.05,
-			
+			0.05,
 			0.05,
 			0.05,
 			0.05,
@@ -1254,9 +1254,9 @@ class CfgLoot {
 			"CUP_sgun_M1014"				//hit: 25
 		},
 		{
-			0.06,	//CUP_srifle_LeeEnfield
+			0.04,	//CUP_srifle_LeeEnfield
 			0.06,	//CUP_srifle_LeeEnfield_rail	
-			0.04	//CUP_sgun_M1014				
+			0.06	//CUP_sgun_M1014				
 		}
 	};
 	
@@ -1269,7 +1269,7 @@ class CfgLoot {
 		},
 		{
 			0.03,	//CUP_15Rnd_9x19_M9
-			0.02,	//CUP_8Rnd_B_Beneli_74Slug
+			0.03,	//CUP_8Rnd_B_Beneli_74Slug
 			0.05	//CUP_8Rnd_B_Beneli_74Pellets
 
 		}

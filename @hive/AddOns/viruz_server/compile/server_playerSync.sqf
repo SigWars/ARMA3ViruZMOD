@@ -204,11 +204,11 @@ if (_characterID != "0") then {
 			[_x, "gear"] call server_updateObject;
 		} forEach nearestObjects [_pos, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "ViruZHolder_base"], 10];
 		
-		//force Update builds doors
+		/*//force Update builds doors
 		_pos = _this select 0;
 		{
 			[_x, "doorAction"] call server_updateObject;
-		} forEach nearestObjects [_pos, VIRUZ_GATES, 20];
+		} forEach nearestObjects [_pos, VIRUZ_GATES, 20];*/
 
 		//Reset timer
 		if (_timeSince > 0) then {

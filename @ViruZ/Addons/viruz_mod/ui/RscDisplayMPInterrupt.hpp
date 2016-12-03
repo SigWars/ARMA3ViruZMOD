@@ -21,7 +21,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			h = 0.0338065 * safezoneH;
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.8};
-			onButtonClick = "call player_bakckTolobby; [""epicFail"",false,2] call BIS_fnc_endMission;";
+			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2; call player_bakckTolobby; ""END2"" call BIS_fnc_endMission;";
 		};
 	};
 	

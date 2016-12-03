@@ -103,15 +103,15 @@ sleep 1;
 
 TitleText[localize "str_player_12","PLAIN DOWN",5];
 
-viruz_originalPlayer enableSimulation true;
+//viruz_originalPlayer enableSimulation true;
 
-addSwitchableUnit viruz_originalPlayer;
-setPlayable viruz_originalPlayer;
-selectPlayer viruz_originalPlayer;
+//addSwitchableUnit viruz_originalPlayer;
+//setPlayable viruz_originalPlayer;
+//selectPlayer viruz_originalPlayer;
 
-/*_myGroup = group _body;
+_myGroup = group _body;
 [_body] joinSilent viruz_firstGroup;
-deleteGroup _myGroup;*/
+deleteGroup _myGroup;
 
 3 cutRsc ["default", "PLAIN",3];
 4 cutRsc ["default", "PLAIN",3];
@@ -125,10 +125,27 @@ _body setVariable["combattimeout", 0, true];
 //["viruzFlies",player] call broadcastRpcCallAll;
 sleep 2;
 
-1 cutRsc ["DeathScreen","BLACK OUT",3];
-
-
-playMusic "viruz_track_death_1";
-
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 "colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
+
+//////////////////////////////////////////////////////////////////////////
+//START EARPLUGS CODE
+
+5 fadeSound 1;
+earplugsout = true;
+removeAllActions inCaseofDeath;
+removeAllActions theOneTrueName;
+inCaseofDeath setVariable ["HasEarplugMenu","hasNoMenu"];
+theOneTrueName setVariable ["HasEarplugMenu","hasNoMenu"];
+player setVariable ["Has_EPEH_Loop", "Yep"];
+//systemChat "Diablo's minions grow stronger...";
+
+(findDisplay 46) displayRemoveEventHandler ["KeyDown", cmKeyPress];
+
+//cmEARPLUGS CODE END
+//////////////////////////////////////////////////////////////////////////
+sleep 1;
+playMusic "viruz_track_death_1";
+1 cutRsc ["DeathScreen","BLACK OUT",3];
+for "_x" from 10 to 1 step -1 do {titleText [format["Returning to lobby in %1 second(s)...", _x], "PLAIN DOWN", 1]; sleep 1;};
+endMission "DEAD";

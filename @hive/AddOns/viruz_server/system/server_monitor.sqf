@@ -14,7 +14,7 @@ _script = 				getText(missionConfigFile >> "onPauseScript");
 allowConnection = false;
 publicVariable "allowConnection";
 
-if ((count playableUnits == 0) and !isDedicated) then {
+if ((count allUnits == 0) and !isDedicated) then {
 	isSinglePlayer = true;
 };
 

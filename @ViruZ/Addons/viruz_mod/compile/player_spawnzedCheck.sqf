@@ -10,10 +10,9 @@ _nearestCity = _this select 6;
 _maxZombies = _this select 7;
 
 
-_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-_dateNow = time;
-_age = _dateNow - _zombied;
-if (_age > 1) then {
+_zombied = (_x getVariable ["zombieSpawn",0]);
+_dateNow = time + viruz_zedsRespawnDelay;
+if (time > _zombied) then {
 	_x setVariable ["zombieSpawn",_dateNow,true];
 	[_x] call building_spawnZombies;
 };		

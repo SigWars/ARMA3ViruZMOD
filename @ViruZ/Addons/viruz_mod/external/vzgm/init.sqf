@@ -10,12 +10,12 @@ player setVariable ["savedGroup",_savedGroup,true];
 player setVariable ["purgeGroup",0,true];
 if (count _savedGroup > 1) then {
 	{
-		if (((getPlayerUID _x) in _savedGroup) && {(getPlayerUID player) in (_x getVariable["savedGroup",[]])} && {_x != player}) exitWith {
+		if (((getPlayerUID _x) in _savedGroup) && (Alive _x) && {(getPlayerUID player) in (_x getVariable["savedGroup",[]])} && {_x != player}) exitWith {
 			_loginGroup = group player;
 			[player] join (group _x);
 			if (count units _loginGroup < 1) then {deleteGroup _loginGroup;};
 		};
-	} count playableUnits;
+	} count allUnits;
 } else {
 	[player] joinSilent grpNull;
 };

@@ -11,11 +11,11 @@ _groupExists = false;
 } forEach currentInvites;
 
 {
-	if ((!isNull _x) && {getPlayerUID _x == _inviterUID}) exitWith {
+	if ((!isNull _x) && {getPlayerUID _x == _inviterUID} && (Alive _x) exitWith {
 		_inviter = _x;
 		_groupExists = true;
 	};
-} count playableUnits;
+} count allUnits;
 
 if (_groupExists) then {
 	[player] join (group _inviter);

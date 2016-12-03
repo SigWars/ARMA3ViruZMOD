@@ -90,7 +90,7 @@ if (isServer) then {
 	//called for antihack.sqf
 	"atp"				addPublicVariableEventHandler { _array = _this select 1; diag_log format["TELEPORT REVERT: %1 (%2) from %3 to %4 now at %5", _array select 0, _array select 1, _array select 2, _array select 3, _array select 4];};
 	
-	"viruzCanConnect" addPublicVariableEventHandler { _id = owner (_this select 1 select 0);  viruzCanConnect = allowConnection; _id publicVariableClient "viruzCanConnect";};
+	//"viruzCanConnect" addPublicVariableEventHandler { _id = owner (_this select 1 select 0);  viruzCanConnect = allowConnection; _id publicVariableClient "viruzCanConnect";};
 };
 
 //Client only
@@ -114,5 +114,5 @@ if (!isDedicated) then {
 	//"viruzFire"			addPublicVariableEventHandler {nul=(_this select 1) spawn BIS_Effects_Burn};
 	
 	//new connection system
-	"viruzCanConnect" addPublicVariableEventHandler {viruzCanConnect = _this select 1;};
+	//"viruzCanConnect" addPublicVariableEventHandler {viruzCanConnect = _this select 1;};
 };

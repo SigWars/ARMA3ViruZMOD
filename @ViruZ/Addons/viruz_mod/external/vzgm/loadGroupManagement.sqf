@@ -23,14 +23,14 @@ _groupDeclineInvite ctrlShow false;
 _groupAcceptInvite ctrlShow false;
 _hasInvite = false;
 {
-	if ((!isNull _x) && {isPlayer _x}) then {
+	if ((!isNull _x) && {isPlayer _x} && (Alive _x)) then {
 		_namestr = name _x;             
 		_index = _playerListBox lbAdd _namestr;
 		_playerListBox lbSetData [_index,str(_x)];
 		_playerListBox lbSetPicture [_index,"\z\addons\viruz_mod\external\vzgm\ui\objective_complete_ca.paa"];
 		if (count units group _x > 1) then {_playerListBox lbSetPicture [_index,"\z\addons\viruz_mod\external\vzgm\ui\objective_incomplete_ca.paa"];};
 	};	    
-} count playableUnits;
+} count allUnits;
 
 while {groupManagmentActive} do {
     {if (_x select 1 == getPlayerUID player) then {_hasInvite = true};} forEach currentInvites;
@@ -58,8 +58,8 @@ while {groupManagmentActive} do {
 			_invite = _x;
 			if (_invite select 1 == getPlayerUID player) then {
 				{
-					if ((!isNull _x) && {_invite select 0 == getPlayerUID _x}) exitWith {_pName = name _x;};
-				} count playableUnits;
+					if ((Alive _x) && (!isNull _x) && {_invite select 0 == getPlayerUID _x}) exitWith {_pName = name _x;};
+				} count allUnits;
 			};
 		} forEach currentInvites;
         _groupInviteText ctrlSetStructuredText parseText (format ["Group Invite From<br/>%1",_pName]);
