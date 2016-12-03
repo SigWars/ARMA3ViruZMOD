@@ -2,7 +2,7 @@ disableSerialization;
 
 viruzCanConnect = false;
 ViruzDebugMode = 3;			//Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High
-ViruzDebugType = "NONE";	//Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN"
+ViruzDebugType = "NONE";	//Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD"
 
 config_VehiclesCheck =		getArray(configFile >> "CfgObjectCheck" >> "vehicles");
 config_ObjectIgnore =		getArray(configFile >> "CfgObjectCheck" >> "ignore");
@@ -496,9 +496,26 @@ USEC_woundHit 	= [
 	"body",		// HitPelvis max HitAbdomen max HitDiaphragm max HitChest
 	"arms",		// Arms	
 	"hands",	// Hands
-	"legs"		// Legs
+	"legs",		// Legs
+	
+	"rightlegroll", //Right Leg
+	"rightuplegroll", //Right Leg
+	"rightupleg",	//Right Leg
+	
+	"leftlegroll", //left Leg
+	"leftuplegroll",	//left Leg
+	"leftupleg",	//left Leg
+	
+	"leftforearm",	//left arm
+	"leftarmroll",	//left arm
+	
+	"rightforearm",
+	"rightarmroll"
+	
+	
 ];
 USEC_woundPoint	= [
+	["neck"],
 	["neck"],
 	["neck"],
 	["neck"],
@@ -509,7 +526,18 @@ USEC_woundPoint	= [
 	["lelbow","relbow"],
 	["lelbow","relbow"], // Left/Right Arm Points
 	["LeftHandMiddle1","rightHandMiddle1"], // Left/Right Hands Points
-	["lfemur","rfemur"] // Left/Right Legs Points
+	["lfemur","rfemur"], // Left/Right Legs Points
+	["rfemur"],
+	["rfemur"],
+	["rfemur"],
+	["lfemur"],
+	["lfemur"],
+	["lfemur"],
+	["lelbow"],
+	["lelbow"],
+	["relbow"],
+	["relbow"]
+	
 	
 	
 	

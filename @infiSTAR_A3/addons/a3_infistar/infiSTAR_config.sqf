@@ -330,8 +330,8 @@ _onLoadUnload1 = [
 	'RscDisplayMissionFail','RscDisplayLogin','RscDisplayModLauncher','RscDisplayDifficulty','RscDisplaySelectIsland'
 ];
 
-/*  Use BadVar #1 */ _UBV = true;	/* true or false */	/* recommended to use */
-/*  Use BadVar #2 */ _UBV2 = true;	/* true or false */	/* recommended to use */
+/*  Use BadVar #1 */ _UBV = false;	/* true or false */	/* recommended to use */
+/*  Use BadVar #2 */ _UBV2 = false;	/* true or false */	/* recommended to use */
 /*  Use BadVar #2 CONTENT */ _UBV2C = false;	/* true or false */	/* NEEDS _UBV2 = true;  -  recommended to use */
 /* _badVarWhitelist: These variables are not getting checked by the "BadVar#2" check. */
 _badVarWhitelist =
@@ -341,7 +341,7 @@ _badVarWhitelist =
 /* _blacklistedVariables: The AntiHack will check if one of these variables is existing for the client (only if _UBV = true;) */
 _blacklistedVariables =
 [
-	'arsenalOpened','BIS_fnc_arsenal_fullArsenal','n912','TBMKnlist','PLAY','ALTISLIFENEXT3','SOMEONE_dsfnsjf',
+	/*'arsenalOpened','BIS_fnc_arsenal_fullArsenal','n912','TBMKnlist','PLAY','ALTISLIFENEXT3','SOMEONE_dsfnsjf',
 	'FND_fnc_subs','setcash','Dummy_Ghost','entf','check_loaded','LY_Menu','AndysClosed','GOLDENS_GLOBAL_SHIT_YEAH','Fanatic_Main_Bereich',
 	'imgoingnukeyou','fnc_usec_damageHandler','CheatCurator','andy_loopz','InitFileOne',
 	'Status_BB','TZ_BB_A3','TZ_BB_KB_Hint','TZ_BB_BindHandler','AH_BRAZZERS_TZ_BB','kamakazi_lystic','fuckfest','LYSTIC_MENU_LOADED','D_AMEZ_COA',
@@ -432,7 +432,7 @@ _blacklistedVariables =
 	'riasgremory_Noobs','riasgremory_Bitches','riasgremory_Map_Markers','aKUnMmo','jenesuispasuncheateur_unamo','aKVoit','Loljesaispasquoiecriremdr','isseigremory','gremorysama','aKTaCu','aKCardetroy','aKGetKey','aKKillcursor',
 	'aKNoEscort','aKEscort','aKtroll','aKTPall','aKUnrestrain','aKNoEscortMe','aKNoTaze','aKJailplayer','aKLisense','riasgremory_titans_shit_reold','Tonic_merde','jaimepaslepoisin_HLEAL','TTTT_IIII___TTTTTTT_RAP_FR','TTTT_IIII___TTTTTTT_REPGA',
 	'TTTT_IIII___TTTTTTT_REPGAs','jaimepaslepoisin_HLEAL','Root_Main4','Root_Pistol4','Root_Rifle4','Root_Machinegun4','Root_Sniper4','Root_Launcher4','Root_Attachement4',
-	'VAR56401668319_secret','myPubVar','XXMMWW_boxquad','Init_Menu_Fury','A3RANDVARrpv1tpv','fnc_nestf','XXMMWW_keybinds','smissles','wooden_velo','vabox','bis_fnc_camera_target'
+	'VAR56401668319_secret','myPubVar','XXMMWW_boxquad','Init_Menu_Fury','A3RANDVARrpv1tpv','fnc_nestf','XXMMWW_keybinds','smissles','wooden_velo','vabox','bis_fnc_camera_target'*/
 ];
 
 

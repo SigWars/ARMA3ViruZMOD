@@ -8,9 +8,10 @@ if (local _animalbody) then {
  _meatpos = createVehicle ["GroundWeaponHolder",getPos _animalbody, [], 0, "CAN_COLLIDE"];
 
 	for "_x" from 1 to _qty do {
-	diag_log format ["animal animalbody %1, rawfoodtype %2",_animalbody,_rawfoodtype];
-		
-//		_animalbody addMagazine _rawfoodtype;
+	
+	if (ViruzDebugMode > 1) then {
+		diag_log format ["animal animalbody %1, rawfoodtype %2",_animalbody,_rawfoodtype];
+	};	
 		_meatpos addMagazineCargoGlobal [_rawfoodtype,1];
 	};
 		
@@ -33,5 +34,8 @@ if (local _animalbody) then {
 } else {
 	_ehLoc = "client";
 	if (isServer) then { _ehLoc = "server"; };
-	diag_log format["gutObject EH on %1 item not local ! Type: %2",_ehLoc,str(_animalbody)];
+	
+	if (ViruzDebugMode > 1) then {
+		diag_log format["gutObject EH on %1 item not local ! Type: %2",_ehLoc,str(_animalbody)];
+	};
 };

@@ -1,6 +1,6 @@
 if (visibleMap || (!isNull (findDisplay 88890))) then {
 	{
-		if ((Alive _x) && (!isNull _x) && {isPlayer _x} && {(driver (vehicle _x)) == _x}) then {
+		if ((!isNull _x) && {isPlayer _x} && {(driver (vehicle _x)) == _x}) then {
 			_name = name _x;
 			if (group _x == group player) then {
 				_pPos = getPosATL _x;

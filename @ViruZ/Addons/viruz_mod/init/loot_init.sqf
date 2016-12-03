@@ -20,7 +20,7 @@ for "_i" from 0 to ((count _config) - 1) do {
 			};
 		viruz_CBLChances set [count viruz_CBLChances, _weighted];
 		viruz_CBLBase set [count viruz_CBLBase, _classname];
-		} ;
+		};
 	} else {
 		viruz_CBLChances set [count viruz_CBLChances, [0]];
 		viruz_CBLBase set [count viruz_CBLBase, _classname];

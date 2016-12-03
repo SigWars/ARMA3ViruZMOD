@@ -11,7 +11,7 @@ _groupExists = false;
 } forEach currentInvites;
 
 {
-	if ((!isNull _x) && {getPlayerUID _x == _inviterUID} && (Alive _x) exitWith {
+	if ((!isNull _x) && {getPlayerUID _x == _inviterUID}) exitWith {
 		_inviter = _x;
 		_groupExists = true;
 	};

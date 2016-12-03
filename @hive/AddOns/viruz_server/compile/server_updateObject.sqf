@@ -19,7 +19,9 @@ _persistantObj = (_object getVariable ["ViruZMod",1] == 1);
 
 if ((typeName _objectID != "string") || (typeName _uid != "string")) then
 { 
-    diag_log(format["Non-string Object: ID %1 UID %2", _objectID, _uid]);
+    if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log(format["Non-string Object: ID %1 UID %2", _objectID, _uid]);
+	};
     //force fail
     _objectID = "0";
     _uid = "0";
@@ -29,12 +31,11 @@ if !(_parachuteWest or _eRack or _persistantObj) then {
 	if (_objectID == "0" && _uid == "0") then
 	{
 		_object_position = getPosATL _object;
-    		diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",
-			typeOf _object,
-			_object_position select 0,
-			_object_position select 1, 
-			_object_position select 2]);
-			_isNotOk = true;
+    	_isNotOk = true;
+		
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",typeOf _object,_object_position select 0,_object_position select 1,_object_position select 2]);
+		};
 	};
 };
 
@@ -60,11 +61,16 @@ _object_precisepos = {
 		_worldvectorDirUp = [_posicao select 1,_posicao select 2];
 		_posicao_calc = _posicao deleteAt 0;
 		_posicao_final = (_posicao_calc select 0) vectorAdd (_posicao_calc select 1);
-		diag_log format["VZ_UPDATE_PRECISE_POSITION: _posiçao: %1",_posicao];
-					
+		
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log format["VZ_UPDATE_PRECISE_POSITION: _posiçao: %1",_posicao];
+		};			
 		//Save precise position in database
 		_key = format["CHILD:999:UPDATE `object_data` SET `WorldPrecision` = '%1' WHERE `ObjectID` = '%2' OR `ObjectUID` = '%3' LIMIT 1:[]:",_posicao,_objectID,_uid];
-		diag_log format["VZ_UPDATE_PRECISE_POSITION: key Query: %1",_key];
+		
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log format["VZ_UPDATE_PRECISE_POSITION: key Query: %1",_key];
+		};	
 		_key call server_hiveWrite;
 
 };
@@ -86,8 +92,10 @@ _object_position = {
 	};
 	
 	_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
-	diag_log ("HIVE: WRITE: "+ str(_key));
-
+	
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log ("HIVE: WRITE: "+ str(_key));
+	};	
 	_key call server_hiveWrite;
 };
 
@@ -107,7 +115,9 @@ _object_inventory = {
 		} else {
 			_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
 		};
-		diag_log ("HIVE: WRITE: "+ str(_key));
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log ("HIVE: WRITE: "+ str(_key));
+		};
 		_key call server_hiveWrite;
 	};
 };
@@ -125,7 +135,9 @@ _object_damage = {
 	} forEach _hitpoints;
 	
 	_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-	diag_log ("HIVE: WRITE: "+ str(_key));
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log ("HIVE: WRITE: "+ str(_key));
+	};	
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 };
@@ -149,7 +161,9 @@ _object_killed = {
 	} else {
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 	};
-	diag_log ("HIVE: WRITE: "+ str(_key));
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log ("HIVE: WRITE: "+ str(_key));
+	};	
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 };
@@ -167,7 +181,9 @@ _object_repair = {
 	} forEach _hitpoints;
 	
 	_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-	diag_log ("HIVE: WRITE: "+ str(_key));
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log ("HIVE: WRITE: "+ str(_key));
+	};	
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
 };
@@ -178,21 +194,27 @@ _object_door = {
 	_lockType = _object getVariable ["Locked", "0"];
 		
 	_key = format["CHILD:999:UPDATE `object_data` SET `Locked` = '%1' WHERE `ObjectUID` = '%2' or `ObjectID` = '%3' LIMIT 1:[]:",_lockType,_uid,_objectID];
-	diag_log format["VZ_UPDATE_DOOR: key Query: %1",_key];
-	
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log format["VZ_UPDATE_DOOR: key Query: %1",_key];
+	};
 	_result = _key call server_hiveReadWrite;
-	diag_log format["VZ_UPDATE_DOOR: result: %1",_result];
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log format["VZ_UPDATE_DOOR: result: %1",_result];
+	};	
 };
 
 _object_maintenance = {
 	private ["_key","_result"];
 	
 	_key = format["CHILD:999:UPDATE `object_data` SET `LastFix` = '%1' WHERE `ObjectUID` = '%2' or `ObjectID` = '%3' LIMIT 1:[]:",currentDate,_uid,_objectID];
-	diag_log format["VZ_UPDATE_OBJ_MAINTAIN: key Query: %1",_key];
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log format["VZ_UPDATE_OBJ_MAINTAIN: key Query: %1",_key];
+	};
 	
 	_result = _key call server_hiveReadWrite;
-	diag_log format["VZ_UPDATE_OBJ_MAINTAIN: result: %1",_result];
-
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log format["VZ_UPDATE_OBJ_MAINTAIN: result: %1",_result];
+	};
 };
 
 _object setVariable ["lastUpdate",time,true];
@@ -201,7 +223,9 @@ switch (_type) do {
 	case "all": {
 
 		if (!([_object,"monitorSaveAll"] in needUpdate_objects)) then {
-			diag_log format["DEBUG ALL: Added to NeedUpdate=%1",_object];
+			if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+				diag_log format["DEBUG ALL: Added to NeedUpdate=%1",_object];
+			};	
 			needUpdate_objects set [count needUpdate_objects, [_object,"monitorSaveAll"]];
 		};
 
@@ -212,7 +236,9 @@ switch (_type) do {
 			call _object_precisepos;
 		} else {	
 			if (!([_object,"monitorSavePos"] in needUpdate_objects)) then {
-				diag_log format["DEBUG POSITION: Added to NeedUpdate=%1",_object];
+				if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+					diag_log format["DEBUG POSITION: Added to NeedUpdate=%1",_object];
+				};
 				needUpdate_objects set [count needUpdate_objects, [_object,"monitorSavePos"]];
 			};
 		};
@@ -220,7 +246,9 @@ switch (_type) do {
 	case "gear": {
 
 		if (!([_object,"monitorSaveGear"] in needUpdate_objects)) then {
-			diag_log format["DEBUG GEAR: Added to NeedUpdate=%1",_object];
+			if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+				diag_log format["DEBUG GEAR: Added to NeedUpdate=%1",_object];
+			};
 			needUpdate_objects set [count needUpdate_objects, [_object,"monitorSaveGear"]];
 		};
 
@@ -230,7 +258,9 @@ switch (_type) do {
 			call _object_damage;
 		} else {
 			if (!([_object,"monitorSaveDamage"] in needUpdate_objects)) then {
-				diag_log format["DEBUG DAMAGE: Added to NeedUpdate=%1",_object];
+				if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+					diag_log format["DEBUG DAMAGE: Added to NeedUpdate=%1",_object];
+				};	
 				needUpdate_objects set [count needUpdate_objects, [_object,"monitorSaveDamage"]];
 			};
 		};
@@ -243,7 +273,9 @@ switch (_type) do {
 			call _object_damage;
 		} else {
 			if (!([_object,_type] in needUpdate_objects)) then {
-				diag_log format["DEBUG REPAIR: Added to NeedUpdate=%1",_object];
+				if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+					diag_log format["DEBUG REPAIR: Added to NeedUpdate=%1",_object];
+				};
 				needUpdate_objects set [count needUpdate_objects, [_object,"monitorSaveDamage"]];
 			};
 		};
@@ -251,19 +283,25 @@ switch (_type) do {
 	
 	case "PublishBuild": {
 		needUpdate_objects set [count needUpdate_objects, [_object,"monitorPublishBuild"]];
-		diag_log format["DEBUG PUBLISH: Added to NeedUpdate=%1",_object];
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log format["DEBUG PUBLISH: Added to NeedUpdate=%1",_object];
+		};	
 	};
 	
 	case "DelObject": {
 		_object hideObjectGlobal true;
 		needUpdate_objects set [count needUpdate_objects, [_object,"monitorDelObject"]];
-		diag_log format["DEBUG DELETE: Added to NeedUpdate=%1",_object];
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log format["DEBUG DELETE: Added to NeedUpdate=%1",_object];
+		};	
 	};
 	case "doorAction": {
 		if (!([_object,_type] in needUpdate_objects)) then {
 			if (!([_object,"monitorDoorAction"] in needUpdate_objects)) then {
 				needUpdate_objects set [count needUpdate_objects, [_object,"monitorDoorAction"]];
-				diag_log format["DEBUG DOORS: Added to NeedUpdate=%1",_object];
+				if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+					diag_log format["DEBUG DOORS: Added to NeedUpdate=%1",_object];
+				};
 			};
 		};
 	};
@@ -271,7 +309,9 @@ switch (_type) do {
 		if (!([_object,_type] in needUpdate_objects)) then {
 			if (!([_object,"monitorBuildMaintain"] in needUpdate_objects)) then {
 				needUpdate_objects set [count needUpdate_objects, [_object,"monitorBuildMaintain"]];
-				diag_log format["DEBUG MAINTAIN: Added to NeedUpdate=%1",_object];
+				if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+					diag_log format["DEBUG MAINTAIN: Added to NeedUpdate=%1",_object];
+				};	
 			};
 		};
 	};

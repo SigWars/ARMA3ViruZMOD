@@ -23,7 +23,7 @@ _groupDeclineInvite ctrlShow false;
 _groupAcceptInvite ctrlShow false;
 _hasInvite = false;
 {
-	if ((!isNull _x) && {isPlayer _x} && (Alive _x)) then {
+	if ((!isNull _x) && {isPlayer _x}) then {
 		_namestr = name _x;             
 		_index = _playerListBox lbAdd _namestr;
 		_playerListBox lbSetData [_index,str(_x)];
@@ -58,7 +58,7 @@ while {groupManagmentActive} do {
 			_invite = _x;
 			if (_invite select 1 == getPlayerUID player) then {
 				{
-					if ((Alive _x) && (!isNull _x) && {_invite select 0 == getPlayerUID _x}) exitWith {_pName = name _x;};
+					if ((!isNull _x) && {_invite select 0 == getPlayerUID _x}) exitWith {_pName = name _x;};
 				} count allUnits;
 			};
 		} forEach currentInvites;

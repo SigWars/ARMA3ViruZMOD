@@ -6,7 +6,7 @@ _dialog = findDisplay 55510;
 _playerListBox = _dialog displayCtrl 55511;
 lbClear _playerListBox;
 {
-	if ((Alive _x) && (!isNull _x) && {isPlayer _x}) then {
+	if ((!isNull _x) && {isPlayer _x}) then {
 		_namestr = name _x;
 		_index = _playerListBox lbAdd _namestr;
 		_playerListBox lbSetData [_index,str(_x)];

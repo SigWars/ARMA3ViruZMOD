@@ -1,6 +1,8 @@
 private ["_config","_location","_locationPosition","_locationRadiusA","_wreckTypeModel","_nearRoads","_civilian","_military","_mixed","_genDist","_active","_wreckObjects"];
 
-diag_log (format["WRECKSPAWNER: Spawn wreck objects. Location : %1", text _this]);
+if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
+	diag_log (format["WRECKSPAWNER: Spawn wreck objects. Location : %1", text _this]);
+};	
 
 _location = _this;
 _locationPosition = locationPosition _location;

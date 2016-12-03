@@ -131,13 +131,15 @@ private ["_distance","_direction","_high","_adjustRack","_currentDistanceDiff","
     }
     else
     {_search_range = 10;}; //10
-
-    diag_log format["Building Object: %1", VIRUZ_Build_object];
-    diag_log format["TAMANHO = %1", _bbr];
-	diag_log format["_p1 = %1", _p1];
-	diag_log format["_p2 = %1", _p2];
-	diag_log format["_maxHeight = %1", _maxHeight];
-	diag_log format["_maxLength = %1", _maxLength];
+	
+	if (ViruzDebugMode > 2 or ViruzDebugType == "BUILD") then {
+		diag_log format["Building Object: %1", VIRUZ_Build_object];
+		diag_log format["TAMANHO = %1", _bbr];
+		diag_log format["_p1 = %1", _p1];
+		diag_log format["_p2 = %1", _p2];
+		diag_log format["_maxHeight = %1", _maxHeight];
+		diag_log format["_maxLength = %1", _maxLength];
+	};
 	
 	vz_cant_Build = true;
 		

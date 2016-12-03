@@ -20,10 +20,13 @@ _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
 _unitIsPlayer = _unit == player;
-diag_log format ["DAMAGE _source = %1", _source];
-diag_log format ["DAMAGE _hit = %1", _hit];
-diag_log format ["DAMAGE _damage = %1", _damage];
-diag_log format ["DAMAGE _ammo = %1", _ammo];
+
+if (ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+	diag_log format ["DAMAGE _source = %1", _source];
+	diag_log format ["DAMAGE _hit = %1", _hit];
+	diag_log format ["DAMAGE _damage = %1", _damage];
+	diag_log format ["DAMAGE _ammo = %1", _ammo];
+};
 
 //Publish Damage
 	//player sidechat format["Processed damage for %1",_unit];
@@ -89,11 +92,15 @@ if (_damage > 0.4) then {
 		case 2: {_scale = _scale + 200};
 	};
 	if (_unitIsPlayer) then {
-		//Cause blood loss
 		//Log Damage
-		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		if (ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		};
 		r_player_blood = r_player_blood - (_damage * _scale);
-		diag_log format ["DAMAGE TOTAL = %1", (_damage * _scale)];
+		
+		if (ViruzDebugMode > 2 or ViruzDebugType == "DAMAGE") then {
+			diag_log format ["DAMAGE TOTAL = %1", (_damage * _scale)];
+		};
 	};
 };
 

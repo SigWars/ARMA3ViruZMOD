@@ -86,11 +86,15 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 					
 					_pos = [_centerMap,0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
 					if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
-					diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
+					if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
+						diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
+					};	
 				};
 				
 				
-					diag_log format["OBJ: %1 - %2", _idKey,_type];
+					if (ViruzDebugMode > 2 or ViruzDebugType == "BUILD") then {
+						diag_log format["OBJ: %1 - %2", _idKey,_type];
+					};	
 					
 					//Create it
 					_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];

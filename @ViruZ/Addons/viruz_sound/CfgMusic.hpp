@@ -2,17 +2,17 @@ class CfgMusic
 {
 	class viruz_track_death_1
 	{
-		name = "ViruZTrackDeath";
+		name = "";
 		sound[] = {"\viruz_sound\tracks\track_death_1.ogg", db+0, 1.0};
 	};
 	class viruz_track_28
 	{
-		name = "ViruZTrack28";
+		name = "";
 		sound[] = {"\viruz_sound\tracks\track_intro.ogg", db+0, 1.0};
 	};
 	class viruz_track_intro_1
 	{
-		name = "ViruZTrackIntro";
+		name = "";
 		sound[] = {"\viruz_sound\tracks\track_intro.ogg", db+0, 1.0};
 	};
 	class z_suspense_0

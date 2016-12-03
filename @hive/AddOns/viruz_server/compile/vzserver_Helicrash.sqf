@@ -28,8 +28,9 @@ switch (_mapaatual) do {
 	
 	};
 
-
-diag_log(format["VIRUZCRASH: Iniciada Logica dos helicrashs [STATIC:%1||CRASHDAMAGE:%2|]", str(_useStatic), _crashDamage]);
+if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {
+	diag_log(format["VIRUZCRASH: Iniciada Logica dos helicrashs [STATIC:%1||CRASHDAMAGE:%2|]", str(_useStatic), _crashDamage]);
+};
 
 while {true} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
@@ -70,7 +71,9 @@ while {true} do {
 
 	_crashName	= getText (configFile >> "CfgVehicles" >> _heliModel >> "displayName");
 
-	diag_log(format["VIRUZCRASH: %1%2 chance to start a crashing %3 at %4", round(_spawnChance * 100), '%', _crashName, _timeToSpawn]);
+	if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {
+		diag_log(format["VIRUZCRASH: %1%2 chance to start a crashing %3 at %4", round(_spawnChance * 100), '%', _crashName, _timeToSpawn]);
+	};	
 
 	// Apprehensive about using one giant long sleep here given server time variances over the life of the server daemon
 	while {time < _timeToSpawn} do {
@@ -103,7 +106,9 @@ while {true} do {
 		};
 		//DEFAULT: GET COORDS FROM BIS_fnc_findSafePos, COMMENT OUT IF YOU USE _STATICCOORDS
 		
-		diag_log(format["VIRUZCRASH: %1 started flying from %2 to %3 NOW!(TIME:%4)", _crashName,  str(_heliStart), str(_position), round(time)]);
+		if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {
+			diag_log(format["VIRUZCRASH: %1 started flying from %2 to %3 NOW!(TIME:%4)", _crashName,  str(_heliStart), str(_position), round(time)]);
+		};	
 
 		//Spawn the AI-Heli flying in the air
 		_startTime = time;
@@ -155,7 +160,10 @@ while {true} do {
 			//_crashwreck setHit ["mala vrtule", 1];
 			_crashwreck setdamage 0.80;
 			_crashwreck setfuel 0.25;
-			diag_log(format["VIRUZCRASH: %1 just exploded at %2!, ", _crashName, str(getPosATL _crashwreck)]);
+			
+			if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {
+				diag_log(format["VIRUZCRASH: %1 just exploded at %2!, ", _crashName, str(getPosATL _crashwreck)]);
+			};
 
 			//She cant survive this :(
 			_helipilot setdamage 1;
@@ -205,6 +213,8 @@ while {true} do {
 		};
 		
 		_endTime = time - _startTime;
-		diag_log(format["VIRUZCRASH: Crash completed! Wreck at: %2 - Runtime: %1 Seconds || Distance from calculated POC: %3 meters", round(_endTime), str(getPos _crash), round(_position distance _crash)]); 
+		if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {
+			diag_log(format["VIRUZCRASH: Crash completed! Wreck at: %2 - Runtime: %1 Seconds || Distance from calculated POC: %3 meters", round(_endTime), str(getPos _crash), round(_position distance _crash)]); 
+		};	
 	};
 };

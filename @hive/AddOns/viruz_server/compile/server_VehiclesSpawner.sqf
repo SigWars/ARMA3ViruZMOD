@@ -26,7 +26,9 @@ if (typename _vehicleForceSpawn == typename "") then {_vehicleForceSpawn = call 
 #define VEH_FORCE_SPAWN (({_x  isKindOf "AllVehicles"} count viruz_serverObjectMonitor < 40) && _vehicleForceSpawn)
 //diag_log format ["VEHICLESSPAWNER DEBUG: DebugVehicleForceSpawn = %1 : VEH_FORCE_SPAWN = %2", _vehicleForceSpawn, VEH_FORCE_SPAWN];
 
-diag_log("VEHICLESSPAWNER: Starting spawn logic for Vehicles Spawner");
+if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
+	diag_log("VEHICLESSPAWNER: Starting spawn logic for Vehicles Spawner");
+};
 
 while {true} do {
 	private["_timeAdjust","_timeToSpawn","_spawnRoll","_vehicle","_hasAdjustment","_newHeight","_adjustedPos"];
@@ -56,7 +58,9 @@ while {true} do {
 	
 	_vehicleName	= getText (configFile >> "CfgVehicles" >> _vehicleModel select 0 >> "displayName");
 
-	diag_log(format["VEHICLESSPAWNER: %1%2 chance to spawn '%3' at %4 : %5 location pos %6", round(_spawnChance * 100), '%', _vehicleName, _timeToSpawn, className _City, _spawnPosition]);
+	if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
+		diag_log(format["VEHICLESSPAWNER: %1%2 chance to spawn '%3' at %4 : %5 location pos %6", round(_spawnChance * 100), '%', _vehicleName, _timeToSpawn, className _City, _spawnPosition]);
+	};	
 
 	// Apprehensive about using one giant long sleep here given server time variances over the life of the server daemon
 	while {time < _timeToSpawn && !VEH_FORCE_SPAWN} do {
@@ -74,7 +78,9 @@ while {true} do {
 				_position = [_spawnPosition,0,_locationRadiusA,10,0,2000,0] call BIS_fnc_findSafePos;
 			};
 
-			diag_log(format["VEHICLESSPAWNER: Spawning '%1' NOW! (%2) at: %3", _vehicleName, time, str(_position)]);
+			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
+				diag_log(format["VEHICLESSPAWNER: Spawning '%1' NOW! (%2) at: %3", _vehicleName, time, str(_position)]);
+			};	
 
 			_vehicle = createVehicle [_vehicleModel select 0,_position, [], 0, "CAN_COLLIDE"];
 			// Randomize the direction the vehicle is facing
@@ -117,7 +123,9 @@ while {true} do {
 
 			//Send request
 			_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",viruZ_instance, (typeOf _vehicle), 0 , _charID, _worldspace, [], _array, _Fuel,_uid];
-			diag_log ("HIVE: WRITE: "+ str(_key));
+			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
+				diag_log ("HIVE: WRITE NEW SPAWNEWD VEHICLE: "+ str(_key));
+			};	
 			_key call server_hiveWrite;
 			
 			_vehicle setVariable ["lastUpdate",time];

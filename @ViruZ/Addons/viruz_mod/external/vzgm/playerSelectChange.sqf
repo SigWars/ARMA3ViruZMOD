@@ -9,7 +9,7 @@ _index = lbCurSel _playerListBox;
 _playerData = _playerListBox lbData _index;
 _check = 0;
 {
-	if ((Alive _x) && (!isNull _x) && {isPlayer _x} && {str(_x) == _playerData}) exitWith {_pTarget = _x;_check = 1;};
+	if ((!isNull _x) && {isPlayer _x} && {str(_x) == _playerData}) exitWith {_pTarget = _x;_check = 1;};
 } count allUnits;
 
 if (_check == 1) then {
