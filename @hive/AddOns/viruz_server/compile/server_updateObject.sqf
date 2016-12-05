@@ -206,7 +206,7 @@ _object_door = {
 _object_maintenance = {
 	private ["_key","_result"];
 	
-	_key = format["CHILD:999:UPDATE `object_data` SET `LastFix` = '%1' WHERE `ObjectUID` = '%2' or `ObjectID` = '%3' LIMIT 1:[]:",currentDate,_uid,_objectID];
+	_key = format["CHILD:999:UPDATE `object_data` SET `LastFix` = '%1', `Datestamp` = now(), last_updated = now(), `Damage` = 0 WHERE `ObjectUID` = '%2' or `ObjectID` = '%3' LIMIT 1:[]:",currentDate,_uid,_objectID];
 	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
 		diag_log format["VZ_UPDATE_OBJ_MAINTAIN: key Query: %1",_key];
 	};

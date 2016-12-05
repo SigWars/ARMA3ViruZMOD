@@ -86,28 +86,25 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 					
 					_pos = [_centerMap,0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
 					if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
-					if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
-						diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
-					};	
+					diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 				};
 				
 				
-					if (ViruzDebugMode > 2 or ViruzDebugType == "BUILD") then {
-						diag_log format["OBJ: %1 - %2", _idKey,_type];
-					};	
+					diag_log format["OBJ: %1 - %2", _idKey,_type];
 					
 					//Create it
-					_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
+					_object = createVehicle [_type, [_pos select 0, _pos select 1, (_pos select 2) + 0.7], [], 0, "CAN_COLLIDE"];
+					_object enableSimulationGlobal false;
 					_object allowDamage false;
-					_object setposATL _pos;
+					_object setposATL [_pos select 0, _pos select 1, (_pos select 2) + 0.7];
 					_object setdir _dir;
 					
-					_precise = call compile _Worldprecision;
+					/*_precise = call compile _Worldprecision;
 					if (count _precise >= 2) then {
 						if (count (_precise select 1) == 3) then {
 							_object setVectorDirAndUp _precise;
 						};
-					};
+					};*/
 					
 					_allVehicles pushBack [_object,_damage,_hitpoints];
 												
@@ -215,6 +212,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 			_damage = _x select 1;
 			_hitpoints = _x select 2;
 			
+			_object enableSimulationGlobal true;
 			_object allowDamage true;
 			_object setDamage _damage;
 			
