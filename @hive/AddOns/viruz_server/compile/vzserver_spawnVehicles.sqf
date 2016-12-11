@@ -106,7 +106,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 						};
 					};*/
 					
-					_allVehicles pushBack [_object,_damage,_hitpoints];
+					_allVehicles pushBack [_object,_damage,_hitpoints,_fuel];
 												
 					_object setVariable ["lastUpdate",time];
 					_object setVariable ["ObjectID", _idKey, true];
@@ -211,6 +211,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 			_object = _x select 0;
 			_damage = _x select 1;
 			_hitpoints = _x select 2;
+			_fuel = _x select 3;
 			
 			_object enableSimulationGlobal true;
 			_object allowDamage true;

@@ -17,11 +17,16 @@ class Chernarus {
 		{
 			//Chernarus
 			"Land_Fuel_tank_big",
+			"Land_Fuel_tank_big.p3d",
 			"Land_A_FuelStation_Feed",
+			"Land_A_FuelStation_Feed.p3d",
 			"Land_A_FuelStation_Shed",
-			
+			"Land_A_FuelStation_Shed.p3d",
+			"fuelstation_feed_f",
 			"fuelstation_feed_f.p3d",
+			"metalbarrel_f",
 			"metalbarrel_f.p3d",
+			"flexibletank_01_f",
 			"flexibletank_01_f.p3d",
 			//Tanoa
 			"fuelstation_01_pump_f.p3d",
