@@ -12,7 +12,7 @@ viruz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "ViruZ" >> "hiveVers
 _script = 				getText(missionConfigFile >> "onPauseScript");
 
 allowConnection = false;
-publicVariable "allowConnection";
+//publicVariable "allowConnection";
 
 if ((count allUnits == 0) and !isDedicated) then {
 	isSinglePlayer = true;
@@ -114,7 +114,5 @@ if (_script != "") then
 handler_spawnCrashSite = [] spawn server_spawnCrashSite; // Start spawn heli crash logic
 handler_VehiclesSpawner = [] spawn server_VehiclesSpawner; // Start spawn vehicle logic
 handler_objectSpawner = [] spawn server_objectSpawner; //Start spawn object in map
-
-
 
 allowConnection = true;

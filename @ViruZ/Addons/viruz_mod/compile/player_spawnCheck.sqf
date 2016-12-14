@@ -22,31 +22,6 @@ if (_isAir) then {
 };
 
 
-//diag_log ("Type: " +str(_type));
-
-
-//diag_log("SPAWN CHECKING: Starting");
-	//_locationstypes = ["NameCityCapital","NameCity","NameVillage"];
-	//_nearestCity = nearestLocations [getPos player, _locationstypes, _radius/2];
-	//_townname = text (_nearestCity select 0);	
-	//_nearbytype = type (_nearestCity select 0);
-/*
-switch (_nearbytype) do {
-	case "NameVillage": {
-		//_radius = 250; 
-		_maxZombies = 30;
-	};
-	case "NameCity": {
-		//_radius = 300; 
-		_maxZombies = 40;
-	};
-	case "NameCityCapital": {
-		//_radius = 400; 
-		_maxZombies = 40;
-	};
-};
-*/
-
 _players = _position nearEntities [["AllPlayers_2", "Survivor2_DZ"], _radius+200];
 viruz_maxGlobalZombies = viruz_maxLocalZombies;
 {
@@ -66,7 +41,7 @@ viruz_spawnZombies = 0;
 viruz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
 
 _nearBy = nearestObjects [_position, ["building","Maniken_Base"]+VIRUZ_LOOTHOLDER, _radius];
-_nearbyCount = count _nearby;
+_nearbyCount = count _nearBy;
 if (_nearbyCount < 1) exitwith 
 {
 	if ((viruz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
@@ -120,4 +95,4 @@ if (_nearbyCount < 1) exitwith
 			};
 		};
 	};
-} forEach _nearby;
+} forEach _nearBy;

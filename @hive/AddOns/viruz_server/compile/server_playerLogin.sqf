@@ -8,6 +8,11 @@ _playerObj = _this select 1;
 _playerName = name _playerObj;
 _worldspace = [];
 
+if (!allowConnection) exitWith {
+viruzPlayerLogin = ["canotConect"];
+(owner _playerObj) publicVariableClient "viruzPlayerLogin";
+};
+
 if (_playerName == '__SERVER__' || _playerID == '' || local player) exitWith {};
 
 if (count _this > 2) then {

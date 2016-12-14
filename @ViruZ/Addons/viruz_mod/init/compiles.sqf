@@ -1,4 +1,5 @@
-//Player only
+
+//**************************************************************** PLAYER ONLY COMPILES ************************************************
 if (!isDedicated) then {
 	_config = 	missionConfigfile >> "CfgLoot";
 	_config1 = 	configFile >> "CfgMagazines" >> "FoodEdible";
@@ -26,6 +27,7 @@ if (!isDedicated) then {
 	player_weaponFiredNear =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_weaponFiredNear.sqf";
 	player_animalCheck =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_animalCheck.sqf";
 	player_spawnCheck = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_spawnCheck.sqf";
+	ViruZClient_antiGlitch =	compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZClient_antiGlitch.sqf";
 	player_spawnZedCheck =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_spawnzedCheck.sqf";
 	building_spawnLoot =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\building_spawnLoot.sqf";
 	player_taskHint =			compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_taskHint.sqf";
@@ -255,10 +257,27 @@ if (!isDedicated) then {
 	};
 		
 	viruz_spaceInterrupt = {
-		private ["_dikCode", "_handled", "_handWeapon"];
+		private ["_dikCode", "_handled", "_handWeapon","_animation"];
 		_dikCode = 	_this select 1;
 		_handled = false;
-		if (_dikCode in (actionKeys "GetOver")) then {
+		if (_dikCode in actionKeys "GetOver" and viruz_glitchArea > 0) then {
+			/*_animation = animationState player;
+			if (_animation == "aovrpercmstpsraswrfldf") then {
+				player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
+			};*/
+			
+			hint "You are close to an enemy base.";
+			_handled = true;
+		};		
+		if (_dikCode in actionKeys "moveDown" and viruz_glitchArea > 0) then {
+			/*_animation = animationState player;
+			if (_animation == "amovppnemstpsraswrfldnon") then {
+				player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
+			};*/
+			hint "You are close to an enemy base.";
+			_handled = true;
+		};	
+		/*if (_dikCode in (actionKeys "GetOver")) then {
 			if (!r_fracture_legs and (time - viruz_lastCheckBit > 4)) then {
 				_inBuilding = [player] call fnc_isInsideBuilding;
 				_nearbyObjects = nearestObjects[getPosATL player, getArray (configFile >> "CfgObjectCheck" >> "objects"), 8];
@@ -267,7 +286,7 @@ if (!isDedicated) then {
 					call player_CombatRoll;
 				};
 			};
-		};
+		};*/
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
 		/*if (_dikCode == 210) then //SCROLL LOCK
@@ -305,14 +324,15 @@ if (!isDedicated) then {
 		};*/
 		
 		//Open Craft Menu "0"
-		if (_dikCode == 0x0B) then {
+		/*if (_dikCode == 0x0B) then {
 			if (craftOpen == 1) then {
 				craftOpen = 0;
 				closeDialog 0;
 			} else {
 				createDialog "RscDisplayCraftingMenu";
 			};
-		};
+
+		};*/
 		
 		//Home help Menu
 		if (_dikCode == 0xC7) then {
@@ -378,7 +398,7 @@ if (!isDedicated) then {
 			_handled = true;
 		};
 		
-		//Hide Command and switch melee weapon
+		//Hide Command 4 and 5
 		if (_dikCode == 0x05 or _dikCode == 0x06) then {
 			showCommandingMenu "";
 			_handled = true;
@@ -406,7 +426,7 @@ if (!isDedicated) then {
 		_handled
 	};
 	
-	player_CombatRoll = {
+	/*player_CombatRoll = {
 		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
 		if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
 			canRoll = false;
@@ -424,7 +444,7 @@ if (!isDedicated) then {
 			};
 			_handled = true;
 		};
-	};
+	};*/
 	
 	player_serverModelChange = {
 		private["_object","_model"];
@@ -563,7 +583,8 @@ private ["_container","_count","_type"];
 		};
 	}foreach _oldMags;
 };
-/************************************************************************************************************************************/
+
+
 	/*
 	viruz_meleeMagazineCheck = {
 		private["_meleeNum","_magType","_wpnType"];
@@ -586,7 +607,8 @@ private ["_container","_count","_type"];
 
 	progressLoadingScreen 0.8;
 	
-	//Both
+
+//**************************************************************** SERVER AND CLIENT COMPILES ************************************************
 	
 //	fnc_ManikenAddItems =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\fn_ManikenAddItems.sqf";
 //	maniken_gearSyncMP =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\maniken_gearSyncMP.sqf";
@@ -628,8 +650,23 @@ private ["_container","_count","_type"];
 	player_humanityChange =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_humanityChange.sqf";
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\spawn_loot.sqf";
 	player_projectileNear = 	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_projectileNear.sqf";
-	ViruZCalc_precisepos = 		compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZCalc_precisepos.sqf";
-	
+		
+	VIRUZ_getOutVehicle = {
+		private ["_dirTo","_end","_start"];
+
+		params ["_vehicle","_position","_unit"];
+
+			_start = getPosWorld _vehicle;
+			
+			_dirTo = _vehicle getDir _unit;
+			_end = _vehicle getPos [(_vehicle distance _unit) + 1, _dirTo];
+			{
+				if (_x isKindOf "Wall_F" or _x isKindOf "VIRUZ_Modules") exitWith{
+					_unit moveInAny _vehicle;
+					hint "You cannot leave vehicles near build walls!";
+				};
+			} forEach lineintersectsobjs[_start, AGLToASL _end, _unit, _vehicle, true, 2];
+	};
 	
 	viruz_preciseposcalc = {
 		private["_low", "_high"];
@@ -681,14 +718,15 @@ private ["_container","_count","_type"];
 		toString _Newarray  
 	};
 
-	//Server Only
+
+	//**************************************************************** SERVER ONLY COMPILES ************************************************
 	if (isServer) then {
 		call compile preprocessFileLineNumbers "\z\addons\viruz_server\init\server_functions.sqf";
 	} else {
 		eh_localCleanup = {};
 	};
 	
-	
+
 	//Start Dynamic Weather
 	execVM "\z\addons\viruz_mod\external\DynamicWeatherEffects.sqf";
 	initialized = true;

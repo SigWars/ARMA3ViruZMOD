@@ -8,7 +8,7 @@ private ["_distance","_direction","_high","_adjustRack","_currentDistanceDiff","
 "_best_distance_object","_best_height_object","_position", "_nearest_objects", "_closest_spot", "_closest_distance","_spot_marker","_target_object","_pos",
 "_offsetDir","_possible_targets","_current_distance_diff","_current_height_diff","_spot_position","_calculated_pos","_best_spot_position","_best_spot","_location",
 "_dir","_VecDir","_VecNormal","_novadir","_vectorOffset","_bbr","_maxSize","_offset","_isWater","_ownerTODB","_ownerUID","_objectID","_objectUID","_hasGenerator",
-"_findObject","_metros","_cansave","_AttchPosition","_positionASL","_positionATL","_worldvectorDirUp","_posicao","_posicao_calc","_posicao_final","_direcao"];
+"_findObject","_metros","_cansave","_AttchPosition","_positionASL","_positionATL","_worldvectorDirUp","_posicao","_posicao_calc","_posicao_final","_direcao","_deltime"];
 	
     VIRUZ_Build_object = _this select 0;
     VIRUZ_Build_action = _this select 1;
@@ -405,12 +405,12 @@ private ["_distance","_direction","_high","_adjustRack","_currentDistanceDiff","
 		_storageObj setVectorDirAndUp _worldvectorDirUp;
 		_storageObj setposATL _posicao_final;
 		_direcao = getDir _storageObj;
-		_deltime = serverTime + 300;
+		_deltime = time + 300;
 		
 		_storageObj setVariable ["ViruZMod",1,true];
-		_storageObj setVariable ["deleteTime ",_deltime,true];
+		_storageObj setVariable ["backRessource",_deltime,true];
 		_storageObj setVariable ["characterID",viruz_characterID,true];
-		_storageObj setVariable ["OwnerUID",	_ownerUID, true];
+		_storageObj setVariable ["OwnerUID",_ownerUID, true];
 		_storageObj setVariable ["ownerTODB",_ownerTODB, true];
 		_storageObj setVariable ["posicao_final",_posicao_final, true];
 		_storageObj setVariable ["tipoObj",VIRUZ_Build_type, true];

@@ -21,11 +21,13 @@ if ((_timeout - time) > 0) then {
 	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 };
 
-diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
-_id = [_playerID,_characterID,2] spawn viruz_recordLogin;
 //viruz_disco = viruz_disco - [_playerID];
 if (!isNull _object) then {
-//Update Vehicle
+
+	diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
+	_id = [_playerID,_characterID,2] spawn viruz_recordLogin;
+	
+	//Update Vehicle
 	{ [_x,"gear"] call server_updateObject } foreach 
 		(nearestObjects [getPosATL _object, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "ViruZHolder_base"], 10]);
 	if (alive _object) then {

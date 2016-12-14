@@ -5,14 +5,16 @@ Autor: SigWar
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 */
+private ["_ownerUid","_removeRUID","_objetodamage","_canDelete","_backRessource","_sameGroup"];
+
 _object = _this select 0;
 
 //Pega o dono do objeto
 _ownerUid = _object getVariable ["OwnerUID","0"];
 _removeRUID = getPlayerUID player;
 _objetodamage = getDammage _object;
-_canDelete = _object getVariable ["canDelete",true];
-_deleteTime = _object getVariable ["deleteTime",0];
+_canDelete = _object getVariable ["canDelete",false];
+_backRessource = _object getVariable ["backRessource",0];
 //checa o grupo
 _sameGroup = false;
 _savedGroup = profileNamespace getVariable["savedGroup",[]];
@@ -37,8 +39,7 @@ viruzUpdateVehicle = [_object,"DelObject"];
 publicVariable "viruzUpdateVehicle";
 
 
-if (serverTime < _deleteTime) then {
-	if (_objetodamage == 0) then {
+if (time < _backRessource) then {
 
 		_pos = getPosATL player;
 		_box = createVehicle ["GroundWeaponHolder", _pos, [], 0.0, "CAN_COLLIDE"];
@@ -73,6 +74,5 @@ if (serverTime < _deleteTime) then {
 			}
 			foreach _x;
 		}foreach viruz_build_array;
-	};
 };
 //deleteVehicle _object;

@@ -73,15 +73,14 @@ if (count _array > 0) then {
 };
 
 terminate viruz_musicH;
-//terminate viruz_lootCheck;
 terminate viruz_slowCheck;
 terminate viruz_animalCheck;
 terminate viruz_monitor1;
 terminate viruz_medicalH;
 terminate viruz_gui;
-//terminate viruz_zedCheck;
+terminate viruz_Totalzedscheck;
+terminate viruz_antiglitchCheck;
 //terminate viruz_locationCheck;
-//terminate viruz_combatCheck;
 terminate viruz_spawnCheck;
 
 //Reset (just in case)

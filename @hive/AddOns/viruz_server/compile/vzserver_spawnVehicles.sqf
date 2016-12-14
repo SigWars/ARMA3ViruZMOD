@@ -205,7 +205,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 				};
 		
 		} forEach _myArray;
-		sleep 20;
+		sleep 60;
 
 		{
 			_object = _x select 0;
@@ -228,6 +228,7 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 			_object setFuel _fuel;
 			_object call fnc_vehicleEventHandler;
 			
-		}forEach _allVehicles
+		}forEach _allVehicles;
 		
+		//allowConnection = true;
 		//"susenha" serverCommand "#unlock";

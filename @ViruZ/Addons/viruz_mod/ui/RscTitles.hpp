@@ -6,6 +6,24 @@ class RscTitles
 		movingEnable = 0;
 		duration = 4;
 	};
+	
+	class ServerLoad {
+		idd = -1;
+		movingEnable = "false";
+		duration = 120;
+		fadein = 0;
+		name = "ServerLoad";
+		controls[] = {"ServerLoad"};
+		
+		class ServerLoad : RscPicture {
+			x = "0.00001 * safezoneW + safezoneX";
+			y = "0.00001 * safezoneH + safezoneY";
+			w = "1 * safezoneW";
+			h = "1 * safezoneH";
+			text = "\z\addons\viruz_mod\gui\spawn\spawn_selection.paa";
+		};
+	};
+	
 	class playerKillScore 
 	{
 		idd = 6902;

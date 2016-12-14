@@ -1,8 +1,16 @@
 disableSerialization;
 
 viruzCanConnect = false;
-ViruzDebugMode = 3;			//Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High
-ViruzDebugType = "NONE";	//Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD"
+
+ViruzDebugMode = call {
+		_ViruzDebugMode = (missionConfigFile >> "cfgGame" >> "ViruzDebugMode") call BIS_fnc_getCfgData;
+		if (isNil "_ViruzDebugMode") then {0} else {_ViruzDebugMode}
+	};
+
+ViruzDebugType = call {
+		_ViruzDebugType = (missionConfigFile >> "cfgGame" >> "ViruzDebugType") call BIS_fnc_getCfgData;
+		if (isNil "_ViruzDebugType") then {"NONE"} else {_ViruzDebugType}
+	};	
 
 config_VehiclesCheck =		getArray(configFile >> "CfgObjectCheck" >> "vehicles");
 config_ObjectIgnore =		getArray(configFile >> "CfgObjectCheck" >> "ignore");
@@ -733,10 +741,11 @@ if(!isDedicated) then {
 	viruz_clientPreload = 	false;
 	viruz_panicCooldown = 	0;
 	viruz_areaAffect =		2;
-	viruz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
+	viruz_monitorPeriod = 	0.6; // number of seconds between each player_zombieCheck calls
 	viruz_heartBeat = 		false;
 	viruzClickTime =			0;
-
+	viruz_glitchArea = 		-1;
+	
 	viruz_spawnDelay = call { //Tempo de Respawn de Zumbis baseado no player
 		_viruz_spawnDelay = (missionConfigFile >> "cfgGame" >> "viruzZedspawnDelay") call BIS_fnc_getCfgData;
 		if (isNil "_viruz_spawnDelay") then {120} else {_viruz_spawnDelay}

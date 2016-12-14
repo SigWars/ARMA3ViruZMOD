@@ -11,7 +11,7 @@ item6[] = {"player_not_null",4,218,-175.000000,-50.000000,-75.000000,0.000000,0.
 item7[] = {"Prepare",2,250,-75.000000,0.000000,25.000000,50.000000,0.000000,"Prepare"};
 item8[] = {"player___player",4,218,50.000000,50.000000,150.000000,100.000000,0.000000,"player =" \n "player"};
 item9[] = {"Collect",2,250,-75.000000,100.000000,25.000000,150.000000,0.000000,"Collect"};
-item10[] = {"Single_Player",4,4314,-200.000000,100.000000,-100.000000,150.000000,3.000000,"Single" \n "Player"};
+item10[] = {"Single_Player",4,218,-200.000000,100.000000,-100.000000,150.000000,3.000000,"Single" \n "Player"};
 item11[] = {"Make_PlayerID",2,250,-200.000000,175.000000,-100.000000,225.000000,0.000000,"Make PlayerID"};
 item12[] = {"Has_PlayerID",4,218,-75.000000,175.000000,25.000000,225.000000,1.000000,"Has PlayerID"};
 item13[] = {"no_PlayerID",4,218,50.000000,150.000000,150.000000,200.000000,2.000000,"no PlayerID"};
@@ -19,8 +19,8 @@ item14[] = {"ERROR__No_Player",2,250,175.000000,150.000000,275.000000,200.000000
 item15[] = {"Request",2,250,-75.000000,250.000000,25.000000,300.000000,0.000000,"Request"};
 item16[] = {"Response",4,218,-175.000000,300.000000,-75.000000,350.000000,0.000000,"Response"};
 item17[] = {"Parse_Login",2,250,-75.000000,350.000000,25.000000,400.000000,0.000000,"Parse Login"};
-item18[] = {"Hive_Bad",4,218,50.000000,350.000000,150.000000,400.000000,10.000000,"Hive" \n "Bad"};
-item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,350.000000,275.000000,400.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
+item18[] = {"Hive_Bad",4,218,42.449158,395.304779,142.449158,445.304779,10.000000,"Hive" \n "Bad"};
+item19[] = {"ERROR__Wrong_HIVE",2,250,167.449158,395.304779,267.449158,445.304779,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
 item20[] = {"Hive_Ok",4,218,-175.000000,400.000000,-75.000000,450.000000,0.000000,"Hive" \n "Ok"};
 item21[] = {"Phase_One",2,250,-75.000000,450.000000,25.000000,500.000000,0.000000,"Phase One"};
 item22[] = {"Response",4,218,-175.000000,500.000000,-75.000000,550.000000,0.000000,"Response"};
@@ -36,11 +36,11 @@ item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
 item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
-item39[] = {"Too_Long",4,218,300.000000,350.000000,400.000000,400.000000,0.000000,"Too" \n "Long"};
+item39[] = {"Too_Long",4,218,292.449158,395.304779,392.449158,445.304779,0.000000,"Too" \n "Long"};
 item40[] = {"Too_Long",4,218,300.000000,550.000000,400.000000,600.000000,0.000000,"Too" \n "Long"};
 item41[] = {"Too_Long",4,218,300.000000,650.000000,400.000000,700.000000,0.000000,"Too" \n "Long"};
 item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
@@ -62,7 +62,10 @@ item57[] = {"Selected",4,218,-454.342682,472.308899,-354.342682,522.308899,0.000
 item58[] = {"Process_2",2,250,-327.540283,471.796387,-227.540283,521.796387,0.000000,"Process"};
 item59[] = {"",7,210,-206.307434,495.143127,-198.307434,503.143250,0.000000,""};
 item60[] = {"",7,210,-206.307434,420.143188,-198.307434,428.143188,0.000000,""};
-item61[] = {"____FAKE____",9,32,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+item61[] = {"Server__Loading",4,218,43.543869,319.613861,143.543869,369.613861,15.000000,"Server " \n "Loading"};
+item62[] = {"ERROR__Server_is",2,250,167.342773,323.321564,267.342773,373.321564,0.000000,"ERROR:" \n "Server is Loading"};
+item63[] = {"Too_Long",4,218,288.134521,323.321533,388.134521,373.321533,0.000000,"Too" \n "Long"};
+item64[] = {"____FAKE____",9,32,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -86,53 +89,57 @@ link19[] = {16,17};
 link20[] = {17,18};
 link21[] = {17,20};
 link22[] = {17,44};
-link23[] = {18,19};
-link24[] = {19,39};
-link25[] = {20,21};
-link26[] = {21,22};
-link27[] = {22,23};
-link28[] = {23,24};
-link29[] = {23,26};
-link30[] = {24,25};
-link31[] = {25,40};
-link32[] = {26,27};
-link33[] = {27,28};
-link34[] = {27,30};
-link35[] = {28,48};
-link36[] = {29,32};
-link37[] = {30,31};
-link38[] = {31,41};
-link39[] = {32,33};
-link40[] = {33,34};
-link41[] = {34,35};
-link42[] = {35,37};
-link43[] = {37,36};
-link44[] = {38,14};
-link45[] = {39,19};
-link46[] = {40,25};
-link47[] = {41,31};
-link48[] = {42,6};
-link49[] = {43,42};
-link50[] = {44,50};
-link51[] = {45,46};
-link52[] = {47,60};
-link53[] = {48,49};
-link54[] = {49,29};
-link55[] = {50,53};
-link56[] = {51,47};
-link57[] = {52,51};
-link58[] = {52,54};
-link59[] = {53,52};
-link60[] = {54,55};
-link61[] = {55,56};
-link62[] = {56,57};
-link63[] = {57,58};
-link64[] = {58,59};
-link65[] = {59,60};
-link66[] = {60,20};
-link67[] = {46,61};
-globals[] = {0.000000,0,0,0,0,640,480,1,108,6316128,1,-539.258545,476.371277,539.258545,-364.746307,646,575,1};
-window[] = {2,-1,-1,-1,-1,683,23,1253,23,3,664};
+link23[] = {17,61};
+link24[] = {18,19};
+link25[] = {19,39};
+link26[] = {20,21};
+link27[] = {21,22};
+link28[] = {22,23};
+link29[] = {23,24};
+link30[] = {23,26};
+link31[] = {24,25};
+link32[] = {25,40};
+link33[] = {26,27};
+link34[] = {27,28};
+link35[] = {27,30};
+link36[] = {28,48};
+link37[] = {29,32};
+link38[] = {30,31};
+link39[] = {31,41};
+link40[] = {32,33};
+link41[] = {33,34};
+link42[] = {34,35};
+link43[] = {35,37};
+link44[] = {37,36};
+link45[] = {38,14};
+link46[] = {39,19};
+link47[] = {40,25};
+link48[] = {41,31};
+link49[] = {42,6};
+link50[] = {43,42};
+link51[] = {44,50};
+link52[] = {45,46};
+link53[] = {47,60};
+link54[] = {48,49};
+link55[] = {49,29};
+link56[] = {50,53};
+link57[] = {51,47};
+link58[] = {52,51};
+link59[] = {52,54};
+link60[] = {53,52};
+link61[] = {54,55};
+link62[] = {55,56};
+link63[] = {56,57};
+link64[] = {57,58};
+link65[] = {58,59};
+link66[] = {59,60};
+link67[] = {60,20};
+link68[] = {61,62};
+link69[] = {62,63};
+link70[] = {63,62};
+link71[] = {46,64};
+globals[] = {0.000000,0,0,0,0,640,480,1,111,6316128,1,-321.448364,375.382629,1449.753540,829.509277,646,575,1};
+window[] = {2,-1,-1,-1,-1,798,138,1368,138,3,664};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -451,6 +458,12 @@ class FSM
                         name = "Parse_Login";
                         itemno = 17;
                         init = /*%FSM<STATEINIT""">*/"progressLoadingScreen 0.6;" \n
+                         "" \n
+                         "_isServerLoading = false;" \n
+                         "if (count _msg < 2 ) exitWith {" \n
+                         "	_isServerLoading = true;" \n
+                         "};" \n
+                         "" \n
                          "_charID		= _msg select 0;" \n
                          "_inventory	= _msg select 1;" \n
                          "_backpack	= _msg select 2;	//	not used" \n
@@ -498,6 +511,17 @@ class FSM
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
+                                /*%FSM<LINK "Server__Loading">*/
+                                class Server__Loading
+                                {
+                                        itemno = 61;
+                                        priority = 15.000000;
+                                        to="ERROR__Server_is";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_isServerLoading"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
                                 /*%FSM<LINK "Hive_Bad">*/
                                 class Hive_Bad
                                 {
@@ -1001,6 +1025,9 @@ class FSM
                          "		sleep 8;" \n
                          "	};" \n
                          "};" \n
+                         "" \n
+                         "viruz_antiglitchCheck = [] spawn ViruZClient_antiGlitch;" \n
+                         "" \n
                          "/*" \n
                          "viruz_locationCheck = [] spawn {" \n
                          "	while {true} do {" \n
@@ -1289,11 +1316,38 @@ class FSM
                         };
                 };
                 /*%FSM</STATE>*/
+                /*%FSM<STATE "ERROR__Server_is">*/
+                class ERROR__Server_is
+                {
+                        name = "ERROR__Server_is";
+                        itemno = 62;
+                        init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
+                         "selectNoPlayer;" \n
+                         "1 cutRsc [""ServerLoad"",""BLACK OUT"",3];" \n
+                         """INLOAD"" call BIS_fnc_endMission;" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Too_Long">*/
+                                class Too_Long
+                                {
+                                        itemno = 63;
+                                        priority = 0.000000;
+                                        to="ERROR__Server_is";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
                 /*%FSM<STATE "____FAKE____">*/
                 class ____FAKE____
                 {
                         name = "____FAKE____";
-                        itemno = 61;
+                        itemno = 64;
                         init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links

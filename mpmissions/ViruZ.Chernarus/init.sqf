@@ -76,7 +76,7 @@ if (!isDedicated) then {
 	_playerMonitor = 	[] execVM "\z\addons\viruz_mod\system\player_monitor.sqf";
 	execVM "\z\addons\viruz_mod\external\vzgm\init.sqf";
 };
-
+execVM "debug\blckClient.sqf";
 waitUntil {time > 0}; 
 if (hasInterface) then {
 	[] execVM "antidupe.sqf";
