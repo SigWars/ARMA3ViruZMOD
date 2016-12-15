@@ -14,6 +14,7 @@ ViruzDebugType = call {
 
 config_VehiclesCheck =		getArray(configFile >> "CfgObjectCheck" >> "vehicles");
 config_ObjectIgnore =		getArray(configFile >> "CfgObjectCheck" >> "ignore");
+playerSpawnPositions = 		getArray(missionconfigFile >> "cfgGame" >> "SpawnPositions");
 
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";

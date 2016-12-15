@@ -584,7 +584,6 @@ private ["_container","_count","_type"];
 	}foreach _oldMags;
 };
 
-
 	/*
 	viruz_meleeMagazineCheck = {
 		private["_meleeNum","_magType","_wpnType"];

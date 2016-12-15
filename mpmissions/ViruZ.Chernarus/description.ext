@@ -1,6 +1,6 @@
 ﻿respawn = "BASE";
 respawndelay = 5;
-respawnButton = 0;
+respawnButton = 1;
 onLoadMission= "www.viruzmod.com";
 OnLoadIntro = "De seu feedback no forum";
 author = "SigWar, Mateuus, RK";
@@ -78,6 +78,18 @@ class cfgGame {
 	ViruzDebugMode		= 3;					// Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High
 	ViruzDebugType		= "NONE";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD"
 	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
+	SpawnPositions[]	= {
+		{3469.22,2487.37,0.00170994}, // Komarovo
+		{1694.05,3833.64,0.00143433}, // Pavlovo
+		{7954.44,3260.53,0.00143862}, // Prigorodki
+		{12030.7,3656.58,0.00154591}, // Kamyshovo
+		{11227.9,6581.81,0.00144196}, // Dolina
+		{12727.8,9624.08,0.00143862}, // Lumbermill
+		{11138.6,12301,0.00201416},	  // Krasnostav
+		{4981.35,12522.2,0.00143433}, // Petrovka
+		{1998.23,7342.49,0.00152588}, // Myshkino
+		{7004.85,7742.8,0.00143433}	  // Novy Sobor
+		};
 	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
 	maxLocalZombies		= 2;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades

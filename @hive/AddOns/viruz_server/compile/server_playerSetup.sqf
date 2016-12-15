@@ -190,30 +190,22 @@ if (_randomSpot) then {
 			if (_spawnSelection == 9) then {
 				// random spawn location selected, lets get the marker and spawn in somewhere
 				//_mkr = "spawn" + str(ceil(random 5));
-				_mkr = [getMarkerPos "spawn1",getMarkerPos "spawn2",getMarkerPos "spawn3",getMarkerPos "spawn4",getMarkerPos "spawn5"] call BIS_fnc_selectRandom;
+				//_mkr = [getMarkerPos "spawn1",getMarkerPos "spawn2",getMarkerPos "spawn3",getMarkerPos "spawn4",getMarkerPos "spawn5"] call BIS_fnc_selectRandom;
+				_mkr = (playerSpawnPositions call BIS_fnc_selectRandom);
 			} else {
 				// spawn is not random, lets spawn in our location that was selected
 				_mkr = "spawn" + str(_spawnSelection);
 				_mkr = getMarkerPos _mkr;
 			};
-			_position = ([_mkr,0,600,10,0,5000,0] call BIS_fnc_findSafePos);
-			_isNear = count (_position nearEntities ["Man",100]) == 0;
+			_position = ([_mkr,0,1000,3,0,-1,0] call BIS_fnc_findSafePos);
+			//_isNear = count (_position nearEntities ["Man",100]) == 0;
 			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
-		//Island Check		//TeeChange
-			_pos 		= _position;
-			_isIsland	= false;		//Can be set to true during the Check
-			for [{_w=0},{_w<=150},{_w=_w+2}] do {
-				_pos = [(_pos select 0),((_pos select 1) + _w),(_pos select 2)];
-				if(surfaceisWater _pos) exitWith {
-					_isIsland = true;
-				};
-			};
 			
-			if ((_isNear and !_isZero) || _isIsland) then {_findSpot = false};
+			if (!_isZero) then {_findSpot = false};
 			_counter = _counter + 1;
 		};
 	};
-	_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
+	
 	_position = [_position select 0,_position select 1,0];
 	if (!_isZero) then {
 		//_playerObj setPosATL _position;

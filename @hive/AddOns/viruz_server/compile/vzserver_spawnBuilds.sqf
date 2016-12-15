@@ -102,6 +102,7 @@ _Structures = [];
 					_object setVariable ["lastUpdate",time];
 					_object setVariable ["ObjectID", _idKey, true];
 					_object setVariable ["CharacterID", _ownerID, true];
+					_object setVariable ["canDelete",true, true];
 					
 					clearWeaponCargoGlobal  _object;
 					clearMagazineCargoGlobal  _object;
