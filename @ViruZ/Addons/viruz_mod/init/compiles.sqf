@@ -406,8 +406,21 @@ if (!isDedicated) then {
 		
 		//Autorun
 		if (_dikCode == 0xD2) then {
-			if (vzautoRun > 0 and !(surfaceisWater position player)) then {r_interrupt = false; vzautoRun = -1; player switchmove ""; player selectWeapon viruz_Holster;} else {vzautoRun = 1; []spawn vz_playerAutorun;};
-			_handled = true;
+			if (viruz_glitchArea < 1) then
+			{
+				if (vzautoRun > 0 and !(surfaceisWater position player)) then 
+				{
+					r_interrupt = false; 
+					vzautoRun = -1; 
+					player switchmove ""; 
+					player selectWeapon viruz_Holster; 
+				}
+				else
+				{
+					vzautoRun = 1; []spawn vz_playerAutorun;
+				};
+				_handled = true;
+			};
 		};
 		//VZgroup
 		if (_dikCode == 0xDB) then {
