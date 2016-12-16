@@ -673,9 +673,11 @@ private ["_container","_count","_type"];
 			_dirTo = _vehicle getDir player;
 			_end = _vehicle getPos [(_vehicle distance player) + 1, _dirTo];
 			{
-				if (_x isKindOf "Wall_F" or _x isKindOf "VIRUZ_Door") exitWith{
-					player moveInAny _vehicle;
-					hint "You cannot leave vehicles near build walls!";
+				if (viruz_glitchArea > 0 ) then {
+					//if (_x isKindOf "Wall_F" or _x isKindOf "VIRUZ_Modules") exitWith{
+						player moveInAny _vehicle;
+						hint "You cannot leave vehicles near build walls!";
+					//};
 				};
 			} forEach lineintersectsobjs[_start, AGLToASL _end, player, _vehicle, true, 2];
 		};
