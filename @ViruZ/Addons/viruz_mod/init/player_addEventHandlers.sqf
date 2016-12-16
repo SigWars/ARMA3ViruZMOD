@@ -1,7 +1,9 @@
 /*
-	Author: SteelRat ( ProjectTeam )
+	Author: SigWar
+	Add player eventHandles called by playerMonitor on process login
 */
-
+private ["_ehglitch"];
+_ehglitch = player addEventHandler ["GetOutMan",{ _this call VIRUZ_getOutVehicle; } ];
 /*
 player addEventHandler ["take", 
 	{

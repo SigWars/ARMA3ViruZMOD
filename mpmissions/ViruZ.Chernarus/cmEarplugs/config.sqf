@@ -46,14 +46,14 @@ cmManReturnSound = {1 fadeSound 1;};
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CHOOSE YOUR INSERT MESSAGE:
 cmManMuteMessage = {
-hint "You have inserted your earplugs.";
+//hint "You have inserted your earplugs.";
 systemchat "You have inserted your earplugs.";
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CHOOSE YOUR REMOVE MESSAGE:
 cmManReturnSoundMsg = {
-hint "You have removed your earplugs.";
+//hint "You have removed your earplugs.";
 systemchat "You have removed your earplugs.";
 };
 
@@ -81,14 +81,14 @@ cmReturnSound = {10 fadeSound 1;};
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CHOOSE YOUR AUTO-INSERT MESSAGE
 cmMuteMessage = {
-hint "Earplugs have been auto-inserted...";
+//hint "Earplugs have been auto-inserted...";
 systemchat "Earplugs have been auto-inserted...";
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CHOOSE YOUR AUTO-REMOVE MESSAGE
 cmReturnSoundMsg = {
-hint "Earplugs have been auto-removed.";
+//hint "Earplugs have been auto-removed.";
 systemchat "Earplugs have been auto-removed.";
 };
 

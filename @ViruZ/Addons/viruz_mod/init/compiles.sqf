@@ -666,18 +666,19 @@ private ["_container","_count","_type"];
 	VIRUZ_getOutVehicle = {
 		private ["_dirTo","_end","_start"];
 
-		params ["_vehicle","_position","_unit"];
-
+		params ["_unit","_position","_vehicle"];
+		if (_unit == player) then {
 			_start = getPosWorld _vehicle;
-			
-			_dirTo = _vehicle getDir _unit;
-			_end = _vehicle getPos [(_vehicle distance _unit) + 1, _dirTo];
+
+			_dirTo = _vehicle getDir player;
+			_end = _vehicle getPos [(_vehicle distance player) + 1, _dirTo];
 			{
-				if (_x isKindOf "Wall_F" or _x isKindOf "VIRUZ_Modules") exitWith{
-					_unit moveInAny _vehicle;
+				if (_x isKindOf "Wall_F" or _x isKindOf "VIRUZ_Door") exitWith{
+					player moveInAny _vehicle;
 					hint "You cannot leave vehicles near build walls!";
 				};
-			} forEach lineintersectsobjs[_start, AGLToASL _end, _unit, _vehicle, true, 2];
+			} forEach lineintersectsobjs[_start, AGLToASL _end, player, _vehicle, true, 2];
+		};
 	};
 	
 	viruz_preciseposcalc = {
