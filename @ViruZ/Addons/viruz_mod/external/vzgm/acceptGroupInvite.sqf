@@ -19,7 +19,6 @@ _groupExists = false;
 
 if (_groupExists) then {
 	[player] join (group _inviter);
-	viruz_glitchArea -1;
 	systemChat "You have accepted the invite. Press left windows key to toggle group name tags";
 } else {
 	systemChat "The group no longer exists";    

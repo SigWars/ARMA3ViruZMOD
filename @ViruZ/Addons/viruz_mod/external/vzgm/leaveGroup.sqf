@@ -8,5 +8,4 @@ _saveGroup = player getVariable["savedGroup",[]];
 player setVariable["purgeGroup",_saveGroup,true];
 
 [player] join grpNull;
-viruz_glitchArea = -1;
 systemChat "You have left the group";

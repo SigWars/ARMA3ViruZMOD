@@ -70,14 +70,14 @@ Checks nearby builds and disable glitch movements if not owner or not in group o
 			};
 	
 			//Activate if not owner or in same group
-			if ( !_sameGroup && (_mover != _ownerUid) ) then {
+			if ( !_sameGroup && (viruz_glitchArea < 1) && (_mover != _ownerUid) ) then {
 					viruz_glitchArea = 1;
 					(findDisplay 46) displayRemoveEventHandler ["KeyDown", babe_core_keyhandlerDown];
 					(findDisplay 46) displayRemoveEventHandler ["KeyUp", babe_core_keyhandlerUp];
 					//hint "ANTI GLITCH ENABLED";
 			};
 			
-			//check if in group and hailite area again
+			//check if in group and habilite area again
 			if (_sameGroup && viruz_glitchArea > 0) then {
 				viruz_glitchArea = -1;
 				babe_core_keyhandlerDown = (findDisplay 46) displayaddEventHandler ["KeyDown", "_test = [_this, 'KeyDown'] call babe_core_fnc_keys; if _test then {true}"];
