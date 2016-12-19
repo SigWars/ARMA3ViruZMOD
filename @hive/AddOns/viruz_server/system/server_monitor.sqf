@@ -116,3 +116,4 @@ handler_VehiclesSpawner = [] spawn server_VehiclesSpawner; // Start spawn vehicl
 handler_objectSpawner = [] spawn server_objectSpawner; //Start spawn object in map
 
 allowConnection = true;
+[] spawn server_autorestart;

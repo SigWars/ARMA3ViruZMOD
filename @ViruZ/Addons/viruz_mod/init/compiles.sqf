@@ -556,47 +556,94 @@ if (!isDedicated) then {
 		//cutText ["You successfully Build!", "PLAIN DOWN",2];
 };
 */
-vz_RemoveItemCargoGlobal = {
-private ["_container","_count","_type"];
-	_container = _this select 0;
-	_count = _this select 1;
-	_type = _this select 2;
+	vz_RemoveItemCargoGlobal = {
+		private ["_container","_count","_type"];
+			_container = _this select 0;
+			_count = _this select 1;
+			_type = _this select 2;
 
 
-	_originalOldItems = itemCargo _container;
-	_oldItems = + _originalOldItems;
+			_originalOldItems = itemCargo _container;
+			_oldItems = + _originalOldItems;
 
-	clearItemCargoGlobal _container;
+			clearItemCargoGlobal _container;
 
-	{
-		if (_x == _type and _count > 0) then {
-		_count = _count - 1;
-		} else {
-			_container addItemCargoGlobal [_x, 1];
+			{
+				if (_x == _type and _count > 0) then {
+				_count = _count - 1;
+				} else {
+					_container addItemCargoGlobal [_x, 1];
+				};
+			}foreach _oldItems;
+	};
+
+	vz_RemoveMagazineCargoGlobal = {
+		private ["_container","_count","_type"];
+		_container = _this select 0;
+		_count = _this select 1;
+		_type = _this select 2;
+
+		_originalOldMags = magazineCargo _container;
+		_oldMags = + _originalOldMags;
+
+		clearMagazineCargoGlobal  _container;
+
+		{
+			if (_x == _type and _count > 0) then {
+			_count = _count - 1;
+			} else {
+				_container addMagazineCargoGlobal [_x, 1];
+			};
+		}foreach _oldMags;
+	};
+
+	//client
+	VIRUZ_Client_fnc_spawnDynamicText = {
+		if (isNil 'VIRUZ_DynamicText_inProgress') then
+		{
+			VIRUZ_DynamicText_inProgress = true;
+			_this spawn
+			{
+				[
+					_this,
+					0,
+					safeZoneY,
+					5,
+					1.5,
+					0,
+					24358
+				] call BIS_fnc_dynamicText;
+				VIRUZ_DynamicText_inProgress = nil;
+			};
 		};
-	}foreach _oldItems;
-};
+	};
+	
+	VIRUZ_Client_fnc_spawnTextTiles = {
+		if (isNil 'VIRUZ_Client_TextTiles_inProgress') then
+		{
+			VIRUZ_Client_TextTiles_inProgress = true;
+			_this spawn
+			{
+				[
+					parseText _this,
+					[
+						0,
+						safeZoneY,
+						1,
+						1
+					],
+					[10,10],
+					7,
+					1.5,
+					0
+				] call BIS_fnc_textTiles;
+				VIRUZ_Client_TextTiles_inProgress = nil;
+			};
+		}
+	};
 
-vz_RemoveMagazineCargoGlobal = {
-private ["_container","_count","_type"];
-	_container = _this select 0;
-	_count = _this select 1;
-	_type = _this select 2;
-
-	_originalOldMags = magazineCargo _container;
-	_oldMags = + _originalOldMags;
-
-	clearMagazineCargoGlobal  _container;
-
-	{
-		if (_x == _type and _count > 0) then {
-		_count = _count - 1;
-		} else {
-			_container addMagazineCargoGlobal [_x, 1];
-		};
-	}foreach _oldMags;
-};
-
+	VIRUZ_Client_fnc_hintSilent = compileFinal "hintSilent parsetext format['%1',_this];";
+	
 	/*
 	viruz_meleeMagazineCheck = {
 		private["_meleeNum","_magType","_wpnType"];

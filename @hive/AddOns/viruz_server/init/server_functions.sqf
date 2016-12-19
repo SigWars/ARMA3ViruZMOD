@@ -13,6 +13,7 @@ BIS_MPF_remoteExecutionServer = {
 	};
 };
 */
+viruz_NotificationTips = getArray(ConfigFile >> "viruzConfigs" >> "NotificationTips");
 BIS_Effects_Burn =						{};
 server_playerLogin =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_playerLogin.sqf";
 server_playerSetup =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_playerSetup.sqf";
@@ -35,6 +36,7 @@ server_WreckSpawner  =					compile preprocessFileLineNumbers "\z\addons\viruz_se
 PTm_fnc_modulePoster =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_modulePoster.sqf";
 server_StartSpawnBulds = 				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnBuilds.sqf";
 server_StartSpawnVehicles =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnVehicles.sqf";
+server_autorestart = 					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_autorestart.sqf";
 //PTm_fnc_windowsAreBroke =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_windowsAreBroke.sqf";
 //server_manikenSync =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_manikenSync.sqf";
 
@@ -286,6 +288,74 @@ VZ_func_subDate	= {
 
 		_daysTotal 
  
+};
+
+VIRUZ_GlobalTextBroadcast = {
+	//Based on ExileMod BroadCastMissionStatus.sqf
+	if !(params["_messageTitle","_messageInfo"]) exitWith {	diag_log format ["VIRUZ ERROR :: Calling VIRUZ_GlobalTextBroadcast with invalid parameters: %1",_this];};
+
+	_messageInfo params ["_titleColor",	"_message"];
+
+	if !(_message isEqualType "") then {_message = str _message;};
+
+	private _status =	if ((count _messageInfo)>2) then {	_messageInfo select 2 }	else { "start" };
+	{
+		switch (toLower _x) do
+		{
+			case "systemchatmessage":
+			{
+				format["%1: %2",toUpper _messageTitle,_message] remoteExecCall ["systemChat",-2];
+			};
+
+			case "standardhintmessage":
+			{
+				format
+				[
+					"<t color='%1' size='%2' font='%3'>%4</t><br/><t color='%5' size='%6' font='%7'>%8</t>",
+					_titleColor,
+					1.2,
+					"puristaMedium",
+					_messageTitle,
+					"#FFFFFF",
+					0.65,
+					"Zeppelin33",
+					_message
+				] remoteExecCall ["VIRUZ_Client_fnc_hintSilent",-2];
+			};
+
+			case "dynamictextmessage":
+			{
+				(format
+				[
+					"<t color='%1' size='%2' font='%3'>%4</t><br/><t color='%5' size='%6' font='%7'>%8</t>",
+					_titleColor,
+					1.2,
+					"puristaMedium",
+					_messageTitle,
+					"#FFFFFF",
+					0.65,
+					"Zeppelin33",
+					_message
+				]) remoteExecCall ["VIRUZ_Client_fnc_spawnDynamicText", -2];
+			};
+
+			case "texttilesmessage":
+			{
+				(format
+				[
+					"<t color='%1' size='%2' font='%3' align='center'>%4</t><br/><t color='%5' size='%6' font='%7' align='center'>%8</t>",
+					_titleColor,
+					1.2,
+					"puristaMedium",
+					_messageTitle,
+					"#FFFFFF",
+					0.65,
+					"Zeppelin33",
+					_message
+				]) remoteExecCall ["VIRUZ_Client_fnc_spawnTextTiles", -2];
+			};
+		};
+	} forEach viruz_NotificationTips;
 };
 
 currentDate = call compile ("real_date" callExtension "");
