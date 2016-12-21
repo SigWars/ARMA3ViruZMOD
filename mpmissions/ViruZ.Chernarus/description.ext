@@ -23,7 +23,7 @@ class Header
 {
  gameType = RPG;            //DM, Team, Coop, ...
  minPlayers = 1;             //min # of players the mission supports
- maxPlayers = 40;            //Max # of players the mission supports
+ maxPlayers = 50;            //Max # of players the mission supports
 };
 
 class Params
@@ -74,8 +74,8 @@ class CfgDebriefing
 
 class cfgGame {
 	
-	/// ViruZ Parametros
-	ViruzDebugMode		= 3;					// Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High
+	// ViruZ Parametros
+	ViruzDebugMode		= 0;					// Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High // Recomended 0: it will increase server fps to high 
 	ViruzDebugType		= "NONE";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD"
 	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	SpawnPositions[]	= {
@@ -94,7 +94,7 @@ class cfgGame {
 	maxLocalZombies		= 2;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
 	lootDelaytime		= 900;					// Tempo de espera para respawnar loot (segundos)
-	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi em relação e o player, (segundos)
+	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi em relação ao player, (segundos)
 	zedsRespawnDelay	= 300;					// Tempo de respawn do zumbi em relação a uma casa em especifico, Esta condição é Checada após Checar viruzZedspawnDelay, (segundos)
 	zombie_hitchance	= 8;					// Chance que o zumbi tem de acertar o player  0 = 0% / 10 = 100%
 	zombie_mindamage	= 0.8;					// Damage minim
@@ -107,6 +107,7 @@ class cfgGame {
 	
 	/************DAMAGE HANDLER MODIFIER*********
 	*	Sets damage modifier based on ammo hit	*
+	* In development, will be update in future	*
 	*********************************************/
 	viruz_pvpmod  = 800;	// Modificador dano base PvP	
 	viruz_hitmod5 = 900;	// viruz_pvpmod + viruz_hitmod5
@@ -169,7 +170,7 @@ class cfgClima {
 	
 	// Fog intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumFog
 	// (0 = no fog, 1 = pea soup). (Suggested value: 0.8).
-	maximumFog = 0.4;
+	maximumFog = 0.8;
 	
 	// Overcast intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumOvercast
 	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 0).
@@ -177,7 +178,7 @@ class cfgClima {
 	
 	// Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
 	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
-	maximumOvercast = 0.4;
+	maximumOvercast = 1;
 
 	// When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
 	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);
@@ -185,7 +186,7 @@ class cfgClima {
 	
 	// When raining, rain intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumRain
 	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0.8);
-	maximumRain = 0.8;
+	maximumRain = 1;
 	
 	// Wind vector strength never falls below this value. Must be greater or equal to 0 and less than or equal to _maximumWind.
 	// (Suggested value: 0);
@@ -206,7 +207,7 @@ class cfgClima {
 	// Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100 
 	// if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then 
 	// lower this value and vice versa. (Suggested value: 50).
-	rainIntervalRainProbability = 30;
+	rainIntervalRainProbability = 50;
 
 	// Minimum time in minutes for rain intervals. Must be greater or equal to 0 and less than or equal to _maxRainIntervalTimeMin.
 	// (Suggested value: 0).
