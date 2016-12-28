@@ -1,0 +1,221 @@
+﻿respawn = "BASE";
+respawndelay = 5;
+respawnButton = 1;
+onLoadMission= "www.viruzmod.com";
+OnLoadIntro = "De seu feedback no forum";
+author = "SigWar, Mateuus, RK";
+onLoadName = "VIRUZ MOD";
+OnLoadIntroTime = False;
+OnLoadMissionTime = False;
+disabledAI = true;
+corpseManagerMode = 0;
+wreckManagerMode = 0;
+//                    GLOBAL        SIDE LADO     COMANDO         GRUPO        VEHICLE         DIRECT          SYSTEM      
+disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{3,false,false},{4,true,true},{5,false,false},{6,false,true}};
+enableItemsDropping = 0;
+briefing = 0;
+debriefing= 1;
+joinUnassigned = 0; // By default a new player is not auto assigned a free playable slot in the mission lobby in Multiplayer. Set it to 0/false to make him auto assigned to the side with least players
+onPauseScript = "\z\addons\viruz_mod\compile\player_onPause.sqf";
+//loadScreen = "\z\addons\viruz_mod\gui\viruz_logo_ca.paa";
+
+class Header
+{
+ gameType = RPG;            //DM, Team, Coop, ...
+ minPlayers = 1;             //min # of players the mission supports
+ maxPlayers = 50;            //Max # of players the mission supports
+};
+
+class Params
+{
+	//Can be x1, x2, x5, x10 or x20
+	#define TIMEACCELERATION_DEFAULT	20
+	#include "\a3\Functions_F_MP_Mark\Params\paramTimeAcceleration.hpp"
+
+};
+
+aiKills = 1;
+diagRadio = 1;
+diagHit = 1;
+
+class CfgDebriefing
+{  
+	class END2
+	{
+		title = "I need to rest a little";
+		subtitle = "I'll continue my walk soon.";
+		description = "";
+		pictureBackground = "";
+		picture = "";//"b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class INLOAD
+	{
+		title = "Server is loading";
+		subtitle = "You will be redirected to the lobby";
+		description = "";
+		pictureBackground = "";
+		picture = "";//"b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
+/* Includes */
+#include "infiSTAR_AdminMenu.hpp"
+#include "CfgVehiclesSpawner.inc"				// Configs Spawn  de Vehiculos
+#include "CfgSpawnCrashSite.inc"				// Helicrash configs
+#include "Configs\CfgLoot\CfgBuildingLoot_Tanoa.hpp" 	// Custom Loot Chernarus
+#include "Configs\CfgCrafting\CfgCrafting.hpp" 	// Craft Recipes  //precisa adicionar na vehicles allowed do server caso não seja magazine
+#include "Configs\CfgCrafting\CfgBuild.hpp" 	// Build requeriments
+#include "Configs\CfgMap\Tanoa.hpp"			// Arvores / Metal / Pedra etc..
+#include "snap_build\points.hpp"
+
+
+
+class cfgGame {
+	
+	// ViruZ Parametros
+	ViruzDebugMode		= 0;					// Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High // Recomended 0: it will increase server fps to high 
+	ViruzDebugType		= "NONE";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD"
+	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
+	SpawnPositions[]	= {
+		{3469.22,2487.37,0.00170994}, // Komarovo
+		{1694.05,3833.64,0.00143433}, // Pavlovo
+		{7954.44,3260.53,0.00143862}, // Prigorodki
+		{12030.7,3656.58,0.00154591}, // Kamyshovo
+		{11227.9,6581.81,0.00144196}, // Dolina
+		{12727.8,9624.08,0.00143862}, // Lumbermill
+		{11138.6,12301,0.00201416},	  // Krasnostav
+		{4981.35,12522.2,0.00143433}, // Petrovka
+		{1998.23,7342.49,0.00152588}, // Myshkino
+		{7004.85,7742.8,0.00143433}	  // Novy Sobor
+		};
+	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
+	maxLocalZombies		= 2;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
+	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
+	lootDelaytime		= 900;					// Tempo de espera para respawnar loot (segundos)
+	viruzZedspawnDelay	= 300;					// Tempo de respawn do zumbi em relação ao player, (segundos)
+	zedsRespawnDelay	= 300;					// Tempo de respawn do zumbi em relação a uma casa em especifico, Esta condição é Checada após Checar viruzZedspawnDelay, (segundos)
+	zombie_hitchance	= 8;					// Chance que o zumbi tem de acertar o player  0 = 0% / 10 = 100%
+	zombie_mindamage	= 0.8;					// Damage minim
+	zombie_adddamage	= 0.9;					// Damage adicional que o zumbi pode dar	
+	maxBuildDistance 	= 50;					// Distancia maxima que podes cosntruir ao redor do gerador
+	maxBuildCount		= 120;					// Quantidade maxima de objetos que pode construir
+	maxAnimals			= 1;					// Quantidade maxima de animais que pode ser spawnado por jogador
+	viuruzStartSetDate[]= {2035, 6, 6, 7, 0};	// Data em que o server inicia, Tem relação com a claridade da lua e suas fases, Noites sem lua são extremamente escuras. (ARMA 3 - 1.60)
+	DebugVehicleLoadInventory = true;			// Habilita o debug de inventario de vehiculos ao serem carregados no server/ANTENÇAO, False - deleta o invetario dos vehiculos.
+	
+	/************DAMAGE HANDLER MODIFIER*********
+	*	Sets damage modifier based on ammo hit	*
+	* In development, will be update in future	*
+	*********************************************/
+	viruz_pvpmod  = 800;	// Modificador dano base PvP	
+	viruz_hitmod5 = 900;	// viruz_pvpmod + viruz_hitmod5
+	viruz_hitmod6 = 1300;	// viruz_pvpmod + viruz_hitmod5 + viruz_hitmod6
+	viruz_hitmod7 = 1200;	// viruz_pvpmod + viruz_hitmod5 + viruz_hitmod6 + viruz_hitmod7
+	viruz_zmbmod  = 1000;	// Modificador de dano do zumbi Random(zombie_mindamage<->zombie_adddamage)* viruz_zmbmod 
+	
+	
+	//	Player start Items
+	/*
+	[
+		["uniform class", [array items in uniform]],
+		["vest class", [array items in vest]],
+		["backpack class", [array items in backpack]],
+		"headgear class",
+		"goggles class",
+		"Binocular class",
+		["class primary weapon", [array weapon Linked Items], "Magazine"],
+		["class secondary weapon", [array weapon Linked Items], "Magazine"],
+		["class handgun weapon", [array weapon Linked Items], "Magazine"],
+		[array linked items]
+	]
+	*/
+
+	PlayerStartKit[] = {
+		{{"U_C_Citizen_clothes1","U_C_Citizen_clothes2","U_C_Citizen_clothes3","U_B_Guerilla2_2_srv","U_B_Guerilla2_3_srv"}, {"ItemBandage"}},
+		{"V_Rangemaster_belt", {"itemCanOpener","ItemBandage","ItemPainkiller","acc_lampflashlight"}},
+		{"", {}},
+		"",
+		"",
+		"",
+		{"HandFlashlight", {}, "Battery_mag"},
+		{"", {}, ""},
+		{"", {}, ""},
+		{"ItemMap"}
+	};
+	
+};
+
+class cfgClima {
+	// Minimum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to 1 and less than or equal to 
+	// _maxWeatherChangeTimeMin. When weather changes, it is fog OR overcast that changes, not both at the same time. (Suggested value: 10).
+	minWeatherChangeTimeMin = 10;
+	
+	// Maximum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to _minWeatherChangeTimeMin.
+	// (Suggested value: 20).
+	maxWeatherChangeTimeMin = 10;
+	
+	// Minimum time in minutes that weather (fog and overcast) stays constant between weather changes. Must be less than or equal to 0 and 
+	// greater than or equal to _minWeatherChangeTimeMin. (Suggested value: 5).
+	minTimeBetweenWeatherChangesMin = 5;
+	
+	// Maximum time in minutes that weather (fog and overcast) stays unchanged between weather changes. Must be greater than or equal to 
+	// _minWeatherChangeTimeMin. (Suggested value: 10).
+	maxTimeBetweenWeatherChangesMin = 10;
+	
+	// Fog intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumFog
+	// (0 = no fog, 1 = pea soup). (Suggested value: 0).
+	minimumFog = 0;
+	
+	// Fog intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumFog
+	// (0 = no fog, 1 = pea soup). (Suggested value: 0.8).
+	maximumFog = 0.8;
+	
+	// Overcast intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumOvercast
+	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 0).
+	minimumOvercast = 0;
+	
+	// Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
+	// (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
+	maximumOvercast = 1;
+
+	// When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
+	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);
+	minimumRain = 0;
+	
+	// When raining, rain intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumRain
+	// (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0.8);
+	maximumRain = 1;
+	
+	// Wind vector strength never falls below this value. Must be greater or equal to 0 and less than or equal to _maximumWind.
+	// (Suggested value: 0);
+	minimumWind = 0;
+	
+	// Wind vector strength never exceeds this value. Must be greater or equal to 0 and greater than or equal to _minimumWind.
+	// (Suggested value: 8).
+	maximumWind = 8;
+
+	// Probability in percent for wind to change when weather changes. If set to 0 then wind will never change. If set to 100 then rain will 
+	// change every time the weather (fog or overcast) start to change. (Suggested value: 25);
+	windChangeProbability = 25;
+
+	// A "rain interval" is defined as "a time interval during which it may rain in any intensity (or it may not rain at all)". When overcast 
+	// goes above 0.75, a chain of rain intervals (defined below) is started. It cycles on until overcast falls below 0.75. At overcast 
+	// below 0.75 rain intervals never execute (thus it cannot rain).
+
+	// Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100 
+	// if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then 
+	// lower this value and vice versa. (Suggested value: 50).
+	rainIntervalRainProbability = 50;
+
+	// Minimum time in minutes for rain intervals. Must be greater or equal to 0 and less than or equal to _maxRainIntervalTimeMin.
+	// (Suggested value: 0).
+	minRainIntervalTimeMin = 0;
+
+	// If set to true, then the rain is forced to stop after one rain interval during which it has rained (use this for example if you only want 
+	// small occational cloudbursts ). If set to false, then the rain may stop, but it may also just change intensity for an 
+	// immedeate new rain interval. (Suggested value: false).
+	forceRainToStopAfterOneRainInterval = false;
+
+};
