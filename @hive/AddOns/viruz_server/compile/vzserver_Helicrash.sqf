@@ -25,6 +25,8 @@ switch (_mapaatual) do {
 	case "Esseker": { _spawnRadius = 6000; };
 	case "Altis": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
 	case "Chernarus": { _spawnRadius = 7000; };
+	case "Tanoa": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "xcam_taunus": { _spawnRadius = 10000; };
 	
 	};
 

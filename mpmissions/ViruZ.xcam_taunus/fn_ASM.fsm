@@ -1,0 +1,154 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, ASM">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"wait",2,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"wait"};
+item1[] = {"frequence",4,218,50.000000,-350.000000,150.000000,-300.000000,0.000000,"frequence"};
+item2[] = {"init",0,4346,-75.000000,-500.000000,25.000000,-450.000000,0.000000,"init"};
+item3[] = {"first",4,218,-75.000000,-425.000000,25.000000,-375.000000,0.000000,"first"};
+item4[] = {"units",4,218,-75.000000,-275.000000,25.000000,-225.000000,1.000000,"units"};
+item5[] = {"mission",4,218,-200.000000,-350.000000,-100.000000,-300.000000,2.000000,"mission"};
+item6[] = {"finit",1,250,-75.000000,-650.000000,25.000000,-600.000000,0.000000,"finit"};
+item7[] = {"already",4,218,-75.000000,-575.000000,25.000000,-525.000000,1.000000,"already"};
+link0[] = {0,1};
+link1[] = {0,4};
+link2[] = {0,5};
+link3[] = {1,0};
+link4[] = {2,3};
+link5[] = {2,7};
+link6[] = {3,0};
+link7[] = {4,0};
+link8[] = {5,0};
+link9[] = {7,6};
+globals[] = {25.000000,1,0,0,0,640,480,1,15,6316128,1,-214.054855,203.709671,-197.761230,-660.493469,864,957,1};
+window[] = {2,-1,-1,-1,-1,836,44,1484,44,3,881};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "ASM";
+  class States
+  {
+    /*%FSM<STATE "wait">*/
+    class wait
+    {
+      name = "wait";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/"_c = _c + 1;" \n
+       ""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "mission">*/
+        class mission
+        {
+          priority = 2.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime >= _NextMiss)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"""ASMdll"" callExtension format [""2:%1"", missionName];" \n
+           "_NextMiss 	= diag_TickTime + _INTERVAL_MISS;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "units">*/
+        class units
+        {
+          priority = 1.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime >= _NextGen)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_Players = 0;" \n
+           "_locAIs = 0;" \n
+           "{" \n
+           "	if (alive _x ) then { " \n
+           "		if (isPlayer _x) then { _Players = _Players + 1 } " \n
+           "						else {  if (local _x) then { _locAIs = _locAIs + 1 }; };" \n
+           "	};" \n
+           "} forEach allUnits;" \n
+           "" \n
+           "" \n
+           """ASMdll"" callExtension format [""1:%1:%2"", _Players, _locAIs];" \n
+           "_NextGen 	= diag_TickTime + _INTERVAL_GEN;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "frequence">*/
+        class frequence
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime >= _NextFreq)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"""ASMdll"" callExtension format [""0:%1:%2"", _c, diag_FrameNo];" \n
+           "_NextFreq = diag_TickTime +  _INTERVAL_FREQ;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"diag_log (""ASM.fsm started"");" \n
+       "" \n
+       "// variable for counting the number of condition evaluations" \n
+       "_c = 0;" \n
+       "" \n
+       "// Number of alive units impacting performance" \n
+       "_Players = 0; // impacts FPS" \n
+       "_locAIs = 0;  // impacts FCEF" \n
+       "" \n
+       "// define the minimal time interval in seconds (_INTERVAL_FEQ < _INTERVAL_GEN < _INTERVAL_MISS)" \n
+       "_INTERVAL_FREQ = 10;" \n
+       "_INTERVAL_GEN = 10;" \n
+       "_INTERVAL_MISS = 60;" \n
+       "" \n
+       "_NextFreq = diag_TickTime + 2;" \n
+       "_NextGen 	= diag_TickTime;" \n
+       "_NextMiss 	= diag_TickTime;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "already">*/
+        class already
+        {
+          priority = 1.000000;
+          to="finit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!isnil (""ASMRunning""))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "first">*/
+        class first
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isnil (""ASMRunning""))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"// register instance, occupy one MMF slot for PID" \n
+           """ASMdll"" callExtension format [""9:%1:%2"", _c, diag_FrameNo];" \n
+           "" \n
+           "ASMRunning = true;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "finit">*/
+    class finit
+    {
+      name = "finit";
+      init = /*%FSM<STATEINIT""">*/"diag_log (""ASM.fsm already started"");" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+    "finit",
+  };
+};
+/*%FSM</COMPILE>*/
