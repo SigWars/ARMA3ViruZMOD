@@ -5,20 +5,23 @@ Autor: SigWar
 This work is licensed under ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA). 
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 */
-private ["_couldFix","_findTable","_findGen","_objects","_Structures","_countCinder","_countWood","_countMetal","_WorkStation","_cindercount","_woodcount","_nailcount",
+private ["_couldFix","_findTable","_findGen","_objects","_Structures","_countCinder","_countWood","_countMetal","_buildsTomaintain","_WorkStation","_cindercount","_woodcount","_nailcount",
 "_metalcount","_arrayWood","_arrayCinder","_arrayNail","_arrayMetal"];
 
 _couldFix = true;
 
-_WorkStation = objNull;
-_generator = objNull;
+//Get Maintanance table
+/*_findTable = nearestObjects [player, ["ViruZ_WorkStand"], 5];
+if (count _findTable < 1 ) exitWith { cutText ["ERROR WHEN FIND MAINTENANCE TABLE!!", "PLAIN DOWN",2];}
+_WorkStation = _findTable select 0;*/
+_WorkStation = _this select 3;
 
-_findTable = nearestObjects [player, ["ViruZ_WorkStand"], 5];
-_WorkStation = _findTable select 0;
-_inventoryHolder = _WorkStation;
 _findGen = nearestObjects [_WorkStation, ["Land_Portable_generator_F"], 50];
+if (count  _findGen < 1) exitWith { cutText ["No generator found!!, Maintenance table need to be 50 meters from the generator", "PLAIN DOWN",2];};
 _generator = _findGen select 0;
-if (isNull _generator) exitWith { cutText ["No generator found!!, Maintenance table need to be 50 meters from the generator", "PLAIN DOWN",2]; };
+private _generatorOwner = _generator getVariable ["OwnerUID","0"];
+private _lastMaintain = _generator getVariable ["lastFix", ["Never","Never","Never"]];
+
 _objects = nearestObjects [_generator, [], 55];
 
 _Structures = [];
@@ -26,33 +29,44 @@ _Structures = [];
 	_Structures SET [count _Structures,_x select 1];
 }forEach (getArray(configFile >> "CfgConstruction" >> "Structures"));
 
-//count number of Houses
 _countCinder = [];
 _countWood = [];
 _countMetal = [];
+_buildsTomaintain = [];
 
 {
-    if (typeOf _x in Maintain_MatCinder) then {
-        _countCinder SET [count _countCinder,_objects];
+    if ((typeOf _x in _Structures) && (typeOf _x in Maintain_MatCinder)) then {
+        _countCinder SET [count _countCinder,_x];
     };
 	
-	if (typeOf _x in Maintain_MatWood) then {
-        _countWood SET [count _countWood,_objects];
+	if ((typeOf _x in _Structures) && (typeOf _x in Maintain_MatWood)) then {
+        _countWood SET [count _countWood,_x];
     };
 	
-	if (typeOf _x in Maintain_MatMetal) then {
-        _countMetal SET [count _countMetal,_objects];
+	if ((typeOf _x in _Structures) && (typeOf _x in Maintain_MatMetal)) then {
+        _countMetal SET [count _countMetal,_x];
     };
 	
+	if (typeOf _x in _Structures) then {
+        _buildsTomaintain SET [count _buildsTomaintain,_x];
+    };
 } forEach _objects;
 
-_ressNailreq = (round ( count _countWood / 3 ) min 1);
-_ressCinderreq = count _countCinder;
-_ressWooodreq = count _countWood;
-_ressMetalreq = count _countMetal;
+if (ViruzDebugMode > 2 or ViruzDebugType == "MAINTAIN") then 
+{
+	diag_log format["VZ_UPDATE_OBJ_MAINTAIN: BUILDS TOMAINTAIN: %1",_buildsTomaintain];
+	diag_log format["VZ_UPDATE_OBJ_MAINTAIN: BUILDS _countCinder: %1",_countCinder];
+	diag_log format["VZ_UPDATE_OBJ_MAINTAIN: BUILDS _countWood: %1",_countWood];
+	diag_log format["VZ_UPDATE_OBJ_MAINTAIN: BUILDS _countMetal: %1",_countMetal];
+};
+
+private _ressNailreq = round(count _countWood / 5);
+private _ressCinderreq = round(count _countCinder / 5);
+private _ressWooodreq = round(count _countWood / 5);
+private _ressMetalreq = round(count _countMetal / 4);
 
 	
-_Builds = + _countCinder + _countWood + _countMetal; 
+private _Builds = + _countCinder + _countWood + _countMetal; 
 
 		_cindercount=0;
 		_woodcount =0;
@@ -61,23 +75,23 @@ _Builds = + _countCinder + _countWood + _countMetal;
 			
 		//get Cinders in Maintain table
 		_ressCinder = "Viruz_CinderBlock";
-		_arrayCinder = MagazineCargo _inventoryHolder;
+		private _arrayCinder = MagazineCargo _WorkStation;
 		_cindercount = { _x == _ressCinder} count _arrayCinder;
 		
 		//get woods in Maintain table
-		_ressWood = "PartWoodPile";
-		_arrayWood = MagazineCargo _inventoryHolder;
+		_ressWood = "Viruz_Woodboard";
+		private _arrayWood = MagazineCargo _WorkStation;
 		_woodcount = { _x == _ressWood} count _arrayWood;
 		
 		
 		//get nails in Maintain table
 		_ressNail = "equip_nails";
-		_arrayNail = MagazineCargo _inventoryHolder;
+		private _arrayNail = MagazineCargo _WorkStation;
 		_nailcount = { _x == _ressNail} count _arrayNail;
 		
 		//get Metals in Maintain table
 		_ressMetal = "PartGeneric";
-		_arrayMetal = MagazineCargo _inventoryHolder;
+		private _arrayMetal = MagazineCargo _WorkStation;
 		_metalcount = { _x == _ressMetal} count _arrayMetal;
 				
 		//check if have all items
@@ -91,33 +105,41 @@ if (count _Builds >= 1 and _couldFix) then {
 			
 			//Remove cinders from crate
 			if (_ressCinderreq > 0) then {
-			[_inventoryHolder,_ressCinderreq,_ressCinder] call vz_RemoveMagazineCargoGlobal; //call vz_RemoveItemCargoGlobal;
+			[_WorkStation,_ressCinderreq,_ressCinder] call vz_RemoveMagazineCargoGlobal; //call vz_RemoveItemCargoGlobal;
 			};
 			
 			//Remove Woods from crate
 			if (_ressWooodreq > 0) then {
-			[_inventoryHolder,_ressWooodreq,_ressWood] call vz_RemoveMagazineCargoGlobal;
+			[_WorkStation,_ressWooodreq,_ressWood] call vz_RemoveMagazineCargoGlobal;
 			};
 			
 			//remove Nals from holder
 			if (_ressNailreq > 0) then {
-			[_inventoryHolder,_ressNailreq,_ressNail] call vz_RemoveMagazineCargoGlobal;
+			[_WorkStation,_ressNailreq,_ressNail] call vz_RemoveMagazineCargoGlobal;
 			};
 			
 			//Removes Metal from Build
 			if (_ressMetalreq > 0) then {
-			[_inventoryHolder,_ressMetalreq,_ressMetal] call vz_RemoveMagazineCargoGlobal;
+			[_WorkStation,_ressMetalreq,_ressMetal] call vz_RemoveMagazineCargoGlobal;
 			};			
 			
 			//save in database
 			{
-				if (typeOf _x in _Structures) then {
+				if (typeOf _x in _Structures) then 
+				{
 					_x setDamage 0;
 					viruzUpdateVehicle = [_x,"maintainBuild"];
 					publicVariable "viruzUpdateVehicle";
 				};
+				
+				if (typeof _x == "Land_Portable_generator_F") then 
+				{
+					_x setVariable ["lastFix", currentDate, true];
+				};
+				
+				_x setVariable ["OwnerUID", _generatorOwner, true];
 			
-			}foreach _objects;
+			}foreach _buildsTomaintain;
 		
 		
 		//Text mensage
@@ -135,12 +157,17 @@ if (count _Builds >= 1 and _couldFix) then {
 	//cutText [format["You need %1 Cinder Blocks + %2 Wooden Pile + %3 Metal Scraps + %4 Box of Nails to fix and update you builds",_ressCinderreq,_ressWooodreq,_ressMetalreq,_ressNailreq ],"PLAIN DOWN",2];
 	_titulo = "<t color='#0033FF' size = '.7'>You Need:</t><br />";
 	_cindertext = format["<t color='#FFFF00' size = '.5'>%1 Cinderblocks</t><br />",_ressCinderreq];
-	_woodtext = format["<t color='#FFFF00' size = '.5'>%1 Wood Pile</t><br />",_ressWooodreq];
+	_woodtext = format["<t color='#FFFF00' size = '.5'>%1 WoodBoard</t><br />",_ressWooodreq];
 	_metaltext = format["<t color='#FFFF00' size = '.5'>%1 Metal Scraps</t><br />",_ressMetalreq];
 	_nailtext = format["<t color='#FFFF00' size = '.5'>%1 Box of Nails</t><br />",_ressNailreq];
-	_endtext = "<t color='#0033FF' size = '.4'>for maintenance of buildings for 7 days</t><br />";
+	_endtext = "<t color='#0033FF' size = '.5'>for maintenance of buildings for 7 days</t><br />";
+	_lastMaintainText = format[(localize  "STR_VIRUZ_CODE_DATE"),_lastMaintain select 2,_lastMaintain select 1,_lastMaintain select 0];
 	
-	_finaltext = _titulo + _cindertext + _woodtext + _metaltext + _nailtext + _endtext;
+	//format["<t color='#FFFF00' size = '.5'>Last maintain made on: <br/> Day:%1 of Mounth:%2 of Year:%3 </t><br/>",_lastMaintain select 2,_lastMaintain select 1,_lastMaintain select 0];
+						
+	//_lastMaintain select [9,2],_lastMaintain select [6,2],_lastMaintain select [1,4]
+	
+	_finaltext = _titulo + _cindertext + _woodtext + _metaltext + _nailtext + _endtext + _lastMaintainText;
 	
 	[
 		_finaltext, //structured text
@@ -149,7 +176,7 @@ if (count _Builds >= 1 and _couldFix) then {
 		5, //number - duration
 		1, // number - fade in time
 		0, // number - delta y
-		0 //number - layer ID
+		0  // number - layer ID
 	] spawn bis_fnc_dynamicText;
 	
 };

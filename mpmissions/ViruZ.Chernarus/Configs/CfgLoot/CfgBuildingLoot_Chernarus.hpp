@@ -570,7 +570,7 @@ class CfgBuildingLoot {
 		itemType[] =	{
 			{"","Trash"},
 			{"","CarParts"},
-			{"","Heliparts"}
+			{"","HeliParts"}
 
 		};
 		itemChance[] =	{

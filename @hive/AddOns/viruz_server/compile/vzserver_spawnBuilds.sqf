@@ -5,7 +5,8 @@
 	Load database entryes and trow Builds in world.
 	http://www.viruzmod.com
 */
-private ["_myArray","_debugLoadInventory","_countr","_idKey","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_objectID","_OwnerUID","_Locked","_LastFix","_Worldprecision","_deletado","_deletado","_dir","_pos","_centerMap","_wsDone","_mapaatual","_object","_objWpnTypes","_objWpnQty","_isOK","_block","_classMag","_ammoCount","_selection","_dam"];
+private ["_myArray","_debugLoadInventory","_countr","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_objectID","_OwnerUID","_Locked",
+"_LastFix","_Worldprecision","_dateNow","_dateFix","_passedDays","_dir","_pos","_centerMap","_wsDone","_mapaatual","_object","_objWpnTypes","_objWpnQty","_isOK","_block","_classMag","_ammoCount","_selection","_dam"];
 
 //Array com os dados da database
 _myArray = _this select 0;
@@ -45,7 +46,6 @@ _Structures = [];
 			_Locked =		_x select 11;
 			_LastFix = 		_x select 12;
 			_Worldprecision = _x select 13;
-			_deletado = 	false;
 						
 			if (_damage < 1 and (_type in _Structures)) then {
 				
@@ -55,7 +55,10 @@ _Structures = [];
 					_dateFix = call compile _LastFix;
 					_passedDays = [_dateFix,_dateNow] call VZ_func_subDate;
 					
-					//diag_log format["OBJ: %1 DATEFIX %2 DATENOW %3 PASSEDDAYS %4", _type,_dateFix,_dateNow,_passedDays];
+					if (ViruzDebugMode > 2 or ViruzDebugType == "MAINTAIN" or ViruzDebugType == "BUILD") then 
+					{
+						diag_log format["OBJ: %1 DATEFIX %2 DATENOW %3 PASSEDDAYS %4", _type,_dateFix,_dateNow,_passedDays];
+					};	
 				};
 				
 				_dir = 0;
@@ -76,16 +79,16 @@ _Structures = [];
 					//Fix for Multimaps suport anchor By SigWar
 					//Need add "center" mark on center of the map in editor
 					_mapaatual = worldName;
-					switch (_mapaatual) do {
+					switch (toLower _mapaatual) do {
 						
 						/*default { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };*/
-						case "Stratis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };		
-						case "Bornholm": { _centerMap = getMarkerPos "center"; _nearestRadius = 10000; };
-						case "Esseker": { _centerMap = getMarkerPos "center";  _nearestRadius = 6000; };
-						case "Altis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-						case "Chernarus": { _centerMap = getMarkerPos "center";  _nearestRadius = 7000; };
-						case "Tanoa": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5;  };
-						case "xcam_taunus": { _centerMap = getMarkerPos "center";  _nearestRadius = 10000; };
+						case "stratis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };		
+						case "bornholm": { _centerMap = getMarkerPos "center"; _nearestRadius = 10000; };
+						case "esseker": { _centerMap = getMarkerPos "center";  _nearestRadius = 6000; };
+						case "altis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+						case "chernarus": { _centerMap = getMarkerPos "center";  _nearestRadius = 7000; };
+						case "tanoa": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5;  };
+						case "xcam_taunus": { _centerMap = getMarkerPos "center";  _nearestRadius = 20000; };
 					};	
 					
 					_pos = [_centerMap,0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
@@ -134,9 +137,11 @@ _Structures = [];
 										
 						//Define variables
 						if !(_ownerUID == "B" ) then {
-						_ownerUID = [_ownerUID]call VZ_fnc_substr;
-						_object setVariable ["OwnerUID", _ownerUID, true];
-						//_object setVariable ["ViruZMod", 1, true];
+							_ownerUID = [_ownerUID]call VZ_fnc_substr;
+							_object setVariable ["OwnerUID", _ownerUID, true];
+							if (_type == "Land_Portable_generator_F") then {
+								_object setVariable ["lastFix", _dateFix, true];
+							};
 						};
 						
 						//Check and Define locked builds

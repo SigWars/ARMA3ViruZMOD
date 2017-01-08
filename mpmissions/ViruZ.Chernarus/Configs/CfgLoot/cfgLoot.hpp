@@ -646,7 +646,7 @@ class CfgLoot {
 		}
 	};
 
-	Civilian_Headgear[] = {
+	Civilian_Headgears[] = {
 		{	
 			//ARMA3
 			"H_Cap_red",

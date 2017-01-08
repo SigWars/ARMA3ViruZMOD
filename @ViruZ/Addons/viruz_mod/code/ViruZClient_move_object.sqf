@@ -417,6 +417,7 @@ private ["_distance","_direction","_high","_adjustRack","_currentDistanceDiff","
 		_storageObj setVariable ["WorldSpace",[_direcao,_posicao_final], true];
 		_storageObj setVariable ["worldprecision",_posicao, true];
 		_storageObj setVariable ["canDelete",false, true];
+		_storageObj setVariable ["lastFix", currentDate, true];
 		
 		
 		if (_storageObj in VIRUZ_GATES) then {

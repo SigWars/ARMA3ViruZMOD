@@ -709,7 +709,8 @@ if (!isDedicated) then {
 	player_humanityChange =		compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_humanityChange.sqf";
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\spawn_loot.sqf";
 	player_projectileNear = 	compile preprocessFileLineNumbers "\z\addons\viruz_mod\compile\player_projectileNear.sqf";
-		
+	viruz_featchcfgDetails = 	compile preprocessFileLineNumbers "\z\addons\viruz_mod\code\ViruZ_featchcfgDetails.sqf";
+	
 	VIRUZ_getOutVehicle = {
 		private ["_dirTo","_end","_start"];
 

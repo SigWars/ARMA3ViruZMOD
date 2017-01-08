@@ -36,7 +36,7 @@ item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
 item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -64,7 +64,7 @@ item59[] = {"",7,210,-206.307434,495.143127,-198.307434,503.143250,0.000000,""};
 item60[] = {"",7,210,-206.307434,420.143188,-198.307434,428.143188,0.000000,""};
 item61[] = {"Server__Loading",4,218,43.543869,319.613861,143.543869,369.613861,15.000000,"Server " \n "Loading"};
 item62[] = {"ERROR__Server_is",2,250,167.342773,323.321564,267.342773,373.321564,0.000000,"ERROR:" \n "Server is Loading"};
-item63[] = {"Too_Long",4,218,288.134521,323.321533,388.134521,373.321533,0.000000,"Too" \n "Long"};
+item63[] = {"Too_Long",4,4314,288.134521,323.321533,388.134521,373.321533,0.000000,"Too" \n "Long"};
 item64[] = {"____FAKE____",9,32,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,1};
 link1[] = {0,5};
@@ -138,8 +138,8 @@ link68[] = {61,62};
 link69[] = {62,63};
 link70[] = {63,62};
 link71[] = {46,64};
-globals[] = {0.000000,0,0,0,0,640,480,1,111,6316128,1,-321.448364,375.382629,1449.753540,829.509277,646,575,1};
-window[] = {2,-1,-1,-1,-1,798,138,1368,138,3,664};
+globals[] = {0.000000,0,0,0,0,640,480,1,111,6316128,1,-247.019073,449.811981,531.792114,-88.452248,646,575,1};
+window[] = {2,-1,-1,-1,-1,821,161,1391,161,3,664};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1268,13 +1268,13 @@ class FSM
                          "_currentmap = worldName;" \n
                          "1 cutText ["""", ""BLACK"",0];" \n
                          "endLoadingScreen;" \n
-                         "switch (_currentmap) do {" \n
-                         "case ""Stratis"": {createDialog ""RscDisplaySpawnRandom"";};" \n
-                         "case ""Altis"": {createDialog ""RscDisplaySpawnSelecterAltis"";};" \n
-                         "case ""Bornholm"": {createDialog ""RscDisplaySpawnSelecterBorn"";};" \n
-                         "case ""Esseker"": {createDialog ""RscDisplaySpawnEsseker"";};" \n
-                         "case ""Chernarus"": {createDialog ""RscDisplaySpawnRandom"";};" \n
-                         "case ""Tanoa"": {createDialog ""RscDisplaySpawnRandom"";};" \n
+                         "switch (tolower _currentmap) do {" \n
+                         "case ""stratis"": {createDialog ""RscDisplaySpawnRandom"";};" \n
+                         "case ""altis"": {createDialog ""RscDisplaySpawnSelecterAltis"";};" \n
+                         "case ""bornholm"": {createDialog ""RscDisplaySpawnSelecterBorn"";};" \n
+                         "case ""esseker"": {createDialog ""RscDisplaySpawnEsseker"";};" \n
+                         "case ""chernarus"": {createDialog ""RscDisplaySpawnRandom"";};" \n
+                         "case ""tanoa"": {createDialog ""RscDisplaySpawnRandom"";};" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -1323,6 +1323,8 @@ class FSM
                         itemno = 62;
                         init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
                          "selectNoPlayer;" \n
+                         "" \n
+                         "_myTime = time;" \n
                          "1 cutRsc [""ServerLoad"",""BLACK OUT"",3];" \n
                          """INLOAD"" call BIS_fnc_endMission;" \n
                          ""/*%FSM</STATEINIT""">*/;

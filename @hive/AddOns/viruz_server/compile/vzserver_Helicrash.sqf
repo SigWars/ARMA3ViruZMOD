@@ -18,15 +18,15 @@ if (getNumber (missionConfigFile >> "CfgSpawnCrashSite" >> "useStatic") == 1) th
 
 
 _mapaatual = worldName;
-switch (_mapaatual) do {
+switch (tolower _mapaatual) do {
 	
-	case "Stratis": { _spawnRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "Bornholm": { _spawnRadius = 10000; };
-	case "Esseker": { _spawnRadius = 6000; };
-	case "Altis": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "Chernarus": { _spawnRadius = 7000; };
-	case "Tanoa": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "xcam_taunus": { _spawnRadius = 10000; };
+	case "stratis": { _spawnRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "bornholm": { _spawnRadius = 10000; };
+	case "esseker": { _spawnRadius = 6000; };
+	case "altis": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "chernarus": { _spawnRadius = 7000; };
+	case "tanoa": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "xcam_taunus": { _spawnRadius = 20000; };
 	
 	};
 

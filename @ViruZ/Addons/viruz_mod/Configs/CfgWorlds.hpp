@@ -26,6 +26,12 @@ class CfgWorlds {
 		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
 	};
+	class xcam_taunus : CAWorld {
+		cutscenes[] = {"Stratis_intro1"};
+		description = "ViruZ Taunus";
+		pictureMap = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
+		pictureShot = "z\addons\viruz_mod\gui\viruz_logo_ca.paa";
+	};
 	class Bornholm : CAWorld {
 		cutscenes[] = {"Stratis_intro1"};
 		description = "ViruZ Bornholm";

@@ -1,4 +1,16 @@
-//diag_log "running location check...";
+/*
+ViruZ Mod for Arma 3
+Autor: SigWar
+script called by player monitor
+check if location is active/inactive, streaming objects in area!
+can be used to spawn zombi corposes, custom objects and cosmetics
+
+uses CfgTownGenerator in viruz_zombie.pbo -- TO-DO need pass cfg to mission side
+another functions called:
+stream_locationDel.sqf
+stream_locationFill.sqf
+*/
+
 {
 	private ["_location","_distCfg","_configClass","_distAct","_config","_position"];
 	_location = 	_x select 0;

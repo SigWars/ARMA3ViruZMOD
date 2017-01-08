@@ -40,12 +40,190 @@ server_autorestart = 					compile preprocessFileLineNumbers "\z\addons\viruz_ser
 //PTm_fnc_windowsAreBroke =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_windowsAreBroke.sqf";
 //server_manikenSync =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_manikenSync.sqf";
 
-vehicle_handleInteract = {
+/****************************
+* updateObjects functions	*
+*****************************/
+
+vzserver_object_precisepos = {
+	params ["_object","_objectID","_uid"];
+	private["_object","_objectID","_uid","_isWater","_positionASL","_positionATL","_posicaoCalc","_posicao","_worldvectorDirUp","_posicao_calc","_posicao_final","_key"];
+	
+		//Calcule precise worldprecision
+		_isWater = (surfaceIsWater position _object);
+		
+		if (_isWater) then {
+			_positionASL =  getPosASL _object;
+			_positionATL = ASLtoATL _positionASL;
+			_posicao = [(_positionATL call viruz_preciseposcalc), vectordir _object, vectorup _object];
+		} else {
+			_posicao = [(getposATL _object call viruz_preciseposcalc), vectordir _object, vectorup _object];
+		};
+		_worldvectorDirUp = [_posicao select 1,_posicao select 2];
+		_posicao_calc = _posicao deleteAt 0;
+		_posicao_final = (_posicao_calc select 0) vectorAdd (_posicao_calc select 1);
+		
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log format["VZ_UPDATE_PRECISE_POSITION: _posiçao: %1",_posicao];
+		};			
+		//Save precise position in database
+		_key = format["CHILD:999:UPDATE `object_data` SET `WorldPrecision` = '%1' WHERE `ObjectID` = '%2' OR `ObjectUID` = '%3' :[]:",_posicao,_objectID,_uid];
+		
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log format["VZ_UPDATE_PRECISE_POSITION: key Query: %1",_key];
+		};	
+		_key call server_hiveWrite;
+
+};
+
+vzserver_object_position = {
+	params ["_object","_objectID","_uid"];
+	private["_object","_objectID","_uid","_position","_worldspace","_fuel","_key"];
+	_position = getPosATL _object;
+
+	_worldspace = [
+	
+		direction _object,_position
+		//round(direction _object),
+		//_position
+	];
+	
+	_fuel = 0;
+	if (_object isKindOf "AllVehicles") then {
+		_fuel = fuel _object;
+	};
+	
+	_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
+	
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log ("HIVE: WRITE: "+ str(_key));
+	};	
+	_key call server_hiveWrite;
+};
+
+vzserver_object_inventory = {
+	params ["_object","_objectID","_uid"];
+	private["_object","_objectID","_uid","_inventory","_previous","_key"];
+	_inventory = [
+		getWeaponCargo _object,
+		magazinesAmmoCargo _object,
+		getItemCargo _object,
+		getBackpackCargo _object
+	];
+	_previous = str(_object getVariable["lastInventory",[]]);
+	if (str(_inventory) != _previous) then {
+		_object setVariable["lastInventory",_inventory];
+		if (_objectID == "0") then {
+			_key = format["CHILD:309:%1:%2:",_uid,_inventory];
+		} else {
+			_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
+		};
+		if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+			diag_log ("HIVE: WRITE: "+ str(_key));
+		};
+		_key call server_hiveWrite;
+	};
+};
+
+vzserver_object_damage = {
+	params ["_object","_objectID","_uid"];
+	private["_object","_objectID","_uid","_hitpoints","_array","_hit","_selection","_key","_damage"];
+	_hitpoints = _object call vehicle_getHitpoints;
+	_damage = damage _object;
+	_array = [];
+	{
+		_hit = [_object,_x] call object_getHit;
+		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
+		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
+		_object setHit ["_selection", _hit]
+	} forEach _hitpoints;
+	
+	_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log ("HIVE: WRITE: "+ str(_key));
+	};	
+	_key call server_hiveWrite;
+	_object setVariable ["needUpdate",false,true];
+};
+
+vzserver_object_killed = {
+	params ["_object","_objectID","_uid"];
+	private["_object","_objectID","_uid","_hitpoints","_array","_hit","_selection","_key","_damage"];
+	_hitpoints = _object call vehicle_getHitpoints;
+	_damage = damage _object;
+	_array = [];
+	{
+		_hit = [_object,_x] call object_getHit;
+		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
+		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
+		_hit = 1;
+		_object setHit ["_selection", _hit]
+	} forEach _hitpoints;
+	_damage = 1;
+	
+	if (_objectID == "0") then {
+		_key = format["CHILD:306:%1:%2:%3:",_uid,_array,_damage];
+	} else {
+		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
+	};
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log ("HIVE: WRITE: "+ str(_key));
+	};	
+	_key call server_hiveWrite;
+	_object setVariable ["needUpdate",false,true];
+};
+
+vzserver_object_door = {
+	params ["_object","_objectID","_uid"];
+	private ["_object","_objectID","_uid","_lockType","_key","_result"];
+	
+	_lockType = _object getVariable ["Locked", "0"];
+		
+	_key = format["CHILD:999:UPDATE `object_data` SET `Locked` = '%1' WHERE `ObjectUID` = '%2' or `ObjectID` = '%3' :[]:",_lockType,_uid,_objectID];
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log format["VZ_UPDATE_DOOR: key Query: %1",_key];
+	};
+	_result = _key call server_hiveReadWrite;
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MONITOR") then {
+		diag_log format["VZ_UPDATE_DOOR: result: %1",_result];
+	};
+	
+	if (count _result > 2) exitWith { 
+		diag_log format["VZ_UPDATE_OBJ_MAINTAIN: RESULT FAILED!, READED TO NEEDUPDATEOBJECT: %1",_object];
+		vzserver_objecsTotupdate set [count vzserver_objecsTotupdate, [_object,"monitorBuildMaintain"]];
+	};
+};
+
+vzserver_object_maintenance = {
+	params ["_object","_objectID","_uid"];
+	private ["_object","_objectID","_uid","_OwnerTODB","_key","_result"];
+	_OwnerTODB = "B"+(_object getVariable ["OwnerUID","0"]);
+	
+	_key = format["CHILD:999:UPDATE `object_data` SET `Datestamp` = now(), `Damage` = 0, `OwnerUID` = '%1', `LastFix` = '%2' WHERE `ObjectUID` = '%3' or `ObjectID` = '%4' :[]:",_OwnerTODB,currentDate,_uid,_objectID];
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MAINTAIN") then {
+		diag_log format["VZ_UPDATE_OBJ_MAINTAIN: key Query: %1",_key];
+	};
+	
+	_result = _key call server_hiveReadWrite;
+	if (ViruzDebugMode > 2 or ViruzDebugType == "MAINTAIN") then {
+		diag_log format["VZ_UPDATE_OBJ_MAINTAIN: result: %1",_result];
+	};
+	
+	if (count _result > 2) exitWith { 
+		diag_log format["VZ_UPDATE_OBJ_MAINTAIN: RESULT FAILED!, READED TO NEEDUPDATEOBJECT: %1",_object];
+		vzserver_objecsTotupdate set [count vzserver_objecsTotupdate, [_object,"monitorBuildMaintain"]];
+	};
+};
+
+/******************************
+* updateObjects functions end *
+*******************************/
+
+/*vehicle_handleInteract = {
 	private["_object"];
 	_object = _this select 0;
 	needUpdate_objects = needUpdate_objects - [_object];
 	[_object, "all"] call server_updateObject;
-};
+};*/
 
 vehicle_handleServerKilled = {
 	private["_unit","_killer"];

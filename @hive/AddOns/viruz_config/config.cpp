@@ -9,20 +9,22 @@ class CfgPatches {
 
 class viruzConfigs {
 	//server restart params
-	EnableAutorestart = 0;							// Enable or disable autorestart function					
-	RconPassword = "27091995";						// Rcon password, nned be the same of "serverCommandPassword" in config.cfg
-	ServerDuration = (3 * 60 * 60); 				// Server restart time 3 * 60 * 60 = 3H restart
-	DebugServerDuration = (20 * 60);				// isDebug = 1; Debug message to see time until restart and check if messages work!
-	isDebug = 0;									// Enable debug mode
-	UseBatfile = 0;									// In development
-	NotificationTips[] =  							// Can use all, or oly one
+	EnableAutorestart = 1;
+	RconPassword = "27091995";
+	ServerDuration = (4200); //(3 * 60 * 60);
+	DebugServerDuration = (1 * 60); //20 * 60
+	isDebug = 0;
+	UseBatfile = 0;									// in development
+	NotificationTips[] =  							// Can use all, or only one
 	{
+		"standardhintmessage",
 		"systemchatmessage",
-		//"standardhintmessage",
-		//"dynamictextmessage",
+		"standardhintmessage",
+		"dynamictextmessage",
 		"texttilesmessage"
 	};	
 };
+
 
 #include "CfgObjectSpawner.hpp"
 #include "CfgObjectInBuildingSpawner.hpp"

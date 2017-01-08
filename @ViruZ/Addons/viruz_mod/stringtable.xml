@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="ViruZ">
 	<Package name="code">
+		<Key ID="STR_VIRUZ_CODE_DATE">
+			<Portuguese>&lt;t color='#ff0000' size = '.5'&gt; Ultima Manutenção feita em: %1/%2/%3 &lt;/t&gt;</Portuguese>
+			<English>&lt;t color='#ff0000' size = '.5'&gt; Last Maintain made on: %2/%1/%3 &lt;/t&gt;</English>
+			<German>&lt;t color='#ff0000' size = '.5'&gt; Letzte Wartung erfolgen in: %1/%2/%3 &lt;/t&gt;</German>
+			<Russian>&lt;t color='#ff0000' size = '.5'&gt; Последнее техническое обслуживание сделано: %1/%2/%3 &lt;/t&gt;</Russian>
+			<Spanish>&lt;t color='#ff0000' size = '.5'&gt; Última Mantenimiento realiza en: %1/%2/%3 &lt;/t&gt;</Spanish>
+			<French>&lt;t color='#ff0000' size = '.5'&gt; Dernier entretien effectué dans: %1/%2/%3 &lt;/t&gt;</French>
+			<Czech>&lt;t color='#ff0000' size = '.5'&gt; Poslední údržba provádí: %1/%2/%3 &lt;/t&gt;</Czech>
+		</Key>
 		<Key ID="STR_VIRUZ_CODE_1">	
 			<Original>Take %1</Original>
 			<English>Take %1</English> 

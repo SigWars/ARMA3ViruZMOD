@@ -56,7 +56,7 @@ if (_nearbyCount < 1) exitwith
 	_dis = _x distance player;
 	
 	//Loot
-	if ((_dis < 120) and (_dis > 5) and _canLoot and !_inVehicle) then {
+	if ((_dis < 120) and (_dis > 0) and _canLoot and !_inVehicle) then {
 		_nearPlayer = (position _x) nearEntities [["Survivor2_DZ"],((sizeOf _type)+1)];
 		_looted = _x getVariable ["looted",0];
 		_cleared = _x getVariable ["cleared",true];

@@ -76,7 +76,7 @@ class cfgGame {
 	
 	// ViruZ Parametros
 	ViruzDebugMode		= 0;					// Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High // Recomended 0: it will increase server fps to high 
-	ViruzDebugType		= "NONE";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD"
+	ViruzDebugType		= "NONE";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD" "MAINTAIN"
 	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	SpawnPositions[]	= {
 		{3469.22,2487.37,0.00170994}, // Komarovo
@@ -90,7 +90,7 @@ class cfgGame {
 		{1998.23,7342.49,0.00152588}, // Myshkino
 		{7004.85,7742.8,0.00143433}	  // Novy Sobor
 		};
-	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
+	maxZeds				= 400;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
 	maxLocalZombies		= 2;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
 	lootDelaytime		= 900;					// Tempo de espera para respawnar loot (segundos)

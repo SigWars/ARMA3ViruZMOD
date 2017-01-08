@@ -74,16 +74,16 @@ _VZvehicles = + _Civilian + _Military + _Ships;
 					//Fix for Multimaps suport anchor By SigWar
 					//Need add "center" mark on center of the map in editor
 					_mapaatual = worldName;
-					switch (_mapaatual) do {
+					switch (tolower _mapaatual) do {
 						
 						/*default { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };*/
-						case "Stratis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };		
-						case "Bornholm": { _centerMap = getMarkerPos "center"; _nearestRadius = 10000; };
-						case "Esseker": { _centerMap = getMarkerPos "center";  _nearestRadius = 6000; };
-						case "Altis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-						case "Chernarus": { _centerMap = getMarkerPos "center";  _nearestRadius = 7000; };
-						case "Tanoa": {  _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-						case "xcam_taunus": { _centerMap = getMarkerPos "center";  _nearestRadius = 10000; };
+						case "stratis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };		
+						case "bornholm": { _centerMap = getMarkerPos "center"; _nearestRadius = 10000; };
+						case "esseker": { _centerMap = getMarkerPos "center";  _nearestRadius = 6000; };
+						case "altis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+						case "chernarus": { _centerMap = getMarkerPos "center";  _nearestRadius = 7000; };
+						case "tanoa": {  _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+						case "xcam_taunus": { _centerMap = getMarkerPos "center";  _nearestRadius = 20000; };
 					};	
 					
 					_pos = [_centerMap,0,4000,10,0,2000,0] call BIS_fnc_findSafePos;

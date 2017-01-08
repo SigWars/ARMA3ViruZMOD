@@ -45,7 +45,7 @@ switch (_tipo) do {
 		
 		if (count _result > 2) exitWith { 
 			diag_log format["VZ_PUBLISH_OBJ: RESULT FAILED!, READED TO NEEDUPDATEOBJECT: %1",_object];
-			needUpdate_objects set [count needUpdate_objects, [_object,"monitorPublishBuild"]];
+			vzserver_objecsTotupdate set [count vzserver_objecsTotupdate, [_object,"monitorPublishBuild"]];
 		};
 		
 		//_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];

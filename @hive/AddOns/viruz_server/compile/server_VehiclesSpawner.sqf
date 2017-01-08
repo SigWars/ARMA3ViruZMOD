@@ -7,16 +7,16 @@ _spawnChance	= getNumber (missionConfigFile >> "CfgVehiclesSpawner" >> "spawnCha
 //Fix for Multimaps suport anchor By SigWar
 //Need add "center" mark on center of the map in editor
 _mapaatual = worldName;
-switch (_mapaatual) do {
+switch (tolower _mapaatual) do {
 	
-	case "Stratis": { _spawnMarker	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "Bornholm": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 10000; };
-	case "Esseker": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 6000; };
-	case "Altis": { _spawnMarker = getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "Chernarus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 7000; };
-	case "Tanoa": {  _spawnMarker	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "stratis": { _spawnMarker	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "bornholm": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 10000; };
+	case "esseker": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 6000; };
+	case "altis": { _spawnMarker = getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "chernarus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 7000; };
+	case "tanoa": {  _spawnMarker	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
 	//Não tenho certeza se esse mapa tem cfgWord
-	case "xcam_taunus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 10000; };
+	case "xcam_taunus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 20000; };
 	};
 
 _nearestCity 	= nearestLocations [_spawnMarker, ["NameCityCapital","NameCity","NameVillage","NameLocal","NameMarine"],_nearestRadius];
