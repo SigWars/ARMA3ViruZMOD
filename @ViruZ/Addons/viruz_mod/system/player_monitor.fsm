@@ -63,9 +63,8 @@ item58[] = {"Process_2",2,250,-327.540283,471.796387,-227.540283,521.796387,0.00
 item59[] = {"",7,210,-206.307434,495.143127,-198.307434,503.143250,0.000000,""};
 item60[] = {"",7,210,-206.307434,420.143188,-198.307434,428.143188,0.000000,""};
 item61[] = {"Server__Loading",4,218,43.543869,319.613861,143.543869,369.613861,15.000000,"Server " \n "Loading"};
-item62[] = {"ERROR__Server_is",2,250,167.342773,323.321564,267.342773,373.321564,0.000000,"ERROR:" \n "Server is Loading"};
-item63[] = {"Too_Long",4,4314,288.134521,323.321533,388.134521,373.321533,0.000000,"Too" \n "Long"};
-item64[] = {"____FAKE____",9,32,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+item62[] = {"ERROR__Server_is",2,4346,167.342773,323.321564,267.342773,373.321564,0.000000,"ERROR:" \n "Server is Loading"};
+item63[] = {"____FAKE____",9,32,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -135,11 +134,9 @@ link65[] = {58,59};
 link66[] = {59,60};
 link67[] = {60,20};
 link68[] = {61,62};
-link69[] = {62,63};
-link70[] = {63,62};
-link71[] = {46,64};
-globals[] = {0.000000,0,0,0,0,640,480,1,111,6316128,1,-247.019073,449.811981,531.792114,-88.452248,646,575,1};
-window[] = {2,-1,-1,-1,-1,821,161,1391,161,3,664};
+link69[] = {46,63};
+globals[] = {0.000000,0,0,0,0,640,480,1,111,6316128,1,-267.514099,429.316956,531.792114,-88.452248,646,575,1};
+window[] = {2,-1,-1,-32000,-32000,798,138,1368,138,3,664};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1275,6 +1272,8 @@ class FSM
                          "case ""esseker"": {createDialog ""RscDisplaySpawnEsseker"";};" \n
                          "case ""chernarus"": {createDialog ""RscDisplaySpawnRandom"";};" \n
                          "case ""tanoa"": {createDialog ""RscDisplaySpawnRandom"";};" \n
+                         "case ""xcam_taunus"": {createDialog ""RscDisplaySpawnRandom"";};" \n
+                         "default {createDialog ""RscDisplaySpawnRandom"";};" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -1331,17 +1330,6 @@ class FSM
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
-                                /*%FSM<LINK "Too_Long">*/
-                                class Too_Long
-                                {
-                                        itemno = 63;
-                                        priority = 0.000000;
-                                        to="ERROR__Server_is";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
                         };
                 };
                 /*%FSM</STATE>*/
@@ -1349,7 +1337,7 @@ class FSM
                 class ____FAKE____
                 {
                         name = "____FAKE____";
-                        itemno = 64;
+                        itemno = 63;
                         init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links

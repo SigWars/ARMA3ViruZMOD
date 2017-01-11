@@ -11,7 +11,7 @@ class viruzConfigs {
 	//server restart params
 	EnableAutorestart = 1;
 	RconPassword = "27091995";
-	ServerDuration = (4200); //(3 * 60 * 60);
+	ServerDuration = (3 * 60 * 60); //(3 * 60 * 60);
 	DebugServerDuration = (1 * 60); //20 * 60
 	isDebug = 0;
 	UseBatfile = 0;									// in development
@@ -19,7 +19,6 @@ class viruzConfigs {
 	{
 		"standardhintmessage",
 		"systemchatmessage",
-		"standardhintmessage",
 		"dynamictextmessage",
 		"texttilesmessage"
 	};	

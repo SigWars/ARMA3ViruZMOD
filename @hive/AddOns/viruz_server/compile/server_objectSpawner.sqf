@@ -13,8 +13,8 @@ switch (tolower _mapaatual) do {
 	case "altis": { _centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
 	case "chernarus": { _centerMap = getMarkerPos "center"; _nearestRadius = 7000; };
 	case "tanoa": {_centerMap	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	//Como disse não tem certeza se esse mapa tem cfgword safeposition
 	case "xcam_taunus": { _centerMap = getMarkerPos "center"; _nearestRadius = 20000; };
+	default { _centerMap = getMarkerPos "center"; _nearestRadius = 20000; };
 	};
 
 {

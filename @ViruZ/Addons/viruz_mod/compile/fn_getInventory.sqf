@@ -2,7 +2,8 @@
 	file: fn_getInventory.sqf
 	
 	Author: SigWAr
-	
+	Based on StelHat function
+	Added save for BACKPACK weapons attachaments and ammo
 
 	[
 		["uniform class", [array items in uniform]],
@@ -16,10 +17,9 @@
 		["class handgun weapon", [array weapon Linked Items], "Magazine"],
 		[array linked items]
 	]
-	
 
 	_inventory = player call ptm_fnc_getInvenroty;
-	
+
 */
 
 _unit = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
@@ -27,12 +27,48 @@ if (isNull _unit) exitWith {diag_log "GET INVENTORY ERROR: Object is null"; []};
 
 #define MAGAZINE (if (_ammoCount == (getNumber (configFile/"CfgMagazines"/_className/"count"))) then {_className} else {[_className, _ammoCount]})
 
+
 _primaryWeaponMagazine		= "";
 _secondaryWeaponMagazine	= "";
 _handgunMagazine			= "";
 _uniformItems				= [];
 _vestItems					= [];
 _backpackItems				= [];
+_backWeapons				= [];
+_backwpItems				= [];
+_backwpMags					= [];
+
+//added to get attached items on weapon
+_backWeapons = weaponsItemsCargo backpackContainer _unit;
+{
+	_wpSupress 		= _x select 1;
+	_wpLight 		= _x select 2;
+	_wpOptic		= _x select 3;
+	_wpMag 			= _x select 4;
+	_wpBipod 		= _x select 5;
+	
+	_backwpItems pushback _wpSupress;
+	_backwpItems pushback _wpLight;
+	_backwpItems pushback _wpOptic; 
+	_backwpMags pushback _wpMag;
+	
+	if (typeName _wpBipod == "STRING") then 
+	{
+			_backwpItems pushback _wpBipod;
+	}
+	else
+	{
+		if (typeName _wpBipod == "ARRAY") then 
+		{
+			_backwpMags pushback _wpBipod;
+		};
+	};	
+	
+	
+}forEach _backWeapons;
+
+//diag_log format ["Items Array = %1", _backwpItems];
+//diag_log format ["Mags Array = %1", _backwpMags];
 
 {
 	_className		= _x select 0;
@@ -83,6 +119,18 @@ _backpackItems				= [];
 	};
 } forEach (vestItems _unit);
 
+//Add Weapons mag to array
+{
+	if (count _x > 0 ) then 
+	{
+		_className		= _x select 0;
+		_ammoCount		= _x select 1;
+		
+		_backpackItems pushBack MAGAZINE;
+	};
+} forEach _backwpMags;
+
+//Bakcpack Mags
 {
 	_className		= _x select 0;
 	_ammoCount		= _x select 1;
@@ -90,11 +138,20 @@ _backpackItems				= [];
 	_backpackItems pushBack MAGAZINE;
 	
 } forEach (magazinesAmmoCargo backpackContainer _unit);
+
+//Add Weapons Items to array
 {
-	if !(isClass(configFile/"CfgMagazines"/_x)) then {	// исключаем магазины
+	_backpackItems pushBack _x;
+} forEach _backwpItems;
+
+//Bakcpack Items
+{
+	if !(isClass(configFile/"CfgMagazines"/_x)) then {	
 		_backpackItems pushBack _x;
 	};
 } forEach (backpackItems _unit);
+
+//diag_log format ["Backpack Array = %1", _backpackItems];
 
 _primaryWeaponItems = [];
 {

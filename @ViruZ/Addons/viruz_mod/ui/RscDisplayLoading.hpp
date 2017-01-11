@@ -474,5 +474,11 @@ class CfgLoadingScreens
 			"\z\addons\viruz_mod\loading\loading_2.jpg",
 			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
+		xcam_taunus[]=
+		{
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
+		};
 	};
 };

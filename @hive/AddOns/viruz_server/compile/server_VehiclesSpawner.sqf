@@ -15,8 +15,8 @@ switch (tolower _mapaatual) do {
 	case "altis": { _spawnMarker = getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
 	case "chernarus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 7000; };
 	case "tanoa": {  _spawnMarker	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	//Não tenho certeza se esse mapa tem cfgWord
 	case "xcam_taunus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 20000; };
+	default { _spawnMarker = getMarkerPos "center"; _nearestRadius = 20000; };
 	};
 
 _nearestCity 	= nearestLocations [_spawnMarker, ["NameCityCapital","NameCity","NameVillage","NameLocal","NameMarine"],_nearestRadius];

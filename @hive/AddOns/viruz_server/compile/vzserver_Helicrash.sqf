@@ -27,7 +27,7 @@ switch (tolower _mapaatual) do {
 	case "chernarus": { _spawnRadius = 7000; };
 	case "tanoa": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
 	case "xcam_taunus": { _spawnRadius = 20000; };
-	
+	default {  _spawnRadius = 20000; };
 	};
 
 if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {

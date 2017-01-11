@@ -102,12 +102,28 @@ vzserver_object_position = {
 
 vzserver_object_inventory = {
 	params ["_object","_objectID","_uid"];
-	private["_object","_objectID","_uid","_inventory","_previous","_key"];
+	private["_object","_objectID","_uid","_containerList","_bpArray","_bpName","_containerid","_bpWeapons","_bpMags","_bpItems","_inventory","_previous","_key"];
+	_containerList = everyContainer _object;
+	_bpArray = []; 
+	{ 
+	  
+	  _bpName = _x select 0;
+	  _containerid = _x select 1;
+	  _bpWeapons = weaponsItemsCargo _containerid;
+	  _bpMags = magazinesAmmoCargo _containerid;
+	  _bpItems = getItemCargo _containerid;
+	   
+	  _bpArray pushBack [_bpName,_bpWeapons,_bpMags,_bpItems]; 
+	  
+	}forEach _containerList;
+	
 	_inventory = [
-		getWeaponCargo _object,
+		//getWeaponCargo _object,
+		weaponsItemsCargo _object,
 		magazinesAmmoCargo _object,
 		getItemCargo _object,
-		getBackpackCargo _object
+		//getBackpackCargo _object
+		_bpArray
 	];
 	_previous = str(_object getVariable["lastInventory",[]]);
 	if (str(_inventory) != _previous) then {
