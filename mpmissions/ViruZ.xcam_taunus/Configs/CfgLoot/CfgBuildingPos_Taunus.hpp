@@ -292,7 +292,7 @@
 		};
 	};
 	
-	class Land_RMAir_03_AtriumMB: 
+	class Land_RMAir_03_AtriumMB: Special_Residence
 	{
 		lootPos[] =
 		{
