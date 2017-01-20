@@ -74,7 +74,8 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\viruz_mod\system\player_monitor.sqf";
-	execVM "\z\addons\viruz_mod\external\vzgm\init.sqf";
+	//execVM "\z\addons\viruz_mod\external\vzgm\init.sqf";
+	execVM "vzgm\init.sqf";
 };
 //execVM "debug\blckClient.sqf";
 waitUntil {time > 0}; 

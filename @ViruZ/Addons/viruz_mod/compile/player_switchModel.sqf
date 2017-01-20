@@ -29,13 +29,11 @@ private ["_playerUID"];
 
 //BackUp Player Object
 	_oldUnit = player;
-	_oldGroup = group player; //VZgroup
 /***********************************/
 //DONT USE player AFTER THIS POINT
 /***********************************/
 
 //Create New Character
-	//[player] joinSilent grpNull;
 	_group 		= createGroup west;
 	_newUnit 	= _group createUnit [_class,viruz_spawnPos,[],0,"NONE"];
 
@@ -49,40 +47,22 @@ private ["_playerUID"];
 	addSwitchableUnit _newUnit;
 	//setPlayable _newUnit;
 	selectPlayer _newUnit;
-	//VZgroup
-	if ((count units _oldGroup > 1) && {!isNil "viruzLoginRecord"}) then {
-		[_newUnit] join _oldGroup;
-		if (count units _group <= 1) then {deleteGroup _group;};
-	} else {
-		[_newUnit] joinSilent grpNull;
-	};
+
 	
 //Clear and delete old Unit
-//	removeAllWeapons _oldUnit;
-//	{_oldUnit removeMagazine _x;} forEach  magazines _oldUnit;
-		
 	deleteVehicle _oldUnit;
 
 //Move player inside
+[[player, _currentAnim],"MP_SwitchMove"] spawn BIS_fnc_MP;
+player disableConversation true;
+enableRadio false;
+enableSentences false;
 
-//	player switchCamera = _currentCamera;
-//	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
-//	[objNull, player, rSwitchMove,_currentAnim] call RE;
-	[[player, _currentAnim],"MP_SwitchMove"] spawn BIS_fnc_MP;
-	//viruz_originalPlayer attachTo [_newUnit];
-	player disableConversation true;
-	enableRadio false;
-	enableSentences false;
-	
-	player setVariable ["bodyName",viruz_playerName,true];
+player setVariable ["bodyName",viruz_playerName,true];
 
-	_playerUID=getPlayerUID player;
-	_playerObjName = format["player%1",_playerUID];
-	call compile format["%1 = player;",_playerObjName];
-	publicVariable _playerObjName;
-	
-	//VZgroup pega o grupo novamente ao relogar
-	_savedGroup = profileNamespace getVariable["savedGroup",[]];
-	player setVariable ["savedGroup",_savedGroup,true];
-	player setVariable ["purgeGroup",0,true];
+_playerUID=getPlayerUID player;
+_playerObjName = format["player%1",_playerUID];
+call compile format["%1 = player;",_playerObjName];
+publicVariable _playerObjName;
+
 	

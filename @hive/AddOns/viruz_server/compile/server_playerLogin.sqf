@@ -8,6 +8,11 @@ _playerObj = _this select 1;
 _playerName = name _playerObj;
 _worldspace = [];
 
+if (ViruzDebugType == "DEV") then 
+{
+	allowConnection = true;
+};
+
 if (!allowConnection) exitWith {
 viruzPlayerLogin = ["canotConect"];
 (owner _playerObj) publicVariableClient "viruzPlayerLogin";

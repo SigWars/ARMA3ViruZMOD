@@ -1,10 +1,12 @@
-private ["_characterID","_doLoop","_playerID","_playerObj","_randomSpot","_spawnSelection","_primary","_key","_worldspace","_score","_position","_pos","_isIsland","_medical","_stats","_state","_dummy","_debug","_distance","_hit","_fractures","_w","_findSpot","_humanity","_clientID"];//Set Variables
+private ["_characterID","_doLoop","_playerID","_playerName","_playerObj","_randomSpot","_spawnSelection","_primary","_key","_worldspace","_score","_position","_pos","_isIsland",
+"_medical","_stats","_state","_dummy","_debug","_distance","_hit","_fractures","_w","_findSpot","_humanity","_clientID"];//Set Variables
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _playerID = getPlayerUID _playerObj;
+_playerName = name _playerObj;
 _spawnSelection = _this select 3; // added 4 spawnselection
 
 if (isNull _playerObj) exitWith {
@@ -213,6 +215,64 @@ if (_randomSpot) then {
 	};
 };
 
+/*
+NEW VIRUZ GROUP SYSTEM 
+*/
+private ["_havegrp","_groupID","_groupName","_groupLeader","_permission","_groupMembers"];
+_havegrp = false;
+_groupID = -1;
+_groupName = "";
+_groupLeader = "";
+_permission = "";
+_groupOBJ = grpNull;
+
+{
+	diag_log format ["GROUP %1", _x ];
+	_groupMembers = _x select 4;
+	{
+		if (_x select 0 == _playerID) then { _havegrp = true; _permission = _x select 1;}; 
+	}forEach _groupMembers;
+	if (_havegrp) exitWith { _groupName = _x select 1; _groupLeader = _x select 2; _groupID = _x select 0;};
+
+}forEach ViruZGroupsArray;
+
+if (_havegrp) then
+{
+	{
+		_gname = groupID _x;
+		if (_gname == _groupName) exitWith 
+		{ 
+			[_playerObj] join _x;
+			_groupOBJ = _x;
+		};
+	}forEach allGroups; 
+	
+	//CHECK IF CLAN OWNER
+	/*if (_groupLeader isEqualto _playerID) then
+	{
+		hint "É DONO DO GRUPO = SIM!";
+		if !(_playerObj == leader group _playerObj) then 
+		{
+			_groupOBJ selectLeader _playerObj;
+			//_groupOBJ setGroupOwner (owner _playerObj);
+		};
+	};*/
+	
+	_playerObj setVariable ["ClanID",_groupID,true];
+	_playerObj setVariable ["ClanLeader",_groupLeader,true];
+	_playerObj setVariable ["LvL",_permission,true];
+
+}
+else
+{ 
+	[_playerObj] joinSilent grpNull; 
+	_playerObj setVariable ["ClanID",name _playerObj,true];
+	_playerObj setVariable ["ClanLeader",_playerID,true];
+	_playerObj setVariable ["LvL",3,true];
+};
+/*
+END OF GROUP SYSTEM
+*/
 
 //Record player for management
 viruz_players set [count viruz_players,_playerObj];

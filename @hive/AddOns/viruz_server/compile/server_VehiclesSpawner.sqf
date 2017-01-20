@@ -124,15 +124,36 @@ while {true} do {
 			_vehicle setFuel _Fuel;
 
 			//Send request
-			_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",viruZ_instance, (typeOf _vehicle), 0 , _charID, _worldspace, [], _array, _Fuel,_uid];
+			/*_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",viruZ_instance, (typeOf _vehicle), 0 , _charID, _worldspace, [], _array, _Fuel,_uid];
 			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
 				diag_log ("HIVE: WRITE NEW SPAWNEWD VEHICLE: "+ str(_key));
 			};	
-			_key call server_hiveWrite;
+			_key call server_hiveWrite;*/
 			
-			_vehicle setVariable ["lastUpdate",time];
+			_key = format["CHILD:999:INSERT INTO object_data (ObjectID, ObjectUID, Instance, Classname, Datestamp, CharacterID, Worldspace, Inventory, Hitpoints, Fuel) VALUES (%1, %2, %3, '%4', now(), %5, '%6', '%7', '%8', %9) :[]:",str(_idKey),_uid,viruZ_instance,(typeOf _vehicle),_charID,_worldspace,[],_array,_Fuel];
+			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLE") then {
+				diag_log format["VZ_PUBLISH_OBJ: key Query: %1",_key];
+			};
+			
+			private _result = _key call server_hiveReadWrite;
+			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLE") then {
+				diag_log format["VZ_PUBLISH_VEHIVLE: result: %1",_result];
+			};
+			
+			if (count _result > 2) exitWith { 
+				diag_log format["VZ_PUBLISH_VEHIVLE: RESULT FAILED!, VHICLE: %1 DELETED",_vehicle];
+				deleteVehicle _vehicle;
+			}
+			else
+			{
+				_vehicle setVariable ["lastUpdate",time];
+				viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_vehicle];
+				_vehicle call fnc_vehicleEventHandler;
+			};
+			
+			/*_vehicle setVariable ["lastUpdate",time];
 			viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_vehicle];
-			_vehicle call fnc_vehicleEventHandler;
+			_vehicle call fnc_vehicleEventHandler;*/
 		};
 	};
 };

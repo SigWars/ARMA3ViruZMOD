@@ -432,7 +432,7 @@ if (!isDedicated) then {
 		};
 		//0xDC right windows
 		if (_dikCode == 0x16) then {
-		if (dialog) then {closeDialog 0;groupManagementActive = false;} else {execVM "\z\addons\viruz_mod\external\vzgm\loadGroupManagement.sqf";};
+		if (dialog) then {closeDialog 0;groupManagementActive = false;} else {execVM (VIRUZPATH+"vzgm\loadGroupManagement.sqf");};
 			_handled = true;
 		};
 		//VZgroup end

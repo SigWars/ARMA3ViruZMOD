@@ -59,7 +59,11 @@ if (isServer) then {
 	"viruzPublishObj"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
 	
 	//called for new group system (DEV)
-	"viruzSaveGroup"	addPublicVariableEventHandler {(_this select 1) call server_saveGroup};
+	"viruzAddGroup"	addPublicVariableEventHandler {(_this select 1) spawn vzserver_addGroup};
+	
+	"viruzupdateGroup"	addPublicVariableEventHandler {(_this select 1) spawn vzserver_updateGroup};
+	
+	"viruzupdateGroupFull"	addPublicVariableEventHandler {(_this select 1) spawn vzserver_updateGroupFull};
 	
 	//called for /door.sqf /vz_MaintainBuild.sqf /VIRUZ_publishObj
 	"viruzUpdateBuild"	addPublicVariableEventHandler {(_this select 1) call server_UpdateBuild};

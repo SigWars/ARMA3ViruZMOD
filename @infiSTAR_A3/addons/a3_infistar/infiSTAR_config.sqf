@@ -79,7 +79,11 @@ _use_html_load_on_adminmenu = true;		/* default and recommended is TRUE. infiSTA
 _adminUIDandAccess =
 [
 	[
-		['76561198113211909','76561197984348790','76561198065694695'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		['76561198113211909',
+		'76561197984348790',
+		'76561198065694695',
+		'76561198083373727'
+		],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',

@@ -72,6 +72,10 @@ if (_script != "") then
 			//diag_log ("HIVE: Streamed " + str(_val) + " objects");
 		};
 	
+		handle_server_spawn_groups = [_myArray] spawn vzserver_createGroups;
+		
+		waitUntil {scriptDone handle_server_spawn_groups };
+		
 		handle_server_spawn_builds = [_myArray] spawn server_StartSpawnBulds;
 		
 		waitUntil { sleep 60; scriptDone handle_server_spawn_builds };

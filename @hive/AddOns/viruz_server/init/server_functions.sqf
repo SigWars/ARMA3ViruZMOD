@@ -6,13 +6,10 @@ Autor: SigWar
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 ********************************************************************************************************************/
-/*
-BIS_MPF_remoteExecutionServer = {
-	if ((_this select 1) select 2 == "JIPrequest") then {
-		[nil,(_this select 1) select 0,"loc",rJIPEXEC,[any,any,"per","execVM","ca\Modules\Functions\init.sqf"]] call RE;
-	};
-};
-*/
+"extDB3" callExtension "9:ADD_DATABASE:Database"; 
+"extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL:SQL";
+"extDB3" callExtension "9:LOCK";
+
 viruz_NotificationTips = getArray(ConfigFile >> "viruzConfigs" >> "NotificationTips");
 BIS_Effects_Burn =						{};
 server_playerLogin =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_playerLogin.sqf";
@@ -37,6 +34,7 @@ PTm_fnc_modulePoster =					compile preprocessFileLineNumbers "\z\addons\viruz_se
 server_StartSpawnBulds = 				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnBuilds.sqf";
 server_StartSpawnVehicles =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnVehicles.sqf";
 server_autorestart = 					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_autorestart.sqf";
+vzserver_createGroups =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_createGroups.sqf";
 //PTm_fnc_windowsAreBroke =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_windowsAreBroke.sqf";
 //server_manikenSync =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_manikenSync.sqf";
 
@@ -230,6 +228,60 @@ vzserver_object_maintenance = {
 	};
 };
 
+vzserver_addGroup = {
+params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers"];
+private ["_query","_result"];
+_query = format["0:SQL:INSERT INTO viruz_group (GroupID, GroupName, Owner, GroupRank, GroupMembers) VALUES ('""%1""', '""%2""', '""%3""', %4, '%5')",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers];
+_result = _query call vzserver_SyncRequest;
+diag_log str _result;
+};
+
+vzserver_updateGroup = {
+params ["_clanID","_clanMembers"];
+private ["_query"];
+_query = format["1:SQL:UPDATE viruz_group SET GroupMembers = '%2' WHERE GroupID = '""%1""'",_clanID,_clanMembers];
+_query call vzserver_AsyncRequest;
+};
+
+vzserver_updateGroupFull = {
+	if (count _this > 5)then
+	{
+		params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers","_newClanID"];
+		private ["_query"];
+		_query = format["1:SQL:UPDATE viruz_group SET GroupID = '""%6""', GroupName = '""%2""', Owner = '""%6""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%1""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers,_newClanID];
+		_query call vzserver_AsyncRequest;
+		
+	}
+	else
+	{ 
+		params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers"];
+		private ["_query"];
+		_query = format["1:SQL:UPDATE viruz_group SET GroupID = '""%1""', GroupName = '""%2""', Owner = '""%3""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%1""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers];
+		_query call vzserver_AsyncRequest;
+	};
+};
+
+vzserver_SyncRequest = {
+/******************************************************************
+0 = Sync  
+1 = ASync (Doesnt save/return results, use for updating DB Values)  
+2 = ASync + Save (Returns ID, for use with 5)
+4 = Get (Retrieve Single Part Message)
+5 = Get (Retrieves Multi-Msg Message)
+9 = System Commands
+*******************************************************************/
+params ["_query"];
+private ["_data","_resultData"];
+_data = "extDB3" callExtension _query;
+_resultData = call compile _data;
+_resultData
+};
+
+vzserver_AsyncRequest = {
+params ["_query"];
+private ["_data"];
+_data = "extDB3" callExtension _query;
+};
 /******************************
 * updateObjects functions end *
 *******************************/
@@ -554,9 +606,3 @@ VIRUZ_GlobalTextBroadcast = {
 
 currentDate = call compile ("real_date" callExtension "");
 publicVariable "currentDate";
-
-//VZgroup
-currentInvites = [];
-publicVariable "currentInvites";
-"currentInvites" addPublicVariableEventHandler {publicVariable "currentInvites";};
-//VZgroup end
