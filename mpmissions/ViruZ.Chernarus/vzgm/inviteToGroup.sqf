@@ -1,4 +1,4 @@
-if (player != leader group player) exitWith {systemChat "You are not the leader and can not invite people.";};
+if (player != leader group player) exitWith {systemChat "You are not the Clan leader and can not invite people.";};
 
 disableSerialization;
 #define CONTROL(disp,ctrl) ((findDisplay ##disp) displayCtrl ##ctrl)
@@ -11,8 +11,15 @@ _playerData = _playerListBox lbData _index;
 _hasInvite = false;
 _check = 0;
 _haveGroup = false;
-_ClanID = player getVariable ["ClanID","0"];
-_ok = true;
+_pendInvite = false;
+
+{
+	if (getPlayerUID player == _x select 0) exitWith {
+    	_pendInvite = true;
+	};
+} forEach currentInvites;
+
+if (_pendInvite)exitWith {systemChat "You have a clan invitation that is still pending acceptance, You can cancel by clicking the pending player on online list";};
 //Checks
 {
 	if ((!isNull _x) && {isPlayer _x} && {str(_x) == _playerData}) exitWith {_pTarget = _x;_check = 1;};
@@ -20,7 +27,7 @@ _ok = true;
 
 if (_check == 0) exitWith {systemChat "You must select someone to invite first.";};
 if (_pTarget == player) exitWith {systemChat "You can not invite yourself.";};
-//if (count units group _pTarget > 1) exitWith {systemChat "This player is already in a group.";};
+if (count units group _pTarget > 1) exitWith {systemChat "This player is already in a group.";};
 
 {if (_x select 1 == getPlayerUID _pTarget) then {_hasInvite = true;};} forEach currentInvites;
 if (_hasInvite) exitWith {systemChat "This player already has a pending invite.";};
@@ -40,38 +47,12 @@ if (_hasInvite) exitWith {systemChat "This player already has a pending invite."
 	}; 
 }forEach ViruZGroupsArray;
 
-if (_haveGroup) exitWith {systemChat "This player is already in a group.";};
+if (_haveGroup) exitWith {systemChat "This player is already in a CLAN.";};
 
-//Create a new group if first time invite
-if (_ClanID isEqualTo (name player)) then
-{
-	_clanName = ctrlText (CONTROL(55510,700001));
-	_length = count (toArray(_clanName));
-	_chrByte = toArray (_clanName);
-	_allowed = toArray("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_ ");
-	if(_length > 32) exitWith {systemChat "The name size can not be greater than 32 characters."; _ok = false;};
-	_badChar = false;
-	{if(!(_x in _allowed)) exitWith {_badChar = true;};} forEach _chrByte;
-	if(_badChar) exitWith {systemChat "Incompatible characters, only allowed to use: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_ "; _ok = false;};
-	_newgroup = [[getPlayerUID player,3,name player]];
-	player setVariable ["ClanID",getPlayerUID player,true];
-	player setVariable ["ClanLeader",getPlayerUID player,true];
-	
-	group player setGroupIdGlobal [_clanName];
-	ViruZGroupsArray pushback [getPlayerUID player,_clanName,getPlayerUID player,0,_newGroup];
-	publicVariableServer "ViruZGroupsArray";
-	//update database
-	viruzAddGroup = [getPlayerUID player,_clanName,getPlayerUID player,0,_newGroup];
-	publicVariable "viruzAddGroup";
-};
+currentInvites set [count currentInvites,[getPlayerUID player,getPlayerUID _pTarget,"CLAN"]];
+publicVariableServer "currentInvites";
 
-if (_ok) then
-{
-	currentInvites set [count currentInvites,[getPlayerUID player,getPlayerUID _pTarget]];
-	publicVariableServer "currentInvites";
+[nil,_pTarget,"loc", rTITLETEXT, format["You have received a CLAN INVITE. press 'U' to accept."], "PLAIN", 0] call RE;
 
-	[nil,_pTarget,"loc", rTITLETEXT, format["You have received a group invite. press 'U' to accept."], "PLAIN", 0] call RE;
-
-	systemChat format["You have invited %1 to join the group",name _pTarget];
-	systemChat "Press left windows key to toggle group name tags";
-};
+systemChat format["You have invited %1 to join the CLAN",name _pTarget];
+systemChat "Press left windows key to toggle group name tags";

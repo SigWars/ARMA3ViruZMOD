@@ -4,6 +4,7 @@ ViruZClient_antiGlitch.sqf by SigWAr
 Checks nearby builds and disable glitch movements if not owner or not in group of object owner.
 */
 	if (isDedicated) exitWith {diag_log "Ignore antiglitch script in Dedicated Server";};
+	ehremoved = false;
 	
 	private ["_sameGroup","_position","_walls","_wallsCount","_ownerUid","_mover","_wallOwner","_animation","_blockedAnims"];
 	
@@ -37,6 +38,7 @@ Checks nearby builds and disable glitch movements if not owner or not in group o
 	
 	while {true} do {
 		
+		
 		_sameGroup = false;
 		_position = getPosATL player;
 		_walls = nearestObjects [_position, VIRUZ_GATES+VIRUZ_WALLS, 8];
@@ -49,39 +51,36 @@ Checks nearby builds and disable glitch movements if not owner or not in group o
 			_ownerUid =  _wallOwner getVariable ["OwnerUID","0"];
 			_mover = getPlayerUID player;
 			
-			_savedGroup = profileNamespace getVariable["savedGroup",[]];
-			if (count _savedGroup > 1) then {
-						
-				if (_ownerUid in _savedGroup && _mover in _savedGroup ) then {
-					_sameGroup = true;
-					viruz_glitchArea = -1;
-				};
-					
+			_savedGroup = player getVariable ["ClanID","0"];
+			_permission = player getVariable ["LvL",0];	
+			if ((_savedGroup isEqualto _ownerUid) and (_permission > 0)) then {_sameGroup = true;}else{_sameGroup = false;};
+		
+		
+			//Activate if not owner or in same group
+			if ( !_sameGroup && (_mover != _ownerUid) ) then {
+				viruz_glitchArea = 1;
+			}
+			else
+			{
+				viruz_glitchArea = -1;
 			};
-		};
-		
-		//Activate if walls count > 0;
-		if (_wallsCount > 0) then {
-		
+			
 			if (vehicle player == player) then {
 				if ((viruz_glitchArea > 0) and ( _playerState in _blockedAnims)) then {
 					player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
 				};
-			};
-	
-			//Activate if not owner or in same group
-			if ( !_sameGroup && (viruz_glitchArea < 1) && (_mover != _ownerUid) ) then {
-					viruz_glitchArea = 1;
-					(findDisplay 46) displayRemoveEventHandler ["KeyDown", babe_core_keyhandlerDown];
-					(findDisplay 46) displayRemoveEventHandler ["KeyUp", babe_core_keyhandlerUp];
-					//hint "ANTI GLITCH ENABLED";
+			};			
+			
+			if ( viruz_glitchArea > 0 && !ehremoved )then{
+				(findDisplay 46) displayRemoveEventHandler ["KeyDown", babe_core_keyhandlerDown];
+				(findDisplay 46) displayRemoveEventHandler ["KeyUp", babe_core_keyhandlerUp];
+				ehremoved = true;
 			};
 			
-			//check if in group and habilite area again
-			if (_sameGroup && viruz_glitchArea > 0) then {
-				viruz_glitchArea = -1;
+			if (viruz_glitchArea < 1 && ehremoved)then{
 				babe_core_keyhandlerDown = (findDisplay 46) displayaddEventHandler ["KeyDown", "_test = [_this, 'KeyDown'] call babe_core_fnc_keys; if _test then {true}"];
 				babe_core_keyhandlerUp = (findDisplay 46) displayaddEventHandler ["KeyUp", "_test = [_this, 'KeyUp'] call babe_core_fnc_keys; if _test then {true}"];
+				ehremoved = false;
 			};
 			
 		} else {
@@ -89,7 +88,7 @@ Checks nearby builds and disable glitch movements if not owner or not in group o
 				viruz_glitchArea = -1;
 				babe_core_keyhandlerDown = (findDisplay 46) displayaddEventHandler ["KeyDown", "_test = [_this, 'KeyDown'] call babe_core_fnc_keys; if _test then {true}"];
 				babe_core_keyhandlerUp = (findDisplay 46) displayaddEventHandler ["KeyUp", "_test = [_this, 'KeyUp'] call babe_core_fnc_keys; if _test then {true}"];
-				//hint "ANTI GLITCH DISABLED";
+				ehremoved = false;
 			};
 		};
 		sleep 0.5;

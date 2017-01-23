@@ -18,7 +18,6 @@ server_onPlayerDisconnect = 			compile preprocessFileLineNumbers "\z\addons\viru
 server_updateObject =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_updateObject.sqf";
 server_playerDied =						compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_playerDied.sqf";
 server_publishObj = 					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_publishObject.sqf";	//Creates the object in DB
-server_saveGroup = 						compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_saveGroup.sqf";		//Saves the group in database
 server_UpdateBuild = 					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_updateBuild.sqf"; 	//Update ViruZ building system parameters
 server_deleteObj =						compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_deleteObj.sqf"; 	//Removes the object from the DB
 server_playerSync =						compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_playerSync.sqf";
@@ -35,6 +34,7 @@ server_StartSpawnBulds = 				compile preprocessFileLineNumbers "\z\addons\viruz_
 server_StartSpawnVehicles =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_spawnVehicles.sqf";
 server_autorestart = 					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_autorestart.sqf";
 vzserver_createGroups =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_createGroups.sqf";
+vzserver_groupFunctions = 				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\vzserver_groupFunctions.sqf";
 //PTm_fnc_windowsAreBroke =				compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\fn_windowsAreBroke.sqf";
 //server_manikenSync =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_manikenSync.sqf";
 
@@ -243,19 +243,24 @@ _query = format["1:SQL:UPDATE viruz_group SET GroupMembers = '%2' WHERE GroupID 
 _query call vzserver_AsyncRequest;
 };
 
+vzserver_deleteGroup = {
+params ["_clanID"];
+private ["_query"];
+_query = format["1:SQL:DELETE FROM viruz_group WHERE GroupID = '""%1""'",_clanID];
+_query call vzserver_AsyncRequest;
+};
+
 vzserver_updateGroupFull = {
+	params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers","_oldClanID"];
+	private ["_query"];
+	
 	if (count _this > 5)then
-	{
-		params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers","_newClanID"];
-		private ["_query"];
-		_query = format["1:SQL:UPDATE viruz_group SET GroupID = '""%6""', GroupName = '""%2""', Owner = '""%6""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%1""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers,_newClanID];
+	{		
+		_query = format["1:SQL:UPDATE viruz_group SET GroupID = '""%1""', GroupName = '""%2""', Owner = '""%3""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%6""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers,_oldClanID];
 		_query call vzserver_AsyncRequest;
-		
 	}
 	else
 	{ 
-		params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers"];
-		private ["_query"];
 		_query = format["1:SQL:UPDATE viruz_group SET GroupID = '""%1""', GroupName = '""%2""', Owner = '""%3""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%1""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers];
 		_query call vzserver_AsyncRequest;
 	};

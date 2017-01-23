@@ -1,12 +1,18 @@
 disableSerialization;
 
-private ["_dialog","_pTarget","_index","_playerData","_check","_haveData","_targetUID","_groupID","_groupName","_groupOwner","_groupRank","_toremove","_oldGroup","_ok","_targerPerm",
-"_targetName","_toaddData","_removeData"];
+private ["_dialog","_pTarget","_index","_playerData","_clanPermissionBox","_comboindex","_pemLevel","_check","_haveData","_targetUID","_groupID","_groupName","_groupOwner",
+"_groupRank","_toremove","_oldGroup","_ok","_targerPerm","_targetName","_toaddData","_removeData"];
 
 _dialog = findDisplay 55510;
 _groupListBox = _dialog displayCtrl 55512;
 _index = lbCurSel _groupListBox;
 _playerData = _groupListBox lbData _index;
+
+_clanPermissionBox = _dialog displayCtrl 700010;
+_comboindex = lbCurSel _clanPermissionBox;
+_pemLevel = _clanPermissionBox lbValue _comboindex;
+
+
 _check = 0;
 _haveData = false;
 _ok = false;
@@ -17,17 +23,10 @@ _ok = false;
 	
 if (_check == 1) then
 {
-	if (_pTarget == player) exitWith {systemChat "You can not kick yourself";};
+	if (_pTarget == player) exitWith {systemChat "You can change yourself";};
 };
 
-if !(_haveData) then
-{
-	_targetUID = _playerData;
-	if (_playerData != "")then{ _check = 1;};
-	if (_playerData == getPlayerUID player) exitWith {systemChat "You can not kick yourself";};
-};
-
-if (_check == 0) exitWith {systemChat "You must select someone to kick first";};
+if (_check == 0) exitWith {systemChat "You must select someone to cheange Permission";};
 
 _ok = false;
 	{  
@@ -58,27 +57,14 @@ _ok = false;
 	
 		//removing  member
 		_oldGroup = _oldGroup - [[_targetUID,_targerPerm,_targetName]];
+		_oldGroup pushback [_targetUID,_pemLevel,_targetName];
 		_toaddData = [_groupID,_groupName,_groupOwner,_groupRank,_oldGroup];
-
+		_pTarget setVariable ["LvL",_pemLevel,true];
+		
 		//update database		
 		viruzupdateGroup = [_removeData,_toaddData,"UPDATE",[_groupID,_oldGroup]];
 		publicVariableServer "viruzupdateGroup";
+		
+		systemChat format["You switched the %1 level of permission to %2",_targetName,_pemLevel];
 	};
-
-if (_haveData) then 
-{
-	[_pTarget] join grpNull;
-	_pTarget setVariable ["ClanID",name _pTarget,true];
-	_pTarget setVariable ["ClanLeader",_targetUID,true];
-	_pTarget setVariable ["LvL",3,true];
-	_pTarget setVariable ["clanName",name _pTarget,true];
-	_pTarget setVariable ["haveClan",false,true];
-	_pTarget setVariable ["groupRank",0,true];
-	systemChat format["You have kicked %1 from the group",name _pTarget];
-}
-else
-{
-	systemChat format["You have kicked offline %1 from the group",_targetName];
-};
-//{_x setVariable ["purgeGroup",[(getPlayerUID _pTarget)],true];} count units group player;
 

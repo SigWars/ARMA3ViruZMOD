@@ -14,7 +14,7 @@ ViruZGroupsArray = _result select 1;
 } forEach ViruZGroupsArray;
 	
 publicVariable "ViruZGroupsArray";
-"ViruZGroupsArray" addPublicVariableEventHandler {publicVariable "ViruZGroupsArray";};
+//"ViruZGroupsArray" addPublicVariableEventHandler {publicVariable "ViruZGroupsArray";};
 
 
 currentInvites = [];

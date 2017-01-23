@@ -6,7 +6,7 @@ This work is licensed under the Creative Commons Attribution-NonCommercial-NoDer
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 ********************************************************************************************************************/
 private ["_couldBuild","_sucess","_haveSlots","_hasPole","_builderUID","_BuilderPlayer","_ownerTODB","_location","_sameGroup","_generatorOwner","_canDelete",
-"_findGenerator","_ViruZ_Generator","_savedGroup","_buildscount","_objectType","_ressourcetype","_count","_itemcount","_dir","_Object","_meters","_vzBuildstoCount"];
+"_findGenerator","_ViruZ_Generator","_savedGroup","_permission","_buildscount","_objectType","_ressourcetype","_count","_itemcount","_dir","_Object","_meters","_blockedArea","_vzBuildstoCount"];
 
 //Define Vars
 _couldBuild = true;
@@ -23,6 +23,16 @@ _ownerTODB = str( 'B'+ _builderUID );
 _buildscount = 0;
 _vzBuildstoCount = + VIRUZ_BUILDS + VIRUZ_GATES + VIRUZ_WALLS + VIRUZ_SUPPLYES + VIRUZ_RACKS;
 _meters = 151;
+_playerPos = getPosASL player;
+_blockedArea = false;
+
+{
+	_blockedPos = _x select 0;
+	_blockedDistance = _x select 1;
+	if ( (_playerPos distance _blockedPos) < _blockedDistance ) exitWith {_blockedArea = true;};
+}forEach getArray(missionConfigFile >> worldName >> "blockedArea");
+
+if (_blockedArea)exitWith{cutText ["You can not build in this area", "PLAIN DOWN",2];};
 
 //Find Generator
 _findGenerator = nearestObjects [player, ["Land_Portable_generator_F"], 150];
@@ -56,14 +66,9 @@ if (count _findGenerator > 0 ) then {
 		_meters = player distance _ViruZ_Generator;
 			
 		//check group
-		_savedGroup = profileNamespace getVariable["savedGroup",[]];
-		if (count _savedGroup > 1) then {
-				
-			if (_generatorOwner in _savedGroup and _BuilderPlayer in _savedGroup ) then {
-				_sameGroup = true;
-			};
-			
-		};
+		_savedGroup = player getVariable ["ClanID","0"];
+		_permission = player getVariable ["LvL",0];
+		if (_savedGroup isEqualto _generatorOwner) then {_sameGroup = true;};
 		
 		if ( (_meters < viruz_maxBuildDistance ) and (_generatorOwner == _BuilderPlayer)) then {
 			_hasPole = true;
@@ -75,6 +80,8 @@ if (count _findGenerator > 0 ) then {
 		
 	};
 };
+
+if (_sameGroup and _permission < 2) exitWith { cutText ["You do not have the permission required!", "PLAIN DOWN",2]; _sucess = false;};
 
 //Check Ressources
 _objectType = (((viruz_build_array select viruz_build_categorieId) select (viruz_build_classnameId + 1)) select 0);
@@ -111,7 +118,7 @@ foreach (((viruz_build_array select viruz_build_categorieId) select (viruz_build
 //Has generator or in same group
 if (_hasPole and _haveSlots ) then {
 	
-	if (_generatorOwner != _BuilderPlayer and !_sameGroup) exitWith { cutText ["You are not allowed to build here", "PLAIN DOWN",2]; _sucess = false;};
+	if (_generatorOwner != _BuilderPlayer and !_sameGroup) exitWith { cutText ["You are not in the same group, or you do not have the permission required!", "PLAIN DOWN",2]; _sucess = false;};
 	if (_meters < 150 and _objectType == "Land_Portable_generator_F") exitWith { cutText ["You need to be at least 150m from other Generator!", "PLAIN DOWN",2]; _sucess = false;};
 	
 	if(_couldBuild and _objectType != "Land_Portable_generator_F") then

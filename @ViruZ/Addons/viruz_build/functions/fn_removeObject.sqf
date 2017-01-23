@@ -17,17 +17,14 @@ _canDelete = _object getVariable ["canDelete",false];
 _backRessource = _object getVariable ["backRessource",0];
 //checa o grupo
 _sameGroup = false;
-_savedGroup = profileNamespace getVariable["savedGroup",[]];
-if (count _savedGroup > 1) then {
-			
-	if (_ownerUid in _savedGroup and _removeRUID in _savedGroup ) then {
-			_sameGroup = true;
-	};
-		
-};
+
+//check group
+_savedGroup = player getVariable ["ClanID","0"];
+_permission = player getVariable ["LvL",0];
+if ((_savedGroup isEqualto _ownerUid) and (_permission > 1)) then {_sameGroup = true;};
 
 if ( _removeRUID != _ownerUid and !_sameGroup) exitWith { 
-		cutText ["You are not the owner of this object or you are not in the same group!", "PLAIN DOWN",2]
+		cutText ["You are not the owner of the object or you are not in the same group, or you do not have the permission required!", "PLAIN DOWN",2]
 };
 
 if (!_canDelete ) exitWith { 
@@ -36,7 +33,7 @@ if (!_canDelete ) exitWith {
 
 
 viruzUpdateVehicle = [_object,"DelObject"];
-publicVariable "viruzUpdateVehicle";
+publicVariableServer "viruzUpdateVehicle";
 
 
 if (time < _backRessource) then {

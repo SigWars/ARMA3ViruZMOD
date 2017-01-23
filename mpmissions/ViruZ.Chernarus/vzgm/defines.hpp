@@ -20,7 +20,7 @@ class W_RscText {
 	colorBackground[] = { 1 , 1 , 1 , 0 };
 	colorText[] = { 1 , 1 , 1 , 1 };
 	font = "PuristaLight";
-	sizeEx = .025;
+	sizeEx = .028;
 	h = .25;
 	text = "";
 };
@@ -68,8 +68,11 @@ class W_RscList
 	color[] = {.7, .7, .7, 1};
 	colorActive[] = {0,0,0,1};
 	colorDisabled[] = {0,0,0,.3};
+	colorPicture[] = {1,1,1,1};//viruz
+	colorPictureSelected[] = {1,1,1,1};//viruz
+	colorPictureDisabled[] = {1,1,1,1};//viruz
 	font = "PuristaLight";
-	sizeEx = .023;
+	sizeEx = .028;
 	soundSelect[] = {"",.1,1};
 	soundExpand[] = {"",.1,1};
 	soundCollapse[] = {"",.1,1};
@@ -143,8 +146,8 @@ class W_RscButtonBase {
 	textureNoShortcut = "";
 	period = .4;
 	font = "PuristaLight";
-	size = .023;
-	sizeEx = .023;
+	size = .028;
+	sizeEx = .028;
 	text = "";
 	
 	soundEnter[] = {"\vzgm\ui\sound\mouse2", .09, 1};
@@ -217,5 +220,42 @@ class W_RscButton : W_RscButtonBase {
 		color = "#E5E5E5";
 		align = "center";
 		shadow = "1";		
+	};
+};
+
+class RscCombo {
+	idc = -1;
+	type = 4;
+	style = 1;
+	x = 0;
+	y = 0;
+	w = 0.3;
+	h = 0.035;
+	colorSelect[] = {1, 1, 1, 1};
+	colorText[] = {1, 1, 1, 1};
+	colorBackground[] = {1,1,1,0};
+	colorSelectBackground[] = {.40, .43, .28, .5};
+	colorScrollbar[] = {.2, .2, .2, 1};
+	arrowEmpty = "vzgm\ui\ui_arrow_combo_ca.paa";
+	arrowFull = "vzgm\ui\ui_arrow_combo_active_ca.paa";
+	wholeHeight = 0.45;
+	color[] = {0, 0, 0, 0.6};
+	colorActive[] = {0, 0, 0, 1};
+	colorDisabled[] = {0, 0, 0, 0.3};
+	font = "Zeppelin32";
+	sizeEx = 0.031;
+	soundSelect[] = {"",.1,1};
+	soundExpand[] = {"",.1,1};
+	soundCollapse[] = {"",.1,1};
+	maxHistoryDelay = 1.0;
+	
+	class ComboScrollBar {
+		color[] = {1, 1, 1, 1};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 1};
+		thumb = "vzgm\ui\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "vzgm\ui\data\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "vzgm\ui\data\ui_arrow_top_ca.paa";
+		border = "vzgm\ui\ui_border_scroll_ca.paa";
 	};
 };

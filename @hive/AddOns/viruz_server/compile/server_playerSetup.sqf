@@ -218,13 +218,14 @@ if (_randomSpot) then {
 /*
 NEW VIRUZ GROUP SYSTEM 
 */
-private ["_havegrp","_groupID","_groupName","_groupLeader","_permission","_groupMembers"];
+private ["_havegrp","_groupID","_groupName","_groupLeader","_permission","_groupMembers","_groupExist","_newGroup"];
 _havegrp = false;
 _groupID = -1;
 _groupName = "";
 _groupLeader = "";
 _permission = "";
-_groupOBJ = grpNull;
+_groupExist = false;
+_groupRank = 0;
 
 {
 	diag_log format ["GROUP %1", _x ];
@@ -232,43 +233,47 @@ _groupOBJ = grpNull;
 	{
 		if (_x select 0 == _playerID) then { _havegrp = true; _permission = _x select 1;}; 
 	}forEach _groupMembers;
-	if (_havegrp) exitWith { _groupName = _x select 1; _groupLeader = _x select 2; _groupID = _x select 0;};
+	if (_havegrp) exitWith { _groupName = _x select 1; _groupLeader = _x select 2; _groupID = _x select 0; _groupRank = _x select 3};
 
 }forEach ViruZGroupsArray;
 
 if (_havegrp) then
 {
+	//join player in group
 	{
 		_gname = groupID _x;
 		if (_gname == _groupName) exitWith 
 		{ 
 			[_playerObj] join _x;
-			_groupOBJ = _x;
+			_groupExist = true;
 		};
 	}forEach allGroups; 
 	
-	//CHECK IF CLAN OWNER
-	/*if (_groupLeader isEqualto _playerID) then
-	{
-		hint "É DONO DO GRUPO = SIM!";
-		if !(_playerObj == leader group _playerObj) then 
-		{
-			_groupOBJ selectLeader _playerObj;
-			//_groupOBJ setGroupOwner (owner _playerObj);
-		};
-	};*/
+	//Recreate arma fuck group if not alive in server
+	if (!_groupExist)then{
+		_newGroup = createGroup west;
+		_newGroup setGroupIdGlobal [_groupName];
+		[_playerObj] join _newGroup;
+	};
+	
 	
 	_playerObj setVariable ["ClanID",_groupID,true];
 	_playerObj setVariable ["ClanLeader",_groupLeader,true];
 	_playerObj setVariable ["LvL",_permission,true];
+	_playerObj setVariable ["clanName",_groupName,true];
+	_playerObj setVariable ["haveClan",true,true];
+	_playerObj setVariable ["groupRank",_groupRank,true];
 
 }
 else
 { 
 	[_playerObj] joinSilent grpNull; 
-	_playerObj setVariable ["ClanID",name _playerObj,true];
+	_playerObj setVariable ["ClanID",name _playerObj,true];// if ClanID == playername, it will enable clan creation
 	_playerObj setVariable ["ClanLeader",_playerID,true];
 	_playerObj setVariable ["LvL",3,true];
+	_playerObj setVariable ["clanName",name _playerObj,true];
+	_playerObj setVariable ["haveClan",false,true];
+	_playerObj setVariable ["groupRank",_groupRank,true];
 };
 /*
 END OF GROUP SYSTEM

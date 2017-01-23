@@ -11,16 +11,18 @@ class GroupManagement {
 			text = "vzgm\ui\ui_background_controlers_ca.paa";
 			moving = true;
 			x = .0; y = .1;
-			w = 1.4; h = .65;
+			w = 1.3; h = .65;
 		};
 		
-		class MainTitle : W_RscText {
-			idc = -1;
+		class MainTitle : W_RscStructuredText {
+			idc = 700013;
 			text = "Group Management";
-			sizeEx = .04;
+			sizeEx = .05;
 			shadow = 2;		
-			x = .260; y = .112;
-			w = .3; h = .05;
+			x = 0;
+			y = 0.12;
+			w = 0.975;
+			h = 0.04;
 		};
 
 		class InviteTitleText : W_RscText {
@@ -73,18 +75,11 @@ class GroupManagement {
 		class GroupListBox : W_RscList {
 			idc = 55512;
 			onLBSelChanged = "call playerSelectChangeoff;";
-			x = .490; y = .200;
-			w = .235; h = .425;
+			x = 0.4875;
+			y = 0.2;
+			w = 0.2375;
+			h = 0.38;
 		};
-		/*class GroupListOff: W_RscList
-		{
-			idc = 55571;
-
-			x = .7375;
-			y = .2;
-			w = .235;
-			h = .425;
-		};*/
 
 		class CloseButton : W_RscButton {
 			idc = -1;
@@ -97,44 +92,56 @@ class GroupManagement {
 
 		class InviteButton : W_RscButton {
 			idc = 55514;
-			text = "Invite";
 			onButtonClick = "call inviteToGroup;";
-			x = .3075; y = .200;
-			w = .125; h = .033 * safezoneH;
-			color[] = {.1,.95,.1,1};
+			color[] = {0.1,0.95,0.1,1};
+
+			text = "Clan Invite"; //--- ToDo: Localize;
+			x = 0.775;
+			y = 0.26;
+			w = 0.125;
+			h = 0.0600256;
 		};
 
 		class KickButton : W_RscButton {
 			idc = 55515;
-			text = "Kick";
 			onButtonClick = "call kickFromGroup;";
-			x = .3075; y = .250;
-			w = .125; h = .033 * safezoneH;
-			color[] = {.95,.1,.1,1};
+			color[] = {0.95,0.1,0.1,1};
+
+			text = "Clan Kick"; //--- ToDo: Localize;
+			x = 0.775;
+			y = 0.34;
+			w = 0.125;
+			h = 0.0600256;
 		};
 
 		class DisbandButton : W_RscButton {
 			idc = 55516;
-			text = "Disband";
 			onButtonClick = "call disbandGroup;";
-			x = .3075; y = .300;
-			w = .125; h = .033 * safezoneH;
-			color[] = {.95,.1,.1,1};
+			color[] = {0.95,0.1,0.1,1};
+
+			text = "Disband Clan"; //--- ToDo: Localize;
+			x = 0.775;
+			y = 0.42;
+			w = 0.125;
+			h = 0.0600256;
 		};
 
 		class LeaveButton : W_RscButton {
 			idc = 55517;
-			text = "Leave Group";
-			onButtonClick = "call leaveGroup;";
-			x = .3075; y = .400;
-			w = .125; h = .033 * safezoneH;
-			color[] = {.95,.1,.1,1};
+			onButtonClick = "call leaveGroup;  closeDialog 0; groupManagmentActive = false;";
+			color[] = {0.95,0.1,0.1,1};
+
+			text = "Leave Clan"; //--- ToDo: Localize;
+			x = 0.775;
+			y = 0.52;
+			w = 0.125;
+			h = 0.06;
 		};
 
 		class AcceptInviteButton : W_RscButton {
 			idc = 55518;
 			text = "Accept";
-			onButtonClick = "call acceptGroupInvite;";
+			onButtonClick = "call acceptGroupInvite; closeDialog 0; groupManagmentActive = false;";
 			x = .275; y = .625 - .0255 * safezoneH;
 			w = .100; h = .033 * safezoneH;
 			color[] = {.1,.95,.1,1};
@@ -151,12 +158,147 @@ class GroupManagement {
 		class GroupName: W_RscEdit
 		{
 			idc = 700001;
-			text = "Type you group Name"; //--- ToDo: Localize;
-			shadow = 2;
-			x = 0.22325;
-			y = 0.6848;
+
+			text = "Type you Clan Name"; //--- ToDo: Localize;
+			x = 0.3375;
+			y = 0.68;
 			w = 0.3;
 			h = 0.05;
+		};
+		class cancelClanInvite: W_RscButton
+		{
+			idc = 700012;
+			onButtonClick = "call cancelPendInvite;";
+			color[] = {0.95,0.1,0.1,1};
+
+			text = "Cancel Invite"; //--- ToDo: Localize;
+			x = 0.3125;
+			y = 0.5;
+			w = 0.125;
+			h = 0.06;
+			tooltip = "If you select a player you will cancel only your invite, otherwise you will cancel all."; //--- ToDo: Localize;
+		};
+		//TEMP GROUP
+		class TempInviteButton: W_RscButton
+		{
+			idc = 700002;
+			onButtonClick = "call tempGroupInvite;";
+			color[] = {0.1,0.95,0.1,1};
+
+			text = "Group Invite"; //--- ToDo: Localize;
+			x = 0.3125;
+			y = 0.26;
+			w = 0.125;
+			h = 0.0600256;
+			tooltip = "Invite the player to your group temporarily";
+		};
+		class TempKickButton: W_RscButton
+		{
+			idc = 700003;
+			onButtonClick = "call tempGroupKick;";
+			color[] = {0.95,0.1,0.1,1};
+
+			text = "Group Kick"; //--- ToDo: Localize;
+			x = 0.3125;
+			y = 0.34;
+			w = 0.125;
+			h = 0.0600256;
+			tooltip = "Kick the player of your group";
+		};
+		class TempLeaveButton: W_RscButton
+		{
+			idc = 700004;
+			onButtonClick = "call tempGroupLeave;";
+			color[] = {0.95,0.1,0.1,1};
+
+			text = "Leave Group"; //--- ToDo: Localize;
+			x = 0.3125;
+			y = 0.42;
+			w = 0.125;
+			h = 0.06;
+			tooltip = "It leaves the group but remains in the clan if there is one."; //--- ToDo: Localize;
+		};
+		class CreateClanButton: W_RscButton
+		{
+			idc = 700005;
+			onButtonClick = "((findDisplay 55510) displayCtrl 700001) ctrlShow true; ((findDisplay 55510) displayCtrl 700006) ctrlShow true; ((findDisplay 55510) displayCtrl 700007) ctrlShow true;";
+			color[] = {0.1,0.95,0.1,1};
+
+			text = "Create Clan"; //--- ToDo: Localize;
+			x = 0.1875;
+			y = 0.68;
+			w = 0.1125;
+			h = 0.06;
+			tooltip = "Create a definitive clan";
+		};
+		class CreateOk: W_RscButton
+		{
+			idc = 700006;
+			onButtonClick = "call createClan; closeDialog 0;groupManagmentActive = false;";
+			color[] = {0.1,0.95,0.1,1};
+
+			text = "Ok"; //--- ToDo: Localize;
+			x = 0.6375;
+			y = 0.68;
+			w = 0.1125;
+			h = 0.06;
+		};
+		class CreateCancel: W_RscButton
+		{
+			idc = 700007;
+			onButtonClick = "((findDisplay 55510) displayCtrl 700006) ctrlShow false; ((findDisplay 55510) displayCtrl 700007) ctrlShow false; ((findDisplay 55510) displayCtrl 700001) ctrlShow false;";
+			color[] = {0.1,0.95,0.1,1};
+
+			text = "Cancel"; //--- ToDo: Localize;
+			x = 0.7625;
+			y = 0.68;
+			w = 0.1125;
+			h = 0.06;
+		};
+		class AcceptTempInvite: W_RscButton
+		{
+			idc = 700008;
+			onButtonClick = "call tempGroupAccept; closeDialog 0; groupManagmentActive = false;";
+			color[] = {0.1,0.95,0.1,1};
+
+			text = "Join"; //--- ToDo: Localize;
+			x = 0.275;
+			y = 0.58;
+			w = 0.1;
+			h = 0.0600256;
+		};
+		class DeclineTempInvite: W_RscButton
+		{
+			idc = 700009;
+			onButtonClick = "call tempGroupDecline;";
+			color[] = {0.95,0.1,0.1,1};
+
+			text = "Decline"; //--- ToDo: Localize;
+			x = 0.375;
+			y = 0.58;
+			w = 0.1;
+			h = 0.0600256;
+		};
+		class GroupLevelBox: RscCombo
+		{
+			idc = 700010;
+
+			x = 0.4875;
+			y = 0.6;
+			w = 0.2375;
+			h = 0.04;
+		};
+		class applyButton: W_RscButton
+		{
+			idc = 700011;
+			onButtonClick = "call setRankLevel; closeDialog 0; groupManagmentActive = false;";
+			color[] = {0.1,0.95,0.1,1};
+
+			text = "Apply"; //--- ToDo: Localize;
+			x = 0.77675;
+			y = 0.5904;
+			w = 0.1125;
+			h = 0.06;
 		};
 	};
 };

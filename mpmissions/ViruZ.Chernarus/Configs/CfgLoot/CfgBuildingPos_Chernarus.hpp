@@ -31,7 +31,7 @@
 		};
 	};
 	
-	class Land_rail_station_big: Basic_Residence
+	class Land_rail_station_big: Church
 	{
 		lootPos[] =
 		{
@@ -48,7 +48,7 @@
 		};
 	};
 	
-	class Land_HouseV_1I4: Basic_Residence
+	class Land_HouseV_1I4: Rustic_Residence
 	{
 		lootPos[] =
 		{
@@ -65,7 +65,7 @@
 		};
 	};
 	
-	class Land_BoatSmall_1: Basic_Residence
+	class Land_BoatSmall_1: Church
 	{
 		lootPos[] =
 		{
@@ -87,7 +87,7 @@
 		};
 	};
 
-	class Land_Slum_House03_F: Basic_Residence
+	class Land_Slum_House03_F: Church
 	{
 		lootPos[] =
 		{
@@ -118,7 +118,7 @@
 		};
 	};
 	
-	class Land_i_Stone_HouseBig_V3_F: Basic_Residence
+	class Land_i_Stone_HouseBig_V3_F: Rustic_Residence
 	{
 		lootPos[] =
 		{
@@ -128,6 +128,14 @@
 			{2.25146,-0.77832,1.49255},
 			{-0.90625,3.16309,1.49255},
 			{3.79395,1.66895,-1.34302}
+		};
+	};
+	
+	class Land_i_Stone_HouseBig_V2_F: Rustic_Residence
+	{
+		lootPos[] =
+		{
+			
 		};
 	};
 	
@@ -307,7 +315,7 @@
 	
 	class Land_i_House_Big_01_V3_F: Special_Residence
 	{
-		lootPos[] =
+		lootPos[]=
 		{
 			{0.71582,5.84082,-2.5047},
 			{1.36914,-4.26758,1.00836},
@@ -321,7 +329,7 @@
 		};
 	};
 	
-	class Land_Offices_01_V1_F: Office
+	class Land_Offices_01_V1_F: Big_Office
 	{
 		lootPos[] =
 		{
@@ -509,7 +517,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Market
 	
-	class Land_A_GeneralStore_01a: Market
+	class Land_A_GeneralStore_01a: Big_Office
 	{
 		lootPos[] =
 		{
@@ -913,7 +921,7 @@
 		};
 	};
 
-	class Land_CarService_F: Factory
+	class Land_CarService_F: Workshop
 	{
 		lootPos[] =
 		{
@@ -1053,7 +1061,7 @@
 		};
 	};
 	
-	class Land_House_C_4_EP1: Restaurant
+	class Land_House_C_4_EP1: Small_Market
 	{
 		lootPos[] =
 		{
@@ -1178,7 +1186,7 @@
 	
 	/////////////////////////////////////////////////////////////////////////////////
 	//Escolas
-	class Land_A_Office01: Office
+	class Land_A_Office01: Big_Office
 	{
 		lootPos[] =
 		{
@@ -1432,7 +1440,7 @@
 		};
 	};
 
-	class Land_Ind_Workshop01_01: Factory
+	class Land_Ind_Workshop01_01: Workshop
 	{
 		lootPos[] =
 		{
@@ -1445,7 +1453,7 @@
 		};
 	};
 
-	class Land_Ind_Workshop01_02: Factory
+	class Land_Ind_Workshop01_02: Workshop
 	{
 		lootPos[] =
 		{
@@ -1456,7 +1464,7 @@
 		};
 	};
 
-	class Land_Ind_Workshop01_04: Factory
+	class Land_Ind_Workshop01_04: Workshop
 	{
 		lootPos[] =
 		{
@@ -1467,7 +1475,7 @@
 		};
 	};
 
-	class Land_Ind_Workshop01_L: Factory
+	class Land_Ind_Workshop01_L: Workshop
 	{
 		lootPos[] =
 		{
@@ -1480,7 +1488,7 @@
 		};
 	};
 	
-	class Land_Ind_Garage01: Factory
+	class Land_Ind_Garage01: Workshop
 	{
 		lootPos[] =
 		{
@@ -1596,7 +1604,7 @@
 		};
 	};
 	
-	class Land_Shed_02_F: Factory
+	class Land_Shed_02_F: Tools_Shed
 	{
 		lootPos[] =
 		{
@@ -1608,7 +1616,7 @@
 		};
 	};
 	
-	class Land_Shed_W01: Factory
+	class Land_Shed_W01: Tools_Shed
 	{
 		lootPos[] =
 		{
@@ -1784,7 +1792,7 @@
 		};
 	};
 	
-	class Land_Shed_Ind02: Factory
+	class Land_Shed_Ind02: Construction
 	{
 		lootPos[] =
 		{
@@ -1819,7 +1827,7 @@
 		};
 	};
 	
-	class Land_i_Shed_Ind_F: Factory
+	class Land_i_Shed_Ind_F: Construction
 	{
 		lootPos[] =
 		{
@@ -2067,7 +2075,7 @@
 		};
 	};
 	
-	class Land_Misc_deerstand: Basic_Military
+	class Land_Misc_deerstand: Hunt_Tower
 	{
 		lootPos[] =
 		{
@@ -2106,6 +2114,61 @@
 			{1.77124,2.82568,0.136848},
 			{-1.91553,3.34717,0.136848},
 			{-1.93848,0.726074,0.000812531}
+		};
+	};
+	
+		class Land_Vez: Watch_Tower
+	{
+		lootPos[] =
+		{
+			{-0.58252,1.6543,1.35693},
+			{0.117065,0.839355,1.39404},
+			{-0.0490723,1.93213,1.35504}
+		};
+	};
+	
+	class Land_u_Barracks_V2_F: Special_Military
+	{
+		lootPos[] =
+		{
+			{9.78125,1.0957,-1.78262},
+			{-8.79004,0.990234,-1.78262},
+			{-15.208,5.0957,-1.78262},
+			{-12.209,5.0332,-1.78262},
+			{-3.16602,5.12598,-1.78262},
+			{-7.56152,3.14063,-1.78262},
+			{-8.86914,5.18945,-1.78262},
+			{-0.198242,5.22949,-1.78262},
+			{3.38477,5.14941,-1.78262},
+			{9.60449,5.03906,-1.78262},
+			{0.0361328,-2.87891,-1.78262},
+			{3.06152,-2.99512,-1.78262},
+			{9.82031,-2.7041,-1.78262},
+			{6.79395,-2.74805,-1.78262},
+			{-2.71387,-0.865234,-0.183807},
+			{-15.1006,-2.99707,-1.78262},
+			{-12.1367,-2.875,-1.78262},
+			{9.78125,1.0957,1.54143},
+			{-8.79004,0.990234,1.54143},
+			{-5.93457,5.08301,1.54143},
+			{-15.208,5.0957,1.54143},
+			{-12.209,5.0332,1.54143},
+			{-3.16602,5.12598,1.54143},
+			{-8.39258,3.1543,1.54143},
+			{3.38477,5.14941,1.54143},
+			{9.60449,5.03906,1.54143},
+			{0.0361328,-2.87891,1.54143},
+			{3.06152,-2.99512,1.54143},
+			{9.82031,-2.7041,1.54143},
+			{6.79395,-2.74805,1.54143},
+			{-15.1006,-2.99707,1.54143},
+			{-12.1367,-2.875,1.54143},
+			{-6.08887,-4.88379,1.54143},
+			{-8.44043,-4.86523,1.54143},
+			{-15.9834,6.72754,1.54143},
+			{-3.49609,6.82422,1.54143},
+			{12.4844,6.68652,1.54143},
+			{4.01074,6.70215,1.54143}
 		};
 	};
 	

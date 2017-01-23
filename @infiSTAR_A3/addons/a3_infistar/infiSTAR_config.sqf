@@ -107,7 +107,11 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		['UID1','UID2','UID3','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		[
+			'76561198122837895', //Bullet
+			'UID2',
+			'UID3',
+			'...'],	// Admins with UIDs in this Array have their Access defined in the array below.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
@@ -117,8 +121,7 @@ _adminUIDandAccess =
 			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
 			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
 			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
-			'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
-			'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
+			'infiSTAR AI ESP',
 			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
 			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
 			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',

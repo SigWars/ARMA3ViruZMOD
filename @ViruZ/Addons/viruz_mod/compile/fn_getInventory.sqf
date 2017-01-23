@@ -40,32 +40,35 @@ _backwpMags					= [];
 
 //added to get attached items on weapon
 _backWeapons = weaponsItemsCargo backpackContainer _unit;
+if (count _backWeapons > 0) then
 {
-	_wpSupress 		= _x select 1;
-	_wpLight 		= _x select 2;
-	_wpOptic		= _x select 3;
-	_wpMag 			= _x select 4;
-	_wpBipod 		= _x select 5;
-	
-	_backwpItems pushback _wpSupress;
-	_backwpItems pushback _wpLight;
-	_backwpItems pushback _wpOptic; 
-	_backwpMags pushback _wpMag;
-	
-	if (typeName _wpBipod == "STRING") then 
 	{
-			_backwpItems pushback _wpBipod;
-	}
-	else
-	{
-		if (typeName _wpBipod == "ARRAY") then 
+		_wpSupress 		= _x select 1;
+		_wpLight 		= _x select 2;
+		_wpOptic		= _x select 3;
+		_wpMag 			= _x select 4;
+		_wpBipod 		= _x select 5;
+		
+		_backwpItems pushback _wpSupress;
+		_backwpItems pushback _wpLight;
+		_backwpItems pushback _wpOptic; 
+		_backwpMags pushback _wpMag;
+		
+		if (typeName _wpBipod == "STRING") then 
 		{
-			_backwpMags pushback _wpBipod;
-		};
-	};	
-	
-	
-}forEach _backWeapons;
+				_backwpItems pushback _wpBipod;
+		}
+		else
+		{
+			if (typeName _wpBipod == "ARRAY") then 
+			{
+				_backwpMags pushback _wpBipod;
+			};
+		};	
+		
+		
+	}forEach _backWeapons;
+};
 
 //diag_log format ["Items Array = %1", _backwpItems];
 //diag_log format ["Mags Array = %1", _backwpMags];

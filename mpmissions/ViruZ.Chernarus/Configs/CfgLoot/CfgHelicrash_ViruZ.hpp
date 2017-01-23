@@ -14,22 +14,22 @@ class HelicrashViruZ: Default {
 		lootChance = 0.5;
 		lootPos[] = {};
 		itemType[] =	{
-			{"","ArmasHigh"},
-			{"","Mag_ArmasHigh"},
-			{"","ArmasMedias"},
-			{"","Mag_ArmasMedias"},
-			{"","ArmasLow"},
-			{"","Mag_ArmasLow"},
-			{"","Acessorios_Optic"}
+			{"","Rifles_Flashlights"},
+			{"","Lasers"},
+			{"","Bipods"},
+			{"","Suppressors_Low"},
+			{"","Optics_Low"},
+			{"","Assault_Low"},
+			{"","Mag_Assault_Low"}
 		};
 		itemChance[] =	{
-			0.02,	//ArmasHigh
-			0.02,	//Mag_ArmasHigh
-			0.04,	//ArmasMedias
-			0.04,	//Mag_ArmasMedias
-			0.06,	//ArmasLow
-			0.06,	//Mag_ArmasLow
-			0.05	//Acessorios_Optic
+			0.05,	//Rifles Flashlights
+			0.05,	//Lasers
+			0.05,	//Bipods
+			0.04,	//Suppressors Low
+			0.04,	//Optics Low
+			0.04,	//Assault Low
+			0.04	//Mag Assault Low
 		};
 	};
 	

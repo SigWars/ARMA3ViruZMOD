@@ -25,9 +25,17 @@ if (count _savedGroup > 1) then {
 //keyboard_keys set [(actionKeys "TacticalView") select 0,{_handled = true;}];
 //keyboard_keys set [DIK_RWIN,{if (dialog) then {closeDialog 0;groupManagementActive = false;} else {execVM "vzgm\loadGroupManagement.sqf";};_handled = true;}];
 
+createClan = compile preprocessFileLineNumbers "vzgm\createclan.sqf";
+setRankLevel = compile preprocessFileLineNumbers "vzgm\setRankLevel.sqf";
+cancelPendInvite = compile preprocessFileLineNumbers "vzgm\cancelPendInvite.sqf";
 acceptGroupInvite = compile preprocessFileLineNumbers "vzgm\acceptGroupInvite.sqf";
 declineGroupInvite = compile preprocessFileLineNumbers "vzgm\declineGroupInvite.sqf";
 disbandGroup = compile preprocessFileLineNumbers "vzgm\disbandGroup.sqf";
+tempGroupInvite = compile preprocessFileLineNumbers "vzgm\tempGroupInvite.sqf";
+tempGroupKick = compile preprocessFileLineNumbers "vzgm\tempGroupKick.sqf";
+tempGroupLeave = compile preprocessFileLineNumbers "vzgm\tempGroupLeave.sqf";
+tempGroupAccept = compile preprocessFileLineNumbers "vzgm\tempGroupAccept.sqf";
+tempGroupDecline = compile preprocessFileLineNumbers "vzgm\tempGroupDecline.sqf";
 vzgmSlowLoop = compile preprocessFileLineNumbers "vzgm\slowLoop.sqf";
 inviteToGroup = compile preprocessFileLineNumbers "vzgm\inviteToGroup.sqf";
 kickFromGroup = compile preprocessFileLineNumbers "vzgm\kickFromGroup.sqf";

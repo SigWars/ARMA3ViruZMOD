@@ -1,10 +1,24 @@
-private ["_mrkr","_name","_pPos","_puid","_playerIDC","_groupLeaderC"];
+private ["_pUnits","_playerIDC","_groupLeaderC","_clanName","_actualGroupName","_playerhaveClan","_canInvite"];
 //_savedGroup = [];
 while {true} do {
-	_playerIDC = getPlayerUID player; 
-	_groupLeaderC = player getVariable ["ClanLeader",_playerIDC]; 
 
-	if (_groupLeaderC isEqualTo _playerIDC) then 
+	_pUnits = units group player;
+	_playerIDC = getPlayerUID player; 
+	_groupLeaderC = player getVariable ["ClanLeader",_playerIDC];
+	_clanName = player getVariable ["clanName",name player];
+	_playerhaveClan = player getVariable ["haveClan",false];
+	_canInvite = player getVariable ["canInivite",time];
+	
+	//foce player to join clan group if not in temp group
+	if ((count _pUnits == 1) and _playerhaveClan and _canInvite < time )then{
+	
+		{
+			if (_clanName == groupID _x) exitWith { [player] join _x;};
+		}forEach allGroups;
+	};
+
+	//Set Clan owner leader of group if online
+	if ((_groupLeaderC isEqualTo _playerIDC) and (_clanName isEqualTo groupID (group player))) then 
 	{
 	
 		if !(player == leader group player) then 
@@ -13,9 +27,6 @@ while {true} do {
 			[group player, player] remoteExec ["selectLeader", groupOwner group player]; 
 		};
 	};
-	
-	
-	
 	
 	//#include "mapMarkers.sqf"
 	/*

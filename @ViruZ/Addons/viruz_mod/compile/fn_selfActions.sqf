@@ -147,16 +147,13 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 10)
 		_UIDdono = _building getVariable ["OwnerUID","0"];
 		_locked = _building getVariable ["Locked","0"];
 		_LockerUID = getPlayerUID player;
-		_savedGroup = profileNamespace getVariable["savedGroup",[]];
 		
 		
-		if (count _savedGroup > 1) then {
-			
-			if (_UIDdono in _savedGroup and _LockerUID in _savedGroup ) then {
-					_sameGroup = true;
-			};
-			
-		};
+		
+		//check group
+		_savedGroup = player getVariable ["ClanID","0"];
+		_permission = player getVariable ["LvL",0];
+		if ((_savedGroup isEqualto _UIDdono) and (_permission > 0)) then {_sameGroup = true;};
 		
 		if ((typeOf _building == "VIRUZ_WoodGate_new") or (typeOf _building == "Land_i_Shed_Ind_F")) then {
 			_maxDist = 4;
@@ -378,7 +375,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 6))
 	//Repairing Vehicles
 	if ((viruz_myCursorTarget != cursorTarget) and _isVehicle and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
 		_vehicle = cursorTarget;
-		{viruz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+		{viruz_myCursorTarget removeAction _x} forEach s_player_repairActions;
+		s_player_repairActions = [];
 		viruz_myCursorTarget = _vehicle;
 
 		_allFixed = true;

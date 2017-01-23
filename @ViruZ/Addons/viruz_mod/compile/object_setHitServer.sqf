@@ -14,7 +14,7 @@ if ((_selection != "") and local _unit) then {
 	if (_damage >= 1) then {
 		//["viruzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
 		viruzUpdateVehicle = [_unit,"damage"];
-		publicVariable "viruzUpdateVehicle";
+		publicVariableServer "viruzUpdateVehicle";
 	};
 	
 } else {

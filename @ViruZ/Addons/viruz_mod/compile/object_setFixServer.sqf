@@ -13,14 +13,14 @@ if (_selection != "" and local _unit) then {
 			[_unit,"repair"] call server_updateObject 
 		} else { 
 			viruzUpdateVehicle = [_unit,"repair"]; 
-			publicVariable "viruzUpdateVehicle"; 
+			publicVariableServer "viruzUpdateVehicle"; 
 		};
 	} else {
 		if (isServer) then { 
 			[_unit,"damage"] call server_updateObject 
 		} else { 
 			viruzUpdateVehicle = [_unit,"damage"]; 
-			publicVariable "viruzUpdateVehicle"; 
+			publicVariableServer "viruzUpdateVehicle"; 
 		};
 	};
 };

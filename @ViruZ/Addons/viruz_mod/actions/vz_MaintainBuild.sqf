@@ -129,7 +129,7 @@ if (count _Builds >= 1 and _couldFix) then {
 				{
 					_x setDamage 0;
 					viruzUpdateVehicle = [_x,"maintainBuild"];
-					publicVariable "viruzUpdateVehicle";
+					publicVariableServer "viruzUpdateVehicle";
 				};
 				
 				if (typeof _x == "Land_Portable_generator_F") then 
