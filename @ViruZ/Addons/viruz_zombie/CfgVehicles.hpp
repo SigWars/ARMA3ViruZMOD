@@ -917,8 +917,8 @@ class VZ_Doctor: VZ_Doctor_base
 			\rds_a2port_cman\doctor\data\doctor_co.paa
 		};
 		attendant = 1;
-		linkedItems[] = {"VZ_maskmed"}; /// items directly in inventory slots
-		respawnLinkedItems[] = {"VZ_maskmed"};
+		linkedItems[] = {""}; /// items directly in inventory slots
+		respawnLinkedItems[] = {""};
 		//uniformClass = "rds_uniform_doctor";
 	};
 
@@ -947,37 +947,11 @@ class VZ_Assistant: VZ_Doctor_base
 		{
 			\rds_a2port_cman\doctor\data\doctor_3_co.paa
 		};
-		linkedItems[] = {"VZ_maskmed"}; /// items directly in inventory slots
+		linkedItems[] = {""}; /// items directly in inventory slots
 		respawnLinkedItems[] = {"VZ_maskmed"};
 		//uniformClass = "rds_uniform_assistant";
 	};
 	//New SigWar
-class VZ_zed: zZombie_Base /// class visible in editor
-	{
-		scope = 2; /// scope needs to be 2 to have a visible class
-		displayName = "VIRUZ zombie Policeman"; /// what's displayed in editor or on cursor over
-		model = "\viruz_zombie\models\zed.p3d"; /// path to model
-		uniformClass = "U_zed_uniform";
-		moves = "CfgMovesZombie";
-		backpack = "";
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {"VZ_zedcap"}; /// items directly in inventory slots
-		respawnLinkedItems[] = {"VZ_zedcap"};
-	};
-	class VZ_woman: zZombie_Base /// class visible in editor
-	{
-		scope = 2; /// scope needs to be 2 to have a visible class
-		displayName = "VIRUZ Woman survivor"; /// what's displayed in editor or on cursor over
-		model = "\viruz_zombie\models\woman.p3d"; /// path to model
-		uniformClass = "U_woman_uniform";
-		moves = "CfgMovesZombie";
-		backpack = "";
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {}; /// items directly in inventory slots
-		respawnLinkedItems[] = {};
-	};
 	class VZ_boomer: zZombie_Base /// class visible in editor
 	{
 		scope = 2; /// scope needs to be 2 to have a visible class
@@ -993,57 +967,5 @@ class VZ_zed: zZombie_Base /// class visible in editor
 		armor = 50;
 		cost = 1000000;
 	
-	};
-	class VZ_officer: zZombie_Base /// class visible in editor
-	{
-		scope = 2; /// scope needs to be 2 to have a visible class
-		displayName = "VIRUZ Officer zombie"; /// what's displayed in editor or on cursor over
-		model = "\viruz_zombie\models\zedofficer.p3d"; /// path to model
-		uniformClass = "U_officer_uniform";
-		moves = "CfgMovesZombie";
-		backpack = "";
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {"VZ_hatofficer"}; /// items directly in inventory slots
-		respawnLinkedItems[] = {"VZ_hatofficer"};
-	};
-	class VZ_zedwoman: zZombie_Base /// class visible in editor
-	{
-		scope = 2; /// scope needs to be 2 to have a visible class
-		displayName = "VIRUZ Woman zombie"; /// what's displayed in editor or on cursor over
-		model = "\viruz_zombie\models\zedwoman.p3d"; /// path to model
-		uniformClass = "U_zedwoman_uniform";
-		moves = "CfgMovesZombie";
-		backpack = "";
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {}; /// items directly in inventory slots
-		respawnLinkedItems[] = {};
-	};
-	class VZ_zedmalebig: zZombie_Base /// class visible in editor
-	{
-		scope = 2; /// scope needs to be 2 to have a visible class
-		displayName = "VIRUZ Big zombie"; /// what's displayed in editor or on cursor over
-		model = "\viruz_zombie\models\zedmalebig.p3d"; /// path to model
-		uniformClass = "U_zedmalebig_uniform";
-		moves = "CfgMovesZombie";
-		backpack = "";
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {}; /// items directly in inventory slots
-		respawnLinkedItems[] = {};
-	};
-	class VZ_medic: zZombie_Base /// class visible in editor
-	{
-		scope = 2; /// scope needs to be 2 to have a visible class
-		displayName = "VIRUZ Medic zombie"; /// what's displayed in editor or on cursor over
-		model = "\viruz_zombie\models\test.p3d"; /// path to model
-		uniformClass = "U_zedmedic_uniform";
-		moves = "CfgMovesZombie";
-		backpack = "";
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {"VZ_maskmed"}; /// items directly in inventory slots
-		respawnLinkedItems[] = {"VZ_maskmed"};
 	};
 };

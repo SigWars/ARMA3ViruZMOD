@@ -25,9 +25,9 @@ _onlinePlayerUID = [];
 		_namestr = name _x;             
 		_index = _playerListBox lbAdd _namestr;
 		_playerListBox lbSetData [_index,str(_x)];
-		_playerListBox lbSetPicture [_index,"vzgm\ui\igui_viruzico_ca.paa"];
+		_playerListBox lbSetPicture [_index,"\z\addons\viruz_mod\code\vzgm\ui\igui_viruzico_ca.paa"];
 		_playerListBox lbSetPictureColor [_index,[0,1,0,1]];
-		if (count units group _x > 1) then {_playerListBox lbSetPicture [_index,"vzgm\ui\igui_viruzico_ca.paa"]; _playerListBox lbSetPictureColor [_index,[1,0,0,1]];};
+		if (count units group _x > 1) then {_playerListBox lbSetPicture [_index,"\z\addons\viruz_mod\code\vzgm\ui\igui_viruzico_ca.paa"]; _playerListBox lbSetPictureColor [_index,[1,0,0,1]];};
 	};	    
 } count allUnits;
 
@@ -39,12 +39,12 @@ _pUnits = units group player;
 		_index = _groupListBox lbAdd _namestr;
 		_groupListBox lbSetData [_index,str(_x)];
 		if (getPlayerUID player isEqualTo _gclanID)then{
-				_groupListBox lbSetPicture [_index,"vzgm\ui\igui_viruzico_ca.paa"];
+				_groupListBox lbSetPicture [_index,"\z\addons\viruz_mod\code\vzgm\ui\igui_viruzico_ca.paa"];
 				_groupListBox lbSetPictureColor [_index,[0,1,0,1]];
 			}
 			else
 			{	
-				_groupListBox lbSetPicture [_index,"vzgm\ui\igui_viruzico_ca.paa"];
+				_groupListBox lbSetPicture [_index,"\z\addons\viruz_mod\code\vzgm\ui\igui_viruzico_ca.paa"];
 				_groupListBox lbSetPictureColor [_index,[1,1,0,1]];
 			};
 		_onlineUID = getPlayerUID _x;
@@ -62,7 +62,7 @@ _pUnits = units group player;
 	{
 		_pname = _x select 2;
 		_index = _groupListBox lbAdd _pname;
-		_groupListBox lbSetPicture [_index,"vzgm\ui\igui_viruzico_ca.paa"];
+		_groupListBox lbSetPicture [_index,"\z\addons\viruz_mod\code\vzgm\ui\igui_viruzico_ca.paa"];
 		_groupListBox lbSetPictureColor [_index,[0.663,0.663,0.663,1]];
 	};
 } forEach _savedGroup;
@@ -76,6 +76,6 @@ _onlinePlayerUID = [];
 		_pname = _x select 2;
 		_index = _groupOffListBox lbAdd _pname;
 		_groupOffListBox lbSetData [_index,_puid];
-		_groupOffListBox lbSetPicture [_index,"vzgm\ui\objective_incomplete_ca.paa"];
+		_groupOffListBox lbSetPicture [_index,"\z\addons\viruz_mod\code\vzgm\ui\objective_incomplete_ca.paa"];
 	};
 } forEach _savedGroup;*/

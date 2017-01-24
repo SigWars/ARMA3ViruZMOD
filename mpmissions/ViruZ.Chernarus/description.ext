@@ -70,12 +70,6 @@ class CfgDebriefing
 #include "Configs\CfgMap\Chernarus.hpp"			// Arvores / Metal / Pedra etc..
 #include "snap_build\points.hpp"
 
-#include "vzgm\defines.hpp" 			
-#include "vzgm\extra_rc.hpp"			
-#include "vzgm\groupManagement.hpp"
-
-
-
 class cfgGame {
 	
 	// ViruZ Parametros

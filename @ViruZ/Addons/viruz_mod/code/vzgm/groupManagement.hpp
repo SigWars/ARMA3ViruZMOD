@@ -8,7 +8,7 @@ class GroupManagement {
 				
 		class MainBG : W_RscPicture {
 			idc = -1;
-			text = "vzgm\ui\ui_background_controlers_ca.paa";
+			text = "\z\addons\viruz_mod\code\vzgm\ui\ui_background_controlers_ca.paa";
 			moving = true;
 			x = .0; y = .1;
 			w = 1.3; h = .65;

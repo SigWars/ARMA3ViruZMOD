@@ -39,7 +39,7 @@ class RscButtonMenu;
 class RscShortcutButton;
 class RscShortcutButtonMain;
 class RscListBox;
-class RscCombo;
+//class RscCombo;
 class RscButtonMenuOK;
 class RscActivePicture;
 class HScrollbar; //ui
@@ -62,9 +62,9 @@ class RscButtonMenuCancel;
 #include "Configs\CfgAISkill.hpp"
 
 //vzgm
-//#include "external\vzgm\defines.hpp" 			
-//#include "external\vzgm\extra_rc.hpp"			
-//#include "external\vzgm\groupManagement.hpp"	
+#include "code\vzgm\defines.hpp" 			
+#include "code\vzgm\extra_rc.hpp"			
+#include "code\vzgm\groupManagement.hpp"	
 
 #include "ui\RscDisplayLoading.hpp" //Nova UI
 #include "ui\CfgScriptPaths.hpp"

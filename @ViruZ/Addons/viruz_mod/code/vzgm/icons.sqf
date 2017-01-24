@@ -21,7 +21,7 @@ vzgmIconsName = {
     };
     if (_makeIcons)then {
         _pIcons = [];
-		_pGicon = "vzgm\ui\igui_side_indep_ca.paa";
+		_pGicon = "\z\addons\viruz_mod\code\vzgm\ui\igui_side_indep_ca.paa";
         for "_markerIndex" from 0 to (_uc - 1) do {_pIcons set [_markerIndex,_pGicon];};
         player setVariable ["vzgmHudpIcons",_pIcons];
     };

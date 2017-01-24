@@ -61,8 +61,8 @@ class W_RscList
 	colorBackground[] = {1,1,1,0};
 	colorSelectBackground[] = {.40, .43, .28, .5};
 	colorScrollbar[] = {.2, .2, .2, 1};
-	arrowEmpty = "vzgm\ui\ui_arrow_combo_ca.paa";
-	arrowFull = "vzgm\ui\ui_arrow_combo_active_ca.paa";
+	arrowEmpty = "\z\addons\viruz_mod\code\vzgm\ui\ui_arrow_combo_ca.paa";
+	arrowFull = "\z\addons\viruz_mod\code\vzgm\ui\ui_arrow_combo_active_ca.paa";
 	wholeHeight = .45;
 	rowHeight = .04;
 	color[] = {.7, .7, .7, 1};
@@ -85,10 +85,10 @@ class W_RscList
 		color[] = {1, 1, 1, 1};
 		colorActive[] = {1, 1, 1, 1};
 		colorDisabled[] = {1, 1, 1, 1};
-		thumb = "vzgm\ui\ui_scrollbar_thumb_ca.paa";
-		arrowFull = "vzgm\ui\data\ui_arrow_top_active_ca.paa";
-		arrowEmpty = "vzgm\ui\data\ui_arrow_top_ca.paa";
-		border = "vzgm\ui\ui_border_scroll_ca.paa";
+		thumb = "\z\addons\viruz_mod\code\vzgm\ui\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "\z\addons\viruz_mod\code\vzgm\ui\data\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "\z\addons\viruz_mod\code\vzgm\ui\data\ui_arrow_top_ca.paa";
+		border = "\z\addons\viruz_mod\code\vzgm\ui\ui_border_scroll_ca.paa";
 	};
 };
 
@@ -137,12 +137,12 @@ class W_RscButtonBase {
 		right = .005;
 		bottom = .025;	
 	};
-	animTextureNormal = "vzgm\ui\ui_button_normal_ca.paa";
-	animTextureDisabled = "vzgm\ui\ui_button_disabled_ca.paa";
-	animTextureOver = "vzgm\ui\ui_button_over_ca.paa";
-	animTextureFocused = "vzgm\ui\ui_button_focus_ca.01.paa";
-	animTexturePressed = "vzgm\ui\ui_button_down_ca.paa";
-	animTextureDefault = "vzgm\ui\ui_button_default_ca.paa";
+	animTextureNormal = "\z\addons\viruz_mod\code\vzgm\ui\ui_button_normal_ca.paa";
+	animTextureDisabled = "\z\addons\viruz_mod\code\vzgm\ui\ui_button_disabled_ca.paa";
+	animTextureOver = "\z\addons\viruz_mod\code\vzgm\ui\ui_button_over_ca.paa";
+	animTextureFocused = "\z\addons\viruz_mod\code\vzgm\ui\ui_button_focus_ca.01.paa";
+	animTexturePressed = "\z\addons\viruz_mod\code\vzgm\ui\ui_button_down_ca.paa";
+	animTextureDefault = "\z\addons\viruz_mod\code\vzgm\ui\ui_button_default_ca.paa";
 	textureNoShortcut = "";
 	period = .4;
 	font = "PuristaLight";
@@ -150,10 +150,10 @@ class W_RscButtonBase {
 	sizeEx = .028;
 	text = "";
 	
-	soundEnter[] = {"\vzgm\ui\sound\mouse2", .09, 1};
-	soundPush[] = {"\vzgm\ui\sound\new1", .09, 1};
-	soundClick[] = {"\vzgm\ui\sound\mouse3", .07, 1};
-	soundEscape[] = {"\vzgm\ui\sound\mouse1", .09, 1};
+	soundEnter[] = {"\z\addons\viruz_mod\code\vzgm\ui\sound\mouse2", .09, 1};
+	soundPush[] = {"\z\addons\viruz_mod\code\vzgm\ui\sound\new1", .09, 1};
+	soundClick[] = {"\z\addons\viruz_mod\code\vzgm\ui\sound\mouse3", .07, 1};
+	soundEscape[] = {"\z\addons\viruz_mod\code\vzgm\ui\sound\mouse1", .09, 1};
 	
 	action = "";
 	
@@ -207,13 +207,13 @@ class W_RscButton : W_RscButtonBase {
 		bottom = .005;
 	};
 	
-	animTextureNormal = "vzgm\ui\igui_button_normal_ca.paa";
-	animTextureDisabled = "vzgm\ui\igui_button_disabled_ca.paa";
-	animTextureOver = "vzgm\ui\igui_button_over_ca.paa";
-	animTextureFocused = "vzgm\ui\igui_button_focus_ca.paa";
-	animTexturePressed = "vzgm\ui\igui_button_down_ca.paa";
-	animTextureDefault = "vzgm\ui\igui_button_normal_ca.paa";
-	animTextureNoShortcut = "vzgm\ui\igui_button_normal_ca.paa";
+	animTextureNormal = "\z\addons\viruz_mod\code\vzgm\ui\igui_button_normal_ca.paa";
+	animTextureDisabled = "\z\addons\viruz_mod\code\vzgm\ui\igui_button_disabled_ca.paa";
+	animTextureOver = "\z\addons\viruz_mod\code\vzgm\ui\igui_button_over_ca.paa";
+	animTextureFocused = "\z\addons\viruz_mod\code\vzgm\ui\igui_button_focus_ca.paa";
+	animTexturePressed = "\z\addons\viruz_mod\code\vzgm\ui\igui_button_down_ca.paa";
+	animTextureDefault = "\z\addons\viruz_mod\code\vzgm\ui\igui_button_normal_ca.paa";
+	animTextureNoShortcut = "\z\addons\viruz_mod\code\vzgm\ui\igui_button_normal_ca.paa";
 	
 	class Attributes {	
 		font = "PuristaLight";
@@ -236,8 +236,8 @@ class RscCombo {
 	colorBackground[] = {1,1,1,0};
 	colorSelectBackground[] = {.40, .43, .28, .5};
 	colorScrollbar[] = {.2, .2, .2, 1};
-	arrowEmpty = "vzgm\ui\ui_arrow_combo_ca.paa";
-	arrowFull = "vzgm\ui\ui_arrow_combo_active_ca.paa";
+	arrowEmpty = "\z\addons\viruz_mod\code\vzgm\ui\ui_arrow_combo_ca.paa";
+	arrowFull = "\z\addons\viruz_mod\code\vzgm\ui\ui_arrow_combo_active_ca.paa";
 	wholeHeight = 0.45;
 	color[] = {0, 0, 0, 0.6};
 	colorActive[] = {0, 0, 0, 1};
@@ -253,9 +253,9 @@ class RscCombo {
 		color[] = {1, 1, 1, 1};
 		colorActive[] = {1, 1, 1, 1};
 		colorDisabled[] = {1, 1, 1, 1};
-		thumb = "vzgm\ui\ui_scrollbar_thumb_ca.paa";
-		arrowFull = "vzgm\ui\data\ui_arrow_top_active_ca.paa";
-		arrowEmpty = "vzgm\ui\data\ui_arrow_top_ca.paa";
-		border = "vzgm\ui\ui_border_scroll_ca.paa";
+		thumb = "\z\addons\viruz_mod\code\vzgm\ui\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "\z\addons\viruz_mod\code\vzgm\ui\data\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "\z\addons\viruz_mod\code\vzgm\ui\data\ui_arrow_top_ca.paa";
+		border = "\z\addons\viruz_mod\code\vzgm\ui\ui_border_scroll_ca.paa";
 	};
 };
