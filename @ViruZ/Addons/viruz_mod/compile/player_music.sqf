@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_zombie","_type","_chance","_rnd","_sound"];
 while {!r_player_dead} do {
 	_num = round(random 35);

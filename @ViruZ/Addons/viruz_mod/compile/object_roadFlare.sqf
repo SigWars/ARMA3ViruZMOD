@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_flare","_sfx","_isLocal","_lightArea","_lightSpark","_type","_color"];
 _flare = _this select 0;
 _type = _this select 1;

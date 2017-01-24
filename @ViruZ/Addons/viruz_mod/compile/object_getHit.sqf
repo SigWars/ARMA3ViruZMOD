@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_unit","_hp","_selection","_strH","_dam"];
 _unit =		_this select 0;
 _hp =		_this select 1;

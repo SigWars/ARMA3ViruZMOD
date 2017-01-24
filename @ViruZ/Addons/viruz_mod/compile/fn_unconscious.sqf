@@ -1,8 +1,9 @@
-/**********************************************************
-	Viruz Mod
-	Unconcius Script by SigWar
-	
-**********************************************************/
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private ["_totalTimeout","_timeout","_bloodLow","_display","_ctrl1","_ctrl1Pos"];
 disableSerialization;
 if ((!r_player_handler1) && (r_handlerCount == 0)) then {

@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_target", "_caller", "_id", "_dog", "_pos", "_fsmid"];
 _target = 	_this select 0;
 _caller = 	_this select 1;

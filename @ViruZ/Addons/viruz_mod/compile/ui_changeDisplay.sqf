@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_state"];
 disableSerialization;
 _state = uiNamespace getVariable ['DZ_displayUI', 0];

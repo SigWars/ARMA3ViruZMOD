@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax"];
 		disableSerialization;
 		_display = findDisplay 49;

@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 _curDate = date;
 _hr = _curDate select 3;
 _min = _curDate select 4;

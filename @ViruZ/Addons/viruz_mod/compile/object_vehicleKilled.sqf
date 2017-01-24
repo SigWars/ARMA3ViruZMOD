@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_unit","_killer","_type","_pos","_dir"];
 _unit =			_this select 0;
 _killer =		_this select 1;

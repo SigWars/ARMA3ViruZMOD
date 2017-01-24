@@ -1,6 +1,7 @@
 /*
-	Althor: SteelRat
-	Modified by: SigWar
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
 
 Private ["_class","_unit","_magazinesAmmo","_return"];

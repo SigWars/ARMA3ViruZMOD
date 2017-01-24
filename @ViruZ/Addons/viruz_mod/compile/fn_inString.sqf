@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 //Kilzone_Kid's megafast inString function
 //caseinsensitive
 //params [needle,haystack]

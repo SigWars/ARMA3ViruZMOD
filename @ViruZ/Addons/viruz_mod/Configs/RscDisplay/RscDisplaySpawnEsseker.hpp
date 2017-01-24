@@ -5,7 +5,7 @@ class RscDisplaySpawnEsseker {
 	class controlsBackground {
 		class Mainback : RscPicture {
 			idc = -1;
-			text = "\z\addons\viruz_mod\gui\spawn\born_bg.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\spawn_selection.paa";
 			x = 0 * safezoneW + safezoneX;
 			y = 0 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
@@ -102,7 +102,7 @@ class RscDisplaySpawnEsseker {
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\born_random.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\random_button.paa";
 			x = 0.420865 * safezoneW + safezoneX;
 			y = 0.336926 * safezoneH + safezoneY;
 			w = 0.168843675 * safezoneW;

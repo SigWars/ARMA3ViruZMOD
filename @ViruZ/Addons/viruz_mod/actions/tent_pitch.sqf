@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","_key","_vehicle","_structures","_items"];
 //check if can pitch here
 call gear_ui_init;

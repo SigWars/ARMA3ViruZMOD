@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_unit","_projectile","_isInCombat"];
 _unit =         _this select 0;
 _projectile = 	_this select 6;

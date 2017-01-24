@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private ["_config","_typeBox","_arrayAmmoBox","_arrayMagazines","_resultMagazines","_resultAmmoBox","_countReammoMagazines","_maxMag","_valMag","_typeMag","_ammoMag","_typeAmmoBox","_ammoAmmoBox","_valAmmoBox","_diff","_flag","_text","_item","_magazinesEmpty","_index"];
 
 _config = configFile >> "cfgMagazines";

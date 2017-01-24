@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_body","_name","_method","_methodStr"];
 _body = 	_this select 3;
 _name = 	_body getVariable["bodyName","unknown"];

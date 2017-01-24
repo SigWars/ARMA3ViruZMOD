@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_updates","_playerUID","_charID","_humanity","_worldspace","_model"];
 _playerUID 	= _this select 0;
 _charID 	= _this select 1;

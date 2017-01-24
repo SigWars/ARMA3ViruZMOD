@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_group","_target","_targetMen","_targetDis","_c","_man","_manDis","_targets","_lead","_leadheight","_nearEnts","_rnd","_assigned"];
 _group = _this;
 _target = objNull;

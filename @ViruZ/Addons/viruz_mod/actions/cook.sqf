@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_config","_item","_text","_rawmeat","_cookedmeat","_meat","_meatcooked","_qty","_id"];
 if (ViruzDebugMode > 1) then {
 	diag_log ("Cook Enabled");

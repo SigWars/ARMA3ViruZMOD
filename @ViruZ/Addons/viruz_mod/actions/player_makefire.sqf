@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_location","_isOk","_dir","_classname"];
 _location = player modeltoworld [0,0.3,0];
 if ((_location select 2) < 0) then {

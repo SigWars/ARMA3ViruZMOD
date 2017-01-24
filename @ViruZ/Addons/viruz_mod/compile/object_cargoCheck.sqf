@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_currentObjects","_currentTypes","_currentQty","_previousTypes","_previousQty","_serial","_itemVal","_itemQty","_oldSerial","_oldQty"];
 //_newObjects = [_previous,weapons player] call player_weaponCheck;
 _currentObjects = 	_this select 0;

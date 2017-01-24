@@ -1,8 +1,9 @@
 ﻿/*
-	Author: SigWar
-	sync player gear on close inventory
-	sync nearest objects inventory on close player inventory
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 
 private ["_objects","_inventory"];
 

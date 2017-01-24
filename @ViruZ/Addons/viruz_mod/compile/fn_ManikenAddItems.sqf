@@ -1,5 +1,7 @@
 /*
-	Author: SigWAr
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
 
 fnc_SelectType = {

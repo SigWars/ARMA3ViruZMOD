@@ -1,7 +1,9 @@
 /*
-_item spawn player_wearClothes;
-TODO: female
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_item","_isFemale","_itemNew","_item","_onLadder","_model","_hasclothesitem","_config","_text"];
 _item = _this;
 call gear_ui_init;

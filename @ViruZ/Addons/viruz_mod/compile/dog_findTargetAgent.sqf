@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_dog","_target","_targets","_targetDis","_c","_man","_manDis","_targets","_agentheight","_nearEnts","_rnd","_assigned","_range","_objects"];
 _dog = _this;
 _target = objNull;

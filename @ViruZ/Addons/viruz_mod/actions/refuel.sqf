@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_vehicle","_curFuel","_newFuel","_timeLeft","_cansGear","_capacity","_canSize"];
 
 //_vehicle = 		_this;

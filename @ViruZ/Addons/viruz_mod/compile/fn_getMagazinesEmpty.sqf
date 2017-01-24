@@ -1,6 +1,9 @@
 /*
-	Author: SigWAr
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 
 Private ["_unit","_magazinesEmpty","_item","_items","_index","_return"];
 

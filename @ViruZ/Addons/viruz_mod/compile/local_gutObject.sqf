@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_animalbody","_qty","_rawfoodtype","_ehLoc"];
 _animalbody = _this select 0;
 _qty = _this select 1;

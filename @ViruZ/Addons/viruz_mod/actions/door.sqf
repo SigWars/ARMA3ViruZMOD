@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private ["_building","_act","_DoorNumber","_objectID","_objectUID"];
 _building = _this select 3 select 0;
 _act = _this select 3 select 1;

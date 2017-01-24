@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_onLadder","_itemorignal","_hasdrinkitem","_hasoutput","_drinkValue","_config","_text","_sfx","_dis","_id","_itemtodrop","_nearByPile","_item","_display"];
 
 disableserialization;

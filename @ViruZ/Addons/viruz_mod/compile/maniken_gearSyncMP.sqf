@@ -1,5 +1,7 @@
 /*
-	Author: SigWar
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
 
 private["_inventory","_Uniform","_Vest","_Headgear","_Goggles","_Object"];

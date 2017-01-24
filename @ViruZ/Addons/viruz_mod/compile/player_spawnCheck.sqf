@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_nearbyBuildings","_radius","_locationstypes","_nearestCity","_position",
 "_nearbytype","_posLoot","_index","_checkPos","_result","_isOk","_isLootGroundSpawn","_players","_spawnZombies","_nearBy","_nearbyCount","_config","_canLoot","_dis","_nearPlayer",
 "_looted","_cleared","_nearByObj","_zombied"];

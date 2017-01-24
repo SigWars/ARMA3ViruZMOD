@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 //Let Zeds know
 [player,4,true,(getPosATL player)] call player_alertZombies;
 // _Survivors = playersNumber west;

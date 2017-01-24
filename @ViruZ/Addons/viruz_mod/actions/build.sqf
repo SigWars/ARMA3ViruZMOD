@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_location","_isOk","_dir","_classname","_item"];
 _location = player modeltoworld [0,1,0];
 //_location set [2,0];

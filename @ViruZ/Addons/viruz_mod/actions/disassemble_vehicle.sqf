@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_objectID","_objectUID","_obj","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_item","_vehicles","_items"];
 _obj = _this select 3;
 _objectID 	= _obj getVariable["ObjectID","0"];

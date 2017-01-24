@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_position","_location","_isOk","_backpack","_key","_vehicle","_vehicles","_items","_item","_cansGear","_newFuel","_capacity","_canSize"];
 
 _item = _this select 3;

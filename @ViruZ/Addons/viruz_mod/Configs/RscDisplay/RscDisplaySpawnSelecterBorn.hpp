@@ -5,7 +5,7 @@ class RscDisplaySpawnSelecterBorn {
 	class controlsBackground {
 		class Mainback : RscPicture {
 			idc = -1;
-			text = "\z\addons\viruz_mod\gui\spawn\born_bg.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\spawn_selection.paa";
 			x = 0 * safezoneW + safezoneX;
 			y = 0 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
@@ -14,7 +14,7 @@ class RscDisplaySpawnSelecterBorn {
 	};
 	class controls
 	{
-		class RscSelectedRegion1 : RscActiveText    //Cap Agrios  spawn1
+		/*class RscSelectedRegion1 : RscActiveText    //spawn1
 		{
 			idc = -1;
 			style = 48;
@@ -28,7 +28,7 @@ class RscDisplaySpawnSelecterBorn {
 			action = "closeDialog 0;viruz_selectRegion = 1;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
-		class RscSelectedRegion2: RscActiveText  // cap strigla spawn0
+		class RscSelectedRegion2: RscActiveText  //spawn0
 		{
 			idc = -1;
 			style = 48;
@@ -42,7 +42,7 @@ class RscDisplaySpawnSelecterBorn {
 			action = "closeDialog 0;viruz_selectRegion = 0;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
-		class RscSelectedRegion3: RscActiveText    //selakano spawn2
+		class RscSelectedRegion3: RscActiveText    //spawn2
 		{
 			idc = -1;
 			style = 48;
@@ -56,7 +56,7 @@ class RscDisplaySpawnSelecterBorn {
 			action = "closeDialog 0;viruz_selectRegion = 2;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
-		class RscSelectedRegion4: RscActiveText    // Zaros spawn3
+		class RscSelectedRegion4: RscActiveText    //spawn3
 		{
 			idc = -1;
 			style = 48;
@@ -70,7 +70,7 @@ class RscDisplaySpawnSelecterBorn {
 			action = "closeDialog 0;viruz_selectRegion = 3;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
-		class RscSelectedRegion5: RscActiveText   // Fotia spawn4
+		class RscSelectedRegion5: RscActiveText   //spawn4
 		{
 			idc = -1;
 			style = 48;
@@ -84,7 +84,7 @@ class RscDisplaySpawnSelecterBorn {
 			action = "closeDialog 0;viruz_selectRegion = 4;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
 		};
-		class RscSelectedRegion6: RscActiveText   // Faros spawn5
+		class RscSelectedRegion6: RscActiveText   //spawn5
 		{
 			idc = -1;
 			style = 48;
@@ -97,12 +97,12 @@ class RscDisplaySpawnSelecterBorn {
 			colorActive[] = { 1, 1, 1, 1 };
 			action = "closeDialog 0;viruz_selectRegion = 5;";
 			onMouseEnter = "ctrlSetFocus (_this select 0)";
-		};
+		};*/
 		class RscSelectedRegionRandom: RscActiveText //random
 		{
 			idc = -1;
 			style = 48;
-			text = "\z\addons\viruz_mod\gui\spawn\born_random.paa";
+			text = "\z\addons\viruz_mod\gui\spawn\random_button.paa";
 			x = 0.420865 * safezoneW + safezoneX;
 			y = 0.336926 * safezoneH + safezoneY;
 			w = 0.168843675 * safezoneW;

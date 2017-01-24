@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_vehicle","_part","_hitpoint","_type","_selection","_array"];
 _id = _this select 2;
 _array = 	_this select 3;

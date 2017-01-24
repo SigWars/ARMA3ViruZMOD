@@ -1,6 +1,7 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
 
 private ["_cfgHitPoints", "_hps", "_funcGetHitPoints"];

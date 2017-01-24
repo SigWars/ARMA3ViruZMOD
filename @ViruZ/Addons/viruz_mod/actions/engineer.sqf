@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 _array = _this select 3;
 _location = player modeltoworld [0,0.5,0];
 _dir = (getDir player) + 180;

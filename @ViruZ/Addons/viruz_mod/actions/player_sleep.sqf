@@ -1,4 +1,9 @@
-//http://community.bistudio.com/wiki/ArmA2:_Moves
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 
 player playMove "amovpsitmstpsraswrfldnon_smoking"; //	-	Sitting smoking
 

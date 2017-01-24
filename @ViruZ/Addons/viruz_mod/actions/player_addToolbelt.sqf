@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_item","_config","_onLadder","_create","_isOk","_config2","_consume"];
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;

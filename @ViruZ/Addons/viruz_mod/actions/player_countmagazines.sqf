@@ -1,5 +1,7 @@
 /*
-	Author: SigWar
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
 
 private ["_objects","_magazineArray","_max","_val","_item","_magazinesEmpty","_index"];

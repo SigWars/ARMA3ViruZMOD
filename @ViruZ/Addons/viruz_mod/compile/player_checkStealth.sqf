@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_agent","_surfaceType","_isInside","_vel","_speed","_pos","_scaleLight","_scaleSound","_visibility","_audibility","_anim","_skeleton","_animPose","_visiblePose","_audiblePose","_visibleTerrain","_visibleSpeed","_audibleSpeed","_audibleTerrain","_audial","_visual","_array"];
 private["_buildings","_building","_isOk","_i"];
 /*

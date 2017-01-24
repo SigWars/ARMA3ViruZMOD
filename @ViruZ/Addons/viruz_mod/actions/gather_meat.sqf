@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_item","_hasKnife","_hasKnifeBlunt","_hasHarvested","_qty","_text","_string","_type"];
 _item = _this select 3;
 _hasKnife = 	"ItemKnife" in magazines player;

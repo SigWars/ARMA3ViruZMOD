@@ -1,3 +1,8 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
 
 private["_obj","_type","_OwnerUID","_config","_configPos","_isBuildingPos","_maxSpawns","_buildingPos","_checkPos","_isOk","_iPos","_nearBy","_itemType","_itemTypes","_itemChances",
 "_lootChance","_weights","_cntWeights","_index","_isObjectHolder","_holderType","_zPos","_spawnCount","_spawnedCount"];

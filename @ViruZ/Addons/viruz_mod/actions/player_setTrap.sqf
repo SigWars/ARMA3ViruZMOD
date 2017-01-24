@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_item"];
 _item = 	_this;
 _config =	configFile >> "CfgWeapons" >> _item;

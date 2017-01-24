@@ -1,6 +1,9 @@
 /*
-[_obj] spawn player_packTent;
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_item","_structures","_items"];
 _obj = _this;
 _ownerID 	= _obj getVariable["CharacterID","0"];

@@ -1,6 +1,7 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
 
 for "_i" from 0 to ((count _this) - 1) do 

@@ -1,10 +1,10 @@
 //[unit, selectionName, damage, source, projectile]
-//will only run when local to the created object
-//record any key hits to the required selection
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_zed","_killer","_kills","_array","_type"];
 
 _array = 		_this select 0;

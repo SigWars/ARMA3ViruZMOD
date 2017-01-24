@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_unit","_ammo","_audible","_distance","_listTalk","_weapon"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _unit = 		_this select 0;

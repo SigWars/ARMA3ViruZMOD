@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_obj","_type","_OwnerUID","_config","_canLoot","_unitTypes","_min","_max","_num","_zombieChance","_rnd","_noPlayerNear","_position","_clean","_positions","_iPos","_nearBy","_nearByPlayer"];
 _obj = _this select 0;
 _type = 		typeOf _obj;

@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_unit","_hp","_selection","_strH","_dam","_display"];
 disableSerialization;
 _unit =			_this select 0;

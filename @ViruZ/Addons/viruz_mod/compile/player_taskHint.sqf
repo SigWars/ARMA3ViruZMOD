@@ -1,7 +1,9 @@
 /*
 ViruZ Mod
-By SigWar
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 
 #define WHITE [1,1,1,1]
 #define GREY [0.75,0.75,0.75,1]

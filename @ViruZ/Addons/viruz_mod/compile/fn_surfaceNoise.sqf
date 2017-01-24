@@ -1,4 +1,9 @@
-//Assess Terrain
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_unit","_pos","_type","_typeA","_soundType","_soundVal","_array","_test"];
 _unit = 	_this;
 _pos = 		getPosATL _unit;

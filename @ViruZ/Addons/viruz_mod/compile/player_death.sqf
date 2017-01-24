@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_array","_source","_kills","_killsV","_humanity","_wait","_myKills"];
 if (deathHandled) exitWith {};
 

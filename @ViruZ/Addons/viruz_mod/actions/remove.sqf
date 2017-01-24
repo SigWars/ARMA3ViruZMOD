@@ -1,7 +1,9 @@
 /*
-delete object from db
-parameters: _obj
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private["_obj","_objectID","_objectUID"];
 _obj		= _this select 3;
 _objectID 	= _obj getVariable ["ObjectID","0"];

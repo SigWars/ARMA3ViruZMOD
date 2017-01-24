@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 private["_isCans","_onLadder","_itemorignal","_hasfooditem","_rawfood","_cookedfood","_hasoutput","_eatvalue","_config","_text","_regen","_dis","_sfx","_Cookedtime","_itemtodrop","_nearByPile","_item","_display"];
 disableserialization;
 call gear_ui_init;

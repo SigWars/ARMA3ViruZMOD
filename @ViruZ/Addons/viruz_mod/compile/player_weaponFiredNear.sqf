@@ -1,3 +1,9 @@
+/*
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+*/
+
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 private["_unit","_magazine","_used","_quantity","_magsNet","_magsWhole","_key","_result","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_dmgDistance","_isBallistic","_handled"];
 //Init

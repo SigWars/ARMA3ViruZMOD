@@ -1,8 +1,9 @@
 /*
-ViruzMod Arma 3
-
-Author:  SigWar
+ViruZ Mod
+Atuthor: SigWar
+Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
+
 private ["_buildings","_agent","_build","_i"];
 _buildings = objNull;
 _agent = _this;
