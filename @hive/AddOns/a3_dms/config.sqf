@@ -278,9 +278,9 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 
 	DMS_StaticMissionsOnServerStart =	[								// List of STATIC missions with spawn chances.
 											//"saltflats",			//<--Example
-											//"slums"					//<--Example
-											//"occupation"			//<--Example
-											"sectorB"				//<--Example for Taviana
+											//"slums",				//<--Example
+											"occupation"			//<--Example
+											//"sectorB"				//<--Map Word for Taunus
 										];
 
 

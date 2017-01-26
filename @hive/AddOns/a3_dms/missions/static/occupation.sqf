@@ -15,6 +15,45 @@ _side = "bandit";
 
 switch (toLower worldName) do
 {
+	case "xcam_taunus":
+    {
+        _chance = floor(random 4);
+        switch (_chance) do
+        {
+            case 0:
+            {
+		        _pos = [3810,8887,0];
+	            _missionName = "Vybor Occupation";
+		        _msgStart = ['#FFFF00',"Vybor is under martial law! There are reports they have a large weapon cache..."];
+	         	_msgWIN = ['#0080FF',"Convicts have successfully assaulted the town of Vybor and secured the cache!"];
+	         	_msgLOSE = ['#FF0000',"The troops have left Vybor, taking the cache with them..."];
+            };
+            case 1:
+            {
+                _pos = [12024,9083,0];
+                _missionName = "Berenzio Occupation";
+		        _msgStart = ['#FFFF00',"Berenzio is under martial law! There are reports they have a large weapon cache..."];
+	         	_msgWIN = ['#0080FF',"Convicts have successfully assaulted the town of Berenzio and secured the cache!"];
+	         	_msgLOSE = ['#FF0000',"The troops have left Berenzio, taking the cache with them..."];
+            };
+            case 2:
+            {
+                _pos = [6773,2365,0];
+                _missionName = "Chernogorsk Occupation";
+		        _msgStart = ['#FFFF00',"Chernogorsk is under martial law! There are reports they have a large weapon cache..."];
+	         	_msgWIN = ['#0080FF',"Convicts have successfully assaulted the town of Chernogorsk and secured the cache!"];
+	         	_msgLOSE = ['#FF0000',"The troops have left Chernogorsk, taking the cache with them..."];
+            };
+            case 3:
+            {
+                _pos = [6079.98,7789,0];
+                _missionName = "Stary Sobar Occupation";
+		        _msgStart = ['#FFFF00',"Stary Sobar is under martial law! There are reports they have a large weapon cache..."];
+	         	_msgWIN = ['#0080FF',"Convicts have successfully assaulted the town of Stary Sobar and secured the cache!"];
+	         	_msgLOSE = ['#FF0000',"The troops have left Stary Sobar, taking the cache with them..."];
+            };
+        };
+    };
 	case "taviana":
 	{
 		_pos = [14000,12220,0];

@@ -86,14 +86,7 @@ _crateClasses_and_Positions =
 } forEach _crateClasses_and_Positions;
 
 // Shuffle the list
-_crateClasses_and_Positions =
-[
-	[[21181.3,294.02,0.00148773],"I_CargoNet_01_ammo_F"],
-	[[20731.5,-293.55,0.0382309],"I_CargoNet_01_ammo_F"]
-	//[[22562.777,19717.54,0],"I_CargoNet_01_ammo_F"], //POR ENQUANTO DESATIVADO ExileClient_util_array_shuffle
-	//[[22690.197,19717.54,0],"I_CargoNet_01_ammo_F"],//POR ENQUANTO DESATIVADO ExileClient_util_array_shuffle
-	//[[22456.406,19477.318,0],"I_CargoNet_01_ammo_F"]//POR ENQUANTO DESATIVADO ExileClient_util_array_shuffle
-];
+_crateClasses_and_Positions = _crateClasses_and_Positions call ExileClient_util_array_shuffle;
 
 
 // Create Crates
