@@ -269,7 +269,7 @@ Maintain_MatBag = [
 // *********** end of maintain build variables *************
 // ****************** VIRUZ_BUILDS and VIRUZ_GATES ised in fn_SelfActions To Detect objects with door ******************
 VIRUZ_BUILDS = [
-		/*"Land_Slum_House02_F",
+		"Land_Slum_House02_F",
 		"Land_Slum_House01_F",
 		"Land_i_House_Big_01_V1_F",
 		"Land_i_House_Big_01_V2_F",
@@ -291,7 +291,7 @@ VIRUZ_BUILDS = [
 		"Land_Cargo_HQ_V2_F",
 		//Escadas
 		"ViruZ_PierLadder_F",
-		"VIRUZ_GH_Stairs_F"*/
+		"VIRUZ_GH_Stairs_F"
 	];
 
 VIRUZ_GATES = [

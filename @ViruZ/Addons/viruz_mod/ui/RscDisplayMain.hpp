@@ -76,9 +76,6 @@ class RscDisplayMain : RscStandardDisplay
 			colorActive[] = {1,1,1,1};
 			tooltip = "View game site, see the names behind ViruZ."; //--- ToDo: Localize;
 		};
-		
 
-
-		
 	};
 };
