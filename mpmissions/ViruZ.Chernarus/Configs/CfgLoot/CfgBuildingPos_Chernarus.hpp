@@ -315,7 +315,7 @@
 	
 	class Land_i_House_Big_01_V3_F: Special_Residence
 	{
-		lootPos[]=
+		lootPos[] =
 		{
 			{0.71582,5.84082,-2.5047},
 			{1.36914,-4.26758,1.00836},
@@ -517,7 +517,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//Market
 	
-	class Land_A_GeneralStore_01a: Big_Office
+	class Land_A_GeneralStore_01a: Big_Market
 	{
 		lootPos[] =
 		{
@@ -1521,6 +1521,7 @@
 	
 	class Land_Hangar_2: Hangar
 	{
+		maxSpawns = 1;
 		lootPos[] =
 		{
 			{-9.43408,-9.93823,-2.56809},
@@ -1979,6 +1980,7 @@
 	
 	class Land_Ss_hangar: Hangar
 	{
+		maxSpawns = 1;
 		lootPos[] =
 		{
 			{-11.0532,-16.9277,-5.86453},
@@ -2029,7 +2031,7 @@
 		};
 	};
 	
-	class Land_Cargo_Tower_V1_No5_F: Special_Military
+	class Land_Cargo_Tower_V1_No5_F: Medium_Military
 	{
 		lootPos[] =
 		{
@@ -2127,7 +2129,7 @@
 		};
 	};
 	
-	class Land_u_Barracks_V2_F: Special_Military
+	class Land_u_Barracks_V2_F: Medium_Military
 	{
 		lootPos[] =
 		{
@@ -2172,7 +2174,7 @@
 		};
 	};
 	
-	class Land_i_Barracks_V1_F: Special_Military
+	class Land_i_Barracks_V1_F: Medium_Military
 	{
 		lootPos[] =
 		{

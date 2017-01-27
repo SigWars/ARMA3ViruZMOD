@@ -35,127 +35,150 @@ class Chernarus {
 	};
 	
 	blockedArea[] = {
-		
-		{ {4534.7,10262.1,339.001}, 1000 }, //NorthWast AirField
+			/*
+			{ { 1433, 8071, 0 }, 250 }, //Roenne NorthEast
+			{ { 1939, 7788, 0 }, 250 }, //Roenne East
+			{ { 1553, 7103, 0 }, 400 }, //Roenne South
+			{ { 3052, 5412, 0 }, 400 }, //Main Airport
+			{ { 3676, 5148, 0 }, 300 }, //Airport addons
+			{ { 9547, 5541, 0 }, 600 }, //Aakirkeby
+			{ { 17433, 5106, 0 }, 600 }, //Nexoe
+			{ { 17989, 9844, 0 }, 600 }, //Svaneke
+			{ { 11600, 14723, 0 }, 500 }, //Gudhjem
+			{ { 5010, 19132, 0 }, 250 }, //Allinge
+			{ { 5291, 12450, 0 }, 450 }, //Klemensker
+			{ { 3386, 10088, 0 }, 350 }, //Nyker
+			{ { 14560, 5130, 0 }, 300 }, //South Airport
+			{ { 148786, 5024, 0 }, 300 }, //South Airport Base
+			{ { 12993, 10197, 0 }, 250 }, //Oestermarie
+			{ { 13867, 10672, 0 }, 300 }, //East Airport
+			{ { 8564, 15015, 0 }, 350 }, //Roe
+			{ { 6554, 5866, 0 }, 400 }, //Lobbaek
+			{ { 5350, 5724, 0 }, 300 }, //Nylars
+			{ { 12438, 2980, 0 }, 400 }, //Pedersker
+			{ { 14121, 11331, 0 }, 200 }, //Central Spawn
+			{ { 1322, 8733, 0 }, 200 }, //West Spawn
+			{ { 15639, 191, 0 }, 200 } //East Spawn */
 	};
 
-	ClinquerRocks[] = {
-		"bo_r2_boulder1.p3d",
-		"bo_r2_boulder2.p3d",
-		"r2_boulder1.p3d",
-		"r2_boulder2.p3d",
-		"r_tk_boulder_01_ep1.p3d",
-		"r_tk_boulder_02_ep1.p3d"
-	};
+ClinquerRocks[] = {
+	"bo_r2_boulder1.p3d",
+	"bo_r2_boulder2.p3d",
+	"r2_boulder1.p3d",
+	"r2_boulder2.p3d",
+	"r_tk_boulder_01_ep1.p3d",
+	"r_tk_boulder_02_ep1.p3d"
+};
 
-	Rocks[] = {
-		"sharpstone_03_lc.p3d",
-		"sharpstone_02_lc.p3d",
-		"sharpstone_01_lc.p3d",
-		"sharpstone_02.p3d",
-		"sharpstone_03.p3d",
-		"sharprock_monolith.p3d",
-		"sharprock_apart.p3d",
-		"sharpstones_erosion.p3d",
-		"bluntstone_01_lc.p3d",
-		"bluntstone_02_lc.p3d",
-		"bluntstone_03_lc.p3d",
-		"bluntstones_erosion.p3d",
-		"bluntstone_01.p3d",
-		"bluntstone_03.p3d",
-		"sharprock_spike.p3d",
-		"sharprock_wallh.p3d",
-		"w_sharpstone_03.p3d",
-		"w_sharpstone_02.p3d",
-		"w_sharpstone_01.p3d",
-		"bluntrock_apart.p3d",
-		"bluntstone_02.p3d",
-		"bluntrock_monolith.p3d",
-		"bluntrock_wallh.p3d",
-		"sharprock_wallv.p3d",
-		"stonesharp_medium.p3d",
-		"stone_medium_f.p3d",
-		"stonesharp_big.p3d",
-		"stonesharp_small.p3d",
-		"small_stone_02_f.p3d",
-		"stone_small_f.p3d",
-		"stone_big_f.p3d",
-		"bluntrock_spike.p3d",
-		"r2_rock1.p3d",
-		"r2_rocktower.p3d",
-		"r2_rockwall.p3d",
-		"r_rock_02_ep1.p3d",
-		"brownrock2.p3d",
-		"brownrock3.p3d",
-		"desertrock.p3d",
-		"desertrock2.p3d",
-		"desertrock3.p3d",
-		"r_stone_01_ep1.p3d",
-		"brownrock.p3d",
-		"rockn_02.p3d",
-		"sharpstone_01.p3d",
-		"r_rock_03_ep1.p3d",
-		"rocks_02.p3d",
-		"skala3_5.p3d",
-		"skala3_4.p3d",
-		"skala1_4.p3d",
-		"bo_r2_rock1.p3d",
-		"bo_r2_rocktower.p3d",
-		"bo_r2_rockwall.p3d",
-		"w_sharpstones_erosion.p3d",
-		"decal_rock_dark.p3d",
-		"r_stone_01_pmc.p3d",
-		"r_stone_02_pmc.p3d",
-		"stone4.p3d",
-		"stone3.p3d",
-		"stone4_invert.p3d",
-		"rocks_01.p3d",
-		"stone4a.p3d",
-		"stone3a.p3d",
-		"rockn_01.p3d",
-		"r_tk_stone_01_ep1.p3d",
-		"r_tk_stone_02_ep1.p3d",
-		"r_tk_rock_03_ep1.p3d",
-		"r_tk_boulder_03_ep1.p3d",
-		"r_tk_rock_02_ep1.p3d",
-		"r_tk_rock_01_ep1.p3d",
-		"cliff_stone_big_lc_f.p3d",
-		"cliff_wall_long_f.p3d",
-		"cliff_stone_medium_lc_f.p3d",
-		"cliff_stone_small_lc_f.p3d",
-		"cliff_boulder_f.p3d",
-		"cliff_peak_f.p3d",
-		"cliff_wall_round_f.p3d",
-		"cliff_stonecluster_f.p3d",
-		"cliff_wall_tall_f.p3d",
-		"lavaboulder_03_f.p3d",
-		"lavastone_small_lc_f.p3d",
-		"lavaboulder_02_f.p3d",
-		"lavaboulder_01_f.p3d",
-		"lavastone_big_lc_f.p3d",
-		"lavastonecluster_large_f.p3d",
-		"lavaboulder_04_f.p3d",
-		"lavastonecluster_small_f.p3d",
-		"cliff_stone_medium_f.p3d",
-		"lavastone_big_f.p3d",
-		"lavastone_small_f.p3d",
-		"cliff_surfacemine_f.p3d",
-		"stone_medium_f.p3d",
-		"sharpstone_03_lc.p3d",
-		"sharpstone_02.p3d",
-		"sharpstone_erosion.p3d",
-		"sharpstones_erosion.p3d",
-		"sharprock_wallh.p3d",
-		"sharprock_wallv.p3d",
-		"stonesharp_wall",
-		"sharprock_monolith.p3d",
-		"clutter_md_stonesmall.p3d"
+Rocks[] = {
+			"sharpstone_03_lc.p3d",
+			"sharpstone_02_lc.p3d",
+			"sharpstone_01_lc.p3d",
+			"sharpstone_02.p3d",
+			"sharpstone_03.p3d",
+			"sharprock_monolith.p3d",
+			"sharprock_apart.p3d",
+			"sharpstones_erosion.p3d",
+			"bluntstone_01_lc.p3d",
+			"bluntstone_02_lc.p3d",
+			"bluntstone_03_lc.p3d",
+			"bluntstones_erosion.p3d",
+			"bluntstone_01.p3d",
+			"bluntstone_03.p3d",
+			"sharprock_spike.p3d",
+			"sharprock_wallh.p3d",
+			"w_sharpstone_03.p3d",
+			"w_sharpstone_02.p3d",
+			"w_sharpstone_01.p3d",
+			"bluntrock_apart.p3d",
+			"bluntstone_02.p3d",
+			"bluntrock_monolith.p3d",
+			"bluntrock_wallh.p3d",
+			"sharprock_wallv.p3d",
+			"stonesharp_medium.p3d",
+			"stone_medium_f.p3d",
+			"stonesharp_big.p3d",
+			"stonesharp_small.p3d",
+			"small_stone_02_f.p3d",
+			"stone_small_f.p3d",
+			"stone_big_f.p3d",
+			"bluntrock_spike.p3d",
+			"r2_rock1.p3d",
+			"r2_rocktower.p3d",
+			"r2_rockwall.p3d",
+			"r_rock_02_ep1.p3d",
+			"brownrock2.p3d",
+			"brownrock3.p3d",
+			"desertrock.p3d",
+			"desertrock2.p3d",
+			"desertrock3.p3d",
+			"r_stone_01_ep1.p3d",
+			"brownrock.p3d",
+			"rockn_02.p3d",
+			"sharpstone_01.p3d",
+			"r_rock_03_ep1.p3d",
+			"rocks_02.p3d",
+			"skala3_5.p3d",
+			"skala3_4.p3d",
+			"skala1_4.p3d",
+			"bo_r2_rock1.p3d",
+			"bo_r2_rocktower.p3d",
+			"bo_r2_rockwall.p3d",
+			"w_sharpstones_erosion.p3d",
+			"decal_rock_dark.p3d",
+			"r_stone_01_pmc.p3d",
+			"r_stone_02_pmc.p3d",
+			"stone4.p3d",
+			"stone3.p3d",
+			"stone4_invert.p3d",
+			"rocks_01.p3d",
+			"stone4a.p3d",
+			"stone3a.p3d",
+			"rockn_01.p3d",
+			"r_tk_stone_01_ep1.p3d",
+			"r_tk_stone_02_ep1.p3d",
+			"r_tk_rock_03_ep1.p3d",
+			"r_tk_boulder_03_ep1.p3d",
+			"r_tk_rock_02_ep1.p3d",
+			"r_tk_rock_01_ep1.p3d",
+			"cliff_stone_big_lc_f.p3d",
+			"cliff_wall_long_f.p3d",
+			"cliff_stone_medium_lc_f.p3d",
+			"cliff_stone_small_lc_f.p3d",
+			"cliff_boulder_f.p3d",
+			"cliff_peak_f.p3d",
+			"cliff_wall_round_f.p3d",
+			"cliff_stonecluster_f.p3d",
+			"cliff_wall_tall_f.p3d",
+			"lavaboulder_03_f.p3d",
+			"lavastone_small_lc_f.p3d",
+			"lavaboulder_02_f.p3d",
+			"lavaboulder_01_f.p3d",
+			"lavastone_big_lc_f.p3d",
+			"lavastonecluster_large_f.p3d",
+			"lavaboulder_04_f.p3d",
+			"lavastonecluster_small_f.p3d",
+			"cliff_stone_medium_f.p3d",
+			"lavastone_big_f.p3d",
+			"lavastone_small_f.p3d",
+			"cliff_surfacemine_f.p3d",
+			"stone_medium_f.p3d",
+			"sharpstone_03_lc.p3d",
+			"sharpstone_02.p3d",
+			"sharpstone_erosion.p3d",
+			"sharpstones_erosion.p3d",
+			"sharprock_wallh.p3d",
+			"sharprock_wallv.p3d",
+			"stonesharp_wall",
+			"sharprock_monolith.p3d",
+			"clutter_md_stonesmall.p3d"
 	};
 
 	Water[] = {
 		"misc_well.p3d",
 		"misc_wellpump.p3d",
-		"kasna_new.p3d"
+		"kasna_new.p3d",
+		"pumpa.p3d"
 	};	
 
 	// main config 
@@ -459,6 +482,7 @@ class Chernarus {
 		"cinderblocks_f.p3d"
 	};
 	Wrecks[] = {
+		
 		//todos
 		"wall_tin_4_2.p3d",
 		"mil_wiredfence_f.p3d",

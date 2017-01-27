@@ -384,6 +384,8 @@ class CfgLoot {
 			"ItemWire",
 			"equip_nails",
 			"Viruz_CementBag",
+			"Viruz_Woodboard",
+			"Viruz_CinderBlock",
 			"Viruz_CardBoardBox"
 		},
 		{
@@ -391,6 +393,8 @@ class CfgLoot {
 			0.06,	//Metal wire
 			0.06,	//Box of nails
 			0.02,	//Cement bag
+			0.01,	//Woodboard
+			0.01,	//Cinder block
 			0.04	//Cardboard box
 		}
 	};
@@ -540,10 +544,10 @@ class CfgLoot {
 		},
 		{
 			0.06,	//CUP_B_ACRScout_m95
-			0.03,	//CUP_B_AssaultPack_ACU
-			0.03,	//CUP_B_AssaultPack_Black
-			0.03,	//CUP_B_AssaultPack_Coyote
-			0.03,	//CUP_B_MedicPack_ACU
+			0.04,	//CUP_B_AssaultPack_ACU
+			0.04,	//CUP_B_AssaultPack_Black
+			0.04,	//CUP_B_AssaultPack_Coyote
+			0.04,	//CUP_B_MedicPack_ACU
 			0.02,	//B_AssaultPack_khk
 			0.02	//B_AssaultPack_Kerry
 		}
@@ -589,13 +593,13 @@ class CfgLoot {
 			"B_Carryall_ocamo"			// 320
 		},
 		{
-			0.04,	// "CUP_B_AlicePack_Khaki"
-			0.04,	// "CUP_B_ACRPara_m95"
-			0.04,	// "CUP_B_HikingPack_Civ"
-			0.04,	// "CUP_B_USMC_MOLLE"
-			0.04,	// "CUP_B_USMC_MOLLE_WDL"
-			0.01,	// "B_Carryall_khk"
-			0.01	// "B_Carryall_ocamo"
+			0.05,	// "CUP_B_AlicePack_Khaki"
+			0.05,	// "CUP_B_ACRPara_m95"
+			0.05,	// "CUP_B_HikingPack_Civ"
+			0.05,	// "CUP_B_USMC_MOLLE"
+			0.05,	// "CUP_B_USMC_MOLLE_WDL"
+			0.02,	// "B_Carryall_khk"
+			0.02	// "B_Carryall_ocamo"
 		}
 	};
 	
@@ -1139,7 +1143,6 @@ class CfgLoot {
 			"hgun_ACPC2_F",						//hit: 4	ACP-C2 .45 ACP
 			"hgun_Pistol_heavy_02_F",			//hit: 4	Zubr .45 ACP
 			"hgun_Pistol_heavy_01_F"			//hit: 4	4-five .45 ACP
-
 		},
 		{
 			0.09,	//SA61
@@ -1153,7 +1156,6 @@ class CfgLoot {
 			0.05,	//ACPC2
 			0.04,	//Pistol heavy 02
 			0.03	//Pistol heavy 01
-
 		}
 	};
 
@@ -1167,18 +1169,16 @@ class CfgLoot {
 			"9Rnd_45ACP_Mag",				//ACPC2
 			"6Rnd_45ACP_Cylinder",			//Zubr .45 ACP
 			"11Rnd_45ACP_Mag"				//4-five .45 ACP
-
 		},
 		{
 			0.07,	//SA61
-			0.07,	//Duty, P07, Rook40
-			0.05,	//P07, Rook40
-			0.04,	//Taurus
-			0.04,	//Colt1911		
+			0.06,	//Duty, P07, Rook40
+			0.04,	//P07, Rook40
+			0.03,	//Taurus
+			0.03,	//Colt1911		
 			0.03,	//ACPC2
 			0.03,	//Zubr .45 ACP
 			0.03	//4-five .45 ACP
-
 		}
 	};		
 
@@ -1286,8 +1286,8 @@ class CfgLoot {
 			"CUP_20Rnd_B_AA12_74Slug"
 		},
 		{
-			0.05,	//
-			0.05	//
+			0.06,	//
+			0.02	//
 		}
 	};
 
@@ -1299,7 +1299,7 @@ class CfgLoot {
 			"CUP_sgun_M1014"		//hit:25	M1014
 		},
 		{
-			0.05,	//Saiga
+			0.03,	//Saiga
 			0.05	//M1014
 		}
 	};
@@ -1312,10 +1312,10 @@ class CfgLoot {
 			"CUP_8Rnd_B_Beneli_74Pellets"
 		},
 		{
-			0.05,	//Saiga Slug
+			0.01,	//Saiga Slug
 			0.05,	//Saiga Pellets
-			0.05,	//Beneli Slug
-			0.05	//Beneli Pellets
+			0.02,	//Beneli Slug
+			0.06	//Beneli Pellets
 		}
 	};
 
@@ -1395,14 +1395,14 @@ class CfgLoot {
 			"CUP_smg_EVO"		//hit:6		CZ SCORPION EVO 3
 		},
 		{
-			0.05,	//hgun_PDW2000_F
-			0.05,	//SMG_01_F
-			0.05,	//SMG_02_F
-			0.05,	//SMG_05_F
-			0.05,	//CUP_smg_MP5SD6
-			0.05,	//CUP_smg_MP5A5
-			0.05,	//CUP_smg_bizon
-			0.05	//CUP_smg_EVO
+			0.06,	//hgun_PDW2000_F
+			0.06,	//SMG_01_F
+			0.06,	//SMG_02_F
+			0.06,	//SMG_05_F
+			0.02,	//CUP_smg_MP5SD6
+			0.02,	//CUP_smg_MP5A5
+			0.02,	//CUP_smg_bizon
+			0.02	//CUP_smg_EVO
 		}
 	};
 	
@@ -1429,18 +1429,25 @@ class CfgLoot {
 			"CUP_30Rnd_9x19_EVO"
 		},
 		{
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05,	//
-			0.05	//			
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.06,	//
+			0.02,	//
+			0.02,	//
+			0.02,	//
+			0.02,	//
+			0.02,	//
+			0.02,	//
+			0.02	//			
 		}
 	};
 
@@ -1458,13 +1465,13 @@ class CfgLoot {
 		},
 		{
 			0.05,	//PWD2000, SMG_02 & EVO
-			0.03,	//PWD2000 & SMG_01
+			0.02,	//PWD2000 & SMG_01
 			0.05,	//SMG_01
-			0.03,	//SMG_01
-			0.03,	//SMG_02
+			0.02,	//SMG_01
+			0.02,	//SMG_02
 			0.05,	//SMG_02
 			0.05,	//smg bizon
-			0.03,	//smg EVO
+			0.02,	//smg EVO
 			0.05	//smg EVO			
 		}
 	};
@@ -1492,7 +1499,9 @@ class CfgLoot {
 			"CUP_lmg_m249_SQuantoon"	//hit:8		M249 (Squantoon Special)
 		},
 		{
+			//ARMA3
 			0.05,	//LMG_03_F
+			//CUP
 			0.05,	//CUP_lmg_L110A1
 			0.05,	//CUP_lmg_minimipara
 			0.05,	//CUP_lmg_minimi
@@ -1527,10 +1536,12 @@ class CfgLoot {
 			"CUP_200Rnd_TE4_Yellow_Tracer_556x45_L110A1"	//L110A1, FN Minimi Para, FN Minimi, M249E2 Para, M249E2, M249 PIP
 		},
 		{
+			//APEX
 			0.05,	//LIM-85 5.56 mm
 			0.05,	//LIM-85 5.56 mm
 			0.05,	//LIM-85 5.56 mm
 			0.05,	//LIM-85 5.56 mm
+			//CUP
 			0.05,	//L110A1, FN Minimi Para, FN Minimi, M249E2 Para, M249E2, M249 PIP
 			0.05,	//L110A1, FN Minimi Para, FN Minimi, M249E2 Para, M249E2, M249 PIP
 			0.05,	//L110A1, FN Minimi Para, FN Minimi, M249E2 Para, M249E2, M249 PIP
@@ -1867,15 +1878,15 @@ class CfgLoot {
 			"CUP_lmg_Pecheneg"	//hit:12	PKP
 		},
 		{
-			0.05,	//Zafir
-			0.05,	//UK59
-			0.05,	//M240
-			0.05,	//L7A2
-			0.05,	//M60E4
-			0.05,	//Mk48
-			0.05,	//Mk48
-			0.05,	//PKM
-			0.05	//PKP
+			0.02,	//Zafir
+			0.06,	//UK59
+			0.02,	//M240
+			0.02,	//L7A2
+			0.02,	//M60E4
+			0.02,	//Mk48
+			0.02,	//Mk48
+			0.06,	//PKM
+			0.04	//PKP
 		}
 	};
 
@@ -1889,12 +1900,12 @@ class CfgLoot {
 			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
 		},
 		{
-			0.05,	//Zafir
-			0.05,	//Zafir
-			0.05,	//UK59
-			0.05,	//M240, L7A2, M60E4, Mk48
-			0.05,	//M240, L7A2, M60E4, Mk48
-			0.05	//PKM, PKP		
+			0.02,	//Zafir
+			0.02,	//Zafir
+			0.06,	//UK59
+			0.02,	//M240, L7A2, M60E4, Mk48
+			0.02,	//M240, L7A2, M60E4, Mk48
+			0.04	//PKM, PKP		
 		}
 	};
 
@@ -2159,11 +2170,11 @@ class CfgLoot {
 			0.05,				//Bipod (Hex) [CSAT]
 			0.05,				//Bipod (Black) [AAF]
 			0.05,				//Bipod (Olive) [AAF]
-			0.04,				//Sound Suppressor (9.3mm, Black)
-			0.04,				//Sound Suppressor (9.3mm, Tan)
-			0.04,				//Sound Suppressor (.338, Black)
-			0.04,				//Sound Suppressor (.338, Green)
-			0.04,				//Sound Suppressor (.338, Sand)
+			0.03,				//Sound Suppressor (9.3mm, Black)
+			0.03,				//Sound Suppressor (9.3mm, Tan)
+			0.03,				//Sound Suppressor (.338, Black)
+			0.03,				//Sound Suppressor (.338, Green)
+			0.03,				//Sound Suppressor (.338, Sand)
 			//CUP
 			0.07,				//Aimpoint CompM4 (Black)
 			0.05,				//Elcan Optic
@@ -2652,22 +2663,22 @@ class CfgLoot {
 
 	Mag_Assault_Medium[] = {
 		{
+//			"10Rnd_50BW_Mag_F",
 			"30Rnd_65x39_caseless_green",
 			"30Rnd_65x39_caseless_green_mag_Tracer",
 			"30Rnd_762x39_Mag_F",
 			"30Rnd_762x39_Mag_Green_F",
 			"30Rnd_762x39_Mag_Tracer_F",
-			"30Rnd_762x39_Mag_Tracer_Green_F",
-			"10Rnd_50BW_Mag_F"
+			"30Rnd_762x39_Mag_Tracer_Green_F"
 		},
 		{
+//			0.05,	//ARX
 			0.05,	//Katiba, MXC, MX, MX_SW, MXM, ARX
 			0.05,	//Katiba, MXC, MX, MX_SW, MXM, ARX
 			0.03,	//AK12
 			0.03,	//AK12
 			0.03,	//AK12
-			0.03,	//AK12
-			0.05	//ARX
+			0.03	//AK12
 		}
 	};
 
@@ -3197,8 +3208,8 @@ class CfgLoot {
 		},
 		{
 			0.05,	//Mk12SPR
-			0.05,	//VSSVintorez
-			0.03	//VSSVintorez
+			0.04,	//VSSVintorez
+			0.02	//VSSVintorez
 		}
 	};
 
@@ -3643,55 +3654,55 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.05,	//Rahim 7.62 mm
-			0.05,	//Mk18 ABR 7.62 mm
-			0.05,	//GM6 Lynx 12.7 mm
-			0.05,	//GM6 Lynx 12.7 mm (Camo)
-			0.05,	//GM6 Lynx 12.7 mm (Green Hex)
-			0.05,	//M320 LRR .408
-			0.05,	//M320 LRR .408 (Camo)
-			0.05,	//M320 LRR .408 (Tropic)
-			0.05,	//MAR-10 .338 (Black)
-			0.05,	//MAR-10 .338 (Camo)
-			0.05,	//MAR-10 .338 (Sand)
-			0.05,	//Mk-I EMR 7.62 mm (Black)
-			0.05,	//Mk-I EMR 7.62 mm (Khaki)
-			0.05,	//Mk-I EMR 7.62 mm (Sand)
-			0.05,	//Mk-I EMR 7.62 mm (Camo)
-			0.05,	//Mk-I EMR 7.62 mm (Woodland)
+			0.09,	//Rahim 7.62 mm
+			0.09,	//Mk18 ABR 7.62 mm
+			0.01,	//GM6 Lynx 12.7 mm
+			0.01,	//GM6 Lynx 12.7 mm (Camo)
+			0.01,	//GM6 Lynx 12.7 mm (Green Hex)
+			0.03,	//M320 LRR .408
+			0.03,	//M320 LRR .408 (Camo)
+			0.03,	//M320 LRR .408 (Tropic)
+			0.06,	//MAR-10 .338 (Black)
+			0.06,	//MAR-10 .338 (Camo)
+			0.06,	//MAR-10 .338 (Sand)
+			0.09,	//Mk-I EMR 7.62 mm (Black)
+			0.09,	//Mk-I EMR 7.62 mm (Khaki)
+			0.09,	//Mk-I EMR 7.62 mm (Sand)
+			0.09,	//Mk-I EMR 7.62 mm (Camo)
+			0.09,	//Mk-I EMR 7.62 mm (Woodland)
 			0.05,	//ASP-1 Kir 12.7 mm (Black)
 			0.05,	//ASP-1 Kir 12.7 mm (Tan)
 			0.05,	//Cyrus 9.3 mm (Black)
 			0.05,	//Cyrus 9.3 mm (Hex)
 			0.05,	//Cyrus 9.3 mm (Tan)
-			0.05,	//Mk14 7.62 mm (Camo)
-			0.05,	//Mk14 7.62 mm (Olive)
+			0.09,	//Mk14 7.62 mm (Camo)
+			0.09,	//Mk14 7.62 mm (Olive)
 			//CUP
-			0.05,	//CZ 750
+			0.09,	//CZ 750
 			0.05,	//CZ 550
-			0.05,	//Lee Enfield (picatinny rail)
-			0.05,	//M24 Desert
-			0.05,	//M24
+			0.07,	//Lee Enfield (picatinny rail)
+			0.09,	//M24 Desert
+			0.09,	//M24
 			0.05,	//M40A3
-			0.05,	//KSVK
-			0.05,	//SVD Dragunov
-			0.05,	//SVD Dragunov (desert)
-			0.05,	//AS50
-			0.05,	//L115A3 LRR (Desert)
-			0.05,	//L115A3 LRR (Woodland)
-			0.05,	//G22
-			0.05,	//L129a1
-			0.05,	//M107
-			0.05,	//M110
-			0.05	//M14
+			0.01,	//KSVK
+			0.09,	//SVD Dragunov
+			0.09,	//SVD Dragunov (desert)
+			0.01,	//AS50
+			0.03,	//L115A3 LRR (Desert)
+			0.03,	//L115A3 LRR (Woodland)
+			0.07,	//G22
+			0.09,	//L129a1
+			0.01,	//M107
+			0.09,	//M110
+			0.09	//M14
 		}
 	};
 
 	Mag_Sniper_High[] = {
 		{
 			//ARMA3
-			"10Rnd_762x54_Mag",
-			"20Rnd_762x51_Mag",			// ,L129a1, M14
+			"10Rnd_762x54_Mag",			//Rahim
+			"20Rnd_762x51_Mag",			//Mk-I, Mk14, Mk18, L129a1, M14
 			"5Rnd_127x108_Mag",
 			"7Rnd_408_Mag",
 			"10Rnd_338_Mag",
@@ -3721,34 +3732,34 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.05,	//10Rnd_762x54_Mag
-			0.05,	//20Rnd_762x51_Mag
-			0.05,	//5Rnd_127x108_Mag
-			0.05,	//7Rnd_408_Mag
-			0.05,	//10Rnd_338_Mag
-			0.05,	//10Rnd_127x54_Mag
-			0.05,	//10Rnd_93x64_DMR_05_Mag
+			0.09,	//Rahim
+			0.09,	//Mk-I, Mk14, Mk18, L129a1, M14
+			0.01,	//GM6 Lynx
+			0.03,	//M320 LRR
+			0.06,	//MAR-10
+			0.05,	//ASP-1
+			0.05,	//Cyrus
 			//CUP
-			0.05,	//CUP_10Rnd_762x51_CZ750_Tracer
-			0.05,	//CUP_10Rnd_762x51_CZ750
-			0.05,	//CUP_5x_22_LR_17_HMR_M
-			0.05,	//CUP_10x_303_M
-			0.05,	//CUP_5Rnd_762x51_M24
-			0.05,	//CUP_5Rnd_127x108_KSVK_M
-			0.05,	//CUP_10Rnd_762x54_SVD_M
-			0.05,	//CUP_5Rnd_127x99_as50_
-			0.05,	//CUP_5Rnd_86x70_L115A1
-			0.05,	//CUP_5Rnd_762x67_G22
-			0.05,	//CUP_10Rnd_127x99_m107
-			0.05,	//CUP_20Rnd_762x51_B_M110
-			0.05,	//CUP_20Rnd_TE1_Yellow_Tracer_762x51_M110
-			0.05,	//CUP_20Rnd_TE1_Red_Tracer_762x51_M110
-			0.05,	//CUP_20Rnd_TE1_Green_Tracer_762x51_M110
-			0.05,	//CUP_20Rnd_TE1_White_Tracer_762x51_M110
-			0.05,	//CUP_20Rnd_TE1_Yellow_Tracer_762x51_DMR
-			0.05,	//CUP_20Rnd_TE1_Red_Tracer_762x51_DMR
-			0.05,	//CUP_20Rnd_TE1_Green_Tracer_762x51_DMR
-			0.05	//CUP_20Rnd_TE1_White_Tracer_762x51_DMR
+			0.09,	//CZ750
+			0.09,	//CZ750
+			0.05,	//CZ550
+			0.07,	//Lee Enfield
+			0.09,	//M24
+			0.01,	//KSVK
+			0.09,	//SVD Dragunov
+			0.01,	//AS50
+			0.03,	//L115A3
+			0.07,	//G22
+			0.01,	//M107
+			0.09,	//M110
+			0.09,	//M110
+			0.09,	//M110
+			0.09,	//M110
+			0.09,	//M110
+			0.09,	//M14
+			0.09,	//M14
+			0.09,	//M14
+			0.09	//M14
 		}
 	};
 

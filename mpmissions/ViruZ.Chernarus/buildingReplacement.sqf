@@ -8,7 +8,7 @@
 	if you use this script ensure you include the default altis loot positions along with the cherno loot positions. 	
 */
 
-FFA_CLOSEHOUSE = ["Land_HouseV_2L","Land_HouseV_3I3","Land_HouseV_3I1","Land_HouseV_3I4","Land_HouseV_3I2","Land_HouseV_1L1","Land_houseV_2T1","Land_houseV_2T2","Land_HouseV_1T","Land_HouseV2_03B","Land_HouseV2_03","Land_HouseV2_01A","Land_HouseV2_01B","Land_HouseV2_05","Land_Church_02","Land_Church_02a","Land_Church_01","Land_Ind_SawMill","Land_Ind_Workshop01_03","Land_HouseV_1I2","Land_HouseV_1I1","Land_SignB_Pub_CZ3","Land_Shed_W4","Land_HouseV_1I3","Land_HouseV_1L2","Land_Misc_WaterStation","Land_Farm_WTower","Land_HouseV_2I","Land_Mil_Barracks_L","Land_Mil_Barracks","Land_Mil_House","Land_A_Office02","Land_Tec","Land_Shed_W02","Land_Shed_W03","Land_SignB_Pub_RU3","Land_Sign_Bar_RU","Land_SignB_PostOffice","Land_Mil_Guardhouse","Land_Komin"];
+FFA_CLOSEHOUSE = ["Land_HouseV_2L","Land_HouseV_3I3","Land_HouseV_3I1","Land_HouseV_3I4","Land_HouseV_3I2","Land_HouseV_1L1","Land_houseV_2T1","Land_houseV_2T2","Land_HouseV_1T","Land_HouseV2_03B","Land_HouseV2_03","Land_HouseV2_01A","Land_HouseV2_01B","Land_HouseV2_05","Land_Church_02","Land_Church_02a","Land_Church_01","Land_Ind_SawMill","Land_Ind_Workshop01_03","Land_HouseV_1I2","Land_HouseV_1I1","Land_SignB_Pub_CZ3","Land_Shed_W4","Land_HouseV_1I3","Land_HouseV_1L2","Land_Misc_WaterStation","Land_Farm_WTower","Land_HouseV_2I","Land_Mil_Barracks_L","Land_Mil_Barracks","Land_Mil_House","Land_A_Office02","Land_Tec","Land_Shed_W02","Land_Shed_W03","Land_SignB_Pub_RU3","Land_Sign_Bar_RU","Land_SignB_PostOffice","Land_Mil_Guardhouse"];
 
 _godModeBuildings = false; // set true if you want to make these replacement buildings have god mode. 
 
@@ -25,7 +25,7 @@ if (isServer) then
 	_dmdRep0006=[["Land_HouseV_1I3"],["Land_i_House_Small_03_V1_F"]];
 	_dmdRep0007=[["Land_HouseV_1L2"],["Land_i_House_Big_02_V1_F"]];
 	_dmdRep0008=[["Land_Misc_WaterStation"],["Land_Shed_02_F"]];
-	_dmdRep0009=[["Land_Farm_WTower"],["Land_R_Minaret"]];
+	//_dmdRep0009=[["Land_Farm_WTower"],["Land_R_Minaret"]];
 	_dmdRep0010=[["Land_HouseV_2I"],["Land_i_House_Big_01_V3_F"]];
 	_dmdRep0011=[["Land_Mil_Barracks_L"],["Land_Mil_Barracks_i"]];
 	_dmdRep0012=[["Land_Mil_Barracks"],["Land_Mil_Barracks_i"]];
@@ -76,7 +76,7 @@ if (isServer) then
 			_dirVector = vectorDir _nBuilding;
 			_objVector = vectorUp _nBuilding;
 			_pos = ASLtoATL getPosASL _nBuilding;
-			_nBuilding hideObject true;
+			_nBuilding hideObjectGlobal true;
 			deleteVehicle _nBuilding;
 			
 			_type="";
@@ -90,7 +90,7 @@ if (isServer) then
 				if ((typeof _nBuilding) in (_dmdRep0006 select 0)) exitwith {_type=(_dmdRep0006 select 1) select 0;};
 				if ((typeof _nBuilding) in (_dmdRep0007 select 0)) exitwith {_type=(_dmdRep0007 select 1) select 0;};
 				if ((typeof _nBuilding) in (_dmdRep0008 select 0)) exitwith {_type=(_dmdRep0008 select 1) select 0;};
-				if ((typeof _nBuilding) in (_dmdRep0009 select 0)) exitwith {_type=(_dmdRep0009 select 1) select 0;};
+				//if ((typeof _nBuilding) in (_dmdRep0009 select 0)) exitwith {_type=(_dmdRep0009 select 1) select 0;};
 				if ((typeof _nBuilding) in (_dmdRep0010 select 0)) exitwith {_type=(_dmdRep0010 select 1) select 0;};
 				if ((typeof _nBuilding) in (_dmdRep0011 select 0)) exitwith {_type=(_dmdRep0011 select 1) select 0;};
 				if ((typeof _nBuilding) in (_dmdRep0012 select 0)) exitwith {_type=(_dmdRep0012 select 1) select 0;};
@@ -116,7 +116,6 @@ if (isServer) then
 				if ((typeof _nBuilding) in (_dmdRep0031 select 0)) exitwith {_type=(_dmdRep0031 select 1) select 0;};				
 				if ((typeof _nBuilding) in (_dmdRep0032 select 0)) exitwith {_type=(_dmdRep0032 select 1) select 0;};
 				if ((typeof _nBuilding) in (_dmdRep0033 select 0)) exitwith {_type=(_dmdRep0033 select 1) select 0;};
-				if ((typeof _nBuilding) in (_dmdRep0034 select 0)) exitwith {_type=(_dmdRep0034 select 1) select 0;};
 			};
 			_house = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
 			_house setVectorDirAndUp [ _dirVector, _objVector];
