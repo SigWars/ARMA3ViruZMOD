@@ -61,6 +61,7 @@ class CfgDebriefing
 };
 
 /* Includes */
+#include "infiSTAR_AdminMenu.hpp"
 #include "CfgVehiclesSpawner.inc"				// Configs Spawn  de Vehiculos
 #include "CfgSpawnCrashSite.inc"				// Helicrash configs
 #include "Configs\CfgLoot\CfgBuildingLoot_Taunus.hpp" 	// Custom Loot Taunus

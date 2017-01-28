@@ -188,69 +188,72 @@ _Structures = [];
 						
 						//Adds weapons and their attachments in holder
 						private _weaponArray = _inventory select 0;
-						_countr = 0;
-						{ 
-							private _wpType = _x select 0; 
-							if !(isNil "_wpType") then
+						if (count _weaponArray > 0) then
+						{						
+							_countr = 0;
 							{ 
-								_isOK = isClass(configFile >> "CfgWeapons" >> _wpType);
-								if (_isOK) then 
-								{
-									_object addWeaponCargoGlobal [_wpType,1];
-								};
-							};	
-								 
-							private _wpSupressor = _x select 1; 
-							if !(isNil "_wpSupressor") then
-							{  
-								_object addItemCargoGlobal [_wpSupressor,1]; 
-							}; 
-								
-							private _wpLaser = _x select 2; 
-							if !(isNil "_wpLaser") then
-							{ 
-								_object addItemCargoGlobal [_wpLaser,1]; 
-							}; 
-								
-							private _wpOptic = _x select 3; 
-							if !(isNil "_wpOptic") then
-							{ 
-								_object addItemCargoGlobal [_wpOptic,1]; 
-							}; 
-								
-							//Magazine attached on Weapon
-							private _wpnAttachmag = _x select 4;
-							if (count _wpnAttachmag > 1) then 
-							{
-								private _wpnMag = _wpnAttachmag select 0;
-								private _wpnAmmo = _wpnAttachmag select 1;
-								if !(isNil "_wpnMag") then  
-								{
-									_object addMagazineAmmoCargo [_wpnMag,1,_wpnAmmo]; 
-								};
-							};
-														
-							//Bipod & blow ammo attached on Weapon
-							private _wpBipod = _x select 5;
-							if (count _wpBipod > 0) then 
-							{ 
-								if (typeName _wpBipod == "STRING") then 
-								{
-									_object addItemCargoGlobal [_wpBipod,1];
-								};
-								
-								if (typeName _wpBipod == "ARRAY") then 
-								{
-									private _wpMag2 = _wpBipod select 0;
-									private _wpAmmo2 = _wpBipod select 1;
-									if !(isNil "_wpMag2") then  
+								private _wpType = _x select 0; 
+								if !(isNil "_wpType") then
+								{ 
+									_isOK = isClass(configFile >> "CfgWeapons" >> _wpType);
+									if (_isOK) then 
 									{
-										_object addMagazineAmmoCargo [_wpMag2,1,_wpAmmo2]; 
+										_object addWeaponCargoGlobal [_wpType,1];
+									};
+								};	
+									 
+								private _wpSupressor = _x select 1; 
+								if !(isNil "_wpSupressor") then
+								{  
+									_object addItemCargoGlobal [_wpSupressor,1]; 
+								}; 
+									
+								private _wpLaser = _x select 2; 
+								if !(isNil "_wpLaser") then
+								{ 
+									_object addItemCargoGlobal [_wpLaser,1]; 
+								}; 
+									
+								private _wpOptic = _x select 3; 
+								if !(isNil "_wpOptic") then
+								{ 
+									_object addItemCargoGlobal [_wpOptic,1]; 
+								}; 
+									
+								//Magazine attached on Weapon
+								private _wpnAttachmag = _x select 4;
+								if (count _wpnAttachmag > 1) then 
+								{
+									private _wpnMag = _wpnAttachmag select 0;
+									private _wpnAmmo = _wpnAttachmag select 1;
+									if !(isNil "_wpnMag") then  
+									{
+										_object addMagazineAmmoCargo [_wpnMag,1,_wpnAmmo]; 
 									};
 								};
-							};
-							_countr = _countr + 1;
-						} forEach _weaponArray;
+															
+								//Bipod & blow ammo attached on Weapon
+								private _wpBipod = _x select 5;
+								if (count _wpBipod > 0) then 
+								{ 
+									if (typeName _wpBipod == "STRING") then 
+									{
+										_object addItemCargoGlobal [_wpBipod,1];
+									};
+									
+									if (typeName _wpBipod == "ARRAY") then 
+									{
+										private _wpMag2 = _wpBipod select 0;
+										private _wpAmmo2 = _wpBipod select 1;
+										if !(isNil "_wpMag2") then  
+										{
+											_object addMagazineAmmoCargo [_wpMag2,1,_wpAmmo2]; 
+										};
+									};
+								};
+								_countr = _countr + 1;
+							} forEach _weaponArray;
+						};	
 												
 						//Add Others Magazines	in holder				
 						{
@@ -285,128 +288,130 @@ _Structures = [];
 						* PROCESS BACKPACKS AND THEIR CONTENTS STORED IN HOLDERS *
 						**********************************************************/
 						private _backpackArrayRaiz = _inventory select 3;
+						if (count _backpackArrayRaiz > 0 )then
 						{
-							//_x = Mochila
-							
-							//Esta parte somente adiciona a Mochila/Vest/Uniform
-							private _bpType = _x select 0;
-							if !(isNil "_bpType") then
-							{ 
-								
-								private _isBackPack = getText(configfile >> "CfgVehicles" >> _bpType >> "vehicleClass") == "BackPacks";
-								if (_isBackPack) then {
-									_isOK = 	isClass(configFile >> "CfgVehicles" >> _bpType);
-									if (_isOK) then 
-									{
-										_object addBackpackCargoGlobal [_bpType,1];
-									};
-								};
-							};
-							
-							//Esta parte somente adiciona as armas e os os ataches que estavam nela!
-							private _bpWeaponArray = _x select 1; //Array com todas as armas dentro da backpack e seus ataches
 							{
-								//_x = Arma
-								private _wpType = _x select 0;
-								if !(isNil "_wpType") then 
-								{ 
-									_isOK = isClass(configFile >> "CfgWeapons" >> _wpType);
-									if (_isOK) then 
-									{
-										_object addWeaponCargoGlobal [_wpType,1];
-									};
-								};
+								//_x = Mochila
 								
-								//Supressor attached on Weapon
-								private _wpSupressor = _x select 1;
-								if !(isNil "_wpSupressor") then 
+								//Esta parte somente adiciona a Mochila/Vest/Uniform
+								private _bpType = _x select 0;
+								if !(isNil "_bpType") then
 								{ 
-									_object addItemCargoGlobal [_wpSupressor,1]; 
-								};
-								
-								//Laser,Flashlight attached on Weapon
-								private _wpLaser = _x select 2;
-								if !(isNil "_wpLaser") then 
-								{ 
-									_object addItemCargoGlobal [_wpLaser,1]; 
-								};
-								
-								//optic attached on Weapon
-								private _wpOptic = _x select 3;
-								if !(isNil "_wpOptic") then  
-								{ 
-									_object addItemCargoGlobal [_wpOptic,1]; 
-								};
-								
-								//Magazine attached on Weapon
-								private _weaponAttachmag = _x select 4;
-								if (count _weaponAttachmag > 1) then 
-								{
-									private _wpMag = _weaponAttachmag select 0;
-									private _wpAmmo = _weaponAttachmag select 1;
-									if !(isNil "_wpMag") then  
-									{
-										_object addMagazineAmmoCargo [_wpMag,1,_wpAmmo]; 
-									};
-								};
-								
-								//Bipod & blow ammo attached on Weapon
-								private _wpBipod = _x select 5;
-								if (count _wpBipod > 0) then 
-								{ 
-									if (typeName _wpBipod == "STRING") then 
-									{
-										_object addItemCargoGlobal [_wpBipod,1];
-									};
 									
-									if (typeName _wpBipod == "ARRAY") then 
-									{
-										private _wpMag2 = _wpBipod select 0;
-										private _wpAmmo2 = _wpBipod select 1;
-										if !(isNil "_wpMag2") then  
+									private _isBackPack = getText(configfile >> "CfgVehicles" >> _bpType >> "vehicleClass") == "BackPacks";
+									if (_isBackPack) then {
+										_isOK = 	isClass(configFile >> "CfgVehicles" >> _bpType);
+										if (_isOK) then 
 										{
-											_object addMagazineAmmoCargo [_wpMag2,1,_wpAmmo2]; 
+											_object addBackpackCargoGlobal [_bpType,1];
 										};
 									};
 								};
 								
-							}forEach _bpWeaponArray;
-							
-							//Esta parte somente adiciona todos os magazines que não estvam atachados na arma mas estavam dentro da mochila
-							private _bpMagsArray = _x select 2;
-							{
-								//_x = Magazine
-								_classMag	= _x select 0;
-								_ammoCount	= _x select 1;
-								_isOK		= isClass(configFile >> "CfgMagazines" >> _classMag);
+								//Esta parte somente adiciona as armas e os os ataches que estavam nela!
+								private _bpWeaponArray = _x select 1; //Array com todas as armas dentro da backpack e seus ataches
+								{
+									//_x = Arma
+									private _wpType = _x select 0;
+									if !(isNil "_wpType") then 
+									{ 
+										_isOK = isClass(configFile >> "CfgWeapons" >> _wpType);
+										if (_isOK) then 
+										{
+											_object addWeaponCargoGlobal [_wpType,1];
+										};
+									};
+									
+									//Supressor attached on Weapon
+									private _wpSupressor = _x select 1;
+									if !(isNil "_wpSupressor") then 
+									{ 
+										_object addItemCargoGlobal [_wpSupressor,1]; 
+									};
+									
+									//Laser,Flashlight attached on Weapon
+									private _wpLaser = _x select 2;
+									if !(isNil "_wpLaser") then 
+									{ 
+										_object addItemCargoGlobal [_wpLaser,1]; 
+									};
+									
+									//optic attached on Weapon
+									private _wpOptic = _x select 3;
+									if !(isNil "_wpOptic") then  
+									{ 
+										_object addItemCargoGlobal [_wpOptic,1]; 
+									};
+									
+									//Magazine attached on Weapon
+									private _weaponAttachmag = _x select 4;
+									if (count _weaponAttachmag > 1) then 
+									{
+										private _wpMag = _weaponAttachmag select 0;
+										private _wpAmmo = _weaponAttachmag select 1;
+										if !(isNil "_wpMag") then  
+										{
+											_object addMagazineAmmoCargo [_wpMag,1,_wpAmmo]; 
+										};
+									};
+									
+									//Bipod & blow ammo attached on Weapon
+									private _wpBipod = _x select 5;
+									if (count _wpBipod > 0) then 
+									{ 
+										if (typeName _wpBipod == "STRING") then 
+										{
+											_object addItemCargoGlobal [_wpBipod,1];
+										};
+										
+										if (typeName _wpBipod == "ARRAY") then 
+										{
+											private _wpMag2 = _wpBipod select 0;
+											private _wpAmmo2 = _wpBipod select 1;
+											if !(isNil "_wpMag2") then  
+											{
+												_object addMagazineAmmoCargo [_wpMag2,1,_wpAmmo2]; 
+											};
+										};
+									};
+									
+								}forEach _bpWeaponArray;
 								
-								if (_isOK) then {
-									_block = 	getNumber(configFile >> "CfgMagazines" >> _classMag >> "stopThis") == 1;
-									if (!_block) then {
-										_object addMagazineAmmoCargo [_classMag, 1, _ammoCount];
+								//Esta parte somente adiciona todos os magazines que não estvam atachados na arma mas estavam dentro da mochila
+								private _bpMagsArray = _x select 2;
+								{
+									//_x = Magazine
+									_classMag	= _x select 0;
+									_ammoCount	= _x select 1;
+									_isOK		= isClass(configFile >> "CfgMagazines" >> _classMag);
+									
+									if (_isOK) then {
+										_block = 	getNumber(configFile >> "CfgMagazines" >> _classMag >> "stopThis") == 1;
+										if (!_block) then {
+											_object addMagazineAmmoCargo [_classMag, 1, _ammoCount];
+										};
 									};
-								};
-							
-							}forEach _bpMagsArray;
-							
-							//Esta parte somente adiciona todos os items que não estavam atachados na arma mas estavam dentro da mochila
-							private _bpItemsArray = _x select 3;
-							_objWpnTypes = _bpItemsArray select 0; 
-							_objWpnQty = _bpItemsArray select 1; 
-							_countr = 0;					
-							{
-								_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
-								if (_isOK) then {
-									_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;
-									if (!_block) then {
-										_object addItemCargoGlobal [_x,(_objWpnQty select _countr)];
+								
+								}forEach _bpMagsArray;
+								
+								//Esta parte somente adiciona todos os items que não estavam atachados na arma mas estavam dentro da mochila
+								private _bpItemsArray = _x select 3;
+								_objWpnTypes = _bpItemsArray select 0; 
+								_objWpnQty = _bpItemsArray select 1; 
+								_countr = 0;					
+								{
+									_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
+									if (_isOK) then {
+										_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;
+										if (!_block) then {
+											_object addItemCargoGlobal [_x,(_objWpnQty select _countr)];
+										};
 									};
-								};
-								_countr = _countr + 1;
-							} forEach _objWpnTypes;
-												
-						} forEach _backpackArrayRaiz;
-						
+									_countr = _countr + 1;
+								} forEach _objWpnTypes;
+													
+							} forEach _backpackArrayRaiz;
+						};
 					};	
 				
 				//viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_object];
