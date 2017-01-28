@@ -1,42 +1,42 @@
 //////////////////////////////////////////////////
 //
 //     ViruZ Mod HeliCrash Loot ViruZ
-//     Version 2.0.1
+//     Version 1.0.1
 //	   Author: ViruZModTeam
 //
 ///////////////////////////////////////////////////
 
 class HelicrashViruZ: Default {
-		zombieChance = 0.4;
+		zombieChance = 1;
 		minRoaming = 3;
 		maxRoaming = 4;
 		zombieClass[] = {"z_soldier_heavy","z_soldier_pilot","z_soldier"};
 		lootChance = 0.5;
 		lootPos[] = {};
 		itemType[] =	{
-			{"","ArmasHigh"},
-			{"","Mag_ArmasHigh"},
-			{"","ArmasMedias"},
-			{"","Mag_ArmasMedias"},
-			{"","ArmasLow"},
-			{"","Mag_ArmasLow"},
-			{"","Acessorios_Optic"}
+			{"","Rifles_Flashlights"},
+			{"","Lasers"},
+			{"","Bipods"},
+			{"","Suppressors_Low"},
+			{"","Optics_Low"},
+			{"","Assault_Low"},
+			{"","Mag_Assault_Low"}
 		};
 		itemChance[] =	{
-			0.02,	//ArmasHigh
-			0.02,	//Mag_ArmasHigh
-			0.04,	//ArmasMedias
-			0.04,	//Mag_ArmasMedias
-			0.06,	//ArmasLow
-			0.06,	//Mag_ArmasLow
-			0.05	//Acessorios_Optic
+			0.05,	//Rifles Flashlights
+			0.05,	//Lasers
+			0.05,	//Bipods
+			0.04,	//Suppressors Low
+			0.04,	//Optics Low
+			0.06,	//Assault Low
+			0.06	//Mag Assault Low
 		};
 	};
 	
 //holders
 	
 class VZBox_MediaV: HelicrashViruZ { //HELICRASH BOX
-		lootChance = 0.7;
+		lootChance = 0.9;
 		isObjectHolder = 1;
 		isBuildingPos = 0;
 };
