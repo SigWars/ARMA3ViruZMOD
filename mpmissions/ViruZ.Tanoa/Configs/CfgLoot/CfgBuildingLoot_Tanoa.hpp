@@ -24,8 +24,8 @@ class CfgBuildingLoot {
 			"VZ_Priest","VZ_Policeman","VZ_Doctor","VZ_Assistant",
 			"VZ_SchoolTeacher","VZ_boomer"
 		};
-		lootChance = 0.3;
-		maxSpawns = 5;
+		lootChance = 0.4;
+		maxSpawns = 6;
 		lootPos[] = {};
 		itemType[] = {};
 		itemChance[] = {};
@@ -41,7 +41,7 @@ class CfgBuildingLoot {
 			"VZ_Priest"
 		};
 		maxRoaming = 1;
-		maxSpawns = 2;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -70,7 +70,7 @@ class CfgBuildingLoot {
 			"VZ_Villager1","VZ_Villager2","VZ_Villager3","VZ_Villager4",
 			"VZ_boomer","VZ_Policeman"
 		};
-		MaxSpawns = 3;
+		MaxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -106,7 +106,7 @@ class CfgBuildingLoot {
 			"VZ_boomer"
 		};
 		maxRoaming = 1;
-		maxSpawns = 2;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -157,7 +157,7 @@ class CfgBuildingLoot {
 			"VZ_Villager1","VZ_Villager2","VZ_Villager3","VZ_Villager4",
 			"VZ_boomer"
 		};
-		maxSpawns = 2;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -206,7 +206,7 @@ class CfgBuildingLoot {
 			"VZ_Villager1","VZ_Villager2","VZ_Villager3","VZ_Villager4",
 			"VZ_boomer"
 		};
-		maxSpawns = 3;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -261,8 +261,8 @@ class CfgBuildingLoot {
 			"VZ_Villager1","VZ_Villager2","VZ_Villager3","VZ_Villager4",
 			"VZ_boomer","VZ_Policeman"
 		};
-		lootChance = 0.4;
-		MaxSpawns = 7;
+		lootChance = 0.8;
+		MaxSpawns = 9;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -309,7 +309,7 @@ class CfgBuildingLoot {
 			"VZ_Woodlander1","VZ_Woodlander2","VZ_Woodlander3","VZ_Woodlander4",
 			"VZ_Villager1","VZ_Villager2","VZ_Villager3","VZ_Villager4"
 		};
-		MaxSpawns = 4;
+		MaxSpawns = 6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Trash"},
@@ -347,7 +347,7 @@ class CfgBuildingLoot {
 			"VZ_boomer","VZ_Policeman"
 		};
 		maxRoaming = 1;
-		maxSpawns = 3;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Light_Backpacks"},
@@ -379,7 +379,7 @@ class CfgBuildingLoot {
 			"VZ_boomer","VZ_Policeman"
 		};
 		maxRoaming = 1;
-		maxSpawns = 3;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Light_Backpacks"},
@@ -430,7 +430,7 @@ class CfgBuildingLoot {
 		};
 		minRoaming = 1;
 		maxRoaming = 3;
-		maxSpawns = 4;
+		maxSpawns = 6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -478,7 +478,7 @@ class CfgBuildingLoot {
 			"VZ_boomer","VZ_SchoolTeacher","VZ_Policeman"
 		};
 		maxRoaming = 1;
-		maxSpawns = 3;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Empty_Drink"},
@@ -545,7 +545,7 @@ class CfgBuildingLoot {
 			"VZ_boomer","VZ_SchoolTeacher","VZ_Policeman"
 		};
 		maxRoaming = 1;
-		maxSpawns = 3;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","School_Trash"},
@@ -602,7 +602,7 @@ class CfgBuildingLoot {
 			"VZ_Woodlander1","VZ_Woodlander2","VZ_Woodlander3","VZ_Woodlander4"
 		};
 		maxRoaming = 1;
-		maxSpawns = 2;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"CUP_srifle_LeeEnfield_rail","weapon"},
@@ -631,8 +631,8 @@ class CfgBuildingLoot {
 ////////////////////////////////////////////////////////////////////////////////
 	class Tools_Shed: Default {
 		maxRoaming = 1;
-		lootChance = 0.2;
-		maxSpawns = 2;
+		lootChance = 0.4;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"MeleeHatchet","weapon"},
@@ -651,7 +651,7 @@ class CfgBuildingLoot {
 ////////////////////////////////////////////////////////////////////////////////
 	class Workshop: Default {
 		maxRoaming = 1;
-		maxSpawns = 2;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","CarParts"},
@@ -687,7 +687,7 @@ class CfgBuildingLoot {
 ////////////////////////////////////////////////////////////////////////////////
 	class Hunt_Tower: Default {
 		maxRoaming = 0;
-		maxSpawns = 2;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"ItemSodaBeergolden","magazine"},
@@ -726,7 +726,7 @@ class CfgBuildingLoot {
 ////////////////////////////////////////////////////////////////////////////////
 	class Watch_Tower: Default {
 		maxRoaming = 0;
-		maxSpawns = 2;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"ItemWaterBottle","magazine"},
@@ -749,7 +749,7 @@ class CfgBuildingLoot {
 ////////////////////////////////////////////////////////////////////////////////
 	class Construction: Default {
 		maxRoaming = 3;
-		maxSpawns = 7;
+		maxSpawns = 9;
 		lootPos[] = {};
 		itemType[] =	{
 			{"MeleeHatchet","weapon"},
@@ -767,7 +767,7 @@ class CfgBuildingLoot {
 	class Pharmacy: Default {
 		zombieClass[] = { "VZ_Doctor", "VZ_Assistant","VZ_Policeman"};
 		maxRoaming = 1;
-		maxSpawns = 2;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Medical_Lite"},
@@ -783,7 +783,7 @@ class CfgBuildingLoot {
 	class Hospital: Default {
 		zombieClass[] = { "VZ_Doctor", "VZ_Assistant","VZ_Policeman"};
 		lootChance = 0.4;
-		maxSpawns = 4;
+		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Medical_Lite"},
@@ -800,7 +800,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.2;
-		maxSpawns = 4;
+		maxSpawns = 6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","CarParts"},
@@ -816,8 +816,8 @@ class CfgBuildingLoot {
 	class Basic_Military: Default {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
-		lootChance = 0.3;
-		MaxSpawns = 3;
+		lootChance = 0.5;
+		MaxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -873,8 +873,8 @@ class CfgBuildingLoot {
 	class Medium_Military: Default {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
-		lootChance = 0.2;
-		maxSpawns = 3;
+		lootChance = 0.4;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -928,8 +928,8 @@ class CfgBuildingLoot {
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 	    minRoaming = 1;
 		maxRoaming = 2;
-		lootChance = 0.2;
-		maxSpawns = 3;
+		lootChance = 0.3;
+		maxSpawns = 6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -985,8 +985,8 @@ class CfgBuildingLoot {
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 	    minRoaming = 1;
 		maxRoaming = 2;
-		lootChance = 0.2;
-		maxSpawns = 3;
+		lootChance = 0.4;
+		maxSpawns = 4;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -1030,7 +1030,7 @@ class CfgBuildingLoot {
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 	    minRoaming = 1;
 		maxRoaming = 2;
-		lootChance = 0.2;
+		lootChance = 0.3;
 		maxSpawns = 5;
 		lootPos[] = {};
 		itemType[] =	{

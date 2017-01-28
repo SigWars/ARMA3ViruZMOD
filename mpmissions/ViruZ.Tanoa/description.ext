@@ -79,18 +79,18 @@ class cfgGame {
 	ViruzDebugType		= "NONE";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD"
 	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	SpawnPositions[]	= {
-		{3469.22,2487.37,0.00170994}, // Komarovo
-		{1694.05,3833.64,0.00143433}, // Pavlovo
-		{7954.44,3260.53,0.00143862}, // Prigorodki
-		{12030.7,3656.58,0.00154591}, // Kamyshovo
-		{11227.9,6581.81,0.00144196}, // Dolina
-		{12727.8,9624.08,0.00143862}, // Lumbermill
-		{11138.6,12301,0.00201416},	  // Krasnostav
-		{4981.35,12522.2,0.00143433}, // Petrovka
-		{1998.23,7342.49,0.00152588}, // Myshkino
-		{7004.85,7742.8,0.00143433}	  // Novy Sobor
+		{2210.79,12253,0.00183487},   // Tuvanaka
+		{3265.38,11606.5,0.00185776}, // Belfort
+		{6801.27,10280.1,0.000114441}, // Georgetown
+		{13320.8,11352.6,0.00122261}, // Porto industrial Blue Pearl
+		{9344.96,10152.4,0.00212479}, // Tanouka
+		{12966.5,7774.45,0.00154495}, // Ouméré
+		{11159,6332.54,0.00180817},	  // Kotomo
+		{11269.4,2700.74,0.00163126}, // Lijhaven
+		{9672.15,3863.42,0.00209856}, // Moddergat
+		{5067.59,4320.54,0.00142431}  // Katkoula
 		};
-	maxZeds				= 250;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
+	maxZeds				= 400;					// O número máximo de zumbis que podem ser spanado todo o mapa, isto é, todos os clientes (jogadores)
 	maxLocalZombies		= 2;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador)
 	maxWildZombies		= 1;					// O número máximo de zumbis que pode gerar a partir de cada cliente (jogador), fora de cidades
 	lootDelaytime		= 900;					// Tempo de espera para respawnar loot (segundos)
