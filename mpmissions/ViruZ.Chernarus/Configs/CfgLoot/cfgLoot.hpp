@@ -4539,7 +4539,7 @@ class CfgLoot {
 	
 	ACPC2[] = {
 		{
-			"hgun_ACPC2_F",		//hit: 4	ACP-C2 .45 ACP
+			"hgun_ACPC2_F"		//hit: 4	ACP-C2 .45 ACP
 		},
 		{
 			0.09
@@ -4575,7 +4575,7 @@ class CfgLoot {
 	
 	Zubr_45[] = {
 		{
-			"hgun_Pistol_heavy_02_F",			//hit: 4	Zubr .45 ACP
+			"hgun_Pistol_heavy_02_F"			//hit: 4	Zubr .45 ACP
 		},
 		{
 			0.09
@@ -4988,7 +4988,7 @@ class CfgLoot {
 			
 	Sting[] = {
 		{
-			"SMG_02_F",			//hit:4		Sting 9 mm
+			"SMG_02_F"			//hit:4		Sting 9 mm
 		},
 		{
 					
@@ -5044,7 +5044,7 @@ class CfgLoot {
 	
 	Protector[] = {
 		{
-			"SMG_05_F",			//hit:4		Protector 9 mm
+			"SMG_05_F"			//hit:4		Protector 9 mm
 		},
 		{
 			
