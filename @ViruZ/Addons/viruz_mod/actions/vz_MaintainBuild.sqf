@@ -60,7 +60,7 @@ if (ViruzDebugMode > 2 or ViruzDebugType == "MAINTAIN") then
 	diag_log format["VZ_UPDATE_OBJ_MAINTAIN: BUILDS _countMetal: %1",_countMetal];
 };
 
-private _ressNailreq = round(count _countWood / 5);
+private _ressNailreq = round(count _countWood / 25);
 private _ressCinderreq = round(count _countCinder / 5);
 private _ressWooodreq = round(count _countWood / 5);
 private _ressMetalreq = round(count _countMetal / 4);
