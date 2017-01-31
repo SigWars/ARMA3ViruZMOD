@@ -1,8 +1,14 @@
 /*
-VIRUZ MOD ARMA 3 
-ViruZClient_antiGlitch.sqf by SigWAr
-Checks nearby builds and disable glitch movements if not owner or not in group of object owner.
+    File: ViruZClient_antiGlitch.sqf
+    Atuthor: Leonardo "SigWar" Pinheiro
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Checks nearby builds and disable glitch movements if not owner or not in group of object owner.
 */
+
 	if (isDedicated) exitWith {diag_log "Ignore antiglitch script in Dedicated Server";};
 	ehremoved = false;
 	

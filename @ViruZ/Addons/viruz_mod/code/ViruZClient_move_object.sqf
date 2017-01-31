@@ -1,7 +1,12 @@
 /*
-ViruZClient_move_object
-By SigWar
-ViruZ Build Syetem With custom snap
+    File: ViruZClient_move_object.sqf
+    Atuthor: Leonardo "SigWar" Pinheiro
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	ViruZ Build Syetem With custom snap
 */
 private ["_distance","_direction","_high","_adjustRack","_currentDistanceDiff","_distanceDiff","_search_range","_spot_positionA","_spot_positionB","_object", "_config", 
 "_type", "_attachToPlayer", "_object_types", "_target_spots","_height_diff","_object_height","_target_height","_distance_diff","_object_pos","_target_pos",

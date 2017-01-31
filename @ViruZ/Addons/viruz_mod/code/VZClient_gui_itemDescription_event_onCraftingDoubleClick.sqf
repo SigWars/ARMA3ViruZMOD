@@ -1,3 +1,13 @@
+/*
+    File: VZClient_gui_itemDescription_event_onCraftingDoubleClick.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Mostrar Lista de Craft
+*/
 private["_listBoxLabel","_listBoxLabelIndex","_craftingClassName"];
 disableSerialization;
 _listBoxLabel = _this select 0;

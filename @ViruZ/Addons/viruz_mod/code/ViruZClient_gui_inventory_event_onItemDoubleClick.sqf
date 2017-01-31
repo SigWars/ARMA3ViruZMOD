@@ -1,3 +1,14 @@
+/*
+    File: ViruZClient_gui_inventory_event_onItemDoubleClick.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Pegar o item real que foi selecionado no inventario.
+*/
+
 private["_itemControl","_itemControlIndex","_itemClassName","_itemDisplayName","_configName","_configSearch"];
 _itemControl = _this select 0;
 _itemControlIndex = _this select 1;

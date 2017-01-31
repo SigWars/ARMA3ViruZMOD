@@ -1,3 +1,14 @@
+/*
+    File: ViruZClient_gear_getConfigNameByClassName.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Verificar em qual classe o item está em alguma Classe Magazine, Vehicles..
+*/
+
 private["_className","_configName"];
 _className = _this;
 _configName = "";

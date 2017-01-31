@@ -1,10 +1,15 @@
 /*
-ViruZClient_getSpotPosition.sqf
-By SigWar
-ViruZ Build Syetem With custom snap
-
-Return the closest snap point
+    File: ViruZClient_getSpotPosition.sqf
+    Atuthor: Leonardo "SigWar" Pinheiro
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	ViruZ Build Syetem With custom snap
+    Return the closest snap point
 */
+
 private ["_closest_test_spot_position","_closest_test_distance","_closest_test_spot","_spot_test_position","_test_distance","_on_water","_test_object","_test_position"];
     _closest_test_spot_position = [];
     _test_object = _this select 0;

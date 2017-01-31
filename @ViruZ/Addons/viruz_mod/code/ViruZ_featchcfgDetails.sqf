@@ -1,11 +1,12 @@
 /*
-		@version: 1.3
-		@file_name: ViruZ_featchcfgDetails.sqf
-		@file_author: TAW_Tonic
-		@Modified by SigWar
-		
-		@file_edit: 07/01/2017
-		@file_description: Fetch information about the entities config
+	File: VZClient_util_model_isNearby.sqf
+	Version: 1.3
+	Author: Bryan "Tonic" Boardwine
+    Modifield: Leonardo "SigWar" Pinheiro
+	File edit: 07/01/2017
+	
+	Description: 
+	Fetch information about the entities config
 		
 		USAGE:
 		[Classname,Cfg* (Optional)] call viruz_featchcfgDetails;
@@ -25,6 +26,7 @@
 		11: acc_Optics
 		12: acc_Muzzles
 */
+
 	private["_entity","_cfg","_ret","_type","_acc_p","_acc_o","_acc_m","_scope","_displayName","_picture","_config","_itemInfo","_muzzles","_magazines","_desc"];
 	_acc_p = [];
 	_acc_o = [];

@@ -1,3 +1,14 @@
+/*
+    File: VZClient_gui_itemDescription_event_onCraftingDoubleClick.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Mostrar oque vai precisar para craftar esse item!
+*/
+
 private["_getcraftingClassName","_craftingConfig","_craftname","_imagemItemClassName","_cfgType","_craftingImagem","_OkCrafting","_CraftingQuantidade","_getItemMagazine","_componentes","_returnedItems","_ferramentas","_dialog","_description","_getcomponenteQuantity","_getcomponenteItemClassName","_getcomponenteItemName","_equippedComponentQuantity","_ferramentasItemClassName","_ferramentasItemName","_equippedferramentasQuantity","_interactionModelGroupClassName","_interactionModelGroupName","_interactionModelGroupModels","_foundObject","_listBoxIndex","_interactionModelGroupConfig"];
 
 //Classes

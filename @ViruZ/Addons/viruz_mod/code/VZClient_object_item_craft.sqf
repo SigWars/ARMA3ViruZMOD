@@ -1,3 +1,14 @@
+/*
+    File: VZClient_object_item_craft.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Vamos Verificar se o player está com todos os componentes para craft
+*/
+
 private["_getcraftingClassName","_quantityToCraft","_quantityCrafted","_metSideConditions","_recipeConfig","_sfx","_anim","_returnedItems","_interactionModelGroupClassName","_components","_tools","_cfgtype","_equippedMagazines","_addedItems","_concreteMixer","_toolItemClassName","_equippedToolQuantity","_interactionModelGroupModels","_foundObject","_i","_hasAllComponents","_componentQuantity","_componentItemClassName","_equippedComponentQuantity","_returnedItemQuantity","_returnedItemClassName","_feedbackMessage","_returnedItemName","_nearByPile","_itemOut","_sfx","_RetiredSize","_cansGear","_maxCount","_qtyCans"];
 _getcraftingClassName = _this select 0;
 _quantityToCraft = _this select 1;

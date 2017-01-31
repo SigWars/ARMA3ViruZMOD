@@ -1,3 +1,14 @@
+/*
+    File: ViruZClient_gear_getConfigEntryByDisplayName.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Pegar Display name caso vir nulo..
+*/
+
 private["_displayName","_result","_configSearch"];
 _displayName = _this;
 _result = ["", ""]; 

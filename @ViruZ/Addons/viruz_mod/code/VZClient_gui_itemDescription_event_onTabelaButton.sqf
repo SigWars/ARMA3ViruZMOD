@@ -1,3 +1,14 @@
+/*
+    File: VZClient_gui_itemDescription_event_onTabelaButton.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Mostrar Descrição do item...
+*/
+
 private["_tabelaName","_display","_DetalhesTabela","_CraftingTabela"];
 disableSerialization;
 _tabelaName = _this;

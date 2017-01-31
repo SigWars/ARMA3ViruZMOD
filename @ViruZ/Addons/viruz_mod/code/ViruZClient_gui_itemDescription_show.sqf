@@ -1,3 +1,14 @@
+/*
+    File: ViruZClient_gui_itemDescription_show.sqf
+    Atuthor: Mateus "Mateuus" Rodrigues
+	
+	Licence: 
+	ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
+	
+    Description:
+	Mostrar Descrição do item...
+*/
+
 private["_GetConfigName","_GetItemClassName","_SelectItemConfig","_GetItemDisplayName","_GetItemImagem","_ferramentasRequired","_getItemMagazine","_TemAsFerramentas","_itemDescription","_GetferramentaItemName","_ferramentaItemName","_descriptionLabel","_craftingLabel","_craftingLabelListBox","_craftingSub","_buttonCrafting","_craftingClassName","_craftingName","_craftingPicture","_listItemIndex","_usingConfigCon","_cfgActionsCon","_compileCon","_usingConfigUse","_cfgActionsUse","_compileUse","_usingConfigBuild","_cfgActionsBuild","_compileBuild"];
 
 //Get
