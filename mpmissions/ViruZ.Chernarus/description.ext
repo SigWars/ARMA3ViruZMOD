@@ -1,5 +1,5 @@
 ﻿respawn = "BASE";
-respawndelay = 5;
+respawndelay = 20;
 respawnButton = 1;
 onLoadMission= "www.viruzmod.com";
 OnLoadIntro = "De seu feedback no forum";
@@ -74,7 +74,7 @@ class cfgGame {
 	
 	// ViruZ Parametros
 	ViruzDebugMode		= 0;					// Enable log debug 0 = off | 1 = low | 2 = Medium | 3 = High // Recomended 0: it will increase server fps to high 
-	ViruzDebugType		= "DEV";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD" "MAINTAIN" "DEV"
+	ViruzDebugType		= "NONE";				// Debug separed functions "DAMAGE" "VEHICLES" "HELICRASH" "HUMANITY" "HANDLES" "LOGIN" "MONITOR" "BUILD" "MAINTAIN" "DEV"
 	mapArea[]			= {-20000, 20000}; 		// Padrão {-20000, 20000};As coordenadas, em metros, para que o jogador é contra-indicado ir : mapArea[] = {}; - Ilimitado
 	SpawnPositions[]	= {
 		{3469.22,2487.37,0.00170994}, // Komarovo

@@ -6,16 +6,15 @@ diag_log "SERVER: Group Request sent";
 _result = call compile _query;
 ViruZGroupsArray = _result select 1;
 	
-{
+/*{
 	_groupName = _x select 1;
 	_group = createGroup west;
 	_group setGroupIdGlobal [_groupName];
 	 diag_log format ["SERVER CREATED THE GROUP %1",_groupName];
-} forEach ViruZGroupsArray;
+} forEach ViruZGroupsArray;*/
 	
 publicVariable "ViruZGroupsArray";
 //"ViruZGroupsArray" addPublicVariableEventHandler {publicVariable "ViruZGroupsArray";};
-
 
 currentInvites = [];
 publicVariable "currentInvites";

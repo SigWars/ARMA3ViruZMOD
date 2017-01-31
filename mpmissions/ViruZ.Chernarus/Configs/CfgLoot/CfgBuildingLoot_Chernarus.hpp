@@ -78,8 +78,8 @@ class CfgBuildingLoot {
 			{"","Drink"},
 			{"","Flashlights"},
 			{"","Basic_Items"},
-			{"","Mag_Pistols_Low"},
-			{"","Pistols_Low"}
+			{"","Pistols_Low"},
+			{"","Mag_Pistols_Low"}
 
 		};
 		itemChance[] =	{
@@ -88,8 +88,8 @@ class CfgBuildingLoot {
 			0.05,	//Drink
 			0.03,	//Flashlights
 			0.03,	//Basic items
-			0.02,	//MAg_ArmasCivis
-			0.01	//Armas Civis
+			0.02,	//Pistols Low
+			0.01	//Mag Pistols Low
 
 		};
 	};
@@ -139,7 +139,7 @@ class CfgBuildingLoot {
 			0.05,   //Civilian headgears
 			0.05,   //Civilian clothes
 			0.03,   //Pistols Low
-			0.02,   //Mag_Pistols Low
+			0.01,   //Mag_Pistols Low
 			0.04,	//Knife
 			0.02,	//M1014
 			0.01	//Mag M1014
@@ -190,7 +190,7 @@ class CfgBuildingLoot {
 			0.05,   //Civilian vests
 			0.04,	//Tools
 			0.03,	//Lee Enfield
-			0.02,	//Mag Lee Enfield
+			0.01,	//Mag Lee Enfield
 			0.05	//Survival items
 		};
 	};
@@ -229,7 +229,7 @@ class CfgBuildingLoot {
 			{"ItemKnife","magazine"}
 		};
 		itemChance[] =	{
-			0.04,	//Trash
+			0.03,	//Trash
 			0.05,	//Food
 			0.07,	//Drink
 			0.04,	//Flashlights
@@ -243,7 +243,7 @@ class CfgBuildingLoot {
 			0.05,   //Civilian vests
 			0.05,	//Tools
 			0.04,   //Pistols low
-			0.03,   //Mag pistols low
+			0.02,   //Mag pistols low
 			0.02,	//Shotgun M1014
 			0.01,	//Mag M1014
 			0.05	//Knife
@@ -354,16 +354,16 @@ class CfgBuildingLoot {
 			{"","Medical_Lite"},
 			{"","Eletronic_Items"},
 			{"","Tools"},
-			{"","Mag_Pistols_Low"},
-			{"","Pistols_Low"}			
+			{"","Pistols_Low"},
+			{"","Mag_Pistols_Low"}
 		};
 		itemChance[] =	{
 			0.05,	//Light backpacks
 			0.06,	//Medical Lite
 			0.03,	//Eletronic Items
 			0.04,	//Tools
-			0.02,	//Mag_Pistols_Low
-			0.01	//Pistols_Low
+			0.02,	//Pistols_Low
+			0.01	//Mag_Pistols_Low
 		};
 	};
 	
@@ -384,7 +384,7 @@ class CfgBuildingLoot {
 		itemType[] =	{
 			{"","Light_Backpacks"},
 			{"","Medium_Backpacks"},
-			{"","Survival_Items"},
+			{"","Militay_Items"},
 			{"","Military_Glasses"},
 			{"","Military_Clothes"},
 			{"","Military_Headgears"},
@@ -401,7 +401,7 @@ class CfgBuildingLoot {
 		itemChance[] =	{
 			0.05,		//Light Backpacks
 			0.03,		//Medium backpacks
-			0.06,		//Survival_Items
+			0.06,		//Military_Items
 			0.06,		//Military Glasses
 			0.05,		//Military Clothes
 			0.06,		//Military Headgears
@@ -450,15 +450,15 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.05,   //Pistols high
-			0.04,   //Mag pistols high
-			0.03,	//Attach Pistols High
+			0.03,   //Mag pistols high
+			0.02,	//Attach Pistols High
 			0.07,   //Military glasses
 			0.07,   //Military clothes
 			0.05,   //Military vests
 			0.07,   //Military headgears
-			0.04,	//Shotgun M1014
+			0.03,	//Shotgun M1014
 			0.02,	//Mag Shotgun M1014 Pellets
-			0.02,	//Mag Shotgun M1014 Slug
+			0.01,	//Mag Shotgun M1014 Slug
 			0.06,   //Tools
 			0.06,   //Hatchet
 			0.06,   //Knife
@@ -558,10 +558,10 @@ class CfgBuildingLoot {
 		itemChance[] =	{
 			0.03,	//School trash
 			0.03,	//Empty Drink
-			0.05,	//Drink
-			0.05,	//Light backpacks
-			0.05,	//Office items
-			0.03	//Flashlights
+			0.07,	//Drink
+			0.07,	//Light backpacks
+			0.03,	//Office items
+			0.02	//Flashlights
 		};
 	};
 	
@@ -589,8 +589,8 @@ class CfgBuildingLoot {
 		itemChance[] =	{
 			0.03,	//School trash
 			0.03,	//Empty Drink
-			0.05,	//Drink
-			0.05,	//Light backpacks
+			0.07,	//Drink
+			0.07,	//Light backpacks
 			0.05,	//Office items
 			0.03	//Flashlights
 		};
@@ -621,7 +621,7 @@ class CfgBuildingLoot {
 			0.03,   //Tools 
 			0.06,   //Hatchet
 			0.06,   //Knife
-			0.04,   //Flashlights
+			0.02,   //Flashlights
 			0.04,   //Basic items
 			0.04,   //Materials
 			0.04	//Jerrycan
@@ -641,9 +641,9 @@ class CfgBuildingLoot {
 			{"ItemToolbox","magazine"}
 		};
 		itemChance[] =	{
-			0.06,   //Hatchet
-			0.06,   //Metal wire
-			0.06,	//Tools
+			0.07,   //Hatchet
+			0.05,   //Metal wire
+			0.07,	//Tools
 			0.01	//Tool box
 		};
 	};
@@ -661,8 +661,8 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.06,   //Car parts
-			0.04,	//Flashlights
-			0.06,	//Tools
+			0.03,	//Flashlights
+			0.08,	//Tools
 			0.01	//Tool box
 		};
 	};
@@ -678,9 +678,9 @@ class CfgBuildingLoot {
 			{"","Tools"}
 		};
 		itemChance[] =	{
-			0.04,   //Engine
-			0.05,   //Wire roll
-			0.05	//Tools
+			0.03,   //Engine
+			0.06,   //Wire roll
+			0.06	//Tools
 		};
 	};
 
@@ -701,24 +701,24 @@ class CfgBuildingLoot {
 			{"ItemKnife","magazine"},
 			{"CUP_srifle_LeeEnfield_rail","weapon"},
 			{"CUP_10x_303_M","magazine"},
-			{"Binocular","magazine"},
+			{"Binocular","item"},
 			{"HandFlashlight","weapon"},
 			{"CUP_B_ACRScout_m95","backpack"}
 		};
 		itemChance[] =	{
-			0.07,   //Beer can
-			0.07,   //Canteen
-			0.07,   //Empty beer can
-			0.07,   //Empty canteen
+			0.08,   //Beer can
+			0.08,   //Canteen
+			0.08,   //Empty beer can
+			0.08,   //Empty canteen
 			0.06,   //Can of beans
 			0.06,   //Can of beans
 			0.06,   //Empty can of beans
 			0.06,   //Empty can of beans
-			0.07,   //Knife
+			0.06,   //Knife
 			0.03,   //Lee Enfield
-			0.02,   //Mag Lee Enfield
+			0.01,   //Mag Lee Enfield
 			0.05,	//Binocular
-			0.05,	//Viruz flashlight
+			0.03,	//Viruz flashlight
 			0.05	//Backpack
 		};
 	};
@@ -734,15 +734,38 @@ class CfgBuildingLoot {
 			{"FoodMRE","magazine"},
 			{"","Assault_Low"},
 			{"","Mag_Assault_Low"},
-			{"Binocular","magazine"}
+			{"Binocular","item"}
 		};
 		itemChance[] =	{
 			0.08,   //Canteen
 			0.08,   //Empty canteen
 			0.05,   //MRE
-			0.03,   //Assault rifles low
-			0.02,   //Mag assault rifles low
-			0.07	//Binocular
+			0.02,   //Assault rifles low
+			0.01,   //Mag assault rifles low
+			0.06	//Binocular
+		};
+	};
+
+////////////////////////////////////////////////////////////////////////////////
+	class Gatehouse: Default {
+		maxRoaming = 0;
+		maxSpawns = 2;
+		lootPos[] = {};
+		itemType[] =	{
+			{"ItemWaterBottle","magazine"},
+			{"ItemWaterbottleUnfilled","magazine"},
+			{"","Pistols_Low"},
+			{"","Mag_Pistols_Low"},
+			{"CUP_sgun_M1014","weapon"},
+			{"CUP_8Rnd_B_Beneli_74Pellets","magazine"}
+		};
+		itemChance[] =	{
+			0.08,   //Canteen
+			0.08,   //Empty canteen
+			0.05,   //Pistols Low
+			0.02,   //Mag Pistols Low
+			0.03,   //M1014
+			0.01	//Mag M1014 Pellets
 		};
 	};
 	
@@ -800,7 +823,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.2;
-		maxSpawns = 4;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","CarParts"},
@@ -808,7 +831,39 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.03,	//Car parts
-			0.04	//Heli parts
+			0.06	//Heli parts
+		};
+	};
+	
+/////////////////////////////////////////////////////////////////////////////
+	class Military_Office: Default {
+		zombieChance = 0.3;
+		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
+		lootChance = 0.3;
+		lootPos[] = {};
+		itemType[] =	{
+			{"","Pistols_High"},
+			{"","Mag_Pistols_High"},
+			{"","Attach_Pistols_High"},
+			{"","SMG"},
+			{"","Mag_SMG"},
+			{"","Attach_SMG"},
+			{"","Military_Headgears"},
+			{"","Medium_Backpacks"},
+			{"","Military_Items"},
+			{"FoodMRE","magazine"}
+		};
+		itemChance[] =	{
+			0.08,	//Pistols High
+			0.06,	//Mag Pistols High
+			0.03,	//Attach Pistols High
+			0.03,	//SMG
+			0.02,	//Mag SMG
+			0.01,	//Attach SMG
+			0.06,	//Military Headgears
+			0.04,	//Medium Backpacks
+			0.08,	//Military Items
+			0.04	//FoodMRE
 		};
 	};
 	
@@ -840,7 +895,7 @@ class CfgBuildingLoot {
 			{"","Military_Headgears"},
 			{"","Smoke_Grenades"},
 			{"","Medium_Backpacks"},
-			{"","Survival_Items"},
+			{"","Military_Items"},
 			{"FoodMRE","magazine"}
 		};
 		itemChance[] =	{
@@ -850,8 +905,8 @@ class CfgBuildingLoot {
 			0.06,	//SMG
 			0.04,	//Mag SMG
 			0.03,	//Attach SMG
-			0.04,	//LMG low
-			0.02,	//Mag LMG low
+			0.02,	//LMG low
+			0.01,	//Mag LMG low
 			0.01,	//Attach LMG low
 			0.03,	//Assault low
 			0.02,	//Mag Assault low
@@ -864,7 +919,7 @@ class CfgBuildingLoot {
 			0.06,	//Military Headgears
 			0.03,	//Smoke Grenades
 			0.04,	//Medium Backpacks
-			0.08,	//Survival Items
+			0.08,	//Military Items
 			0.04	//FoodMRE
 		};
 	};
@@ -895,29 +950,29 @@ class CfgBuildingLoot {
 			{"","Smoke_Grenades"},
 			{"","Offensive_Grenades"},
 			{"","Medium_Backpacks"},
-			{"","Survival_Items"},
+			{"","Military_Items"},
 			{"FoodMRE","magazine"}
 		};
 		itemChance[] =	{
 			0.09,	//Pistols High
 			0.07,	//Mag Pistols High
-			0.06,	//Attach Pistols High
-			0.07,	//LMG Medium
-			0.05,	//Mag LMG Medium
-			0.04,	//Attach LMG Medium
-			0.05,	//Assault Medium
-			0.03,	//Mag Assault Medium
-			0.02,	//Attach Assault Medium
-			0.03,	//Sniper Medium
+			0.05,	//Attach Pistols High
+			0.01,	//LMG Medium
+			0.01,	//Mag LMG Medium
+			0.01,	//Attach LMG Medium
+			0.04,	//Assault Medium
+			0.02,	//Mag Assault Medium
+			0.01,	//Attach Assault Medium
+			0.01,	//Sniper Medium
 			0.01,	//Mag Sniper Medium
 			0.01,	//Attach Sniper Medium
 			0.05, 	//Military_Clothes
 			0.05,	//Military_Vests
 			0.05,	//Military_Headgears
 			0.04,	//Smoke_Grenades
-			0.02,	//Offensive_Grenades
+			0.01,	//Offensive_Grenades
 			0.05,	//Medium_Backpacks
-			0.07,	//Survival_Items
+			0.07,	//Military_Items
 			0.05	//FoodMRE
 		};
 	};
@@ -951,30 +1006,30 @@ class CfgBuildingLoot {
 			{"","Smoke_Grenades"},
 			{"","Offensive_Grenades"},
 			{"","Medium_Backpacks"},
-			{"","Survival_Items"},
+			{"","Military_Items"},
 			{"FoodMRE","magazine"}
 		};
 		itemChance[] =	{
 			0.09,	//Pistols High
-			0.08,	//Mag Pistols High
-			0.07,	//Attach Pistols High
-			0.06,	//LMG High
-			0.05,	//Mag LMG High
-			0.04,	//Attach LMG High
+			0.07,	//Mag Pistols High
+			0.05,	//Attach Pistols High
+			0.02,	//LMG High
+			0.01,	//Mag LMG High
+			0.01,	//Attach LMG High
 			0.04,	//Assault High
-			0.03,	//Mag Assault High
-			0.02,	//Attach Assault High
-			0.02,	//Sniper High
+			0.02,	//Mag Assault High
+			0.01,	//Attach Assault High
+			0.01,	//Sniper High
 			0.01,	//Mag Sniper High
 			0.01,	//Attach Sniper High
 			0.05, 	//Military_Clothes
 			0.05,	//Military_Vests
 			0.05,	//Military_Headgears
-			0.04,	//Heavy_Backpacks
+			0.03,	//Heavy_Backpacks
 			0.04,	//Smoke_Grenades
-			0.03,	//Offensive_Grenades
+			0.02,	//Offensive_Grenades
 			0.05,	//Medium_Backpacks
-			0.06,	//Survival_Items
+			0.06,	//Military_Items
 			0.05	//FoodMRE
 		};
 	};
@@ -998,26 +1053,20 @@ class CfgBuildingLoot {
 			{"","Sniper_Medium"},
 			{"","Mag_Sniper_Medium"},
 			{"","Attach_Sniper_Medium"},
-			{"","Sniper_High"},
-			{"","Mag_Sniper_High"},
-			{"","Attach_Sniper_High"},
-			{"Binocular","magazine"},
+			{"Binocular","item"},
 			{"ItemWaterBottle","magazine"},
 			{"FoodMRE","magazine"}
 		};
 		itemChance[] =	{
 			0.07,	//Pistols High
-			0.06,	//Mag Pistols High
-			0.04,	//Attach Pistols High
+			0.05,	//Mag Pistols High
+			0.03,	//Attach Pistols High
 			0.05,	//Sniper Low
-			0.04,	//Mag Sniper Low
-			0.03,	//Attach Sniper Low
-			0.04,	//Sniper Medium
-			0.03,	//Mag Sniper Medium
-			0.02,	//Attach Sniper Medium
-			0.02,	//Sniper High
-			0.01,	//Mag Sniper High
-			0.01,	//Attach Sniper High
+			0.02,	//Mag Sniper Low
+			0.01,	//Attach Sniper Low
+			0.02,	//Sniper Medium
+			0.01,	//Mag Sniper Medium
+			0.01,	//Attach Sniper Medium
 			0.08,	//Binocular
 			0.08,	//Canteen
 			0.08	//MRE
@@ -1048,13 +1097,13 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.08,	//Assault High
-			0.08,	//Mag Assault High
-			0.06,	//Attach Assault High
+			0.06,	//Mag Assault High
+			0.03,	//Attach Assault High
 			0.04,	//MMG
-			0.04,	//Mag MMG
-			0.02,	//Attach MMG
+			0.02,	//Mag MMG
+			0.01,	//Attach MMG
 			0.02,	//Sniper High
-			0.02,	//Mag Sniper High
+			0.01,	//Mag Sniper High
 			0.01,	//Attach Sniper High
 			0.05,	//Heavy_Backpacks
 			0.04	//Offensive_Grenades

@@ -5,16 +5,23 @@ while {true} do {
 	_pUnits = units group player;
 	_playerIDC = getPlayerUID player; 
 	_groupLeaderC = player getVariable ["ClanLeader",_playerIDC];
-	_clanName = player getVariable ["clanName",name player];
+	_clanName = player getVariable ["clanName",viruz_playerName];
 	_playerhaveClan = player getVariable ["haveClan",false];
 	_canInvite = player getVariable ["canInivite",time];
+	_groupExist = false;
 	
 	//foce player to join clan group if not in temp group
-	if ((count _pUnits == 1) and _playerhaveClan and _canInvite < time )then{
+	if ( (_clanName != groupID (group player)) and (count _pUnits == 1) and _playerhaveClan and _canInvite < time )then{
 	
 		{
-			if (_clanName == groupID _x) exitWith { [player] join _x;};
+			if (_clanName == groupID _x) exitWith { [player] join _x; _groupExist = true;};
 		}forEach allGroups;
+		
+		if (!_groupExist)then{
+			//_newGroup = createGroup west;
+			(group player) setGroupIdGlobal [_clanName];
+			//[player] join _newGroup;
+		};
 	};
 
 	//Set Clan owner leader of group if online
@@ -24,7 +31,7 @@ while {true} do {
 		if !(player == leader group player) then 
 		{ 
 			group player selectLeader player;
-			[group player, player] remoteExec ["selectLeader", groupOwner group player]; 
+			//[group player, player] remoteExec ["selectLeader", groupOwner group player]; 
 		};
 	};
 	

@@ -41,7 +41,7 @@ vzserver_groupFunctions = 				compile preprocessFileLineNumbers "\z\addons\viruz
 /****************************
 * updateObjects functions	*
 *****************************/
-
+/*
 vzserver_object_precisepos = {
 	params ["_object","_objectID","_uid"];
 	private["_object","_objectID","_uid","_isWater","_positionASL","_positionATL","_posicaoCalc","_posicao","_worldvectorDirUp","_posicao_calc","_posicao_final","_key"];
@@ -227,7 +227,7 @@ vzserver_object_maintenance = {
 		vzserver_objecsTotupdate set [count vzserver_objecsTotupdate, [_object,"monitorBuildMaintain"]];
 	};
 };
-
+*/
 vzserver_addGroup = {
 params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers"];
 private ["_query","_result"];

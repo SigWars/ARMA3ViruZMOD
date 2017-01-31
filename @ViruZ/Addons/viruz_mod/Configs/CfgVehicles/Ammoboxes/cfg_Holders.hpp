@@ -407,11 +407,11 @@ class Rack_Madeira : ViruZHolder_base
 	model = "\A3\Structures_F\Furniture\Rack_F.p3d";
 	icon = "iconObject_1x3";
 	displayName = "$STR_A3_CfgVehicles_Land_Rack_F0";
-	maximumLoad = 360;
+	maximumLoad = 1500;
 	
-	transportMaxMagazines = 25;
-	transportMaxWeapons = 8;
-	transportMaxBackpacks = 3;
+	transportMaxMagazines = 50;
+	transportMaxWeapons = 20;
+	transportMaxBackpacks = 10;
 		
 	cost = 0;
 	armor = 50000;
@@ -425,11 +425,11 @@ class Stante_Madeira : ViruZHolder_base
 	displayName="$STR_A3_CfgVehicles_Land_ShelvesWooden_blue_F0";
 	model="\A3\Structures_F\Furniture\ShelvesWooden_blue_F.p3d";
 	icon="iconObject_1x2";
-	maximumLoad = 700;
+	maximumLoad = 3000;
 	
-	transportMaxMagazines = 50;
-	transportMaxWeapons = 15;
-	transportMaxBackpacks = 5;
+	transportMaxMagazines = 80;
+	transportMaxWeapons = 30;
+	transportMaxBackpacks = 20;
 		
 	cost = 0;
 	armor = 50000;
@@ -443,11 +443,11 @@ class Rack_Ferro : ViruZHolder_base
 	model="\A3\Structures_F\Furniture\Metal_rack_F.p3d";
 	icon="iconObject_4x1";
 	displayName="$STR_A3_CfgVehicles_Land_Metal_rack_F0";
-	maximumLoad = 360;
+	maximumLoad = 5000;
 	
-	transportMaxMagazines = 25;
-	transportMaxWeapons = 8;
-	transportMaxBackpacks = 3;
+	transportMaxMagazines = 100;
+	transportMaxWeapons = 40;
+	transportMaxBackpacks = 30;
 		
 	cost = 0;
 	armor = 50000;
@@ -461,11 +461,11 @@ class Stante_Ferro : ViruZHolder_base
 	displayName="$STR_A3_CfgVehicles_Land_Metal_rack_Tall_F0";
 	model="\A3\Structures_F\Furniture\Metal_rack_Tall_F.p3d";
 	icon="iconObject_5x2";
-	maximumLoad = 700;
+	maximumLoad = 6000;
 	
-	transportMaxMagazines = 50;
-	transportMaxWeapons = 15;
-	transportMaxBackpacks = 5;
+	transportMaxMagazines = 120;
+	transportMaxWeapons = 50;
+	transportMaxBackpacks = 40;
 		
 	cost = 0;
 	armor = 50000;

@@ -480,5 +480,11 @@ class CfgLoadingScreens
 			"\z\addons\viruz_mod\loading\loading_2.jpg",
 			"\z\addons\viruz_mod\loading\loading_3.jpg"
 		};
+		Tanoa[]=
+		{
+			"\z\addons\viruz_mod\loading\loading_1.jpg",
+			"\z\addons\viruz_mod\loading\loading_2.jpg",
+			"\z\addons\viruz_mod\loading\loading_3.jpg"
+		};
 	};
 };

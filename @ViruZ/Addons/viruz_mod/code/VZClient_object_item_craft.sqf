@@ -23,25 +23,6 @@ _concreteMixer = objNull;
 }
 forEach _tools;
 
-/*
-if ( getNumber(_recipeConfig >> "requiresOcean") == 1 ) then
-{
-	if !(surfaceIsWater getPos player) then 
-	{
-		_metSideConditions = false;
-	};
-};
-
-if ( getNumber(_recipeConfig >> "requiresConcreteMixer") == 1 ) then //FUTUROOOOOOOOOOOOOOOOOOO
-{
-	_concreteMixer = (ASLtoAGL (getPosASL player)) call ExileClient_util_world_getNearestConcreteMixer;
-	if (isNull _concreteMixer) then 
-	{
-		_metSideConditions = false;
-	};
-};
-*/
-
 if ( getNumber(_recipeConfig >> "requiresFire") == 1 ) then
 {
 	if !([player, 4] call VZClient_util_world_isFireInRange) then 
@@ -58,14 +39,6 @@ if( _interactionModelGroupClassName != "" ) then
 	{
 		_foundObject = true;	
 	};
-	
-	/*else 
-	{
-		if ( _interactionModelGroupModels call VZClient_util_model_isLookingAt ) then
-		{
-			_foundObject = true;
-		};
-	};*/
 	
 	if !(_foundObject) then {
 		_metSideConditions = false;
@@ -96,18 +69,6 @@ if (_metSideConditions) then {
 					[player,_sfx,0,false,5] call viruz_zombieSpeak;
 				};
 			
-		/*
-			if !(isNull _concreteMixer) then 
-			{
-				["concreteMixerStartRequest", [netId _concreteMixer, _getcraftingClassName]] call ExileClient_system_network_send;
-				_quantityCrafted = -1; 
-			}
-			
-			else 
-			{
-			*/
-			//	if ([_components, _returnedItems] call VZClient_util_inventory_canExchangeItems) then
-			//{
 					{
 						_componentQuantity = _x select 0;
 						_componentItemClassName = _x select 1;
@@ -186,10 +147,8 @@ if (_metSideConditions) then {
 						//Chamar Som
 					_quantityCrafted = _quantityCrafted + 1;
 				};
-			//};
-		//};
-	};
-};
+			};
+		};
 
 if (_quantityCrafted > 0) then {	
 		_txt = "";  

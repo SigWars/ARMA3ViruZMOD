@@ -77,7 +77,7 @@ while {true} do {
 			if (_vehicleTypeModel == "Ships") then {
 				_position = [_spawnPosition,0,(_locationRadiusA * 10),10,2,2000,1] call BIS_fnc_findSafePos;
 			} else {
-				_position = [_spawnPosition,0,_locationRadiusA,10,0,2000,0] call BIS_fnc_findSafePos;
+				_position = [_spawnPosition,0,_locationRadiusA,1,0,0,0] call BIS_fnc_findSafePos;
 			};
 
 			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
@@ -130,30 +130,16 @@ while {true} do {
 			};	
 			_key call server_hiveWrite;*/
 			
-			_key = format["CHILD:999:INSERT INTO object_data (ObjectID, ObjectUID, Instance, Classname, Datestamp, CharacterID, Worldspace, Inventory, Hitpoints, Fuel) VALUES (%1, %2, %3, '%4', now(), %5, '%6', '%7', '%8', %9) :[]:",str(_idKey),_uid,viruZ_instance,(typeOf _vehicle),_charID,_worldspace,[],_array,_Fuel];
-			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLE") then {
-				diag_log format["VZ_PUBLISH_OBJ: key Query: %1",_key];
+			_query = format["0:SQL:INSERT INTO object_data (ObjectID, ObjectUID, Instance, Classname, Datestamp, CharacterID, Worldspace, Inventory, Hitpoints, Fuel) VALUES (%1, %2, %3, '%4', now(), %5, '%6', '%7', '%8', %9)",str(_idKey),_uid,viruZ_instance,(typeOf _vehicle),_charID,_worldspace,[],_array,_Fuel];
+			_result = _query call vzserver_SyncRequest;
+						
+			if (_result select 0 == 0)exitWith{
+				deletevehicle _vehicle;
 			};
-			
-			private _result = _key call server_hiveReadWrite;
-			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLE") then {
-				diag_log format["VZ_PUBLISH_VEHIVLE: result: %1",_result];
-			};
-			
-			if (count _result > 2) exitWith { 
-				diag_log format["VZ_PUBLISH_VEHIVLE: RESULT FAILED!, VHICLE: %1 DELETED",_vehicle];
-				deleteVehicle _vehicle;
-			}
-			else
-			{
-				_vehicle setVariable ["lastUpdate",time];
-				viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_vehicle];
-				_vehicle call fnc_vehicleEventHandler;
-			};
-			
-			/*_vehicle setVariable ["lastUpdate",time];
+									
+			_vehicle setVariable ["lastUpdate",time];
 			viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_vehicle];
-			_vehicle call fnc_vehicleEventHandler;*/
+			_vehicle call fnc_vehicleEventHandler;
 		};
 	};
 };

@@ -56,11 +56,11 @@
 			passThrough = 0.8;
 		};
 	};
-	class VZ_Vest: V_Rangemaster_belt
+	/*class VZ_Vest: V_Rangemaster_belt
 	{	
 		scope = 2; /// scope needs to be 2 to have a visible class
 		displayName  = "Survival vest"; /// how would the stuff be displayed in inventory and on ground
-		picture = "\viruz_zombie\textures\icovest.paa"; /// this icon fits the vest surprisingly well
+		picture = "\viruz_zombie\textures\viruz_logoico_ca.paa"; /// this icon fits the vest surprisingly well
 		model   = "\viruz_zombie\models\vest.p3d"; /// what model does the vest use
 		
 		class ItemInfo: ItemInfo
@@ -70,4 +70,4 @@
 			armor = 5*0.2;
 			passThrough = 0.8;
 		};
-	};
+	};*/

@@ -670,7 +670,7 @@ if(isServer) then {
 	viruz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
-	vzserver_objecsTotupdate = [];
+	//vzserver_objecsTotupdate = [];
 };
 
 if(!isDedicated) then {

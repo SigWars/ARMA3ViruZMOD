@@ -12,6 +12,7 @@ deathHandled = true;
 
 _body =		player;
 _playerID =	getPlayerUID player;
+inCaseofDeath = vehicle player;
 
 //Send Death Notice
 //["viruzDeath",[viruz_characterID,0,_body,_playerID,viruz_playerName]] call callRpcProcedure;
@@ -141,9 +142,9 @@ earplugsout = true;
 removeAllActions inCaseofDeath;
 removeAllActions theOneTrueName;
 inCaseofDeath setVariable ["HasEarplugMenu","hasNoMenu"];
-theOneTrueName setVariable ["HasEarplugMenu","hasNoMenu"];
+//theOneTrueName setVariable ["HasEarplugMenu","hasNoMenu"];
 player setVariable ["Has_EPEH_Loop", "Yep"];
-//systemChat "Diablo's minions grow stronger...";
+
 
 (findDisplay 46) displayRemoveEventHandler ["KeyDown", cmKeyPress];
 

@@ -436,7 +436,7 @@ private ["_distance","_direction","_high","_adjustRack","_currentDistanceDiff","
 		
 		
 		viruzUpdateVehicle = [_storageObj,"PublishBuild"];
-		publicVariableServer "viruzUpdateVehicle";
+		publicVariable "viruzUpdateVehicle";
 		
 	} else {
 		deleteVehicle VIRUZ_Build_object;

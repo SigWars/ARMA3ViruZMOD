@@ -39,7 +39,10 @@ player setVariable ["haveClan",true,true];
 player setVariable ["groupRank",0,true];
 
 //set group id
-group player setGroupIdGlobal [_clanName];
+//_clan = createGroup west;
+(group player) setGroupIdGlobal [_clanName];
+//[player] join _clan;
+
 //add group to global array
 _toAdd = [getPlayerUID player,_clanName,getPlayerUID player,0,_newGroup];
 

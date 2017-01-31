@@ -80,15 +80,7 @@ if ( _interactionModelGroupClassName != "" ) then {
 	{
 		_foundObject = true;	
 	};
-	/*
-	else 
-	{
-		if ( _interactionModelGroupModels call VZClient_util_model_isLookingAt) then
-		{
-			_foundObject = true;
-		};
-	};
-	*/
+
 	if (_foundObject) then {
 		_description = _description + format["<t size='1'  align='right' color='%1'>%2</t>", "#b2ec00", "FOUND"];
 	}else{
@@ -97,14 +89,6 @@ if ( _interactionModelGroupClassName != "" ) then {
 	};
 	_description = _description + "<br/>";
 };
-
-/*
-if !([_componentes, _returnedItems] call VZClient_util_inventory_canExchangeItems) then
-{
-	_OkCrafting = false;
-	_description = _description + format["<br/><t size='1'  align='left' color='%1'>%2</t>", "#ea0000", "Your inventory is full."];
-};
-*/
 
 if( _OkCrafting ) then {
 	switch (_CraftingQuantidade) do

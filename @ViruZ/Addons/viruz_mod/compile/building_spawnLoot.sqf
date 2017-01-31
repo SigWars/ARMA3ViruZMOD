@@ -108,17 +108,22 @@ if (_obj isKindOf "Maniken_Base") then {
 
 // Spawn loot in Weapon box
 if (_isObjectHolder > 0) then {
-	
-	if ((random 1) < _lootChance) then {
-		_index = viruz_CBLBase find _type;
-		_weights = viruz_CBLChances select _index;
-		_cntWeights = count _weights;
-		_index = floor(random _cntWeights);
-		_index = _weights select _index;
-		_itemType = _itemTypes select _index;
-		[_itemType select 0, _itemType select 1 , [[],false], 0.0, "objectHolder", _obj]  call spawn_loot;
-		_obj setVariable ["created",time,true];
-	};
+	_spawnCount = _obj getVariable ["spawnCount",0];
+	if (_spawnCount < _maxSpawns) then 
+	{
+		if ((random 1) < _lootChance) then {
+			_index = viruz_CBLBase find _type;
+			_weights = viruz_CBLChances select _index;
+			_cntWeights = count _weights;
+			_index = floor(random _cntWeights);
+			_index = _weights select _index;
+			_itemType = _itemTypes select _index;
+			[_itemType select 0, _itemType select 1 , [[],false], 0.0, "objectHolder", _obj]  call spawn_loot;
+			_obj setVariable ["created",time,true];
+		};
+		_spawnedCount = _spawnCount + 1;
+		_obj setVariable ["spawnCount",_spawnedCount,true];
+	};	
 };
 
 };//Não spawna loot em casas de player

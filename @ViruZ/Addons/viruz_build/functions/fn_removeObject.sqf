@@ -33,7 +33,7 @@ if (!_canDelete ) exitWith {
 
 
 viruzUpdateVehicle = [_object,"DelObject"];
-publicVariableServer "viruzUpdateVehicle";
+publicVariable "viruzUpdateVehicle";
 
 
 if (time < _backRessource) then {

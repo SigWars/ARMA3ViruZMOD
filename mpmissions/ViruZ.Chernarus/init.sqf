@@ -51,7 +51,7 @@ progressLoadingScreen 1.0;
 //////////////////////////////////////////////////////////////////////////
 //cmEARPLUGS CODE START
 
-call compile preProcessFileLineNumbers "cmEarplugs\config.sqf";
+
 
 //cmEARPLUGS CODE END
 //////////////////////////////////////////////////////////////////////////
@@ -80,4 +80,6 @@ if (!isDedicated) then {
 waitUntil {time > 0}; 
 if (hasInterface) then {
 	[] execVM "antidupe.sqf";
+	waitUntil {uisleep 0.5; vehicle player == player};
+	call compile preProcessFileLineNumbers "cmEarplugs\config.sqf";
 };

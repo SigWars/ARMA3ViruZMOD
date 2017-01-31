@@ -12,31 +12,32 @@ class HelicrashViruZ: Default {
 		maxRoaming = 4;
 		zombieClass[] = {"z_soldier_heavy","z_soldier_pilot","z_soldier"};
 		lootChance = 0.5;
+		maxSpawns = 3;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Rifles_Flashlights"},
-			{"","Lasers"},
-			{"","Bipods"},
-			{"","Suppressors_Low"},
-			{"","Optics_Low"},
 			{"","Assault_Low"},
-			{"","Mag_Assault_Low"}
+			{"","Mag_Assault_Low"},
+			{"ItemBloodbag","magazine"},
+			{"ItemEpinephrine","magazine"},
+			{"ItemMorphine","magazine"},
+			{"FoodMRE","magazine"}
 		};
 		itemChance[] =	{
-			0.05,	//Rifles Flashlights
-			0.05,	//Lasers
-			0.05,	//Bipods
-			0.04,	//Suppressors Low
-			0.04,	//Optics Low
-			0.06,	//Assault Low
-			0.06	//Mag Assault Low
+			0.04,	//Rifles Flashlights
+			0.08,	//Assault Low
+			0.06,	//Mag Assault Low
+			0.03,	//Bloodbag
+			0.01,	//Epipen
+			0.03,	//Morphine
+			0.04	//MRE
 		};
 	};
 	
 //holders
 	
 class VZBox_MediaV: HelicrashViruZ { //HELICRASH BOX
-		lootChance = 0.9;
+		lootChance = 0.7;
 		isObjectHolder = 1;
 		isBuildingPos = 0;
 };

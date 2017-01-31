@@ -955,7 +955,7 @@
 		};
 	};
 
-	class Land_BagBunker_Tower_F: Medium_Military
+	class Land_BagBunker_Tower_F: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -971,7 +971,7 @@
 		};
 	};
 
-	class Land_BagBunker_Large_F: Medium_Military
+	class Land_BagBunker_Large_F: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -2000,7 +2000,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//MilitaresLow
 	
-	class Land_Hlidac_budka: Basic_Military
+	class Land_Hlidac_budka: Gatehouse
 	{
 		lootPos[] =
 		{
@@ -2056,7 +2056,7 @@
 		};
 	};
 
-	class Land_MilOffices_V1_F: Medium_Military
+	class Land_MilOffices_V1_F: Military_Office
 	{
 		lootPos[] =
 		{
@@ -2098,7 +2098,7 @@
 		};
 	};
 	
-	class CampEast_EP1: Medium_Military
+	class CampEast_EP1: Basic_Military
 	{
 		lootPos[] =
 		{
@@ -2260,7 +2260,7 @@
 	/////////////////////////////////////////////////////////////////////////////////
 	//MilitaresHigh
 	
-	class Land_Barrack2_EP1: Basic_Military
+	class Land_Barrack2_EP1: Medium_Military
 	{
 		lootPos[] =
 		{

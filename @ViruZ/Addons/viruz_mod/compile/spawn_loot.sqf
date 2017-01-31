@@ -17,6 +17,7 @@ _fnc_SpawnWeapon = {
 _fnc_SelectType = {
 	_itemTypes = [] + ((getArray (missionConfigfile >> "cfgLoot" >> _this)) select 0);
 	_index = viruz_CLBase find _iClass;
+	//diag_log format ["_index = %1 _class = %2",_index,_iClass];
 	_weights = viruz_CLChances select _index;
 	_cntWeights = count _weights;
 	_index = floor(random _cntWeights);
@@ -49,7 +50,7 @@ switch (_this select 4) do {
 
 
 switch (_iClass) do {
-	diag_log format ["_iClass = %1",_iClass];
+	//diag_log format ["_iClass = %1",_iClass];
 	////////////////////////////////////////////////////////////////////////////////
 	//  VIRUZ NEW SPAWN LOOT
 	//  Descrição: Cada loot vai ter sua regiação certa de Spawn

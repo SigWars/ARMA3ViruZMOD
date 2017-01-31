@@ -4,23 +4,35 @@ Atuthor: SigWar
 Licence: ARMA PUBLIC LICENSE SHARE ALIKE (APL-SA)
 */
 
-private["_unit","_ammo","_audible","_distance","_listTalk","_weapon"];
+private["_unit","_ammo","_audible","_distance","_listTalk","_weapon","_silencer","_silenced"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _unit = 		_this select 0;
 _weapon = 		_this select 1;
 _ammo = 		_this select 4;
 _projectile = 	_this select 6;
-
+_silenced = false;
 //Alert Nearby
 _audible = getNumber (configFile >> "CfgAmmo" >> _ammo >> "audibleFire");
 _caliber = getNumber (configFile >> "CfgAmmo" >> _ammo >> "caliber");
-_silencer = getarray (configFile >> "Cfgweapons" >> _weapon >> "WeaponSlotsInfo">> "MuzzleSlot" >> "compatibleitems");
-if (count _silencer >= 1) then {
-	if ((_silencer select 0) in (player weaponAccessories currentweapon player)) then {_audible = _audible *.1};
-};
+_silencer = getarray (configFile >> "cfgWeapons" >> _weapon >> "WeaponSlotsInfo">> "MuzzleSlot" >> "compatibleitems");
+
 //titletext [str _audible,"Plain"];
 _distance = round(_audible * 10 * _caliber);
 
+_items = (player weaponAccessories currentweapon player);
+{
+    if (_x in _silencer) exitWith
+    {
+       _silenced = true;
+    };
+} forEach _items;
+
+if (_silenced)exitWith
+{
+	viruz_firedCooldown = time;
+	viruz_combat = 1;
+	//hint "silenced";
+};
 
 viruz_disAudial = _distance;
 viruz_firedCooldown = time;

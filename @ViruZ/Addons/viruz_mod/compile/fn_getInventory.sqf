@@ -40,6 +40,11 @@ _backwpMags					= [];
 
 //added to get attached items on weapon
 _backWeapons = weaponsItemsCargo backpackContainer _unit;
+if (isNil "_backWeapons") then
+{
+	_backWeapons				= [];
+};
+
 if (count _backWeapons > 0) then
 {
 	{

@@ -12,7 +12,7 @@ _debug = false;
 _objects = nearestObjects [getPosATL player, config_VehiclesCheck, 20];
 {
 	viruzUpdateVehicle = [_x,"gear"];
-	publicVariableServer "viruzUpdateVehicle";
+	publicVariable "viruzUpdateVehicle";
 } foreach _objects;
 
 _inventory = player call ptm_fnc_getInventory;

@@ -1,5 +1,5 @@
 ﻿respawn = "BASE";
-respawndelay = 5;
+respawndelay = 20;
 respawnButton = 1;
 onLoadMission= "www.viruzmod.com";
 OnLoadIntro = "De seu feedback no forum";

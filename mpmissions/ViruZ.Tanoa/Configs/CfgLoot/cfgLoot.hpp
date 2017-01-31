@@ -374,7 +374,39 @@ class CfgLoot {
 			0.05	//Knife
 		}
 	};
-		
+	
+	Military_Items[] = {	//addMagazineCargoGlobal
+		{
+//			"ItemCompass",
+			"Binocular",
+			"ItemWatch",
+//			"ItemMap",
+			"ItemGPS",
+			"ItemTent",
+			"ItemWaterBottle",
+			"Chemlight_blue",
+			"Chemlight_green",
+			"Chemlight_red",
+			"Chemlight_yellow",
+			"ItemKnife"
+
+		},
+		{
+//			0.05,	//Compass
+			0.05,	//Binocular
+			0.05,	//Watch
+//			0.05,	//Map
+			0.01,	//GPS
+			0.03,	//Tent
+			0.05,	//Canteen
+			0.05,	//Chemlight blue
+			0.05,	//Chemlight green
+			0.05,	//Chemlight red
+			0.05,	//Chemlight yellow
+			0.05	//Knife
+		}
+	};
+	
 ///////////////////////////////////////////////////
 // Craft materials (Materiais para craft) //addMagazineCargoGlobal
 
@@ -1905,7 +1937,7 @@ class CfgLoot {
 			0.06,	//UK59
 			0.02,	//M240, L7A2, M60E4, Mk48
 			0.02,	//M240, L7A2, M60E4, Mk48
-			0.04	//PKM, PKP		
+			0.04	//PKM, PKP
 		}
 	};
 
@@ -2044,9 +2076,9 @@ class CfgLoot {
 		{
 			0.02,	//Navid 9.3 mm (Hex)
 			0.02,	//Navid 9.3 mm (Tan)
-			0.05,	//SPMG .338 (MTP)
-			0.05,	//SPMG .338 (Black)
-			0.05	//SPMG .338 (Sand)
+			0.06,	//SPMG .338 (MTP)
+			0.06,	//SPMG .338 (Black)
+			0.06	//SPMG .338 (Sand)
 		}
 	};
 
@@ -2057,7 +2089,7 @@ class CfgLoot {
 		},
 		{
 			0.02,	//Navid
-			0.05	//SPMG
+			0.06	//SPMG
 		}
 	};
 
@@ -2273,54 +2305,54 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.05,	//arifle_Mk20_F
-			0.05,	//arifle_Mk20_plain_F
-			0.05,	//arifle_Mk20C_F
-			0.05,	//arifle_Mk20C_plain_F
+			0.06,	//arifle_Mk20_F
+			0.06,	//arifle_Mk20_plain_F
+			0.06,	//arifle_Mk20C_F
+			0.06,	//arifle_Mk20C_plain_F
 			0.03,	//arifle_SDAR_F
-			0.05,	//arifle_TRG21_F
-			0.05,	//arifle_TRG20_F
+			0.06,	//arifle_TRG21_F
+			0.06,	//arifle_TRG20_F
 			0.03,	//arifle_CTAR_blk_F
 			0.03,	//arifle_CTAR_hex_F
 			0.03,	//arifle_CTAR_ghex_F
 			0.03,	//arifle_CTARS_blk_F
 			0.03,	//arifle_CTARS_hex_F
 			0.03,	//arifle_CTARS_ghex_F
-			0.05,	//arifle_SPAR_01_blk_F
-			0.05,	//arifle_SPAR_01_khk_F
-			0.05,	//arifle_SPAR_01_snd_F
-			0.05,	//arifle_SPAR_02_blk_F
-			0.05,	//arifle_SPAR_02_khk_F
-			0.05,	//arifle_SPAR_02_snd_F
+			0.06,	//arifle_SPAR_01_blk_F
+			0.06,	//arifle_SPAR_01_khk_F
+			0.06,	//arifle_SPAR_01_snd_F
+			0.06,	//arifle_SPAR_02_blk_F
+			0.06,	//arifle_SPAR_02_khk_F
+			0.06,	//arifle_SPAR_02_snd_F
 			//CUP
-			0.05,	//CUP_arifle_AK74
-			0.05,	//CUP_arifle_AK74M
-			0.05,	//CUP_arifle_AK107
-			0.05,	//CUP_arifle_AKS74
-			0.05,	//CUP_arifle_AKS74U
-			0.05,	//CUP_arifle_RPK74
-			0.05,	//CUP_arifle_RPK74_45
-			0.05,	//CUP_arifle_RPK74M
-			0.05,	//CUP_arifle_CZ805_A2
-			0.05,	//CUP_arifle_CZ805_A1
-			0.07,	//CUP_arifle_G36A
-			0.07,	//CUP_arifle_G36A_camo
-			0.07,	//CUP_arifle_G36K
-			0.07,	//CUP_arifle_G36K_camo
-			0.05,	//CUP_arifle_G36C
-			0.05,	//CUP_arifle_G36C_camo
-			0.05,	//CUP_arifle_MG36
-			0.05,	//CUP_arifle_MG36_camo
-			0.05,	//CUP_arifle_L85A2
-			0.05,	//CUP_arifle_L85A2_G
-			0.07,	//CUP_arifle_L86A2
-			0.05,	//CUP_arifle_M16A4_Base
-			0.05,	//CUP_arifle_M4A1_camo
-			0.05,	//CUP_arifle_M4A1_black
-			0.05,	//CUP_arifle_M4A1_desert
-			0.05,	//CUP_arifle_Mk16_CQC
-			0.05,	//CUP_arifle_Mk16_STD
-			0.05	//CUP_arifle_Mk16_SV
+			0.06,	//CUP_arifle_AK74
+			0.06,	//CUP_arifle_AK74M
+			0.06,	//CUP_arifle_AK107
+			0.06,	//CUP_arifle_AKS74
+			0.06,	//CUP_arifle_AKS74U
+			0.06,	//CUP_arifle_RPK74
+			0.06,	//CUP_arifle_RPK74_45
+			0.06,	//CUP_arifle_RPK74M
+			0.06,	//CUP_arifle_CZ805_A2
+			0.06,	//CUP_arifle_CZ805_A1
+			0.09,	//CUP_arifle_G36A
+			0.09,	//CUP_arifle_G36A_camo
+			0.09,	//CUP_arifle_G36K
+			0.09,	//CUP_arifle_G36K_camo
+			0.06,	//CUP_arifle_G36C
+			0.06,	//CUP_arifle_G36C_camo
+			0.06,	//CUP_arifle_MG36
+			0.06,	//CUP_arifle_MG36_camo
+			0.06,	//CUP_arifle_L85A2
+			0.06,	//CUP_arifle_L85A2_G
+			0.09,	//CUP_arifle_L86A2
+			0.06,	//CUP_arifle_M16A4_Base
+			0.06,	//CUP_arifle_M4A1_camo
+			0.06,	//CUP_arifle_M4A1_black
+			0.06,	//CUP_arifle_M4A1_desert
+			0.06,	//CUP_arifle_Mk16_CQC
+			0.06,	//CUP_arifle_Mk16_STD
+			0.06	//CUP_arifle_Mk16_SV
 		}
 	};
 
@@ -2362,34 +2394,34 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.06,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16
-			0.06,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16
-			0.03,	//SDAR
-			0.05,	//CTAR
-			0.05,	//CTAR
-			0.02,	//CTARS
-			0.02,	//CTARS
-			0.02,	//SPAR-16S
-			0.02,	//SPAR-16S
+			0.09,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16, CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16
+			0.09,	//Mk20, Mk20C, TRG-21, TRG-20, SPAR-16
+			0.06,	//SDAR
+			0.04,	//CTAR
+			0.04,	//CTAR
+			0.01,	//CTARS
+			0.01,	//CTARS
+			0.01,	//SPAR-16S
+			0.01,	//SPAR-16S
 			//CUP
-			0.06,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
+			0.09,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
 			0.03,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U
-			0.06,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
-			0.06,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
-			0.06,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
-			0.06,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
-			0.06,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
-			0.03,	//RPK-74 (drum), RPK-74, RPK-74M
-			0.06,	//CZ805A1, CZ805A2, M16A4, M4A1
-			0.06,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
-			0.06,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
+			0.09,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
+			0.09,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
+			0.09,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
+			0.07,	//AK-74, AK-74M, AK-107, AKS-74, AKS-74U, RPK-74 (drum), RPK-74, RPK-74M
+			0.02,	//RPK-74 (drum), RPK-74, RPK-74M
+			0.09,	//CZ805A1, CZ805A2, M16A4, M4A1
+			0.09,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
+			0.09,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, L85A2, L86A2, M16A4, M4A1, Mk16
 			0.02,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, M16A4, M4A1, Mk16
 			0.02,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, M16A4, M4A1, Mk16
 			0.02,	//CZ805A1, CZ805A2, G36A, G36K, G36C, MG36, M16A4, M4A1, Mk16
@@ -2508,34 +2540,34 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.08,			//ACO (Red)
-			0.08,			//ACO (Green)
-			0.08,			//ACO SMG (Red)
-			0.08,			//ACO SMG (Green)
+			0.09,			//ACO (Red)
+			0.09,			//ACO (Green)
+			0.09,			//ACO SMG (Red)
+			0.09,			//ACO SMG (Green)
 			0.06,			//ARCO
-			0.03,			//DMS
-			0.03,			//LRPS
-			0.08,			//Mk17 Holosight
-			0.08,			//Mk17 Holosight SMG
-			0.03,			//MOS
+			0.01,			//DMS
+			0.01,			//LRPS
+			0.09,			//Mk17 Holosight
+			0.09,			//Mk17 Holosight SMG
+			0.01,			//MOS
 			0.06,			//MRCO
 			0.06,			//RCO
-			0.08,			//Flashlight
-			0.08,			//IR Laser Pointer
+			0.07,			//Flashlight
+			0.05,			//IR Laser Pointer
 			0.05,			//Sound Suppressor (5.56mm)
 			//APEX
 			0.06,			//ARCO (Black)
 			0.06,			//ARCO (Green Hex)
-			0.03,			//DMS (Green Hex)
+			0.01,			//DMS (Green Hex)
 			0.06,			//ERCO (Black)
 			0.06,			//ERCO (Khaki)
 			0.06,			//ERCO (Sand)
-			0.03,			//LRPS (Green Hex)
-			0.03,			//LRPS (Tropic)
-			0.08,			//Mk17 Holosight (Black)
-			0.08,			//Mk17 Holosight (Khaki)
-			0.08,			//Mk17 Holosight SMG (Black)
-			0.03,			//MOS (Khaki)
+			0.01,			//LRPS (Green Hex)
+			0.01,			//LRPS (Tropic)
+			0.09,			//Mk17 Holosight (Black)
+			0.09,			//Mk17 Holosight (Khaki)
+			0.09,			//Mk17 Holosight SMG (Black)
+			0.01,			//MOS (Khaki)
 			0.06,			//RCO (Khaki)
 			0.05,			//Sound Suppressor (5.56mm, Khaki)
 			0.05,			//Sound Suppressor (5.56mm, Sand)
@@ -2549,55 +2581,55 @@ class CfgLoot {
 			0.05,			//Bipod (Hex) [CSAT]
 			0.05,			//Bipod (Black) [AAF]
 			0.05,			//Bipod (Olive) [AAF]
-			0.03,			//AMS (Black)
-			0.03,			//AMS (Khaki)
-			0.03,			//AMS (Sand)
-			0.03,			//Kahlia (Black)
-			0.03,			//Kahlia (Hex)
-			0.03,			//Kahlia (Old)
-			0.03,			//Kahlia (Tan)
+			0.01,			//AMS (Black)
+			0.01,			//AMS (Khaki)
+			0.01,			//AMS (Sand)
+			0.01,			//Kahlia (Black)
+			0.01,			//Kahlia (Hex)
+			0.01,			//Kahlia (Old)
+			0.01,			//Kahlia (Tan)
 			//CUP
-			0.08,			//Aimpoint CompM4 (Black)
-			0.08,			//Elcan Optic
-			0.08,			//Elcan Optic Reflex
+			0.09,			//Aimpoint CompM4 (Black)
+			0.09,			//Elcan Optic
+			0.09,			//Elcan Optic Reflex
 			0.06,			//Elcan M145
 			0.06,			//Elcan SpecterDR
-			0.08,			//EoTech 533 HWS (Grey)
-			0.08,			//EoTech 533 HWS (Tan)
-			0.08,			//EoTech Holo (Black)
-			0.08,			//EoTech Holo (Desert)
-			0.08,			//EoTech Holo (Woodland)
+			0.09,			//EoTech 533 HWS (Grey)
+			0.09,			//EoTech 533 HWS (Tan)
+			0.09,			//EoTech Holo (Black)
+			0.09,			//EoTech Holo (Desert)
+			0.09,			//EoTech Holo (Woodland)
 			0.06,			//Leupold Mk4 CQ/T 1-3x14mm
-			0.08,			//M68 CCO (Black)
-			0.08,			//M68 CCO (Desert)
-			0.08,			//M68 CCO (Woodland)
-			0.08,			//M68 CCO (Woodland 2)
-			0.08,			//Meopta Rapid Acquisition Dot
-			0.08,			//Meopta ZD-Dot
+			0.09,			//M68 CCO (Black)
+			0.09,			//M68 CCO (Desert)
+			0.09,			//M68 CCO (Woodland)
+			0.09,			//M68 CCO (Woodland 2)
+			0.09,			//Meopta Rapid Acquisition Dot
+			0.09,			//Meopta ZD-Dot
 			0.06,			//Schmidt and Bender 1.1 4x20 PM ShortDot
-			0.03,			//SUSAT L9A1
+			0.01,			//SUSAT L9A1
 			0.06,			//Trijicon ACOG
 			0.06,			//Trijicon ACOG (Desert)
 			0.06,			//Trijicon ACOG TA31F
-			0.08,			//Trijicon Rx01 Red Dot sight (Black)
-			0.08,			//Trijicon Rx01 Red Dot sight (Desert)
-			0.08,			//AN/PEQ-15 Laser
-			0.08,			//AN/PEQ-2 Laser
-			0.08,			//AN/PEQ-2 Laser (Camo)
-			0.08,			//AN/PEQ-2 Laser (Desert)
-			0.08,			//AN/PEQ-2 Laser (Grey)
-			0.08,			//Flashlight (Black)
-			0.08,			//Flashlight (Desert)
-			0.08,			//Flashlight (Woodland)
-			0.08,			//LLM MKIII
-			0.08,			//XM8 Underbarrel Light Module
-			0.03,			//Leupold Mk4
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Desert)
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Woodland)
-			0.03,			//Leupold Mark 4 3-9x36mm MR/T
-			0.04,			//Leupold Mk4 MR/T (Tan)
-			0.03,			//Leupold VX-3 4.5-14x50mm
-			0.03,			//Schmidt and Bender 3-12x60 PM II
+			0.09,			//Trijicon Rx01 Red Dot sight (Black)
+			0.09,			//Trijicon Rx01 Red Dot sight (Desert)
+			0.09,			//AN/PEQ-15 Laser
+			0.09,			//AN/PEQ-2 Laser
+			0.09,			//AN/PEQ-2 Laser (Camo)
+			0.09,			//AN/PEQ-2 Laser (Desert)
+			0.09,			//AN/PEQ-2 Laser (Grey)
+			0.09,			//Flashlight (Black)
+			0.09,			//Flashlight (Desert)
+			0.09,			//Flashlight (Woodland)
+			0.09,			//LLM MKIII
+			0.09,			//XM8 Underbarrel Light Module
+			0.01,			//Leupold Mk4
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Desert)
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Woodland)
+			0.01,			//Leupold Mark 4 3-9x36mm MR/T
+			0.03,			//Leupold Mk4 MR/T (Tan)
+			0.01,			//Leupold VX-3 4.5-14x50mm
+			0.01,			//Schmidt and Bender 3-12x60 PM II
 			0.05,			//Harris 1A2-L Bipod (worn)
 			0.05,			//VLTOR Modpod Bipod (tan)
 			0.05,			//G36 Silencer (Black)
@@ -2608,9 +2640,9 @@ class CfgLoot {
 			0.05,			//M16 / M4 Silencer (Camo)
 			0.05,			//Mk16 Silencer
 			0.05,			//Mk16 Flash Hider
-			0.08,			//Kobra Reflex Sight
-			0.03,			//PSO-1 Scope
-			0.03,			//PSO-3 Scope
+			0.09,			//Kobra Reflex Sight
+			0.01,			//PSO-1 Scope
+			0.01,			//PSO-3 Scope
 			0.05,			//PBS-1 Silencer
 			0.05			//PBS-4 Silencer
 		}
@@ -2640,24 +2672,24 @@ class CfgLoot {
 			"arifle_ARX_hex_F"			//hit:10	Type 115 6.5 mm (Hex)
 		},
 		{
-			0.05,	//arifle_Katiba_F
-			0.05,	//arifle_Katiba_C_F
-			0.05,	//arifle_MXC_F
-			0.05,	//arifle_MX_F
-			0.05,	//arifle_MX_SW_F
-			0.05,	//arifle_MXM_F
-			0.05,	//arifle_MXC_Black_F
-			0.05,	//arifle_MX_Black_F
-			0.05,	//arifle_MX_SW_Black_F
-			0.05,	//arifle_MXM_Black_F
-			0.05,	//arifle_MX_khk_F
-			0.05,	//arifle_MX_SW_khk_F
-			0.05,	//arifle_MXC_khk_F
-			0.05,	//arifle_MXM_khk_F
+			0.06,	//arifle_Katiba_F
+			0.06,	//arifle_Katiba_C_F
+			0.06,	//arifle_MXC_F
+			0.06,	//arifle_MX_F
+			0.06,	//arifle_MX_SW_F
+			0.06,	//arifle_MXM_F
+			0.06,	//arifle_MXC_Black_F
+			0.06,	//arifle_MX_Black_F
+			0.06,	//arifle_MX_SW_Black_F
+			0.06,	//arifle_MXM_Black_F
+			0.06,	//arifle_MX_khk_F
+			0.06,	//arifle_MX_SW_khk_F
+			0.06,	//arifle_MXC_khk_F
+			0.06,	//arifle_MXM_khk_F
 			0.03,	//arifle_AK12_F
-			0.05,	//arifle_ARX_blk_F
-			0.05,	//arifle_ARX_ghex_F
-			0.05	//arifle_ARX_hex_F
+			0.06,	//arifle_ARX_blk_F
+			0.06,	//arifle_ARX_ghex_F
+			0.06	//arifle_ARX_hex_F
 		}
 	};
 
@@ -2672,9 +2704,9 @@ class CfgLoot {
 			"30Rnd_762x39_Mag_Tracer_Green_F"
 		},
 		{
-//			0.05,	//ARX
-			0.05,	//Katiba, MXC, MX, MX_SW, MXM, ARX
-			0.05,	//Katiba, MXC, MX, MX_SW, MXM, ARX
+//			0.06,	//ARX
+			0.06,	//Katiba, MXC, MX, MX_SW, MXM, ARX
+			0.06,	//Katiba, MXC, MX, MX_SW, MXM, ARX
 			0.03,	//AK12
 			0.03,	//AK12
 			0.03,	//AK12
@@ -2786,35 +2818,35 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.08,			//ACO (Red)
-			0.08,			//ACO (Green)
-			0.08,			//ACO SMG (Red)
-			0.08,			//ACO SMG (Green)
+			0.09,			//ACO (Red)
+			0.09,			//ACO (Green)
+			0.09,			//ACO SMG (Red)
+			0.09,			//ACO SMG (Green)
 			0.06,			//ARCO
-			0.03,			//DMS
-			0.03,			//LRPS
-			0.08,			//Mk17 Holosight
-			0.08,			//Mk17 Holosight SMG
-			0.03,			//MOS
+			0.01,			//DMS
+			0.01,			//LRPS
+			0.09,			//Mk17 Holosight
+			0.09,			//Mk17 Holosight SMG
+			0.01,			//MOS
 			0.06,			//MRCO
 			0.06,			//RCO
-			0.08,			//Flashlight
-			0.08,			//IR Laser Pointer
+			0.07,			//Flashlight
+			0.05,			//IR Laser Pointer
 			0.05,			//Sound Suppressor (6.5 mm)
 			0.05,			//Sound Suppressor (7.62 mm)
 			//APEX
 			0.06,			//ARCO (Black)
 			0.06,			//ARCO (Green Hex)
-			0.03,			//DMS (Green Hex)
+			0.01,			//DMS (Green Hex)
 			0.06,			//ERCO (Black)
 			0.06,			//ERCO (Khaki)
 			0.06,			//ERCO (Sand)
-			0.03,			//LRPS (Green Hex)
-			0.03,			//LRPS (Tropic)
-			0.08,			//Mk17 Holosight (Black)
-			0.08,			//Mk17 Holosight (Khaki)
-			0.08,			//Mk17 Holosight SMG (Black)
-			0.03,			//MOS (Khaki)
+			0.01,			//LRPS (Green Hex)
+			0.01,			//LRPS (Tropic)
+			0.09,			//Mk17 Holosight (Black)
+			0.09,			//Mk17 Holosight (Khaki)
+			0.09,			//Mk17 Holosight SMG (Black)
+			0.01,			//MOS (Khaki)
 			0.06,			//RCO (Khaki)
 			0.05,			//Sound Suppressor (6.5 mm, Khaki)
 			0.05,			//Sound Suppressor (6.5 mm, Sand)
@@ -2833,57 +2865,57 @@ class CfgLoot {
 			0.05,			//Bipod (Hex) [CSAT]
 			0.05,			//Bipod (Black) [AAF]
 			0.05,			//Bipod (Olive) [AAF]
-			0.03,			//AMS (Black)
-			0.03,			//AMS (Khaki)
-			0.03,			//AMS (Sand)
-			0.03,			//Kahlia (Black)
-			0.03,			//Kahlia (Hex)
-			0.03,			//Kahlia (Old)
-			0.03,			//Kahlia (Tan)
+			0.01,			//AMS (Black)
+			0.01,			//AMS (Khaki)
+			0.01,			//AMS (Sand)
+			0.01,			//Kahlia (Black)
+			0.01,			//Kahlia (Hex)
+			0.01,			//Kahlia (Old)
+			0.01,			//Kahlia (Tan)
 			//CUP
-			0.08,			//Aimpoint CompM4 (Black)
-			0.08,			//Elcan Optic
-			0.08,			//Elcan Optic Reflex
+			0.09,			//Aimpoint CompM4 (Black)
+			0.09,			//Elcan Optic
+			0.09,			//Elcan Optic Reflex
 			0.06,			//Elcan M145
 			0.06,			//Elcan SpecterDR
-			0.08,			//EoTech 533 HWS (Grey)
-			0.08,			//EoTech 533 HWS (Tan)
-			0.08,			//EoTech Holo (Black)
-			0.08,			//EoTech Holo (Desert)
-			0.08,			//EoTech Holo (Woodland)
+			0.09,			//EoTech 533 HWS (Grey)
+			0.09,			//EoTech 533 HWS (Tan)
+			0.09,			//EoTech Holo (Black)
+			0.09,			//EoTech Holo (Desert)
+			0.09,			//EoTech Holo (Woodland)
 			0.06,			//Leupold Mk4 CQ/T 1-3x14mm
-			0.08,			//M68 CCO (Black)
-			0.08,			//M68 CCO (Desert)
-			0.08,			//M68 CCO (Woodland)
-			0.08,			//M68 CCO (Woodland 2)
-			0.08,			//Meopta Rapid Acquisition Dot
-			0.08,			//Meopta ZD-Dot
+			0.09,			//M68 CCO (Black)
+			0.09,			//M68 CCO (Desert)
+			0.09,			//M68 CCO (Woodland)
+			0.09,			//M68 CCO (Woodland 2)
+			0.09,			//Meopta Rapid Acquisition Dot
+			0.09,			//Meopta ZD-Dot
 			0.06,			//Schmidt and Bender 1.1 4x20 PM ShortDot
-			0.03,			//SUSAT L9A1
+			0.01,			//SUSAT L9A1
 			0.06,			//Trijicon ACOG
 			0.06,			//Trijicon ACOG (Desert)
 			0.06,			//Trijicon ACOG TA31F
-			0.08,			//Trijicon Rx01 Red Dot sight (Black)
-			0.08,			//Trijicon Rx01 Red Dot sight (Desert)
-			0.08,			//AN/PEQ-15 Laser
-			0.08,			//AN/PEQ-2 Laser
-			0.08,			//AN/PEQ-2 Laser (Camo)
-			0.08,			//AN/PEQ-2 Laser (Desert)
-			0.08,			//AN/PEQ-2 Laser (Grey)
-			0.08,			//Flashlight (Black)
-			0.08,			//Flashlight (Desert)
-			0.08,			//Flashlight (Woodland)
-			0.08,			//LLM MKIII
-			0.08,			//XM8 Underbarrel Light Module
-			0.03,			//Leupold Mk4
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Desert)
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Woodland)
-			0.03,			//Leupold Mark 4 3-9x36mm MR/T
-			0.04,			//Leupold Mk4 MR/T (Tan)
-			0.03,			//Leupold VX-3 4.5-14x50mm
-			0.03,			//Schmidt and Bender 3-12x60 PM II
+			0.09,			//Trijicon Rx01 Red Dot sight (Black)
+			0.09,			//Trijicon Rx01 Red Dot sight (Desert)
+			0.09,			//AN/PEQ-15 Laser
+			0.09,			//AN/PEQ-2 Laser
+			0.09,			//AN/PEQ-2 Laser (Camo)
+			0.09,			//AN/PEQ-2 Laser (Desert)
+			0.09,			//AN/PEQ-2 Laser (Grey)
+			0.09,			//Flashlight (Black)
+			0.09,			//Flashlight (Desert)
+			0.09,			//Flashlight (Woodland)
+			0.09,			//LLM MKIII
+			0.09,			//XM8 Underbarrel Light Module
+			0.01,			//Leupold Mk4
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Desert)
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Woodland)
+			0.01,			//Leupold Mark 4 3-9x36mm MR/T
+			0.03,			//Leupold Mk4 MR/T (Tan)
+			0.01,			//Leupold VX-3 4.5-14x50mm
+			0.01,			//Schmidt and Bender 3-12x60 PM II
 			0.05,			//Harris 1A2-L Bipod (worn)
-			0.05			//VLTOR Modpod Bipod (tan)
+			0.05,			//VLTOR Modpod Bipod (tan)
 		}
 	};
 
@@ -2913,26 +2945,26 @@ class CfgLoot {
 			"CUP_arifle_Mk20"				//hit:12	Mk17 Sniper
 		},
 		{
-			0.05,			//SPAR-17 7.62 mm (Black)
-			0.05,			//SPAR-17 7.62 mm (Khaki)
-			0.05,			//SPAR-17 7.62 mm (Sand)
-			0.05,			//AK-47
-			0.05,			//AKM
-			0.05,			//AKS
-			0.05,			//AKS Gold
-			0.05,			//CZ 805 BREN B1
-			0.05,			//FN FAL (railed)
-			0.05,			//Sa-58P
-			0.05,			//Sa-58P (Desert)
-			0.05,			//Sa-58V
-			0.05,			//Sa-58V (Desert)
-			0.05,			//Sa-58 RIS1
-			0.05,			//Sa-58 RIS1 (Desert)
-			0.05,			//Sa-58 RIS2
-			0.05,			//Sa-58 RIS2 (Desert)
-			0.05,			//Mk17 CQC
-			0.05,			//Mk17 Standard
-			0.05			//Mk17 Sniper
+			0.02,			//SPAR-17 7.62 mm (Black)
+			0.02,			//SPAR-17 7.62 mm (Khaki)
+			0.02,			//SPAR-17 7.62 mm (Sand)
+			0.06,			//AK-47
+			0.06,			//AKM
+			0.06,			//AKS
+			0.06,			//AKS Gold
+			0.02,			//CZ 805 BREN B1
+			0.02,			//FN FAL (railed)
+			0.06,			//Sa-58P
+			0.06,			//Sa-58P (Desert)
+			0.06,			//Sa-58V
+			0.06,			//Sa-58V (Desert)
+			0.06,			//Sa-58 RIS1
+			0.06,			//Sa-58 RIS1 (Desert)
+			0.06,			//Sa-58 RIS2
+			0.06,			//Sa-58 RIS2 (Desert)
+			0.02,			//Mk17 CQC
+			0.02,			//Mk17 Standard
+			0.02			//Mk17 Sniper
 		}
 	};
 
@@ -2957,23 +2989,23 @@ class CfgLoot {
 			"CUP_20Rnd_TE1_White_Tracer_762x51_SCAR"		//Mk17 CQC, Mk17 Standard, Mk17 Sniper
 		},
 		{
-			0.05,	//SPAR-17
-			0.05,	//AK-47, AKM, AKS, AKS Gold
-			0.05,	//CZ 805 BREN B1
-			0.05,	//CZ 805 BREN B1
-			0.05,	//CZ 805 BREN B1
-			0.05,	//CZ 805 BREN B1
-			0.05,	//CZ 805 BREN B1
-			0.05,	//FN FAL
-			0.05,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
-			0.05,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
-			0.05,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
-			0.05,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
-			0.05,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
-			0.05,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
-			0.05,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
-			0.05,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
-			0.05	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
+			0.02,	//SPAR-17
+			0.06,	//AK-47, AKM, AKS, AKS Gold
+			0.02,	//CZ 805 BREN B1
+			0.02,	//CZ 805 BREN B1
+			0.02,	//CZ 805 BREN B1
+			0.02,	//CZ 805 BREN B1
+			0.02,	//CZ 805 BREN B1
+			0.02,	//FN FAL
+			0.06,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
+			0.06,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
+			0.06,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
+			0.06,	//Sa-58P, Sa-58V, Sa-58 RIS1, Sa-58 RIS2
+			0.02,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
+			0.02,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
+			0.02,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
+			0.02,	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
+			0.02	//Mk17 CQC, Mk17 Standard, Mk17 Sniper
 		}
 	};
 
@@ -3082,34 +3114,34 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.08,			//ACO (Red)
-			0.08,			//ACO (Green)
-			0.08,			//ACO SMG (Red)
-			0.08,			//ACO SMG (Green)
+			0.09,			//ACO (Red)
+			0.09,			//ACO (Green)
+			0.09,			//ACO SMG (Red)
+			0.09,			//ACO SMG (Green)
 			0.06,			//ARCO
-			0.03,			//DMS
-			0.03,			//LRPS
-			0.08,			//Mk17 Holosight
-			0.08,			//Mk17 Holosight SMG
-			0.03,			//MOS
+			0.01,			//DMS
+			0.01,			//LRPS
+			0.09,			//Mk17 Holosight
+			0.09,			//Mk17 Holosight SMG
+			0.01,			//MOS
 			0.06,			//MRCO
 			0.06,			//RCO
-			0.08,			//Flashlight
-			0.08,			//IR Laser Pointer
+			0.07,			//Flashlight
+			0.05,			//IR Laser Pointer
 			0.05,			//Sound Suppressor (7.62mm)
 			//APEX
 			0.06,			//ARCO (Black)
 			0.06,			//ARCO (Green Hex)
-			0.03,			//DMS (Green Hex)
+			0.01,			//DMS (Green Hex)
 			0.06,			//ERCO (Black)
 			0.06,			//ERCO (Khaki)
 			0.06,			//ERCO (Sand)
-			0.03,			//LRPS (Green Hex)
-			0.03,			//LRPS (Tropic)
-			0.08,			//Mk17 Holosight (Black)
-			0.08,			//Mk17 Holosight (Khaki)
-			0.08,			//Mk17 Holosight SMG (Black)
-			0.03,			//MOS (Khaki)
+			0.01,			//LRPS (Green Hex)
+			0.01,			//LRPS (Tropic)
+			0.09,			//Mk17 Holosight (Black)
+			0.09,			//Mk17 Holosight (Khaki)
+			0.09,			//Mk17 Holosight SMG (Black)
+			0.01,			//MOS (Khaki)
 			0.06,			//RCO (Khaki)
 			0.05,			//Sound Suppressor (7.62mm, Khaki)
 			0.05,			//Sound Suppressor (7.62mm, Sand)
@@ -3123,62 +3155,62 @@ class CfgLoot {
 			0.05,			//Bipod (Hex) [CSAT]
 			0.05,			//Bipod (Black) [AAF]
 			0.05,			//Bipod (Olive) [AAF]
-			0.03,			//AMS (Black)
-			0.03,			//AMS (Khaki)
-			0.03,			//AMS (Sand)
-			0.03,			//Kahlia (Black)
-			0.03,			//Kahlia (Hex)
-			0.03,			//Kahlia (Old)
-			0.03,			//Kahlia (Tan)
+			0.01,			//AMS (Black)
+			0.01,			//AMS (Khaki)
+			0.01,			//AMS (Sand)
+			0.01,			//Kahlia (Black)
+			0.01,			//Kahlia (Hex)
+			0.01,			//Kahlia (Old)
+			0.01,			//Kahlia (Tan)
 			//CUP
-			0.08,			//Aimpoint CompM4 (Black)
-			0.08,			//Elcan Optic
-			0.08,			//Elcan Optic Reflex
+			0.09,			//Aimpoint CompM4 (Black)
+			0.09,			//Elcan Optic
+			0.09,			//Elcan Optic Reflex
 			0.06,			//Elcan M145
 			0.06,			//Elcan SpecterDR
-			0.08,			//EoTech 533 HWS (Grey)
-			0.08,			//EoTech 533 HWS (Tan)
-			0.08,			//EoTech Holo (Black)
-			0.08,			//EoTech Holo (Desert)
-			0.08,			//EoTech Holo (Woodland)
+			0.09,			//EoTech 533 HWS (Grey)
+			0.09,			//EoTech 533 HWS (Tan)
+			0.09,			//EoTech Holo (Black)
+			0.09,			//EoTech Holo (Desert)
+			0.09,			//EoTech Holo (Woodland)
 			0.06,			//Leupold Mk4 CQ/T 1-3x14mm
-			0.08,			//M68 CCO (Black)
-			0.08,			//M68 CCO (Desert)
-			0.08,			//M68 CCO (Woodland)
-			0.08,			//M68 CCO (Woodland 2)
-			0.08,			//Meopta Rapid Acquisition Dot
-			0.08,			//Meopta ZD-Dot
+			0.09,			//M68 CCO (Black)
+			0.09,			//M68 CCO (Desert)
+			0.09,			//M68 CCO (Woodland)
+			0.09,			//M68 CCO (Woodland 2)
+			0.09,			//Meopta Rapid Acquisition Dot
+			0.09,			//Meopta ZD-Dot
 			0.06,			//Schmidt and Bender 1.1 4x20 PM ShortDot
-			0.03,			//SUSAT L9A1
+			0.01,			//SUSAT L9A1
 			0.06,			//Trijicon ACOG
 			0.06,			//Trijicon ACOG (Desert)
 			0.06,			//Trijicon ACOG TA31F
-			0.08,			//Trijicon Rx01 Red Dot sight (Black)
-			0.08,			//Trijicon Rx01 Red Dot sight (Desert)
-			0.08,			//AN/PEQ-15 Laser
-			0.08,			//AN/PEQ-2 Laser
-			0.08,			//AN/PEQ-2 Laser (Camo)
-			0.08,			//AN/PEQ-2 Laser (Desert)
-			0.08,			//AN/PEQ-2 Laser (Grey)
-			0.08,			//Flashlight (Black)
-			0.08,			//Flashlight (Desert)
-			0.08,			//Flashlight (Woodland)
-			0.08,			//LLM MKIII
-			0.08,			//XM8 Underbarrel Light Module
-			0.03,			//Leupold Mk4
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Desert)
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Woodland)
-			0.03,			//Leupold Mark 4 3-9x36mm MR/T
-			0.04,			//Leupold Mk4 MR/T (Tan)
-			0.03,			//Leupold VX-3 4.5-14x50mm
-			0.03,			//Schmidt and Bender 3-12x60 PM II
+			0.09,			//Trijicon Rx01 Red Dot sight (Black)
+			0.09,			//Trijicon Rx01 Red Dot sight (Desert)
+			0.09,			//AN/PEQ-15 Laser
+			0.09,			//AN/PEQ-2 Laser
+			0.09,			//AN/PEQ-2 Laser (Camo)
+			0.09,			//AN/PEQ-2 Laser (Desert)
+			0.09,			//AN/PEQ-2 Laser (Grey)
+			0.09,			//Flashlight (Black)
+			0.09,			//Flashlight (Desert)
+			0.09,			//Flashlight (Woodland)
+			0.09,			//LLM MKIII
+			0.09,			//XM8 Underbarrel Light Module
+			0.01,			//Leupold Mk4
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Desert)
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Woodland)
+			0.01,			//Leupold Mark 4 3-9x36mm MR/T
+			0.03,			//Leupold Mk4 MR/T (Tan)
+			0.01,			//Leupold VX-3 4.5-14x50mm
+			0.01,			//Schmidt and Bender 3-12x60 PM II
 			0.05,			//Harris 1A2-L Bipod (worn)
 			0.05,			//VLTOR Modpod Bipod (tan)
 			0.05,			//Mk17 Silencer
 			0.05,			//Mk17 Flash Hider
 			0.05,			//Kobra Reflex Sight
-			0.03,			//PSO-1 Scope
-			0.03,			//PSO-3 Scope
+			0.01,			//PSO-1 Scope
+			0.01,			//PSO-3 Scope
 			0.05,			//PBS-1 Silencer
 			0.05			//PBS-4 Silencer
 		}
@@ -3195,7 +3227,7 @@ class CfgLoot {
 			"CUP_srifle_VSSVintorez"	//hit:9		VSS Vintorez
 		},
 		{
-			0.05,	//Mk12SPR
+			0.06,	//Mk12SPR
 			0.03	//VSSVintorez
 		}
 	};
@@ -3207,9 +3239,9 @@ class CfgLoot {
 			"CUP_20Rnd_9x39_SP5_VSS_M"
 		},
 		{
-			0.05,	//Mk12SPR
+			0.07,	//Mk12SPR
 			0.04,	//VSSVintorez
-			0.02	//VSSVintorez
+			0.01	//VSSVintorez
 		}
 	};
 
@@ -3312,33 +3344,33 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.08,			//ACO (Red)
-			0.08,			//ACO (Green)
-			0.08,			//ACO SMG (Red)
-			0.08,			//ACO SMG (Green)
+			0.09,			//ACO (Red)
+			0.09,			//ACO (Green)
+			0.09,			//ACO SMG (Red)
+			0.09,			//ACO SMG (Green)
 			0.06,			//ARCO
-			0.03,			//DMS
-			0.03,			//LRPS
-			0.08,			//Mk17 Holosight
-			0.08,			//Mk17 Holosight SMG
-			0.03,			//MOS
+			0.01,			//DMS
+			0.01,			//LRPS
+			0.09,			//Mk17 Holosight
+			0.09,			//Mk17 Holosight SMG
+			0.01,			//MOS
 			0.06,			//MRCO
 			0.06,			//RCO
-			0.08,			//Flashlight
-			0.08,			//IR Laser Pointer
+			0.07,			//Flashlight
+			0.05,			//IR Laser Pointer
 			//APEX
 			0.06,			//ARCO (Black)
 			0.06,			//ARCO (Green Hex)
-			0.03,			//DMS (Green Hex)
+			0.01,			//DMS (Green Hex)
 			0.06,			//ERCO (Black)
 			0.06,			//ERCO (Khaki)
 			0.06,			//ERCO (Sand)
-			0.03,			//LRPS (Green Hex)
-			0.03,			//LRPS (Tropic)
-			0.08,			//Mk17 Holosight (Black)
-			0.08,			//Mk17 Holosight (Khaki)
-			0.08,			//Mk17 Holosight SMG (Black)
-			0.03,			//MOS (Khaki)
+			0.01,			//LRPS (Green Hex)
+			0.01,			//LRPS (Tropic)
+			0.09,			//Mk17 Holosight (Black)
+			0.09,			//Mk17 Holosight (Khaki)
+			0.09,			//Mk17 Holosight SMG (Black)
+			0.01,			//MOS (Khaki)
 			0.06,			//RCO (Khaki)
 			0.05,			//Bipod (Khaki) [NATO]
 			//Marksmen
@@ -3350,61 +3382,61 @@ class CfgLoot {
 			0.05,			//Bipod (Hex) [CSAT]
 			0.05,			//Bipod (Black) [AAF]
 			0.05,			//Bipod (Olive) [AAF]
-			0.03,			//AMS (Black)
-			0.03,			//AMS (Khaki)
-			0.03,			//AMS (Sand)
-			0.03,			//Kahlia (Black)
-			0.03,			//Kahlia (Hex)
-			0.03,			//Kahlia (Old)
-			0.03,			//Kahlia (Tan)
+			0.01,			//AMS (Black)
+			0.01,			//AMS (Khaki)
+			0.01,			//AMS (Sand)
+			0.01,			//Kahlia (Black)
+			0.01,			//Kahlia (Hex)
+			0.01,			//Kahlia (Old)
+			0.01,			//Kahlia (Tan)
 			//CUP
-			0.08,			//Aimpoint CompM4 (Black)
-			0.08,			//Elcan Optic
-			0.08,			//Elcan Optic Reflex
+			0.09,			//Aimpoint CompM4 (Black)
+			0.09,			//Elcan Optic
+			0.09,			//Elcan Optic Reflex
 			0.06,			//Elcan M145
 			0.06,			//Elcan SpecterDR
-			0.08,			//EoTech 533 HWS (Grey)
-			0.08,			//EoTech 533 HWS (Tan)
-			0.08,			//EoTech Holo (Black)
-			0.08,			//EoTech Holo (Desert)
-			0.08,			//EoTech Holo (Woodland)
+			0.09,			//EoTech 533 HWS (Grey)
+			0.09,			//EoTech 533 HWS (Tan)
+			0.09,			//EoTech Holo (Black)
+			0.09,			//EoTech Holo (Desert)
+			0.09,			//EoTech Holo (Woodland)
 			0.06,			//Leupold Mk4 CQ/T 1-3x14mm
-			0.08,			//M68 CCO (Black)
-			0.08,			//M68 CCO (Desert)
-			0.08,			//M68 CCO (Woodland)
-			0.08,			//M68 CCO (Woodland 2)
-			0.08,			//Meopta Rapid Acquisition Dot
-			0.08,			//Meopta ZD-Dot
+			0.09,			//M68 CCO (Black)
+			0.09,			//M68 CCO (Desert)
+			0.09,			//M68 CCO (Woodland)
+			0.09,			//M68 CCO (Woodland 2)
+			0.09,			//Meopta Rapid Acquisition Dot
+			0.09,			//Meopta ZD-Dot
 			0.06,			//Schmidt and Bender 1.1 4x20 PM ShortDot
-			0.03,			//SUSAT L9A1
+			0.01,			//SUSAT L9A1
 			0.06,			//Trijicon ACOG
 			0.06,			//Trijicon ACOG (Desert)
 			0.06,			//Trijicon ACOG TA31F
-			0.08,			//Trijicon Rx01 Red Dot sight (Black)
-			0.08,			//Trijicon Rx01 Red Dot sight (Desert)
-			0.08,			//AN/PEQ-15 Laser
-			0.08,			//AN/PEQ-2 Laser
-			0.08,			//AN/PEQ-2 Laser (Camo)
-			0.08,			//AN/PEQ-2 Laser (Desert)
-			0.08,			//AN/PEQ-2 Laser (Grey)
-			0.08,			//Flashlight (Black)
-			0.08,			//Flashlight (Desert)
-			0.08,			//Flashlight (Woodland)
-			0.08,			//LLM MKIII
-			0.08,			//XM8 Underbarrel Light Module
-			0.03,			//Leupold Mk4
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Desert)
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Woodland)
-			0.03,			//Leupold Mark 4 3-9x36mm MR/T
-			0.04,			//Leupold Mk4 MR/T (Tan)
-			0.03,			//Leupold VX-3 4.5-14x50mm
-			0.03,			//Schmidt and Bender 3-12x60 PM II
+			0.09,			//Trijicon Rx01 Red Dot sight (Black)
+			0.09,			//Trijicon Rx01 Red Dot sight (Desert)
+			0.09,			//AN/PEQ-15 Laser
+			0.09,			//AN/PEQ-2 Laser
+			0.09,			//AN/PEQ-2 Laser (Camo)
+			0.09,			//AN/PEQ-2 Laser (Desert)
+			0.09,			//AN/PEQ-2 Laser (Grey)
+			0.09,			//Flashlight (Black)
+			0.09,			//Flashlight (Desert)
+			0.09,			//Flashlight (Woodland)
+			0.09,			//LLM MKIII
+			0.09,			//XM8 Underbarrel Light Module
+			0.01,			//Leupold Mk4
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Desert)
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Woodland)
+			0.01,			//Leupold Mark 4 3-9x36mm MR/T
+			0.03,			//Leupold Mk4 MR/T (Tan)
+			0.01,			//Leupold VX-3 4.5-14x50mm
+			0.01,			//Schmidt and Bender 3-12x60 PM II
 			0.05,			//Harris 1A2-L Bipod (worn)
 			0.05,			//VLTOR Modpod Bipod (tan)
 			0.05,			//Mk12 SPR Silencer
 			0.05,			//Kobra Reflex Sight
-			0.03,			//PSO-1 Scope
-			0.03			//PSO-3 Scope
+			0.01,			//PSO-1 Scope
+			0.01			//PSO-3 Scope
 		}
 	};
 	
@@ -3515,35 +3547,35 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.08,			//ACO (Red)
-			0.08,			//ACO (Green)
-			0.08,			//ACO SMG (Red)
-			0.08,			//ACO SMG (Green)
+			0.09,			//ACO (Red)
+			0.09,			//ACO (Green)
+			0.09,			//ACO SMG (Red)
+			0.09,			//ACO SMG (Green)
 			0.06,			//ARCO
-			0.03,			//DMS
-			0.03,			//LRPS
-			0.08,			//Mk17 Holosight
-			0.08,			//Mk17 Holosight SMG
-			0.03,			//MOS
+			0.01,			//DMS
+			0.01,			//LRPS
+			0.09,			//Mk17 Holosight
+			0.09,			//Mk17 Holosight SMG
+			0.01,			//MOS
 			0.06,			//MRCO
 			0.06,			//RCO
-			0.08,			//Flashlight
-			0.08,			//IR Laser Pointer
+			0.07,			//Flashlight
+			0.05,			//IR Laser Pointer
 			0.05,			//Sound Suppressor (6.5 mm)
 			0.05,			//Sound Suppressor (7.62 mm)
 			//APEX
 			0.06,			//ARCO (Black)
 			0.06,			//ARCO (Green Hex)
-			0.03,			//DMS (Green Hex)
+			0.01,			//DMS (Green Hex)
 			0.06,			//ERCO (Black)
 			0.06,			//ERCO (Khaki)
 			0.06,			//ERCO (Sand)
-			0.03,			//LRPS (Green Hex)
-			0.03,			//LRPS (Tropic)
-			0.08,			//Mk17 Holosight (Black)
-			0.08,			//Mk17 Holosight (Khaki)
-			0.08,			//Mk17 Holosight SMG (Black)
-			0.03,			//MOS (Khaki)
+			0.01,			//LRPS (Green Hex)
+			0.01,			//LRPS (Tropic)
+			0.09,			//Mk17 Holosight (Black)
+			0.09,			//Mk17 Holosight (Khaki)
+			0.09,			//Mk17 Holosight SMG (Black)
+			0.01,			//MOS (Khaki)
 			0.06,			//RCO (Khaki)
 			0.05,			//Sound Suppressor (6.5 mm, Khaki)
 			0.05,			//Sound Suppressor (6.5 mm, Sand)
@@ -3553,55 +3585,55 @@ class CfgLoot {
 			0.05,			//Sound Suppressor (7.62 mm, Khaki)
 			0.05,			//Sound Suppressor (7.62 mm, Sand)
 			//Marksmen
-			0.03,			//AMS (Black)
-			0.03,			//AMS (Khaki)
-			0.03,			//AMS (Sand)
-			0.03,			//Kahlia (Black)
-			0.03,			//Kahlia (Hex)
-			0.03,			//Kahlia (Old)
-			0.03,			//Kahlia (Tan)
+			0.01,			//AMS (Black)
+			0.01,			//AMS (Khaki)
+			0.01,			//AMS (Sand)
+			0.01,			//Kahlia (Black)
+			0.01,			//Kahlia (Hex)
+			0.01,			//Kahlia (Old)
+			0.01,			//Kahlia (Tan)
 			//CUP
-			0.08,			//Aimpoint CompM4 (Black)
-			0.08,			//Elcan Optic
-			0.08,			//Elcan Optic Reflex
+			0.09,			//Aimpoint CompM4 (Black)
+			0.09,			//Elcan Optic
+			0.09,			//Elcan Optic Reflex
 			0.06,			//Elcan M145
 			0.06,			//Elcan SpecterDR
-			0.08,			//EoTech 533 HWS (Grey)
-			0.08,			//EoTech 533 HWS (Tan)
-			0.08,			//EoTech Holo (Black)
-			0.08,			//EoTech Holo (Desert)
-			0.08,			//EoTech Holo (Woodland)
+			0.09,			//EoTech 533 HWS (Grey)
+			0.09,			//EoTech 533 HWS (Tan)
+			0.09,			//EoTech Holo (Black)
+			0.09,			//EoTech Holo (Desert)
+			0.09,			//EoTech Holo (Woodland)
 			0.06,			//Leupold Mk4 CQ/T 1-3x14mm
-			0.08,			//M68 CCO (Black)
-			0.08,			//M68 CCO (Desert)
-			0.08,			//M68 CCO (Woodland)
-			0.08,			//M68 CCO (Woodland 2)
-			0.08,			//Meopta Rapid Acquisition Dot
-			0.08,			//Meopta ZD-Dot
+			0.09,			//M68 CCO (Black)
+			0.09,			//M68 CCO (Desert)
+			0.09,			//M68 CCO (Woodland)
+			0.09,			//M68 CCO (Woodland 2)
+			0.09,			//Meopta Rapid Acquisition Dot
+			0.09,			//Meopta ZD-Dot
 			0.06,			//Schmidt and Bender 1.1 4x20 PM ShortDot
-			0.03,			//SUSAT L9A1
+			0.01,			//SUSAT L9A1
 			0.06,			//Trijicon ACOG
 			0.06,			//Trijicon ACOG (Desert)
 			0.06,			//Trijicon ACOG TA31F
-			0.08,			//Trijicon Rx01 Red Dot sight (Black)
-			0.08,			//Trijicon Rx01 Red Dot sight (Desert)
-			0.08,			//AN/PEQ-15 Laser
-			0.08,			//AN/PEQ-2 Laser
-			0.08,			//AN/PEQ-2 Laser (Camo)
-			0.08,			//AN/PEQ-2 Laser (Desert)
-			0.08,			//AN/PEQ-2 Laser (Grey)
-			0.08,			//Flashlight (Black)
-			0.08,			//Flashlight (Desert)
-			0.08,			//Flashlight (Woodland)
-			0.08,			//LLM MKIII
-			0.08,			//XM8 Underbarrel Light Module
-			0.03,			//Leupold Mk4
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Desert)
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Woodland)
-			0.03,			//Leupold Mark 4 3-9x36mm MR/T
-			0.04,			//Leupold Mk4 MR/T (Tan)
-			0.03,			//Leupold VX-3 4.5-14x50mm
-			0.03			//Schmidt and Bender 3-12x60 PM II
+			0.09,			//Trijicon Rx01 Red Dot sight (Black)
+			0.09,			//Trijicon Rx01 Red Dot sight (Desert)
+			0.09,			//AN/PEQ-15 Laser
+			0.09,			//AN/PEQ-2 Laser
+			0.09,			//AN/PEQ-2 Laser (Camo)
+			0.09,			//AN/PEQ-2 Laser (Desert)
+			0.09,			//AN/PEQ-2 Laser (Grey)
+			0.09,			//Flashlight (Black)
+			0.09,			//Flashlight (Desert)
+			0.09,			//Flashlight (Woodland)
+			0.09,			//LLM MKIII
+			0.09,			//XM8 Underbarrel Light Module
+			0.01,			//Leupold Mk4
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Desert)
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Woodland)
+			0.01,			//Leupold Mark 4 3-9x36mm MR/T
+			0.03,			//Leupold Mk4 MR/T (Tan)
+			0.01,			//Leupold VX-3 4.5-14x50mm
+			0.01,			//Schmidt and Bender 3-12x60 PM II
 		}
 	};
 
@@ -3872,34 +3904,34 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.08,			//ACO (Red)
-			0.08,			//ACO (Green)
-			0.08,			//ACO SMG (Red)
-			0.08,			//ACO SMG (Green)
+			0.09,			//ACO (Red)
+			0.09,			//ACO (Green)
+			0.09,			//ACO SMG (Red)
+			0.09,			//ACO SMG (Green)
 			0.06,			//ARCO
-			0.03,			//DMS
-			0.03,			//LRPS
-			0.08,			//Mk17 Holosight
-			0.08,			//Mk17 Holosight SMG
-			0.03,			//MOS
+			0.01,			//DMS
+			0.01,			//LRPS
+			0.09,			//Mk17 Holosight
+			0.09,			//Mk17 Holosight SMG
+			0.01,			//MOS
 			0.06,			//MRCO
 			0.06,			//RCO
-			0.08,			//Flashlight
-			0.08,			//IR Laser Pointer
+			0.07,			//Flashlight
+			0.05,			//IR Laser Pointer
 			0.05,			//Sound Suppressor (7.62mm)
 			//APEX
 			0.06,			//ARCO (Black)
 			0.06,			//ARCO (Green Hex)
-			0.03,			//DMS (Green Hex)
+			0.01,			//DMS (Green Hex)
 			0.06,			//ERCO (Black)
 			0.06,			//ERCO (Khaki)
 			0.06,			//ERCO (Sand)
-			0.03,			//LRPS (Green Hex)
-			0.03,			//LRPS (Tropic)
-			0.08,			//Mk17 Holosight (Black)
-			0.08,			//Mk17 Holosight (Khaki)
-			0.08,			//Mk17 Holosight SMG (Black)
-			0.03,			//MOS (Khaki)
+			0.01,			//LRPS (Green Hex)
+			0.01,			//LRPS (Tropic)
+			0.09,			//Mk17 Holosight (Black)
+			0.09,			//Mk17 Holosight (Khaki)
+			0.09,			//Mk17 Holosight SMG (Black)
+			0.01,			//MOS (Khaki)
 			0.06,			//RCO (Khaki)
 			0.05,			//Sound Suppressor (7.62mm, Khaki)
 			0.05,			//Sound Suppressor (7.62mm, Sand)
@@ -3918,60 +3950,60 @@ class CfgLoot {
 			0.05,			//Sound Suppressor (.338, Black)
 			0.05,			//Sound Suppressor (.338, Green)
 			0.05,			//Sound Suppressor (.338, Sand)
-			0.03,			//AMS (Black)
-			0.03,			//AMS (Khaki)
-			0.03,			//AMS (Sand)
-			0.03,			//Kahlia (Black)
-			0.03,			//Kahlia (Hex)
-			0.03,			//Kahlia (Old)
-			0.03,			//Kahlia (Tan)
+			0.01,			//AMS (Black)
+			0.01,			//AMS (Khaki)
+			0.01,			//AMS (Sand)
+			0.01,			//Kahlia (Black)
+			0.01,			//Kahlia (Hex)
+			0.01,			//Kahlia (Old)
+			0.01,			//Kahlia (Tan)
 			//CUP
-			0.08,			//Aimpoint CompM4 (Black)
-			0.08,			//Elcan Optic
-			0.08,			//Elcan Optic Reflex
+			0.09,			//Aimpoint CompM4 (Black)
+			0.09,			//Elcan Optic
+			0.09,			//Elcan Optic Reflex
 			0.06,			//Elcan M145
 			0.06,			//Elcan SpecterDR
-			0.08,			//EoTech 533 HWS (Grey)
-			0.08,			//EoTech 533 HWS (Tan)
-			0.08,			//EoTech Holo (Black)
-			0.08,			//EoTech Holo (Desert)
-			0.08,			//EoTech Holo (Woodland)
+			0.09,			//EoTech 533 HWS (Grey)
+			0.09,			//EoTech 533 HWS (Tan)
+			0.09,			//EoTech Holo (Black)
+			0.09,			//EoTech Holo (Desert)
+			0.09,			//EoTech Holo (Woodland)
 			0.06,			//Leupold Mk4 CQ/T 1-3x14mm
-			0.08,			//M68 CCO (Black)
-			0.08,			//M68 CCO (Desert)
-			0.08,			//M68 CCO (Woodland)
-			0.08,			//M68 CCO (Woodland 2)
-			0.08,			//Meopta Rapid Acquisition Dot
-			0.08,			//Meopta ZD-Dot
+			0.09,			//M68 CCO (Black)
+			0.09,			//M68 CCO (Desert)
+			0.09,			//M68 CCO (Woodland)
+			0.09,			//M68 CCO (Woodland 2)
+			0.09,			//Meopta Rapid Acquisition Dot
+			0.09,			//Meopta ZD-Dot
 			0.06,			//Schmidt and Bender 1.1 4x20 PM ShortDot
-			0.03,			//SUSAT L9A1
+			0.01,			//SUSAT L9A1
 			0.06,			//Trijicon ACOG
 			0.06,			//Trijicon ACOG (Desert)
 			0.06,			//Trijicon ACOG TA31F
-			0.08,			//Trijicon Rx01 Red Dot sight (Black)
-			0.08,			//Trijicon Rx01 Red Dot sight (Desert)
-			0.08,			//AN/PEQ-15 Laser
-			0.08,			//AN/PEQ-2 Laser
-			0.08,			//AN/PEQ-2 Laser (Camo)
-			0.08,			//AN/PEQ-2 Laser (Desert)
-			0.08,			//AN/PEQ-2 Laser (Grey)
-			0.08,			//Flashlight (Black)
-			0.08,			//Flashlight (Desert)
-			0.08,			//Flashlight (Woodland)
-			0.08,			//LLM MKIII
-			0.08,			//XM8 Underbarrel Light Module
-			0.03,			//Leupold Mk4
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Desert)
-			0.04,			//Leupold Mark 4 10x40mm LR/T (Woodland)
-			0.03,			//Leupold Mark 4 3-9x36mm MR/T
-			0.04,			//Leupold Mk4 MR/T (Tan)
-			0.03,			//Leupold VX-3 4.5-14x50mm
-			0.03,			//Schmidt and Bender 3-12x60 PM II
+			0.09,			//Trijicon Rx01 Red Dot sight (Black)
+			0.09,			//Trijicon Rx01 Red Dot sight (Desert)
+			0.09,			//AN/PEQ-15 Laser
+			0.09,			//AN/PEQ-2 Laser
+			0.09,			//AN/PEQ-2 Laser (Camo)
+			0.09,			//AN/PEQ-2 Laser (Desert)
+			0.09,			//AN/PEQ-2 Laser (Grey)
+			0.09,			//Flashlight (Black)
+			0.09,			//Flashlight (Desert)
+			0.09,			//Flashlight (Woodland)
+			0.09,			//LLM MKIII
+			0.09,			//XM8 Underbarrel Light Module
+			0.01,			//Leupold Mk4
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Desert)
+			0.03,			//Leupold Mark 4 10x40mm LR/T (Woodland)
+			0.01,			//Leupold Mark 4 3-9x36mm MR/T
+			0.03,			//Leupold Mk4 MR/T (Tan)
+			0.01,			//Leupold VX-3 4.5-14x50mm
+			0.01,			//Schmidt and Bender 3-12x60 PM II
 			0.05,			//Harris 1A2-L Bipod (worn)
 			0.05,			//VLTOR Modpod Bipod (tan)
 			0.05,			//Kobra Reflex Sight
-			0.03,			//PSO-1 Scope
-			0.03,			//PSO-3 Scope
+			0.01,			//PSO-1 Scope
+			0.01,			//PSO-3 Scope
 			0.05,			//Silencer L115A1/AWM
 			0.05,			//M110 Silencer
 			0.05			//Silencer (M14)
@@ -4108,11 +4140,11 @@ class CfgLoot {
 			0.07,					//ACO (Green)
 			0.07,					//ACO SMG (Red)
 			0.07,					//ACO SMG (Green)
-			0.05,					//Mk17 Holosight
+			0.04,					//Mk17 Holosight
 			0.07,					//Mk17 Holosight SMG
 			//APEX
-			0.05,					//Mk17 Holosight (Black)
-			0.05,					//Mk17 Holosight (Khaki)
+			0.04,					//Mk17 Holosight (Black)
+			0.04,					//Mk17 Holosight (Khaki)
 			0.07,					//Mk17 Holosight SMG (Black)
 			//CUP
 			0.07,					//Aimpoint CompM4 (Black)
@@ -4126,7 +4158,7 @@ class CfgLoot {
 			0.07,					//M68 CCO (Woodland)
 			0.07,					//M68 CCO (Woodland 2)
 			0.07,					//Meopta Rapid Acquisition Dot
-			0.05					//Kobra Reflex Sight
+			0.04					//Kobra Reflex Sight
 		}
 	};
 	
@@ -4216,33 +4248,33 @@ class CfgLoot {
 		},
 		{
 			//ARMA3
-			0.05,					//DMS
-			0.02,					//LRPS
-			0.03,					//MOS
+			0.04,					//DMS
+			0.01,					//LRPS
+			0.04,					//MOS
 			//APEX
-			0.03,					//MOS (Khaki)
-			0.05,					//DMS (Green Hex)
-			0.02,					//LRPS (Green Hex)
-			0.02,					//LRPS (Tropic)
+			0.04,					//MOS (Khaki)
+			0.04,					//DMS (Green Hex)
+			0.01,					//LRPS (Green Hex)
+			0.01,					//LRPS (Tropic)
 			//Marksmen
-			0.02,					//AMS (Black)
-			0.02,					//AMS (Khaki)
-			0.02,					//AMS (Sand)
-			0.02,					//Kahlia (Black)
-			0.02,					//Kahlia (Hex)
-			0.02,					//Kahlia (Old)
-			0.02,					//Kahlia (Tan)
+			0.01,					//AMS (Black)
+			0.01,					//AMS (Khaki)
+			0.01,					//AMS (Sand)
+			0.01,					//Kahlia (Black)
+			0.01,					//Kahlia (Hex)
+			0.01,					//Kahlia (Old)
+			0.01,					//Kahlia (Tan)
 			//CUP
 			0.09,					//SUSAT L9A1
-			0.05,					//Leupold Mk4
+			0.04,					//Leupold Mk4
 			0.07,					//Leupold Mark 4 10x40mm LR/T (Desert)
 			0.07,					//Leupold Mark 4 10x40mm LR/T (Woodland)
-			0.03,					//Leupold Mark 4 3-9x36mm MR/T
+			0.06,					//Leupold Mark 4 3-9x36mm MR/T
 			0.09,					//Leupold Mk4 MR/T (Tan)
-			0.05,					//Leupold VX-3 4.5-14x50mm
-			0.05,					//Schmidt and Bender 3-12x60 PM II
-			0.05,					//PSO-1 Scope
-			0.05					//PSO-3 Scope
+			0.06,					//Leupold VX-3 4.5-14x50mm
+			0.04,					//Schmidt and Bender 3-12x60 PM II
+			0.02,					//PSO-1 Scope
+			0.01					//PSO-3 Scope
 		}
 	};
 	
@@ -4268,18 +4300,18 @@ class CfgLoot {
 			//ARMA3
 			0.05,								//Sound Suppressor (9 mm)
 			0.05,								//Sound Suppressor (.45 ACP)
-			0.05,								//Sound Suppressor (5.56mm)
-			0.05,								//Sound Suppressor MG
+			0.02,								//Sound Suppressor (5.56mm)
+			0.02,								//Sound Suppressor MG
 			//APEX
-			0.05,								//Sound Suppressor (5.56mm, Khaki)
-			0.05,								//Sound Suppressor (5.56mm, Sand)
-			0.05,								//Sound Suppressor MG (Black)
-			0.05,								//Sound Suppressor MG (Khaki)
+			0.02,								//Sound Suppressor (5.56mm, Khaki)
+			0.02,								//Sound Suppressor (5.56mm, Sand)
+			0.02,								//Sound Suppressor MG (Black)
+			0.02,								//Sound Suppressor MG (Khaki)
 			//CUP
 			0.05,								//PB 6P9 silencer
 			0.05,								//Silencer (M9)
-			0.05,								//Silencer (MicroUZI)
-			0.05								//Mk12 SPR Silencer
+			0.02,								//Silencer (MicroUZI)
+			0.02								//Mk12 SPR Silencer
 		}
 	};
 	
@@ -4300,13 +4332,13 @@ class CfgLoot {
 		{
 			//ARMA3
 			0.05,								//Sound Suppressor (6.5 mm)
-			0.05,								//Sound Suppressor (7.62 mm)
+			0.02,								//Sound Suppressor (7.62 mm)
 			//APEX
-			0.05,								//Sound Suppressor (6.5 mm, Khaki)
-			0.05,								//Sound Suppressor (6.5 mm, Sand)
-			0.05,								//Stealth Sound Suppressor (6.5 mm, Black)
-			0.05,								//Stealth Sound Suppressor (6.5 mm, Hex)
-			0.05,								//Stealth Sound Suppressor (6.5 mm, Green Hex)
+			0.02,								//Sound Suppressor (6.5 mm, Khaki)
+			0.02,								//Sound Suppressor (6.5 mm, Sand)
+			0.02,								//Stealth Sound Suppressor (6.5 mm, Black)
+			0.02,								//Stealth Sound Suppressor (6.5 mm, Hex)
+			0.02,								//Stealth Sound Suppressor (6.5 mm, Green Hex)
 			0.05,								//Sound Suppressor (7.62 mm, Khaki)
 			0.05								//Sound Suppressor (7.62 mm, Sand)
 		}
@@ -4329,13 +4361,13 @@ class CfgLoot {
 		},
 		{
 			//Marksmen
-			0.05,								//Sound Suppressor (9.3mm, Black)
-			0.05,								//Sound Suppressor (9.3mm, Tan)
-			0.05,								//Sound Suppressor (.338, Black)
-			0.05,								//Sound Suppressor (.338, Green)
-			0.05,								//Sound Suppressor (.338, Sand)
+			0.01,								//Sound Suppressor (9.3mm, Black)
+			0.01,								//Sound Suppressor (9.3mm, Tan)
+			0.01,								//Sound Suppressor (.338, Black)
+			0.01,								//Sound Suppressor (.338, Green)
+			0.01,								//Sound Suppressor (.338, Sand)
 			//CUP
-			0.05,								//Silencer L115A1/AWM
+			0.01,								//Silencer L115A1/AWM
 			0.05,								//M110 Silencer
 			0.05,								//Silencer (M14)
 			0.05,								//PBS-1 Silencer
@@ -5184,429 +5216,4 @@ class CfgLoot {
 		}
 	};
 
-
-///////////////////////////////////////////////////
-//Rifles //addWeaponCargoGlobal
-
-	ArmasCivis[] = {
-		{
-			"CUP_srifle_LeeEnfield",		//hit: 14
-			"CUP_srifle_LeeEnfield_rail",	//hit: 14
-			"CUP_sgun_M1014"				//hit: 25
-		},
-		{
-			0.04,	//CUP_srifle_LeeEnfield
-			0.06,	//CUP_srifle_LeeEnfield_rail	
-			0.06	//CUP_sgun_M1014				
-		}
-	};
-	
-	Mag_ArmasCivis[] = {
-		{
-			"CUP_15Rnd_9x19_M9",
-			"CUP_8Rnd_B_Beneli_74Slug",
-			"CUP_8Rnd_B_Beneli_74Pellets"
-
-		},
-		{
-			0.03,	//CUP_15Rnd_9x19_M9
-			0.03,	//CUP_8Rnd_B_Beneli_74Slug
-			0.05	//CUP_8Rnd_B_Beneli_74Pellets
-
-		}
-	};
-
-///////////////////////////////////////////////////
-//ArmasLow e Munições //addWeaponCargoGlobal
-
-//			"hgun_PDW2000_F",
-//			"hgun_PDW2000_Holo_F",
-//			"hgun_PDW2000_Holo_snds_F",
-//			"hgun_PDW2000_snds_F",
-
-
-	ArmasLow[] = {
-		{
-			"CUP_smg_MP5SD6",
-			"CUP_smg_EVO",
-			"CUP_smg_bizon",
-			"CUP_smg_bizon_snds",
-			"CUP_arifle_M16A2",
-			"arifle_Mk20_ACO_F"
-
-		},
-		{
-			0.06,  //CUP_smg_MP5SD6
-			0.06,  //CUP_smg_EVO
-			0.06,  //CUP_smg_bizon
-			0.02,  //CUP_smg_bizon_snds
-			0.05,  //CUP_arifle_M16A2
-			0.05   //arifle_Mk20_ACO_F
-		}
-	};
-	
-	Mag_ArmasLow[] = {
-		{
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_EVO",
-			"CUP_64Rnd_9x19_Bizon_M",
-			"30Rnd_556x45_Stanag"
-
-		},
-		{
-			0.03,	//CUP_30Rnd_9x19_MP5
-			0.02,	//CUP_30Rnd_9x19_EVO
-			0.05,	//CUP_64Rnd_9x19_Bizon_M
-			0.06    //30Rnd_556x45_Stanag
-
-		}
-	};	
-///////////////////////////////////////////////////
-//ArmasMedias e Munições //addWeaponCargoGlobal
-
-	ArmasMedias[] = {
-		{
-			"CUP_arifle_AK74",
-			"CUP_arifle_AKS74U",
-			"CUP_arifle_AK107",
-			"CUP_arifle_CZ805_A1",
-			"CUP_arifle_CZ805_A2",
-			"CUP_arifle_G36A_camo",
-			"CUP_arifle_G36C",
-			"CUP_arifle_L85A2",
-			"CUP_arifle_M16A2",
-			"CUP_arifle_M4A1_camo",
-			"CUP_arifle_Mk16_STD_FG",
-			"CUP_arifle_Mk20",
-			"CUP_arifle_XM8_Carbine",
-			"CUP_arifle_RPK74_45",
-			"CUP_arifle_RPK74M",
-			"CUP_srifle_CZ550",
-			"CUP_srifle_CZ550_rail",
-			"CUP_srifle_Mk12SPR_LeupoldM3LR",
-			"CUP_srifle_M14"
-		},
-		
-		{
-			0.03, //"CUP_arifle_AK74",
-			0.03, //"CUP_arifle_AKS74U",
-			0.03, //"CUP_arifle_AK107",
-			0.05, //"CUP_arifle_CZ805_A1",
-			0.05, //"CUP_arifle_CZ805_A2",
-			0.03, //"CUP_arifle_G36A_camo",
-			0.03, //"CUP_arifle_G36C",
-			0.05, //"CUP_arifle_L85A2",
-			0.05, //"CUP_arifle_M16A2",
-			0.05, //"CUP_arifle_M4A1_camo",
-			0.03, //"CUP_arifle_Mk16_STD_FG",
-			0.02, //"CUP_arifle_Mk20",
-			0.03, //"CUP_arifle_XM8_Carbine"
-			0.04,  //"CUP_arifle_RPK74_45"
-			0.04,  //"CUP_arifle_RPK74_45"
-			0.02,   //"CUP_srifle_CZ550"
-			0.02,   //"CUP_srifle_CZ550_rail"
-			0.02,   //"CUP_srifle_Mk12SPR_LeupoldM3LR"
-			0.04    //"CUP_srifle_M14"
-		}
-	};
-	
-	Mag_ArmasMedias[] = {
-		{
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M",
-			"CUP_30Rnd_545x39_AK_M",
-			"CUP_30Rnd_TE1_Red_Tracer_556x45_G36",
-			"30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_G36",
-			"CUP_5x_22_LR_17_HMR_M"
-
-		},
-		{
-			0.05, // "CUP_30Rnd_762x39_AK47_M",
-			0.07, // "CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M",
-			0.07, // "CUP_30Rnd_545x39_AK_M",
-			0.09, // "CUP_30Rnd_TE1_Red_Tracer_556x45_G36",
-			0.09, // "30Rnd_556x45_Stanag",
-			0.09, // "CUP_30Rnd_556x45_Stanag",
-			0.09, // "CUP_30Rnd_556x45_G36"
-			0.04  // "CUP_5x_22_LR_17_HMR_M"
-
-		}
-	};	
-///////////////////////////////////////////////////
-//ArmasHigh e Munições //addWeaponCargoGlobal
-
-	ArmasHigh[] = {
-		{
-			//7.62
-			"CUP_arifle_AK47",	
-			"CUP_arifle_AKM",
-			"CUP_arifle_AKS",
-			"CUP_arifle_Sa58P",
-			"CUP_arifle_Sa58RIS1",
-			"CUP_arifle_Sa58RIS2_camo",
-			"CUP_arifle_Sa58V",
-			"CUP_arifle_FNFAL_railed",
-			"CUP_arifle_Mk17_CQC",
-
-			//LMG
-			"CUP_srifle_L129A1",
-			"CUP_lmg_Mk48_wdl",
-			"CUP_lmg_L110A1",
-			"CUP_lmg_Pecheneg",
-			"CUP_lmg_UK59",
-			"CUP_lmg_L7A2",
-			"CUP_lmg_M240",
-			"CUP_lmg_M249",
-			"CUP_lmg_PKM",
-
-			//Sniper
-			"CUP_srifle_SVD_wdl_ghillie",
-			"CUP_srifle_M24_ghillie",
-			"CUP_srifle_VSSVintorez",
-			"CUP_srifle_M107_Base", //M107
-			"CUP_srifle_AWM_des", //Lapua Magnum
-			"CUP_srifle_CZ550",
-			"CUP_srifle_M14"
-		},
-		{
-			//7.62
-			0.06,	//CUP_arifle_AK47	
-			0.04,	//CUP_arifle_AKM	
-			0.04,	//CUP_arifle_AKS
-			0.04,	//CUP_arifle_Sa58P
-			0.04,	//CUP_arifle_Sa58RIS1
-			0.04,	//CUP_arifle_Sa58RIS2_camo
-			0.04,	//CUP_arifle_Sa58V
-			0.03,	//CUP_arifle_FNFAL_railed
-			0.03,	//CUP_arifle_Mk17_CQC
-
-			//LMG
-			0.03,	//CUP_srifle_L129A1
-			0.03,	//CUP_lmg_Mk48_wdl
-			0.03,	//CUP_lmg_L110A1
-			0.03,	//CUP_lmg_Pecheneg
-			0.03,	//CUP_lmg_UK59
-			0.03,	//CUP_lmg_L7A2
-			0.03,	//CUP_lmg_M240
-			0.03,	//CUP_lmg_M249
-			0.03,	//CUP_lmg_PKM
-
-			//Sniper
-			0.02,	//CUP_srifle_SVD_wdl_ghillie
-			0.02,	//CUP_srifle_M24_ghillie
-			0.02,	//CUP_srifle_VSSVintorez
-			0.01,	//CUP_srifle_M107_Base //M107
-			0.01,	//CUP_srifle_AWM_des
-			0.04,	//CUP_srifle_CZ550
-			0.04	//CUP_srifle_M14
-		}
-	};
-	
-	Mag_ArmasHigh[] = {
-		{
-			//7.62
-			"CUP_30Rnd_762x39_AK47_M",	
-			"CUP_30Rnd_Sa58_M",
-			"CUP_30Rnd_Sa58_M_TracerG",
-			"CUP_20Rnd_762x51_FNFAL_M",
-			"CUP_20Rnd_762x51_B_SCAR",
-			"20Rnd_762x51_Mag",
-
-			//LMG
-			"CUP_200Rnd_TE1_Red_Tracer_556x45_M249",
-			"CUP_100Rnd_TE4_Green_Tracer_556x45_M249",
-			"CUP_50Rnd_UK59_762x54R_Tracer",
-			"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
-			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
-			"CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1",
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-
-			//Sniper
-			"CUP_10Rnd_762x54_SVD_M",
-			"CUP_5Rnd_762x51_M24",
-			"CUP_10Rnd_9x39_SP5_VSS_M",
-			"CUP_20Rnd_9x39_SP5_VSS_M",
-			"CUP_10Rnd_127x99_m107", //M107
-			"CUP_5Rnd_86x70_L115A1", //Lapua Magnum
-			"CUP_20Rnd_762x51_DMR"
-		},
-		{
-			//7.62
-			0.07,	//CUP_30Rnd_762x39_AK47_M	
-			0.06,   //CUP_30Rnd_Sa58_M
-			0.05,	//CUP_30Rnd_Sa58_M_TracerG
-			0.04,	//CUP_20Rnd_762x51_FNFAL_M
-			0.05,   //CUP_20Rnd_762x51_B_SCAR
-			0.05,	//20Rnd_762x51_Mag
-
-			//LMG
-			0.04,	//CUP_200Rnd_TE1_Red_Tracer_556x45_M249
-			0.04,	//CUP_100Rnd_TE4_Green_Tracer_556x45_M249
-			0.04,	//CUP_50Rnd_UK59_762x54R_Tracer
-			0.04,	//CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M
-			0.04,	//CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M
-			0.04,	//CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1
-			0.04,	//CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M
-
-			//Sniper
-			0.04,	//CUP_10Rnd_762x54_SVD_M
-			0.04,	//CUP_5Rnd_762x51_M24
-			0.03,	//CUP_10Rnd_9x39_SP5_VSS_M
-			0.02,	//CUP_20Rnd_9x39_SP5_VSS_M
-			0.01,	//CUP_10Rnd_127x99_m107 //M107
-			0.01,	//CUP_5Rnd_86x70_L115A1 //Lapua Magnum
-			0.05	//CUP_20Rnd_762x51_DMR
-
-		}
-	};		
-///////////////////////////////////////////////////
-//"AcessoriosLow"
-//"AcessoriosMedias"
-//"AcessoriosHigh"
-//Acessorios //addItemCargoGlobal
-
-	Acessorios_Optic[] = {
-		{
-			"optic_MRCO",	//MRCO ARMA 3
-			"optic_SOS",	//SOS ARMA
-			"optic_DMS",	//DMS ARMA
-			"optic_LRPS",	//LRPS ARMA
-			"CUP_optic_Kobra",
-			"CUP_optic_HoloBlack",
-			"CUP_optic_HoloWdl",
-			"CUP_optic_HoloDesert",
-			"CUP_optic_Eotech533",
-			"CUP_optic_Eotech533Grey",
-			"CUP_optic_CompM4",
-			"CUP_optic_CompM2_Black",
-			"CUP_optic_CompM2_Woodland",
-			"CUP_optic_CompM2_Woodland2",
-			"CUP_optic_CompM2_Desert",
-			"CUP_optic_TrijiconRx01_desert",
-			"CUP_optic_TrijiconRx01_black",
-			"CUP_optic_SB_11_4x20_PM",
-			"CUP_optic_ZDDot",
-			"CUP_optic_MRad",
-			"CUP_optic_RCO",
-			"CUP_optic_RCO_desert",
-			"CUP_optic_ACOG",
-			"CUP_optic_SUSAT",
-			"CUP_optic_ElcanM145",
-			"CUP_optic_ELCAN_SpecterDR",
-			"CUP_optic_PSO_1",
-			"CUP_optic_PSO_3",
-			"CUP_optic_SB_3_12x50_PMII",
-			"CUP_optic_LeupoldMk4",
-			"CUP_optic_Leupold_VX3",
-			"CUP_optic_LeupoldM3LR",
-			"CUP_optic_LeupoldMk4_10x40_LRT_Desert",
-			"CUP_optic_LeupoldMk4_10x40_LRT_Woodland",
-			"CUP_optic_LeupoldMk4_CQ_T",
-			"CUP_optic_LeupoldMk4_MRT_tan",
-			"CUP_optic_PechenegScope",
-			"CUP_muzzle_snds_AWM",
-			"CUP_muzzle_PBS4",
-			"CUP_muzzle_PB6P9",
-			"CUP_muzzle_Bizon",
-			"CUP_muzzle_snds_G36_black",
-			"CUP_muzzle_snds_G36_desert",
-			"CUP_muzzle_snds_L85",
-			"CUP_muzzle_snds_M110",
-			"CUP_muzzle_snds_M14",
-			"CUP_muzzle_snds_M16_camo",
-			"CUP_muzzle_snds_M16",
-			"CUP_muzzle_snds_M9",
-			"CUP_muzzle_snds_MicroUzi",
-			"CUP_muzzle_snds_XM8",
-			"CUP_muzzle_snds_SCAR_L",
-			"CUP_muzzle_snds_SCAR_H",
-			"CUP_muzzleFlash2SCAR_L",
-			"CUP_muzzle_mfsup_SCAR_L",
-			"CUP_muzzle_mfsup_SCAR_H",
-			"CUP_acc_ANPEQ_15",
-			"CUP_acc_ANPEQ_2",
-			"CUP_acc_ANPEQ_2_camo",
-			"CUP_acc_ANPEQ_2_desert",
-			"CUP_acc_ANPEQ_2_grey",
-			"CUP_acc_Flashlight",
-			"CUP_acc_Flashlight_wdl",
-			"CUP_acc_Flashlight_desert",
-			"CUP_acc_XM8_light_module",
-			"CUP_acc_CZ_M3X",
-			"CUP_acc_Glock17_Flashlight"
-
-		},
-		{
-			0.03, // "optic_MRCO",	//MRCO ARMA 3
-			0.02, // "optic_SOS",	//SOS ARMA
-			0.02, // "optic_DMS",	//DMS ARMA
-			0.02, // "optic_LRPS",	//LRPS ARMA
-			0.05, // "CUP_optic_Kobra",
-			0.05, // "CUP_optic_HoloBlack",
-			0.05, // "CUP_optic_HoloWdl",
-			0.05, // "CUP_optic_HoloDesert",
-			0.03, // "CUP_optic_Eotech533",
-			0.03, // "CUP_optic_Eotech533Grey",
-			0.05, // "CUP_optic_CompM4",
-			0.05, // "CUP_optic_CompM2_Black",
-			0.05, // "CUP_optic_CompM2_Woodland",
-			0.05, // "CUP_optic_CompM2_Woodland2",
-			0.05, // "CUP_optic_CompM2_Desert",
-			0.04, // "CUP_optic_TrijiconRx01_desert",
-			0.04, // "CUP_optic_TrijiconRx01_black",
-			0.03, // "CUP_optic_SB_11_4x20_PM",
-			0.05, // "CUP_optic_ZDDot",
-			0.03, // "CUP_optic_MRad",
-			0.05, // "CUP_optic_RCO",
-			0.05, // "CUP_optic_RCO_desert",
-			0.04, // "CUP_optic_ACOG",
-			0.03, // "CUP_optic_SUSAT",
-			0.03, // "CUP_optic_ElcanM145",
-			0.03, // "CUP_optic_ELCAN_SpecterDR",
-			0.04, // "CUP_optic_PSO_1",
-			0.04, // "CUP_optic_PSO_3",
-			0.02, // "CUP_optic_SB_3_12x50_PMII",
-			0.02, // "CUP_optic_LeupoldMk4",
-			0.02, // "CUP_optic_Leupold_VX3",
-			0.02, // "CUP_optic_LeupoldM3LR",
-			0.02, // "CUP_optic_LeupoldMk4_10x40_LRT_Desert",
-			0.02, // "CUP_optic_LeupoldMk4_10x40_LRT_Woodland",
-			0.02, // "CUP_optic_LeupoldMk4_CQ_T",
-			0.02, // "CUP_optic_LeupoldMk4_MRT_tan",
-			0.02, // "CUP_optic_PechenegScope",
-			0.02, // "CUP_muzzle_snds_AWM",
-			0.02, // "CUP_muzzle_PBS4",
-			0.02, // "CUP_muzzle_PB6P9",
-			0.02, // "CUP_muzzle_Bizon",
-			0.02, // "CUP_muzzle_snds_G36_black",
-			0.02, // "CUP_muzzle_snds_G36_desert",
-			0.02, // "CUP_muzzle_snds_L85",
-			0.02, // "CUP_muzzle_snds_M110",
-			0.02, // "CUP_muzzle_snds_M14",
-			0.02, // "CUP_muzzle_snds_M16_camo",
-			0.02, // "CUP_muzzle_snds_M16",
-			0.02, // "CUP_muzzle_snds_M9",
-			0.02, // "CUP_muzzle_snds_MicroUzi",
-			0.02, // "CUP_muzzle_snds_XM8",
-			0.02, // "CUP_muzzle_snds_SCAR_L",
-			0.02, // "CUP_muzzle_snds_SCAR_H",
-			0.02, // "CUP_muzzleFlash2SCAR_L",
-			0.02, // "CUP_muzzle_mfsup_SCAR_L",
-			0.02, // "CUP_muzzle_mfsup_SCAR_H",
-			0.03, // "CUP_acc_ANPEQ_15",
-			0.03, // "CUP_acc_ANPEQ_2",
-			0.03, // "CUP_acc_ANPEQ_2_camo",
-			0.03, // "CUP_acc_ANPEQ_2_desert",
-			0.03, // "CUP_acc_ANPEQ_2_grey",
-			0.03, // "CUP_acc_Flashlight",
-			0.03, // "CUP_acc_Flashlight_wdl",
-			0.03, // "CUP_acc_Flashlight_desert",
-			0.03, // "CUP_acc_XM8_light_module",
-			0.03, // "CUP_acc_CZ_M3X",
-			0.03 // "CUP_acc_Glock17_Flashlight"
-
-		}
-	};
-};	
+};

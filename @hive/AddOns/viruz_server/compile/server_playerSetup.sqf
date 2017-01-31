@@ -1,4 +1,4 @@
-private ["_characterID","_doLoop","_playerID","_playerName","_playerObj","_randomSpot","_spawnSelection","_primary","_key","_worldspace","_score","_position","_pos","_isIsland",
+private ["_characterID","_doLoop","_playerID","_playerObj","_randomSpot","_spawnSelection","_primary","_key","_worldspace","_score","_position","_pos","_isIsland",
 "_medical","_stats","_state","_dummy","_debug","_distance","_hit","_fractures","_w","_findSpot","_humanity","_clientID"];//Set Variables
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
@@ -6,7 +6,6 @@ private ["_characterID","_doLoop","_playerID","_playerName","_playerObj","_rando
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _playerID = getPlayerUID _playerObj;
-_playerName = name _playerObj;
 _spawnSelection = _this select 3; // added 4 spawnselection
 
 if (isNull _playerObj) exitWith {
@@ -214,70 +213,6 @@ if (_randomSpot) then {
 		_worldspace = [0,_position];
 	};
 };
-
-/*
-NEW VIRUZ GROUP SYSTEM 
-*/
-private ["_havegrp","_groupID","_groupName","_groupLeader","_permission","_groupMembers","_groupExist","_newGroup"];
-_havegrp = false;
-_groupID = -1;
-_groupName = "";
-_groupLeader = "";
-_permission = "";
-_groupExist = false;
-_groupRank = 0;
-
-{
-	diag_log format ["GROUP %1", _x ];
-	_groupMembers = _x select 4;
-	{
-		if (_x select 0 == _playerID) then { _havegrp = true; _permission = _x select 1;}; 
-	}forEach _groupMembers;
-	if (_havegrp) exitWith { _groupName = _x select 1; _groupLeader = _x select 2; _groupID = _x select 0; _groupRank = _x select 3};
-
-}forEach ViruZGroupsArray;
-
-if (_havegrp) then
-{
-	//join player in group
-	{
-		_gname = groupID _x;
-		if (_gname == _groupName) exitWith 
-		{ 
-			[_playerObj] join _x;
-			_groupExist = true;
-		};
-	}forEach allGroups; 
-	
-	//Recreate arma fuck group if not alive in server
-	if (!_groupExist)then{
-		_newGroup = createGroup west;
-		_newGroup setGroupIdGlobal [_groupName];
-		[_playerObj] join _newGroup;
-	};
-	
-	
-	_playerObj setVariable ["ClanID",_groupID,true];
-	_playerObj setVariable ["ClanLeader",_groupLeader,true];
-	_playerObj setVariable ["LvL",_permission,true];
-	_playerObj setVariable ["clanName",_groupName,true];
-	_playerObj setVariable ["haveClan",true,true];
-	_playerObj setVariable ["groupRank",_groupRank,true];
-
-}
-else
-{ 
-	[_playerObj] joinSilent grpNull; 
-	_playerObj setVariable ["ClanID",name _playerObj,true];// if ClanID == playername, it will enable clan creation
-	_playerObj setVariable ["ClanLeader",_playerID,true];
-	_playerObj setVariable ["LvL",3,true];
-	_playerObj setVariable ["clanName",name _playerObj,true];
-	_playerObj setVariable ["haveClan",false,true];
-	_playerObj setVariable ["groupRank",_groupRank,true];
-};
-/*
-END OF GROUP SYSTEM
-*/
 
 //Record player for management
 viruz_players set [count viruz_players,_playerObj];

@@ -20,7 +20,7 @@ if (isServer) then {
 	[_unit, "killed"] call server_updateObject;
 } else {
 	viruzUpdateVehicle = [_unit, "killed"];
-	publicVariableServer "viruzUpdateVehicle";
+	publicVariable "viruzUpdateVehicle";
 };
 
 _unit removeAllEventHandlers "HandleDamage";

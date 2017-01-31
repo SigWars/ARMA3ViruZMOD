@@ -25,6 +25,7 @@ _vzBuildstoCount = + VIRUZ_BUILDS + VIRUZ_GATES + VIRUZ_WALLS + VIRUZ_SUPPLYES +
 _meters = 151;
 _playerPos = getPosASL player;
 _blockedArea = false;
+_permission = 0;
 
 {
 	_blockedPos = _x select 0;

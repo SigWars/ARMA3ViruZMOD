@@ -62,7 +62,7 @@ if (_nearbyCount < 1) exitwith
 	_dis = _x distance player;
 	
 	//Loot
-	if ((_dis < 120) and (_dis > 0) and _canLoot and !_inVehicle) then {
+	if ((_dis < 120) and (_dis > 5) and _canLoot and !_inVehicle) then {
 		_nearPlayer = (position _x) nearEntities [["Survivor2_DZ"],((sizeOf _type)+1)];
 		_looted = _x getVariable ["looted",0];
 		_cleared = _x getVariable ["cleared",true];
@@ -70,7 +70,19 @@ if (_nearbyCount < 1) exitwith
 		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 		if ((time > _looted) and (count _nearPlayer < 1) and !_cleared) then {
 			_nearByObj = nearestObjects [(getPosATL _x), VIRUZ_LOOTHOLDER,((sizeOf _type)+5)];
-			{deleteVehicle _x} forEach _nearByObj;
+			{
+				if (_x isEqualto "VZBox_MediaV")Then
+				{
+					clearWeaponCargoGlobal _x;
+					clearMagazineCargoGlobal _x;
+					clearItemCargoGlobal _x;
+				}
+				else
+				{
+					deleteVehicle _x;
+				};
+				
+			} forEach _nearByObj;
 			_x setVariable ["cleared",true,true];
 			_x setVariable ["looted",0,true];
 			_x setVariable ["spawnCount",0,true];

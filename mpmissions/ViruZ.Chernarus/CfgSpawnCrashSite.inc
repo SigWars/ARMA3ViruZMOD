@@ -1,5 +1,5 @@
 class CfgSpawnCrashSite {
-	frequency = (20 * 60); 	// Time in muntes to try respawn another Heli
+	frequency = (25 * 60); 	// Time in muntes to try respawn another Heli
 	variance = (5 * 60);	// Time in minutes to ad variance on "minutes"
 	spawnChance = 1;		// Spawn chance. 0.1 = 10% 1 = 100%
 	useStatic = false;		// if you use static cords you will need add coods 2d in "staticcoords"

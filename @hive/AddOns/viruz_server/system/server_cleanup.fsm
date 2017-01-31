@@ -14,14 +14,13 @@ item9[] = {"true",8,218,-75.000000,125.000000,25.000000,175.000000,0.000000,"tru
 item10[] = {"general_cleanup",2,4346,-75.000000,200.000000,25.000000,250.000000,0.000000,"general" \n "cleanup"};
 item11[] = {"",7,210,-304.000000,220.999985,-296.000000,229.000015,0.000000,""};
 item12[] = {"",7,210,-304.000000,-154.000000,-296.000000,-146.000000,0.000000,""};
-item13[] = {"",7,210,368.858032,-79.000000,376.858032,-71.000000,0.000000,""};
-item14[] = {"",7,210,368.857971,146.000000,376.857971,154.000000,0.000000,""};
+item13[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
+item14[] = {"",7,210,221.000000,146.000000,229.000000,154.000000,0.000000,""};
 item15[] = {"initialized",4,218,-75.000000,-325.000000,25.000000,-275.000000,0.000000,"initialized"};
 item16[] = {"prepare",2,250,-75.000000,-250.000000,25.000000,-200.000000,0.000000,"prepare"};
 item17[] = {"update_objects",2,250,100.000000,50.000000,200.000000,100.000000,0.000000,"update objects"};
 item18[] = {"need_update",4,218,100.000000,-25.000000,200.000000,25.000000,1.000000,"need update"};
-item19[] = {"need_updateBuild",4,218,226.029877,-21.279449,326.029877,28.720551,1.000000,"need updateBuild"};
-item20[] = {"update_objectsBu",2,250,225.027008,49.999969,325.027008,99.999969,0.000000,"update objectsBuild"};
+item19[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
 link0[] = {0,15};
 link1[] = {1,2};
 link2[] = {2,3};
@@ -29,27 +28,25 @@ link3[] = {2,5};
 link4[] = {2,7};
 link5[] = {2,13};
 link6[] = {2,18};
-link7[] = {2,19};
-link8[] = {3,4};
-link9[] = {4,9};
-link10[] = {5,6};
-link11[] = {6,9};
-link12[] = {7,8};
-link13[] = {8,9};
-link14[] = {9,10};
-link15[] = {10,11};
-link16[] = {11,12};
-link17[] = {12,1};
-link18[] = {13,14};
+link7[] = {3,4};
+link8[] = {4,9};
+link9[] = {5,6};
+link10[] = {6,9};
+link11[] = {7,8};
+link12[] = {8,9};
+link13[] = {9,10};
+link14[] = {10,11};
+link15[] = {11,12};
+link16[] = {12,1};
+link17[] = {13,14};
+link18[] = {13,19};
 link19[] = {14,9};
 link20[] = {15,16};
 link21[] = {16,1};
 link22[] = {17,9};
 link23[] = {18,17};
-link24[] = {19,20};
-link25[] = {20,9};
-globals[] = {0.000000,0,0,0,0,640,480,1,26,6316128,1,-414.901672,488.618652,323.877319,-475.390686,650,575,1};
-window[] = {2,-1,-1,-1,-1,873,138,1467,138,3,668};
+globals[] = {0.000000,0,0,0,0,640,480,1,24,6316128,1,-361.655762,277.662964,386.390503,-291.853516,542,575,1};
+window[] = {2,-1,-1,-1,-1,827,92,1421,92,3,560};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -123,17 +120,6 @@ class FSM
                                         action=/*%FSM<ACTION""">*/"_lastNeedUpdate = time;"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
-                                /*%FSM<LINK "need_updateBuild">*/
-                                class need_updateBuild
-                                {
-                                        itemno = 19;
-                                        priority = 1.000000;
-                                        to="update_objectsBu";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"( (count vzserver_objecsTotupdate) > 0 && (time-_lastNeedUpdateBuild>20) )"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"_lastNeedUpdateBuild = time;"/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
                                 /*%FSM<LINK "true">*/
                                 class true
                                 {
@@ -152,7 +138,7 @@ class FSM
                                         priority = 0.000000;
                                         to="cleanup_objects";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"((time - _timeNem) > 60)"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((time - _timeNem) > 120)"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/"_timeNem = time;"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -349,13 +335,13 @@ class FSM
                         name = "general_cleanup";
                         itemno = 10;
                         init = /*%FSM<STATEINIT""">*/"//Clean groups" \n
-                         "/*{" \n
+                         "{" \n
                          "	//diag_log (""CLEANUP: CHECKING GROUP WITH "" + str(count units _x) + "" UNITS"");" \n
                          "	if (count units _x==0) then {" \n
                          "		deleteGroup _x;" \n
                          "		//diag_log (""CLEANUP: DELETING A GROUP"");" \n
                          "	};" \n
-                         "} forEach allGroups;*/" \n
+                         "} forEach allGroups;" \n
                          "/*" \n
                          "//Check for Ammobox" \n
                          " {" \n
@@ -427,7 +413,6 @@ class FSM
                          "_timeNem = time;" \n
                          "_deadBodies = [];" \n
                          "_lastNeedUpdate = time;" \n
-                         "_lastNeedUpdateBuild = time;" \n
                          "_maxBodies = 15;" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -452,59 +437,23 @@ class FSM
                 {
                         name = "update_objects";
                         itemno = 17;
-                        init = /*%FSM<STATEINIT""">*/"// Monitor needUpdate_objects" \n
+                        init = /*%FSM<STATEINIT""">*/"//diag_log format[""DEBUG: needUpdate_objects=%1"",needUpdate_objects];" \n
                          "{" \n
                          "	if (ViruzDebugMode > 2 or ViruzDebugType == ""MONITOR"") then {" \n
-                         "		diag_log format[""DEBUG needUpdate_objects ANTES: needUpdate_objects = %1"",needUpdate_objects];" \n
+                         "		diag_log format[""DEBUG MONITOR ANTES: needUpdate_objects = %1"",needUpdate_objects];" \n
                          "	};" \n
                          "	" \n
+                         "	[_x select 0,_x select 1] call server_updateObject;" \n
                          "	needUpdate_objects = needUpdate_objects - [_x];" \n
-                         "	[_x select 0,_x select 1] call server_updateObject;" \n
-                         "	" \n
                          "	" \n
                          "	if (ViruzDebugMode > 2 or ViruzDebugType == ""MONITOR"") then {" \n
-                         "		diag_log format[""DEBUG needUpdate_objects: %1 REMOVIDO"",_x]; " \n
-                         "		diag_log format[""DEBUG needUpdate_objects: [%1,%2] call server_updateObject"",_x select 0,_x select 1];" \n
+                         "		diag_log format[""DEBUG MONITOR: %1 REMOVIDO"",_x]; " \n
+                         "		diag_log format[""DEBUG MONITOR: [%1,%2] call server_updateObject"",_x select 0,_x select 1];" \n
                          "	};" \n
                          "" \n
-                         "} forEach needUpdate_objects;"/*%FSM</STATEINIT""">*/;
-                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-                        class Links
-                        {
-                                /*%FSM<LINK "true">*/
-                                class true
-                                {
-                                        itemno = 9;
-                                        priority = 0.000000;
-                                        to="general_cleanup";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                        };
-                };
-                /*%FSM</STATE>*/
-                /*%FSM<STATE "update_objectsBu">*/
-                class update_objectsBu
-                {
-                        name = "update_objectsBu";
-                        itemno = 20;
-                        init = /*%FSM<STATEINIT""">*/"// Monitor vzserver_objecsTotupdate" \n
-                         "{" \n
-                         "	if (ViruzDebugMode > 2 or ViruzDebugType == ""MONITOR"") then {" \n
-                         "		diag_log format[""DEBUG vzserver_objecsTotupdate ANTES: vzserver_objecsTotupdate = %1"",vzserver_objecsTotupdate];" \n
-                         "	};" \n
-                         "	" \n
-                         "	vzserver_objecsTotupdate = vzserver_objecsTotupdate - [_x];" \n
-                         "	[_x select 0,_x select 1] call server_updateObject;" \n
-                         "	" \n
-                         "	if (ViruzDebugMode > 2 or ViruzDebugType == ""MONITOR"") then {" \n
-                         "		diag_log format[""DEBUG vzserver_objecsTotupdate: %1 REMOVIDO"",_x]; " \n
-                         "		diag_log format[""DEBUG vzserver_objecsTotupdate: [%1,%2] call server_updateObject"",_x select 0,_x select 1];" \n
-                         "	};" \n
+                         "} forEach needUpdate_objects;" \n
                          "" \n
-                         "} forEach vzserver_objecsTotupdate;"/*%FSM</STATEINIT""">*/;
+                         ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {

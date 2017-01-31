@@ -9,7 +9,7 @@
 //bandage.sqf
 "usecBandage"		addPublicVariableEventHandler {(_this select 1) call player_medBandage};
 
-//"usecInject"		addPublicVariableEventHandler {(_this select 1) call player_medInject};
+"usecInject"		addPublicVariableEventHandler {(_this select 1) call player_medInject};
 
 //epinephrine.sqf
 "usecEpi"			addPublicVariableEventHandler {(_this select 1) call player_medEpi};
