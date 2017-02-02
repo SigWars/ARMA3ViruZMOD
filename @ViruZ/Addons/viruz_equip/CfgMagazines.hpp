@@ -5,161 +5,157 @@ class CfgMagazines {
 	
 	///////////////////////////////////FERRAMENTAS///////////////////////////////////////////
 	class ItemToolbox : CA_Magazine {
-		
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName="ToolBox";
-		descriptionShort="$STR_A3_cfgWeapons_ToolKit1";
-		picture="\A3\Weapons_F\Items\data\UI\gear_Toolkit_CA.paa";
-		model="\A3\Weapons_F\Items\Toolkit.p3d";
-		mass=10;
+		displayName = $STR_ITEM_ItemToolbox;
+		descriptionShort = $STR_ITEM_DESC_ItemToolbox;
+		picture = "\A3\Weapons_F\Items\data\UI\gear_Toolkit_CA.paa";
+		model = "\A3\Weapons_F\Items\Toolkit.p3d";
+		mass = 10;
 	};
 
 	class ItemKnife : CA_Magazine {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Military Knife";
+		displayName = $STR_ITEM_NAME_ItemKnife;
 		model = "\viruz_equip\items\viruz_mknife.p3d";
 		picture = "\viruz_equip\viruzico\mkinife.paa";
-		descriptionShort = $STR_EQUIP_DESC_4;
-		mass=1;
+		descriptionShort = $STR_ITEM_DESC_ItemKnife;
+		mass = 1;
 	};
 	
 	class Viruz_Hammer : CA_Magazine {
-	
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Hammer";
-		model="\A3\Structures_F\Items\Tools\Hammer_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Hammer;
+		model = "\A3\Structures_F\Items\Tools\Hammer_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_hammer_ca.paa";
-		descriptionShort = "";
-		mass=13;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Hammer;
+		mass = 13;
 	};
 	
 	class Viruz_Saw : CA_Magazine {
-
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Saw";
-		model="\A3\Structures_F\Items\Tools\Saw_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Saw;
+		model = "\A3\Structures_F\Items\Tools\Saw_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_saw_ca.paa";
-		descriptionShort = "";
-		mass=10;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Saw;
+		mass = 10;
 	};
 	
 	class Viruz_Wrench : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Wrench";
-		model="\A3\Structures_F\Items\Tools\Wrench_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Wrench;
+		model = "\A3\Structures_F\Items\Tools\Wrench_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_wrench_ca.paa";
-		descriptionShort = "";
-		mass=10;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Wrench;
+		mass = 10;
 	};
 	
 	class Viruz_Pliers : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Pliers";
-		model="\A3\Structures_F\Items\Tools\Pliers_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Pliers;
+		model = "\A3\Structures_F\Items\Tools\Pliers_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_pliers.paa";
-		descriptionShort = "";
-		mass=10;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Pliers;
+		mass = 10;
 	};
 	
 	class Viruz_File : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "File (tools)";
-		model="\A3\Structures_F\Items\Tools\File_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_File;
+		model = "\A3\Structures_F\Items\Tools\File_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_file.paa";
-		descriptionShort = "";
-		mass=8;
+		descriptionShort = $STR_ITEM_DESC_Viruz_File;
+		mass = 8;
 	};
 	
 	class Viruz_Grinder : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Grinder";
-		model="\A3\Structures_F\Items\Tools\Grinder_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Grinder;
+		model = "\A3\Structures_F\Items\Tools\Grinder_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_grinder.paa";
-		descriptionShort = "ViruZ";
-		mass=25;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Grinder;
+		mass = 25;
 	};
 	
 	class Viruz_Screwdriver : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Screwdriver";
-		model="\A3\Structures_F\Items\Tools\Screwdriver_V1_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Screwdriver;
+		model = "\A3\Structures_F\Items\Tools\Screwdriver_V1_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_screwdriver_ca.paa";
-		descriptionShort = "ViruZ";
-		mass=7;
+		descriptionShort = $STR_ITEM_NAME_Viruz_Screwdriver;
+		mass = 7;
 	};
 	
 	class Viruz_Phillips : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Phillips Screwdriver";
-		model="\A3\Structures_F\Items\Tools\Screwdriver_V2_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Phillips;
+		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_phillips_ca.paa";
-		descriptionShort = "ViruZ";
-		mass=7;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Phillips;
+		mass = 7;
 	};
-	
 	
 	class Viruz_Gloves : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Gloves";
-		model="\A3\Structures_F\Items\Tools\Gloves_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Gloves;
+		model = "\A3\Structures_F\Items\Tools\Gloves_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_gloves.paa";
-		descriptionShort = "ViruZ";
-		mass=5;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Gloves;
+		mass = 5;
 	};
 	
 	class Viruz_Drill : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName = "Drill";
-		model="\A3\Structures_F\Items\Tools\DrillAku_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Drill;
+		model = "\A3\Structures_F\Items\Tools\DrillAku_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_drill.paa";
-		descriptionShort = "ViruZ";
-		mass=20;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Drill;
+		mass = 20;
 	};
 	
 	class Viruz_CanisterOil : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 10;
-		displayName = "Canister (Oil)";
-		model="\A3\Structures_F\Items\Vessels\CanisterOil_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_CanisterOil;
+		model = "\A3\Structures_F\Items\Vessels\CanisterOil_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_canisteroil.paa";
-		descriptionShort = "ViruZ";
-		mass=15;
+		descriptionShort = $STR_ITEM_DESC_Viruz_CanisterOil;
+		mass = 15;
 	};
 	
 	class Viruz_DuctTape : CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 10;
-		displayName = "DuctTape";
-		model="\A3\Structures_F_EPA\Items\Tools\DuctTape_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_DuctTape;
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_ducttape.paa";
-		descriptionShort = "ViruZ";
-		mass=8;
+		descriptionShort = $STR_ITEM_DESC_Viruz_DuctTape;
+		mass = 8;
 	};
 	
 	///////////////////////////////////RESOURCES////////////////////////////////////////////	
@@ -167,43 +163,43 @@ class CfgMagazines {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="Rock";
-		model="\viruz_equip\items\viruz_rock.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Rock;
+		model = "\viruz_equip\items\viruz_rock.p3d";
 		picture = "\viruz_equip\viruzico\viruz_rock_ca.paa";
-		descriptionShort = "Piece of rock, perfect for construction!!!";
-		mass=10;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Rock;
+		mass = 10;
 	};
 	class Viruz_Clinquer: CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="Clinker";
-		model="\viruz_equip\items\viruz_clinquer.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Clinquer;
+		model = "\viruz_equip\items\viruz_clinquer.p3d";
 		picture = "\viruz_equip\viruzico\viruz_clinquer_ca.paa";
-		descriptionShort = "Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.";
-		mass=10;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Clinquer;
+		mass = 10;
 	};
 	///////////////////////////////////BUILD ITENS/////////////////////////////////////
 	class Viruz_CinderBlock: CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="CinderBlock";
-		model="\viruz_equip\items\viruz_cinderblock.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Clinquer;
+		model = "\viruz_equip\items\viruz_cinderblock.p3d";
 		picture = "\viruz_equip\viruzico\cinderblock.paa";
-		descriptionShort = "ViruZ";
-		mass=15;
+		descriptionShort = $STR_ITEM_DESC_Viruz_CinderBlock;
+		mass = 15;
 	};
 	
 	class Viruz_Woodboard: CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 10;
-		displayName="WoodBoard";
-		model="\viruz_equip\items\viruz_woodboard.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Woodboard;
+		model = "\viruz_equip\items\viruz_woodboard.p3d";
 		picture = "\viruz_equip\viruzico\viruz_woodboard_ca.paa";
-		descriptionShort = "ViruZ";
-		mass=15;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Woodboard;
+		mass = 15;
 	};
 	
 	class Viruz_IronBar: CA_Magazine
@@ -211,21 +207,21 @@ class CfgMagazines {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="IronBar";
-		model="\viruz_equip\items\viruz_ironbar.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_IronBar;
+		model = "\viruz_equip\items\viruz_ironbar.p3d";
 		picture = "\viruz_equip\viruzico\viruz_ironbar.paa";
-		descriptionShort = "ViruZ";
-		mass=100;
+		descriptionShort = $STR_ITEM_DESC_Viruz_IronBar;
+		mass = 100;
 	};
 	
 	class equip_nails : CA_Magazine {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Box of Nails";
+		displayName = $STR_ITEM_NAME_equip_nails;
 		model = "\A3\Structures_F_EPA\Items\Tools\Matches_F.p3d";
 		picture = "\viruz_equip\viruzico\nail_box_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_3;
+		descriptionShort = $STR_ITEM_DESC_equip_nails;
 		mass = 6;
 	};
 	
@@ -233,33 +229,33 @@ class CfgMagazines {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="Cement Bag";
-		model="\viruz_equip\items\viruz_cementbag.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_CementBag;
+		model = "\viruz_equip\items\viruz_cementbag.p3d";
 		picture = "\viruz_equip\viruzico\viruz_cementbag_ca.paa";
-		descriptionShort = "A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.";
-		mass=40;
+		descriptionShort = $STR_ITEM_DESC_Viruz_CementBag;
+		mass = 40;
 	};
 	
 	class Viruz_CardBoardBox: CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="CardBoard Box";
-		model="\viruz_equip\items\viruz_cardboardbox.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_CardBoardBox;
+		model = "\viruz_equip\items\viruz_cardboardbox.p3d";
 		picture = "\viruz_equip\viruzico\viruz_cardboardbox_ca.paa";
-		descriptionShort = "Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.";
-		mass=5;
+		descriptionShort = $STR_ITEM_DESC_Viruz_CardBoardBox;
+		mass = 5;
 	};
 	
 	class Viruz_CinderBlockMold: CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="CinderBlock Mold";
-		model="\viruz_equip\items\viruz_cinderblockmold.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_CinderBlockMold;
+		model = "\viruz_equip\items\viruz_cinderblockmold.p3d";
 		picture = "\viruz_equip\viruzico\viruz_cinderblockmold_ca.paa";
-		descriptionShort = "Mold to create cinder blocks.";
-		mass=15;
+		descriptionShort = $STR_ITEM_DESC_Viruz_CinderBlockMold;
+		mass = 15;
 	};
 	
 	//////////////////////////////////COSTRUÇÃO/////////////////////////////////////////////
@@ -270,7 +266,7 @@ class CfgMagazines {
 		displayName = $STR_A3_CfgVehicles_Land_TentA_F0;
 		model="\A3\Structures_F\Civ\Camping\Sleeping_bag_folded_F.p3d";
 		picture = "\viruz_equip\viruzico\tentbag.paa";
-		descriptionShort = $STR_EQUIP_DESC_20;
+		descriptionShort = $STR_ITEM_DESC_ItemTent;
 		mass = 35;
 		
 		class ItemActions {
@@ -309,10 +305,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_21;
-		model="\A3\Structures_F\Civ\Camping\Pillow_old_F.p3d";
+		displayName = $STR_ITEM_NAME_ItemSandbag;
+		model = "\A3\Structures_F\Civ\Camping\Pillow_old_F.p3d";
 		picture = "\viruz_equip\viruzico\sandbag.paa";
-		descriptionShort = $STR_EQUIP_DESC_21;
+		descriptionShort = $STR_ITEM_DESC_ItemSandbag;
 		mass = 40;
 		
 		class ItemActions {
@@ -329,10 +325,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Wire Roll";
-		model="\A3\Structures_F_EPA\Items\Tools\MetalWire_F.p3d";
+		displayName = $STR_ITEM_NAME_ItemWire;
+		model = "\A3\Structures_F_EPA\Items\Tools\MetalWire_F.p3d";
 		picture = "\viruz_equip\viruzico\metalwire.paa";
-		descriptionShort = $STR_EQUIP_DESC_23;
+		descriptionShort = $STR_ITEM_DESC_ItemWire;
 		mass = 10;
 		
 		class ItemActions {
@@ -352,11 +348,11 @@ class CfgMagazines {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="Saucepan";
+		displayName = $STR_ITEM_NAME_Viruz_Saucepan;
 		model="\viruz_equip\items\viruz_saucepan.p3d";
 		picture = "\viruz_equip\viruzico\viruz_saucepan_ca.paa";
-		descriptionShort = "";
-		mass=10;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Saucepan;
+		mass = 10;
 	};
 	
 	class itemCanOpener: CA_Magazine {
@@ -366,7 +362,7 @@ class CfgMagazines {
 		displayName = "$STR_A3_can_opener";
 		model = "\A3\Structures_F_EPA\Items\Tools\CanOpener_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_canopener_ca.paa";
-		descriptionShort = "";
+		descriptionShort = $STR_ITEM_DESC_itemCanOpener;
 		mass=5;		
 	};
 	
@@ -374,10 +370,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_3;
+		displayName = $STR_ITEM_NAME_ItemMatchbox;
 		model = "\A3\Structures_F_EPA\Items\Tools\Matches_F.p3d";
 		picture = "\viruz_equip\viruzico\matchbox.paa";
-		descriptionShort = $STR_EQUIP_DESC_3;
+		descriptionShort = $STR_ITEM_DESC_ItemMatchbox;
 		mass = 4;
 		
 		class ItemActions {
@@ -398,11 +394,11 @@ class CfgMagazines {
 		count = 10;
 		RetiredSize = 2;
 		ammo = "Antiseptic";
-		displayName="Antiseptic";
-		model="\A3\Structures_F_EPA\Items\Medical\DisinfectantSpray_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Antiseptic;
+		model = "\A3\Structures_F_EPA\Items\Medical\DisinfectantSpray_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_antiseptic_ca.paa";
-		descriptionShort = "They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.";
-		mass=5;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Antiseptic;
+		mass = 5;
 	};
 	
 	class ItemBandage : CA_Magazine {
@@ -427,10 +423,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_14;
+		displayName = $STR_ITEM_NAME_ItemEpinephrine;
 		model = "\viruz_equip\items\viruz_epipen.p3d";
 		picture = "\viruz_equip\viruzico\viruz_epipen_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_14;
+		descriptionShort = $STR_ITEM_DESC_ItemEpinephrine;
 		mass = 4;
 		
 	};
@@ -439,10 +435,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_15;
+		displayName = $STR_ITEM_NAME_ItemMorphine;
 		model = "\viruz_equip\items\viruz_morphine.p3d";
 		picture = "\viruz_equip\viruzico\viruz_morphine_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_15;
+		descriptionShort = $STR_ITEM_DESC_ItemMorphine;
 		mass = 4;
 		
 		class ItemActions {
@@ -457,10 +453,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_42;
+		displayName = $STR_ITEM_NAME_ItemHeatPack;
 		model = "\A3\Structures_F_EPA\Items\Medical\HeatPack_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_heatpack_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_42;
+		descriptionShort = $STR_ITEM_DESC_ItemHeatPack;
 		mass = 4;
 		
 		class ItemActions {
@@ -475,10 +471,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_16;
+		displayName = $STR_ITEM_NAME_ItemBloodbag;
 		model = "\A3\Structures_F_EPA\Items\Medical\BloodBag_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_bloodbag_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_16;
+		descriptionShort = $STR_ITEM_DESC_ItemBloodbag;
 		mass = 8;
 	};
 	
@@ -486,10 +482,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_17;
+		displayName = $STR_ITEM_NAME_ItemAntibiotic;
 		model = "\A3\Structures_F_EPA\Items\Medical\Antibiotic_F.p3d";
 		picture = "\viruz_equip\viruzico\antibiotic_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_17;
+		descriptionShort = $STR_ITEM_DESC_ItemAntibiotic;
 		mass = 4;
 		
 		class ItemActions {
@@ -504,10 +500,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_18;
+		displayName = $STR_ITEM_NAME_ItemPainkiller;
 		model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_painkiller_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_18;
+		descriptionShort = $STR_ITEM_DESC_ItemPainkiller;
 		mass = 4;
 		
 		class ItemActions {
@@ -546,10 +542,10 @@ class CfgMagazines {
 	
 	class ItemEtool : CA_Magazine {
 		scope = public;
-		displayName = "Shovel";
+		displayName = $STR_ITEM_NAME_ItemEtool;
 		model="\A3\Structures_F_EPA\Items\Tools\Shovel_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_shovel_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_1;
+		descriptionShort = $STR_ITEM_DESC_ItemEtool;
 		mass=20;
 		
 	};
@@ -578,7 +574,7 @@ class CfgMagazines {
 		author = "SigWar";
 		scope = public;
 		displayName = "$STR_A3_batteries";
-		descriptionShort = $STR_EQUIP_DESC_48;
+		descriptionShort = $STR_ITEM_DESC_Battery_mag;
 		model = "\A3\Structures_F_EPA\Items\Electronics\Battery_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_battery_ca.paa";
 		ammo = "";	//ammo = "Battery";
@@ -591,11 +587,11 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Suitcase";
-		model="\A3\structures_f\items\luggage\Suitcase_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Suitcase;
+		model = "\A3\structures_f\items\luggage\Suitcase_F.p3d";
 		picture = "\viruz_equip\viruzico\Suitcase.paa";
-		descriptionShort = "ViruZ";
-		mass=12;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Suitcase;
+		mass = 12;
 	};
 	
 	class Viruz_HandyCam : CA_Magazine {
@@ -603,11 +599,11 @@ class CfgMagazines {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="Handycam";
-		model="\A3\structures_f\Items\electronics\HandyCam_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_HandyCam;
+		model = "\A3\structures_f\Items\electronics\HandyCam_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_handycam_ca.paa";
-		descriptionShort = "ViruZ";
-		mass=10;
+		descriptionShort = $STR_ITEM_DESC_Viruz_HandyCam;
+		mass = 10;
 	};
 	
 	class Viruz_Laptop: CA_Magazine	{
@@ -615,33 +611,33 @@ class CfgMagazines {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="Laptop";
-		model="\A3\structures_f\Items\electronics\laptop_unfolded_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_Laptop;
+		model = "\A3\structures_f\Items\electronics\laptop_unfolded_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_laptop_ca.paa";
-		descriptionShort = "ViruZ";
-		mass=15;
+		descriptionShort = $STR_ITEM_DESC_Viruz_Laptop;
+		mass = 15;
 	};
 	
 	class Viruz_MobilePhone: CA_Magazine {
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="MobilePhone";
-		model="\A3\structures_f\Items\electronics\mobilephone_old_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_MobilePhone;
+		model = "\A3\structures_f\Items\electronics\mobilephone_old_F.p3d";
 		picture = "\viruz_equip\viruzico\Mobilephone.paa";
-		descriptionShort = "ViruZ";
-		mass=5;
+		descriptionShort = $STR_ITEM_DESC_Viruz_MobilePhone;
+		mass = 5;
 	};
 	
 	class Viruz_SmartPhone: CA_Magazine	{
 		scope = public;
 		type = 256;
 		count = 1;
-		displayName="SmartPhone";
-		model="\A3\structures_f\Items\electronics\mobilephone_smart_F.p3d";
+		displayName = $STR_ITEM_NAME_Viruz_SmartPhone;
+		model = "\A3\structures_f\Items\electronics\mobilephone_smart_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_smartphone_ca.paa";
-		descriptionShort = "ViruZ";
-		mass=5;
+		descriptionShort =  $STR_ITEM_DESC_Viruz_SmartPhone;
+		mass = 5;
 	};
 	///////////////////////////////////////////////////////////////////////////////////////
 	
@@ -653,10 +649,10 @@ class CfgMagazines {
 		count = 20;
 		fuelQuantity = 20;
 		type = (256 * 3);
-		displayName = $STR_EQUIP_NAME_19;
+		displayName = $STR_ITEM_NAME_ItemJerrycan;
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_jerrycan_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_19;
+		descriptionShort = $STR_ITEM_DESC_ItemJerrycan;
 		mass = 25;
 		allowedSlots[] = {901};
 	};
@@ -665,9 +661,9 @@ class CfgMagazines {
 		count = 1;
 		fuelQuantity = 0;
 		type = (256 * 3);
-		displayName = $STR_EQUIP_NAME_39;
+		displayName = $STR_ITEM_NAME_ItemJerrycanEmpty;
 		picture = "\viruz_equip\viruzico\viruz_jerrycan_e_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_39;
+		descriptionShort = $STR_ITEM_DESC_ItemJerrycanEmpty;
 		mass = 15;
 		allowedSlots[] = {901};
 	};
@@ -676,10 +672,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 4);
-		displayName = $STR_EQUIP_NAME_8;
+		displayName = $STR_ITEM_NAME_PartFueltank;
 		model = "\viruz_equip\items\viruz_fueltank.p3d";
 		picture = "\viruz_equip\viruzico\fuel_tank_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_8;
+		descriptionShort = $STR_ITEM_DESC_PartFueltank;
 		mass = 70;
 	};
 	
@@ -687,10 +683,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 6);
-		displayName = $STR_EQUIP_NAME_9;
-		model="\A3\Structures_F\Civ\Garbage\Tyre_F.p3d";
+		displayName = $STR_ITEM_NAME_PartWheel;
+		model = "\A3\Structures_F\Civ\Garbage\Tyre_F.p3d";
 		picture = "\viruz_equip\viruzico\whell.paa";
-		descriptionShort = $STR_EQUIP_DESC_9;
+		descriptionShort = $STR_ITEM_DESC_PartWheel;
 		mass = 80;
 	};
 	
@@ -698,10 +694,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 3);
-		displayName = $STR_EQUIP_NAME_10;
+		displayName = $STR_ITEM_NAME_PartGeneric;
 		model = "\viruz_equip\items\viruz_scrap.p3d";
 		picture = "\viruz_equip\viruzico\scrap.paa";
-		descriptionShort = $STR_EQUIP_DESC_10;
+		descriptionShort = $STR_ITEM_DESC_PartGeneric;
 		mass = 15;
 	};
 	
@@ -709,10 +705,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 6);
-		displayName = $STR_EQUIP_NAME_11;
+		displayName = $STR_ITEM_NAME_PartEngine;
 		model = "\viruz_equip\items\viruz_engine.p3d";
 		picture = "\viruz_equip\viruzico\viruz_engine_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_11;
+		descriptionShort = $STR_ITEM_DESC_PartEngine;
 		mass = 100;
 	};
 	
@@ -720,10 +716,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 2);
-		displayName = $STR_EQUIP_NAME_40;
+		displayName = $STR_ITEM_NAME_PartWoodPile;
 		model = "\A3\Structures_F_EPA\Civ\Camping\WoodenLog_F.p3d";
 		picture = "\viruz_equip\viruzico\viruz_log_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_40;
+		descriptionShort = $STR_ITEM_DESC_PartWoodPile;
 		mass = 30;
 	};
 	
@@ -731,10 +727,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 6);
-		displayName = $STR_EQUIP_NAME_32;
+		displayName = $STR_ITEM_NAME_PartVRotor;
 		model = "\viruz_equip\items\viruz_rotor.p3d";
 		picture = "\viruz_equip\viruzico\vz_rotor.paa";
-		descriptionShort = $STR_EQUIP_DESC_32;
+		descriptionShort = $STR_ITEM_DESC_PartVRotor;
 		mass = 120;
 	};
 
@@ -742,10 +738,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 2);
-		displayName = $STR_EQUIP_NAME_30;
+		displayName = $STR_ITEM_NAME_PartGlass;
 		model = "\viruz_equip\items\viruz_carglass.p3d";
 		picture = "\viruz_equip\viruzico\papelao_full_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_30;
+		descriptionShort = $STR_ITEM_DESC_PartGlass;
 		mass = 30;
 	};
 	
@@ -756,10 +752,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = (256 * 6);
-		displayName = $STR_EQUIP_NAME_31;
-		model="\A3\Structures_F\Items\Electronics\Portable_generator_F.p3d";
+		displayName = $STR_ITEM_NAME_ItemGenerator;
+		model = "\A3\Structures_F\Items\Electronics\Portable_generator_F.p3d";
 		picture = "\viruz_equip\viruzico\vz_generator_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_31;
+		descriptionShort = $STR_ITEM_DESC_ItemGenerator;
 		mass = 100;
 	};
 	
@@ -770,7 +766,7 @@ class CfgMagazines {
 		displayName = $STR_A3_cfgVehicles_CamoNet_big_F0;
 		model = "\a3\structures_f\Civ\Camping\Sleeping_bag_folded_F.p3d";
 		picture = "\A3\Weapons_F\data\UI\icon_unarmed_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_50;
+		descriptionShort = $STR_ITEM_DESC_ItemCamoNetBig;
 		mass = 60;
 		
 	class ItemActions {
@@ -794,8 +790,8 @@ class CfgMagazines {
 		picture = "\A3\Weapons_F\data\UI\icon_unarmed_ca.paa";
 		count = 1;
 		type = 256;
-		descriptionShort = "";
-		mass=12;
+		descriptionShort = $STR_ITEM_DESC_ItemGenerator;
+		mass = 12;
 	
 		class ItemActions {
 			class Buildable {
@@ -832,10 +828,10 @@ class CfgMagazines {
 		class ItemWaterbottle : FoodDrink {
 		scope = public;
 		refillable = 1;
-		displayName = $STR_EQUIP_NAME_12;
-		model="\A3\Structures_F_EPA\Items\Food\Canteen_F.p3d";
+		displayName = $STR_ITEM_NAME_ItemWaterbottle;
+		model = "\A3\Structures_F_EPA\Items\Food\Canteen_F.p3d";
 		picture = "\viruz_equip\viruzico\canteen.paa";
-		descriptionShort = $STR_EQUIP_DESC_12;
+		descriptionShort = $STR_ITEM_DESC_ItemWaterbottle;
 		mass = 15;
 	};
 	
@@ -843,10 +839,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_EQUIP_NAME_13;
+		displayName = $STR_ITEM_NAME_ItemWaterbottleUnfilled;
 		model="\A3\Structures_F_EPA\Items\Food\Canteen_F.p3d";
 		picture = "\viruz_equip\viruzico\canteen_empty.paa";
-		descriptionShort = $STR_EQUIP_DESC	_13;
+		descriptionShort = $STR_ITEM_DESC_ItemWaterbottleUnfilled;
 		mass = 7;
 		
 		class ItemActions {
@@ -858,8 +854,8 @@ class CfgMagazines {
 	};
 
 	class ItemWaterbottleBoiled : ItemWaterbottle {
-		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
-		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
+		displayName = $STR_ITEM_NAME_ItemWaterbottleBoiled;
+		descriptionShort = $STR_ITEM_DESC_ItemWaterbottleBoiled;
 	};
 	
 	class ItemSodaOriginal : FoodDrink {
@@ -1014,7 +1010,7 @@ class CfgMagazines {
 		displayName = "WT Baked Beans Empty";
 		model = "\viruz_equip\items\canbeans1E.p3d";
 		picture = "\viruz_equip\viruzico\canbeans1E_ca.paa";
-		descriptionShort = "";
+		descriptionShort = $STR_ITEM_DESC_FoodCanWBBeansEmpty;
 		mass = 2;
 	};
 

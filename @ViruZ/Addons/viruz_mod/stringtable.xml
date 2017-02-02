@@ -1382,6 +1382,1418 @@
 		</Key>
 	</Package>
 	<Package name="equipment_code">
+		<Key ID="STR_ITEM_NAME_ItemToolbox">			
+			<Original>ToolBox</Original>
+			<English>ToolBox</English>
+            <Czech>ToolBox</Czech>
+            <Spanish>ToolBox</Spanish>
+            <Russian>ToolBox</Russian>
+            <German>ToolBox</German>
+            <French>ToolBox</French>
+            <Italian>ToolBox</Italian>
+            <Portuguese>Caixa de Ferramentas</Portuguese>
+            <Polish>ToolBox</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemToolbox">			
+			<Original>ToolBox</Original>
+			<English>ToolBox</English>
+            <Czech>ToolBox</Czech>
+            <Spanish>ToolBox</Spanish>
+            <Russian>ToolBox</Russian>
+            <German>ToolBox</German>
+            <French>ToolBox</French>
+            <Italian>ToolBox</Italian>
+            <Portuguese>Caixa de Ferramentas</Portuguese>
+            <Polish>ToolBox</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemKnife">			
+			<Original>Military Knife</Original>
+			<English>Military Knife</English>
+            <Czech>Military Knife</Czech>
+            <Spanish>Military Knife</Spanish>
+            <Russian>Military Knife</Russian>
+            <German>Military Knife</German>
+            <French>Military Knife</French>
+            <Italian>Military Knife</Italian>
+            <Portuguese>Faca Militar</Portuguese>
+            <Polish>Military Knife</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemKnife">			
+			<Original>Military Knife</Original>
+			<English>Military Knife</English>
+            <Czech>Military Knife</Czech>
+            <Spanish>Military Knife</Spanish>
+            <Russian>Military Knife</Russian>
+            <German>Military Knife</German>
+            <French>Military Knife</French>
+            <Italian>Military Knife</Italian>
+            <Portuguese>Faca Militar</Portuguese>
+            <Polish>Military Knife</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Hammer">			
+			<Original>Hammer</Original>
+			<English>Hammer</English>
+            <Czech>Hammer</Czech>
+            <Spanish>Hammer</Spanish>
+            <Russian>Hammer</Russian>
+            <German>Hammer</German>
+            <French>Hammer</French>
+            <Italian>Hammer</Italian>
+            <Portuguese>Martelo</Portuguese>
+            <Polish>Hammer</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Hammer">			
+			<Original>Hammer</Original>
+			<English>Hammer</English>
+            <Czech>Hammer</Czech>
+            <Spanish>Hammer</Spanish>
+            <Russian>Hammer</Russian>
+            <German>Hammer</German>
+            <French>Hammer</French>
+            <Italian>Hammer</Italian>
+            <Portuguese>Martelo</Portuguese>
+            <Polish>Hammer</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Saw">			
+			<Original>Saw</Original>
+			<English>Saw</English>
+            <Czech>Saw</Czech>
+            <Spanish>Saw</Spanish>
+            <Russian>Saw</Russian>
+            <German>Saw</German>
+            <French>Saw</French>
+            <Italian>Saw</Italian>
+            <Portuguese>Serrote</Portuguese>
+            <Polish>Saw</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Saw">			
+			<Original>Saw</Original>
+			<English>Saw</English>
+            <Czech>Saw</Czech>
+            <Spanish>Saw</Spanish>
+            <Russian>Saw</Russian>
+            <German>Saw</German>
+            <French>Saw</French>
+            <Italian>Saw</Italian>
+            <Portuguese>Serrote</Portuguese>
+            <Polish>Saw</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Wrench">			
+			<Original>Wrench</Original>
+			<English>Wrench</English>
+            <Czech>Wrench</Czech>
+            <Spanish>Wrench</Spanish>
+            <Russian>Wrench</Russian>
+            <German>Wrench</German>
+            <French>Wrench</French>
+            <Italian>Wrench</Italian>
+            <Portuguese>Chave de Boca</Portuguese>
+            <Polish>Wrench</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Wrench">			
+			<Original>Wrench</Original>
+			<English>Wrench</English>
+            <Czech>Wrench</Czech>
+            <Spanish>Wrench</Spanish>
+            <Russian>Wrench</Russian>
+            <German>Wrench</German>
+            <French>Wrench</French>
+            <Italian>Wrench</Italian>
+            <Portuguese>Chave de Boca</Portuguese>
+            <Polish>Wrench</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Pliers">			
+			<Original>Pliers</Original>
+			<English>Pliers</English>
+            <Czech>Pliers</Czech>
+            <Spanish>Pliers</Spanish>
+            <Russian>Pliers</Russian>
+            <German>Pliers</German>
+            <French>Pliers</French>
+            <Italian>Pliers</Italian>
+            <Portuguese>Alicate</Portuguese>
+            <Polish>Pliers</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Pliers">			
+			<Original>Pliers</Original>
+			<English>Pliers</English>
+            <Czech>Pliers</Czech>
+            <Spanish>Pliers</Spanish>
+            <Russian>Pliers</Russian>
+            <German>Pliers</German>
+            <French>Pliers</French>
+            <Italian>Pliers</Italian>
+            <Portuguese>Alicate</Portuguese>
+            <Polish>Pliers</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_File">			
+			<Original>File (tools)</Original>
+			<English>File (tools)</English>
+            <Czech>File (tools)</Czech>
+            <Spanish>File (tools)</Spanish>
+            <Russian>File (tools)</Russian>
+            <German>File (tools)</German>
+            <French>File (tools)</French>
+            <Italian>File (tools)</Italian>
+            <Portuguese>Lima</Portuguese>
+            <Polish>File (tools)</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_File">			
+			<Original>File (tools)</Original>
+			<English>File (tools)</English>
+            <Czech>File (tools)</Czech>
+            <Spanish>File (tools)</Spanish>
+            <Russian>File (tools)</Russian>
+            <German>File (tools)</German>
+            <French>File (tools)</French>
+            <Italian>File (tools)</Italian>
+            <Portuguese>Lima</Portuguese>
+            <Polish>File (tools)</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Grinder">			
+			<Original>Grinder</Original>
+			<English>Grinder</English>
+            <Czech>Grinder</Czech>
+            <Spanish>Grinder</Spanish>
+            <Russian>Grinder</Russian>
+            <German>Grinder</German>
+            <French>Grinder</French>
+            <Italian>Grinder</Italian>
+            <Portuguese>Serra Circular</Portuguese>
+            <Polish>Grinder</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Grinder">			
+			<Original>Grinder</Original>
+			<English>Grinder</English>
+            <Czech>Grinder</Czech>
+            <Spanish>Grinder</Spanish>
+            <Russian>Grinder</Russian>
+            <German>Grinder</German>
+            <French>Grinder</French>
+            <Italian>Grinder</Italian>
+            <Portuguese>Serra Circular</Portuguese>
+            <Polish>Grinder</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Screwdriver">			
+			<Original>Screwdriver</Original>
+			<English>Screwdriver</English>
+            <Czech>Screwdriver</Czech>
+            <Spanish>Screwdriver</Spanish>
+            <Russian>Screwdriver</Russian>
+            <German>Screwdriver</German>
+            <French>Screwdriver</French>
+            <Italian>Screwdriver</Italian>
+            <Portuguese>Chave de Fenda</Portuguese>
+            <Polish>Screwdriver</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Screwdriver">			
+			<Original>Screwdriver</Original>
+			<English>Screwdriver</English>
+            <Czech>Screwdriver</Czech>
+            <Spanish>Screwdriver</Spanish>
+            <Russian>Screwdriver</Russian>
+            <German>Screwdriver</German>
+            <French>Screwdriver</French>
+            <Italian>Screwdriver</Italian>
+            <Portuguese>Chave de Fenda</Portuguese>
+            <Polish>Screwdriver</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Phillips">			
+			<Original>Phillips Screwdriver</Original>
+			<English>Phillips Screwdriver</English>
+            <Czech>Phillips Screwdriver</Czech>
+            <Spanish>Phillips Screwdriver</Spanish>
+            <Russian>Phillips Screwdriver</Russian>
+            <German>Phillips Screwdriver</German>
+            <French>Phillips Screwdriver</French>
+            <Italian>Phillips Screwdriver</Italian>
+            <Portuguese>Chave Phillips</Portuguese>
+            <Polish>Phillips Screwdriver</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Phillips">			
+			<Original>Phillips Screwdriver</Original>
+			<English>Phillips Screwdriver</English>
+            <Czech>Phillips Screwdriver</Czech>
+            <Spanish>Phillips Screwdriver</Spanish>
+            <Russian>Phillips Screwdriver</Russian>
+            <German>Phillips Screwdriver</German>
+            <French>Phillips Screwdriver</French>
+            <Italian>Phillips Screwdriver</Italian>
+            <Portuguese>Chave Phillips</Portuguese>
+            <Polish>Phillips Screwdriver</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Gloves">			
+			<Original>Gloves</Original>
+			<English>Gloves</English>
+            <Czech>Gloves</Czech>
+            <Spanish>Gloves</Spanish>
+            <Russian>Gloves</Russian>
+            <German>Gloves</German>
+            <French>Gloves</French>
+            <Italian>Gloves</Italian>
+            <Portuguese>Luvas</Portuguese>
+            <Polish>Gloves</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Gloves">			
+			<Original>Gloves</Original>
+			<English>Gloves</English>
+            <Czech>Gloves</Czech>
+            <Spanish>Gloves</Spanish>
+            <Russian>Gloves</Russian>
+            <German>Gloves</German>
+            <French>Gloves</French>
+            <Italian>Gloves</Italian>
+            <Portuguese>Luvas</Portuguese>
+            <Polish>Gloves</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Drill">			
+			<Original>Mobile Drill</Original>
+			<English>Mobile Drill</English>
+            <Czech>Mobile Drill</Czech>
+            <Spanish>Mobile Drill</Spanish>
+            <Russian>Mobile Drill</Russian>
+            <German>Mobile Drill</German>
+            <French>Mobile Drill</French>
+            <Italian>Mobile Drill</Italian>
+            <Portuguese>Furadeira Móvel</Portuguese>
+            <Polish>Mobile Drill</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Drill">			
+			<Original>Mobile Drill</Original>
+			<English>Mobile Drill</English>
+            <Czech>Mobile Drill</Czech>
+            <Spanish>Mobile Drill</Spanish>
+            <Russian>Mobile Drill</Russian>
+            <German>Mobile Drill</German>
+            <French>Mobile Drill</French>
+            <Italian>Mobile Drill</Italian>
+            <Portuguese>Furadeira Móvel</Portuguese>
+            <Polish>Mobile Drill</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_CanisterOil">			
+			<Original>Canister (Oil)</Original>
+			<English>Canister (Oil)</English>
+            <Czech>Canister (Oil)</Czech>
+            <Spanish>Canister (Oil)</Spanish>
+            <Russian>Canister (Oil)</Russian>
+            <German>Canister (Oil)</German>
+            <French>Canister (Oil)</French>
+            <Italian>Canister (Oil)</Italian>
+            <Portuguese>Vasilha de Óleo</Portuguese>
+            <Polish>Canister (Oil)</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_CanisterOil">			
+			<Original>Canister (Oil)</Original>
+			<English>Canister (Oil)</English>
+            <Czech>Canister (Oil)</Czech>
+            <Spanish>Canister (Oil)</Spanish>
+            <Russian>Canister (Oil)</Russian>
+            <German>Canister (Oil)</German>
+            <French>Canister (Oil)</French>
+            <Italian>Canister (Oil)</Italian>
+            <Portuguese>Vasilha de Óleo</Portuguese>
+            <Polish>Canister (Oil)</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_DuctTape">			
+			<Original>Duct Tape</Original>
+			<English>Duct Tape</English>
+            <Czech>Duct Tape</Czech>
+            <Spanish>Duct Tape</Spanish>
+            <Russian>Duct Tape</Russian>
+            <German>Duct Tape</German>
+            <French>Duct Tape</French>
+            <Italian>Duct Tape</Italian>
+            <Portuguese>Fita Adesiva</Portuguese>
+            <Polish>Duct Tape</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_DuctTape">			
+			<Original>Duct Tape</Original>
+			<English>Duct Tape</English>
+            <Czech>Duct Tape</Czech>
+            <Spanish>Duct Tape</Spanish>
+            <Russian>Duct Tape</Russian>
+            <German>Duct Tape</German>
+            <French>Duct Tape</French>
+            <Italian>Duct Tape</Italian>
+            <Portuguese>Fita Adesiva</Portuguese>
+            <Polish>Duct Tape</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Rock">			
+			<Original>Rock</Original>
+			<English>Rock</English>
+            <Czech>Rock</Czech>
+            <Spanish>Rock</Spanish>
+            <Russian>Rock</Russian>
+            <German>Rock</German>
+            <French>Rock</French>
+            <Italian>Rock</Italian>
+            <Portuguese>Pedra</Portuguese>
+            <Polish>Rock</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Rock">			
+			<Original>Piece of rock, perfect for construction.</Original>
+			<English>Piece of rock, perfect for construction.</English>
+            <Czech>Piece of rock, perfect for construction.</Czech>
+            <Spanish>Piece of rock, perfect for construction.</Spanish>
+            <Russian>Piece of rock, perfect for construction.</Russian>
+            <German>Piece of rock, perfect for construction.</German>
+            <French>Piece of rock, perfect for construction.</French>
+            <Italian>Piece of rock, perfect for construction.</Italian>
+            <Portuguese>Pedaço de pedra, perfeito para construção.</Portuguese>
+            <Polish>Piece of rock, perfect for construction.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Clinquer">			
+			<Original>Clinker</Original>
+			<English>Clinker</English>
+            <Czech>Clinker</Czech>
+            <Spanish>Clinker</Spanish>
+            <Russian>Clinker</Russian>
+            <German>Clinker</German>
+            <French>Clinker</French>
+            <Italian>Clinker</Italian>
+            <Portuguese>Clinquer</Portuguese>
+            <Polish>Clinker</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Clinquer">			
+			<Original>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</Original>
+			<English>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</English>
+            <Czech>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</Czech>
+            <Spanish>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</Spanish>
+            <Russian>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</Russian>
+            <German>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</German>
+            <French>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</French>
+            <Italian>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</Italian>
+            <Portuguese>Após tratamento com água, o clínquer reage para formar um hidrato chamado pasta de cimento. Ao repousar a pasta polimeriza como indicado pelo seu endurecimento.</Portuguese>
+            <Polish>Upon treatment with water, clinker reacts to form a hydrate called cement paste. Upon standing the paste polymerizes as indicated by its hardening.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_CinderBlock">			
+			<Original>CinderBlock</Original>
+			<English>CinderBlock</English>
+            <Czech>CinderBlock</Czech>
+            <Spanish>CinderBlock</Spanish>
+            <Russian>CinderBlock</Russian>
+            <German>CinderBlock</German>
+            <French>CinderBlock</French>
+            <Italian>CinderBlock</Italian>
+            <Portuguese>Bloco de Concreto</Portuguese>
+            <Polish>CinderBlock</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_CinderBlock">			
+			<Original>CinderBlock</Original>
+			<English>CinderBlock</English>
+            <Czech>CinderBlock</Czech>
+            <Spanish>CinderBlock</Spanish>
+            <Russian>CinderBlock</Russian>
+            <German>CinderBlock</German>
+            <French>CinderBlock</French>
+            <Italian>CinderBlock</Italian>
+            <Portuguese>Bloco de Concreto</Portuguese>
+            <Polish>CinderBlock</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Woodboard">			
+			<Original>WoodBoard</Original>
+			<English>WoodBoard</English>
+            <Czech>WoodBoard</Czech>
+            <Spanish>WoodBoard</Spanish>
+            <Russian>WoodBoard</Russian>
+            <German>WoodBoard</German>
+            <French>WoodBoard</French>
+            <Italian>WoodBoard</Italian>
+            <Portuguese>Tábua de Madeira</Portuguese>
+            <Polish>WoodBoard</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Woodboard">			
+			<Original>Used mainly for construction.</Original>
+			<English>Used mainly for construction.</English>
+            <Czech>Used mainly for construction.</Czech>
+            <Spanish>Used mainly for construction.</Spanish>
+            <Russian>Used mainly for construction.</Russian>
+            <German>Used mainly for construction.</German>
+            <French>Used mainly for construction.</French>
+            <Italian>Used mainly for construction.</Italian>
+            <Portuguese>Usada principalmente para construção.</Portuguese>
+            <Polish>Used mainly for construction.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_IronBar">			
+			<Original>Iron Bar</Original>
+			<English>Iron Bar</English>
+            <Czech>Iron Bar</Czech>
+            <Spanish>Iron Bar</Spanish>
+            <Russian>Iron Bar</Russian>
+            <German>Iron Bar</German>
+            <French>Iron Bar</French>
+            <Italian>Iron Bar</Italian>
+            <Portuguese>Barra de Ferro</Portuguese>
+            <Polish>Iron Bar</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_IronBar">			
+			<Original>Iron Bar</Original>
+			<English>Iron Bar</English>
+            <Czech>Iron Bar</Czech>
+            <Spanish>Iron Bar</Spanish>
+            <Russian>Iron Bar</Russian>
+            <German>Iron Bar</German>
+            <French>Iron Bar</French>
+            <Italian>Iron Bar</Italian>
+            <Portuguese>Barra de Ferro</Portuguese>
+            <Polish>Iron Bar</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_nails">			
+			<Original>Box of Nails</Original>
+			<English>Box of Nails</English>
+            <Czech>Box of Nails</Czech>
+            <Spanish>Box of Nails</Spanish>
+            <Russian>Box of Nails</Russian>
+            <German>Box of Nails</German>
+            <French>Box of Nails</French>
+            <Italian>Box of Nails</Italian>
+            <Portuguese>Caixa de Pregos</Portuguese>
+            <Polish>Box of Nails</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_nails">			
+			<Original>Box of Nails</Original>
+			<English>Box of Nails</English>
+            <Czech>Box of Nails</Czech>
+            <Spanish>Box of Nails</Spanish>
+            <Russian>Box of Nails</Russian>
+            <German>Box of Nails</German>
+            <French>Box of Nails</French>
+            <Italian>Box of Nails</Italian>
+            <Portuguese>Caixa de pregos</Portuguese>
+            <Polish>Box of Nails</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_CementBag">			
+			<Original>Cement Bag</Original>
+			<English>Cement Bag</English>
+            <Czech>Cement Bag</Czech>
+            <Spanish>Cement Bag</Spanish>
+            <Russian>Cement Bag</Russian>
+            <German>Cement Bag</German>
+            <French>Cement Bag</French>
+            <Italian>Cement Bag</Italian>
+            <Portuguese>Saco de Cimento</Portuguese>
+            <Polish>Cement Bag</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_CementBag">			
+			<Original>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</Original>
+			<English>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</English>
+            <Czech>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</Czech>
+            <Spanish>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</Spanish>
+            <Russian>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</Russian>
+            <German>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</German>
+            <French>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</French>
+            <Italian>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</Italian>
+            <Portuguese>Um cimento é um ligante, uma substância utilizada na construção que define e endurece e pode ligar outros materiais juntos.</Portuguese>
+            <Polish>A cement is a binder, a substance used in construction that sets and hardens and can bind other materials together.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_CardBoardBox">			
+			<Original>CardBoard Box</Original>
+			<English>CardBoard Box</English>
+            <Czech>CardBoard Box</Czech>
+            <Spanish>CardBoard Box</Spanish>
+            <Russian>CardBoard Box</Russian>
+            <German>CardBoard Box</German>
+            <French>CardBoard Box</French>
+            <Italian>CardBoard Box</Italian>
+            <Portuguese>Caixa de papelão</Portuguese>
+            <Polish>CardBoard Box</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_CardBoardBox">			
+			<Original>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</Original>
+			<English>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</English>
+            <Czech>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</Czech>
+            <Spanish>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</Spanish>
+            <Russian>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</Russian>
+            <German>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</German>
+            <French>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</French>
+            <Italian>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</Italian>
+            <Portuguese>O papelão é um termo genérico para um papel prensado, variando de um arranjo simples de uma única folha grossa de papel a configurações complexas que caracterizam camadas onduladas e uncorrugated múltiplas.</Portuguese>
+            <Polish>Cardboard is a generic term for a heavy-duty paper of various strengths, ranging from a simple arrangement of a single thick sheet of paper to complex configurations featuring multiple corrugated and uncorrugated layers.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_CinderBlockMold">			
+			<Original>CinderBlock Mold</Original>
+			<English>CinderBlock Mold</English>
+            <Czech>CinderBlock Mold</Czech>
+            <Spanish>CinderBlock Mold</Spanish>
+            <Russian>CinderBlock Mold</Russian>
+            <German>CinderBlock Mold</German>
+            <French>CinderBlock Mold</French>
+            <Italian>CinderBlock Mold</Italian>
+            <Portuguese>Molde Bloco De Concreto</Portuguese>
+            <Polish>CinderBlock Mold</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_CinderBlockMold">			
+			<Original>Mold to create cinder blocks.</Original>
+			<English>Mold to create cinder blocks.</English>
+            <Czech>Mold to create cinder blocks.</Czech>
+            <Spanish>Mold to create cinder blocks.</Spanish>
+            <Russian>Mold to create cinder blocks.</Russian>
+            <German>Mold to create cinder blocks.</German>
+            <French>Mold to create cinder blocks.</French>
+            <Italian>Mold to create cinder blocks.</Italian>
+            <Portuguese>Molde para criar blocos de concreto.</Portuguese>
+            <Polish>Mold to create cinder blocks.</Polish>
+		</Key>
+		
+		
+		<Key ID="STR_ITEM_DESC_ItemTent">			
+			<Original>A camping tent that can be pitched, allowing you extended storage safe from others.</Original>
+			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
+            <Czech>Item to set up your tent</Czech>
+            <Spanish>Item to set up your tent</Spanish>
+            <Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
+            <German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
+            <French>A camping tent that can be pitched, allowing you extended storage safe from others.</French>
+            <Italian>A camping tent that can be pitched, allowing you extended storage safe from others.</Italian>
+            <Portuguese>Uma barraca que pode ser colocada, permitindo que você permaneça seguro de outro player.</Portuguese>
+            <Polish>A camping tent that can be pitched, allowing you extended storage safe from others.</Polish>
+		</Key>
+		
+		<Key ID="STR_ITEM_NAME_ItemSandbag">			
+			<Original>Sandbags</Original>
+			<English>Sandbags</English>
+            <Czech>Sandbags</Czech>
+            <Spanish>Sandbags</Spanish>
+            <Russian>Мешки с песком</Russian>
+            <German>Sandsäcke</German>
+            <French>Sandbags</French>
+            <Italian>Sandbags</Italian>
+            <Portuguese>Saco de Areia</Portuguese>
+            <Polish>Sandbags</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemSandbag">			
+			<Original>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</Original>
+			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
+            <Czech>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</Czech>
+            <Spanish>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</Spanish>
+            <Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
+            <German>Jutesäcke, die mit Sand oder Erde gefüllt zum Errichten von Befestigungen verwendet werden können.</German>
+            <French>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</French>
+            <Italian>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</Italian>
+            <Portuguese>Sacos de hessian que podem ser preenchidos com areia ou solo e utilizados para fortificação militar.</Portuguese>
+            <Polish>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemWire">			
+			<Original>Wire Roll</Original>
+			<English>Wire Roll</English>
+            <Czech>Wire Roll</Czech>
+            <Spanish>Wire Roll</Spanish>
+            <Russian>Wire Roll</Russian>
+            <German>Wire Roll</German>
+            <French>Wire Roll</French>
+            <Italian>Wire Roll</Italian>
+            <Portuguese>Rolo de Arame</Portuguese>
+            <Polish>Wire Roll</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemWire">			
+			<Original>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</Original>
+			<English>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</English>
+            <Czech>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</Czech>
+            <Spanish>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</Spanish>
+            <Russian>Катушка острой колючей проволоки для сооружения заграждений.</Russian>
+            <German>Gewickelter Stacheldraht, der akkordeonartig ausgeklappt und mit Stahlpgosten befestigt zum Errichten von Stacheldrahthindernissen verwendet werden kann.</German>
+            <French>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</French>
+            <Italian>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</Italian>
+            <Portuguese>Arame farpado em grandes bobinas que pode ser expandido como uma concertina com piquetes de aço para formar obstáculos de arame militar.</Portuguese>
+            <Polish>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Saucepan">			
+			<Original>Saucepan</Original>
+			<English>Saucepan</English>
+            <Czech>Saucepan</Czech>
+            <Spanish>Saucepan</Spanish>
+            <Russian>Saucepan</Russian>
+            <German>Saucepan</German>
+            <French>Saucepan</French>
+            <Italian>Saucepan</Italian>
+            <Portuguese>Panela</Portuguese>
+            <Polish>Saucepan</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Saucepan">			
+			<Original>A kitchen pan, typically round, made of metal, and with a long handle and a lid</Original>
+			<English>A kitchen pan, typically round, made of metal, and with a long handle and a lid</English>
+            <Czech>A kitchen pan, typically round, made of metal, and with a long handle and a lid</Czech>
+            <Spanish>A kitchen pan, typically round, made of metal, and with a long handle and a lid</Spanish>
+            <Russian>A kitchen pan, typically round, made of metal, and with a long handle and a lid</Russian>
+            <German>A kitchen pan, typically round, made of metal, and with a long handle and a lid</German>
+            <French>A kitchen pan, typically round, made of metal, and with a long handle and a lid</French>
+            <Italian>A kitchen pan, typically round, made of metal, and with a long handle and a lid</Italian>
+            <Portuguese>Uma panela de cozinha, tipicamente redonda, feita de metal, e com uma alça longa e uma tampa.</Portuguese>
+            <Polish>A kitchen pan, typically round, made of metal, and with a long handle and a lid</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_itemCanOpener">			
+			<Original>Can Opener</Original>
+			<English>Can Opener</English>
+            <Czech>Can Opener</Czech>
+            <Spanish>Can Opener</Spanish>
+            <Russian>Can Opener</Russian>
+            <German>Can Opener</German>
+            <French>Can Opener</French>
+            <Italian>Can Opener</Italian>
+            <Portuguese>Abrir de Lata</Portuguese>
+            <Polish>Can Opener</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_itemCanOpener">			
+			<Original>Can Opener</Original>
+			<English>Can Opener</English>
+            <Czech>Can Opener</Czech>
+            <Spanish>Can Opener</Spanish>
+            <Russian>Can Opener</Russian>
+            <German>Can Opener</German>
+            <French>Can Opener</French>
+            <Italian>Can Opener</Italian>
+            <Portuguese>Abrir de Lata</Portuguese>
+            <Polish>Can Opener</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemMatchbox">			
+			<Original>Box of Matches</Original>
+			<English>Box of Matches</English>
+            <Czech>Box of Matches</Czech>
+            <Spanish>Box of Matches</Spanish>
+            <Russian>Коробок спичек</Russian>
+            <German>Schachtel Streichhölzer</German>
+            <French>Box of Matches</French>
+            <Italian>Box of Matches</Italian>
+            <Portuguese>Caixa de Fósforo</Portuguese>
+            <Polish>Box of Matches</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemMatchbox">			
+			<Original>Box of safety matches for starting a fire under controlled conditions.</Original>
+			<English>Box of safety matches for starting a fire under controlled conditions.</English>
+            <Czech>Box of safety matches for starting a fire under controlled conditions.</Czech>
+            <Spanish>Box of safety matches for starting a fire under controlled conditions.</Spanish>
+            <Russian>Коробок спичек используется для разведения костра.</Russian>
+            <German>Eine Schachtel Sicherheitsstreichhölzer, mit dem ein kontrolliertes Feuer gemacht werden kann.</German>
+            <French>Box of safety matches for starting a fire under controlled conditions.</French>
+            <Italian>Box of safety matches for starting a fire under controlled conditions.</Italian>
+            <Portuguese>Caixa de fósforos para acender o fogo em condições controladas.</Portuguese>
+            <Polish>Box of safety matches for starting a fire under controlled conditions.</Polish>
+		</Key>
+		
+		<Key ID="STR_ITEM_NAME_Viruz_Antiseptic">			
+			<Original>Antiseptic</Original>
+			<English>Antiseptic</English>
+            <Czech>Antiseptic</Czech>
+            <Spanish>Antiseptic</Spanish>
+            <Russian>Antiseptic</Russian>
+            <German>Antiseptic</German>
+            <French>Antiseptic</French>
+            <Italian>Antiseptic</Italian>
+            <Portuguese>Antisséptico</Portuguese>
+            <Polish>Antiseptic</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Antiseptic">			
+			<Original>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</Original>
+			<English>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</English>
+            <Czech>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</Czech>
+            <Spanish>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</Spanish>
+            <Russian>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</Russian>
+            <German>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</German>
+            <French>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</French>
+            <Italian>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</Italian>
+            <Portuguese>São substâncias usadas para desinfectar feridas, evitando ou reduzindo o risco de infecção por bactérias ou germes.</Portuguese>
+            <Polish>They are substances used to disinfect wounds, avoiding or reducing the risk of infection by bacteria or germs.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemBandage">			
+			<Original>Bandage</Original>
+			<English>Bandage</English>
+            <Czech>Bandage</Czech>
+            <Spanish>Bandage</Spanish>
+            <Russian>Bandage</Russian>
+            <German>Bandage</German>
+            <French>Bandage</French>
+            <Italian>Bandage</Italian>
+            <Portuguese>Bandage</Portuguese>
+            <Polish>Bandage</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemBandage">			
+			<Original>Bandage</Original>
+			<English>Bandage</English>
+            <Czech>Bandage</Czech>
+            <Spanish>Bandage</Spanish>
+            <Russian>Bandage</Russian>
+            <German>Bandage</German>
+            <French>Bandage</French>
+            <Italian>Bandage</Italian>
+            <Portuguese>Bandage</Portuguese>
+            <Polish>Bandage</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemEpinephrine">			
+			<Original>Epi-Pen</Original>
+			<English>Epi-Pen</English>
+            <Czech>Epi-Pen</Czech>
+            <Spanish>Epi-Pen</Spanish>
+            <Russian>Укол адреналина</Russian>
+            <German>Epinephrin</German>
+            <French>Epi-Pen</French>
+            <Italian>Epi-Pen</Italian>
+            <Portuguese>Epinefrina</Portuguese>
+            <Polish>Epi-Pen</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemEpinephrine">			
+			<Original>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</Original>
+			<English>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</English>
+            <Czech>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</Czech>
+            <Spanish>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</Spanish>
+            <Russian>Укол адреналина для приведения в чувства людей без сознания.</Russian>
+            <German>Epinephtin-Autoinjektor für intramuskuläre Injektion, um bewusstlose Verletzte wiederzubeleben.</German>
+            <French>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</French>
+            <Italian>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</Italian>
+            <Portuguese>Injector auto da epinefrina. Usado para injeção intramuscular para reviver vítimas inconscientes.</Portuguese>
+            <Polish>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemMorphine">			
+			<Original>Morphine Auto-Injector</Original>
+			<English>Morphine Auto-Injector</English>
+            <Czech>Morphine Auto-Injector</Czech>
+            <Spanish>Morphine Auto-Injector</Spanish>
+            <Russian>Укол адреналина</Russian>
+            <German>Epinephrin</German>
+            <French>Morphine Auto-Injector</French>
+            <Italian>Morphine Auto-Injector</Italian>
+            <Portuguese>Morfina Auto-Injector</Portuguese>
+            <Polish>Morphine Auto-Injector</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemMorphine">			
+			<Original>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</Original>
+			<English>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</English>
+            <Czech>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</Czech>
+            <Spanish>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</Spanish>
+            <Russian>Морфий используется для местного обезболивания при переломах.</Russian>
+            <German>Morphium-Autoinjektor für intramuskuläre Injektion, um starke Schmerzen, etwa von Knochenbrüchen, zu stillen.</German>
+            <French>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</French>
+            <Italian>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</Italian>
+            <Portuguese>Injetor Automático de Morfina. Usado para injeção intramuscular para controlar a dor severa, como aqueles de fraturas.</Portuguese>
+            <Polish>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemHeatPack">			
+			<Original>Heatpack</Original>
+			<English>Heatpack</English>
+            <Czech>Heatpack</Czech>
+            <Spanish>Heatpack</Spanish>
+            <Russian>Heatpack</Russian>
+            <German>Heatpack</German>
+            <French>Heatpack</French>
+            <Italian>Heatpack</Italian>
+            <Portuguese>Heatpack</Portuguese>
+            <Polish>Heatpack</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemHeatPack">			
+			<Original>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</Original>
+			<English>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</English>
+            <Czech>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</Czech>
+            <Spanish>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</Spanish>
+            <Russian>Грелка-подушка, которая греет, когда вы замерзаете. Используется для быстрого согревания вашего тела.</Russian>
+            <German>Ein Heizkissen, wenn Sie die Kristallisation beginnen erwärmt. Wird verwendet, um schnell Wärme an den Körper liefern.</German>
+            <French>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</French>
+            <Italian>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</Italian>
+            <Portuguese>Uma almofada aquecida que aquece quando você inicia o processo de cristalização. Usado para fornecer calor rápido ao seu corpo.</Portuguese>
+            <Polish>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemBloodbag">			
+			<Original>Blood Bag</Original>
+			<English>Blood Bag</English>
+            <Czech>Blood Bag</Czech>
+            <Spanish>Blood Bag</Spanish>
+            <Russian>Пакет крови</Russian>
+            <German>Blutkonserve</German>
+            <French>Blood Bag</French>
+            <Italian>Blood Bag</Italian>
+            <Portuguese>Bolsa de Sangue</Portuguese>
+            <Polish>Blood Bag</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemBloodbag">			
+			<Original>Bag of blood used for administering a Blood transfusion.</Original>
+			<English>Bag of blood used for administering a Blood transfusion.</English>
+            <Czech>Bag of blood used for administering a Blood transfusion.</Czech>
+            <Spanish>Bag of blood used for administering a Blood transfusion.</Spanish>
+            <Russian>Пакет крови используется для переливания при кровопотерях.</Russian>
+            <German>Eine Blutkonserve zum Legen einer Bluttransfusion.</German>
+            <French>Bag of blood used for administering a Blood transfusion.</French>
+            <Italian>Bag of blood used for administering a Blood transfusion.</Italian>
+            <Portuguese>Saco de sangue utilizado para administrar uma transfusão de sangue.</Portuguese>
+            <Polish>Bag of blood used for administering a Blood transfusion.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemAntibiotic">			
+			<Original>Antibiotics</Original>
+			<English>Antibiotics</English>
+            <Czech>Antibiotics</Czech>
+            <Spanish>Antibiotics</Spanish>
+            <Russian>Антибиотики</Russian>
+            <German>Antibiotikum</German>
+            <French>Antibiotics</French>
+            <Italian>Antibiotics</Italian>
+            <Portuguese>Antibióticos</Portuguese>
+            <Polish>Antibiotics</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemAntibiotic">			
+			<Original>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</Original>
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>
+            <Czech>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</Czech>
+            <Spanish>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</Spanish>
+            <Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
+            <German>Azithromycin ist ein Breitbandantibiotikum, das zum Behandeln oder Vorbeugen von verschiedenen bakteriellen Infektionen verwendet werden kann.</German>
+            <French>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</French>
+            <Italian>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</Italian>
+            <Portuguese>Azitromicina é um antibiótico de largo espectro utilizado para tratar ou prevenir certas infecções bacterianas.</Portuguese>
+            <Polish>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemPainkiller">			
+			<Original>Painkillers</Original>
+			<English>Painkillers</English>
+            <Czech>Painkillers</Czech>
+            <Spanish>Painkillers</Spanish>
+            <Russian>Болеутоляющие</Russian>
+            <German>Schmerzmittel</German>
+            <French>Painkillers</French>
+            <Italian>Painkillers</Italian>
+            <Portuguese>Analgésicos</Portuguese>
+            <Polish>Painkillers</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemPainkiller">			
+			<Original>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</Original>
+			<English>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</English>
+            <Czech>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</Czech>
+            <Spanish>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</Spanish>
+            <Russian>Слабое болеутоляющие отлично подходит для подавления боли от небольших ранений.</Russian>
+            <German>Ein Schmerzmittel, das zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden verwendet werden kann.</German>
+            <French>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</French>
+            <Italian>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</Italian>
+            <Portuguese>Um analgésico moderado adequado para o uso regular de alívio da dor e inflamação causada por feridas moderadas.</Portuguese>
+            <Polish>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemEtool">			
+			<Original>Shovel</Original>
+			<English>Shovel</English>
+            <Czech>Shovel</Czech>
+            <Spanish>Shovel</Spanish>
+            <Russian>Shovel</Russian>
+            <German>Shovel</German>
+            <French>Shovel</French>
+            <Italian>Shovel</Italian>
+            <Portuguese>Pá</Portuguese>
+            <Polish>Shovel</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemEtool">			
+			<Original>Collapsible spade used together with the engineering backpack to create field defences</Original>
+			<English>Collapsible spade used together with the engineering backpack to create field defences</English>
+            <Czech>Collapsible spade used together with the engineering backpack to create field defences</Czech>
+            <Spanish>Collapsible spade used together with the engineering backpack to create field defences</Spanish>
+            <Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
+            <German>Ein Schmerzmittel, das zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden verwendet werden kann.</German>
+            <French>Collapsible spade used together with the engineering backpack to create field defences</French>
+            <Italian>Collapsible spade used together with the engineering backpack to create field defences</Italian>
+            <Portuguese>Pá desmontável usada em conjunto com a mochila de engenharia para criar defesas de campo</Portuguese>
+            <Polish>Collapsible spade used together with the engineering backpack to create field defences</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Battery_mag">			
+			<Original>Battery</Original>
+			<English>Battery</English>
+            <Czech>Battery</Czech>
+            <Spanish>Battery</Spanish>
+            <Russian>Battery</Russian>
+            <German>Battery</German>
+            <French>Battery</French>
+            <Italian>Battery</Italian>
+            <Portuguese>Bateria</Portuguese>
+            <Polish>Battery</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Battery_mag">			
+			<Original>For hand flashlight.</Original>
+			<English>For hand flashlight.</English>
+            <Czech>For hand flashlight.</Czech>
+            <Spanish>For hand flashlight.</Spanish>
+            <Russian>Элемент питания для фонаря.</Russian>
+            <German>For hand flashlight.</German>
+            <French>For hand flashlight.</French>
+            <Italian>For hand flashlight.</Italian>
+            <Portuguese>Pá desmontável usada em conjunto com a mochila de engenharia para criar defesas de campo</Portuguese>
+            <Polish>For hand flashlight.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Suitcase">			
+			<Original>Suitcase</Original>
+			<English>Suitcase</English>
+            <Czech>Suitcase</Czech>
+            <Spanish>Suitcase</Spanish>
+            <Russian>Suitcase</Russian>
+            <German>Suitcase</German>
+            <French>Suitcase</French>
+            <Italian>Suitcase</Italian>
+            <Portuguese>Maleta Vazia</Portuguese>
+            <Polish>Suitcase</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Suitcase">			
+			<Original>Suitcase</Original>
+			<English>Suitcase</English>
+            <Czech>Suitcase</Czech>
+            <Spanish>Suitcase</Spanish>
+            <Russian>Suitcase</Russian>
+            <German>Suitcase</German>
+            <French>Suitcase</French>
+            <Italian>Suitcase</Italian>
+            <Portuguese>Maleta Vazia</Portuguese>
+            <Polish>Suitcase</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_HandyCam">			
+			<Original>Handycam</Original>
+			<English>Handycam</English>
+            <Czech>Handycam</Czech>
+            <Spanish>Handycam</Spanish>
+            <Russian>Handycam</Russian>
+            <German>Handycam</German>
+            <French>Handycam</French>
+            <Italian>Handycam</Italian>
+            <Portuguese>Handycam</Portuguese>
+            <Polish>Handycam</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_HandyCam">			
+			<Original>Handycam</Original>
+			<English>Handycam</English>
+            <Czech>Handycam</Czech>
+            <Spanish>Handycam</Spanish>
+            <Russian>Handycam</Russian>
+            <German>Handycam</German>
+            <French>Handycam</French>
+            <Italian>Handycam</Italian>
+            <Portuguese>Câmera</Portuguese>
+            <Polish>Handycam</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_Laptop">			
+			<Original>Laptop</Original>
+			<English>Laptop</English>
+            <Czech>Laptop</Czech>
+            <Spanish>Laptop</Spanish>
+            <Russian>Laptop</Russian>
+            <German>Laptop</German>
+            <French>Laptop</French>
+            <Italian>Laptop</Italian>
+            <Portuguese>Laptop</Portuguese>
+            <Polish>Laptop</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_Laptop">			
+			<Original>Laptop</Original>
+			<English>Laptop</English>
+            <Czech>Laptop</Czech>
+            <Spanish>Laptop</Spanish>
+            <Russian>Laptop</Russian>
+            <German>Laptop</German>
+            <French>Laptop</French>
+            <Italian>Laptop</Italian>
+            <Portuguese>Laptop</Portuguese>
+            <Polish>Laptop</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_MobilePhone">			
+			<Original>MobilePhone</Original>
+			<English>MobilePhone</English>
+            <Czech>MobilePhone</Czech>
+            <Spanish>MobilePhone</Spanish>
+            <Russian>MobilePhone</Russian>
+            <German>MobilePhone</German>
+            <French>MobilePhone</French>
+            <Italian>MobilePhone</Italian>
+            <Portuguese>Celular</Portuguese>
+            <Polish>MobilePhone</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_MobilePhone">			
+			<Original>MobilePhone</Original>
+			<English>MobilePhone</English>
+            <Czech>MobilePhone</Czech>
+            <Spanish>MobilePhone</Spanish>
+            <Russian>MobilePhone</Russian>
+            <German>MobilePhone</German>
+            <French>MobilePhone</French>
+            <Italian>MobilePhone</Italian>
+            <Portuguese>Celular</Portuguese>
+            <Polish>MobilePhone</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_Viruz_SmartPhone">			
+			<Original>SmartPhone</Original>
+			<English>SmartPhone</English>
+            <Czech>SmartPhone</Czech>
+            <Spanish>SmartPhone</Spanish>
+            <Russian>SmartPhone</Russian>
+            <German>SmartPhone</German>
+            <French>SmartPhone</French>
+            <Italian>SmartPhone</Italian>
+            <Portuguese>SmartPhone</Portuguese>
+            <Polish>SmartPhone</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_Viruz_SmartPhone">			
+			<Original>SmartPhone</Original>
+			<English>SmartPhone</English>
+            <Czech>SmartPhone</Czech>
+            <Spanish>SmartPhone</Spanish>
+            <Russian>SmartPhone</Russian>
+            <German>SmartPhone</German>
+            <French>SmartPhone</French>
+            <Italian>SmartPhone</Italian>
+            <Portuguese>SmartPhone</Portuguese>
+            <Polish>SmartPhone</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemJerrycan">			
+			<Original>Jerry Can</Original>
+			<English>Jerry Can</English>
+            <Czech>Jerry Can</Czech>
+            <Spanish>Jerry Can</Spanish>
+            <Russian>Канистра с топливом</Russian>
+            <German>Kanister</German>
+            <French>Jerry Can</French>
+            <Italian>Jerry Can</Italian>
+            <Portuguese>Galão de Gasolina</Portuguese>
+            <Polish>Jerry Can</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemJerrycan">			
+			<Original>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Original>
+			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
+            <Czech>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Czech>
+            <Spanish>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Spanish>
+            <Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
+            <German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
+            <French>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</French>
+            <Italian>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Italian>
+            <Portuguese>20 litros gasolina que pode ser usado para veículos e reabastecimento de geradores de alimentação.</Portuguese>
+            <Polish>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemJerrycanEmpty">			
+			<Original>Jerry Can (Empty)</Original>
+			<English>Jerry Can (Empty)</English>
+            <Czech>Jerry Can (Empty)</Czech>
+            <Spanish>Jerry Can (Empty)</Spanish>
+            <Russian>Канистра (пустая</Russian>
+            <German>Leerer Kanister</German>
+            <French>Jerry Can (Empty)</French>
+            <Italian>Jerry Can (Empty)</Italian>
+            <Portuguese>Galão de Gasolina (Vazio)</Portuguese>
+            <Polish>Jerry Can (Empty)</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemJerrycanEmpty">			
+			<Original>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Original>
+			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>
+            <Czech>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Czech>
+            <Spanish>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Spanish>
+            <Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
+            <German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
+            <French>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</French>
+            <Italian>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Italian>
+            <Portuguese>Um galão vazio de 20 litros de gasolina que pode ser preenchido a partir de carros ou postos de gasolina.</Portuguese>
+            <Polish>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_PartFueltank">			
+			<Original>Fueltank Parts</Original>
+			<English>Fueltank Parts</English>
+            <Czech>Fueltank Parts</Czech>
+            <Spanish>Fueltank Parts</Spanish>
+            <Russian>Бензобак</Russian>
+            <German>Treibstofftankteile</German>
+            <French>Fueltank Parts</French>
+            <Italian>Fueltank Parts</Italian>
+            <Portuguese>Tanque de Gasolina</Portuguese>
+            <Polish>Fueltank Parts</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_PartFueltank">			
+			<Original>An old fueltank that could be used to repair a vehicle with a broken one.</Original>
+			<English>An old fueltank that could be used to repair a vehicle with a broken one.</English>
+            <Czech>An old fueltank that could be used to repair a vehicle with a broken one.</Czech>
+            <Spanish>An old fueltank that could be used to repair a vehicle with a broken one.</Spanish>
+            <Russian>Бензобак, запчасти из которого можно использовать для ремонта техники.</Russian>
+            <German>Ein alter Treibstofftank, mit dem eventuell der kaputte Tank eines Fahrzeugs repariert werden könnte.</German>
+            <French>An old fueltank that could be used to repair a vehicle with a broken one.</French>
+            <Italian>An old fueltank that could be used to repair a vehicle with a broken one.</Italian>
+            <Portuguese>Um galão vazio de 20 litros de gasolina que pode ser preenchido a partir de carros ou postos de gasolina.</Portuguese>
+            <Polish>An old fueltank that could be used to repair a vehicle with a broken one.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_PartWheel">			
+			<Original>Car Wheel</Original>
+			<English>Car Wheel</English>
+            <Czech>Car Wheel</Czech>
+            <Spanish>Car Wheel</Spanish>
+            <Russian>Колесо</Russian>
+            <German>Rad</German>
+            <French>Car Wheel</French>
+            <Italian>Car Wheel</Italian>
+            <Portuguese>Roda de Carro</Portuguese>
+            <Polish>Car Wheel</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_PartWheel">			
+			<Original>An old Car Wheel that could be used to repair a vehicle with a broken one.</Original>
+			<English>An old Car Wheel that could be used to repair a vehicle with a broken one.</English>
+            <Czech>An old Car Wheel that could be used to repair a vehicle with a broken one.</Czech>
+            <Spanish>An old Car Wheel that could be used to repair a vehicle with a broken one.</Spanish>
+            <Russian>Колесо, которое можно использовать для починки одного колеса на автомобиле.</Russian>
+            <German>Ein altes Rad, mit dem eventuell ein kaputtes Rad eines Fahrzeugs repariert werden könnte.</German>
+            <French>An old Car Wheel that could be used to repair a vehicle with a broken one.</French>
+            <Italian>An old Car Wheel that could be used to repair a vehicle with a broken one.</Italian>
+            <Portuguese>Uma roda de carro velha que poderia ser usada para reparar um veículo com uma roda quebrada.</Portuguese>
+            <Polish>An old Car Wheel that could be used to repair a vehicle with a broken one.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_PartGeneric">			
+			<Original>Scrap Metal</Original>
+			<English>Scrap Metal</English>
+            <Czech>Scrap Metal</Czech>
+            <Spanish>Scrap Metal</Spanish>
+            <Russian>Запчасти</Russian>
+            <German>Metallteile</German>
+            <French>Scrap Metal</French>
+            <Italian>Scrap Metal</Italian>
+            <Portuguese>Ferro Velho</Portuguese>
+            <Polish>Scrap Metal</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_PartGeneric">			
+			<Original>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</Original>
+			<English>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</English>
+            <Czech>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</Czech>
+            <Spanish>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</Spanish>
+            <Russian>Запчасти используются для починки снаряжения или корпуса техники.</Russian>
+            <German>Metallteile und verschiedene mechanische Ersatzteile. Nützlich beim Reparieren von Fahrzeugen und Ausrüstung.</German>
+            <French>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</French>
+            <Italian>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</Italian>
+            <Portuguese>Sucata e peças sobressalentes mecânicas. Útil para a reparação de veículos e equipamentos.</Portuguese>
+            <Polish>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_PartEngine">			
+			<Original>Engine Parts</Original>
+			<English>Engine Parts</English>
+            <Czech>Engine Parts</Czech>
+            <Spanish>Engine Parts</Spanish>
+            <Russian>Двигатель</Russian>
+            <German>Motorteile</German>
+            <French>Engine Parts</French>
+            <Italian>Engine Parts</Italian>
+            <Portuguese>Peças de Motor</Portuguese>
+            <Polish>Engine Parts</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_PartEngine">			
+			<Original>Engine components with oil and lubricant. Everything you would need to repair an engine.</Original>
+			<English>Engine components with oil and lubricant. Everything you would need to repair an engine.</English>
+            <Czech>Engine components with oil and lubricant. Everything you would need to repair an engine.</Czech>
+            <Spanish>Engine components with oil and lubricant. Everything you would need to repair an engine.</Spanish>
+            <Russian>Двигатель, запчасти из которого используются для ремонта двигателей в технике.</Russian>
+            <German>Motorteile mit Öl und Schmiere. Alles, was man zum Reparieren eines Motors braucht.</German>
+            <French>Engine components with oil and lubricant. Everything you would need to repair an engine.</French>
+            <Italian>Engine components with oil and lubricant. Everything you would need to repair an engine.</Italian>
+            <Portuguese>Componentes do motor com óleo e lubrificante. Tudo o que você precisa para reparar um motor.</Portuguese>
+            <Polish>Engine components with oil and lubricant. Everything you would need to repair an engine.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_PartWoodPile">			
+			<Original>Wood Pile</Original>
+			<English>Wood Pile</English>
+            <Czech>Wood Pile</Czech>
+            <Spanish>Wood Pile</Spanish>
+            <Russian>Дрова</Russian>
+            <German>Holzstapel</German>
+            <French>Wood Pile</French>
+            <Italian>Wood Pile</Italian>
+            <Portuguese>Pilha de Madeira</Portuguese>
+            <Polish>Wood Pile</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_PartWoodPile">			
+			<Original>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</Original>
+			<English>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</English>
+            <Czech>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</Czech>
+            <Spanish>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</Spanish>
+            <Russian>Кучка дров, идеально подойдет, чтобы развести костер.</Russian>
+            <German>Ein kleiner Stapel frisch geschlagenes Holz, dass neben einiger anderer Dingen dazu verwendet werden kann ein Feuer zu machen.</German>
+            <French>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</French>
+            <Italian>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</Italian>
+            <Portuguese>Uma pilha pequena da madeira recentemente desbastada que pode ser usada para fazer uma chaminé e várias outras coisas.</Portuguese>
+            <Polish>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_PartVRotor">			
+			<Original>Main Rotor Assembly</Original>
+			<English>Main Rotor Assembly</English>
+            <Czech>Main Rotor Assembly</Czech>
+            <Spanish>Main Rotor Assembly</Spanish>
+            <Russian>Дрова</Russian>
+            <German>Holzstapel</German>
+            <French>Main Rotor Assembly</French>
+            <Italian>Main Rotor Assembly</Italian>
+            <Portuguese>Conjunto do Rotor Principal</Portuguese>
+            <Polish>Main Rotor Assembly</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_PartVRotor">			
+			<Original>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</Original>
+			<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</English>
+            <Czech>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</Czech>
+            <Spanish>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</Spanish>
+            <Russian>Кучка дров, идеально подойдет, чтобы развести костер.</Russian>
+            <German>Ein kleiner Stapel frisch geschlagenes Holz, dass neben einiger anderer Dingen dazu verwendet werden kann ein Feuer zu machen.</German>
+            <French>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</French>
+            <Italian>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</Italian>
+            <Portuguese>Hidráulica do eixo do rotor para um helicóptero. Pode ser usado para substituir eixos de rotor quebrado em outros helicópteros.</Portuguese>
+            <Polish>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_PartGlass">			
+			<Original>Windscreen Glass</Original>
+			<English>Windscreen Glass</English>
+            <Czech>Windscreen Glass</Czech>
+            <Spanish>Windscreen Glass</Spanish>
+            <Russian>Автомобильное стекло</Russian>
+            <German>Autoglas</German>
+            <French>Windscreen Glass</French> 
+            <Italian>Windscreen Glass</Italian>
+            <Portuguese>Vidro do Pára-brisas</Portuguese>
+            <Polish>Windscreen Glass</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_PartGlass">			
+			<Original>Brand new auto glass. Could be used to repair glass on a vehicle.</Original>
+			<English>Brand new auto glass. Could be used to repair glass on a vehicle.</English>
+            <Czech>Brand new auto glass. Could be used to repair glass on a vehicle.</Czech>
+            <Spanish>Brand new auto glass. Could be used to repair glass on a vehicle.</Spanish>
+            <Russian>Новое автомобильное стекло в упаковке. Его можно установить на технику.</Russian>
+            <German>Gut erhaltenes Autoglas. Könnte zum Reparieren von Glas an einem Fahrzeug verwendet werden.</German>
+            <French>Brand new auto glass. Could be used to repair glass on a vehicle.</French>
+            <Italian>Brand new auto glass. Could be used to repair glass on a vehicle.</Italian>
+            <Portuguese>Caixa de Vidro Novo. Poderia ser usado para reparar o vidro em um veículo.</Portuguese>
+            <Polish>Brand new auto glass. Could be used to repair glass on a vehicle.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemGenerator">			
+			<Original>Portable Power Generator</Original>
+			<English>Portable Power Generator</English>
+            <Czech>Portable Power Generator</Czech>
+            <Spanish>Portable Power Generator</Spanish>
+            <Russian>Генератор </Russian>
+            <German>Stromerzeuger</German>
+            <French>Portable Power Generator</French> 
+            <Italian>Portable Power Generator</Italian>
+            <Portuguese>Gerador Energia Portatil</Portuguese>
+            <Polish>Portable Power Generator</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemGenerator">			
+			<Original>Portable Power Generator</Original>
+			<English>Portable Power Generator</English>
+            <Czech>Portable Power Generator</Czech>
+            <Spanish>Portable Power Generator</Spanish>
+            <Russian>Генератор </Russian>
+            <German>Stromerzeuger</German>
+            <French>Portable Power Generator</French> 
+            <Italian>Portable Power Generator</Italian>
+            <Portuguese>Gerador Energia Portatil</Portuguese>
+            <Polish>Portable Power Generator</Polish>
+		</Key>
+		
+		<Key ID="STR_ITEM_DESC_ItemCamoNetBig">			
+			<Original>A camping tent that can be pitched, allowing you extended storage safe from others.</Original>
+			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
+            <Czech>Item to set up your tent</Czech>
+            <Spanish>Item to set up your tent</Spanish>
+            <Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
+            <German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
+            <French>A camping tent that can be pitched, allowing you extended storage safe from others.</French>
+            <Italian>A camping tent that can be pitched, allowing you extended storage safe from others.</Italian>
+            <Portuguese>Uma barraca que pode ser colocada, permitindo que você permaneça seguro de outro player.</Portuguese>
+            <Polish>A camping tent that can be pitched, allowing you extended storage safe from others.</Polish>
+		</Key>
+		
+		<Key ID="STR_ITEM_NAME_itemCampingLight">			
+			<Original>A camping tent that can be pitched, allowing you extended storage safe from others.</Original>
+			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
+            <Czech>Item to set up your tent</Czech>
+            <Spanish>Item to set up your tent</Spanish>
+            <Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
+            <German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
+            <French>A camping tent that can be pitched, allowing you extended storage safe from others.</French>
+            <Italian>A camping tent that can be pitched, allowing you extended storage safe from others.</Italian>
+            <Portuguese>Uma barraca que pode ser colocada, permitindo que você permaneça seguro de outro player.</Portuguese>
+            <Polish>A camping tent that can be pitched, allowing you extended storage safe from others.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemWaterbottle">			
+			<Original>Water Bottle</Original>
+			<English>Water Bottle</English>
+            <Czech>Water Bottle</Czech>
+            <Spanish>Water Bottle</Spanish>
+            <Russian>Фляжка с водой</Russian>
+            <German>Stromerzeuger</German>
+            <French>Water Bottle</French> 
+            <Italian>Water Bottle</Italian>
+            <Portuguese>Garrafa de Água</Portuguese>
+            <Polish>Water Bottle</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemWaterbottle">			
+			<Original>A bottle of water that has been filled and can be consumed.</Original>
+			<English>A bottle of water that has been filled and can be consumed.</English>
+            <Czech>A bottle of water that has been filled and can be consumed.</Czech>
+            <Spanish>A bottle of water that has been filled and can be consumed.</Spanish>
+            <Russian>Фляжка с водой для питья.</Russian>
+            <German>Eine Flasche, gefüllt mit Trinkwasser.</German>
+            <French>A bottle of water that has been filled and can be consumed.</French> 
+            <Italian>A bottle of water that has been filled and can be consumed.</Italian>
+            <Portuguese>Uma garrafa de água que foi preenchida e pode ser consumida.</Portuguese>
+            <Polish>A bottle of water that has been filled and can be consumed.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemWaterbottleUnfilled">			
+			<Original>Water Bottle (Empty)</Original>
+			<English>Water Bottle (Empty)</English>
+            <Czech>Water Bottle (Empty)</Czech>
+            <Spanish>Water Bottle (Empty)</Spanish>
+            <Russian>Фляжка с водой</Russian>
+            <German>Stromerzeuger</German>
+            <French>Water Bottle (Empty)</French> 
+            <Italian>Water Bottle (Empty)</Italian>
+            <Portuguese>Garrafa de Água (Vazia)</Portuguese>
+            <Polish>Water Bottle (Empty)</Polish>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemWaterbottleUnfilled">			
+			<Original>A bottle of water that is Empty. It might be useful to fill it with water again.</Original>
+			<English>A bottle of water that is Empty. It might be useful to fill it with water again.</English>
+            <Czech>A bottle of water that is Empty. It might be useful to fill it with water again.</Czech>
+            <Spanish>A bottle of water that is Empty. It might be useful to fill it with water again.</Spanish>
+            <Russian>Пустая фляжка, в которую можно набрать воду.</Russian>
+            <German>Eine leere Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
+            <French>A bottle of water that is Empty. It might be useful to fill it with water again.</French> 
+            <Italian>A bottle of water that is Empty. It might be useful to fill it with water again.</Italian>
+            <Portuguese>Uma garrafa de água que está vazia. Pode ser útil se você preenchê-la com água novamente.</Portuguese>
+            <Polish>A bottle of water that is Empty. It might be useful to fill it with water again.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemWaterbottleBoiled">						
+			<Original>Water Bottle (Boiled)</Original>						
+			<English>Water Bottle (Boiled)</English>
+			<Czech>Water Bottle (Empty)</Czech>		
+			<Spanish>Cantimplora con Agua Hervida</Spanish>	
+			<Russian>Фляжка кипяченой воды</Russian>			
+			<German>Wasserflasche (Abgekocht)</German>
+			<French>Water Bottle (Boiled)</French>
+		    <Italian>Water Bottle (Empty)</Italian>
+            <Portuguese>Garrafa de água (Fervida)</Portuguese>
+            <Polish>Water Bottle (Empty)</Polish>
+		</Key>						
+		<Key ID="STR_ITEM_DESC_ItemWaterbottleBoiled">						
+			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
+			<English>A bottle of boiled water that has been filled and can be consumed.</English>	
+			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
+			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
+			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
+			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
+			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
+			<Italian>A bottle of boiled water that has been filled and can be consumed.</Italian>
+			<Portuguese>Uma garrafa de água fervida que depois que esfriar pode ser consumido.</Portuguese>
+            <Polish>A bottle of boiled water that has been filled and can be consumed.</Polish>
+		</Key>
+		<Key ID="STR_ITEM_NAME_FoodCanWBBeansEmpty">						
+			<Original>Empty can</Original>						
+			<English>Empty can)</English>
+			<Czech>Empty can</Czech>		
+			<Spanish>Empty can</Spanish>	
+			<Russian>Empty can</Russian>			
+			<German>Empty can</German>
+			<French>Empty can</French>
+		    <Italian>Empty can</Italian>
+            <Portuguese>Lata Vazia</Portuguese>
+            <Polish>Empty can</Polish>
+		</Key>						
+		<Key ID="STR_ITEM_DESC_FoodCanWBBeansEmpty">						
+			<Original>Empty can</Original>						
+			<English>Empty can)</English>
+			<Czech>Empty can</Czech>		
+			<Spanish>Empty can</Spanish>	
+			<Russian>Empty can</Russian>			
+			<German>Empty can</German>
+			<French>Empty can</French>
+		    <Italian>Empty can</Italian>
+            <Portuguese>Lata Vazia</Portuguese>
+            <Polish>Empty can</Polish>
+		</Key>
+	
+	
 		<Key ID="STR_ITEM_NAME_BEARTRAP">
 			<English>Bear Trap</English>
 			<Portuguese>Armadilha de Urso</Portuguese>
@@ -1824,26 +3236,6 @@
 			<Spanish>Una lubina cocinada.</Spanish>
 			<Czech>Upečený Morčák mořský, který vám přidá až 1400 krve.</Czech>
 			<French>Un Bar cuit (valeur:1400).</French>
-		</Key>
-		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">						
-			<Original>Water Bottle (Boiled)</Original>						
-			<English>Water Bottle (Boiled)</English>						
-			<German>Wasserflasche (Abgekocht)</German>
-			<Russian>Фляжка кипяченой воды</Russian>
-			<Spanish>Cantimplora con Agua Hervida</Spanish>
-			<Dutch>Water Bottle (Boiled)</Dutch>
-			<French>Bouteille d'eau (Bouillie)</French>
-			<Czech>Láhev vody (převařená)</Czech>
-		</Key>						
-		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_DESC">						
-			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
-			<English>A bottle of boiled water that has been filled and can be consumed.</English>	
-			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
-			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
-			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
-			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
-			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
-			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">						
 			<Original>Soda</Original>
