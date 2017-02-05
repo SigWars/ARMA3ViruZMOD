@@ -6,12 +6,15 @@ Autor: SigWar
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 ********************************************************************************************************************/
-"extDB3" callExtension "9:ADD_DATABASE:Database"; 
+/*"extDB3" callExtension "9:ADD_DATABASE:Database"; 
 "extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL:SQL";
-"extDB3" callExtension "9:LOCK";
-
+"extDB3" callExtension "9:LOCK";*/
+					
 viruz_NotificationTips = getArray(ConfigFile >> "viruzConfigs" >> "NotificationTips");
 BIS_Effects_Burn =						{};
+
+viruz_startDB =							compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_startDB.sqf";
+viruz_asyncCall =						compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_asyncCall.sqf";
 server_playerLogin =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_playerLogin.sqf";
 server_playerSetup =					compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_playerSetup.sqf";
 server_onPlayerDisconnect = 			compile preprocessFileLineNumbers "\z\addons\viruz_server\compile\server_onPlayerDisconnect.sqf";
@@ -231,7 +234,7 @@ vzserver_object_maintenance = {
 vzserver_addGroup = {
 params ["_clanID","_clanName","_clanLeader","_groupRank","_clanMembers"];
 private ["_query","_result"];
-_query = format["0:SQL:INSERT INTO viruz_group (GroupID, GroupName, Owner, GroupRank, GroupMembers) VALUES ('""%1""', '""%2""', '""%3""', %4, '%5')",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers];
+_query = format["0:%6:INSERT INTO viruz_group (GroupID, GroupName, Owner, GroupRank, GroupMembers) VALUES ('""%1""', '""%2""', '""%3""', %4, '%5')",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers,(call extDB_SQL_CUSTOM_ID)];
 _result = _query call vzserver_SyncRequest;
 diag_log str _result;
 };
@@ -239,15 +242,15 @@ diag_log str _result;
 vzserver_updateGroup = {
 params ["_clanID","_clanMembers"];
 private ["_query"];
-_query = format["1:SQL:UPDATE viruz_group SET GroupMembers = '%2' WHERE GroupID = '""%1""'",_clanID,_clanMembers];
-_query call vzserver_AsyncRequest;
+_query = format["UPDATE viruz_group SET GroupMembers = '%2' WHERE GroupID = '""%1""'",_clanID,_clanMembers];
+[_query,1] call viruz_asyncCall;
 };
 
 vzserver_deleteGroup = {
 params ["_clanID"];
 private ["_query"];
-_query = format["1:SQL:DELETE FROM viruz_group WHERE GroupID = '""%1""'",_clanID];
-_query call vzserver_AsyncRequest;
+_query = format["DELETE FROM viruz_group WHERE GroupID = '""%1""'",_clanID];
+[_query,1] call viruz_asyncCall;
 };
 
 vzserver_updateGroupFull = {
@@ -256,13 +259,13 @@ vzserver_updateGroupFull = {
 	
 	if (count _this > 5)then
 	{		
-		_query = format["1:SQL:UPDATE viruz_group SET GroupID = '""%1""', GroupName = '""%2""', Owner = '""%3""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%6""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers,_oldClanID];
-		_query call vzserver_AsyncRequest;
+		_query = format["UPDATE viruz_group SET GroupID = '""%1""', GroupName = '""%2""', Owner = '""%3""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%6""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers,_oldClanID];
+		[_query,1] call viruz_asyncCall;
 	}
 	else
 	{ 
-		_query = format["1:SQL:UPDATE viruz_group SET GroupID = '""%1""', GroupName = '""%2""', Owner = '""%3""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%1""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers];
-		_query call vzserver_AsyncRequest;
+		_query = format["UPDATE viruz_group SET GroupID = '""%1""', GroupName = '""%2""', Owner = '""%3""', GroupRank = '%4',GroupMembers = '%5' WHERE GroupID = '""%1""'",_clanID,_clanName,_clanLeader,_groupRank,_clanMembers];
+		[_query,1] call viruz_asyncCall;
 	};
 };
 
@@ -609,5 +612,6 @@ VIRUZ_GlobalTextBroadcast = {
 	} forEach viruz_NotificationTips;
 };
 
+["Database","SQL","SQL"] call viruz_startDB;
 currentDate = call compile ("real_date" callExtension "");
 publicVariable "currentDate";

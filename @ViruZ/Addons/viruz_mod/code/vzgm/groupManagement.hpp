@@ -279,7 +279,7 @@ class GroupManagement {
 			w = 0.1;
 			h = 0.0600256;
 		};
-		class GroupLevelBox: RscCombo
+		class GroupLevelBox: W_RscCombo
 		{
 			idc = 700010;
 

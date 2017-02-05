@@ -39,7 +39,7 @@ class RscButtonMenu;
 class RscShortcutButton;
 class RscShortcutButtonMain;
 class RscListBox;
-//class RscCombo;
+class RscCombo;
 class RscButtonMenuOK;
 class RscActivePicture;
 class HScrollbar; //ui

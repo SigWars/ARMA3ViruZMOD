@@ -223,7 +223,8 @@ class W_RscButton : W_RscButtonBase {
 	};
 };
 
-class RscCombo {
+class W_RscCombo : RscCombo
+{
 	idc = -1;
 	type = 4;
 	style = 1;
