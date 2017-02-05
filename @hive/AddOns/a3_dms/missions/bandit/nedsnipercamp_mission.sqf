@@ -112,7 +112,7 @@ _msgStart = ['#FFFF00',"Snipers have set up a training camp, go steal their rifl
 if (_difficulty isEqualTo "hardcore") then
 {
 	_pinCode = (1000 +(round (random 8999)));
-	_vehicle = ["Exile_Car_Ural_Covered_Military",[(_pos select 0) +17.2, (_pos select 1) -0],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+	_vehicle = ["TRASH_Car_Ural_Covered_Military",[(_pos select 0) +17.2, (_pos select 1) -0],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 	_msgWIN = ['#0080ff',format ["Convicts have killed the snipers and stolen their rifles,the truck code is %1...",_pinCode]];
 	_group =
 	[
@@ -125,7 +125,7 @@ if (_difficulty isEqualTo "hardcore") then
 }
 else
 {
-	_vehicle = ["Exile_Car_Ural_Covered_Military",[(_pos select 0) +17.2, (_pos select 1) -0,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
+	_vehicle = ["TRASH_Car_Ural_Covered_Military",[(_pos select 0) +17.2, (_pos select 1) -0,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
 	_msgWIN = ['#0080ff',"Convicts have killed the snipers and stolen their rifles"];
 	_group =
 	[

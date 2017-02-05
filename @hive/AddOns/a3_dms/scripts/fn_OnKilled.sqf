@@ -133,7 +133,7 @@ if (!isNull _av) then
 			_av setDamage 1;
 			_av setVariable ["DMSBot",true,true];
 
-			[if (_av isKindOf "Air") then {30} else {5}, {_this enableSimulationGlobal false}, _av, false, false] call ExileServer_system_thread_addTask;
+			//[if (_av isKindOf "Air") then {30} else {5}, {_this enableSimulationGlobal false}, _av, false, false] call TRASHServer_system_thread_addTask;
 
 
 			if (DMS_DEBUG) then
@@ -152,12 +152,12 @@ if (!isNull _av) then
 				[_av, 1] remoteExecCall ["lock", _av];
 			};
 
-			_av call ExileServer_system_simulationMonitor_addVehicle;
+			_av call TRASHServer_system_simulationMonitor_addVehicle;
 
-			_av setVariable ["ExileMoney",0,true];
-			_av setVariable ["ExileIsPersistent", false];
-			_av addMPEventHandler ["MPKilled", { if (isServer) then {_this call ExileServer_object_vehicle_event_onMPKilled;};}];
-			_av addEventHandler ["GetIn", {_this call ExileServer_object_vehicle_event_onGetIn}];
+			_av setVariable ["TRASHMoney",0,true];
+			_av setVariable ["TRASHIsPersistent", false];
+			_av addMPEventHandler ["MPKilled", { if (isServer) then {_this call TRASHServer_object_vehicle_event_onMPKilled;};}];
+			_av addEventHandler ["GetIn", {_this call TRASHServer_object_vehicle_event_onGetIn}];
 
 			if (!isNil "AVS_Version") then
 			{
@@ -368,6 +368,6 @@ if (isPlayer _killer) then
 [_playerObj, _unit, _side, _type, _roadKilled] call DMS_fnc_PlayerAwardOnAIKill;
 
 
-// Let Exile handle the AI Body cleanup.
+// Let TRASH handle the AI Body cleanup.
 _unit setVariable ["DMSBot",true,true]; //DMS_BOT
 _unit setVariable ["DMS_KillerObj",[_playerObj,_killer] select (isNull _playerObj)];

@@ -74,7 +74,7 @@ switch (_difficulty) do
 		_crate_weapons 		= (1 + (round (random 1)));
 		_crate_items 		= (4 + (round (random 4)));
 		_crate_backpacks 	= (1 + (round (random 1)));
-		_vehicle = ["Exile_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30]] call DMS_fnc_SpawnNonPersistentVehicle;
+		_vehicle = ["TRASH_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30]] call DMS_fnc_SpawnNonPersistentVehicle;
 	};
 
 	case "moderate":
@@ -86,12 +86,12 @@ switch (_difficulty) do
 		// Do coin toss calculation for vehicle and message
 		if ((round (random 1)) isEqualTo 0) then
 		{
-			_vehicle = ["Exile_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30]] call DMS_fnc_SpawnNonPersistentVehicle;
+			_vehicle = ["TRASH_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30]] call DMS_fnc_SpawnNonPersistentVehicle;
 			_msgWIN = ['#0080ff',"Convicts killed everyone and made off with the Hunter"];
 		}
 		else
 		{
-			_vehicle = ["Exile_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+			_vehicle = ["TRASH_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 			_msgWIN = ['#0080ff',format ["Convicts killed everyone and made off with the Hunter, entry code %1...",_pinCode]];
 		};
 	};
@@ -103,7 +103,7 @@ switch (_difficulty) do
 		_crate_weapons 		= (4 + (round (random 1)));
 		_crate_items 		= (6 + (round (random 6)));
 		_crate_backpacks 	= (3 + (round (random 1)));
-		_vehicle = ["Exile_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+		_vehicle = ["TRASH_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 	};
 
 	//case "hardcore":
@@ -114,7 +114,7 @@ switch (_difficulty) do
 		_crate_weapons 		= (4 + (round (random 1)));
 		_crate_items 		= (8 + (round (random 8)));
 		_crate_backpacks 	= (3 + (round (random 1)));
-		_vehicle = ["Exile_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+		_vehicle = ["TRASH_Car_Hunter",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 	};
 };
 

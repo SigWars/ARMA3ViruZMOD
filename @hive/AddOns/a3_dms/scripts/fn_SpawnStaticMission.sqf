@@ -47,14 +47,14 @@ try
 	{
 		DMS_MissionCount = DMS_MissionCount - 1;
 
-		if (DMS_SpawnMissions_Scheduled) then
+		/*if (DMS_SpawnMissions_Scheduled) then
 		{
-			[60, DMS_fnc_SpawnStaticMission, [_missionType], false] call ExileServer_system_thread_addTask;
+			[60, DMS_fnc_SpawnStaticMission, [_missionType], false] call TRASHServer_system_thread_addTask;
 		}
 		else
 		{
-			[60, {[_this, DMS_fnc_SpawnStaticMission] execFSM "exile_server\fsm\call.fsm";}, [_missionType], false] call ExileServer_system_thread_addTask;
-		};
+			[60, {[_this, DMS_fnc_SpawnStaticMission] execFSM "TRASH_server\fsm\call.fsm";}, [_missionType], false] call TRASHServer_system_thread_addTask;
+		};*/
 
 		if (DMS_DEBUG) then
 		{

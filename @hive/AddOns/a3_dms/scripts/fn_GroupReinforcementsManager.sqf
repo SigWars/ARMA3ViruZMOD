@@ -25,7 +25,7 @@
 		_side,							// STRING: The "side" that the AI are on. Currently only "bandit" is supported.
 		_monitorType,					// STRING: How the AI group should be managed. Supported types: "playernear", "maintain", "reinforce", "increasing_resistance", "armed_vehicle"
 		_monitorParams,					// ARRAY: Parameters specific to the _monitorType. See below.
-		_customGearSet					// (OPTIONAL) ARRAY: The custom gear set of the AI. Refer to documentation of fn_SpawnAISoldier.sqf for more info: https://github.com/Defent/DMS_Exile/blob/master/%40ExileServer/addons/a3_dms/scripts/fn_SpawnAISoldier.sqf
+		_customGearSet					// (OPTIONAL) ARRAY: The custom gear set of the AI. Refer to documentation of fn_SpawnAISoldier.sqf for more info: https://github.com/Defent/DMS_TRASH/blob/master/%40TRASHServer/addons/a3_dms/scripts/fn_SpawnAISoldier.sqf
 	] call DMS_fnc_GroupReinforcementsManager;
 
 	About "_monitorType" types:
@@ -587,7 +587,7 @@ if (!_reinforcementsDepleted && {(diag_tickTime-_lastUpdated)>_updateDelay}) the
 		else
 		{
 			// Shuffle the list.
-			private _spawningLocations = _spawnLocations call ExileClient_util_array_shuffle;
+			private _spawningLocations = _spawnLocations call TRASHClient_util_array_shuffle;
 			_spawnPos = _spawningLocations select 0;				// Define it for spawning flares
 			_spawningLocations_count = count _spawningLocations;
 

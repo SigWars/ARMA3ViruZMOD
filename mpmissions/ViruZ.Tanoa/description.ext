@@ -68,6 +68,7 @@ class CfgDebriefing
 #include "Configs\CfgCrafting\CfgCrafting.hpp" 	// Craft Recipes  //precisa adicionar na vehicles allowed do server caso não seja magazine
 #include "Configs\CfgCrafting\CfgBuild.hpp" 	// Build requeriments
 #include "Configs\CfgMap\Tanoa.hpp"			// Arvores / Metal / Pedra etc..
+#include "Configs\CfgMap\CfgTownGenerator.hpp" // Cosmetic objects
 #include "snap_build\points.hpp"
 
 

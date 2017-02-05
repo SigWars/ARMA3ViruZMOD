@@ -2,7 +2,7 @@
 	DMS_fnc_AddWeapon
 	created by eraser1 - based off of BIS_fnc_AddWeapon
 
-    https://github.com/Defent/DMS_Exile/wiki/DMS_fnc_AddWeapon
+    https://github.com/Defent/DMS_TRASH/wiki/DMS_fnc_AddWeapon
 
 	Description:
 	Add a weapon to a unit with the right magazines. Magazine class is obtained from the weapon's config.

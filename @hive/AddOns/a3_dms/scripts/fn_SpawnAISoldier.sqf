@@ -18,7 +18,7 @@
 	[
 		_weapon,				// String | EG: "LMG_Zafir_F"
 		_weaponAttachments,		// Array of strings | EG: ["optic_dms","bipod_03_F_blk"]
-		_magazines,				// Array of arrays | EG: [["150Rnd_762x54_Box",2],["16Rnd_9x21_Mag",3],["Exile_Item_InstaDoc",3]]
+		_magazines,				// Array of arrays | EG: [["150Rnd_762x54_Box",2],["16Rnd_9x21_Mag",3],["TRASH_Item_InstaDoc",3]]
 		_pistol,				// String | EG: "hgun_Pistol_heavy_01_snds_F"
 		_pistolAttachments,		// Array of strings | EG: ["optic_MRD","muzzle_snds_acp"]
 		_assignedItems,			// Array of strings | EG: ["Rangefinder","ItemGPS","NVGoggles"]
@@ -166,7 +166,7 @@ if (_customGearSet isEqualTo []) then
 	private _randItemCount = missionNamespace getVariable [format ["DMS_%1_RandItemCount",_class],0];
 	if (_randItemCount>0) then
 	{
-		private _randItems = missionNamespace getVariable [format ["DMS_%1_RandItems",_class],["Exile_Item_PlasticBottleFreshWater"]];
+		private _randItems = missionNamespace getVariable [format ["DMS_%1_RandItems",_class],["TRASH_Item_PlasticBottleFreshWater"]];
 		for "_i" from 1 to _randItemCount do
 		{
 			_unit addItem (selectRandom _randItems);
@@ -318,7 +318,7 @@ else
 
 
 	// Add magazines and items about half a second after spawning so that backpack inventory can be used reliably. Thanks to second_coming for reporting this issue.
-	[
+	/*[
 		0.5,
 		{
 			params
@@ -350,7 +350,7 @@ else
 		[_unit,_magazines,_assignedItems],
 		false,
 		false
-	] call ExileServer_system_thread_addTask;
+	] call TRASHServer_system_thread_addTask;*/
 };
 
 {
@@ -444,7 +444,7 @@ private _AIMoney =
 
 _unit setVariable
 [
-	"ExileMoney",
+	"TRASHMoney",
 	_AIMoney,
 	true
 ];

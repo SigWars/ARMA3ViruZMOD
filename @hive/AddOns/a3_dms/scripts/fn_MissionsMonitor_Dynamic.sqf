@@ -145,25 +145,25 @@
 				_x enableRopeAttach true;
 				_x enableSimulationGlobal true;
 
-				if (_x getVariable ["ExileIsPersistent", false]) then
+				if (_x getVariable ["TRASHIsPersistent", false]) then
 				{
 					_x lock 0;
-					_x setVariable ["ExileIsLocked",0];
+					_x setVariable ["TRASHIsLocked",0];
 
-					_x setVariable ["ExileLastLockToggleAt", time];
-					_x setVariable ["ExileAccessDenied", false];
-					_x setVariable ["ExileAccessDeniedExpiresAt", 0];
+					_x setVariable ["TRASHLastLockToggleAt", time];
+					_x setVariable ["TRASHAccessDenied", false];
+					_x setVariable ["TRASHAccessDeniedExpiresAt", 0];
 
 					// NOW we save the vehicle in the database, since we know we're not deleting this vehicle.
-					_x call ExileServer_object_vehicle_database_insert;
-					_x call ExileServer_object_vehicle_database_update;
+					_x call TRASHServer_object_vehicle_database_insert;
+					_x call TRASHServer_object_vehicle_database_update;
 				}
 				else
 				{
 					_x lock 1;
 				};
 
-				//_x call ExileServer_system_simulationMonitor_addVehicle;
+				//_x call TRASHServer_system_simulationMonitor_addVehicle;
 			} forEach _vehs;
 
 			{

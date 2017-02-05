@@ -139,33 +139,33 @@ _PossibleVehicleClass =
 	if (_difficulty isEqualTo "hardcore") then
 	{
 		[
-			"Exile_Car_SUVXL_Black",
-			"Exile_Car_Hatchback_Sport_Red",
-			"Exile_Car_Hatchback_Sport_Blue",
-			"Exile_Car_Hatchback_Sport_Orange",
-			"Exile_Car_Hatchback_Sport_White",
-			"Exile_Car_Hatchback_Sport_Beige",
-			"Exile_Car_Hatchback_Sport_Green",
-			"Exile_Car_Lada_Green",
-			"Exile_Car_Lada_Red",
-			"Exile_Car_Lada_White",
-			"Exile_Car_Lada_Hipster",
-			"Exile_Car_Volha_Blue",
-			"Exile_Car_Volha_White",
-			"Exile_Car_Volha_Black"
+			"TRASH_Car_SUVXL_Black",
+			"TRASH_Car_Hatchback_Sport_Red",
+			"TRASH_Car_Hatchback_Sport_Blue",
+			"TRASH_Car_Hatchback_Sport_Orange",
+			"TRASH_Car_Hatchback_Sport_White",
+			"TRASH_Car_Hatchback_Sport_Beige",
+			"TRASH_Car_Hatchback_Sport_Green",
+			"TRASH_Car_Lada_Green",
+			"TRASH_Car_Lada_Red",
+			"TRASH_Car_Lada_White",
+			"TRASH_Car_Lada_Hipster",
+			"TRASH_Car_Volha_Blue",
+			"TRASH_Car_Volha_White",
+			"TRASH_Car_Volha_Black"
 		];
 	}
 	else
 	{
 		[
-			"Exile_Car_Lada_Green",
-			"Exile_Car_Lada_Taxi",
-			"Exile_Car_Lada_Red",
-			"Exile_Car_Lada_White",
-			"Exile_Car_Lada_Hipster",
-			"Exile_Car_Volha_Blue",
-			"Exile_Car_Volha_White",
-			"Exile_Car_Volha_Black"
+			"TRASH_Car_Lada_Green",
+			"TRASH_Car_Lada_Taxi",
+			"TRASH_Car_Lada_Red",
+			"TRASH_Car_Lada_White",
+			"TRASH_Car_Lada_Hipster",
+			"TRASH_Car_Volha_Blue",
+			"TRASH_Car_Volha_White",
+			"TRASH_Car_Volha_Black"
 		];
 	};
 

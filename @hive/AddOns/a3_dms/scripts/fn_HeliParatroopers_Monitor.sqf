@@ -2,7 +2,7 @@
     DMS_fnc_HeliParatroopers_Monitor
     Created by eraser1
 
-    Used in Exile's thread system.
+    Used in TRASH's thread system.
     Every heli to be used as paratroopers has an index in "DMS_HeliParatrooper_Arr".
     Every index has the values:
     [

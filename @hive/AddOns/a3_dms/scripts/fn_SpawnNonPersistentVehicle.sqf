@@ -2,8 +2,8 @@
 	DMS_fnc_SpawnNonPersistentVehicle
 
 	Spawns a vehicle, but it isn't saved to database by this function.
-	This function takes into consideration Exile config settings for enabling/disabling Night Vision and Thermal Equipment on a vehicle.
-	It will also apply all regular Exile EventHandlers, as well as an additional "RopeAttach" EventHandler that will enable simulation on a vehicle that is about to be lifted to prevent issues. (Only for helis)
+	This function takes into consideration TRASH config settings for enabling/disabling Night Vision and Thermal Equipment on a vehicle.
+	It will also apply all regular TRASH EventHandlers, as well as an additional "RopeAttach" EventHandler that will enable simulation on a vehicle that is about to be lifted to prevent issues. (Only for helis)
 
 	The vehicle is LOCKED, has godmode, disabled simulation, and is not able to be slingloaded on spawn.
 
@@ -22,7 +22,7 @@
 	Returns the vehicle object of the created vehicle.
 
 	EXAMPLE:
-	_exampleVeh = ['Exile_Chopper_Hummingbird_Green',_pos] call DMS_fnc_SpawnNonPersistentVehicle;
+	_exampleVeh = ['TRASH_Chopper_Hummingbird_Green',_pos] call DMS_fnc_SpawnNonPersistentVehicle;
 
 */
 
@@ -80,10 +80,10 @@ if ((getTerrainHeightASL _position)>0) then
 	_vehObj setVectorUp (surfaceNormal _position);
 };
 
-_vehObj setVariable ["ExileMoney",0,true];
-_vehObj setVariable ["ExileIsPersistent", false];
-_vehObj setVariable ["ExileIsSimulationMonitored", false];
-//_vehObj addMPEventHandler ["MPKilled", { if (isServer) then {_this call ExileServer_object_vehicle_event_onMPKilled;};}];
+_vehObj setVariable ["TRASHMoney",0,true];
+_vehObj setVariable ["TRASHIsPersistent", false];
+_vehObj setVariable ["TRASHIsSimulationMonitored", false];
+//_vehObj addMPEventHandler ["MPKilled", { if (isServer) then {_this call TRASHServer_object_vehicle_event_onMPKilled;};}];
 _vehObj addEventHandler ["GetIn", {_this call ViruZServer_object_vehicle_event_onGetIn}];
 
 

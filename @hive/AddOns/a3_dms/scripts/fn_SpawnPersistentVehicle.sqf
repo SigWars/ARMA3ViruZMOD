@@ -91,18 +91,18 @@ try
 	};
 
 	// Save vehicle on exit.
-	_vehObj addEventHandler ["GetOut", { _this call ExileServer_object_vehicle_event_onGetOut}];
+	_vehObj addEventHandler ["GetOut", { _this call TRASHServer_object_vehicle_event_onGetOut}];
 
 	// Set up vars
-	_vehObj setVariable ["ExileIsPersistent", true];
-	_vehObj setVariable ["ExileAccessCode", _pinCode];
-	_vehObj setVariable ["ExileOwnerUID", "DMS_PersistentVehicle"];		// Don't change this unless you know what you're doing.
+	_vehObj setVariable ["TRASHIsPersistent", true];
+	_vehObj setVariable ["TRASHAccessCode", _pinCode];
+	_vehObj setVariable ["TRASHOwnerUID", "DMS_PersistentVehicle"];		// Don't change this unless you know what you're doing.
 
 	// Deny access until specified to do so.
-	_vehObj setVariable ["ExileIsLocked",-1];
-	_vehObj setVariable ["ExileLastLockToggleAt", time];
-	_vehObj setVariable ["ExileAccessDenied", true];
-	_vehObj setVariable ["ExileAccessDeniedExpiresAt", 999999];
+	_vehObj setVariable ["TRASHIsLocked",-1];
+	_vehObj setVariable ["TRASHLastLockToggleAt", time];
+	_vehObj setVariable ["TRASHAccessDenied", true];
+	_vehObj setVariable ["TRASHAccessDeniedExpiresAt", 999999];
 }
 catch
 {

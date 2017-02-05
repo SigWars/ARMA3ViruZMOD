@@ -50,7 +50,7 @@ private _presetLocsLength = 0;
 if (DMS_UsePredefinedMissionLocations) then
 {
 	// Shuffle the array so that the positions are selected in random order
-	_presetLocs = DMS_PredefinedMissionLocations call ExileClient_util_array_shuffle;
+	_presetLocs = DMS_PredefinedMissionLocations call TRASHClient_util_array_shuffle;
 	_presetLocsLength = count _presetLocs;
 };
 

@@ -149,11 +149,11 @@ _baseObjs =
 if (_difficulty isEqualTo "hardcore") then
 {
 	_pinCode = (1000 +(round (random 8999)));
-	_vehicle = ["Exile_Car_Ural_Covered_Military",_pos getPos [30, random 360],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+	_vehicle = ["TRASH_Car_Ural_Covered_Military",_pos getPos [30, random 360],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 	_msgWIN = ['#0080ff',format ["Convicts have got their hands on the weapons, entry code for Ural is %1...",_pinCode]];
 } else
 {
-	_vehicle = ["Exile_Car_Ural_Covered_Military",_pos getPos [30, random 360]] call DMS_fnc_SpawnNonPersistentVehicle;
+	_vehicle = ["TRASH_Car_Ural_Covered_Military",_pos getPos [30, random 360]] call DMS_fnc_SpawnNonPersistentVehicle;
 	_msgWIN = ['#0080ff',"Convicts have got their hands on the weapons"];
 };
 

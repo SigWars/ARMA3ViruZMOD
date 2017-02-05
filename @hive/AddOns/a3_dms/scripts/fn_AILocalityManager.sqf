@@ -2,7 +2,7 @@
 	DMS_fnc_AILocalityManager
 	Created by Defent and eraser1
 
-	https://github.com/Defent/DMS_Exile/wiki/DMS_fnc_AILocalityManager
+	https://github.com/Defent/DMS_TRASH/wiki/DMS_fnc_AILocalityManager
 
 	Offloads AI groups to a nearby client in order to improve server performance.
 */
@@ -16,7 +16,7 @@ if (!DMS_ai_offload_to_client) exitWith {};
 		private _group = _x;
 		if !(isPlayer _leader) then
 		{
-			// Ignore Exile flyovers.
+			// Ignore TRASH flyovers.
 			if (((side _group) isEqualTo independent) && {(count (units _group)) isEqualTo 1}) exitWith {};
 
 			if (DMS_DEBUG) then

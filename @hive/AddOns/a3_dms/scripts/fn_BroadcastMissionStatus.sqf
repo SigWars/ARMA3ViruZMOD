@@ -2,7 +2,7 @@
 	DMS_fnc_BroadcastMissionStatus
 	Created by eraser1
 
-	https://github.com/Defent/DMS_Exile/wiki/DMS_fnc_BroadcastMissionStatus
+	https://github.com/Defent/DMS_TRASH/wiki/DMS_fnc_BroadcastMissionStatus
 
 	Usage:
 	[
@@ -10,7 +10,7 @@
 		[
 			_titleColor,							// <string> The color of the message (in hex colors)
 			_message,								// <any>	The actual message. Usually a string.
-			_status									// <string> (OPTIONAL) The mission status. eg "win" or "lose". Currently only used on Exile Toasts.
+			_status									// <string> (OPTIONAL) The mission status. eg "win" or "lose". Currently only used on TRASH Toasts.
 		]
 	] call DMS_fnc_BroadcastMissionStatus;
 

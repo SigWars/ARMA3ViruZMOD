@@ -2,7 +2,7 @@
 	DMS_fnc_AddMissionToMonitor_Static
 	Created by eraser1
 
-	https://github.com/Defent/DMS_Exile/wiki/DMS_fnc_AddMissionToMonitor_Static
+	https://github.com/Defent/DMS_TRASH/wiki/DMS_fnc_AddMissionToMonitor_Static
 
 	Parses and adds mission information to "DMS_StaticMission_Arr" for Mission Monitoring.
 

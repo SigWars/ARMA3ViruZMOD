@@ -26,9 +26,9 @@ if (isNil "DMS_DynamicMission") exitWith
 // This code is NECESSARY for spawning persistent vehicles. DO NOT REMOVE THIS CODE UNLESS YOU KNOW WHAT YOU ARE DOING
 
 //Leo 
-/*if !("isKnownAccount:DMS_PersistentVehicle" call ExileServer_system_database_query_selectSingleField) then
+/*if !("isKnownAccount:DMS_PersistentVehicle" call TRASHServer_system_database_query_selectSingleField) then
 {
-	"createAccount:DMS_PersistentVehicle:DMS_PersistentVehicle" call ExileServer_system_database_query_fireAndForget;
+	"createAccount:DMS_PersistentVehicle:DMS_PersistentVehicle" call TRASHServer_system_database_query_fireAndForget;
 };*/
 
 
@@ -214,7 +214,7 @@ if (DMS_ShowDifficultyColorLegend) then
 
 // Add heli paratroopers monitor to the thread system.
 //Leo
-//[5, DMS_fnc_HeliParatroopers_Monitor, [], true] call ExileServer_system_thread_addTask;
+//[5, DMS_fnc_HeliParatroopers_Monitor, [], true] call TRASHServer_system_thread_addTask;
 
 
 {

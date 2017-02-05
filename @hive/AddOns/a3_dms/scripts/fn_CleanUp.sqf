@@ -28,9 +28,9 @@ ViruZServer_system_garbageCollector_deleteObject = {
 
 private["_object","_fliesSound","_fliesParticles"];
 _object = _this;
-/*if (_object getVariable ["ExileIsSimulationMonitored", false]) then
+/*if (_object getVariable ["TRASHIsSimulationMonitored", false]) then
 {
-	_object call ExileServer_system_simulationMonitor_removeVehicle;
+	_object call TRASHServer_system_simulationMonitor_removeVehicle;
 };*/
 _object removeAllEventHandlers "MPKilled";
 _object removeAllEventHandlers "Damaged";
@@ -46,12 +46,12 @@ removeAllContainers _object;
 	{
 		detach _object;
 	};
-	_fliesSound = _object getVariable ["ExileFliesSound", objNull];
+	_fliesSound = _object getVariable ["TRASHFliesSound", objNull];
 	if !(isNull _fliesSound) then 
 	{
 		deleteVehicle _fliesSound;
 	};
-	_fliesParticles = _object getVariable ["ExileFliesParticles", objNull];
+	_fliesParticles = _object getVariable ["TRASHFliesParticles", objNull];
 	if !(isNull _fliesParticles) then 
 	{
 		_fliesParticles setDamage 999; 
@@ -113,7 +113,7 @@ private _skippedObjects = [];
             else
             {
                 deleteGroup _parameter;
-				//[groupOwner _parameter, "DeleteGroupPlz", [_parameter]] call ExileServer_system_network_send_to;
+				//[groupOwner _parameter, "DeleteGroupPlz", [_parameter]] call TRASHServer_system_network_send_to;
             };
         };
 

@@ -36,8 +36,8 @@
 DMS_Use_Map_Config = true;	// Whether or not to use config overwrites specific to the map.
 /*
 	If you are using a map other than a map listed in the "map_configs" folder, you should set this to false OR create a new file within the map_configs folder for the map so that you don't get a missing file error.
-	To share your map-specific config, please create a merge request on GitHub and/or leave a message on the DMS thread in the Exile forums.
-	For any questions regarding map-specific configs, please leave a reply in the DMS thread on the Exile forums.
+	To share your map-specific config, please create a merge request on GitHub and/or leave a message on the DMS thread in the TRASH forums.
+	For any questions regarding map-specific configs, please leave a reply in the DMS thread on the TRASH forums.
 */
 
 DMS_Enable_RankChange = true; // Whether or not to use Rank Changes. (Required 'true' if using Occupation)
@@ -189,7 +189,7 @@ DMS_SpawnMissions_Scheduled = true;	// Whether or not to spawn missions in a sch
 											"standardHintRequest"		// Hints are a bit wonky...
 											//"textTilesRequest",			// Keep in mind you can only have 1 "text tile" message up at a time, so the message will disappear if the player gets a kill or something while the message is shown. This message type is also performance-intensive, so I advise against it.
 											//"systemChatRequest",			// Always nice to show in chat so that players can scroll up to read the info if they need to.
-											//"ExileToasts"					// Default notification type since Exile 0.98, see (http://www.exilemod.com/devblog/new-ingame-notifications/)
+											//"TRASHToasts"					// Default notification type since TRASH 0.98, see (http://www.TRASHmod.com/devblog/new-ingame-notifications/)
 										];
 
 		

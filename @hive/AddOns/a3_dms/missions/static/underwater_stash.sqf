@@ -63,11 +63,11 @@ _crate setVariable ["DMS_AllowSmoke", false];
 
 
 
-private _sub1 = ["Exile_Boat_SDV_CSAT",[0,0,0]] call DMS_fnc_SpawnNonPersistentVehicle;
+private _sub1 = ["TRASH_Boat_SDV_CSAT",[0,0,0]] call DMS_fnc_SpawnNonPersistentVehicle;
 _sub1 setPosASL [5884,2997,-66];
 _sub1 setVariable ["DMS_AllowSmoke", false];
 
-private _sub2 = ["Exile_Boat_SDV_CSAT",[0,0,0]] call DMS_fnc_SpawnNonPersistentVehicle;
+private _sub2 = ["TRASH_Boat_SDV_CSAT",[0,0,0]] call DMS_fnc_SpawnNonPersistentVehicle;
 _sub2 setPosASL [5893.5,3037,-55];
 _sub2 setVariable ["DMS_AllowSmoke", false];
 
@@ -270,7 +270,7 @@ _added =
         [
             [
                 _sub1,
-                {_this setVariable ["ExileMoney",25000,true]}                       // The submarine will have 25,000 poptabs after the mission completes. The capacity is actually 5000, but I just overload it.
+                {_this setVariable ["TRASHMoney",25000,true]}                       // The submarine will have 25,000 poptabs after the mission completes. The capacity is actually 5000, but I just overload it.
             ]
         ],
         [],

@@ -98,7 +98,7 @@ switch (_difficulty) do
 _msgStart = ['#FFFF00',"A research camp has been spotted, find out what they are up to"];
 /*
 _crate_weapon_list	= ["arifle_SDAR_F","arifle_MX_GL_Black_F","MMG_01_hex_F","MMG_01_tan_F","MMG_02_black_F","MMG_02_camo_F","MMG_02_sand_F","hgun_PDW2000_F","SMG_01_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F"];
-_crate_item_list	= ["H_HelmetLeaderO_ocamo","H_HelmetLeaderO_ocamo","H_HelmetLeaderO_oucamo","H_HelmetLeaderO_oucamo","U_B_survival_uniform","U_B_Wetsuit","U_O_Wetsuit","U_I_Wetsuit","H_HelmetB_camo","H_HelmetSpecB","H_HelmetSpecO_blk","Exile_Item_EMRE","Exile_Item_InstantCoffee","Exile_Item_PowerDrink","Exile_Item_InstaDoc"];
+_crate_item_list	= ["H_HelmetLeaderO_ocamo","H_HelmetLeaderO_ocamo","H_HelmetLeaderO_oucamo","H_HelmetLeaderO_oucamo","U_B_survival_uniform","U_B_Wetsuit","U_O_Wetsuit","U_I_Wetsuit","H_HelmetB_camo","H_HelmetSpecB","H_HelmetSpecO_blk","TRASH_Item_EMRE","TRASH_Item_InstantCoffee","TRASH_Item_PowerDrink","TRASH_Item_InstaDoc"];
 */
 
 
@@ -150,12 +150,12 @@ _baseObjs =
 if (_difficulty isEqualTo "hardcore") then
 {
 	_pinCode = (1000 +(round (random 8999)));
-	_vehicle = ["Exile_Car_Ural_Covered_Yellow",[(_pos select 0) -30, (_pos select 1) -0],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+	_vehicle = ["TRASH_Car_Ural_Covered_Yellow",[(_pos select 0) -30, (_pos select 1) -0],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 	_msgWIN = ['#0080ff',format ["Convicts have taken over the research camp, vehicle entry code is %1...",_pinCode]];
 }
 else
 {
-	_vehicle = ["Exile_Car_Ural_Covered_Yellow",[(_pos select 0)-30,(_pos select 1)+0,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
+	_vehicle = ["TRASH_Car_Ural_Covered_Yellow",[(_pos select 0)-30,(_pos select 1)+0,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
 	_msgWIN = ['#0080ff',"Convicts have taken over the research camp"];
 };
 

@@ -7,6 +7,7 @@ if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
 _location = _this;
 _locationPosition = locationPosition _location;
 _locationRadiusA = getNumber (configFile >> "cfgWorlds" >> worldName >> "Names" >> className _location >> "RadiusA");
+if (isNil "_locationRadiusA") then {_locationRadiusA = 300;};
 _wreckObjects = [];
 
 _config = configFile >> "CfgWreckSpawner";
@@ -31,7 +32,6 @@ _nearRoads = _locationPosition nearRoads _locationRadiusA;
 	_listPos = [];	
 	_roadsDist = [];
 
-	//	Определить позиции спавна на сигменте дороги
 	if ((count _roadsConnected) > 0) then {
 		{
 			_roadsDist SET [count _roadsDist, _road distance _x];
@@ -62,7 +62,7 @@ _nearRoads = _locationPosition nearRoads _locationRadiusA;
 //		_nearObj = nearestObject [_pos,"NonStrategic"];
 //		_isNoHouse = ((sizeOf typeOf(_nearObj)) + (sizeOf _wreckModel)) < (_pos distance _nearObj);
 			
-		//	Проверка позиции и спавн объекта
+		
 //		if (_isNoHouse) then {
 			if (count(nearestObjects [_pos, ["Car","Motorcycle","Wreck_Base","CarWreck","Wall_F"], ((sizeOf _wreckModel) * 2)]) == 0) then {
 

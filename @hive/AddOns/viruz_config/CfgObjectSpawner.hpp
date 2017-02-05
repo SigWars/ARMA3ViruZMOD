@@ -1,3 +1,3 @@
 class CfgObjectSpawner {
-	listLocations[] = {"CityCenter","NameCityCapital","NameCity","NameVillage","NameLocal"};
+	listLocations[] = {"NameVillage","NameCity","NameLocal","Airport","Hill","NameMarine","NameCityCapital"};
 };

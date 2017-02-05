@@ -14,7 +14,7 @@
 
     NOTE: I don't check to make sure "_distanceMax" is greater than "_distanceMin", so if you goof up, it's not on me. Also, if you set the values too close to each other, there's a good chance it's gonna result in performance issues and quite possibly no resulting position.
 
-    "_posParameters" is simply passed to "DMS_fnc_FindSafePos". See the usage of that function for more detail: https://github.com/Defent/DMS_Exile/blob/master/%40ExileServer/addons/a3_dms/scripts/fn_FindSafePos.sqf
+    "_posParameters" is simply passed to "DMS_fnc_FindSafePos". See the usage of that function for more detail: https://github.com/Defent/DMS_TRASH/blob/master/%40TRASHServer/addons/a3_dms/scripts/fn_FindSafePos.sqf
 
     Returns a position.
 */

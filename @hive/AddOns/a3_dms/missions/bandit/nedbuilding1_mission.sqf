@@ -95,7 +95,7 @@ switch (_difficulty) do
 
 //_msgStart = ['#FFFF00',format["A DIY storage is under attack! Go kill the %1 attackers",_difficulty]];
 _msgStart = ['#FFFF00',"A DIY storage is under attack! Go kill the attackers"];
-_crate_item_list	= ["Exile_Item_WoodDoorKit","Exile_Item_WoodDoorwayKit","Exile_Item_WoodFloorKit","Exile_Item_WoodFloorPortKit","Exile_Item_WoodGateKit","Exile_Item_WoodStairsKit","Exile_Item_WoodSupportKit","Exile_Item_WoodWallHalfKit","Exile_Item_WoodWallKit","Exile_Item_WoodWindowKit","Exile_Item_WoodStairsKit","Exile_Item_WoodDoorwayKit","Exile_Item_WoodFloorKit","Exile_Item_WoodFloorKit","Exile_Item_WoodFloorPortKit","Exile_Item_WoodGateKit","Exile_Item_WoodStairsKit","Exile_Item_WoodSupportKit","Exile_Item_WoodWallHalfKit","Exile_Item_WoodWallKit","Exile_Item_WoodWindowKit"];
+_crate_item_list	= ["TRASH_Item_WoodDoorKit","TRASH_Item_WoodDoorwayKit","TRASH_Item_WoodFloorKit","TRASH_Item_WoodFloorPortKit","TRASH_Item_WoodGateKit","TRASH_Item_WoodStairsKit","TRASH_Item_WoodSupportKit","TRASH_Item_WoodWallHalfKit","TRASH_Item_WoodWallKit","TRASH_Item_WoodWindowKit","TRASH_Item_WoodStairsKit","TRASH_Item_WoodDoorwayKit","TRASH_Item_WoodFloorKit","TRASH_Item_WoodFloorKit","TRASH_Item_WoodFloorPortKit","TRASH_Item_WoodGateKit","TRASH_Item_WoodStairsKit","TRASH_Item_WoodSupportKit","TRASH_Item_WoodWallHalfKit","TRASH_Item_WoodWallKit","TRASH_Item_WoodWindowKit"];
 
 _group =
 [
@@ -147,11 +147,11 @@ _baseObjs =
 // If hardcore give pincoded vehicle, if not give non persistent
 if (_difficulty isEqualTo "hardcore") then {
 												_pinCode = (1000 +(round (random 8999)));
-												_vehicle = ["Exile_Car_Ural_Covered_Worker",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+												_vehicle = ["TRASH_Car_Ural_Covered_Worker",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 												_msgWIN = ['#0080ff',format ["Convicts grabbed all the building materials, entry code is %1...",_pinCode]];
 											} else
 											{
-												_vehicle = ["Exile_Car_Ural_Covered_Worker",[(_pos select 0) -30, (_pos select 1) -30,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
+												_vehicle = ["TRASH_Car_Ural_Covered_Worker",[(_pos select 0) -30, (_pos select 1) -30,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
 												_msgWIN = ['#0080ff',"Convicts grabbed all the building materials"];
 											};
 

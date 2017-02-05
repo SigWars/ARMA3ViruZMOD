@@ -86,7 +86,7 @@ _crateClasses_and_Positions =
 } forEach _crateClasses_and_Positions;
 
 // Shuffle the list
-_crateClasses_and_Positions = _crateClasses_and_Positions call ExileClient_util_array_shuffle;
+_crateClasses_and_Positions = _crateClasses_and_Positions call TRASHClient_util_array_shuffle;
 
 
 // Create Crates

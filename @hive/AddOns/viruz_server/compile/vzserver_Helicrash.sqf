@@ -25,13 +25,13 @@ switch (tolower _mapaatual) do {
 	case "esseker": { _spawnRadius = 6000; };
 	case "altis": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
 	case "chernarus": { _spawnRadius = 7000; };
-	case "tanoa": { _spawnRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
+	case "tanoa": { _spawnRadius = 8000; };
 	case "xcam_taunus": { _spawnRadius = 20000; };
 	default {  _spawnRadius = 20000; };
 	};
 
 if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {
-	diag_log(format["VIRUZCRASH: Iniciada Logica dos helicrashs [STATIC:%1||CRASHDAMAGE:%2|]", str(_useStatic), _crashDamage]);
+	diag_log(format["VIRUZHELICRASH: Iniciada Logica dos helicrashs [STATIC:%1||CRASHDAMAGE:%2|]", str(_useStatic), _crashDamage]);
 };
 
 while {true} do {
@@ -74,7 +74,7 @@ while {true} do {
 	_crashName	= getText (configFile >> "CfgVehicles" >> _heliModel >> "displayName");
 
 	if (ViruzDebugMode > 2 or ViruzDebugType == "HELICRASH") then {
-		diag_log(format["VIRUZCRASH: %1%2 chance to start a crashing %3 at %4", round(_spawnChance * 100), '%', _crashName, _timeToSpawn]);
+		diag_log(format["VIRUZHELICRASH: %1%2 chance to start a crashing %3 at %4", round(_spawnChance * 100), '%', _crashName, _timeToSpawn]);
 	};	
 
 	// Apprehensive about using one giant long sleep here given server time variances over the life of the server daemon
@@ -104,7 +104,7 @@ while {true} do {
 		if(_useStatic) then {
 			_position = _staticcoords call BIS_fnc_selectRandom;
 		} else {
-			_position = [getMarkerPos "center",0,_spawnRadius,0,0,5000,0] call BIS_fnc_findSafePos;
+			_position = [getMarkerPos "center",0,_spawnRadius,1,0,0,0] call BIS_fnc_findSafePos;
 		};
 		//DEFAULT: GET COORDS FROM BIS_fnc_findSafePos, COMMENT OUT IF YOU USE _STATICCOORDS
 		
@@ -114,7 +114,8 @@ while {true} do {
 
 		//Spawn the AI-Heli flying in the air
 		_startTime = time;
-		_explotime = time + 60;
+		_trandom = selectRandom [30,40,60];
+		_explotime = time + _trandom;
 		_crashwreck = createVehicle [_heliModel,_heliStart, [], 0, "FLY"];
 
 		//Make sure its not destroyed by the Hacker-Killing-Cleanup (Thanks to Sarge for the hint)

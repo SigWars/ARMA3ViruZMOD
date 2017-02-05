@@ -80,7 +80,7 @@ _wreck = createVehicle ["Land_Wreck_Heli_Attack_02_F",[(_pos select 0) - 10, (_p
 _vehClass =
 	if (_extraParams isEqualTo []) then
 	{
-		"Exile_Car_SUV_Black"
+		"TRASH_Car_SUV_Black"
 	}
 	else
 	{
@@ -96,7 +96,7 @@ _vehClass =
 			}
 			else
 			{
-				"Exile_Car_SUV_Black"
+				"TRASH_Car_SUV_Black"
 			};
 		};
 	};

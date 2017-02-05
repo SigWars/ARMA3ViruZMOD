@@ -823,7 +823,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.2;
-		maxSpawns = 3;
+		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","CarParts"},
@@ -845,25 +845,23 @@ class CfgBuildingLoot {
 			{"","Pistols_High"},
 			{"","Mag_Pistols_High"},
 			{"","Attach_Pistols_High"},
-			{"","SMG"},
-			{"","Mag_SMG"},
-			{"","Attach_SMG"},
+			{"CUP_sgun_M1014","weapon"},
+			{"CUP_8Rnd_B_Beneli_74Pellets","magazine"},
+			{"CUP_8Rnd_B_Beneli_74Slug","magazine"},
 			{"","Military_Headgears"},
-			{"","Medium_Backpacks"},
-			{"","Military_Items"},
-			{"FoodMRE","magazine"}
+			{"ItemWaterBottle","magazine"},
+			{"ItemWaterbottleUnfilled","magazine"}
 		};
 		itemChance[] =	{
 			0.08,	//Pistols High
 			0.06,	//Mag Pistols High
 			0.03,	//Attach Pistols High
-			0.03,	//SMG
-			0.02,	//Mag SMG
-			0.01,	//Attach SMG
+			0.03,	//M1014
+			0.02,	//Mag M1014 Pellets
+			0.01,	//Mag M1014 Slug
 			0.06,	//Military Headgears
-			0.04,	//Medium Backpacks
-			0.08,	//Military Items
-			0.04	//FoodMRE
+			0.06,	//Water Bottle
+			0.06	//Empty Water Bottle
 		};
 	};
 	
@@ -872,7 +870,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.3;
-		MaxSpawns = 3;
+		MaxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -929,7 +927,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_soldier_pilot"};
 		lootChance = 0.2;
-		maxSpawns = 3;
+		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -960,7 +958,7 @@ class CfgBuildingLoot {
 			0.01,	//LMG Medium
 			0.01,	//Mag LMG Medium
 			0.01,	//Attach LMG Medium
-			0.04,	//Assault Medium
+			0.03,	//Assault Medium
 			0.02,	//Mag Assault Medium
 			0.01,	//Attach Assault Medium
 			0.01,	//Sniper Medium
@@ -984,7 +982,7 @@ class CfgBuildingLoot {
 	    minRoaming = 1;
 		maxRoaming = 2;
 		lootChance = 0.2;
-		maxSpawns = 3;
+		maxSpawns = 2;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","Pistols_High"},
@@ -1016,7 +1014,7 @@ class CfgBuildingLoot {
 			0.02,	//LMG High
 			0.01,	//Mag LMG High
 			0.01,	//Attach LMG High
-			0.04,	//Assault High
+			0.03,	//Assault High
 			0.02,	//Mag Assault High
 			0.01,	//Attach Assault High
 			0.01,	//Sniper High
@@ -1061,7 +1059,7 @@ class CfgBuildingLoot {
 			0.07,	//Pistols High
 			0.05,	//Mag Pistols High
 			0.03,	//Attach Pistols High
-			0.05,	//Sniper Low
+			0.04,	//Sniper Low
 			0.02,	//Mag Sniper Low
 			0.01,	//Attach Sniper Low
 			0.02,	//Sniper Medium

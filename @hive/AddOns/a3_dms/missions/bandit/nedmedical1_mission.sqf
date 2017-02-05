@@ -96,7 +96,7 @@ switch (_difficulty) do
 //_msgStart = ['#FFFF00',format["A field hospital is under attack! Go kill the %1 attackers",_difficulty]];
 _msgStart = ['#FFFF00',"A field hospital is under attack! Go kill the attackers"];
 
-_crate_item_list	= ["Exile_Item_InstaDoc","Exile_Item_Bandage","Exile_Item_Vishpirin","Exile_Item_Bandage","Exile_Item_Vishpirin","Exile_Item_Bandage","Exile_Item_Vishpirin","Exile_Item_Bandage","Exile_Item_Vishpirin","Exile_Item_InstaDoc","Exile_Item_Bandage","Exile_Item_Vishpirin","Exile_Item_Bandage","Exile_Item_Vishpirin","Exile_Item_Bandage","Exile_Item_Vishpirin"];
+_crate_item_list	= ["TRASH_Item_InstaDoc","TRASH_Item_Bandage","TRASH_Item_Vishpirin","TRASH_Item_Bandage","TRASH_Item_Vishpirin","TRASH_Item_Bandage","TRASH_Item_Vishpirin","TRASH_Item_Bandage","TRASH_Item_Vishpirin","TRASH_Item_InstaDoc","TRASH_Item_Bandage","TRASH_Item_Vishpirin","TRASH_Item_Bandage","TRASH_Item_Vishpirin","TRASH_Item_Bandage","TRASH_Item_Vishpirin"];
 
 
 
@@ -150,11 +150,11 @@ _baseObjs =
 // If hardcore give pincoded vehicle, if not give non persistent
 if (_difficulty isEqualTo "hardcore") then {
 												_pinCode = (1000 +(round (random 8999)));
-												_vehicle = ["Exile_Car_Ural_Covered_Blue",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+												_vehicle = ["TRASH_Car_Ural_Covered_Blue",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 												_msgWIN = ['#0080ff',format ["Convicts freed the hospital and got free meds, entry code is %1...",_pinCode]];
 											} else
 											{
-												_vehicle = ["Exile_Car_Ural_Covered_Blue",[(_pos select 0) -30, (_pos select 1) -30,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
+												_vehicle = ["TRASH_Car_Ural_Covered_Blue",[(_pos select 0) -30, (_pos select 1) -30,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
 												_msgWIN = ['#0080ff',"Convicts freed the hospital and got free meds"];
 											};
 

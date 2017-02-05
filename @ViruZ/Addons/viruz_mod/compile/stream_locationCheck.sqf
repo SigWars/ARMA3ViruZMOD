@@ -24,7 +24,7 @@ stream_locationFill.sqf
 		viruz_locationsActive set [count viruz_locationsActive,_location];
 		
 		//Get Town Details
-		_config = 	configFile >> "CfgTownGenerator" >> _configClass;
+		_config = 	missionconfigFile >> "CfgTownGenerator" >> _configClass;
 		_locHdr = 	configName _config;
 		_position = []+ getArray	(_config >> "position");
 		
@@ -33,7 +33,7 @@ stream_locationFill.sqf
 	} else {
 		if ((_distAct > _distCfg) and (_location in viruz_locationsActive)) then {
 			//Delete Town Objects
-			_config = 	configFile >> "CfgTownGenerator" >> _configClass;
+			_config = 	missionconfigFile >> "CfgTownGenerator" >> _configClass;
 			_config call stream_locationDel;
 			viruz_locationsActive = viruz_locationsActive - [_location];
 		};

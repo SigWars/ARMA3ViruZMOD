@@ -68,7 +68,7 @@ _wreck3 = createVehicle ["Land_Bricks_V1_F",[(_pos select 0) - 13, (_pos select 
 _vehClass =
 	if (_extraParams isEqualTo []) then
 	{
-		"Exile_Car_Zamak"
+		"TRASH_Car_Zamak"
 	}
 	else
 	{
@@ -84,7 +84,7 @@ _vehClass =
 			}
 			else
 			{
-				"Exile_Car_Zamak"
+				"TRASH_Car_Zamak"
 			};
 		};
 	};

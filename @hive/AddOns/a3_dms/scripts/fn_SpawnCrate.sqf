@@ -53,7 +53,7 @@ clearItemCargoGlobal 		_crate;
 clearMagazineCargoGlobal 	_crate;
 clearBackpackCargoGlobal 	_crate;
 
-_crate setVariable ["ExileMoney",0,true];
+_crate setVariable ["TRASHMoney",0,true];
 
 if (DMS_HideBox) then
 {

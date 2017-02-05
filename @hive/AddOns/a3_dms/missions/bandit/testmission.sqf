@@ -73,7 +73,7 @@ _staticGuns =
 _crate = ["Box_NATO_Wps_F",_pos] call DMS_fnc_SpawnCrate;
 
 // Spawn vehicle
-_vehicle = ["Exile_Car_Offroad_Armed_Guerilla01",[_pos,3+random 10,_dir+90] call DMS_fnc_SelectOffsetPos] call DMS_fnc_SpawnNonPersistentVehicle;
+_vehicle = ["TRASH_Car_Offroad_Armed_Guerilla01",[_pos,3+random 10,_dir+90] call DMS_fnc_SelectOffsetPos] call DMS_fnc_SpawnNonPersistentVehicle;
 
 //trololol
 _crate setObjectTextureGlobal [0,"#(rgb,8,8,3)color(1,0,0.1,1)"];

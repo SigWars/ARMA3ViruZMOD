@@ -123,7 +123,7 @@ else
 		// Check for nearby territories. This is done last because it is likely to be the most resource intensive.
 		
 		//Leo
-		//if ((_territoryNearLimit>0) && {[_pos,_territoryNearLimit] call ExileClient_util_world_isTerritoryInRange}) throw "a territory";
+		//if ((_territoryNearLimit>0) && {[_pos,_territoryNearLimit] call TRASHClient_util_world_isTerritoryInRange}) throw "a territory";
 
 
 		// No exceptions found

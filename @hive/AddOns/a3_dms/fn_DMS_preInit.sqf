@@ -81,7 +81,7 @@ if (isNil 'DMS_CLIENT_DynamicText_inProgress') then
 }
 else
 {
-	["+str (DMS_dynamicText_Duration+DMS_dynamicText_FadeTime) +",{_this call DMS_CLIENT_fnc_spawnDynamicText},_this,false,false] call ExileClient_system_thread_addTask;
+	["+str (DMS_dynamicText_Duration+DMS_dynamicText_FadeTime) +",{_this call DMS_CLIENT_fnc_spawnDynamicText},_this,false,false] call TRASHClient_system_thread_addTask;
 };
 ");
 
@@ -110,7 +110,7 @@ if (isNil 'DMS_CLIENT_TextTiles_inProgress') then
 }
 else
 {
-	["+str (DMS_textTiles_Duration+DMS_textTiles_FadeTime) +",{_this call DMS_CLIENT_fnc_spawnTextTiles},_this,false,false] call ExileClient_system_thread_addTask;
+	["+str (DMS_textTiles_Duration+DMS_textTiles_FadeTime) +",{_this call DMS_CLIENT_fnc_spawnTextTiles},_this,false,false] call TRASHClient_system_thread_addTask;
 };
 ");
 

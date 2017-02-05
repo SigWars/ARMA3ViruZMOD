@@ -137,14 +137,14 @@ _staticGuns =
 
 //create possible vehicle list
 _PossibleVehicleClass 		= [
-								"Exile_Car_Ural_Open_Blue",
-								"Exile_Car_Ural_Open_Yellow",
-								"Exile_Car_Ural_Open_Worker",
-								"Exile_Car_Ural_Open_Military",
-								"Exile_Car_Ural_Covered_Blue",
-								"Exile_Car_Ural_Covered_Yellow",
-								"Exile_Car_Ural_Covered_Worker",
-								"Exile_Car_Ural_Covered_Military"
+								"TRASH_Car_Ural_Open_Blue",
+								"TRASH_Car_Ural_Open_Yellow",
+								"TRASH_Car_Ural_Open_Worker",
+								"TRASH_Car_Ural_Open_Military",
+								"TRASH_Car_Ural_Covered_Blue",
+								"TRASH_Car_Ural_Covered_Yellow",
+								"TRASH_Car_Ural_Covered_Worker",
+								"TRASH_Car_Ural_Covered_Military"
 							];
 //choose the vehicle
 _VehicleClass = selectRandom _PossibleVehicleClass;

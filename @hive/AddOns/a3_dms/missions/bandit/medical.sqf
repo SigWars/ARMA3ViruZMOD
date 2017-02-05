@@ -62,7 +62,7 @@ _crate = ["Box_NATO_Wps_F",_pos] call DMS_fnc_SpawnCrate;
 
 _building = createVehicle ["Land_Medevac_HQ_V1_F",[(_pos select 0) - 10, (_pos select 1),-0.1],[], 0, "CAN_COLLIDE"];
 
-_vehicle = ["Exile_Car_Ural_Covered_Worker",_pos] call DMS_fnc_SpawnNonPersistentVehicle;
+_vehicle = ["TRASH_Car_Ural_Covered_Worker",_pos] call DMS_fnc_SpawnNonPersistentVehicle;
 
 
 // Set crate loot values

@@ -48,7 +48,7 @@ if (!isNull _client) then
 
 	if (!_swapped) then
 	{
-		ExileServerOwnershipSwapQueue pushBack [_AI,_client];
+		TRASHServerOwnershipSwapQueue pushBack [_AI,_client];
 	};
 
 	if (DMS_ai_offload_notifyClient) then

@@ -14,12 +14,12 @@ switch (tolower _mapaatual) do {
 	case "esseker": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 6000; };
 	case "altis": { _spawnMarker = getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius = (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
 	case "chernarus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 7000; };
-	case "tanoa": {  _spawnMarker	= getArray (configFile >> "cfgWorlds" >> worldName >> "safePositionAnchor"); _nearestRadius	= (getNumber (configFile >> "cfgWorlds" >> worldName >> "safePositionRadius")) * 2.5; };
-	case "xcam_taunus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 20000; };
-	default { _spawnMarker = getMarkerPos "center"; _nearestRadius = 20000; };
+	case "tanoa": {  _spawnMarker = getMarkerPos "center"; _nearestRadius = 8000; };
+	case "xcam_taunus": { _spawnMarker = getMarkerPos "center"; _nearestRadius = 15000; };
+	default { _spawnMarker = getMarkerPos "center"; _nearestRadius = 15000; };
 	};
 
-_nearestCity 	= nearestLocations [_spawnMarker, ["NameCityCapital","NameCity","NameVillage","NameLocal","NameMarine"],_nearestRadius];
+_nearestCity 	= nearestLocations [_spawnMarker, ["NameVillage","NameCity","NameLocal","Airport","Hill","NameMarine","NameCityCapital"],_nearestRadius];
 
 /// Debug param
 _vehicleForceSpawn = (missionConfigFile >> "cfgGame" >> "DebugVehicleForceSpawn") call BIS_fnc_getCfgData;
@@ -42,6 +42,7 @@ while {true} do {
 	_City = _nearestCity call BIS_fnc_selectRandom;
 	_spawnPosition = locationPosition _City;
 	_locationRadiusA = getNumber (configFile >> "cfgWorlds" >> worldName >> "Names" >> className _City >> "RadiusA");
+	if (isNil "_locationRadiusA") then {_locationRadiusA = 400;};
 	_vehicleTypeModel = "";
 	
 	if (type _City == "NameMarine") then {
@@ -49,6 +50,7 @@ while {true} do {
 	} else {
 		switch (text _City) do {
 			default				{_vehicleTypeModel = "Civilian";};
+			case "Airport":		{_vehicleTypeModel = "Military";};
 			case "military":	{_vehicleTypeModel = "Military";};
 			case "factory":		{_vehicleTypeModel = "Military";};
 		};
@@ -123,20 +125,9 @@ while {true} do {
 			_Fuel = [0.4, 0.6, 0.8] call BIS_fnc_selectRandom;
 			_vehicle setFuel _Fuel;
 
-			//Send request
-			/*_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",viruZ_instance, (typeOf _vehicle), 0 , _charID, _worldspace, [], _array, _Fuel,_uid];
-			if (ViruzDebugMode > 2 or ViruzDebugType == "VEHICLES") then {
-				diag_log ("HIVE: WRITE NEW SPAWNEWD VEHICLE: "+ str(_key));
-			};	
-			_key call server_hiveWrite;*/
-			
-			_query = format["0:SQL:INSERT INTO object_data (ObjectID, ObjectUID, Instance, Classname, Datestamp, CharacterID, Worldspace, Inventory, Hitpoints, Fuel) VALUES (%1, %2, %3, '%4', now(), %5, '%6', '%7', '%8', %9)",str(_idKey),_uid,viruZ_instance,(typeOf _vehicle),_charID,_worldspace,[],_array,_Fuel];
-			_result = _query call vzserver_SyncRequest;
+			_query = format["INSERT INTO object_data (ObjectID, ObjectUID, Instance, Classname, Datestamp, CharacterID, Worldspace, Inventory, Hitpoints, Fuel) VALUES (%1, %2, %3, '%4', now(), %5, '%6', '%7', '%8', %9)",str(_idKey),_uid,viruZ_instance,(typeOf _vehicle),_charID,_worldspace,[],_array,_Fuel];
+			[_query,1] call viruz_asyncCall;
 						
-			if (_result select 0 == 0)exitWith{
-				deletevehicle _vehicle;
-			};
-									
 			_vehicle setVariable ["lastUpdate",time];
 			viruz_serverObjectMonitor set [count viruz_serverObjectMonitor,_vehicle];
 			_vehicle call fnc_vehicleEventHandler;

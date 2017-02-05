@@ -2,7 +2,7 @@
 	DMS_fnc_CalcPos
 	Created by eraser1
 
-	https://github.com/Defent/DMS_Exile/wiki/DMS_fnc_CalcPos
+	https://github.com/Defent/DMS_TRASH/wiki/DMS_fnc_CalcPos
 
 	Usage:
 	[

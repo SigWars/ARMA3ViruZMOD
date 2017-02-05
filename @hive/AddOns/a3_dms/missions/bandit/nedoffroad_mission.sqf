@@ -134,27 +134,27 @@ _staticGuns =
 
 //create possible vehicle list
 _PossibleVehicleClass 		= [
-								"Exile_Car_Offroad_Red",
-								"Exile_Car_Offroad_Beige",
-								"Exile_Car_Offroad_White",
-								"Exile_Car_Offroad_Blue",
-								"Exile_Car_Offroad_DarkRed",
-								"Exile_Car_Offroad_BlueCustom",
-								"Exile_Car_Offroad_Guerilla01",
-								"Exile_Car_Offroad_Guerilla02",
-								"Exile_Car_Offroad_Guerilla03",
-								"Exile_Car_Offroad_Guerilla04",
-								"Exile_Car_Offroad_Guerilla05",
-								"Exile_Car_Offroad_Guerilla06",
-								"Exile_Car_Offroad_Guerilla07",
-								"Exile_Car_Offroad_Guerilla08",
-								"Exile_Car_Offroad_Guerilla09",
-								"Exile_Car_Offroad_Guerilla10",
-								"Exile_Car_Offroad_Guerilla11",
-								"Exile_Car_Offroad_Guerilla12",
-								"Exile_Car_Offroad_Rusty1",
-								"Exile_Car_Offroad_Rusty2",
-								"Exile_Car_Offroad_Rusty3"
+								"TRASH_Car_Offroad_Red",
+								"TRASH_Car_Offroad_Beige",
+								"TRASH_Car_Offroad_White",
+								"TRASH_Car_Offroad_Blue",
+								"TRASH_Car_Offroad_DarkRed",
+								"TRASH_Car_Offroad_BlueCustom",
+								"TRASH_Car_Offroad_Guerilla01",
+								"TRASH_Car_Offroad_Guerilla02",
+								"TRASH_Car_Offroad_Guerilla03",
+								"TRASH_Car_Offroad_Guerilla04",
+								"TRASH_Car_Offroad_Guerilla05",
+								"TRASH_Car_Offroad_Guerilla06",
+								"TRASH_Car_Offroad_Guerilla07",
+								"TRASH_Car_Offroad_Guerilla08",
+								"TRASH_Car_Offroad_Guerilla09",
+								"TRASH_Car_Offroad_Guerilla10",
+								"TRASH_Car_Offroad_Guerilla11",
+								"TRASH_Car_Offroad_Guerilla12",
+								"TRASH_Car_Offroad_Rusty1",
+								"TRASH_Car_Offroad_Rusty2",
+								"TRASH_Car_Offroad_Rusty3"
 							];
 //choose the vehicle
 _VehicleClass = selectRandom _PossibleVehicleClass;

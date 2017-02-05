@@ -136,23 +136,23 @@ _staticGuns =
 
 //create possible vehicle list
 _PossibleVehicleClass 		= [
-								"Exile_Chopper_Hummingbird_Civillian_Blue",
-								"Exile_Chopper_Hummingbird_Civillian_Red",
-								"Exile_Chopper_Hummingbird_Civillian_ION",
-								"Exile_Chopper_Hummingbird_Civillian_BlueLine",
-								"Exile_Chopper_Hummingbird_Civillian_Digital",
-								"Exile_Chopper_Hummingbird_Civillian_Elliptical",
-								"Exile_Chopper_Hummingbird_Civillian_Furious",
-								"Exile_Chopper_Hummingbird_Civillian_GrayWatcher",
-								"Exile_Chopper_Hummingbird_Civillian_Jeans",
-								"Exile_Chopper_Hummingbird_Civillian_Light",
-								"Exile_Chopper_Hummingbird_Civillian_Shadow",
-								"Exile_Chopper_Hummingbird_Civillian_Sheriff",
-								"Exile_Chopper_Hummingbird_Civillian_Speedy",
-								"Exile_Chopper_Hummingbird_Civillian_Sunset",
-								"Exile_Chopper_Hummingbird_Civillian_Vrana",
-								"Exile_Chopper_Hummingbird_Civillian_Wasp",
-								"Exile_Chopper_Hummingbird_Civillian_Wave"
+								"TRASH_Chopper_Hummingbird_Civillian_Blue",
+								"TRASH_Chopper_Hummingbird_Civillian_Red",
+								"TRASH_Chopper_Hummingbird_Civillian_ION",
+								"TRASH_Chopper_Hummingbird_Civillian_BlueLine",
+								"TRASH_Chopper_Hummingbird_Civillian_Digital",
+								"TRASH_Chopper_Hummingbird_Civillian_Elliptical",
+								"TRASH_Chopper_Hummingbird_Civillian_Furious",
+								"TRASH_Chopper_Hummingbird_Civillian_GrayWatcher",
+								"TRASH_Chopper_Hummingbird_Civillian_Jeans",
+								"TRASH_Chopper_Hummingbird_Civillian_Light",
+								"TRASH_Chopper_Hummingbird_Civillian_Shadow",
+								"TRASH_Chopper_Hummingbird_Civillian_Sheriff",
+								"TRASH_Chopper_Hummingbird_Civillian_Speedy",
+								"TRASH_Chopper_Hummingbird_Civillian_Sunset",
+								"TRASH_Chopper_Hummingbird_Civillian_Vrana",
+								"TRASH_Chopper_Hummingbird_Civillian_Wasp",
+								"TRASH_Chopper_Hummingbird_Civillian_Wave"
 							];
 //choose the vehicle
 _VehicleClass = selectRandom _PossibleVehicleClass;

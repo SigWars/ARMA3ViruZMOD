@@ -138,33 +138,33 @@ _staticGuns =
 _PossibleVehicleClass =
 [
 	[
-		"Exile_Car_Hatchback_Beige",
-		"Exile_Car_Hatchback_Green",
-		"Exile_Car_Hatchback_Blue",
-		"Exile_Car_Hatchback_BlueCustom",
-		"Exile_Car_Hatchback_BeigeCustom",
-		"Exile_Car_Hatchback_Yellow",
-		"Exile_Car_Hatchback_Grey",
-		"Exile_Car_Hatchback_Black",
-		"Exile_Car_Hatchback_Dark",
-		"Exile_Car_Hatchback_Rusty1",
-		"Exile_Car_Hatchback_Rusty2",
-		"Exile_Car_Hatchback_Rusty3"
+		"TRASH_Car_Hatchback_Beige",
+		"TRASH_Car_Hatchback_Green",
+		"TRASH_Car_Hatchback_Blue",
+		"TRASH_Car_Hatchback_BlueCustom",
+		"TRASH_Car_Hatchback_BeigeCustom",
+		"TRASH_Car_Hatchback_Yellow",
+		"TRASH_Car_Hatchback_Grey",
+		"TRASH_Car_Hatchback_Black",
+		"TRASH_Car_Hatchback_Dark",
+		"TRASH_Car_Hatchback_Rusty1",
+		"TRASH_Car_Hatchback_Rusty2",
+		"TRASH_Car_Hatchback_Rusty3"
 	],
 	[
-		"Exile_Car_Hatchback_Sport_Red",
-		"Exile_Car_Hatchback_Sport_Blue",
-		"Exile_Car_Hatchback_Sport_Orange",
-		"Exile_Car_Hatchback_Sport_White",
-		"Exile_Car_Hatchback_Sport_Beige",
-		"Exile_Car_Hatchback_Sport_Green",
-		"Exile_Car_Hatchback_Green",
-		"Exile_Car_Hatchback_BlueCustom",
-		"Exile_Car_Hatchback_BeigeCustom",
-		"Exile_Car_Hatchback_Yellow",
-		"Exile_Car_Hatchback_Grey",
-		"Exile_Car_Hatchback_Black",
-		"Exile_Car_Hatchback_Dark"
+		"TRASH_Car_Hatchback_Sport_Red",
+		"TRASH_Car_Hatchback_Sport_Blue",
+		"TRASH_Car_Hatchback_Sport_Orange",
+		"TRASH_Car_Hatchback_Sport_White",
+		"TRASH_Car_Hatchback_Sport_Beige",
+		"TRASH_Car_Hatchback_Sport_Green",
+		"TRASH_Car_Hatchback_Green",
+		"TRASH_Car_Hatchback_BlueCustom",
+		"TRASH_Car_Hatchback_BeigeCustom",
+		"TRASH_Car_Hatchback_Yellow",
+		"TRASH_Car_Hatchback_Grey",
+		"TRASH_Car_Hatchback_Black",
+		"TRASH_Car_Hatchback_Dark"
 	]
 ] select (_difficulty isEqualTo "hardcore");
 

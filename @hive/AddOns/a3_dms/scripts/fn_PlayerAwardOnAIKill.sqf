@@ -48,9 +48,9 @@ if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivo
 	};
 
 
-	private _playerMoney = _playerObj getVariable ["ExileMoney", 0];
-	private _playerRespect = _playerObj getVariable ["ExileScore", 0];
-	//private _playerRank = _playerObj getVariable ["ExileHumanity", 0];
+	private _playerMoney = _playerObj getVariable ["TRASHMoney", 0];
+	private _playerRespect = _playerObj getVariable ["TRASHScore", 0];
+	//private _playerRank = _playerObj getVariable ["TRASHHumanity", 0];
 	private _unitName = name _unit;
 	private _distance = [];
 
@@ -66,7 +66,7 @@ if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivo
 	{
 		// Set client's money
 		_playerMoney = (_playerMoney + _moneyChange) max 0;			//Also make sure that they don't get negative poptabs
-		_playerObj setVariable ["ExileMoney",_playerMoney,true];
+		_playerObj setVariable ["TRASHMoney",_playerMoney,true];
 
 		if (DMS_Show_Kill_Poptabs_Notification) then
 		{
@@ -82,10 +82,10 @@ if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivo
 				};
 
 			// Send notification
-			[_playerObj, "toastRequest", _msgParams] call ExileServer_system_network_send_to;
+			[_playerObj, "toastRequest", _msgParams] call TRASHServer_system_network_send_to;
 
 			// Update money in database
-			format["setPlayerMoney:%1:%2", _playerMoney, _playerObj getVariable ["ExileDatabaseID", 0]] call ExileServer_system_database_query_fireAndForget;
+			format["setPlayerMoney:%1:%2", _playerMoney, _playerObj getVariable ["TRASHDatabaseID", 0]] call TRASHServer_system_database_query_fireAndForget;
 		};
 	};
 
@@ -109,21 +109,21 @@ if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivo
 
 		// Set client's respect
 		_playerRespect = _playerRespect + _repChange;
-		_playerObj setVariable ["ExileScore",_playerRespect];
+		_playerObj setVariable ["TRASHScore",_playerRespect];
 
 		if (DMS_Show_Kill_Respect_Notification) then
 		{
 			// Send frag message
-			[_playerObj, "showFragRequest", [_attributes]] call ExileServer_system_network_send_to;
+			[_playerObj, "showFragRequest", [_attributes]] call TRASHServer_system_network_send_to;
 		};
 
 		// Update respect in database
-		format["setAccountScore:%1:%2", _playerRespect, _playerUID] call ExileServer_system_database_query_fireAndForget;
+		format["setAccountScore:%1:%2", _playerRespect, _playerUID] call TRASHServer_system_database_query_fireAndForget;
 
 		// Send updated respect value to client
-		ExileClientPlayerScore = _playerRespect;
-		(owner _playerObj) publicVariableClient "ExileClientPlayerScore";
-		ExileClientPlayerScore = nil;
+		TRASHClientPlayerScore = _playerRespect;
+		(owner _playerObj) publicVariableClient "TRASHClientPlayerScore";
+		TRASHClientPlayerScore = nil;
 	};
 
 
@@ -161,13 +161,13 @@ if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivo
 	//DONKEYPUNCH CUSTOM KILL STAT ADD FOR AI KILL
 	if (DMS_Add_AIKill2DB) then
 	{
-		_newKillerFrags = _killer getVariable ["ExileKills", 0];
+		_newKillerFrags = _killer getVariable ["TRASHKills", 0];
 		_newKillerFrags = _newKillerFrags + 1;
-		_killer setVariable ["ExileKills", _newKillerFrags];
-		format["addAccountKill:%1", getPlayerUID _killer] call ExileServer_system_database_query_fireAndForget;
-		ExileClientPlayerKills = _newKillerFrags;
-		(owner _playerObj) publicVariableClient "ExileClientPlayerKills";
-		ExileClientPlayerKills = nil;
+		_killer setVariable ["TRASHKills", _newKillerFrags];
+		format["addAccountKill:%1", getPlayerUID _killer] call TRASHServer_system_database_query_fireAndForget;
+		TRASHClientPlayerKills = _newKillerFrags;
+		(owner _playerObj) publicVariableClient "TRASHClientPlayerKills";
+		TRASHClientPlayerKills = nil;
 	};
 
 	/*
@@ -175,11 +175,11 @@ if ((!isNull _playerObj) && {(_playerUID != "") && {_playerObj isKindOf "Survivo
 	if (DMS_Enable_RankChange && {_rankChange!=0}) then
 	{
 		_playerRank = (_playerRank+_rankChange);
-		_killer setVariable ["ExileHumanity",_playerRank];
-		format["modifyAccountHumanity:%1:%2",_rankChange,getPlayerUID _killer] call ExileServer_system_database_query_fireAndForget;
-		ExileClientPlayerHumanity = _playerRank;
-		(owner _playerObj) publicVariableClient "ExileClientPlayerHumanity";
-		ExileClientPlayerHumanity = nil;
+		_killer setVariable ["TRASHHumanity",_playerRank];
+		format["modifyAccountHumanity:%1:%2",_rankChange,getPlayerUID _killer] call TRASHServer_system_database_query_fireAndForget;
+		TRASHClientPlayerHumanity = _playerRank;
+		(owner _playerObj) publicVariableClient "TRASHClientPlayerHumanity";
+		TRASHClientPlayerHumanity = nil;
 	};
 	*/
 

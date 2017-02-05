@@ -55,7 +55,7 @@
                     } forEach _units;
 
 
-                    if ((count _units) isEqualTo 1) throw "Exile flyover (probably)";
+                    if ((count _units) isEqualTo 1) throw "TRASH flyover (probably)";
                 };
 
                 if (DMS_ai_freeze_Only_DMS_AI && {!(_x getVariable ["DMS_SpawnedGroup",false])}) throw "not a DMS-spawned group";

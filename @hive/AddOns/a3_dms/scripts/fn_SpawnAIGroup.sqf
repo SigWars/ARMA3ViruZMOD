@@ -10,7 +10,7 @@
 		_difficulty,			// STRING: AI Difficulty: "random","hardcore","difficult","moderate", or "easy"
 		_class,					// STRING: AI Class: "random","assault","MG","sniper" or "unarmed" OR [_class,_launcherType]
 		_side, 					// STRING: Only "bandit" is supported by default
-		_customGearSet			// (OPTIONAL) ARRAY: Manually defined AI gear. Refer to functional documentation of fn_SpawnAISoldier.sqf for more info: https://github.com/Defent/DMS_Exile/blob/master/%40ExileServer/addons/a3_dms/scripts/fn_SpawnAISoldier.sqf
+		_customGearSet			// (OPTIONAL) ARRAY: Manually defined AI gear. Refer to functional documentation of fn_SpawnAISoldier.sqf for more info: https://github.com/Defent/DMS_TRASH/blob/master/%40TRASHServer/addons/a3_dms/scripts/fn_SpawnAISoldier.sqf
 	] call DMS_fnc_SpawnAIGroup;
 
 	Returns AI Group
